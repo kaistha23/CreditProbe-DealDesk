@@ -1,0 +1,17 @@
+{
+ "module": "r5",
+ "commit": "7723e3e",
+ "utc": "20261012T023833Z",
+ "items_run": [
+  "2"
+ ],
+ "passed": true,
+ "items": [
+  {
+   "item": "2. sync tests",
+   "pass": true,
+   "detail": "89/89",
+   "seconds": 240.4
+  }
+ ]
+}

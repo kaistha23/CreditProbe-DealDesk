@@ -1,0 +1,518 @@
+"""R11 R2: writes data/dealdesk/review/rules.json (the configurable review rule book).
+
+The JSON is the source of truth the engine reads; this script is how the first version was written
+(kept so the rule book can be regenerated and diffed). The bank edits rules.json directly.
+"""
+from __future__ import annotations
+
+import json
+import pathlib
+
+OUT = pathlib.Path(__file__).resolve().parents[1] / "data" / "dealdesk" / "review" / "rules.json"
+
+CRM = "CBUAE CRM Art. "
+R: list[dict] = []
+
+
+def rule(**k):
+    k.setdefault("enabled", True)
+    R.append(k)
+
+
+# ============================================================ DATA: memo figures and statements against the bank's records
+rule(id="DATA-01", category="data", type="ledger", scope=["dd"], severity="major", on_fail="contradicted",
+     title="Memo figures agree with the proposal record and the books",
+     tests="Each figure in the memo's obligor, financial and request tables equals the proposal record (financial spreading, LOS terms).",
+     tolerance=0.005,
+     map=[{"claim": r"^(revenue|ebitda|total_debt|debt_service|net_worth)@(\d{4}(?:_p)?)$", "fact": "fin.{1}.{0}", "source": "Financial spreading"},
+          {"claim": r"^current_ratio_x@(\d{4}(?:_p)?)$", "fact": "fin.{0}.current_ratio", "source": "Financial spreading"},
+          {"claim": r"^existing_exposure_sar_m$", "fact": "obligor.existing_exposure_sar_mn", "source": "Proposal record", "abs_tol": 0.006},
+          {"claim": r"^amount_(?:sar|usd)_m@requested$", "fact": "ask.amount", "source": "Loan origination system"},
+          {"claim": r"^tenor_years@requested$", "fact": "ask.tenor_years", "source": "Loan origination system"},
+          {"claim": r"^margin@requested$", "fact": "ask.margin_bps", "source": "Loan origination system"},
+          {"claim": r"^upfront_fee@requested$", "fact": "ask.upfront_fee_bps", "source": "Loan origination system"},
+          {"claim": r"^cash_margin@requested$", "fact": "ask.cash_margin_pct", "source": "Loan origination system"}],
+     finding="{label}: memo {memo} against {record} in the record ({source}).",
+     evidence="{label}: memo {memo}; record {record}.", pass_text="{label} agrees with the record.",
+     policy_ref="Credit Policy 3.2 Accuracy of credit applications", crm_article=CRM + "5")
+
+rule(id="DATA-02", category="data", type="ledger", scope=["case"], severity="major", on_fail="contradicted",
+     title="Facility table and financial highlights agree with the LOS and the audited accounts",
+     tests="Each facility line (existing, proposed, pricing) equals the loan origination system; each financial highlight equals the spreading of the audited accounts.",
+     tolerance=0.005,
+     map=[{"claim": r"^(.+)@existing$", "fact": "los.{0}.existing", "source": "Loan origination system"},
+          {"claim": r"^(.+)@proposed$", "fact": "los.{0}.proposed", "source": "Loan origination system"},
+          {"claim": r"^(.+)@pricing_bps$", "fact": "los.{0}.bps", "source": "Loan origination system"},
+          {"claim": r"^(revenue|ebitda|debt_service|net_debt|backlog|working_capital|current_assets|shareholder_withdrawals)$",
+           "fact": "case.financials.{0}", "source": "Audited accounts (spreading)"},
+          {"claim": r"^investment_property_non_core$", "fact": "case.financials.noncore_property", "source": "Audited accounts (spreading)"},
+          {"claim": r"^retentions_on_projects_completed_2020_24$", "fact": "case.financials.retentions_not_due", "source": "Audited accounts (spreading)"},
+          {"claim": r"^due_from_related_parties$", "fact": "case.financials.related_party_receivable", "source": "Audited accounts (spreading)"},
+          {"claim": r"^internally_generated_goodwill$", "fact": "case.financials.goodwill_internal", "source": "Audited accounts (spreading)"}],
+     finding="{label}: memo {memo} against {record} ({source}).", evidence="{label}: memo {memo}; record {record}.",
+     pass_text="{label} agrees with the record.", policy_ref="Credit Policy 3.2 Accuracy of credit applications", crm_article=CRM + "5")
+
+rule(id="DATA-03", category="data", scope=["dd"], severity="major", on_fail="contradicted",
+     title="Existing exposure agrees with the book", tests="The memo's existing exposure equals the obligor's EAD in the corporate book at the as-of quarter.",
+     inputs={"memo_exp": "memo.existing_exposure_sar_m", "book_ead": "book.ead"}, when="book_ead is not None",
+     expr="abs(memo_exp - book_ead)", op="<=", threshold=0.05, unit="SAR m", claims=["existing_exposure_sar_m", "existing_exposure"],
+     finding="Existing exposure in the memo SAR {memo_exp:,.2f}m against SAR {book_ead:,.2f}m in the book.",
+     evidence="Corporate book EAD SAR {book_ead:,.2f}m; memo SAR {memo_exp:,.2f}m.", sources=["Corporate book (EAD at the as-of quarter)"],
+     pass_text="Existing exposure SAR {memo_exp:,.2f}m agrees with the book.", policy_ref="Credit Policy 3.2", crm_article=CRM + "11")
+
+rule(id="DATA-04", category="data", scope=["dd"], severity="major", on_fail="contradicted",
+     title="Internal rating agrees with the rating system", tests="The memo's internal rating equals the obligor's current rating in the book.",
+     inputs={"memo_rating": "memo.internal_rating", "book_rating": "book.rating"}, when="book_rating is not None",
+     assert_="", **{"assert": "memo_rating == book_rating"}, claims=["internal_rating"],
+     finding="Memo rating {memo_rating} against {book_rating} in the rating system.", evidence="Rating system {book_rating}; memo {memo_rating}.",
+     sources=["Rating system (book at the as-of quarter)"], pass_text="Rating {memo_rating} agrees with the rating system.",
+     policy_ref="Credit Policy 3.4 Rating", crm_article=CRM + "13")
+
+rule(id="DATA-05", category="data", scope=["dd"], severity="major", on_fail="contradicted", severity_when=[{"if": "rc >= 3", "severity": "critical"}],
+     title="Account conduct: no returned cheques", tests="No cheques returned for insufficient funds in the last 12 months (deposits domain).",
+     inputs={"rc": "conduct.returned_cheques", "months_seen": "conduct.months"}, when="months_seen > 0",
+     expr="rc", op="<=", threshold=0, unit="cheques", line_match="^Existing client",
+     finding="{rc} cheques returned in the last {months_seen} months of account conduct.", evidence="{rc} returned cheques in {months_seen} months.",
+     sources=["Account conduct (deposits domain)"], pass_text="No returned cheques in {months_seen} months of account conduct.",
+     policy_ref="Credit Policy 5.3 Account conduct", crm_article=CRM + "6.8",
+     condition={"kind": "watch", "what": "No further returned cheques (monthly conduct check)", "source": "Account conduct", "due": "monthly", "owner": "RM"})
+
+rule(id="DATA-06", category="data", scope=["dd"], severity="critical", on_fail="contradicted",
+     title="Bureau status clear", tests="The SIMAH/bureau flag on record is not adverse.",
+     inputs={"flag": "obligor.simah_flag"}, **{"assert": "lower(flag) != 'adverse'"}, claims=["simah"],
+     finding="Bureau flag on record: {flag}.", evidence="Bureau flag {flag}.", sources=["Bureau (SIMAH)"],
+     pass_text="Bureau flag {flag}.", policy_ref="Credit Policy 5.2 Bureau", crm_article=CRM + "6.8")
+
+rule(id="DATA-07", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="A-bureau",
+     severity_when=[{"if": "rc >= 3", "severity": "critical"}],
+     title="Bureau: returned cheques in the group", tests="No cheques returned for insufficient funds at the borrower or its affiliates (bureau).",
+     inputs={"rc": "ev.bureau.affiliate_returned_cheques", "period": "ev.bureau.affiliate_returned_period"}, optional=["period"],
+     expr="rc", op="<=", threshold=0, unit="cheques", claims=["returned_cheques"], sources=["bureau"],
+     finding="{rc} cheques returned for insufficient funds at the Dubai affiliate ({period}).",
+     evidence="Bureau extract: {rc} returned cheques, {period}.", pass_text="No returned cheques in the group.",
+     policy_ref="Credit Policy 5.2 Bureau", crm_article=CRM + "6.8",
+     condition={"kind": "watch", "what": "No further affiliate cheque returns", "source": "Bureau (AECB) monthly check", "due": "monthly", "owner": "Credit Risk",
+                "inputs": {"rc": "ev.bureau.affiliate_returned_cheques"}, "check": "rc == 0"})
+
+rule(id="DATA-08", category="data", scope=["case"], severity="critical", on_fail="contradicted", issue="A-unexplained-cbrbr",
+     title="Client-reported bank lines reconcile with CBRBR", tests="Other-bank limits reported by the client equal the CBRBR total.",
+     inputs={"client": "ev.bureau.client_reported_other_bank_limits", "cbrbr": "ev.bureau.cbrbr_other_bank_limits"}, when="client is not None and cbrbr is not None",
+     expr="cbrbr - client", op="<=", threshold=1.0, unit="AED m", claims=["other_bank_facilities"], sources=["bureau"],
+     finding="CBRBR shows AED {cbrbr:,.0f}m of other-bank limits against AED {client:,.0f}m reported by the client: a gap of AED {value:,.0f}m.",
+     evidence="CBRBR AED {cbrbr:,.0f}m; client-reported AED {client:,.0f}m.", pass_text="Client-reported lines reconcile with CBRBR.",
+     policy_ref="Credit Policy 5.2 Bureau", crm_article=CRM + "7.11",
+     condition={"kind": "CP", "what": "Facility letters for the new other-bank facilities and a reconciliation with CBRBR", "source": "RM; CBRBR", "due": "before drawdown", "owner": "RM"})
+
+rule(id="DATA-09", category="data", scope=["case"], severity="major", on_fail="exception", issue="A-unexplained-letters",
+     title="Facility letters for new borrowing at other banks", tests="Every new facility at another bank is supported by its facility letter.",
+     inputs={"letters": "case.other_banks.facility_letters", "banks": "case.other_banks.banks", "amt": "case.other_banks.new_facilities"}, when="letters is not None",
+     expr="letters", op=">=", threshold=1, unit="letters", claims=["other_bank_facilities"],
+     finding="AED {amt:,.0f}m of new facilities at {banks} other banks with {letters} facility letters on file.",
+     evidence="Facility letters on file: {letters} of {banks} banks.", sources=["Security and documentation register"],
+     pass_text="Facility letters on file.", policy_ref="Credit Policy 4.2 Information requirements", crm_article=CRM + "7.11", doa_rank=4)
+
+# ============================================================ DATA: projects (contractor)
+rule(id="PRJ-01", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="A-project1",
+     title="Projects on schedule", tests="No unfinished project is more than the threshold months past its planned completion (project monitoring).",
+     inputs={"projects": "ev.projects"}, when="len(projects) > 0",
+     derive={"late": "[p for p in projects if p['completion_pct'] < 100 and days(p['planned_completion'], as_of) > 0]",
+             "worst": "([p['name'] for p in late if months(p['planned_completion'], as_of) == max([months(q['planned_completion'], as_of) for q in late] + [0])] + ['none'])[0]"},
+     expr="max([months(p['planned_completion'], as_of) for p in late] + [0])", op="<=", threshold=6, unit="months",
+     line_match=r"^Project \d+: .*past planned completion", sources=["projects"],
+     finding="{worst} is {value:.0f} months past its planned completion.", evidence="Project monitoring: {worst} {value:.0f} months late.",
+     pass_text="No project more than {threshold} months late.", policy_ref="Credit Policy 8.4 Contractor monitoring", crm_article=CRM + "7",
+     condition={"kind": "watch", "what": "Extensions of time formalised on the late projects", "source": "Project monitoring report", "due": "+90d", "owner": "RM",
+                "inputs": {"projects": "ev.projects"}, "check": "all(p['eot_status'] == 'approved' for p in projects if p['completion_pct'] < 100 and days(p['planned_completion'], as_of) > 0)"})
+
+rule(id="PRJ-02", category="data", scope=["case"], severity="critical", on_fail="contradicted", issue="A-project2",
+     title="Project collections current", tests="Every running project has been paid within the threshold days, with no certified payments outstanding.",
+     inputs={"projects": "ev.projects"}, when="len(projects) > 0",
+     derive={"stalled": "[p for p in projects if days(p['last_payment'], as_of) > 90 and p['completion_pct'] < 100]",
+             "name": "([p['name'] for p in stalled] + ['none'])[0]",
+             "since": "([p['last_payment'] for p in stalled] + [''])[0]",
+             "pending_n": "sum([p['certified_pending_count'] for p in stalled])",
+             "pending": "sum([p['certified_pending_aed_mn'] for p in stalled])"},
+     expr="max([days(p['last_payment'], as_of) for p in projects if p['completion_pct'] < 100] + [0])", op="<=", threshold=90, unit="days",
+     line_match=r"^Project \d+: No payments", sources=["projects"],
+     finding="{name}: no payment since {since} ({value:.0f} days); {pending_n} certified payments (AED {pending:,.1f}m) pending.",
+     evidence="Project monitoring: last payment {since}; AED {pending:,.1f}m certified, unpaid.", pass_text="Project collections current.",
+     policy_ref="Credit Policy 8.4 Contractor monitoring", crm_article=CRM + "7",
+     condition={"kind": "CP", "what": "Project 2 payment received (AED 23.0m certified)", "source": "Project account credits", "due": "2026-11-30", "owner": "RM",
+                "inputs": {"projects": "ev.projects"}, "check": "days(projects[1]['last_payment'], as_of) <= 60"},
+     lever={"type": "tranche_funded", "share": 0.5, "label": "Funded lines tranched until the Project 2 collection or extension of time"})
+
+rule(id="PRJ-03", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="A-project3",
+     title="Projects past completion with work outstanding", tests="No project is past its planned completion with less than 90% of the work done.",
+     inputs={"projects": "ev.projects"}, when="len(projects) > 0",
+     derive={"open": "[p for p in projects if days(p['planned_completion'], as_of) > 0 and p['completion_pct'] < 90]",
+             "name": "([p['name'] for p in open] + ['none'])[0]", "pct": "([p['completion_pct'] for p in open] + [0])[0]"},
+     expr="len(open)", op="<=", threshold=0, unit="projects", line_match=r"^Project \d+: Past completion", sources=["projects"],
+     finding="{name} is past its planned completion at {pct:.1f}% complete.", evidence="Project monitoring: {name} {pct:.1f}% complete.",
+     pass_text="No project past completion with work outstanding.", policy_ref="Credit Policy 8.4 Contractor monitoring", crm_article=CRM + "7")
+
+rule(id="PRJ-04", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-project2-eot",
+     title="Extensions of time formalised", tests="Every late or stalled project has an approved extension of time.",
+     inputs={"projects": "ev.projects"}, when="len(projects) > 0",
+     derive={"open": "[p['name'] for p in projects if p['completion_pct'] < 100 and p['eot_status'] != 'approved' and (days(p['planned_completion'], as_of) > 0 or days(p['last_payment'], as_of) > 90)]"},
+     expr="len(open)", op="<=", threshold=0, unit="projects", line_match=r"extension of time not formalised", sources=["projects"],
+     finding="Extension of time not formalised on {open}.", evidence="EOT status from the project monitoring report.",
+     pass_text="Extensions of time formalised.", policy_ref="Credit Policy 8.4 Contractor monitoring", crm_article=CRM + "7", doa_rank=4)
+
+# ============================================================ DATA: backlog, working capital, receivables, related parties
+rule(id="BKL-01", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-backlog-cover",
+     title="Backlog cover within sector appetite", tests="Backlog / revenue at most the maximum backlog cover (Admin -> Deal Desk Parameters).",
+     inputs={"backlog": "case.financials.backlog", "revenue": "case.financials.revenue", "prior": "case.financials.backlog_prior"}, when="backlog is not None",
+     expr="backlog / revenue", op="<=", threshold="param:desk.max_backlog_cover", unit="x", claims=["backlog"],
+     finding="Backlog AED {backlog:,.0f}m is {value:.1f}x revenue (up {g:.0%} from AED {prior:,.1f}m) against a {threshold:.1f}x maximum.",
+     derive={"g": "backlog / prior - 1"}, evidence="Backlog AED {backlog:,.0f}m; revenue AED {revenue:,.0f}m.", sources=["audited"],
+     pass_text="Backlog {value:.1f}x revenue.", policy_ref="Sector appetite: contracting (backlog cover)", crm_article=CRM + "5", doa_rank=4)
+
+rule(id="BKL-02", category="consistency", scope=["case"], severity="minor", on_fail="contradicted",
+     title="Backlog growth reconciles", tests="Prior backlog x (1 + stated growth) equals the stated backlog.",
+     inputs={"backlog": "case.financials.backlog", "prior": "case.financials.backlog_prior", "growth": "case.financials.backlog_growth_stated"},
+     when="backlog is not None", expr="abs(prior * (1 + growth) - backlog) / backlog", op="<=", threshold=0.01, unit="", claims=["backlog"],
+     finding="AED {prior:,.1f}m x (1 + {growth:.0%}) does not give AED {backlog:,.0f}m.",
+     pass_text="Backlog growth reconciles: AED {prior:,.1f}m x (1 + {growth:.0%}) = AED {backlog:,.0f}m.", policy_ref="Credit Policy 3.2", crm_article=CRM + "5")
+
+rule(id="BKL-03", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-backlog-concentration",
+     title="Backlog concentration by employer", tests="No single developer above the threshold share of the backlog.",
+     inputs={"shares": "case.financials.backlog_share"}, when="len(shares) > 0",
+     derive={"top": "max(shares.values())", "two": "sum(sorted(shares.values())[-2:])"},
+     expr="top", op="<=", threshold=0.30, unit="share", claims=["backlog_concentration"],
+     finding="Backlog concentrated: {top:.0%} from one developer, {two:.0%} from two.", evidence="Backlog by employer from the memo and the project list.",
+     sources=["projects"], pass_text="Backlog spread across employers.", policy_ref="Sector appetite: contracting (employer concentration)", crm_article=CRM + "11", doa_rank=4,
+     lever={"type": "cap", "group_cap": 910.0, "label": "Cap the group at about AED 910m tied to Project 5"})
+
+rule(id="WC-01", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="A-working-capital",
+     title="Working capital held", tests="Working capital at least the threshold share of the prior year.",
+     inputs={"wc": "case.financials.working_capital", "prior": "case.financials.working_capital_prior"}, when="wc is not None",
+     expr="wc / prior", op=">=", threshold=0.5, unit="share", claims=["working_capital"],
+     finding="Working capital fell from AED {prior:,.1f}m to AED {wc:,.1f}m ({d:.0%}).", derive={"d": "wc / prior - 1"},
+     evidence="Spreading: working capital AED {prior:,.1f}m -> AED {wc:,.1f}m.", sources=["audited"],
+     pass_text="Working capital held.", policy_ref="Credit Policy 6.1 Liquidity", crm_article=CRM + "5",
+     lever={"type": "advance_payment", "amount": 66.2, "label": "Advance payment AED 66.2m credited to the project account and recovered first"},
+     condition={"kind": "CP", "what": "Advance payment AED 66.2m credited to the project account and recovered first", "source": "Project account", "due": "before drawdown", "owner": "Credit Administration",
+                "inputs": {"ok": "ev.advance_payment.credited_to_project_account"}, "check": "ok"})
+
+rule(id="WC-02", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="A-noncore",
+     title="No non-core investment funded from working capital", tests="Non-core investments at most the threshold share of EBITDA.",
+     inputs={"inv": "case.financials.noncore_property", "ebitda": "case.financials.ebitda", "wc": "case.financials.working_capital"}, when="inv is not None",
+     expr="inv / ebitda", op="<=", threshold=0.5, unit="x EBITDA", claims=["noncore_property"],
+     finding="AED {inv:,.0f}m invested in non-core property ({value:.1f}x EBITDA) while working capital fell to AED {wc:,.1f}m.",
+     evidence="Spreading: investment property AED {inv:,.0f}m.", sources=["audited"], pass_text="No material non-core investment.",
+     policy_ref="Credit Policy 6.2 Use of funds", crm_article=CRM + "5")
+
+rule(id="RET-01", category="data", scope=["case"], severity="critical", on_fail="contradicted", issue="A-retentions",
+     title="Retentions on completed projects", tests="Retentions on projects completed more than the defects-liability period ago are due, not 'not due'.",
+     inputs={"ret": "ev.retentions.by_completion_year", "dlp": "ev.retentions.defects_liability_months", "not_due": "memo.retentions_not_due"},
+     when="not_due",
+     derive={"overdue": "sum([r['amount'] for r in ret if months(str(r['year']) + '-12-31', as_of) > dlp])",
+             "years": "str(min([r['year'] for r in ret])) + '-' + str(max([r['year'] for r in ret]))"},
+     expr="overdue", op="<=", threshold=0, unit="AED m", claims=["retentions_not_due", "retentions_on_projects_completed_2020_24"],
+     finding="AED {overdue:,.1f}m of retentions on projects completed {years} are shown as 'not due'; the {dlp}-month defects-liability period has ended on all of them.",
+     evidence="Retention ledger by completion year; defects liability {dlp} months.", sources=["projects"],
+     pass_text="Retentions consistent with completion dates.", policy_ref="Credit Policy 6.3 Receivables quality", crm_article=CRM + "7.11",
+     condition={"kind": "watch", "what": "Retentions reclassified with ageing", "source": "Quarterly receivables ageing", "due": "next quarterly review", "owner": "RM"})
+
+rule(id="RP-01", category="connected", scope=["case"], severity="major", on_fail="contradicted", issue="A-parent-rp",
+     title="Parent related-party dues", tests="Related-party dues at most the threshold share of the parent's total assets.",
+     inputs={"share": "case.financials.parent_related_party_share"}, when="share is not None",
+     expr="share", op="<=", threshold=0.25, unit="share", claims=["parent_rp_dues"],
+     finding="Related-party dues at the parent are {share:.0%} of its total assets, while the parent deleverages.",
+     evidence="Parent accounts: related-party dues {share:.0%} of total assets.", sources=["audited"],
+     pass_text="Parent related-party dues within appetite.", policy_ref="Credit Policy 7.2 Related parties", crm_article=CRM + "6.12",
+     condition={"kind": "watch", "what": "Parent deleveraging plan with a timetable; related-party dues reported quarterly", "source": "Parent accounts", "due": "next quarterly review", "owner": "RM"})
+
+rule(id="RP-02", category="connected", scope=["case"], severity="critical", on_fail="contradicted", issue="B-related-receivable",
+     title="Receivables from related parties", tests="Amounts due from related parties at most the threshold share of current assets.",
+     inputs={"rp": "case.financials.related_party_receivable", "ca": "case.financials.current_assets", "main": "ev.connected.main_related_party"},
+     when="rp is not None", expr="rp / ca", op="<=", threshold=0.25, unit="share", claims=["related_party_receivable"],
+     finding="AED {rp:,.2f}m due from related parties, {value:.0%} of current assets, mostly {main}.",
+     evidence="Spreading: AED {rp:,.2f}m / AED {ca:,.1f}m current assets.", sources=["audited"],
+     pass_text="Related-party receivables within appetite.", policy_ref="Credit Policy 7.2 Related parties", crm_article=CRM + "6.12",
+     condition={"kind": "covenant", "what": "Related-party receivable reduced by AED 20m", "source": "Quarterly accounts", "due": "2026-12-31", "owner": "RM",
+                "inputs": {"rp": "case.financials.related_party_receivable"}, "check": "rp <= 117.65 - 20"})
+
+rule(id="WC-03", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="B-aged-receivables",
+     title="Receivables ageing", tests="Receivables older than one year at most the threshold share.",
+     inputs={"aged": "case.financials.receivables_over_1y"}, when="aged is not None", expr="aged", op="<=", threshold=0.25, unit="share",
+     claims=["aged_receivables"], finding="{aged:.1%} of receivables are more than a year old.", evidence="Receivables ageing {aged:.1%} over 1 year.",
+     sources=["audited"], pass_text="Receivables ageing within appetite.", policy_ref="Credit Policy 6.3 Receivables quality", crm_article=CRM + "7.11")
+
+rule(id="WC-04", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="B-cash-cycle",
+     title="Cash conversion cycle", tests="Cash conversion cycle at most the threshold days for a trader.",
+     inputs={"ccc": "case.financials.cash_cycle_days"}, when="ccc is not None", expr="ccc", op="<=", threshold=120, unit="days",
+     claims=["cash_cycle"], finding="Cash conversion cycle {ccc} days against {threshold} for a building-materials trader.",
+     evidence="Spreading: cash cycle {ccc} days.", sources=["audited"], pass_text="Cash cycle {ccc} days.",
+     policy_ref="Sector appetite: trading (working capital cycle)", crm_article=CRM + "5")
+
+rule(id="WC-05", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="B-withdrawals",
+     title="Shareholder withdrawals", tests="Withdrawals by shareholders at most the threshold share of EBITDA.",
+     inputs={"w": "case.financials.shareholder_withdrawals", "ebitda": "case.financials.ebitda"}, when="w is not None",
+     expr="w / ebitda", op="<=", threshold=0.25, unit="x EBITDA", claims=["shareholder_withdrawals"],
+     finding="Shareholder withdrawals AED {w:,.2f}m, {value:.0%} of EBITDA, while receivables age.", evidence="Spreading: withdrawals AED {w:,.2f}m.",
+     sources=["audited"], pass_text="Withdrawals within appetite.", policy_ref="Credit Policy 6.2 Use of funds", crm_article=CRM + "5")
+
+# ============================================================ GOVERNANCE AND DISCLOSURE
+rule(id="GOV-01", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-ownership",
+     title="Ownership change re-assessed", tests="An ownership change in the last 12 months is followed by refreshed KYC and a re-rating.",
+     inputs={"changed": "ev.governance.ownership_changed"}, when="changed is not None",
+     expr="months(changed, as_of)", op=">", threshold=12, unit="months", claims=["ownership_change"], sources=["los"],
+     finding="Ownership of the group changed {value:.0f} months ago; KYC and rating not refreshed.", evidence="Ownership changed {changed}.",
+     pass_text="No recent ownership change.", policy_ref="Credit Policy 4.4 KYC refresh", crm_article=CRM + "5", doa_rank=4)
+
+rule(id="GOV-02", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-auditor-covenant",
+     title="Auditor-change covenant", tests="The auditor was changed only with the bank's consent (covenant).",
+     inputs={"consent": "ev.governance.auditor_change_consent", "changed": "memo.auditor_changed"}, when="changed",
+     **{"assert": "consent"}, claims=["auditor_changed"], sources=["security"],
+     finding="Auditor changed without the bank's consent: the auditor-change covenant is breached.", evidence="Covenant register: consent not given.",
+     pass_text="Auditor change consented.", policy_ref="Facility covenant: change of auditor", crm_article=CRM + "7.11", doa_rank=4,
+     condition={"kind": "covenant", "what": "FY2026 audit by an auditor on the approved list", "source": "Audited accounts", "due": "FY2026 audit", "owner": "RM",
+                "inputs": {"aud": "ev.governance.auditor", "lst": "approved_auditors"}, "check": "aud in lst"})
+
+rule(id="GOV-03", category="policy", severity="major", on_fail="exception", issue="A-B-auditor",
+     title="Auditor on the approved list", tests="The audited accounts are signed by a firm on the bank's approved auditor list.",
+     inputs={"aud": "ev.governance.auditor", "lst": "approved_auditors"}, when="aud is not None", scope=["case"],
+     **{"assert": "aud in lst"}, claims=["auditor_unlisted"], sources=["audited"],
+     finding="{aud} is not on the bank's approved auditor list.", evidence="Approved auditor list ({n} firms).", derive={"n": "len(lst)"},
+     pass_text="{aud} is on the approved list.", policy_ref="Credit Policy 4.6 Approved auditors", crm_article=CRM + "7.11", doa_rank=4,
+     lever={"type": "no_new_funded", "label": "No new funded limits until audit by an approved auditor"})
+
+rule(id="GOV-04", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-standalone",
+     title="Standalone financials of the borrower", tests="The borrowing entity's own audited financials are provided, not only the group's.",
+     inputs={"sa": "ev.governance.standalone_financials"}, when="sa is not None", **{"assert": "sa"}, claims=["no_standalone_fs"], sources=["audited"],
+     finding="No standalone financials of the UAE branch; only the group's consolidated accounts.", evidence="Financials on file: group consolidated only.",
+     pass_text="Standalone financials provided.", policy_ref="Credit Policy 4.2 Information requirements", crm_article=CRM + "7.11", doa_rank=4)
+
+rule(id="GOV-05", category="consistency", scope=["case", "dd"], severity="critical", on_fail="exception", issue="A-B-cro",
+     title="CRO review signed", tests="The CRO review box is completed on a proposal at this approval level.",
+     inputs={"cro": "memo.cro_review"}, when="cro is not None", **{"assert": "len(str(cro).strip()) > 0"}, claims=["cro_review"],
+     finding="The CRO box is empty; the CRO review of a material credit decision is missing.", evidence="Memo: CRO review box empty.",
+     pass_text="CRO review recorded.", policy_ref="Delegation of Authority: CRO review", crm_article=CRM + "4.9", doa_rank=3,
+     condition={"kind": "CP", "what": "CRO review recorded on the proposal", "source": "Credit approval workflow", "due": "before committee", "owner": "CRO"})
+
+rule(id="FS-01", category="policy", scope=["case"], severity="major", on_fail="exception", issue="B-qualified-audit",
+     title="Unqualified audit opinion", tests="The audit opinion is unqualified.",
+     inputs={"op_": "ev.governance.audit_opinion", "q": "ev.governance.qualification", "amt": "ev.governance.qualification_amount"},
+     when="op_ is not None", **{"assert": "op_ == 'unqualified'"}, claims=["goodwill"], sources=["audited"],
+     finding="Audit opinion qualified: {q} (AED {amt:,.1f}m).", evidence="FY2025 audit opinion: {op_}.",
+     pass_text="Unqualified opinion.", policy_ref="Credit Policy 4.6 Audited accounts", crm_article=CRM + "7.11", doa_rank=4)
+
+# ============================================================ CONSISTENCY
+rule(id="CONS-01", category="consistency", scope=["case"], severity="major", on_fail="contradicted",
+     title="Existing limits add up to the stated total", tests="The facility table's existing limits sum to the stated total.",
+     inputs={"fac": "case.facilities", "stated": "case.stated_totals.existing"},
+     expr="abs(sum([f['existing'] for f in fac]) - stated)", op="<=", threshold=0.05, unit="AED m", line_match="^Total limits",
+     derive={"tot": "sum([f['existing'] for f in fac])"},
+     finding="Facility table AED {tot:,.1f}m against the stated AED {stated:,.1f}m.", pass_text="Existing limits tie: AED {tot:,.1f}m.",
+     policy_ref="Credit Policy 3.2", crm_article=CRM + "5")
+
+rule(id="CONS-02", category="consistency", scope=["case"], severity="major", on_fail="contradicted",
+     title="Proposed limits add up to the stated total", tests="The facility table's proposed limits sum to the stated total.",
+     inputs={"fac": "case.facilities", "stated": "case.stated_totals.proposed"},
+     expr="abs(sum([f['proposed'] for f in fac]) - stated)", op="<=", threshold=0.05, unit="AED m", line_match="^Total limits",
+     derive={"tot": "sum([f['proposed'] for f in fac])"},
+     finding="Facility table AED {tot:,.1f}m against the stated AED {stated:,.1f}m.", pass_text="Proposed limits tie: AED {tot:,.1f}m.",
+     policy_ref="Credit Policy 3.2", crm_article=CRM + "5")
+
+rule(id="CONS-03", category="consistency", scope=["case"], severity="critical", on_fail="contradicted", issue="A-stress",
+     title="The memo's own stress against the funded lines", tests="The memo's stressed peak deficit is covered by the funded lines.",
+     inputs={"deficit": "case.stress.peak_deficit", "lines": "case.stress.funded_lines", "month": "case.stress.peak_month"}, when="deficit is not None",
+     expr="deficit - lines", op="<=", threshold=0, unit="AED m", claims=["stressed_deficit"],
+     finding="The memo's own stressed cash flow peaks at an AED {deficit:,.1f}m deficit in month {month}, against AED {lines:,.0f}m of funded lines: AED {value:,.1f}m uncovered.",
+     evidence="Memo stress case: peak deficit AED {deficit:,.1f}m; funded lines AED {lines:,.0f}m.",
+     pass_text="Stressed deficit covered by the funded lines.", policy_ref="Credit Policy 6.4 Stress testing", crm_article=CRM + "5",
+     condition={"kind": "watch", "what": "Funded usage below the stressed path", "source": "Monthly utilisation", "due": "monthly", "owner": "Credit Risk"})
+
+rule(id="CONS-04", category="consistency", scope=["case"], severity="critical", on_fail="contradicted", issue="A-recommendation",
+     title="Recommendation consistent with the memo's own findings", tests="'Approve all' is not recommended when the memo's own stress leaves a deficit uncovered.",
+     inputs={"approve_all": "memo.approve_all", "deficit": "case.stress.peak_deficit", "lines": "case.stress.funded_lines"}, when="approve_all",
+     **{"assert": "deficit <= lines"}, claims=["approve_all", "recommendation"],
+     finding="The memo recommends 'approve all' although its own stress leaves AED {d:,.1f}m uncovered, with no conditions attached.",
+     derive={"d": "deficit - lines"}, evidence="Recommendation line against the stress line.", pass_text="Recommendation consistent with the stress.",
+     policy_ref="Credit Policy 3.6 Recommendation", crm_article=CRM + "5")
+
+rule(id="CONS-05", category="consistency", scope=["dd"], severity="major", on_fail="contradicted",
+     title="DSCR after the deal meets the covenant", tests="Post-deal DSCR from the engine is at least the memo's DSCR covenant.",
+     inputs={"dscr": "metrics.dscr_post", "cov": "covenants.dscr"}, when="dscr is not None and cov is not None",
+     expr="dscr", op=">=", threshold=None, derive={}, unit="x", line_match="^Covenant package",
+     finding="Post-deal DSCR {dscr:.2f}x against a {cov:.2f}x covenant.", pass_text="Post-deal DSCR {dscr:.2f}x against a {cov:.2f}x covenant.",
+     policy_ref="Credit Policy 6.5 Covenants", crm_article=CRM + "5",
+     condition={"kind": "covenant", "what": "DSCR at least {cov:.2f}x (tested on the annual accounts)", "source": "Financial spreading", "due": "annual", "owner": "RM",
+                "inputs": {"dscr": "metrics.dscr_post", "cov": "covenants.dscr"}, "check": "dscr >= cov"})
+
+rule(id="CONS-06", category="consistency", scope=["dd"], severity="major", on_fail="contradicted",
+     title="Leverage after the deal meets the covenant", tests="Post-deal debt / EBITDA from the engine is at most the memo's leverage covenant.",
+     inputs={"lev": "metrics.debt_ebitda_post", "cov": "covenants.net_debt_ebitda"}, when="lev is not None and cov is not None",
+     expr="lev", op="<=", threshold=None, unit="x", line_match="^Covenant package",
+     finding="Post-deal leverage {lev:.2f}x against a {cov:.2f}x covenant.", pass_text="Post-deal leverage {lev:.2f}x against a {cov:.2f}x covenant.",
+     policy_ref="Credit Policy 6.5 Covenants", crm_article=CRM + "5")
+
+rule(id="CONS-07", category="policy", scope=["dd"], severity="major", on_fail="exception",
+     title="Pricing clears the hurdle", tests="Lifetime RAROC of the ask at least the hurdle (pricing below hurdle is a pricing exception).",
+     inputs={"raroc": "metrics.lifetime_raroc", "hurdle": "metrics.hurdle"}, when="raroc is not None",
+     expr="raroc - hurdle", op=">=", threshold=0, unit="", line_match="^Margin",
+     finding="RAROC {raroc:.1%} against a {hurdle:.1%} hurdle: a pricing exception.", pass_text="RAROC {raroc:.1%} clears the {hurdle:.1%} hurdle.",
+     policy_ref="Pricing policy: hurdle by segment", crm_article=CRM + "5", doa_rank=3,
+     lever={"type": "optimise", "label": "Price and structure to clear the hurdle (Deal Desk optimiser)"})
+
+rule(id="CONS-08", category="consistency", scope=["dd"], severity="minor", on_fail="exception",
+     title="Collateral valuations current", tests="Every pledged collateral valuation is no older than the threshold months.",
+     inputs={"col": "collateral"}, when="len(col) > 0",
+     expr="max([months(c['valuation_date'], as_of) for c in col if c.get('pledged_in_ask')] + [0])", op="<=", threshold=12, unit="months",
+     line_match=r"^C\d+ \|", finding="Collateral valuation {value:.0f} months old.", pass_text="Collateral valuations current ({value:.0f} months at most).",
+     policy_ref="Collateral policy: revaluation", crm_article=CRM + "10")
+
+rule(id="LIM-01", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-group-cap",
+     title="Group exposure within the approved cap", tests="Group exposure after the request within the current group cap.",
+     inputs={"after": "case.group_cap.group_exposure_after", "cap": "case.group_cap.existing", "new": "case.group_cap.proposed"}, when="after is not None",
+     expr="after", op="<=", threshold=None, derive={}, unit="AED m", claims=["group_cap"],
+     finding="Group exposure after the request AED {after:,.1f}m exceeds the AED {cap:,.0f}m cap; the request raises the cap to AED {new:,.0f}m.",
+     pass_text="Within the group cap.", policy_ref="Large exposure and group limits", crm_article=CRM + "5.10", doa_rank=5, sources=["los"],
+     lever={"type": "cap", "group_cap": 910.0, "label": "Cap the group at about AED 910m tied to Project 5"})
+
+# ============================================================ POLICY EXCEPTIONS: security and documentation
+rule(id="EXC-01", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-cash-margin",
+     title="Cash margin on contractor guarantees", tests="Sub-investment-grade contractor guarantees carry at least the minimum cash margin.",
+     inputs={"cm": "ev.security.cash_margin_pct", "sector": "subject.sector", "rating": "subject.rating"},
+     when="sector == 'Construction' and rating not in ['AAA','AA+','AA','AA-','A+','A','A-','BBB+','BBB','BBB-']",
+     expr="cm", op=">=", threshold=10.0, unit="%", claims=["no_cash_margin"], sources=["security"],
+     finding="No cash margin on the guarantee lines ({cm:.0f}% against a {threshold:.0f}% minimum for a {rating} contractor).",
+     evidence="Security register: cash margin {cm:.0f}%.", pass_text="Cash margin {cm:.0f}%.",
+     policy_ref="Credit Policy 9.2 Cash margin on guarantees", crm_article=CRM + "10", doa_rank=4,
+     lever={"type": "cash_margin", "value": 10.0, "label": "10% cash margin on the new guarantee limit"})
+
+rule(id="EXC-02", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-open-ended",
+     title="Guarantees dated and in the bank's format", tests="Guarantees carry an expiry date and use the bank's standard wording.",
+     inputs={"exp": "ev.security.guarantee_expiry", "fmt": "ev.security.guarantee_format"}, when="exp is not None",
+     **{"assert": "exp != 'open-ended' and fmt == 'bank'"}, claims=["open_ended_lg"], sources=["security"],
+     finding="Guarantees are open-ended and in the beneficiary's format.", evidence="Security register: expiry {exp}; wording {fmt}.",
+     pass_text="Guarantees dated, bank format.", policy_ref="Credit Policy 9.3 Guarantee wording", crm_article=CRM + "10", doa_rank=4)
+
+rule(id="EXC-03", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-deferred-perfection",
+     title="Security perfected before drawdown", tests="The corporate guarantee is perfected before drawdown, not deferred.",
+     inputs={"perf": "ev.security.corporate_guarantee_perfection"}, when="perf is not None",
+     **{"assert": "perf == 'perfected'"}, claims=["deferred_perfection"], sources=["security"],
+     finding="Perfection of the corporate guarantee is deferred.", evidence="Security register: perfection {perf}.",
+     pass_text="Security perfected.", policy_ref="Credit Policy 9.1 Perfection of security", crm_article=CRM + "10", doa_rank=4,
+     lever={"type": "cp", "label": "Perfected parent guarantee with a fresh legal opinion"},
+     condition={"kind": "CP", "what": "Parent guarantee perfected", "source": "Security register", "due": "+60d", "owner": "Credit Administration",
+                "inputs": {"perf": "ev.security.corporate_guarantee_perfection"}, "check": "perf == 'perfected'"})
+
+rule(id="EXC-04", category="policy", scope=["case"], severity="major", on_fail="exception", issue="A-legal-opinion",
+     title="Legal opinion current", tests="The legal opinion on the security is no older than the threshold months.",
+     inputs={"d": "ev.security.legal_opinion_date"}, when="d is not None",
+     expr="months(d, as_of)", op="<=", threshold=24, unit="months", claims=["legal_opinion"], sources=["legal"],
+     finding="Legal opinion dated {d}, {value:.0f} months old (maximum {threshold}).", evidence="Legal register: opinion {d}.",
+     pass_text="Legal opinion {value:.0f} months old.", policy_ref="Credit Policy 9.4 Legal opinions", crm_article=CRM + "10", doa_rank=4,
+     condition={"kind": "CP", "what": "Fresh legal opinion on the parent guarantee", "source": "Legal department", "due": "+60d", "owner": "Legal",
+                "inputs": {"d": "ev.security.legal_opinion_date"}, "check": "months(d, as_of) <= 24"})
+
+rule(id="EXC-05", category="policy", scope=["case"], severity="minor", on_fail="exception", issue="A-late-bond",
+     title="Performance bond on time", tests="The performance bond was submitted by its due date.",
+     inputs={"due": "ev.security.performance_bond_due", "sub": "ev.security.performance_bond_submitted"}, when="due is not None",
+     expr="months(due, sub)", op="<=", threshold=0.5, unit="months", claims=["late_bond"], sources=["security"],
+     finding="Performance bond submitted {value:.0f} months late ({sub}, due {due}).", evidence="Documentation register: due {due}, submitted {sub}.",
+     pass_text="Performance bond on time.", policy_ref="Credit Policy 9.5 Documentation timeliness", crm_article=CRM + "10", doa_rank=4)
+
+rule(id="SEC-01", category="policy", scope=["case"], severity="critical", on_fail="exception", issue="B-vehicles",
+     title="Financed assets registered to the borrower", tests="Assets financed are registered to, and mortgaged by, the borrower.",
+     inputs={"own": "ev.security.asset_registered_to_borrower", "to": "ev.security.asset_registered_to"}, optional=["to"], when="own is not None",
+     **{"assert": "own"}, claims=["vehicle_registration"], sources=["security"],
+     finding="The vehicles would be registered to {to}, not the borrower: the bank's mortgage would sit on a third party's assets.",
+     evidence="Security register: registered to {to}.", pass_text="Assets registered to the borrower.",
+     policy_ref="Credit Policy 9.6 Asset finance security", crm_article=CRM + "10", doa_rank=4,
+     lever={"type": "drop_line", "line": "Vehicle finance, 5 years (10% cash margin)", "label": "Decline the vehicle limit as structured"},
+     condition={"kind": "CP", "what": "Vehicles registered to and mortgaged by the borrower", "source": "Traffic department registration", "due": "before drawdown", "owner": "Credit Administration",
+                "inputs": {"own": "ev.security.asset_registered_to_borrower"}, "check": "own"})
+
+rule(id="COV-01", category="data", scope=["case"], severity="major", on_fail="contradicted", issue="B-routing",
+     title="Routing undertaking met", tests="Turnover routed through the bank at least the undertaking (x the limit).",
+     inputs={"req": "ev.routing.required_x", "got": "ev.routing.achieved_x"}, when="req is not None",
+     expr="got / req", op=">=", threshold=1.0, unit="share", claims=["routing"], sources=["conduct"],
+     finding="Routing undertaking {req:.1f}x the limit met at {got:.2f}x ({value:.0%}).", evidence="Account conduct: routing {got:.2f}x.",
+     pass_text="Routing met.", policy_ref="Facility covenant: routing undertaking", crm_article=CRM + "7.11",
+     condition={"kind": "covenant", "what": "Monthly routing at least 1x the limit", "source": "Account conduct", "due": "monthly", "owner": "RM",
+                "inputs": {"got": "ev.routing.achieved_x"}, "check": "got >= 1.0"})
+
+rule(id="COV-02", category="consistency", scope=["case"], severity="major", on_fail="exception", issue="B-routing-lowered",
+     title="Routing undertaking not lowered while unmet", tests="The proposal does not lower an undertaking the borrower has not met.",
+     inputs={"req": "ev.routing.required_x", "got": "ev.routing.achieved_x", "new": "ev.routing.proposed_x"}, when="req is not None and new is not None",
+     **{"assert": "new >= req or got >= req"}, claims=["routing_lowered"], sources=["conduct"],
+     finding="The proposal lowers the routing undertaking from {req:.1f}x to {new:.1f}x while only {got:.2f}x is achieved.",
+     evidence="Undertaking {req:.1f}x; achieved {got:.2f}x; proposed {new:.1f}x.", pass_text="Routing undertaking kept.",
+     policy_ref="Credit Policy 6.5 Covenants", crm_article=CRM + "5", doa_rank=4,
+     lever={"type": "routing", "value": 2.0, "label": "Keep routing at 2x with monthly tracking; the limit steps down below 1x"})
+
+# ============================================================ CONNECTED PARTIES
+rule(id="CP-01", category="connected", scope=["case"], severity="critical", on_fail="contradicted", issue="B-marwan",
+     title="Connected names classified elsewhere", tests="No connected party is classified (Substandard, Doubtful, Loss) at another bank or in litigation.",
+     inputs={"cls": "ev.connected.classified_elsewhere"}, when="cls is not None",
+     derive={"name": "([c['name'] for c in cls] + [''])[0]", "grade": "([c['classification'] for c in cls] + [''])[0]",
+             "lit": "sum([c.get('litigation_aed_mn') or 0 for c in cls])", "link": "([c['link'] for c in cls] + [''])[0]"},
+     expr="len(cls)", op="<=", threshold=0, unit="names", claims=["connected_classified"], sources=["connected"],
+     finding="{name} ({link}) is classified {grade} at another bank and in litigation over AED {lit:,.0f}m.",
+     evidence="Connected-party register and bureau.", pass_text="No connected name classified elsewhere.",
+     policy_ref="Credit Policy 7.3 Connected obligors (cross-default)", crm_article=CRM + "6.12",
+     lever={"type": "cp", "label": "Economic-dependency assessment (Art 6.12) before renewal"},
+     condition={"kind": "CP", "what": "Cross-default and economic-dependency question answered", "source": "Credit Risk assessment", "due": "before renewal", "owner": "Credit Risk"})
+
+rule(id="CP-02", category="connected", scope=["case"], severity="major", on_fail="exception", issue="B-nominees",
+     title="Holdings through nominees disclosed", tests="No group holding is held through nominees without full beneficial-ownership disclosure.",
+     inputs={"nom": "ev.connected.nominee_holdings"}, when="nom is not None",
+     derive={"name": "([c['name'] for c in nom] + [''])[0]", "share": "([c['share'] for c in nom] + [0])[0]"},
+     expr="len(nom)", op="<=", threshold=0, unit="holdings", claims=["nominee_holding"], sources=["connected"],
+     finding="The group holds {share:.0%} of {name} through nominees.", evidence="KYC ownership chart.",
+     pass_text="No nominee holdings.", policy_ref="Credit Policy 4.4 Beneficial ownership", crm_article=CRM + "6.12", doa_rank=4)
+
+rule(id="CP-03", category="connected", scope=["case"], severity="critical", on_fail="contradicted", issue="B-loss",
+     title="Group entities at Loss (CBRBR)", tests="No group entity is classified Loss in CBRBR.",
+     inputs={"loss": "ev.bureau.group_entities_loss"}, when="loss is not None",
+     derive={"amts": "join(' and ', ['AED ' + str(round(e['amount'])) + 'm' for e in loss])"},
+     expr="len(loss)", op="<=", threshold=0, unit="entities", claims=["group_loss"], sources=["bureau"],
+     finding="CBRBR shows {value} group entities at Loss (about {amts}).", evidence="CBRBR extract.",
+     pass_text="No group entity at Loss.", policy_ref="Credit Policy 7.3 Connected obligors (cross-default)", crm_article=CRM + "6.12",
+     condition={"kind": "watch", "what": "Connected-obligor deterioration (monthly bureau check)", "source": "CBRBR", "due": "monthly", "owner": "Credit Risk"})
+
+rule(id="CP-04", category="connected", scope=["case"], severity="critical", on_fail="exception", issue="B-staff",
+     title="Staff conflict of interest", tests="No bank staff member has an interest in the borrower, its guarantors or security providers.",
+     inputs={"st": "ev.connected.staff_interest"}, when="st is not None",
+     derive={"party": "([s['party'] for s in st] + [''])[0]", "share": "([s['share'] for s in st] + [0])[0]"},
+     expr="len(st)", op="<=", threshold=0, unit="interests", claims=["staff_guarantor"], sources=["staff"],
+     finding="A bank staff member owns {share:.0%} of the {party}: refer to Compliance.", evidence="Staff interest declarations.",
+     pass_text="No staff interest.", policy_ref="Code of Conduct: conflicts of interest; referral to Compliance", crm_article=CRM + "5.10", doa_rank=4,
+     lever={"type": "cp", "label": "Conflict of interest referred to Compliance (Art 5.10)"},
+     condition={"kind": "CP", "what": "Conflict of interest referred to and cleared by Compliance", "source": "Compliance", "due": "before committee", "owner": "Compliance"})
+
+rule(id="CP-05", category="connected", scope=["dd"], severity="major", on_fail="exception",
+     title="Connected parties performing in the book", tests="No connected party of an existing borrower is in Stage 3 or 90+ days past due in the book.",
+     inputs={"con": "connected"}, when="len(con) > 0",
+     derive={"bad": "[c['name'] for c in con if c['stage_max'] >= 3 or c['dpd_max_4q'] >= 90]"},
+     expr="len(bad)", op="<=", threshold=0, unit="names", line_match="^Group \\|",
+     finding="Connected names in default in the book: {bad}.", pass_text="{n} connected names performing in the book.", derive_n=None,
+     policy_ref="Credit Policy 7.3 Connected obligors (cross-default)", crm_article=CRM + "6.12", doa_rank=4)
+
+for r in R:
+    r.pop("assert_", None)
+    r.pop("derive_n", None)
+    if r["id"] == "CP-05":
+        r["derive"]["n"] = "len(con)"
+    if r["id"] in ("CONS-05",):
+        r["threshold"] = None
+    if r.get("threshold") is None and r.get("expr") and r["id"] in ("CONS-05", "CONS-06", "LIM-01"):
+        r["threshold_input"] = {"CONS-05": "cov", "CONS-06": "cov", "LIM-01": "cap"}[r["id"]]
+
+book = {
+    "description": "R11 Session R: the proposal review rule book. Each rule tests one thing, with its inputs (paths into the review evidence), "
+                   "threshold, policy clause, CBUAE CRM article, Delegation of Authority rank and severity. Verdicts: supported, contradicted, "
+                   "exception, unverifiable. Add a rule by adding a row.",
+    "version": "r11-1", "effective_from": "2026-10-17", "owner": "Credit Risk Policy",
+    "severity_order": ["critical", "major", "minor"],
+    "categories": {"data": "Data: books, account conduct, bureau, audited financials, project data",
+                   "consistency": "Internal consistency: totals, ask vs recommendation vs conditions, the memo's own stress, dates, limits, sign-offs",
+                   "policy": "Policy and regulation: each exception mapped to its clause, CBUAE CRM article and DoA level",
+                   "connected": "Connected parties: related-party dues, common sponsors, nominee holdings, names classified elsewhere, staff conflicts"},
+    "rules": R,
+}
+OUT.write_text(json.dumps(book, indent=1, ensure_ascii=False) + "\n")
+print(f"{len(R)} rules -> {OUT}")

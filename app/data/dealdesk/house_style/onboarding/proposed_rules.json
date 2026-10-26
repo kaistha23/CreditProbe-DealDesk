@@ -1,0 +1,875 @@
+{
+ "description": "PROPOSED by P6 onboarding: rules learned from the bank's credit policy. Not live: enabled false until a checker accepts each one.",
+ "version": "proposed",
+ "effective_from": "2026-10-17",
+ "owner": "Credit Risk Policy",
+ "severity_order": [
+  "critical",
+  "major",
+  "minor"
+ ],
+ "categories": {
+  "data": "Data: books, account conduct, bureau, audited financials, project data",
+  "consistency": "Internal consistency: totals, ask vs recommendation vs conditions, the memo's own stress, dates, limits, sign-offs",
+  "policy": "Policy and regulation: each exception mapped to its clause, CBUAE CRM article and DoA level",
+  "connected": "Connected parties: related-party dues, common sponsors, nominee holdings, names classified elsewhere, staff conflicts"
+ },
+ "status": "proposed",
+ "session_id": "example (fictional policy)",
+ "rules": [
+  {
+   "id": "POL-CONFLICT-DECLARED-2-3",
+   "category": "policy",
+   "title": "Approver conflicts declared",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 2.3: No member of an approving authority may approve a facility to an obligor in which that member, or a member of their family, holds an interest; the conflict is declared and recorded in the minutes.",
+   "scope": [
+    "case"
+   ],
+   "inputs": {
+    "si": "ev.connected.staff_interest"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 2.3",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "{si} approver interest(s) recorded.",
+   "evidence": "{si} approver interest(s) recorded.",
+   "pass_text": "No approver interest recorded.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "assert": "len(si) == 0",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "2.3",
+    "quote": "No member of an approving authority may approve a facility to an obligor in which that member, or a member of their family, holds an interest; the conflict is declared and recorded in the minutes."
+   },
+   "learned_item": "ONB-F30CFFB5",
+   "checkability": "auto",
+   "data_fields": [
+    "ev.connected.staff_interest"
+   ]
+  },
+  {
+   "id": "POL-AUDITED-YEARS-3-3",
+   "category": "policy",
+   "title": "Years of audited financial statements",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 3.3: Audited financial statements for the last three financial years shall be analysed.",
+   "scope": [
+    "dd"
+   ],
+   "inputs": {
+    "fin": "fin"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 3.3",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "{n} years of audited financial statements against the policy's {threshold:,.0f}.",
+   "evidence": "{n} years of audited financial statements against the policy's {threshold:,.0f}.",
+   "pass_text": "{n} years of audited financial statements analysed.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "derive": {
+    "n": "len([y for y in fin if not contains(y, '_p')])"
+   },
+   "unit": "years",
+   "expr": "n",
+   "op": ">=",
+   "threshold": 3.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "3.3",
+    "quote": "Audited financial statements for the last three financial years shall be analysed."
+   },
+   "learned_item": "ONB-12828099",
+   "checkability": "auto",
+   "data_fields": [
+    "fin.<year>.kind"
+   ]
+  },
+  {
+   "id": "POL-APPROVED-AUDITOR-3-4",
+   "category": "policy",
+   "title": "Auditor on the approved list",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 3.4: The financial statements of the obligor shall be audited by an auditor on the Bank's approved list.",
+   "scope": [
+    "case"
+   ],
+   "inputs": {
+    "aud": "ev.governance.auditor",
+    "lst": "approved_auditors"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 3.4",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Auditor {aud} is not on the approved list.",
+   "evidence": "Auditor {aud} is not on the approved list.",
+   "pass_text": "Auditor {aud} is on the approved list.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "assert": "aud in lst",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "3.4",
+    "quote": "The financial statements of the obligor shall be audited by an auditor on the Bank's approved list."
+   },
+   "learned_item": "ONB-79419F4F",
+   "checkability": "auto",
+   "data_fields": [
+    "ev.governance.auditor",
+    "approved_auditors"
+   ],
+   "same_as": "GOV-03"
+  },
+  {
+   "id": "POL-MIN-RATING-4-1",
+   "category": "policy",
+   "title": "Minimum rating for new money",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 4.1: The Bank shall not extend new money to an obligor rated below B- on the Bank's internal master scale. Existing obligors rated CCC may be renewed only with the approval of the Executive Credit Committee.",
+   "scope": [
+    "case",
+    "dd"
+   ],
+   "inputs": {
+    "rating": "subject.rating"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 4.1",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Rating {rating} is below the policy floor {threshold} for new money.",
+   "evidence": "Rating {rating} is below the policy floor {threshold} for new money.",
+   "pass_text": "Rating {rating} meets the policy floor.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "assert": "rating in ['AAA', 'AA+', 'AA', 'AA-', 'A+', 'A', 'A-', 'BBB+', 'BBB', 'BBB-', 'BB+', 'BB', 'BB-', 'B+', 'B', 'B-']",
+   "threshold": "B-",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.1",
+    "quote": "The Bank shall not extend new money to an obligor rated below B- on the Bank's internal master scale. Existing obligors rated CCC may be renewed only with the approval of the Executive Credit Committee."
+   },
+   "learned_item": "ONB-F81BE118",
+   "checkability": "auto",
+   "data_fields": [
+    "subject.rating"
+   ]
+  },
+  {
+   "id": "POL-DSCR-4-2",
+   "category": "policy",
+   "title": "DSCR after the deal",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 4.2: The debt service coverage ratio after the proposed facilities shall be not less than 1.25x.",
+   "scope": [
+    "case",
+    "dd"
+   ],
+   "inputs": {
+    "dscr": "metrics.dscr_post"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 4.2",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "DSCR after the deal {dscr:,.2f}x against the policy minimum {threshold:,.2f}x.",
+   "evidence": "DSCR after the deal {dscr:,.2f}x against the policy minimum {threshold:,.2f}x.",
+   "pass_text": "DSCR after the deal {dscr:,.2f}x meets the policy minimum.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "x",
+   "expr": "dscr",
+   "op": ">=",
+   "threshold": 1.25,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.2",
+    "quote": "The debt service coverage ratio after the proposed facilities shall be not less than 1.25x."
+   },
+   "learned_item": "ONB-ED8556B9",
+   "checkability": "auto",
+   "data_fields": [
+    "metrics.dscr_post"
+   ]
+  },
+  {
+   "id": "POL-DEBT-EBITDA-4-3",
+   "category": "policy",
+   "title": "Debt/EBITDA after the deal",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 4.3: Total debt to EBITDA after the proposed facilities shall not exceed 3.5x.",
+   "scope": [
+    "case",
+    "dd"
+   ],
+   "inputs": {
+    "lev": "metrics.debt_ebitda_post"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 4.3",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Debt/EBITDA after the deal {lev:,.2f}x against the policy maximum {threshold:,.2f}x.",
+   "evidence": "Debt/EBITDA after the deal {lev:,.2f}x against the policy maximum {threshold:,.2f}x.",
+   "pass_text": "Debt/EBITDA after the deal {lev:,.2f}x within the policy maximum.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "x",
+   "expr": "lev",
+   "op": "<=",
+   "threshold": 3.5,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.3",
+    "quote": "Total debt to EBITDA after the proposed facilities shall not exceed 3.5x."
+   },
+   "learned_item": "ONB-E1C72936",
+   "checkability": "auto",
+   "data_fields": [
+    "metrics.debt_ebitda_post"
+   ]
+  },
+  {
+   "id": "POL-CURRENT-RATIO-4-4",
+   "category": "policy",
+   "title": "Current ratio",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 4.4: Trading and contracting obligors shall maintain a current ratio of at least 1.10x.",
+   "scope": [
+    "dd"
+   ],
+   "inputs": {
+    "cr": "fin_last.current_ratio"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 4.4",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Current ratio {cr:,.2f}x against the policy minimum {threshold:,.2f}x.",
+   "evidence": "Current ratio {cr:,.2f}x against the policy minimum {threshold:,.2f}x.",
+   "pass_text": "Current ratio {cr:,.2f}x meets the policy minimum.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "x",
+   "expr": "cr",
+   "op": ">=",
+   "threshold": 1.1,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.4",
+    "quote": "Trading and contracting obligors shall maintain a current ratio of at least 1.10x."
+   },
+   "learned_item": "ONB-7D4C8B57",
+   "checkability": "auto",
+   "data_fields": [
+    "fin_last.current_ratio"
+   ]
+  },
+  {
+   "id": "POL-BALLOON-4-5",
+   "category": "policy",
+   "title": "Balloon share",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 4.5: A balloon or bullet repayment shall not exceed 40% of the original facility amount.",
+   "scope": [
+    "dd"
+   ],
+   "inputs": {
+    "b": "ask.balloon_pct"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 4.5",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Balloon {b:,.0f}% against the policy maximum {threshold:,.0f}%.",
+   "evidence": "Balloon {b:,.0f}% against the policy maximum {threshold:,.0f}%.",
+   "pass_text": "Balloon {b:,.0f}% within the policy maximum.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "%",
+   "expr": "b",
+   "op": "<=",
+   "threshold": 40.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.5",
+    "quote": "A balloon or bullet repayment shall not exceed 40% of the original facility amount."
+   },
+   "learned_item": "ONB-57986149",
+   "checkability": "auto",
+   "data_fields": [
+    "ask.balloon_pct"
+   ]
+  },
+  {
+   "id": "POL-BACKLOG-COVER-4-7",
+   "category": "policy",
+   "title": "Backlog cover (contractors)",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 4.7: For contractors, the order backlog shall not exceed 3.0 times annual revenue.",
+   "scope": [
+    "case"
+   ],
+   "inputs": {
+    "backlog": "case.financials.backlog",
+    "revenue": "case.financials.revenue"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 4.7",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Backlog {value:,.1f}x revenue against the policy maximum {threshold:,.1f}x.",
+   "evidence": "Backlog {value:,.1f}x revenue against the policy maximum {threshold:,.1f}x.",
+   "pass_text": "Backlog {value:,.1f}x revenue within the policy maximum.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "x",
+   "expr": "backlog / revenue",
+   "op": "<=",
+   "threshold": 3.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.7",
+    "quote": "For contractors, the order backlog shall not exceed 3.0 times annual revenue."
+   },
+   "learned_item": "ONB-3621D18D",
+   "checkability": "auto",
+   "data_fields": [
+    "case.financials.backlog",
+    "case.financials.revenue"
+   ]
+  },
+  {
+   "id": "POL-SINGLE-OBLIGOR-5-1",
+   "category": "policy",
+   "title": "Single obligor limit",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 5.1: Aggregate exposure to a single obligor shall not exceed AED 300 million.",
+   "scope": [
+    "case",
+    "dd"
+   ],
+   "inputs": {
+    "amt": "subject.amount_sar",
+    "ex": "obligor.existing_exposure_sar_mn"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 5.1",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Obligor exposure after the deal SAR {after:,.1f}m against the policy limit SAR {threshold:,.1f}m.",
+   "evidence": "Obligor exposure after the deal SAR {after:,.1f}m against the policy limit SAR {threshold:,.1f}m.",
+   "pass_text": "Obligor exposure after the deal SAR {after:,.1f}m within the policy limit.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "optional": [
+    "ex"
+   ],
+   "derive": {
+    "after": "amt + (ex or 0)"
+   },
+   "unit": "SAR m",
+   "expr": "after",
+   "op": "<=",
+   "threshold": 306.3,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.1",
+    "quote": "Aggregate exposure to a single obligor shall not exceed AED 300 million."
+   },
+   "learned_item": "ONB-A0B12CF8",
+   "checkability": "auto",
+   "data_fields": [
+    "subject.amount_sar",
+    "obligor.existing_exposure_sar_mn"
+   ]
+  },
+  {
+   "id": "POL-GROUP-LIMIT-5-2",
+   "category": "policy",
+   "title": "Connected group limit",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 5.2: Aggregate exposure to a group of connected obligors shall not exceed AED 600 million.",
+   "scope": [
+    "case"
+   ],
+   "inputs": {
+    "after": "case.group_cap.group_exposure_after"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 5.2",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Group exposure after the deal AED {after:,.1f}m against the policy limit AED {threshold:,.1f}m.",
+   "evidence": "Group exposure after the deal AED {after:,.1f}m against the policy limit AED {threshold:,.1f}m.",
+   "pass_text": "Group exposure after the deal AED {after:,.1f}m within the policy limit.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "AED m",
+   "expr": "after",
+   "op": "<=",
+   "threshold": 600.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.2",
+    "quote": "Aggregate exposure to a group of connected obligors shall not exceed AED 600 million."
+   },
+   "learned_item": "ONB-430EE752",
+   "checkability": "auto",
+   "data_fields": [
+    "case.group_cap.group_exposure_after"
+   ]
+  },
+  {
+   "id": "POL-LTV-7-1",
+   "category": "policy",
+   "title": "Loan to value (income-producing real estate)",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 7.1: The loan-to-value ratio on income-producing real estate shall not exceed 65%.",
+   "scope": [
+    "dd"
+   ],
+   "inputs": {
+    "amt": "subject.amount_sar",
+    "coll": "collateral"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 7.1",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Loan to value {value:,.0f}% against the policy maximum {threshold:,.0f}%.",
+   "evidence": "Loan to value {value:,.0f}% against the policy maximum {threshold:,.0f}%.",
+   "pass_text": "Loan to value {value:,.0f}% within the policy maximum.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "derive": {
+    "re": "sum([c['value'] for c in coll if contains(c['type'], 'real')])"
+   },
+   "when": "any([contains(c['type'], 'real') for c in coll])",
+   "unit": "%",
+   "expr": "100 * amt / re",
+   "op": "<=",
+   "threshold": 65.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.1",
+    "quote": "The loan-to-value ratio on income-producing real estate shall not exceed 65%."
+   },
+   "learned_item": "ONB-E9175727",
+   "checkability": "auto",
+   "data_fields": [
+    "subject.amount_sar",
+    "collateral[].type",
+    "collateral[].value"
+   ]
+  },
+  {
+   "id": "POL-CASH-MARGIN-7-2",
+   "category": "policy",
+   "title": "Cash margin on contractor guarantees",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 7.2: Performance and advance payment guarantees issued for contractors shall carry a cash margin of not less than 10%.",
+   "scope": [
+    "case"
+   ],
+   "inputs": {
+    "cm": "ev.security.cash_margin_pct"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 7.2",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Cash margin {cm:,.0f}% on the guarantees against the policy minimum {threshold:,.0f}%.",
+   "evidence": "Cash margin {cm:,.0f}% on the guarantees against the policy minimum {threshold:,.0f}%.",
+   "pass_text": "Cash margin {cm:,.0f}% meets the policy minimum.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "%",
+   "expr": "cm",
+   "op": ">=",
+   "threshold": 10.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.2",
+    "quote": "Performance and advance payment guarantees issued for contractors shall carry a cash margin of not less than 10%."
+   },
+   "learned_item": "ONB-08581689",
+   "checkability": "auto",
+   "data_fields": [
+    "ev.security.cash_margin_pct"
+   ],
+   "same_as": "EXC-01"
+  },
+  {
+   "id": "POL-VALUATION-MONTHS-7-3",
+   "category": "policy",
+   "title": "Collateral valuation age",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 7.3: Real estate collateral shall be revalued by a Bank-approved valuer at least every 24 months.",
+   "scope": [
+    "dd"
+   ],
+   "inputs": {
+    "coll": "collateral"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 7.3",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Oldest collateral valuation {age:,.0f} months old against the policy maximum {threshold:,.0f}.",
+   "evidence": "Oldest collateral valuation {age:,.0f} months old against the policy maximum {threshold:,.0f}.",
+   "pass_text": "Collateral valuations within {threshold:,.0f} months.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "derive": {
+    "age": "max([months(c['valuation_date'], as_of) for c in coll if c.get('valuation_date')] or [0])"
+   },
+   "unit": "months",
+   "expr": "age",
+   "op": "<=",
+   "threshold": 24.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.3",
+    "quote": "Real estate collateral shall be revalued by a Bank-approved valuer at least every 24 months."
+   },
+   "learned_item": "ONB-78BF00B6",
+   "checkability": "auto",
+   "data_fields": [
+    "collateral[].valuation_date"
+   ]
+  },
+  {
+   "id": "POL-LEGAL-OPINION-MONT-7-4",
+   "category": "policy",
+   "title": "Legal opinion age at drawdown",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 7.4: Legal opinions on security shall be no older than 24 months at the date of drawdown.",
+   "scope": [
+    "case"
+   ],
+   "inputs": {
+    "d": "ev.security.legal_opinion_date"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 7.4",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Legal opinion {value:,.0f} months old against the policy maximum {threshold:,.0f}.",
+   "evidence": "Legal opinion {value:,.0f} months old against the policy maximum {threshold:,.0f}.",
+   "pass_text": "Legal opinion within {threshold:,.0f} months.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "months",
+   "expr": "months(d, as_of)",
+   "op": "<=",
+   "threshold": 24.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.4",
+    "quote": "Legal opinions on security shall be no older than 24 months at the date of drawdown."
+   },
+   "learned_item": "ONB-23ED8EF2",
+   "checkability": "auto",
+   "data_fields": [
+    "ev.security.legal_opinion_date"
+   ],
+   "same_as": "EXC-04"
+  },
+  {
+   "id": "POL-PERFECTION-BEFORE--7-5",
+   "category": "policy",
+   "title": "Security perfected before drawdown",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 7.5: All security shall be perfected before the first drawdown; a deferral of perfection of up to 60 days requires the approval of the authority one level above the approving authority.",
+   "scope": [
+    "case"
+   ],
+   "inputs": {
+    "perf": "ev.security.corporate_guarantee_perfection"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 7.5",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Security is {perf}, not perfected before drawdown.",
+   "evidence": "Security is {perf}, not perfected before drawdown.",
+   "pass_text": "Security perfected before drawdown.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "assert": "perf == 'perfected'",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.5",
+    "quote": "All security shall be perfected before the first drawdown; a deferral of perfection of up to 60 days requires the approval of the authority one level above the approving authority."
+   },
+   "learned_item": "ONB-4542D5CF",
+   "checkability": "auto",
+   "data_fields": [
+    "ev.security.corporate_guarantee_perfection"
+   ],
+   "same_as": "EXC-03"
+  },
+  {
+   "id": "POL-GUARANTEE-FORMAT-7-7",
+   "category": "policy",
+   "title": "Guarantees dated and in the bank's format",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 7.7: Guarantees issued by the Bank shall carry an expiry date and follow the Bank's standard format.",
+   "scope": [
+    "case"
+   ],
+   "inputs": {
+    "exp": "ev.security.guarantee_expiry",
+    "fmt": "ev.security.guarantee_format"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 7.7",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Guarantees {exp}, in the {fmt} format.",
+   "evidence": "Guarantees {exp}, in the {fmt} format.",
+   "pass_text": "Guarantees dated, in the bank's format.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "assert": "exp != 'open-ended' and fmt == 'bank'",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.7",
+    "quote": "Guarantees issued by the Bank shall carry an expiry date and follow the Bank's standard format."
+   },
+   "learned_item": "ONB-207B767C",
+   "checkability": "auto",
+   "data_fields": [
+    "ev.security.guarantee_expiry",
+    "ev.security.guarantee_format"
+   ],
+   "same_as": "EXC-02"
+  },
+  {
+   "id": "POL-RAROC-FLOOR-9-1",
+   "category": "policy",
+   "title": "Lifetime RAROC floor",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy 9.1: The lifetime RAROC of a new facility shall not be below 12%.",
+   "scope": [
+    "case",
+    "dd"
+   ],
+   "inputs": {
+    "raroc": "metrics.lifetime_raroc"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy 9.1",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Lifetime RAROC {value:,.1f}% against the policy floor {threshold:,.1f}%.",
+   "evidence": "Lifetime RAROC {value:,.1f}% against the policy floor {threshold:,.1f}%.",
+   "pass_text": "Lifetime RAROC {value:,.1f}% clears the policy floor.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "unit": "%",
+   "expr": "100 * raroc",
+   "op": ">=",
+   "threshold": 12.0,
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "9.1",
+    "quote": "The lifetime RAROC of a new facility shall not be below 12%."
+   },
+   "learned_item": "ONB-C9C36194",
+   "checkability": "auto",
+   "data_fields": [
+    "metrics.lifetime_raroc"
+   ]
+  },
+  {
+   "id": "POL-MAX-TENOR-Table6-1",
+   "category": "policy",
+   "title": "Maximum tenor by rating bucket",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy Table 6.1: Table 6.1 Maximum tenor by rating bucket: IG 10; BB 7; B 4; CCC-C 2",
+   "scope": [
+    "dd"
+   ],
+   "inputs": {
+    "tenor": "ask.tenor_years",
+    "rating": "subject.rating"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy Table 6.1",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Tenor {tenor:,.0f} years against the policy maximum {cap} years for rating {rating}.",
+   "evidence": "Tenor {tenor:,.0f} years against the policy maximum {cap} years for rating {rating}.",
+   "pass_text": "Tenor {tenor:,.0f} years within the policy maximum for rating {rating}.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "derive": {
+    "cap": "(10.0 if rating in ('AAA', 'AA+', 'AA', 'AA-', 'A+', 'A', 'A-', 'BBB+', 'BBB', 'BBB-') else (7.0 if rating in ['BB+', 'BB', 'BB-'] else (4.0 if rating in ['B+', 'B', 'B-'] else (2.0 if rating in ['CCC', 'CC', 'C'] else None))))"
+   },
+   "when": "rating in ['AAA', 'AA+', 'AA', 'AA-', 'A+', 'A', 'A-', 'BBB+', 'BBB', 'BBB-', 'BB+', 'BB', 'BB-', 'B+', 'B', 'B-', 'CCC', 'CC', 'C']",
+   "threshold_input": "cap",
+   "unit": "years",
+   "expr": "tenor",
+   "op": "<=",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "Table 6.1",
+    "quote": "Table 6.1 Maximum tenor by rating bucket: IG 10; BB 7; B 4; CCC-C 2"
+   },
+   "learned_item": "ONB-A009459E",
+   "checkability": "auto",
+   "data_fields": [
+    "ask.tenor_years",
+    "subject.rating"
+   ]
+  },
+  {
+   "id": "POL-MARGIN-BOUNDS-Table9-2",
+   "category": "policy",
+   "title": "Margin bounds by rating bucket",
+   "tests": "Sandstone Harbour Bank PJSC Credit Policy Table 9.2: Table 9.2 Margin bounds by rating bucket (basis points over the base rate): IG 100 250; BB 175 375; B 300 500; CCC-C 450 650",
+   "scope": [
+    "dd"
+   ],
+   "inputs": {
+    "m": "ask.margin_bps",
+    "rating": "subject.rating"
+   },
+   "severity": "major",
+   "on_fail": "exception",
+   "policy_ref": "Sandstone Harbour Bank PJSC Credit Policy Table 9.2",
+   "crm_article": "",
+   "doa_rank": 4,
+   "finding": "Margin {m:,.0f} bps outside the policy bounds {lo}–{hi} bps for rating {rating}.",
+   "evidence": "Margin {m:,.0f} bps outside the policy bounds {lo}–{hi} bps for rating {rating}.",
+   "pass_text": "Margin {m:,.0f} bps within the policy bounds for rating {rating}.",
+   "sources": [
+    "Learned from the bank's credit policy"
+   ],
+   "enabled": false,
+   "status": "proposed",
+   "derive": {
+    "lo": "(100.0 if rating in ('AAA', 'AA+', 'AA', 'AA-', 'A+', 'A', 'A-', 'BBB+', 'BBB', 'BBB-') else (175.0 if rating in ['BB+', 'BB', 'BB-'] else (300.0 if rating in ['B+', 'B', 'B-'] else (450.0 if rating in ['CCC', 'CC', 'C'] else None))))",
+    "hi": "(250.0 if rating in ('AAA', 'AA+', 'AA', 'AA-', 'A+', 'A', 'A-', 'BBB+', 'BBB', 'BBB-') else (375.0 if rating in ['BB+', 'BB', 'BB-'] else (500.0 if rating in ['B+', 'B', 'B-'] else (650.0 if rating in ['CCC', 'CC', 'C'] else None))))"
+   },
+   "when": "rating in ['AAA', 'AA+', 'AA', 'AA-', 'A+', 'A', 'A-', 'BBB+', 'BBB', 'BBB-', 'BB+', 'BB', 'BB-', 'B+', 'B', 'B-', 'CCC', 'CC', 'C']",
+   "unit": "bps",
+   "assert": "m >= lo and m <= hi",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "Table 9.2",
+    "quote": "Table 9.2 Margin bounds by rating bucket (basis points over the base rate): IG 100 250; BB 175 375; B 300 500; CCC-C 450 650"
+   },
+   "learned_item": "ONB-A47699EB",
+   "checkability": "auto",
+   "data_fields": [
+    "ask.margin_bps",
+    "subject.rating"
+   ]
+  }
+ ]
+}

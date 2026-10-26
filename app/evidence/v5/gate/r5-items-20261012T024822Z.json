@@ -1,0 +1,101 @@
+{
+ "module": "r5",
+ "commit": "7723e3e",
+ "utc": "20261012T024822Z",
+ "items_run": [
+  "1",
+  "2",
+  "3",
+  "4a",
+  "4b",
+  "5",
+  "6p"
+ ],
+ "passed": false,
+ "items": [
+  {
+   "item": "1. frozen guard",
+   "pass": true,
+   "detail": "FROZEN GUARD PASS (manifest): 148 frozen files match 831044ce2574 (registered exceptions, each exactly its patch: FX-7 backend/cockpit_v4/credit_policy.py; FX-2 backend/cockpit_v4/finalization.py; FX-A4 backend/cockpit_v4/product_knowledge.py; FX-12 frontend/src/components/cockpit-v4/answer-actions.tsx; FX-14a frontend/src/components/cockpit-v4/attention-drawer.tsx; FX-14d frontend/src/components/cockpit-v4/attention-panel.tsx; FX-14b frontend/src/components/cockpit-v4/cockpit-v4-home.tsx; FX-14e frontend/src/components/cockpit-v4/data-books.tsx; FX-14c frontend/src/components/cockpit-v4/ecl-panel.tsx; FX-1 frontend/src/components/cockpit-v4/visuals.tsx)",
+   "seconds": 0.1
+  },
+  {
+   "item": "2. sync tests",
+   "pass": false,
+   "detail": "88/89",
+   "seconds": 185.8
+  },
+  {
+   "item": "3a. r5 tests",
+   "pass": false,
+   "detail": "874/875 failed: ['tests/v5/ai_work/test_agent.py::test_help_walks_through_a_module_with_its_flow_links_and_a_worked_example_on_the_books']",
+   "seconds": 1247.0
+  },
+  {
+   "item": "3b. EWS data suite (restoration)",
+   "pass": true,
+   "detail": "tests=299 passed=299 failed=0",
+   "seconds": 11.6
+  },
+  {
+   "item": "3b. EWS live API suite (restoration)",
+   "pass": true,
+   "detail": "\"passed\": 130,",
+   "seconds": 4.3
+  },
+  {
+   "item": "3b. frontend unit tests",
+   "pass": true,
+   "detail": "# tests 665 | # pass 665 | # fail 0",
+   "seconds": 17.5
+  },
+  {
+   "item": "3b. Deal Desk domain build check",
+   "pass": true,
+   "detail": "",
+   "seconds": 44.4
+  },
+  {
+   "item": "3b. frontend typecheck",
+   "pass": true,
+   "detail": "",
+   "seconds": 4.9
+  },
+  {
+   "item": "3b. Admin domain build check",
+   "pass": true,
+   "detail": "",
+   "seconds": 0.6
+  },
+  {
+   "item": "4a. Cockpit suite tests/cockpit_v4",
+   "pass": true,
+   "detail": "3437/3445 pass; 8 declared exceptions",
+   "seconds": 1220.4
+  },
+  {
+   "item": "4-. Cockpit API and UI started again",
+   "pass": true,
+   "detail": "http://127.0.0.1:5500",
+   "seconds": 35.1
+  },
+  {
+   "item": "4b. Cockpit panels equal the post-rescale baseline",
+   "pass": true,
+   "detail": "PROBLEMS: 0",
+   "seconds": 0.7
+  },
+  {
+   "item": "5. browser smoke",
+   "pass": true,
+   "detail": "32/32 browser checks passed",
+   "seconds": 33.4
+  },
+  {
+   "item": "6. UAT sweep (in parts)",
+   "pass": false,
+   "detail": "551/557 sweep steps passed (7876 checks), in parts",
+   "seconds": 2722.7
+  }
+ ]
+}

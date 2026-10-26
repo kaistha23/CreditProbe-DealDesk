@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "note": "Round G seeded links: lines added to the fictional customer packs' counterparty lists so that seeded deals share counterparties. Every link is marked as seeded in the graph and on screen. All names and figures are fictional.",
+  "links": [
+    {
+      "subject": {
+        "name": "Sawaed Al Bina Contracting Co.",
+        "cif": "CB09002",
+        "cr": "2050117342"
+      },
+      "rel": "has_supplier",
+      "counterparty": {
+        "name": "Al Kharj United Contracting",
+        "cif": "CB00808",
+        "kind": "company"
+      },
+      "attrs": {
+        "share_pct": 3.1,
+        "purchases": 14500000,
+        "relationship": "Earthworks subcontractor, Package B",
+        "terms": "60 days"
+      },
+      "doc": {
+        "doc_id": "C2-25",
+        "doc_type": "top_customers_suppliers",
+        "doc_label": "C2-25 · Top customers and suppliers",
+        "page": 1,
+        "date": "2026-09-30"
+      },
+      "proposal_id": "R16-C2",
+      "author": "Round G seed"
+    },
+    {
+      "subject": {
+        "name": "Sawaed Al Bina Contracting Co.",
+        "cif": "CB09002",
+        "cr": "2050117342"
+      },
+      "rel": "has_supplier",
+      "counterparty": {
+        "name": "Nukhba Polymer Industries Co.",
+        "cr": "2055104486",
+        "kind": "company"
+      },
+      "attrs": {
+        "total": 2600000,
+        "relationship": "HDPE and PVC pipes for Package B",
+        "terms": "90 days"
+      },
+      "doc": {
+        "doc_id": "C2-24",
+        "doc_type": "payables_ageing",
+        "doc_label": "C2-24 · Payables ageing",
+        "page": 1,
+        "date": "2026-09-30"
+      },
+      "proposal_id": "R16-C2",
+      "author": "Round G seed"
+    },
+    {
+      "subject": {
+        "name": "Dar Al Naseem Medical Supplies Co.",
+        "cif": "CB09001",
+        "cr": "1010384527"
+      },
+      "rel": "has_buyer",
+      "counterparty": {
+        "name": "Al Faisaliah Continental Medical",
+        "cif": "CB01655",
+        "kind": "company"
+      },
+      "attrs": {
+        "total": 6400000,
+        "share_pct": 2.6,
+        "relationship": "Third party (private hospital group)",
+        "terms": "120 days"
+      },
+      "doc": {
+        "doc_id": "C1-24",
+        "doc_type": "receivables_ageing",
+        "doc_label": "C1-24 · Receivables ageing",
+        "page": 1,
+        "date": "2026-09-30"
+      },
+      "proposal_id": "R16-C1",
+      "author": "Round G seed"
+    },
+    {
+      "subject": {
+        "name": "Jeddah Al Shifa Hospital Company",
+        "cif": "DN008"
+      },
+      "rel": "has_supplier",
+      "counterparty": {
+        "name": "Dar Al Naseem Medical Supplies Co.",
+        "cif": "CB09001",
+        "cr": "1010384527",
+        "kind": "company"
+      },
+      "attrs": {
+        "share_pct": 14.0,
+        "purchases": 9800000,
+        "relationship": "Medical consumables and devices",
+        "terms": "90 days"
+      },
+      "doc": {
+        "doc_id": "DD-08-SUP",
+        "doc_type": "top_customers_suppliers",
+        "doc_label": "DD-08 · Top suppliers (with the application)",
+        "page": 2,
+        "date": "2026-10-02"
+      },
+      "proposal_id": "DD-08",
+      "author": "Round G seed"
+    }
+  ]
+}

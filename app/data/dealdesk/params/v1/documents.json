@@ -1,0 +1,611 @@
+{
+  "version": "v2",
+  "effective": "2026-10-19",
+  "owner": "Credit Policy Unit",
+  "policy": {
+    "id": "CREDIT-POLICY",
+    "name": "Credit Policy",
+    "version": "2026.1"
+  },
+  "description": "The documents every credit proposal needs, by product, segment, case type and policy clause, published to Data Domains as dd_document_rule (ids DR-nn, shared with the product templates). A rule applies when its product, segment and case-type lists match (\"*\" matches any; product ids of backend/dealdesk/products/templates.py; segment corporate or sme). 'scope' expands a rule to one item per group entity, UBO, other bank, guarantor, project or collateral. 'validity_days' marks a document expired once it is older (0 = no expiry); 'evidence' names the deal-file field that proves receipt when no dd_document row exists.",
+  "statuses": [
+    "received",
+    "pending",
+    "expired",
+    "waived"
+  ],
+  "rules": [
+    {
+      "id": "DR-01",
+      "name": "Trade licence (valid)",
+      "group": "Constitution",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "*"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_group_entity",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.1 KYC and constitution documents for every group entity",
+      "evidence": "documents.trade_licence",
+      "doc_type": "trade_licence"
+    },
+    {
+      "id": "DR-02",
+      "name": "Memorandum and articles of association",
+      "group": "Constitution",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.1 Constitution and signing authority",
+      "evidence": "documents.moa",
+      "doc_type": "moa"
+    },
+    {
+      "id": "DR-03",
+      "name": "Audited financial statements (last 3 years)",
+      "group": "Financials",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "critical",
+      "clause": "Credit Policy 3.3 Audited financials within 180 days of year end",
+      "evidence": "documents.audited",
+      "doc_type": "audited_fs"
+    },
+    {
+      "id": "DR-04",
+      "name": "Interim financial statements (latest quarter or half-year)",
+      "group": "Financials",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 180,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.3 Interim financials within 90 days of period end",
+      "evidence": "documents.interim",
+      "doc_type": "interim_fs"
+    },
+    {
+      "id": "DR-05",
+      "name": "Credit bureau report for each group entity (SIMAH)",
+      "group": "Bureau",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "*"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_group_entity",
+      "validity_days": 30,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.5 Bureau report for every group entity, not older than 30 days at review",
+      "evidence": "documents.bureau",
+      "doc_type": "bureau_entity"
+    },
+    {
+      "id": "DR-06",
+      "name": "Credit bureau report for each UBO (SIMAH)",
+      "group": "Bureau",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "*"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_ubo",
+      "validity_days": 30,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.5 Bureau report for every UBO, with consent",
+      "evidence": "documents.bureau",
+      "doc_type": "bureau_ubo"
+    },
+    {
+      "id": "DR-07",
+      "name": "Facility offer letter from each other bank",
+      "group": "Bureau",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_bank",
+      "validity_days": 365,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.2 Other-bank facilities evidenced by letters",
+      "evidence": "documents.fal",
+      "doc_type": "other_bank_fal"
+    },
+    {
+      "id": "DR-08",
+      "name": "Guarantor net-worth statement",
+      "group": "Security",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "*"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_guarantor",
+      "validity_days": 365,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.5 Guarantees supported by a net-worth statement not older than 12 months",
+      "evidence": "documents.net_worth",
+      "doc_type": "guarantor_nw"
+    },
+    {
+      "id": "DR-09",
+      "name": "Legal opinion on each guarantee",
+      "group": "Legal",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "*"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_guarantor",
+      "validity_days": 730,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 7.4 Legal opinion on enforceability not older than 24 months",
+      "evidence": "documents.legal_opinion",
+      "doc_type": "legal_opinion"
+    },
+    {
+      "id": "DR-10",
+      "name": "Insurance assigned to the bank",
+      "group": "Security",
+      "products": [
+        "corporate"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "renewal"
+      ],
+      "scope": "subject",
+      "validity_days": 365,
+      "mandatory": true,
+      "severity": "minor",
+      "clause": "Credit Policy 7.5 Insurance of stock and financed assets",
+      "evidence": "documents.insurance",
+      "doc_type": "insurance"
+    },
+    {
+      "id": "DR-11",
+      "name": "Project contract and letter of award",
+      "group": "Project",
+      "products": [
+        "contracting"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_project",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 4.7 Contract finance against an awarded contract",
+      "evidence": "documents.contract",
+      "doc_type": "project_contract"
+    },
+    {
+      "id": "DR-12",
+      "name": "Latest certified payment certificate",
+      "group": "Project",
+      "products": [
+        "contracting"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_project",
+      "validity_days": 120,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 4.7 Finance against certified payment certificates",
+      "evidence": "documents.ipc",
+      "doc_type": "payment_certificate"
+    },
+    {
+      "id": "DR-13",
+      "name": "Employer's financial statements",
+      "group": "Project",
+      "products": [
+        "contracting"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_project",
+      "validity_days": 365,
+      "mandatory": false,
+      "severity": "minor",
+      "clause": "Credit Policy 4.7 Employer credit standing",
+      "evidence": "documents.employer_fs",
+      "doc_type": "employer_fs"
+    },
+    {
+      "id": "DR-14",
+      "name": "Project cash flow with cost breakdown",
+      "group": "Project",
+      "products": [
+        "contracting"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_project",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 4.7 Project cash flow and peak deficit",
+      "evidence": "documents.project_cashflow",
+      "doc_type": "project_cashflow"
+    },
+    {
+      "id": "DR-15",
+      "name": "Escrow agreement and RERA registration",
+      "group": "Project",
+      "products": [
+        "escrow"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "critical",
+      "clause": "Credit Policy 7.5 Escrow account and waterfall",
+      "evidence": "documents.escrow",
+      "doc_type": "escrow_agreement"
+    },
+    {
+      "id": "DR-16",
+      "name": "Valuation report of the project or collateral",
+      "group": "Security",
+      "products": [
+        "escrow"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 365,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 7.3 Valuation by a panel valuer, not older than 12 months",
+      "evidence": "documents.valuation",
+      "doc_type": "valuation"
+    },
+    {
+      "id": "DR-17",
+      "name": "Syndication information memorandum and facility agreement",
+      "group": "Syndication",
+      "products": [
+        "syndicated"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.1 Participations: independent assessment of the agent's package",
+      "evidence": "documents.facility_agreement",
+      "doc_type": "syndication_ia"
+    },
+    {
+      "id": "DR-18",
+      "name": "Signed SME application and owner statement",
+      "group": "SME",
+      "products": [
+        "sme"
+      ],
+      "segments": [
+        "sme"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "SME Programme 3.1 Application",
+      "evidence": "documents.sme_application",
+      "doc_type": "sme_application"
+    },
+    {
+      "id": "DR-19",
+      "name": "Board resolution or power of attorney to borrow",
+      "group": "Constitution",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.1 Authority to borrow",
+      "evidence": "documents.board_resolution",
+      "doc_type": "board_resolution"
+    },
+    {
+      "id": "DR-20",
+      "name": "KYC of shareholders and UBOs (ID, ownership chart)",
+      "group": "Constitution",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "*"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 365,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.1 Beneficial ownership refreshed on every ownership change",
+      "evidence": "documents.kyc",
+      "doc_type": "kyc_ubo"
+    },
+    {
+      "id": "DR-21",
+      "name": "Standalone audited financials of the borrower",
+      "group": "Financials",
+      "products": [
+        "corporate",
+        "contracting"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.3 Standalone accounts where combined or consolidated statements are submitted",
+      "evidence": "documents.standalone",
+      "doc_type": "standalone_fs"
+    },
+    {
+      "id": "DR-22",
+      "name": "Projections with assumptions (3 years)",
+      "group": "Financials",
+      "products": [
+        "corporate",
+        "contracting",
+        "escrow",
+        "syndicated"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": false,
+      "severity": "minor",
+      "clause": "Credit Policy 3.4 Repayment capacity",
+      "evidence": "documents.projections",
+      "doc_type": "projections"
+    },
+    {
+      "id": "DR-23",
+      "name": "Central bank risk bureau (CBRBR) extract for the group",
+      "group": "Bureau",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "corporate"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 90,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 3.5 CBRBR for the subject and every related entity",
+      "evidence": "documents.cbrbr",
+      "doc_type": "cbrbr"
+    },
+    {
+      "id": "DR-24",
+      "name": "Signed guarantee and security documents (perfected)",
+      "group": "Legal",
+      "products": [
+        "*"
+      ],
+      "segments": [
+        "*"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 0,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 7.4 Security perfected prior to limit loading",
+      "evidence": "documents.security_signed",
+      "doc_type": "security_documents"
+    },
+    {
+      "id": "DR-25",
+      "name": "Valuation report of pledged collateral",
+      "group": "Security",
+      "products": [
+        "corporate",
+        "sme"
+      ],
+      "segments": [
+        "*"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "each_collateral",
+      "validity_days": 365,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "Credit Policy 7.3 Valuation not older than 12 months by a panel valuer",
+      "evidence": "documents.valuation",
+      "doc_type": "valuation"
+    },
+    {
+      "id": "DR-26",
+      "name": "Bank statements, last 12 months",
+      "group": "Conduct",
+      "products": [
+        "sme"
+      ],
+      "segments": [
+        "sme"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 90,
+      "mandatory": true,
+      "severity": "major",
+      "clause": "SME Programme 3.3 Account conduct",
+      "evidence": "documents.bank_statements",
+      "doc_type": "bank_statements"
+    },
+    {
+      "id": "DR-27",
+      "name": "VAT returns, last 4 quarters",
+      "group": "SME",
+      "products": [
+        "sme"
+      ],
+      "segments": [
+        "sme"
+      ],
+      "case_types": [
+        "*"
+      ],
+      "scope": "subject",
+      "validity_days": 180,
+      "mandatory": false,
+      "severity": "minor",
+      "clause": "SME Programme 3.4 Turnover evidence",
+      "evidence": "documents.vat",
+      "doc_type": "vat_returns"
+    }
+  ],
+  "scopes": [
+    "subject",
+    "each_group_entity",
+    "each_ubo",
+    "each_bank",
+    "each_guarantor",
+    "each_project",
+    "each_collateral"
+  ],
+  "products": [
+    "corporate",
+    "contracting",
+    "escrow",
+    "syndicated",
+    "sme"
+  ],
+  "segments": [
+    "corporate",
+    "sme"
+  ]
+}

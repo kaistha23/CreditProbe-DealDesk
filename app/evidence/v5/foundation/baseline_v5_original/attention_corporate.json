@@ -1,0 +1,1589 @@
+{
+ "amount_scale": "million",
+ "attention_label": "Segments requiring attention",
+ "cached": true,
+ "comparison_basis": "previous quarter",
+ "comparison_month": "",
+ "comparison_period": "2026Q1",
+ "comparison_quarter": "2026Q1",
+ "computed_ms": 144,
+ "domain_id": "corporate",
+ "domain_label": "Corporate Credit",
+ "ecl_highlights": [
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "display": "SAR 779,475 million",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [],
+    "borrower_count": 0,
+    "counterparty_column": "borrower_id",
+    "entity_count": 0,
+    "entity_label": "borrowers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn",
+     "ead_sar_mn"
+    ],
+    "note": "This is a book-level figure, so there is no segment below it to open.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_facility_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Which segments drove ECL in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "sector"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What is the book's ECL coverage in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "How does Corporate ECL split by stage in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "stage"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Which borrowers carry the most of Corporate ECL in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "borrower_id",
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Corporate ECL moved over the last 8 quarters?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "sector",
+    "measure": "ecl_sar_mn",
+    "relation": "corp_facility_quarter"
+   },
+   "evidence_url": "",
+   "family": "ecl-total",
+   "headline": "Corporate recognised ECL is SAR 779,475 million",
+   "item_id": "att-c815287b8c678a48",
+   "key_numbers": [
+    {
+     "display": "SAR 779,475 million",
+     "label": "Recognised ECL, 2026Q2"
+    },
+    {
+     "display": "SAR 574,271 million",
+     "label": "Recognised ECL, 2026Q1"
+    },
+    {
+     "display": "SAR 15,370,014 million",
+     "label": "Exposure at default, 2026Q2"
+    },
+    {
+     "display": "5.07%",
+     "label": "Coverage, 2026Q2"
+    }
+   ],
+   "metric": "ecl_total",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": null,
+    "from_display": "SAR 574,271 million",
+    "to": null,
+    "to_display": "SAR 779,475 million",
+    "unit": "amount"
+   },
+   "one_line": "Across the book in 2026Q2, on exposure of SAR 15,370,014 million.",
+   "period_noun": "quarter",
+   "possible_drivers": [],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "portfolio",
+   "score": 0.0,
+   "section": "ecl_highlight",
+   "segment": "Corporate",
+   "segment_dimension": "portfolio",
+   "segment_dimension_label": "Whole book",
+   "segment_label": "Corporate",
+   "severity": "medium",
+   "what_changed": "Across the book in 2026Q2, on exposure of SAR 15,370,014 million.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "Recognised ECL is one of the four figures this book reports on its own ECL position for 2026Q2."
+  },
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "display": "SAR 275,512 million",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [],
+    "borrower_count": 0,
+    "counterparty_column": "borrower_id",
+    "entity_count": 0,
+    "entity_label": "borrowers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn",
+     "ead_sar_mn"
+    ],
+    "note": "This is a book-level figure, so there is no segment below it to open.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_facility_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "What drove Construction ECL in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "sector"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What is Construction ECL coverage in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "How does Construction ECL split by stage in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "stage"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Which borrowers carry the most of Construction ECL in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "borrower_id",
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Construction ECL moved over the last 8 quarters?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "sector",
+    "measure": "ecl_sar_mn",
+    "relation": "corp_facility_quarter"
+   },
+   "evidence_url": "",
+   "family": "ecl-largest",
+   "headline": "Construction carries the most ECL",
+   "item_id": "att-293e424ab4c9d2c7",
+   "key_numbers": [
+    {
+     "display": "SAR 275,512 million",
+     "label": "Recognised ECL, 2026Q2"
+    },
+    {
+     "display": "SAR 178,971 million",
+     "label": "Recognised ECL, 2026Q1"
+    }
+   ],
+   "metric": "ecl_largest",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": null,
+    "from_display": "SAR 178,971 million",
+    "to": null,
+    "to_display": "SAR 275,512 million",
+    "unit": "amount"
+   },
+   "one_line": "SAR 275,512 million of the SAR 779,475 million recognised.",
+   "period_noun": "quarter",
+   "possible_drivers": [],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "segment",
+   "score": 0.0,
+   "section": "ecl_highlight",
+   "segment": "Construction",
+   "segment_dimension": "sector",
+   "segment_dimension_label": "Sector",
+   "segment_label": "Construction",
+   "severity": "medium",
+   "what_changed": "SAR 275,512 million of the SAR 779,475 million recognised.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "Recognised ECL is one of the four figures this book reports on its own ECL position for 2026Q2."
+  },
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "display": "SAR 96,541 million",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [],
+    "borrower_count": 0,
+    "counterparty_column": "borrower_id",
+    "entity_count": 0,
+    "entity_label": "borrowers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn",
+     "ead_sar_mn"
+    ],
+    "note": "This is a book-level figure, so there is no segment below it to open.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_facility_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "What drove Construction ECL in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "sector"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What is Construction ECL coverage in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "How does Construction ECL split by stage in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "stage"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Which borrowers carry the most of Construction ECL in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "borrower_id",
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Construction ECL moved over the last 8 quarters?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "sector",
+    "measure": "ecl_sar_mn",
+    "relation": "corp_facility_quarter"
+   },
+   "evidence_url": "",
+   "family": "ecl-increase",
+   "headline": "Construction added the most ECL",
+   "item_id": "att-83a38785679a28f2",
+   "key_numbers": [
+    {
+     "display": "SAR 96,541 million",
+     "label": "ECL added this quarter, 2026Q2"
+    },
+    {
+     "display": "SAR 178,971 million",
+     "label": "ECL added this quarter, 2026Q1"
+    }
+   ],
+   "metric": "ecl_increase",
+   "metric_label": "ECL added this quarter",
+   "movement": {
+    "from": null,
+    "from_display": "SAR 178,971 million",
+    "to": null,
+    "to_display": "SAR 96,541 million",
+    "unit": "amount"
+   },
+   "one_line": "Up SAR 96,541 million against 2026Q1.",
+   "period_noun": "quarter",
+   "possible_drivers": [],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "segment",
+   "score": 0.0,
+   "section": "ecl_highlight",
+   "segment": "Construction",
+   "segment_dimension": "sector",
+   "segment_dimension_label": "Sector",
+   "segment_label": "Construction",
+   "severity": "medium",
+   "what_changed": "Up SAR 96,541 million against 2026Q1.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "ECL added this quarter is one of the four figures this book reports on its own ECL position for 2026Q2."
+  },
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "display": "35.46%",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [],
+    "borrower_count": 0,
+    "counterparty_column": "borrower_id",
+    "entity_count": 0,
+    "entity_label": "borrowers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn",
+     "ead_sar_mn"
+    ],
+    "note": "This is a book-level figure, so there is no segment below it to open.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_facility_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Which segments drove ECL in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "sector"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What is the book's ECL coverage in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "How does Corporate ECL split by stage in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn",
+       "stage"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Which borrowers carry the most of Corporate ECL in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "borrower_id",
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Corporate ECL moved over the last 8 quarters?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "sector",
+    "measure": "ecl_sar_mn",
+    "relation": "corp_facility_quarter"
+   },
+   "evidence_url": "",
+   "family": "ecl-stage2",
+   "headline": "Corporate Stage 2 and 3 exposure",
+   "item_id": "att-2874518c6420ad35",
+   "key_numbers": [
+    {
+     "display": "35.46%",
+     "label": "Stage 2 and 3 share of exposure, 2026Q2"
+    },
+    {
+     "display": "SAR 5,450,535 million",
+     "label": "Stage 2 and 3 exposure, 2026Q2"
+    },
+    {
+     "display": "SAR 15,370,014 million",
+     "label": "Exposure at default, 2026Q2"
+    }
+   ],
+   "metric": "ecl_stage2",
+   "metric_label": "Stage 2 and 3 share of exposure",
+   "movement": {
+    "from": null,
+    "from_display": "",
+    "to": null,
+    "to_display": "35.46%",
+    "unit": "amount"
+   },
+   "one_line": "SAR 5,450,535 million of SAR 15,370,014 million sits in Stage 2 or 3.",
+   "period_noun": "quarter",
+   "possible_drivers": [],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "portfolio",
+   "score": 0.0,
+   "section": "ecl_highlight",
+   "segment": "Corporate",
+   "segment_dimension": "portfolio",
+   "segment_dimension_label": "Whole book",
+   "segment_label": "Corporate",
+   "severity": "medium",
+   "what_changed": "SAR 5,450,535 million of SAR 15,370,014 million sits in Stage 2 or 3.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "Stage 2 and 3 share of exposure is one of the four figures this book reports on its own ECL position for 2026Q2."
+  }
+ ],
+ "highlights_label": "Latest-quarter ECL highlights",
+ "method_summary": {
+  "candidates_considered": 87,
+  "families": [
+   "sector_stage2",
+   "sector_ecl",
+   "sector_coverage",
+   "sector_pastdue",
+   "product_stage2",
+   "product_ecl",
+   "region_ecl",
+   "sector_downgrades",
+   "sector_watchlist",
+   "sector_breaches",
+   "covenant_breaches",
+   "group_concentration",
+   "sector_ltv"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "model_calls": 0,
+ "ownership": {
+  "basis": "recorded_book",
+  "functionality": "cockpit",
+  "note": "Movements in the recorded Corporate Credit book between two reporting quarters. Not Early Warning: no live signal and no prediction is used here."
+ },
+ "period_noun": "quarter",
+ "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+ "release_id": "v4-saudi-corporate-20q-v4",
+ "reporting_currency": "SAR",
+ "reporting_month": "",
+ "reporting_period": "2026Q2",
+ "reporting_quarter": "2026Q2",
+ "segments_requiring_attention": [
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [
+     "sub_sector",
+     "borrowers"
+    ],
+    "borrower_count": 622,
+    "counterparty_column": "borrower_id",
+    "entity_count": 622,
+    "entity_label": "borrowers",
+    "finer_dimension": "sub_sector",
+    "measure_fields": [
+     "ecl_sar_mn"
+    ],
+    "note": "Sector has a level below it in this book: sub_sector.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_facility_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Show the borrowers behind Construction in 2026Q2.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "borrower_id"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What drove the change in Recognised ECL for Construction in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Break Construction down by sub sector.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "sub_sector"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_quarter",
+      "question": "Split Construction by product type.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "product_type"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Recognised ECL moved for Construction over the last 8 quarters?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "Construction",
+      "segment_dimension": "sector"
+     }
+    ],
+    "unavailable": []
+   },
+   "evidence": {
+    "dimension": "sector",
+    "measure": "ecl",
+    "relation": "corp_facility_quarter"
+   },
+   "evidence_url": "",
+   "family": "sector_ecl",
+   "headline": "Construction: ECL rose to SAR 275,512 million",
+   "item_id": "att-621713e51cc6cfd6",
+   "key_numbers": [
+    {
+     "display": "SAR 275,512 million",
+     "label": "Recognised ECL, 2026Q2"
+    },
+    {
+     "display": "SAR 178,971 million",
+     "label": "Recognised ECL, 2026Q1"
+    },
+    {
+     "display": "SAR 1,869,525 million",
+     "label": "Exposure at default, 2026Q2"
+    },
+    {
+     "display": "12.16%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "ecl",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": 178971.10490000088,
+    "from_display": "SAR 178,971 million",
+    "to": 275511.74239999935,
+    "to_display": "SAR 275,512 million",
+    "unit": "SAR million"
+   },
+   "period_noun": "quarter",
+   "possible_drivers": [
+    {
+     "delta": 0.111988,
+     "metric": "breach_share",
+     "relationship": "recorded alongside",
+     "statement": "Share of covenant tests breached on the same segment also rose over this quarter.",
+     "strength": 1.0
+    },
+    {
+     "delta": 0.097709,
+     "metric": "past_due_share",
+     "relationship": "recorded alongside",
+     "statement": "Past-due share of EAD on the same segment also rose over this quarter.",
+     "strength": 0.9771
+    },
+    {
+     "delta": 0.096463,
+     "metric": "downgrade_share",
+     "relationship": "recorded alongside",
+     "statement": "Share of obligors downgraded this quarter on the same segment also rose over this quarter.",
+     "strength": 0.9646
+    }
+   ],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "segment",
+   "score": 0.148624,
+   "section": "attention",
+   "segment": "Construction",
+   "segment_dimension": "sector",
+   "segment_dimension_label": "Sector",
+   "segment_label": "Construction",
+   "severity": "high",
+   "what_changed": "Recognised ECL was SAR 178,971 million in 2026Q1 and is SAR 275,512 million in 2026Q2.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "It moved 53.94% higher than 2026Q1 on a segment holding 12.16% of the book's exposure at default."
+  },
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [
+     "borrowers"
+    ],
+    "borrower_count": 2976,
+    "counterparty_column": "borrower_id",
+    "entity_count": 2976,
+    "entity_label": "borrowers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn"
+    ],
+    "note": "There is no subsegment level below product type in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_facility_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Show the borrowers behind Supply Chain Finance in 2026Q2.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "borrower_id"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "supply_chain_finance",
+      "segment_dimension": "product_type"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What drove the change in Recognised ECL for Supply Chain Finance in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "supply_chain_finance",
+      "segment_dimension": "product_type"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_quarter",
+      "question": "Split Supply Chain Finance by region.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "region"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "supply_chain_finance",
+      "segment_dimension": "product_type"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_quarter",
+      "question": "Split Supply Chain Finance by relationship segment.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "relationship_tier"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "supply_chain_finance",
+      "segment_dimension": "product_type"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Recognised ECL moved for Supply Chain Finance over the last 8 quarters?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "supply_chain_finance",
+      "segment_dimension": "product_type"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "product_type",
+    "measure": "ecl",
+    "relation": "corp_facility_quarter"
+   },
+   "evidence_url": "",
+   "family": "product_ecl",
+   "headline": "Supply Chain Finance: ECL rose to SAR 89,901 million",
+   "item_id": "att-34b2782fe9711c5b",
+   "key_numbers": [
+    {
+     "display": "SAR 89,901 million",
+     "label": "Recognised ECL, 2026Q2"
+    },
+    {
+     "display": "SAR 24,086 million",
+     "label": "Recognised ECL, 2026Q1"
+    },
+    {
+     "display": "SAR 760,202 million",
+     "label": "Exposure at default, 2026Q2"
+    },
+    {
+     "display": "4.95%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "ecl",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": 24086.322099999987,
+    "from_display": "SAR 24,086 million",
+    "to": 89900.8456000001,
+    "to_display": "SAR 89,901 million",
+    "unit": "SAR million"
+   },
+   "period_noun": "quarter",
+   "possible_drivers": [],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "segment",
+   "score": 0.07768,
+   "section": "attention",
+   "segment": "supply_chain_finance",
+   "segment_dimension": "product_type",
+   "segment_dimension_label": "Product type",
+   "segment_label": "Supply Chain Finance",
+   "severity": "high",
+   "what_changed": "Recognised ECL was SAR 24,086 million in 2026Q1 and is SAR 89,901 million in 2026Q2.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "It moved 273.24% higher than 2026Q1 on a segment holding 4.95% of the book's exposure at default."
+  },
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [
+     "borrowers"
+    ],
+    "borrower_count": 958,
+    "counterparty_column": "borrower_id",
+    "entity_count": 958,
+    "entity_label": "borrowers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn"
+    ],
+    "note": "There is no subsegment level below region in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_facility_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Show the borrowers behind Makkah in 2026Q2.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "borrower_id"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Makkah",
+      "segment_dimension": "region"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What drove the change in Recognised ECL for Makkah in 2026Q2?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Makkah",
+      "segment_dimension": "region"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_quarter",
+      "question": "Split Makkah by product type.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "product_type"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Makkah",
+      "segment_dimension": "region"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_quarter",
+      "question": "Split Makkah by relationship segment.",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "relationship_tier"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Makkah",
+      "segment_dimension": "region"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Recognised ECL moved for Makkah over the last 8 quarters?",
+      "relation": "corp_facility_quarter",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "Makkah",
+      "segment_dimension": "region"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "region",
+    "measure": "ecl",
+    "relation": "corp_facility_quarter"
+   },
+   "evidence_url": "",
+   "family": "region_ecl",
+   "headline": "Makkah: ECL rose to SAR 183,510 million",
+   "item_id": "att-14116d617d341820",
+   "key_numbers": [
+    {
+     "display": "SAR 183,510 million",
+     "label": "Recognised ECL, 2026Q2"
+    },
+    {
+     "display": "SAR 130,228 million",
+     "label": "Recognised ECL, 2026Q1"
+    },
+    {
+     "display": "SAR 2,718,546 million",
+     "label": "Exposure at default, 2026Q2"
+    },
+    {
+     "display": "17.69%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "ecl",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": 130228.26199999974,
+    "from_display": "SAR 130,228 million",
+    "to": 183510.14500000002,
+    "to_display": "SAR 183,510 million",
+    "unit": "SAR million"
+   },
+   "period_noun": "quarter",
+   "possible_drivers": [],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "segment",
+   "score": 0.06152,
+   "section": "attention",
+   "segment": "Makkah",
+   "segment_dimension": "region",
+   "segment_dimension_label": "Region",
+   "segment_label": "Makkah",
+   "severity": "high",
+   "what_changed": "Recognised ECL was SAR 130,228 million in 2026Q1 and is SAR 183,510 million in 2026Q2.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "It moved 40.91% higher than 2026Q1 on a segment holding 17.69% of the book's exposure at default."
+  },
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [
+     "facilities"
+    ],
+    "borrower_count": 6764,
+    "counterparty_column": "facility_id",
+    "entity_count": 6764,
+    "entity_label": "facilities",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ltv_pct"
+    ],
+    "note": "There is no subsegment level below collateral type in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_collateral_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Show the facilities behind Receivables in 2026Q2.",
+      "relation": "corp_collateral_quarter",
+      "required_fields": [
+       "facility_id"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Receivables",
+      "segment_dimension": "collateral_type"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What drove the change in Exposure as a share of pledged collateral value for Receivables in 2026Q2?",
+      "relation": "corp_collateral_quarter",
+      "required_fields": [
+       "ltv_pct"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Receivables",
+      "segment_dimension": "collateral_type"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Exposure as a share of pledged collateral value moved for Receivables over the last 8 quarters?",
+      "relation": "corp_collateral_quarter",
+      "required_fields": [
+       "ltv_pct"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "Receivables",
+      "segment_dimension": "collateral_type"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "collateral_type",
+    "measure": "ltv",
+    "relation": "corp_collateral_quarter"
+   },
+   "evidence_url": "",
+   "family": "sector_ltv",
+   "headline": "Receivables: Loan to value rose to 172.67%",
+   "item_id": "att-5f0c7cb4fd1160c6",
+   "key_numbers": [
+    {
+     "display": "172.67%",
+     "label": "Exposure as a share of pledged collateral value, 2026Q2"
+    },
+    {
+     "display": "150.18%",
+     "label": "Exposure as a share of pledged collateral value, 2026Q1"
+    },
+    {
+     "display": "SAR 2,075,225 million",
+     "label": "Exposure at default, 2026Q2"
+    },
+    {
+     "display": "20.75%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "ltv",
+   "metric_label": "Exposure as a share of pledged collateral value",
+   "movement": {
+    "from": 1.501826764036421,
+    "from_display": "150.18%",
+    "to": 1.7266766898285069,
+    "to_display": "172.67%",
+    "unit": "percent"
+   },
+   "period_noun": "quarter",
+   "possible_drivers": [],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "segment",
+   "score": 0.046661,
+   "section": "attention",
+   "segment": "Receivables",
+   "segment_dimension": "collateral_type",
+   "segment_dimension_label": "Collateral type",
+   "segment_label": "Receivables",
+   "severity": "high",
+   "what_changed": "Exposure as a share of pledged collateral value was 150.18% in 2026Q1 and is 172.67% in 2026Q2.",
+   "what_to_review_next": [
+    "Whether the exposure grew or the collateral value fell.",
+    "How old the valuations behind it are.",
+    "What is left uncovered after the haircut."
+   ],
+   "why_it_appeared": "It moved 22.48 pp higher than 2026Q1 on a segment holding 20.75% of the book's exposure at default."
+  },
+  {
+   "comparison_basis": "previous quarter",
+   "comparison_month": "",
+   "comparison_period": "2026Q1",
+   "comparison_quarter": "2026Q1",
+   "domain_id": "corporate",
+   "drilldown": {
+    "available": [
+     "facilities"
+    ],
+    "borrower_count": 6764,
+    "counterparty_column": "facility_id",
+    "entity_count": 6764,
+    "entity_label": "facilities",
+    "finer_dimension": "",
+    "measure_fields": [
+     "breach_flag"
+    ],
+    "note": "There is no subsegment level below covenant type in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_quarter",
+    "relation": "corp_covenant_quarter",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_quarter",
+      "question": "Show the facilities behind Current Ratio in 2026Q2.",
+      "relation": "corp_covenant_quarter",
+      "required_fields": [
+       "facility_id"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Current Ratio",
+      "segment_dimension": "covenant_type"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_quarter",
+      "question": "What drove the change in Share of covenant tests breached for Current Ratio in 2026Q2?",
+      "relation": "corp_covenant_quarter",
+      "required_fields": [
+       "breach_flag"
+      ],
+      "required_periods": [
+       "2026Q2"
+      ],
+      "required_quarters": [
+       "2026Q2"
+      ],
+      "segment": "Current Ratio",
+      "segment_dimension": "covenant_type"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_quarter",
+      "question": "How has Share of covenant tests breached moved for Current Ratio over the last 8 quarters?",
+      "relation": "corp_covenant_quarter",
+      "required_fields": [
+       "breach_flag"
+      ],
+      "required_periods": [
+       "2024Q3",
+       "2024Q4",
+       "2025Q1",
+       "2025Q2",
+       "2025Q3",
+       "2025Q4",
+       "2026Q1",
+       "2026Q2"
+      ],
+      "required_quarters": [],
+      "segment": "Current Ratio",
+      "segment_dimension": "covenant_type"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "covenant_type",
+    "measure": "breach_share",
+    "relation": "corp_covenant_quarter"
+   },
+   "evidence_url": "",
+   "family": "covenant_breaches",
+   "headline": "Current Ratio: Covenant breaches rose to 12.76%",
+   "item_id": "att-f07158187b0443e1",
+   "key_numbers": [
+    {
+     "display": "12.76%",
+     "label": "Share of covenant tests breached, 2026Q2"
+    },
+    {
+     "display": "10.26%",
+     "label": "Share of covenant tests breached, 2026Q1"
+    },
+    {
+     "display": "SAR 6,764 million",
+     "label": "Exposure at default, 2026Q2"
+    },
+    {
+     "display": "30.86%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "breach_share",
+   "metric_label": "Share of covenant tests breached",
+   "movement": {
+    "from": 0.10261760242792109,
+    "from_display": "10.26%",
+    "to": 0.12758722649319928,
+    "to_display": "12.76%",
+    "unit": "percent"
+   },
+   "period_noun": "quarter",
+   "possible_drivers": [],
+   "release_fingerprint": "c79d0fdf8753576f391f2a6bb84f281595e7445291a558abe639f6a43e22a740",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_month": "",
+   "reporting_period": "2026Q2",
+   "reporting_quarter": "2026Q2",
+   "scope": "segment",
+   "score": 0.007706,
+   "section": "attention",
+   "segment": "Current Ratio",
+   "segment_dimension": "covenant_type",
+   "segment_dimension_label": "Covenant type",
+   "segment_label": "Current Ratio",
+   "severity": "medium",
+   "what_changed": "Share of covenant tests breached was 10.26% in 2026Q1 and is 12.76% in 2026Q2.",
+   "what_to_review_next": [
+    "What moved underneath this measure over the same quarter.",
+    "Whether the movement is concentrated or broad.",
+    "Whether other measures on this segment moved with it."
+   ],
+   "why_it_appeared": "It moved 2.50 pp higher than 2026Q1 on a segment holding 30.86% of the book's exposure at default."
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "ui": "http://127.0.0.1:5500",
+ "steps": [
+  {
+   "step": "01_cockpit_home",
+   "banned_words": []
+  },
+  {
+   "step": "02_anne_question",
+   "banned_words": [],
+   "case": "Q1",
+   "bold_figures": 3,
+   "headline": ""
+  },
+  {
+   "step": "03_letter_Q1",
+   "banned_words": [],
+   "case": "Q1",
+   "evidence": 1
+  },
+  {
+   "step": "03_letter_Q2",
+   "banned_words": [],
+   "case": "Q2",
+   "evidence": 1
+  },
+  {
+   "step": "03_letter_Q3",
+   "banned_words": [],
+   "case": "Q3",
+   "evidence": 1
+  },
+  {
+   "step": "03_letter_Q4",
+   "banned_words": [],
+   "case": "Q4",
+   "evidence": 1
+  },
+  {
+   "step": "03_letter_Q5",
+   "banned_words": [],
+   "case": "Q5",
+   "evidence": 1
+  },
+  {
+   "step": "04_who_are_you",
+   "queries_answers_before": 6,
+   "after": 6,
+   "url": "http://127.0.0.1:5500/"
+  },
+  {
+   "step": "05_analyses",
+   "banned_words": [],
+   "cards": 4,
+   "with_bold_answer": 4
+  },
+  {
+   "step": "06_analysis_detail",
+   "banned_words": [],
+   "title": "How much has Stage 2 built up in the retail book by product at 2026-08?",
+   "chart": 1
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,29 @@
+{
+ "case_id": "PRP-B-ASB",
+ "description": "Evidence held by the bank for Case B (fictional): bureau and CBRBR extract, account conduct and routing, audited financials, connected-party and staff-interest registers.",
+ "sources": {
+  "bureau": "AECB and CBRBR extract, 10 Oct 2026",
+  "conduct": "Account conduct and routing, 12 months to Sep 2026",
+  "audited": "FY2025 audited accounts (qualified)",
+  "connected": "Connected-party register and KYC ownership chart",
+  "staff": "Staff interest declarations (HR and Compliance)",
+  "security": "Security and documentation register",
+  "los": "Loan origination system: facility table"
+ },
+ "projects": [],
+ "retentions": null,
+ "governance": {"ownership_changed": null, "auditor": "Al Wasl Accounting Partners", "auditor_change_consent": true, "standalone_financials": true,
+  "audit_opinion": "qualified", "qualification": "Internally generated goodwill recognised as an asset", "qualification_amount": 14.4},
+ "bureau": {"client_reported_other_bank_limits": null, "cbrbr_other_bank_limits": null, "affiliate_returned_cheques": 0,
+  "group_entities_loss": [{"name": "Al Sahel group entity (trading)", "amount": 10.0}, {"name": "Al Sahel group entity (contracting)", "amount": 31.0}]},
+ "security": {"cash_margin_pct": 10.0, "guarantee_format": "bank", "guarantee_expiry": "dated", "corporate_guarantee_perfection": "perfected",
+  "legal_opinion_date": null, "performance_bond_due": null, "performance_bond_submitted": null,
+  "asset_registered_to_borrower": false, "asset_registered_to": "Sahel Transport entities"},
+ "connected": {
+  "classified_elsewhere": [{"name": "Marwan Steel General Trading", "link": "Sahel Transport's 51% sponsor", "classification": "Doubtful", "litigation_aed_mn": 36.0}],
+  "nominee_holdings": [{"name": "Marwan Steel General Trading", "share": 0.25, "via": "nominees"}],
+  "staff_interest": [{"party": "Corporate guarantor", "share": 0.51, "role": "bank staff member"}],
+  "main_related_party": "Sahel Transport", "main_related_party_receivable": 71.6},
+ "routing": {"required_x": 2.0, "achieved_x": 0.66, "proposed_x": 1.5},
+ "advance_payment": null
+}

@@ -1,0 +1,1297 @@
+{
+ "event": {
+  "period": "2026Q2",
+  "event": {
+   "family": "developer_delay",
+   "label": "A developer delays payments to its contractors",
+   "severity": "moderate",
+   "params": {
+    "borrower_id": "CB03616",
+    "days": 90,
+    "name": "Unayzah First Properties"
+   },
+   "text": "Unayzah First Properties delays payments to contractors by 90 days",
+   "parsed": [
+    "Unayzah First Properties (CB03616) delays payments"
+   ],
+   "picked": false
+  },
+  "severity": "moderate",
+  "calibration": {
+   "source": "whatif_current",
+   "label": "What-If engine's current calibration",
+   "note": "\u00a7S calibrated severities are not available on this branch yet; these are the What-If engine's current calibration (sector stress 0.5/1/2 sd) and the R12 stress ladder seed for macro, rating and collateral magnitudes. They are expert values, not percentiles of history.",
+   "path": "backend/whatif_v5/chat/language.py \u00b7 backend/dealdesk/stress2/catalogue.py"
+  },
+  "drivers": [
+   {
+    "driver": "rating",
+    "label": "Unayzah First Properties rating",
+    "value": 1,
+    "unit": "notch",
+    "scope": "CB03616",
+    "assumption": "A developer that stops paying certificates for 90 days is itself under strain: 1 notch down.",
+    "basis": "What-If engine's current calibration: rating notches moderate"
+   },
+   {
+    "driver": "rating",
+    "label": "Rating of contractors and suppliers paid by the developer",
+    "value": 1,
+    "unit": "notch",
+    "scope": "2 borrowers",
+    "assumption": "Certificates unpaid for 90 days strain working capital: 1 notch where the developer pays 10\u201330% of revenue.",
+    "basis": "What-If engine's current calibration: rating notches moderate"
+   },
+   {
+    "driver": "rating",
+    "label": "Rating of contractors and suppliers paid by the developer",
+    "value": 2,
+    "unit": "notch",
+    "scope": "1 borrower",
+    "assumption": "Certificates unpaid for 90 days strain working capital: 2 notches where the developer pays 30% or more of revenue.",
+    "basis": "What-If engine's current calibration: rating notches moderate"
+   }
+  ],
+  "assumptions": [
+   "Contractors paid less than 10% of their revenue by the developer are listed but not shocked."
+  ],
+  "impact": {
+   "ecl_before": 6993.7353494851095,
+   "ecl_after": 6995.490912298974,
+   "ecl_change": 1.7555628138643442,
+   "ecl_change_pct": 0.02510193374694385,
+   "stage2_before_n": 5743,
+   "stage2_after_n": 5743,
+   "stage2_ead_before": 41622.7523,
+   "stage2_ead_after": 41622.7523,
+   "to_stage2_n": 0,
+   "to_stage3_n": 0,
+   "to_stage2_ead": 0.0,
+   "to_stage3_ead": 0.0,
+   "facilities": 21918,
+   "ead": 153700.14179999998
+  },
+  "channels": [
+   {
+    "channel": "direct",
+    "borrowers": 1,
+    "ead": 52.693799999999996,
+    "d_ecl": 0.0,
+    "to_stage2": 0,
+    "to_stage3": 0
+   },
+   {
+    "channel": "contractor",
+    "borrowers": 4,
+    "ead": 95.79769999999999,
+    "d_ecl": 0.5655632429196187,
+    "to_stage2": 0,
+    "to_stage3": 0
+   },
+   {
+    "channel": "supplier",
+    "borrowers": 3,
+    "ead": 78.6466,
+    "d_ecl": 0.03447555191569379,
+    "to_stage2": 0,
+    "to_stage3": 0
+   },
+   {
+    "channel": "customer",
+    "borrowers": 3,
+    "ead": 106.1326,
+    "d_ecl": 1.155524019027737,
+    "to_stage2": 0,
+    "to_stage3": 0
+   }
+  ],
+  "by_sector": [
+   {
+    "sector": "Real Estate",
+    "ead": 16141.267600000001,
+    "d_ecl": 1.155524019027737,
+    "to_stage2": 0
+   },
+   {
+    "sector": "Construction",
+    "ead": 18695.2458,
+    "d_ecl": 0.5655632429196187,
+    "to_stage2": 0
+   },
+   {
+    "sector": "Chemicals",
+    "ead": 10447.2542,
+    "d_ecl": 0.017869146835443044,
+    "to_stage2": 0
+   },
+   {
+    "sector": "Manufacturing",
+    "ead": 13454.7626,
+    "d_ecl": 0.014474618444846293,
+    "to_stage2": 0
+   },
+   {
+    "sector": "Metals and Mining",
+    "ead": 7634.1888,
+    "d_ecl": 0.002131786635404455,
+    "to_stage2": 0
+   }
+  ],
+  "borrowers": [
+   {
+    "borrower_id": "CB04031",
+    "name": "Buraydah Modern Estates",
+    "sector": "Real Estate",
+    "channel": "customer",
+    "reason": "buys 56.1% of its inputs from Dhahran Continental Contracting",
+    "share_pct": 56.12,
+    "notches": null,
+    "ead": 44.7231,
+    "ecl_before": 3.3327609999999996,
+    "ecl_after": 4.210049977934853,
+    "d_ecl": 0.8772889779348525,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "high"
+   },
+   {
+    "borrower_id": "CB01125",
+    "name": "Yanbu Engineering",
+    "sector": "Construction",
+    "channel": "contractor",
+    "reason": "55.5% of its revenue is paid by Unayzah First Properties",
+    "share_pct": 55.46,
+    "notches": 2,
+    "ead": 6.1334,
+    "ecl_before": 0.42237100000000005,
+    "ecl_after": 0.7875098435771046,
+    "d_ecl": 0.3651388435771047,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "moderate"
+   },
+   {
+    "borrower_id": "CB01039",
+    "name": "Dhahran Continental Contracting",
+    "sector": "Construction",
+    "channel": "contractor",
+    "reason": "12.8% of its revenue is paid by Unayzah First Properties",
+    "share_pct": 12.84,
+    "notches": 1,
+    "ead": 36.4495,
+    "ecl_before": 0.413068,
+    "ecl_after": 0.6044465768385521,
+    "d_ecl": 0.19137857683855208,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "moderate"
+   },
+   {
+    "borrower_id": "CB03873",
+    "name": "Al Faisaliah Western Properties",
+    "sector": "Real Estate",
+    "channel": "customer",
+    "reason": "buys 37.2% of its inputs from Yanbu Engineering",
+    "share_pct": 37.22,
+    "notches": null,
+    "ead": 20.619,
+    "ecl_before": 0.41857200000000006,
+    "ecl_after": 0.608662840646465,
+    "d_ecl": 0.19009084064646503,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "low"
+   }
+  ],
+  "affected": {
+   "direct": 5,
+   "network": 6,
+   "with_ecl_change": 9
+  },
+  "employers": {
+   "retail_workforce": {
+    "customers": 17,
+    "accounts": 30,
+    "exposure": 13.126740000000002,
+    "stage2_exposure": 0.47234,
+    "month": "2026-06"
+   }
+  },
+  "call_list": [
+   {
+    "borrower_id": "CB04031",
+    "name": "Buraydah Modern Estates",
+    "sector": "Real Estate",
+    "channel": "customer",
+    "ead": 44.7231,
+    "d_ecl": 0.8772889779348525,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "high",
+    "rating": "B+",
+    "reason": "buys 56.1% of its inputs from Dhahran Continental Contracting; ECL +SAR 0.88m on EAD SAR 44.7m; already high in Early Warning.",
+    "action": "Check supply continuity from the affected supplier and the cost of switching.",
+    "rm": "Saud Al-Omari",
+    "rm_id": "RM0027",
+    "branch": "Jubail",
+    "href": "/borrower-360?domain=corporate&customer_id=CB04031"
+   },
+   {
+    "borrower_id": "CB01125",
+    "name": "Yanbu Engineering",
+    "sector": "Construction",
+    "channel": "contractor",
+    "ead": 6.1334,
+    "d_ecl": 0.3651388435771047,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "moderate",
+    "rating": "B",
+    "reason": "55.5% of its revenue is paid by Unayzah First Properties; ECL +SAR 0.37m on EAD SAR 6.1m.",
+    "action": "Confirm certified-but-unpaid amounts and retention from the developer, LG call risk and liquidity.",
+    "rm": "Abdullah Al-Qahtani",
+    "rm_id": "RM0002",
+    "branch": "Buraidah",
+    "href": "/borrower-360?domain=corporate&customer_id=CB01125"
+   },
+   {
+    "borrower_id": "CB01039",
+    "name": "Dhahran Continental Contracting",
+    "sector": "Construction",
+    "channel": "contractor",
+    "ead": 36.4495,
+    "d_ecl": 0.19137857683855208,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "moderate",
+    "rating": "BB+",
+    "reason": "12.8% of its revenue is paid by Unayzah First Properties; ECL +SAR 0.19m on EAD SAR 36.4m.",
+    "action": "Confirm certified-but-unpaid amounts and retention from the developer, LG call risk and liquidity.",
+    "rm": "Shahad Al-Juhani",
+    "rm_id": "RM0090",
+    "branch": "Buraidah",
+    "href": "/borrower-360?domain=corporate&customer_id=CB01039"
+   },
+   {
+    "borrower_id": "CB03873",
+    "name": "Al Faisaliah Western Properties",
+    "sector": "Real Estate",
+    "channel": "customer",
+    "ead": 20.619,
+    "d_ecl": 0.19009084064646503,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "low",
+    "rating": "BB",
+    "reason": "buys 37.2% of its inputs from Yanbu Engineering; ECL +SAR 0.19m on EAD SAR 20.6m.",
+    "action": "Check supply continuity from the affected supplier and the cost of switching.",
+    "rm": "Fahad Al-Ghamdi",
+    "rm_id": "RM0053",
+    "branch": "Madinah Central",
+    "href": "/borrower-360?domain=corporate&customer_id=CB03873"
+   },
+   {
+    "borrower_id": "CB03520",
+    "name": "Unayzah Properties",
+    "sector": "Real Estate",
+    "channel": "customer",
+    "ead": 40.7905,
+    "d_ecl": 0.08814420044641931,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "low",
+    "rating": "BBB",
+    "reason": "buys 49.6% of its inputs from Tuwaiq Integrated Contracting; ECL +SAR 0.09m on EAD SAR 40.8m.",
+    "action": "Check supply continuity from the affected supplier and the cost of switching.",
+    "rm": "Sara Al-Anazi",
+    "rm_id": "RM0091",
+    "branch": "Riyadh King Fahd Road",
+    "href": "/borrower-360?domain=corporate&customer_id=CB03520"
+   },
+   {
+    "borrower_id": "CB00668",
+    "name": "Al Kharj Continental Chemicals",
+    "sector": "Chemicals",
+    "channel": "supplier",
+    "ead": 32.9502,
+    "d_ecl": 0.017869146835443044,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "none",
+    "rating": "BBB",
+    "reason": "sells 20.3% of its revenue to Tuwaiq Integrated Contracting; ECL +SAR 0.02m on EAD SAR 33.0m.",
+    "action": "Check receivables from the affected buyer, alternative buyers and the cash gap.",
+    "rm": "Abeer Al-Rashid",
+    "rm_id": "RM0025",
+    "branch": "Dammam",
+    "href": "/borrower-360?domain=corporate&customer_id=CB00668"
+   },
+   {
+    "borrower_id": "CB02636",
+    "name": "Unayzah Central Industries",
+    "sector": "Manufacturing",
+    "channel": "supplier",
+    "ead": 32.1623,
+    "d_ecl": 0.014474618444846293,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "low",
+    "rating": "BBB",
+    "reason": "sells 34.1% of its revenue to Al Faisaliah Eastern Contracting; ECL +SAR 0.01m on EAD SAR 32.2m.",
+    "action": "Check receivables from the affected buyer, alternative buyers and the cash gap.",
+    "rm": "Bandar Al-Dosari",
+    "rm_id": "RM0003",
+    "branch": "Buraidah",
+    "href": "/borrower-360?domain=corporate&customer_id=CB02636"
+   },
+   {
+    "borrower_id": "CB01059",
+    "name": "Al Faisaliah Eastern Contracting",
+    "sector": "Construction",
+    "channel": "contractor",
+    "ead": 26.0756,
+    "d_ecl": 0.009045822503961964,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "low",
+    "rating": "A-",
+    "reason": "13.7% of its revenue is paid by Unayzah First Properties; ECL +SAR 0.01m on EAD SAR 26.1m.",
+    "action": "Confirm certified-but-unpaid amounts and retention from the developer, LG call risk and liquidity.",
+    "rm": "Yousef Al-Faraj",
+    "rm_id": "RM0019",
+    "branch": "Riyadh King Fahd Road",
+    "href": "/borrower-360?domain=corporate&customer_id=CB01059"
+   },
+   {
+    "borrower_id": "CB03029",
+    "name": "Najran Modern Minerals",
+    "sector": "Metals and Mining",
+    "channel": "supplier",
+    "ead": 13.5341,
+    "d_ecl": 0.002131786635404455,
+    "to_stage2": 0,
+    "to_stage3": 0,
+    "ews_band": "none",
+    "rating": "A",
+    "reason": "sells 43.2% of its revenue to Tuwaiq Integrated Contracting; ECL +SAR 0.00m on EAD SAR 13.5m.",
+    "action": "Check receivables from the affected buyer, alternative buyers and the cash gap.",
+    "rm": "Waleed Al-Habib",
+    "rm_id": "RM0031",
+    "branch": "Khobar",
+    "href": "/borrower-360?domain=corporate&customer_id=CB03029"
+   }
+  ],
+  "limits": [
+   "Relationship coverage: 99.5% of the 5,412 corporate borrowers have a supplier or customer link in rel-saudi-v1; supplier links are observed only through payments routed via the bank, so a counterparty banking elsewhere is not seen.",
+   "Second-ring effects are one notch on borrowers that sell \u226520% of revenue to, or buy \u226530% of inputs from, a directly hit name; deeper rings are not run.",
+   "Retail customers employed by the hit corporates are counted, not stressed: the retail book is not in this run.",
+   "The relationship manager on each call is from the Branches and RMs domain at the quarter.",
+   "\u00a7S calibrated severities are not available on this branch yet; these are the What-If engine's current calibration (sector stress 0.5/1/2 sd) and the R12 stress ladder seed for macro, rating and collateral magnitudes. They are expert values, not percentiles of history."
+  ],
+  "coverage": {
+   "borrowers": 5412,
+   "with_supply_link": 5384,
+   "with_any_link": 5404,
+   "supply_link_pct": 99.48263118994826,
+   "any_link_pct": 99.85218033998522
+  },
+  "deal_desk": [],
+  "engine": {
+   "method": "delta",
+   "drivers": [
+    "rating",
+    "staging"
+   ],
+   "seconds": 0.19
+  },
+  "lineage": [
+   {
+    "domain": "Corporate book",
+    "release": "v4-saudi-corporate-20q-v4",
+    "relation": "corp_borrower_quarter",
+    "period": "2026Q2",
+    "columns": [
+     "sector",
+     "rating_current"
+    ]
+   },
+   {
+    "domain": "Corporate book",
+    "release": "v4-saudi-corporate-20q-v4",
+    "relation": "corp_facility_quarter",
+    "period": "2026Q2",
+    "columns": [
+     "ead_sar_mn",
+     "ecl_sar_mn",
+     "stage"
+    ]
+   },
+   {
+    "domain": "Relationships",
+    "release": "rel-saudi-v1",
+    "relation": "rel_edge_quarter",
+    "period": "2026Q2",
+    "columns": [
+     "rel_type",
+     "revenue_share_pct",
+     "purchase_share_pct"
+    ]
+   },
+   {
+    "domain": "Relationships",
+    "release": "rel-saudi-v1",
+    "relation": "rel_employer_month",
+    "period": "2026-06"
+   },
+   {
+    "domain": "Early Warning",
+    "release": "ews-saudi-corporate-20q-v4e2",
+    "relation": "ews_corp_exposure",
+    "period": "2026Q2",
+    "columns": [
+     "ews_score"
+    ]
+   },
+   {
+    "domain": "What-If",
+    "relation": "whatif_corporate_2026Q2",
+    "release": "var/whatif_v5/corporate",
+    "method": "What-If v5 delta (engine.build_context/evaluate)",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Calibration",
+    "relation": "whatif_current",
+    "path": "backend/whatif_v5/chat/language.py \u00b7 backend/dealdesk/stress2/catalogue.py",
+    "label": "What-If engine's current calibration"
+   }
+  ],
+  "money_unit": "SAR million",
+  "sources": {
+   "impact": {
+    "derived": "What-If engine per-facility evaluate, summed",
+    "inputs": [
+     {
+      "domain": "What-If",
+      "relation": "whatif_corporate_2026Q2",
+      "release": "var/whatif_v5/corporate",
+      "method": "What-If v5 delta (engine.build_context/evaluate)",
+      "period": "2026Q2"
+     }
+    ]
+   },
+   "call_list": {
+    "derived": "rank: stage move, then ECL change, then EAD",
+    "inputs": [
+     {
+      "domain": "What-If",
+      "relation": "whatif_corporate_2026Q2",
+      "release": "var/whatif_v5/corporate",
+      "method": "What-If v5 delta (engine.build_context/evaluate)",
+      "period": "2026Q2"
+     },
+     {
+      "domain": "Early Warning",
+      "release": "ews-saudi-corporate-20q-v4e2",
+      "relation": "ews_corp_exposure",
+      "period": "2026Q2"
+     },
+     {
+      "domain": "Branches and RMs",
+      "release": "branch-saudi-v1",
+      "relation": "branch_corporate_quarter",
+      "period": "2026Q2",
+      "columns": [
+       "rm_id",
+       "rm_name"
+      ]
+     }
+    ]
+   }
+  },
+  "text": {
+   "headline": "Unayzah First Properties delaying payments 90 days (moderate): ECL +SAR 1.8m (+0.03%) to SAR 6,995m; Stage 2 +0 facilities (+SAR 0m EAD).",
+   "lines": [
+    "3 borrowers hit as buyers: EAD SAR 106m, ECL +SAR 1.2m, 0 to Stage 2, 0 to default.",
+    "4 borrowers hit as contractors: EAD SAR 96m, ECL +SAR 0.6m, 0 to Stage 2, 0 to default.",
+    "3 borrowers hit as suppliers: EAD SAR 79m, ECL +SAR 0.0m, 0 to Stage 2, 0 to default.",
+    "Call 9 names today, first Buraydah Modern Estates (CB04031, RM Saud Al-Omari): buys 56.1% of its inputs from Dhahran Continental Contracting; ECL +SAR 0.88m on EAD SAR 44.7m; already high in Early Warning.",
+    "Largest sector hit: Real Estate (ECL +SAR 1.2m).",
+    "Severity from the What-If engine's current calibration."
+   ]
+  }
+ },
+ "contagion": {
+  "period": "2026Q2",
+  "severity": "moderate",
+  "focal": {
+   "borrower_id": "CB03184",
+   "name": "Al Ahsa Energy",
+   "sector": "Power and Utilities",
+   "rating": "BB",
+   "ead": 47.791,
+   "ecl": 0.18919299999999997,
+   "ews_band": "none",
+   "group": "Arabian Energy Group"
+  },
+  "totals": {
+   "names": 17,
+   "exposure": 229.0167,
+   "at_risk": 99.2309086,
+   "d_ecl_second": 10.710832985464549,
+   "d_ecl_focal": 18.984860434110548,
+   "to_stage2": 28,
+   "to_stage3": 3,
+   "focal_ead": 47.791,
+   "total_exposure_with_focal": 276.80769999999995
+  },
+  "channels": [
+   {
+    "channel": "guarantee",
+    "label": "Guaranteed by it",
+    "names": 9,
+    "exposure": 53.322900000000004,
+    "at_risk": 31.0995,
+    "d_ecl": 1.36345356758496
+   },
+   {
+    "channel": "group",
+    "label": "Same group",
+    "names": 8,
+    "exposure": 80.4073,
+    "at_risk": 65.5849,
+    "d_ecl": 10.025464195004902
+   },
+   {
+    "channel": "collateral",
+    "label": "Shared collateral",
+    "names": 2,
+    "exposure": 9.507,
+    "at_risk": 4.575699999999999,
+    "d_ecl": 0.26765367790835953
+   },
+   {
+    "channel": "supplier",
+    "label": "Sells to it",
+    "names": 1,
+    "exposure": 24.689399999999996,
+    "at_risk": 7.920359519999998,
+    "d_ecl": 0.6080327718216832
+   },
+   {
+    "channel": "customer",
+    "label": "Buys from it",
+    "names": 6,
+    "exposure": 115.09949999999999,
+    "at_risk": 19.38814908,
+    "d_ecl": 0.07422963977756211
+   },
+   {
+    "channel": "employer",
+    "label": "Same project employer",
+    "names": 0,
+    "exposure": 0,
+    "at_risk": 0,
+    "d_ecl": 0
+   }
+  ],
+  "names": [
+   {
+    "borrower_id": "CB03237",
+    "name": "Najran Arabian Energy",
+    "sector": "Power and Utilities",
+    "rating": "B-",
+    "ews_band": "low",
+    "channels": [
+     "group"
+    ],
+    "why": "subsidiary in Al Ahsa Energy Group (80% held)",
+    "exposure": 21.6719,
+    "ead": 21.6719,
+    "at_risk": 21.6719,
+    "notches": 2,
+    "d_ecl": 8.680943567795016,
+    "to_stage2": 0,
+    "to_stage3": 3,
+    "href": "/borrower-360?domain=corporate&customer_id=CB03237"
+   },
+   {
+    "borrower_id": "CB02159",
+    "name": "Al Faisaliah First Technologies",
+    "sector": "Information Technology",
+    "rating": "B+",
+    "ews_band": "none",
+    "channels": [
+     "supplier"
+    ],
+    "why": "sells 32.1% of its revenue to it",
+    "exposure": 24.689399999999996,
+    "ead": 24.689399999999996,
+    "at_risk": 7.920359519999998,
+    "notches": 2,
+    "d_ecl": 0.6080327718216832,
+    "to_stage2": 5,
+    "to_stage3": 0,
+    "href": "/borrower-360?domain=corporate&customer_id=CB02159"
+   },
+   {
+    "borrower_id": "CB03314",
+    "name": "Arar Modern Energy",
+    "sector": "Power and Utilities",
+    "rating": "B+",
+    "ews_band": "none",
+    "channels": [
+     "group",
+     "guarantee"
+    ],
+    "why": "CF033142 guaranteed by it for SAR 0.99m; subsidiary in Al Ahsa Energy Group (55% held)",
+    "exposure": 1.8948,
+    "ead": 16.0806,
+    "at_risk": 0.9945,
+    "notches": 2,
+    "d_ecl": 0.46000217870663423,
+    "to_stage2": 3,
+    "to_stage3": 0,
+    "href": "/borrower-360?domain=corporate&customer_id=CB03314"
+   },
+   {
+    "borrower_id": "CB03288",
+    "name": "Khamis Mushait First Energy",
+    "sector": "Power and Utilities",
+    "rating": "BBB",
+    "ews_band": "none",
+    "channels": [
+     "group",
+     "guarantee"
+    ],
+    "why": "CF032883 guaranteed by it for SAR 4.31m; subsidiary in Al Ahsa Energy Group (80% held)",
+    "exposure": 5.707000000000001,
+    "ead": 34.848800000000004,
+    "at_risk": 4.3088,
+    "notches": 2,
+    "d_ecl": 0.22490156307399253,
+    "to_stage2": 5,
+    "to_stage3": 0,
+    "href": "/borrower-360?domain=corporate&customer_id=CB03288"
+   }
+  ],
+  "network": {
+   "nodes": [
+    {
+     "id": "CB03184",
+     "name": "Al Ahsa Energy",
+     "kind": "focal",
+     "x": 0.0,
+     "y": 0.0,
+     "exposure": 47.791,
+     "d_ecl": 18.984860434110548,
+     "ews_band": "none"
+    },
+    {
+     "id": "CB03237",
+     "name": "Najran Arabian Energy",
+     "kind": "group",
+     "channels": [
+      "group"
+     ],
+     "x": -0.4948,
+     "y": 0.3736,
+     "exposure": 21.6719,
+     "at_risk": 21.6719,
+     "d_ecl": 8.680943567795016,
+     "ews_band": "low"
+    },
+    {
+     "id": "CB02159",
+     "name": "Al Faisaliah First Technologies",
+     "kind": "supplier",
+     "channels": [
+      "supplier"
+     ],
+     "x": 0.4177,
+     "y": -0.4582,
+     "exposure": 24.689399999999996,
+     "at_risk": 7.920359519999998,
+     "d_ecl": 0.6080327718216832,
+     "ews_band": "none"
+    },
+    {
+     "id": "CB03314",
+     "name": "Arar Modern Energy",
+     "kind": "group",
+     "channels": [
+      "group",
+      "guarantee"
+     ],
+     "x": -0.9426,
+     "y": 0.2682,
+     "exposure": 1.8948,
+     "at_risk": 0.9945,
+     "d_ecl": 0.46000217870663423,
+     "ews_band": "none"
+    },
+    {
+     "id": "CB03288",
+     "name": "Khamis Mushait First Energy",
+     "kind": "group",
+     "channels": [
+      "group",
+      "guarantee"
+     ],
+     "x": -0.6174,
+     "y": -0.0572,
+     "exposure": 5.707000000000001,
+     "at_risk": 4.3088,
+     "d_ecl": 0.22490156307399253,
+     "ews_band": "none"
+    }
+   ],
+   "edges": [
+    {
+     "source": "CB03184",
+     "target": "CB03237",
+     "kind": "group",
+     "at_risk": 21.6719,
+     "label": "subsidiary in Al Ahsa Energy Group (80% held)"
+    },
+    {
+     "source": "CB03184",
+     "target": "CB02159",
+     "kind": "supplier",
+     "at_risk": 7.920359519999998,
+     "label": "sells 32.1% of its revenue to it"
+    },
+    {
+     "source": "CB03184",
+     "target": "CB03314",
+     "kind": "group",
+     "at_risk": 0.9945,
+     "label": "CF033142 guaranteed by it for SAR 0.99m; subsidiary in Al Ahsa Energy Group (55% held)"
+    },
+    {
+     "source": "CB03184",
+     "target": "CB03288",
+     "kind": "group",
+     "at_risk": 4.3088,
+     "label": "CF032883 guaranteed by it for SAR 4.31m; subsidiary in Al Ahsa Energy Group (80% held)"
+    }
+   ],
+   "kinds": {
+    "focal": "Failed name",
+    "guarantee": "Guaranteed by it",
+    "group": "Same group",
+    "collateral": "Shared collateral",
+    "supplier": "Sells to it",
+    "customer": "Buys from it",
+    "employer": "Same project employer"
+   },
+   "drawn": 17,
+   "available": 17
+  },
+  "limits": [
+   "Relationship coverage: 99.9% of corporate borrowers have at least one link in rel-saudi-v1; supplier and customer links are observed only through payments routed via the bank.",
+   "Links are one step from the failed name; a second failure among them is not chained.",
+   "Transmission rules are expert: guarantee support 50% of the guaranteed share of LGD, controlled group members 2 notches, suppliers 1\u20132 notches by revenue share, buyers 1 notch at \u226530% of purchases, shared collateral -30% (moderate, What-If engine's current calibration).",
+   "Off-book counterparties (other banks' customers, the Deal Desk demo entities) are not in the book run."
+  ],
+  "coverage": {
+   "borrowers": 5412,
+   "with_supply_link": 5384,
+   "with_any_link": 5404,
+   "supply_link_pct": 99.48263118994826,
+   "any_link_pct": 99.85218033998522
+  },
+  "calibration": {
+   "source": "whatif_current",
+   "label": "What-If engine's current calibration",
+   "note": "\u00a7S calibrated severities are not available on this branch yet; these are the What-If engine's current calibration (sector stress 0.5/1/2 sd) and the R12 stress ladder seed for macro, rating and collateral magnitudes. They are expert values, not percentiles of history.",
+   "path": "backend/whatif_v5/chat/language.py \u00b7 backend/dealdesk/stress2/catalogue.py"
+  },
+  "engine": {
+   "method": "delta",
+   "drivers": [
+    "lgd",
+    "collateral",
+    "staging",
+    "rating"
+   ],
+   "seconds": 0.1
+  },
+  "lineage": [
+   {
+    "domain": "Relationships",
+    "release": "rel-saudi-v1",
+    "relation": "rel_edge_quarter",
+    "period": "2026Q2",
+    "columns": [
+     "GUARANTEES",
+     "SUPPLIES"
+    ]
+   },
+   {
+    "domain": "Relationships",
+    "release": "rel-saudi-v1",
+    "relation": "rel_group_quarter",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Relationships",
+    "release": "rel-saudi-v1",
+    "relation": "rel_shared_collateral",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Corporate book",
+    "release": "v4-saudi-corporate-20q-v4",
+    "relation": "corp_facility_quarter",
+    "period": "2026Q2",
+    "columns": [
+     "ead_sar_mn",
+     "lgd_pct"
+    ]
+   },
+   {
+    "domain": "Corporate book",
+    "release": "v4-saudi-corporate-20q-v4",
+    "relation": "corp_borrower_quarter",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Early Warning",
+    "release": "ews-saudi-corporate-20q-v4e2",
+    "relation": "ews_corp_exposure",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "What-If",
+    "relation": "whatif_corporate_2026Q2",
+    "release": "var/whatif_v5/corporate",
+    "method": "What-If v5 delta (engine.build_context/evaluate)",
+    "period": "2026Q2"
+   }
+  ],
+  "money_unit": "SAR million",
+  "text": {
+   "headline": "If Al Ahsa Energy (CB03184) fails: 17 other borrowers carry SAR 229m of exposure linked to it, SAR 99.2m at risk; second-order ECL +SAR 10.7m on top of its own +SAR 19.0m.",
+   "lines": [
+    "Through guarantees: 9 names, exposure SAR 53m, at risk SAR 31.1m, ECL +SAR 1.4m.",
+    "Through the group: 8 names, exposure SAR 80m, at risk SAR 65.6m, ECL +SAR 10.0m.",
+    "Through shared collateral: 2 names, exposure SAR 10m, at risk SAR 4.6m, ECL +SAR 0.3m.",
+    "As suppliers: 1 name, exposure SAR 25m, at risk SAR 7.9m, ECL +SAR 0.6m.",
+    "As buyers: 6 names, exposure SAR 115m, at risk SAR 19.4m, ECL +SAR 0.1m.",
+    "Other names: 28 facilities move to Stage 2 and 3 default."
+   ]
+  }
+ },
+ "employer": {
+  "period": "2026Q2",
+  "employer": {
+   "name": "Unayzah First Properties",
+   "borrower_id": "CB03616",
+   "entity_id": null,
+   "sector": "Real Estate",
+   "rating": "BB+",
+   "ews_band": "high",
+   "credit_status": null,
+   "bureau": null
+  },
+  "totals": {
+   "contractors": 4,
+   "book_contractors": 4,
+   "exposure": 95.7977,
+   "non_funded": 5.537999999999999,
+   "attributable": 12.49505276,
+   "deal_desk_outstanding": 0.0,
+   "deal_desk_proposed": 0.0,
+   "own_exposure": 52.69380000000001,
+   "lg_outstanding": 0.0,
+   "due": 0.0,
+   "retention": 0.0,
+   "in_early_warning": 3,
+   "ews_exposure": 69.7221,
+   "high_dependence": 1
+  },
+  "appetite": {
+   "label": "Single obligor",
+   "basis": "CP-1.1: SAR 250m per obligor, funded and unfunded EAD",
+   "metric": "own exposure + attributable through contractors",
+   "value": 65.18885276,
+   "appetite": 200.0,
+   "trigger": 225.0,
+   "limit": 250.0,
+   "utilisation_pct": 26.075541104,
+   "status": "within appetite",
+   "employer_backlog_guide": {
+    "name": "employer_backlog",
+    "label": "Top-2 employers' share of a contractor's backlog",
+    "limit": 0.6,
+    "unit": "share",
+    "kind": "guide",
+    "basis": "Deal Desk products policy project.employer_concentration_max (contracting)"
+   },
+   "deal_desk_dependence": []
+  },
+  "contractors": [
+   {
+    "borrower_id": "CB01039",
+    "name": "Dhahran Continental Contracting",
+    "sector": "Construction",
+    "is_contractor": true,
+    "ead": 36.4495,
+    "funded": 36.4495,
+    "non_funded": 0.0,
+    "project_finance": 0.0,
+    "ecl": 0.413068,
+    "stage": 2,
+    "revenue_share_pct": 12.84,
+    "annual_paid_sar_mn": 2.8288,
+    "attributable": 4.680115799999999,
+    "rating": "BB+",
+    "ews_band": "moderate",
+    "dependence": "material",
+    "source": {
+     "domain": "Relationships",
+     "release": "rel-saudi-v1",
+     "relation": "rel_edge_quarter",
+     "period": "2026Q2",
+     "columns": [
+      "revenue_share_pct",
+      "annual_value_sar_mn"
+     ],
+     "key": {
+      "edge_id": "ES002565"
+     }
+    },
+    "href": "/borrower-360?domain=corporate&customer_id=CB01039"
+   },
+   {
+    "borrower_id": "CB01059",
+    "name": "Al Faisaliah Eastern Contracting",
+    "sector": "Construction",
+    "is_contractor": true,
+    "ead": 26.075599999999998,
+    "funded": 20.5376,
+    "non_funded": 5.537999999999999,
+    "project_finance": 5.8989,
+    "ecl": 0.018838,
+    "stage": 1,
+    "revenue_share_pct": 13.73,
+    "annual_paid_sar_mn": 7.4113,
+    "attributable": 3.58017988,
+    "rating": "A-",
+    "ews_band": "low",
+    "dependence": "material",
+    "source": {
+     "domain": "Relationships",
+     "release": "rel-saudi-v1",
+     "relation": "rel_edge_quarter",
+     "period": "2026Q2",
+     "columns": [
+      "revenue_share_pct",
+      "annual_value_sar_mn"
+     ],
+     "key": {
+      "edge_id": "ES002592"
+     }
+    },
+    "href": "/borrower-360?domain=corporate&customer_id=CB01059"
+   },
+   {
+    "borrower_id": "CB01125",
+    "name": "Yanbu Engineering",
+    "sector": "Construction",
+    "is_contractor": true,
+    "ead": 6.1334,
+    "funded": 6.1334,
+    "non_funded": 0.0,
+    "project_finance": 0.0,
+    "ecl": 0.422371,
+    "stage": 2,
+    "revenue_share_pct": 55.46,
+    "annual_paid_sar_mn": 5.0906,
+    "attributable": 3.40158364,
+    "rating": "B",
+    "ews_band": "moderate",
+    "dependence": "high",
+    "source": {
+     "domain": "Relationships",
+     "release": "rel-saudi-v1",
+     "relation": "rel_edge_quarter",
+     "period": "2026Q2",
+     "columns": [
+      "revenue_share_pct",
+      "annual_value_sar_mn"
+     ],
+     "key": {
+      "edge_id": "ES002700"
+     }
+    },
+    "href": "/borrower-360?domain=corporate&customer_id=CB01125"
+   },
+   {
+    "borrower_id": "CB00990",
+    "name": "Tuwaiq Integrated Contracting",
+    "sector": "Construction",
+    "is_contractor": true,
+    "ead": 27.139200000000002,
+    "funded": 27.139200000000002,
+    "non_funded": 0.0,
+    "project_finance": 17.3868,
+    "ecl": 14.324793,
+    "stage": 3,
+    "revenue_share_pct": 3.07,
+    "annual_paid_sar_mn": 1.3938,
+    "attributable": 0.83317344,
+    "rating": "BBB-",
+    "ews_band": "high",
+    "dependence": "low",
+    "source": {
+     "domain": "Relationships",
+     "release": "rel-saudi-v1",
+     "relation": "rel_edge_quarter",
+     "period": "2026Q2",
+     "columns": [
+      "revenue_share_pct",
+      "annual_value_sar_mn"
+     ],
+     "key": {
+      "edge_id": "ES002492"
+     }
+    },
+    "href": "/borrower-360?domain=corporate&customer_id=CB00990"
+   }
+  ],
+  "projects": [],
+  "by_sector": [
+   {
+    "sector": "Construction",
+    "names": 4,
+    "ead": 95.79769999999999,
+    "attributable": 12.495052759999998
+   }
+  ],
+  "limits": [
+   "Contractors and suppliers are those whose payments from the employer the bank sees (SUPPLIES edges, rel-saudi-v1; 99.5% of borrowers carry one); a contractor paid through another bank is missing.",
+   "Attributable exposure assumes a contractor's risk to the employer is proportional to the share of its revenue the employer pays; project-level splits exist only for Deal Desk projects.",
+   "Book exposure is per contractor, not per project: the corporate book release has no project or payment-certificate fields; payment certificates and LGs by project come from Deal Desk (dd_project, dd_facility_limit).",
+   "No Deal Desk project names this employer."
+  ],
+  "coverage": {
+   "borrowers": 5412,
+   "with_supply_link": 5384,
+   "with_any_link": 5404,
+   "supply_link_pct": 99.48263118994826,
+   "any_link_pct": 99.85218033998522
+  },
+  "lineage": [
+   {
+    "domain": "Relationships",
+    "release": "rel-saudi-v1",
+    "relation": "rel_edge_quarter",
+    "period": "2026Q2",
+    "columns": [
+     "SUPPLIES"
+    ]
+   },
+   {
+    "domain": "Corporate book",
+    "release": "v4-saudi-corporate-20q-v4",
+    "relation": "corp_facility_quarter",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Corporate book",
+    "release": "v4-saudi-corporate-20q-v4",
+    "relation": "corp_borrower_quarter",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Early Warning",
+    "release": "ews-saudi-corporate-20q-v4e2",
+    "relation": "ews_corp_exposure",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Deal Desk products",
+    "release": "dd-saudi-v1",
+    "relation": "dd_project"
+   },
+   {
+    "domain": "Deal Desk",
+    "release": "dd-saudi-v1",
+    "relation": "dd_facility_limit"
+   },
+   {
+    "domain": "Bureau",
+    "release": "bureau-r12-v1",
+    "relation": "bureau_entity_report"
+   },
+   {
+    "domain": "Borrower 360",
+    "release": "b360-saudi-v1",
+    "relation": "b360_entity"
+   },
+   {
+    "domain": "Deal Desk parameters",
+    "release": "params/v1",
+    "relation": "risk_appetite"
+   }
+  ],
+  "sources": {
+   "attributable": {
+    "derived": "sum(contractor EAD x revenue share paid by the employer) + project LGs outstanding",
+    "inputs": [
+     {
+      "domain": "Relationships",
+      "release": "rel-saudi-v1",
+      "relation": "rel_edge_quarter",
+      "period": "2026Q2"
+     },
+     {
+      "domain": "Corporate book",
+      "release": "v4-saudi-corporate-20q-v4",
+      "relation": "corp_facility_quarter",
+      "period": "2026Q2"
+     },
+     {
+      "domain": "Deal Desk",
+      "release": "dd-saudi-v1",
+      "relation": "dd_facility_limit"
+     }
+    ]
+   }
+  },
+  "money_unit": "SAR million",
+  "text": {
+   "headline": "Unayzah First Properties: bank exposure SAR 96m through 4 contractors and suppliers it pays, of which SAR 12.5m attributable to its payments (within appetite).",
+   "lines": [
+    "Direct exposure to Unayzah First Properties itself: SAR 52.7m; total with contractors SAR 148m.",
+    "1 contractor takes 30% or more of revenue from it; largest exposure Yanbu Engineering (SAR 6.1m).",
+    "3 of its contractors are already in Early Warning (SAR 69.7m).",
+    "Against appetite: own plus attributable exposure (SAR 65.2m) is 26% of the SAR 250m single obligor limit (within appetite)."
+   ]
+  },
+  "engine": {}
+ },
+ "ranking": {
+  "period": "2026Q2",
+  "rows": [
+   {
+    "employer_id": "CB03632",
+    "name": "Turaif First Properties",
+    "sector": "Real Estate",
+    "contractors": 3,
+    "contractor_ead": 128.6635,
+    "attributable": 34.297046259999995,
+    "max_share": 54.1,
+    "own_ead": 51.946799999999996,
+    "combined": 86.24384626,
+    "status": "within appetite",
+    "utilisation_pct": 34.497538504
+   },
+   {
+    "employer_id": "CB03891",
+    "name": "Yanbu Western Properties",
+    "sector": "Real Estate",
+    "contractors": 2,
+    "contractor_ead": 91.2296,
+    "attributable": 32.8780072,
+    "max_share": 55.25,
+    "own_ead": 34.2307,
+    "combined": 67.1087072,
+    "status": "within appetite",
+    "utilisation_pct": 26.84348288
+   },
+   {
+    "employer_id": "CB03633",
+    "name": "Al Faisaliah Modern Properties",
+    "sector": "Real Estate",
+    "contractors": 2,
+    "contractor_ead": 78.2728,
+    "attributable": 30.059830599999998,
+    "max_share": 55.63,
+    "own_ead": 25.0347,
+    "combined": 55.0945306,
+    "status": "within appetite",
+    "utilisation_pct": 22.03781224
+   },
+   {
+    "employer_id": "CB03843",
+    "name": "Yanbu Continental Properties",
+    "sector": "Real Estate",
+    "contractors": 3,
+    "contractor_ead": 112.5926,
+    "attributable": 28.413871420000003,
+    "max_share": 52.25,
+    "own_ead": 40.810300000000005,
+    "combined": 69.22417142,
+    "status": "within appetite",
+    "utilisation_pct": 27.689668568000002
+   },
+   {
+    "employer_id": "CB03661",
+    "name": "Dhahran Advanced Properties",
+    "sector": "Real Estate",
+    "contractors": 1,
+    "contractor_ead": 52.31869999999999,
+    "attributable": 28.131764989999997,
+    "max_share": 53.77,
+    "own_ead": 12.610599999999998,
+    "combined": 40.74236499,
+    "status": "within appetite",
+    "utilisation_pct": 16.296945995999998
+   }
+  ],
+  "appetite": {
+   "label": "Single obligor",
+   "appetite": 200.0,
+   "trigger": 225.0,
+   "limit": 250.0,
+   "basis": "CP-1.1: SAR 250m per obligor, funded and unfunded EAD"
+  },
+  "deal_desk_employers": [
+   {
+    "entity_id": "XE-TWB-E1",
+    "name": "Saadiyat Crest Developments",
+    "credit_status": "performing"
+   },
+   {
+    "entity_id": "XE-TWB-E2",
+    "name": "Al Wusta Housing Company",
+    "credit_status": "performing"
+   },
+   {
+    "entity_id": "XE-TWB-E3",
+    "name": "Harbourline Real Estate Company",
+    "credit_status": "past_due"
+   },
+   {
+    "entity_id": "XE-TWB-E4",
+    "name": "Northgate Education Projects Company",
+    "credit_status": "performing"
+   }
+  ],
+  "method": "contractors = Construction-sector suppliers paid by the employer (SUPPLIES edges); attributable = contractor EAD x revenue share paid",
+  "lineage": [
+   {
+    "domain": "Relationships",
+    "release": "rel-saudi-v1",
+    "relation": "rel_edge_quarter",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Corporate book",
+    "release": "v4-saudi-corporate-20q-v4",
+    "relation": "corp_facility_quarter",
+    "period": "2026Q2"
+   },
+   {
+    "domain": "Corporate book",
+    "release": "v4-saudi-corporate-20q-v4",
+    "relation": "corp_borrower_quarter",
+    "period": "2026Q2"
+   }
+  ],
+  "money_unit": "SAR million"
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "module": "ews",
+ "commit": "b9934b96",
+ "utc": "20261010T210122Z",
+ "passed": true,
+ "declared_cockpit_exceptions": [
+  "tests/cockpit_v4/test_credit_policy.py::test_a_clause_id_is_the_most_precise_way_in",
+  "tests/cockpit_v4/test_credit_policy.py::test_a_policy_question_arrives_with_its_clauses_already_attached",
+  "tests/cockpit_v4/test_live_uat_matrix_revision.py::test_the_policy_settles_the_measure_l16_was_believed_to_leave_open",
+  "tests/cockpit_v4/test_misread_as_product_help.py::test_a_published_answer_carries_the_policy_receipt",
+  "tests/cockpit_v4/test_misread_as_product_help.py::test_a_threshold_presented_as_a_limit_with_no_clause_is_refused",
+  "tests/cockpit_v4/test_misread_as_product_help.py::test_the_policy_question_reaches_cp_1_1_deterministically",
+  "tests/cockpit_v4/test_misread_as_product_help.py::test_the_refusal_says_what_to_do_about_it",
+  "tests/cockpit_v4/test_release_history.py::test_the_content_of_the_current_releases_is_what_was_published[v4-saudi-corporate-20q-v4]"
+ ],
+ "items": [
+  {
+   "item": "1. frozen guard",
+   "pass": true,
+   "detail": "FROZEN GUARD PASS: 148 frozen files identical to 831044ce2574 (except the verified rescale calibration of backend/cockpit_v4/credit_policy.json) (registered exceptions, each exactly its patch: FX-2 backend/cockpit_v4/finalization.py; FX-1 frontend/src/components/cockpit-v4/visuals.tsx)",
+   "seconds": 0.8
+  },
+  {
+   "item": "2. sync tests",
+   "pass": true,
+   "detail": "31/31",
+   "seconds": 19.9
+  },
+  {
+   "item": "3a. ews tests",
+   "pass": true,
+   "detail": "171/171",
+   "seconds": 32.3
+  },
+  {
+   "item": "3b. EWS data suite (restoration)",
+   "pass": true,
+   "detail": "tests=296 passed=296 failed=0",
+   "seconds": 5.5
+  },
+  {
+   "item": "3b. EWS live API suite (restoration)",
+   "pass": true,
+   "detail": "\"passed\": 130,",
+   "seconds": 2.7
+  },
+  {
+   "item": "3b. frontend unit tests",
+   "pass": true,
+   "detail": "\u2139 tests 607 | \u2139 pass 607 | \u2139 fail 0",
+   "seconds": 7.4
+  },
+  {
+   "item": "4a. Cockpit suite tests/cockpit_v4",
+   "pass": true,
+   "detail": "3437/3445 pass; 8 declared exceptions",
+   "seconds": 808.2
+  },
+  {
+   "item": "4b. Cockpit panels equal the post-rescale baseline",
+   "pass": true,
+   "detail": "PROBLEMS: 0",
+   "seconds": 0.2
+  },
+  {
+   "item": "5. browser smoke",
+   "pass": true,
+   "detail": "32/32 browser checks passed",
+   "seconds": 25.9
+  },
+  {
+   "item": "6. UAT sweep",
+   "pass": true,
+   "detail": "319/319 sweep steps passed (3366 checks)",
+   "seconds": 617.9
+  }
+ ]
+}

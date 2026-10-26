@@ -1,0 +1,63 @@
+{
+ "name": "covenant_items",
+ "owner": "Risk",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "PD and LGD adjustment for each covenant or condition and for the review cycle, with the monitoring cost; capped with the package.",
+ "source": "Risk Models covenant-effectiveness study 2025 (early-trigger cures on the corporate book); the package cap of covenant_packages applies to the product of package, items and review cycle",
+ "rows": {
+  "items": {
+   "leverage": {
+    "label": "Leverage covenant (Debt/EBITDA)",
+    "pd_multiplier": 0.97,
+    "lgd_multiplier": 1.0,
+    "monitoring": 0.002
+   },
+   "dscr": {
+    "label": "DSCR covenant",
+    "pd_multiplier": 0.97,
+    "lgd_multiplier": 1.0,
+    "monitoring": 0.002
+   },
+   "cash_sweep": {
+    "label": "Cash sweep",
+    "pd_multiplier": 0.96,
+    "lgd_multiplier": 0.97,
+    "monitoring": 0.004
+   },
+   "dividend_lockup": {
+    "label": "Dividend lock-up",
+    "pd_multiplier": 0.97,
+    "lgd_multiplier": 0.99,
+    "monitoring": 0.001
+   },
+   "negative_pledge": {
+    "label": "Negative pledge and pari passu",
+    "pd_multiplier": 1.0,
+    "lgd_multiplier": 0.95,
+    "monitoring": 0.001
+   }
+  },
+  "review_cycles": {
+   "12": {
+    "label": "Annual review",
+    "pd_multiplier": 1.0,
+    "maturity_cap": null,
+    "monitoring": 0.0
+   },
+   "6": {
+    "label": "Semi-annual review",
+    "pd_multiplier": 0.98,
+    "maturity_cap": 3.0,
+    "monitoring": 0.004
+   },
+   "3": {
+    "label": "Quarterly review",
+    "pd_multiplier": 0.96,
+    "maturity_cap": 2.0,
+    "monitoring": 0.01
+   }
+  }
+ }
+}

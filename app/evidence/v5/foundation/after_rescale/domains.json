@@ -1,0 +1,124 @@
+{
+ "analysis_domains": [
+  "corporate",
+  "retail"
+ ],
+ "default_domain": "corporate",
+ "domains": [
+  {
+   "amount_scale": "million",
+   "analysis_ready": true,
+   "country": "Saudi Arabia",
+   "domain_id": "corporate",
+   "domain_label": "Corporate Credit",
+   "entity_counts": {
+    "borrowers": 5412,
+    "facilities": 21918,
+    "groups": 2533,
+    "product_types": 8,
+    "regions": 10,
+    "sectors": 14,
+    "sub_sectors": 75
+   },
+   "field_count": 113,
+   "latest_period": "2026Q2",
+   "period_column": "reporting_quarter",
+   "period_noun": "quarter",
+   "periods": [
+    "2021Q3",
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+   ],
+   "previous_period": "2026Q1",
+   "ready": true,
+   "relation_count": 4,
+   "release_fingerprint": "520755315b214dc3711a2242852fadae42220fa996d0da5e10dd095377d5a4ed",
+   "release_id": "v4-saudi-corporate-20q-v4",
+   "reporting_currency": "SAR",
+   "reporting_frequency": "quarterly",
+   "row_counts": {
+    "corp_borrower_quarter": 108240,
+    "corp_collateral_quarter": 384009,
+    "corp_covenant_quarter": 384009,
+    "corp_facility_quarter": 384009
+   },
+   "year_ago_period": "2025Q2"
+  },
+  {
+   "amount_scale": "million",
+   "analysis_ready": true,
+   "country": "Saudi Arabia",
+   "domain_id": "retail",
+   "domain_label": "Retail Credit",
+   "entity_counts": {
+    "accounts": 44027,
+    "customers": 26000,
+    "employment_types": 4,
+    "products": 5,
+    "regions": 8,
+    "sub_products": 12
+   },
+   "field_count": 92,
+   "latest_period": "2026-08",
+   "period_column": "reporting_month",
+   "period_noun": "month",
+   "periods": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ],
+   "previous_period": "2026-07",
+   "ready": true,
+   "relation_count": 4,
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_currency": "SAR",
+   "reporting_frequency": "monthly",
+   "row_counts": {
+    "retail_account_month": 584372,
+    "retail_behaviour_month": 584372,
+    "retail_collateral_month": 281330,
+    "retail_customer_month": 438060
+   },
+   "year_ago_period": "2025-08"
+  }
+ ],
+ "ready": [
+  "corporate",
+  "retail"
+ ]
+}

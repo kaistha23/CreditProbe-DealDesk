@@ -1,0 +1,14 @@
+# R16 (PLAN_R16 dependency exception, approved by Anne): the one OCR dependency for photographed / scanned pages.
+# rapidocr-onnxruntime ships its detection + recognition models inside the wheel (no download at run time) and
+# runs on the CPU. Installed offline from vendor/wheels by ops/r16_install_ocr.sh (macOS arm64 and Linux x86_64).
+# rapidocr's metadata asks for opencv-python; the headless build provides the same cv2 module without GUI libraries,
+# so rapidocr itself is installed with --no-deps. six, PyYAML, tqdm, numpy, Pillow, packaging come from the main lock.
+rapidocr-onnxruntime==1.4.4
+onnxruntime==1.24.4
+opencv-python-headless==4.13.0.92
+pyclipper==1.4.0
+shapely==2.2.0
+flatbuffers==25.12.19
+protobuf==7.36.2
+sympy==1.14.0
+mpmath==1.3.0

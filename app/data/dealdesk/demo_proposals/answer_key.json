@@ -1,0 +1,119 @@
+{
+ "proposal_id": "R14-RWQ",
+ "customer": "Ruwaq Gulf Contracting Company",
+ "rm": "Tariq Al-Mansouri",
+ "document": "R14-RWQ_RM_proposal_half_baked.docx",
+ "corrected": "R14-RWQ_RM_proposal_corrected.docx",
+ "planted_defects": 12,
+ "note": "Fictional. Every defect is a claim or omission in the RM's half-baked proposal that the bank's data contradicts; the proposal check must catch all 12, deterministically, in under 60 seconds (tests/v5/proposal_check).",
+ "defects": [
+  {
+   "n": 1,
+   "defect_type": "undisclosed_returned_cheques",
+   "section": 8,
+   "heading": "Relationship with the bank",
+   "planted": "Says no cheques were returned in the last 12 months",
+   "truth": "4 returned cheques in the 12 months to Sep 2026 (SAR 3.3m: 10 Nov 2025, 10 Feb, 10 May, 10 Aug 2026)",
+   "relation": "dd_returned_cheque"
+  },
+  {
+   "n": 2,
+   "defect_type": "turnover_overstated",
+   "section": 8,
+   "heading": "Relationship with the bank",
+   "planted": "Claims account turnover of SAR 417.4m, 40% above the account",
+   "truth": "Credit turnover SAR 298.2m over Oct 2025 – Sep 2026",
+   "relation": "dd_account_conduct"
+  },
+  {
+   "n": 3,
+   "defect_type": "related_party_receivables_as_trade",
+   "section": 15,
+   "heading": "Financial synopsis",
+   "planted": "Trade receivables of SAR 274.0m include SAR 64.0m due from a related party",
+   "truth": "FY2025: trade receivables SAR 210.0m + due from Ruwaq Real Estate Development Company SAR 64.0m",
+   "relation": "dd_financials_detail"
+  },
+  {
+   "n": 4,
+   "defect_type": "ubo_bureau_missing",
+   "section": 11,
+   "heading": "Credit bureau",
+   "planted": "Says the shareholders' bureau reports are clear",
+   "truth": "No bureau report of the UBO Sultan Hamad Al-Ruwaqi on file (requested 13 Oct 2026, CFR-2026-0611)",
+   "relation": "bureau_entity_report"
+  },
+  {
+   "n": 5,
+   "defect_type": "unperfected_guarantee",
+   "section": 4,
+   "heading": "Security and support",
+   "planted": "Says all security is perfected",
+   "truth": "Corporate guarantee of Ruwaq Holding Company (SAR 190.0m) pending; deadline 30 Jun 2026 passed",
+   "relation": "dd_security"
+  },
+  {
+   "n": 6,
+   "defect_type": "stale_valuation",
+   "section": 4,
+   "heading": "Security and support",
+   "planted": "Calls the land valuation recent and gives no date",
+   "truth": "Valuation dated 15 Apr 2025, 18 months old",
+   "relation": "dd_security"
+  },
+  {
+   "n": 7,
+   "defect_type": "group_exposure_total_wrong",
+   "section": 6,
+   "heading": "Group exposure and references",
+   "planted": "Group exposure table totals SAR 250.0m",
+   "truth": "Rows add up to SAR 226.0m (dd_group_exposure SAR 226.0m)",
+   "relation": "dd_group_exposure"
+  },
+  {
+   "n": 8,
+   "defect_type": "covenant_without_numbers",
+   "section": 5,
+   "heading": "Terms and conditions",
+   "planted": "Covenants 'standard as per the bank's practice' with no thresholds",
+   "truth": "Policy 4.2–4.4: DSCR ≥ 1.25x, debt / EBITDA ≤ 3.5x, current ratio ≥ 1.10x",
+   "relation": "dd_policy_clause"
+  },
+  {
+   "n": 9,
+   "defect_type": "missing_project_status",
+   "section": 9,
+   "heading": "Status of financed projects",
+   "planted": "Section missing",
+   "truth": "2 financed projects; Al Bariq Residences 72% done vs 88% planned, 243-day EOT not formalised, 2 certificates pending",
+   "relation": "dd_project"
+  },
+  {
+   "n": 10,
+   "defect_type": "vague_sales_terms",
+   "section": 7,
+   "heading": "Background and ownership",
+   "planted": "Sales 'on usual market terms'",
+   "truth": "Monthly certificates paid in 45 days; 10% retention; 10% advance",
+   "relation": "dd_business_profile"
+  },
+  {
+   "n": 11,
+   "defect_type": "prior_condition_misstated",
+   "section": 5,
+   "heading": "Terms and conditions",
+   "planted": "Says all conditions of CC-2025-207 are complied with",
+   "truth": "2 of 3 conditions not complied: quarterly project reports; perfection of the parent guarantee",
+   "relation": "dd_condition"
+  },
+  {
+   "n": 12,
+   "defect_type": "pricing_exception_undisclosed",
+   "section": 17,
+   "heading": "Exceptions and other observations",
+   "planted": "Says no policy exceptions",
+   "truth": "Lifetime RAROC 9.6% vs 16.0% hurdle at 150 bps on the new line",
+   "relation": "dd_deal"
+  }
+ ]
+}

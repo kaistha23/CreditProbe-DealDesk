@@ -1,0 +1,433 @@
+{
+ "engine": "intel.portfolio.ecl_bridge",
+ "version": "r13-id-1",
+ "title": "ECL bridge forecast",
+ "as_of": "2026Q2",
+ "ecl_run": "2026Q3",
+ "headline": "Next quarter's corporate ECL is forecast at SAR 7.9bn before the 2026Q4 run, up SAR 949.0m (+13.6%) on the 2026Q3 run; the largest driver is Stage moves and exits (EWS model) (+SAR 764.6m).",
+ "summary": [
+  "Next quarter's corporate ECL is forecast at SAR 7.9bn before the 2026Q4 run, up SAR 949.0m (+13.6%) on the 2026Q3 run; the largest driver is Stage moves and exits (EWS model) (+SAR 764.6m).",
+  "Under the \u00a7S moderate scenario the forecast is SAR 8.3bn (+389m on the base path; \u00a7S window 1990\u20132025, 2005\u20132025, 2007\u20132025, calibration b6de3e32253e).",
+  "Stage 2 EAD is expected at SAR 42.7bn (now SAR 41.6bn) and Stage 3 at SAR 11.3bn (now SAR 10.8bn).",
+  "Top stage movers: Tuwaiq Construction (moderate, +SAR 2.90m); Najd Central Engineering (moderate, +SAR 2.57m); Najd Peninsula Hospitality (moderate, +SAR 2.19m).",
+  "Back-test over 4 quarters to 2026Q2: Stage 2 inflow under-predicted by 8.9%, Stage 3 inflow under-predicted by 34.0%."
+ ],
+ "kpis": [
+  {
+   "key": "opening",
+   "label": "ECL run 2026Q3",
+   "value": 6993.735349,
+   "unit": "SAR m",
+   "text": null
+  },
+  {
+   "key": "forecast",
+   "label": "Forecast 2026Q4",
+   "value": 7942.746897,
+   "unit": "SAR m",
+   "text": "+13.6%"
+  },
+  {
+   "key": "stage2_ead",
+   "label": "Stage 2 EAD next quarter",
+   "value": 42667.955845,
+   "unit": "SAR m",
+   "text": "now SAR 41.6bn"
+  },
+  {
+   "key": "stage3_ead",
+   "label": "Stage 3 EAD next quarter",
+   "value": 11265.387021,
+   "unit": "SAR m",
+   "text": "now SAR 10.8bn"
+  },
+  {
+   "key": "overlay",
+   "label": "Drafted overlay",
+   "value": 415.238656,
+   "unit": "SAR m",
+   "text": "current SAR 230.5m"
+  },
+  {
+   "key": "forecast_s_moderate",
+   "label": "Forecast 2026Q4, \u00a7S moderate",
+   "value": 8331.983594,
+   "unit": "SAR m",
+   "text": "+389m on the base path"
+  }
+ ],
+ "rows": [
+  {
+   "facility_id": "CF000022",
+   "borrower_id": "CB00002",
+   "facilities": 3,
+   "borrower_name": "Tuwaiq Construction",
+   "sector": "Construction",
+   "rating": "CCC",
+   "stage": 2,
+   "ews_band": "moderate",
+   "ews_reasons": "On watchlist; SICR flag raised; Past due at another lender (external DPD > 59)",
+   "ead_sar_mn": 107.2823,
+   "p_stage2": 0.84873,
+   "p_stage3": 0.083865,
+   "p_worse": 0.083865,
+   "ecl_now_sar_mn": 12.084486,
+   "ecl_if_moves_sar_mn": 23.971933,
+   "expected_increase_sar_mn": 2.899792
+  },
+  {
+   "facility_id": "CF013242",
+   "borrower_id": "CB01324",
+   "facilities": 5,
+   "borrower_name": "Najd Central Engineering",
+   "sector": "Construction",
+   "rating": "BB+",
+   "stage": 2,
+   "ews_band": "moderate",
+   "ews_reasons": "On watchlist; SICR flag raised; Past due at another lender (external DPD > 59); 2 or more bureau enquiries this quarter",
+   "ead_sar_mn": 56.8965,
+   "p_stage2": 0.84873,
+   "p_stage3": 0.083865,
+   "p_worse": 0.083865,
+   "ecl_now_sar_mn": 0.903006,
+   "ecl_if_moves_sar_mn": 8.39442,
+   "expected_increase_sar_mn": 2.568048
+  },
+  {
+   "facility_id": "CF019243",
+   "borrower_id": "CB01924",
+   "facilities": 6,
+   "borrower_name": "Najd Peninsula Hospitality",
+   "sector": "Hospitality",
+   "rating": "BBB",
+   "stage": 2,
+   "ews_band": "moderate",
+   "ews_reasons": "On watchlist; Covenant breach; SICR flag raised; Operating inflows fell by 30 per cent or more on the year; Operating balance under 1 month of obligations; 2 or more returned payments this quarter",
+   "ead_sar_mn": 57.7116,
+   "p_stage2": 0.84873,
+   "p_stage3": 0.083865,
+   "p_worse": 0.083865,
+   "ecl_now_sar_mn": 2.775306,
+   "ecl_if_moves_sar_mn": 8.710006,
+   "expected_increase_sar_mn": 2.191728
+  },
+  {
+   "facility_id": "CF038363",
+   "borrower_id": "CB03836",
+   "facilities": 5,
+   "borrower_name": "Al Ahsa Continental Properties",
+   "sector": "Real Estate",
+   "rating": "BB+",
+   "stage": 2,
+   "ews_band": "moderate",
+   "ews_reasons": "On watchlist; Rating downgraded this quarter; SICR flag raised; Operating balance under 1 month of obligations; 2 or more returned payments this quarter",
+   "ead_sar_mn": 52.5015,
+   "p_stage2": 0.84873,
+   "p_stage3": 0.083865,
+   "p_worse": 0.083865,
+   "ecl_now_sar_mn": 2.77097,
+   "ecl_if_moves_sar_mn": 7.568203,
+   "expected_increase_sar_mn": 2.079841
+  },
+  {
+   "facility_id": "CF018044",
+   "borrower_id": "CB01804",
+   "facilities": 6,
+   "borrower_name": "Najd Modern Hospitality",
+   "sector": "Hospitality",
+   "rating": "BBB",
+   "stage": 2,
+   "ews_band": "moderate",
+   "ews_reasons": "On watchlist; SICR flag raised; 2 or more bureau enquiries this quarter; Operating inflows fell by 30 per cent or more on the year; Operating balance under 1 month of obligations; 2 or more returned payments this quarter",
+   "ead_sar_mn": 53.9852,
+   "p_stage2": 0.84873,
+   "p_stage3": 0.083865,
+   "p_worse": 0.083865,
+   "ecl_now_sar_mn": 0.296568,
+   "ecl_if_moves_sar_mn": 7.051293,
+   "expected_increase_sar_mn": 2.066549
+  },
+  {
+   "facility_id": "CF009323",
+   "borrower_id": "CB00932",
+   "facilities": 6,
+   "borrower_name": "Jazan Gulf Contracting",
+   "sector": "Construction",
+   "rating": "BBB",
+   "stage": 2,
+   "ews_band": "moderate",
+   "ews_reasons": "On watchlist; Covenant breach; SICR flag raised; High utilisation (>= 98%); 2 or more bureau enquiries this quarter",
+   "ead_sar_mn": 56.578,
+   "p_stage2": 0.84873,
+   "p_stage3": 0.083865,
+   "p_worse": 0.083865,
+   "ecl_now_sar_mn": 0.360269,
+   "ecl_if_moves_sar_mn": 7.353528,
+   "expected_increase_sar_mn": 2.065539
+  }
+ ],
+ "data_limits": [
+  "The EWS model is estimated on 153,729 facility-quarter moves (8 quarters, one partial credit cycle); cells with fewer than 200 moves use the stage's pooled row.",
+  "New business, repayments other than full exits, write-off policy changes, scenario-weight changes and model recalibration are not forecast. Macro comes from the \u00a7S calibrated scenarios (dd_scenario_result), shown beside the base path: a quarter carries a quarter of \u00a7S's one-year log change by sector (a pro-rata assumption, not a quarterly model).",
+  "PD and LGD drift extrapolate the last 4 quarters' sector trend (clipped to +/-25% a quarter); a turn in the cycle will not show until it is in the data.",
+  "The run's ECL includes its management overlay; the drafted overlay is an addition proposed for review, not booked."
+ ],
+ "method": [
+  "Stage distribution next quarter: empirical P(stage', exit | stage, EWS band) from ews.corp_exposure.",
+  "ECL per stage from the run's own EAD, PD and LGD; drivers applied in sequence so the bridge adds up exactly.",
+  "Back-test 2026Q1 -> 2026Q2 on the same method; error drives the drafted overlay."
+ ],
+ "writer": "deterministic",
+ "bridge": [
+  {
+   "key": "opening",
+   "label": "ECL run 2026Q3",
+   "value_sar_mn": 6993.735349
+  },
+  {
+   "key": "stage",
+   "label": "Stage moves and exits (EWS model)",
+   "value_sar_mn": 764.579503
+  },
+  {
+   "key": "pd",
+   "label": "PD drift (sector trend)",
+   "value_sar_mn": 37.183703
+  },
+  {
+   "key": "lgd",
+   "label": "LGD drift (sector trend)",
+   "value_sar_mn": 59.173916
+  },
+  {
+   "key": "ead",
+   "label": "EAD change (product trend)",
+   "value_sar_mn": 88.074425
+  },
+  {
+   "key": "closing",
+   "label": "Forecast 2026Q4 before overlay review",
+   "value_sar_mn": 7942.746897
+  }
+ ],
+ "stage_ead_now": {
+  "1": 101282.439,
+  "2": 41622.7523,
+  "3": 10794.9505
+ },
+ "stage_ead_next": {
+  "1": 99766.798934,
+  "2": 42667.955845,
+  "3": 11265.387021
+ },
+ "drivers": {
+  "pd_rate_by_sector": {
+   "Agriculture and Agri-processing": 1.01433,
+   "Chemicals": 1.00616,
+   "Construction": 1.048844,
+   "Healthcare": 0.986134,
+   "Hospitality": 1.025851,
+   "Information Technology": 0.998311,
+   "Manufacturing": 1.008857,
+   "Metals and Mining": 0.998446,
+   "Power and Utilities": 0.984278,
+   "Real Estate": 1.038491,
+   "Retail Trade": 1.031389,
+   "Telecommunications": 0.982132,
+   "Transport and Logistics": 1.00718,
+   "Wholesale Trade": 1.001973
+  },
+  "lgd_rate_by_sector": {
+   "Agriculture and Agri-processing": 1.004443,
+   "Chemicals": 1.002475,
+   "Construction": 1.0099,
+   "Healthcare": 1.002092,
+   "Hospitality": 1.007034,
+   "Information Technology": 1.000477,
+   "Manufacturing": 1.004046,
+   "Metals and Mining": 1.003064,
+   "Power and Utilities": 0.999437,
+   "Real Estate": 1.007782,
+   "Retail Trade": 1.007518,
+   "Telecommunications": 1.003269,
+   "Transport and Logistics": 1.004554,
+   "Wholesale Trade": 1.003819
+  },
+  "ead_rate_by_product": {
+   "asset_finance": 1.01199,
+   "overdraft": 1.012207,
+   "project_finance": 1.012807,
+   "revolving_credit": 1.011894,
+   "term_loan": 1.011887,
+   "trade_finance": 1.011654,
+   "working_capital": 1.012029,
+   "supply_chain_finance": 1.003031
+  }
+ },
+ "backtest": {
+  "from": "2026Q1",
+  "to": "2026Q2",
+  "inflow_predicted_ead": {
+   "2": 4678.835686,
+   "3": 1299.374731
+  },
+  "inflow_actual_ead": {
+   "2": 3723.6775,
+   "3": 3098.1583
+  },
+  "inflow_error": {
+   "2": 0.256509,
+   "3": -0.580598
+  },
+  "predicted_ead": {
+   "1": 99726.476711,
+   "2": 41498.848616,
+   "3": 9189.768073
+  },
+  "actual_ead_same_base": {
+   "1": 99441.2838,
+   "2": 40392.958,
+   "3": 10580.8516
+  },
+  "actual_ead": {
+   "1": 98812.3775,
+   "2": 40450.3018,
+   "3": 10636.7187
+  },
+  "error": {
+   "2": 0.027378,
+   "3": -0.131472
+  },
+  "facilities": 20426,
+  "pooled": {
+   "quarters": [
+    "2026Q1->2026Q2",
+    "2025Q2->2025Q3",
+    "2025Q3->2025Q4",
+    "2025Q4->2026Q1"
+   ],
+   "inflow_predicted_ead": {
+    "2": 16866.48215,
+    "3": 4441.943906
+   },
+   "inflow_actual_ead": {
+    "2": 18523.7217,
+    "3": 6726.7676
+   },
+   "inflow_error": {
+    "2": -0.089466,
+    "3": -0.339661
+   },
+   "by_quarter": [
+    {
+     "from": "2026Q1",
+     "to": "2026Q2",
+     "inflow_error": {
+      "2": 0.256509,
+      "3": -0.580598
+     }
+    },
+    {
+     "from": "2025Q2",
+     "to": "2025Q3",
+     "inflow_error": {
+      "2": -0.086194,
+      "3": -0.015879
+     }
+    },
+    {
+     "from": "2025Q3",
+     "to": "2025Q4",
+     "inflow_error": {
+      "2": -0.245036,
+      "3": 0.098318
+     }
+    },
+    {
+     "from": "2025Q4",
+     "to": "2026Q1",
+     "inflow_error": {
+      "2": -0.177693,
+      "3": -0.351604
+     }
+    }
+   ]
+  }
+ },
+ "overlay": {
+  "amount_sar_mn": 415.238656,
+  "components": [
+   {
+    "key": "stage2_inflow_underprediction",
+    "amount_sar_mn": 2.391166,
+    "why": "Stage 1 to 2 inflow was under-predicted by 8.9% over the last 4 back-tested quarters"
+   },
+   {
+    "key": "stage3_inflow_underprediction",
+    "amount_sar_mn": 412.746705,
+    "why": "inflow into Stage 3 was under-predicted by 34.0% over the last 4 back-tested quarters (predicted SAR 4.4bn of EAD, observed SAR 6.7bn); the expected Stage 3 ECL increase is scaled up to the observed inflow"
+   },
+   {
+    "key": "ews_high_stage1",
+    "amount_sar_mn": 0.092625,
+    "why": "5 Stage 1 facilities are Early Warning high or critical; half the lifetime uplift the model does not already expect is held against a SICR the model has not seen"
+   },
+   {
+    "key": "run_anomalies",
+    "amount_sar_mn": 0.008161,
+    "why": "7 exposures carry ECL input anomalies needing a rerun (ecl_anomaly); 10% of their ECL is held until the rerun"
+   }
+  ],
+  "current_overlay_sar_mn": 230.470691,
+  "text": "Proposed post-model adjustment for 2026Q4: SAR 415.2m on a modelled forecast of SAR 7.9bn (5.2%), in addition to the current overlay of SAR 230.5m.\n- SAR 2.4m: Stage 1 to 2 inflow was under-predicted by 8.9% over the last 4 back-tested quarters.\n- SAR 412.7m: inflow into Stage 3 was under-predicted by 34.0% over the last 4 back-tested quarters (predicted SAR 4.4bn of EAD, observed SAR 6.7bn); the expected Stage 3 ECL increase is scaled up to the observed inflow.\n- SAR 0.1m: 5 Stage 1 facilities are Early Warning high or critical; half the lifetime uplift the model does not already expect is held against a SICR the model has not seen.\n- SAR 0.0m: 7 exposures carry ECL input anomalies needing a rerun (ecl_anomaly); 10% of their ECL is held until the rerun.\nEach component is released when the run captures the risk it covers (the facility moves stage, the anomaly is rerun) or when the next back-test shows no under-prediction.",
+  "status": "draft for the ECL committee; not booked"
+ },
+ "cross_check": {
+  "forward_risk_s2_to_s1": 0.122033,
+  "forward_risk_s2_to_s3": 0.042427,
+  "ews_model_s2_to_s1": 0.070011,
+  "ews_model_s2_to_s3": 0.039898,
+  "basis": "observed facility transitions 2021Q3-2026Q2"
+ },
+ "next_run": "2026Q4",
+ "macro": {
+  "source": "deal_desk.dd_scenario_result",
+  "scenarios": [
+   {
+    "severity": "mild",
+    "closing_sar_mn": 8122.991574,
+    "delta_sar_mn": 180.244677,
+    "book_ratio_one_year": 1.093522,
+    "stage2_share_start": 0.270805,
+    "stage2_share_stressed": 0.293042,
+    "brent_fall_pct": 12.954675,
+    "label": "\u00a7S mild: Oil price (Brent), one-year fall 13%, with the joint drivers"
+   },
+   {
+    "severity": "moderate",
+    "closing_sar_mn": 8331.983594,
+    "delta_sar_mn": 389.236697,
+    "book_ratio_one_year": 1.211017,
+    "stage2_share_start": 0.270805,
+    "stage2_share_stressed": 0.34183,
+    "brent_fall_pct": 33.705506,
+    "label": "\u00a7S moderate: Oil price (Brent), one-year fall 34%, with the joint drivers"
+   },
+   {
+    "severity": "severe",
+    "closing_sar_mn": 8511.258679,
+    "delta_sar_mn": 568.511782,
+    "book_ratio_one_year": 1.319364,
+    "stage2_share_start": 0.270805,
+    "stage2_share_stressed": 0.358045,
+    "brent_fall_pct": 47.130306,
+    "label": "\u00a7S severe: Oil price (Brent), one-year fall 47%, with the joint drivers"
+   }
+  ],
+  "window": "1990\u20132025, 2005\u20132025, 2007\u20132025",
+  "fingerprint": "b6de3e32253e",
+  "engine_version": "r13-s1",
+  "as_of": "2026Q2"
+ },
+ "digest": "9dc532e75335733b"
+}

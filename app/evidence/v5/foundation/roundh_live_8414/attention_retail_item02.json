@@ -1,0 +1,226 @@
+{
+ "domain_id": "retail",
+ "item": {
+  "comparison_basis": "previous month",
+  "comparison_month": "2026-07",
+  "comparison_period": "2026-07",
+  "comparison_quarter": "",
+  "domain_id": "retail",
+  "drilldown": {
+   "available": [
+    "customers"
+   ],
+   "borrower_count": 10879,
+   "counterparty_column": "customer_id",
+   "entity_count": 10879,
+   "entity_label": "customers",
+   "finer_dimension": "",
+   "measure_fields": [
+    "stage",
+    "ead_sar_mn"
+   ],
+   "note": "There is no subsegment level below origination vintage in this book, so a finer cut is not available and none is implied.",
+   "period_column": "reporting_month",
+   "relation": "retail_account_month",
+   "suggested_questions": [
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_month",
+     "question": "Show the customers behind 2026 in 2026-08.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "customer_id"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "2026",
+     "segment_dimension": "vintage_year"
+    },
+    {
+     "kind": "diagnostic",
+     "period_column": "reporting_month",
+     "question": "What drove the change in Stage 2 share of EAD for 2026 in 2026-08?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "stage",
+      "ead_sar_mn"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "2026",
+     "segment_dimension": "vintage_year"
+    },
+    {
+     "kind": "crosscut",
+     "period_column": "reporting_month",
+     "question": "Split 2026 by product.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "product"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "2026",
+     "segment_dimension": "vintage_year"
+    },
+    {
+     "kind": "crosscut",
+     "period_column": "reporting_month",
+     "question": "Split 2026 by region.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "region"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "2026",
+     "segment_dimension": "vintage_year"
+    },
+    {
+     "kind": "trend",
+     "period_column": "reporting_month",
+     "question": "How has Stage 2 share of EAD moved for 2026 over the last 12 months?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "stage",
+      "ead_sar_mn"
+     ],
+     "required_periods": [
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
+     ],
+     "required_quarters": [],
+     "segment": "2026",
+     "segment_dimension": "vintage_year"
+    }
+   ],
+   "unavailable": [
+    "subsegment"
+   ]
+  },
+  "evidence": {
+   "dimension": "vintage_year",
+   "measure": "stage2_share",
+   "relation": "retail_account_month"
+  },
+  "evidence_url": "",
+  "family": "vintage_stage2",
+  "headline": "2026: Stage 2 exposure rose to 4.25%",
+  "item_id": "att-7c12358bbb9163c3",
+  "key_numbers": [
+   {
+    "display": "4.25%",
+    "label": "Stage 2 share of EAD, 2026-08"
+   },
+   {
+    "display": "2.68%",
+    "label": "Stage 2 share of EAD, 2026-07"
+   },
+   {
+    "display": "SAR 6,424 million",
+    "label": "Exposure at default, 2026-08"
+   },
+   {
+    "display": "32.54%",
+    "label": "Share of book"
+   }
+  ],
+  "metric": "stage2_share",
+  "metric_label": "Stage 2 share of EAD",
+  "movement": {
+   "from": 0.02684304880946201,
+   "from_display": "2.68%",
+   "to": 0.04247410994238343,
+   "to_display": "4.25%",
+   "unit": "percent"
+  },
+  "period_noun": "month",
+  "possible_drivers": [],
+  "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+  "release_id": "v4-saudi-retail-20m-v5",
+  "reporting_month": "2026-08",
+  "reporting_period": "2026-08",
+  "reporting_quarter": "",
+  "scope": "segment",
+  "score": 0.005087,
+  "section": "attention",
+  "segment": "2026",
+  "segment_dimension": "vintage_year",
+  "segment_dimension_label": "Origination vintage",
+  "segment_label": "2026",
+  "severity": "medium",
+  "what_changed": "Stage 2 share of EAD was 2.68% in 2026-07 and is 4.25% in 2026-08.",
+  "what_to_review_next": [
+   "Which exposures crossed into Stage 2, and on which trigger.",
+   "Whether the migration is concentrated in a few names or broad.",
+   "What the same segment's coverage did over the same month."
+  ],
+  "why_it_appeared": "It moved 1.56 pp higher than 2026-07 on a segment holding 32.54% of the book's exposure at default."
+ },
+ "method": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "method_summary": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+ "release_id": "v4-saudi-retail-20m-v5",
+ "reporting_month": "2026-08",
+ "reporting_quarter": "2026-08"
+}

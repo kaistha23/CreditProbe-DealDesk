@@ -1,0 +1,1214 @@
+{
+ "status": "proposed",
+ "session_id": "example (fictional policy)",
+ "items": [
+  {
+   "id": "ONB-8E39F831",
+   "type": "threshold",
+   "metric": "board_material_pct",
+   "label": "Material facility threshold (share of Tier 1)",
+   "clause": "2.1",
+   "section": "Credit governance and delegation of authority",
+   "quote": "Facilities to a single obligor or group exceeding 10% of the Bank's Tier 1 capital are material facilities and require the approval of the Board of Directors.",
+   "clause_text": "Facilities to a single obligor or group exceeding 10% of the Bank's Tier 1 capital are material facilities and require the approval of the Board of Directors.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "2.1",
+    "quote": "Facilities to a single obligor or group exceeding 10% of the Bank's Tier 1 capital are material facilities and require the approval of the Board of Directors."
+   },
+   "value": 10.0,
+   "unit": "%",
+   "value_text": "10%",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books hold no Tier 1 capital or approval record"
+  },
+  {
+   "id": "ONB-B1F71C66",
+   "type": "threshold",
+   "metric": "board_reapproval_years",
+   "label": "Board re-approval of material facilities",
+   "clause": "2.2",
+   "section": "Credit governance and delegation of authority",
+   "quote": "Material facilities shall be re-approved by the Board of Directors at least every five years.",
+   "clause_text": "Material facilities shall be re-approved by the Board of Directors at least every five years.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "2.2",
+    "quote": "Material facilities shall be re-approved by the Board of Directors at least every five years."
+   },
+   "value": 5.0,
+   "unit": "years",
+   "value_text": "five years",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books hold no Board approval record",
+   "conflict": {
+    "regulation": "CBUAE CRM Art. 2.6",
+    "message": "Policy 2.2 allows 5 years; CBUAE CRM Art. 2.6 requires 3 years: the stricter (the regulation) applies and the policy should be amended."
+   }
+  },
+  {
+   "id": "ONB-F30CFFB5",
+   "type": "condition",
+   "metric": "conflict_declared",
+   "label": "Approver conflicts declared",
+   "clause": "2.3",
+   "section": "Credit governance and delegation of authority",
+   "quote": "No member of an approving authority may approve a facility to an obligor in which that member, or a member of their family, holds an interest; the conflict is declared and recorded in the minutes.",
+   "clause_text": "No member of an approving authority may approve a facility to an obligor in which that member, or a member of their family, holds an interest; the conflict is declared and recorded in the minutes.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "2.3",
+    "quote": "No member of an approving authority may approve a facility to an obligor in which that member, or a member of their family, holds an interest; the conflict is declared and recorded in the minutes."
+   },
+   "checkability": "auto",
+   "data_fields": [
+    "ev.connected.staff_interest"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-996C4CD4",
+   "type": "threshold",
+   "metric": "submission_days",
+   "label": "Application before expiry",
+   "clause": "2.4",
+   "section": "Credit governance and delegation of authority",
+   "quote": "Credit applications are submitted to the approving authority not less than 10 business days before the expiry of the existing facilities.",
+   "clause_text": "Credit applications are submitted to the approving authority not less than 10 business days before the expiry of the existing facilities.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "2.4",
+    "quote": "Credit applications are submitted to the approving authority not less than 10 business days before the expiry of the existing facilities."
+   },
+   "value": 10.0,
+   "unit": "days",
+   "value_text": "10 business days",
+   "stricter": "higher",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books hold no submission dates"
+  },
+  {
+   "id": "ONB-12828099",
+   "type": "threshold",
+   "metric": "audited_years",
+   "label": "Years of audited financial statements",
+   "clause": "3.3",
+   "section": "The credit application",
+   "quote": "Audited financial statements for the last three financial years shall be analysed.",
+   "clause_text": "Audited financial statements for the last three financial years shall be analysed; management accounts older than six months are not accepted in place of audited statements.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "3.3",
+    "quote": "Audited financial statements for the last three financial years shall be analysed."
+   },
+   "value": 3.0,
+   "unit": "years",
+   "value_text": "three financial years",
+   "stricter": "higher",
+   "checkability": "auto",
+   "data_fields": [
+    "fin.<year>.kind"
+   ],
+   "why": "years of actuals in the financial spreading"
+  },
+  {
+   "id": "ONB-959DCFC8",
+   "type": "threshold",
+   "metric": "mgmt_accounts_months",
+   "label": "Age of management accounts",
+   "clause": "3.3",
+   "section": "The credit application",
+   "quote": "management accounts older than six months are not accepted in place of audited statements.",
+   "clause_text": "Audited financial statements for the last three financial years shall be analysed; management accounts older than six months are not accepted in place of audited statements.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "3.3",
+    "quote": "management accounts older than six months are not accepted in place of audited statements."
+   },
+   "value": 6.0,
+   "unit": "months",
+   "value_text": "six months",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the spreading carries no management-accounts date"
+  },
+  {
+   "id": "ONB-79419F4F",
+   "type": "condition",
+   "metric": "approved_auditor",
+   "label": "Auditor on the approved list",
+   "clause": "3.4",
+   "section": "The credit application",
+   "quote": "The financial statements of the obligor shall be audited by an auditor on the Bank's approved list.",
+   "clause_text": "The financial statements of the obligor shall be audited by an auditor on the Bank's approved list.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "3.4",
+    "quote": "The financial statements of the obligor shall be audited by an auditor on the Bank's approved list."
+   },
+   "checkability": "auto",
+   "data_fields": [
+    "ev.governance.auditor",
+    "approved_auditors"
+   ],
+   "why": "the review evidence holds every input",
+   "same_as": "GOV-03"
+  },
+  {
+   "id": "ONB-95CC10FB",
+   "type": "threshold",
+   "metric": "bureau_days",
+   "label": "Age of the bureau report",
+   "clause": "3.5",
+   "section": "The credit application",
+   "quote": "A credit bureau report dated within the last 30 days shall be obtained for the obligor and each guarantor before the application is submitted.",
+   "clause_text": "A credit bureau report dated within the last 30 days shall be obtained for the obligor and each guarantor before the application is submitted.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "3.5",
+    "quote": "A credit bureau report dated within the last 30 days shall be obtained for the obligor and each guarantor before the application is submitted."
+   },
+   "value": 30.0,
+   "unit": "days",
+   "value_text": "30 days",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [
+    "ev.sources.bureau"
+   ],
+   "why": "the bureau extract date is text in the evidence register, not a field"
+  },
+  {
+   "id": "ONB-F81BE118",
+   "type": "threshold",
+   "metric": "min_rating",
+   "label": "Minimum rating for new money",
+   "clause": "4.1",
+   "section": "Risk acceptance criteria",
+   "quote": "The Bank shall not extend new money to an obligor rated below B- on the Bank's internal master scale. Existing obligors rated CCC may be renewed only with the approval of the Executive Credit Committee.",
+   "clause_text": "The Bank shall not extend new money to an obligor rated below B- on the Bank's internal master scale. Existing obligors rated CCC may be renewed only with the approval of the Executive Credit Committee.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.1",
+    "quote": "The Bank shall not extend new money to an obligor rated below B- on the Bank's internal master scale. Existing obligors rated CCC may be renewed only with the approval of the Executive Credit Committee."
+   },
+   "value": "B-",
+   "unit": "rating",
+   "value_text": "below B-",
+   "stricter": "higher",
+   "checkability": "auto",
+   "data_fields": [
+    "subject.rating"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-ED8556B9",
+   "type": "threshold",
+   "metric": "dscr",
+   "label": "DSCR after the deal",
+   "clause": "4.2",
+   "section": "Risk acceptance criteria",
+   "quote": "The debt service coverage ratio after the proposed facilities shall be not less than 1.25x.",
+   "clause_text": "The debt service coverage ratio after the proposed facilities shall be not less than 1.25x.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.2",
+    "quote": "The debt service coverage ratio after the proposed facilities shall be not less than 1.25x."
+   },
+   "value": 1.25,
+   "unit": "x",
+   "value_text": "1.25x",
+   "stricter": "higher",
+   "checkability": "auto",
+   "data_fields": [
+    "metrics.dscr_post"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-E1C72936",
+   "type": "threshold",
+   "metric": "debt_ebitda",
+   "label": "Debt/EBITDA after the deal",
+   "clause": "4.3",
+   "section": "Risk acceptance criteria",
+   "quote": "Total debt to EBITDA after the proposed facilities shall not exceed 3.5x.",
+   "clause_text": "Total debt to EBITDA after the proposed facilities shall not exceed 3.5x.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.3",
+    "quote": "Total debt to EBITDA after the proposed facilities shall not exceed 3.5x."
+   },
+   "value": 3.5,
+   "unit": "x",
+   "value_text": "3.5x",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "metrics.debt_ebitda_post"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-7D4C8B57",
+   "type": "threshold",
+   "metric": "current_ratio",
+   "label": "Current ratio",
+   "clause": "4.4",
+   "section": "Risk acceptance criteria",
+   "quote": "Trading and contracting obligors shall maintain a current ratio of at least 1.10x.",
+   "clause_text": "Trading and contracting obligors shall maintain a current ratio of at least 1.10x.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.4",
+    "quote": "Trading and contracting obligors shall maintain a current ratio of at least 1.10x."
+   },
+   "value": 1.1,
+   "unit": "x",
+   "value_text": "1.10x",
+   "stricter": "higher",
+   "checkability": "auto",
+   "data_fields": [
+    "fin_last.current_ratio"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-57986149",
+   "type": "threshold",
+   "metric": "balloon",
+   "label": "Balloon share",
+   "clause": "4.5",
+   "section": "Risk acceptance criteria",
+   "quote": "A balloon or bullet repayment shall not exceed 40% of the original facility amount.",
+   "clause_text": "A balloon or bullet repayment shall not exceed 40% of the original facility amount.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.5",
+    "quote": "A balloon or bullet repayment shall not exceed 40% of the original facility amount."
+   },
+   "value": 40.0,
+   "unit": "%",
+   "value_text": "40%",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "ask.balloon_pct"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-409340F0",
+   "type": "threshold",
+   "metric": "customer_concentration",
+   "label": "Single-customer share of revenue",
+   "clause": "4.6",
+   "section": "Risk acceptance criteria",
+   "quote": "No single customer shall account for more than 40% of the obligor's annual revenue.",
+   "clause_text": "No single customer shall account for more than 40% of the obligor's annual revenue.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.6",
+    "quote": "No single customer shall account for more than 40% of the obligor's annual revenue."
+   },
+   "value": 40.0,
+   "unit": "%",
+   "value_text": "40%",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the spreading holds no revenue by customer"
+  },
+  {
+   "id": "ONB-3621D18D",
+   "type": "threshold",
+   "metric": "backlog_cover",
+   "label": "Backlog cover (contractors)",
+   "clause": "4.7",
+   "section": "Risk acceptance criteria",
+   "quote": "For contractors, the order backlog shall not exceed 3.0 times annual revenue.",
+   "clause_text": "For contractors, the order backlog shall not exceed 3.0 times annual revenue.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.7",
+    "quote": "For contractors, the order backlog shall not exceed 3.0 times annual revenue."
+   },
+   "value": 3.0,
+   "unit": "x",
+   "value_text": "3.0 times",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "case.financials.backlog",
+    "case.financials.revenue"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-A0B12CF8",
+   "type": "threshold",
+   "metric": "single_obligor",
+   "label": "Single obligor limit",
+   "clause": "5.1",
+   "section": "Concentration limits",
+   "quote": "Aggregate exposure to a single obligor shall not exceed AED 300 million.",
+   "clause_text": "Aggregate exposure to a single obligor shall not exceed AED 300 million.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.1",
+    "quote": "Aggregate exposure to a single obligor shall not exceed AED 300 million."
+   },
+   "value": 300.0,
+   "unit": "AED m",
+   "value_text": "AED 300 million",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "subject.amount_sar",
+    "obligor.existing_exposure_sar_mn"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-430EE752",
+   "type": "threshold",
+   "metric": "group_limit",
+   "label": "Connected group limit",
+   "clause": "5.2",
+   "section": "Concentration limits",
+   "quote": "Aggregate exposure to a group of connected obligors shall not exceed AED 600 million.",
+   "clause_text": "Aggregate exposure to a group of connected obligors shall not exceed AED 600 million.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.2",
+    "quote": "Aggregate exposure to a group of connected obligors shall not exceed AED 600 million."
+   },
+   "value": 600.0,
+   "unit": "AED m",
+   "value_text": "AED 600 million",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "case.group_cap.group_exposure_after"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-EDD7034F",
+   "type": "threshold",
+   "metric": "large_exposure_tier1",
+   "label": "Connected counterparties (share of Tier 1)",
+   "clause": "5.3",
+   "section": "Concentration limits",
+   "quote": "Exposure to a group of connected counterparties shall not exceed 25% of the Bank's Tier 1 capital.",
+   "clause_text": "Exposure to a group of connected counterparties shall not exceed 25% of the Bank's Tier 1 capital.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.3",
+    "quote": "Exposure to a group of connected counterparties shall not exceed 25% of the Bank's Tier 1 capital."
+   },
+   "value": 25.0,
+   "unit": "%",
+   "value_text": "25%",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books hold no Tier 1 capital"
+  },
+  {
+   "id": "ONB-B029E0BB",
+   "type": "threshold",
+   "metric": "sector_share",
+   "label": "Single sector share of the book",
+   "clause": "5.4",
+   "section": "Concentration limits",
+   "quote": "No single economic sector shall exceed 15% of the corporate loan book.",
+   "clause_text": "No single economic sector shall exceed 15% of the corporate loan book.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.4",
+    "quote": "No single economic sector shall exceed 15% of the corporate loan book."
+   },
+   "value": 15.0,
+   "unit": "%",
+   "value_text": "15%",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "corporate book: sector, EAD"
+   ],
+   "why": "book-level: the pipeline and risk-appetite engine measure it"
+  },
+  {
+   "id": "ONB-8F9F4EC6",
+   "type": "threshold",
+   "metric": "re_construction_share",
+   "label": "Real estate and construction share of the book",
+   "clause": "5.5",
+   "section": "Concentration limits",
+   "quote": "Real estate and construction together shall not exceed 20% of the corporate loan book.",
+   "clause_text": "Real estate and construction together shall not exceed 20% of the corporate loan book.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.5",
+    "quote": "Real estate and construction together shall not exceed 20% of the corporate loan book."
+   },
+   "value": 20.0,
+   "unit": "%",
+   "value_text": "20%",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "corporate book: sector, EAD"
+   ],
+   "why": "book-level: the pipeline and risk-appetite engine measure it"
+  },
+  {
+   "id": "ONB-A604AE95",
+   "type": "threshold",
+   "metric": "wc_tenor_months",
+   "label": "Working capital tenor",
+   "clause": "6.2",
+   "section": "Tenor and repayment",
+   "quote": "Working capital facilities shall not exceed a tenor of 12 months and are renewed on review.",
+   "clause_text": "Working capital facilities shall not exceed a tenor of 12 months and are renewed on review.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "6.2",
+    "quote": "Working capital facilities shall not exceed a tenor of 12 months and are renewed on review."
+   },
+   "value": 12.0,
+   "unit": "months",
+   "value_text": "12 months",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "ask.facility_type",
+    "ask.tenor_years"
+   ],
+   "why": "the loan origination record carries the facility type and tenor"
+  },
+  {
+   "id": "ONB-E9175727",
+   "type": "threshold",
+   "metric": "ltv",
+   "label": "Loan to value (income-producing real estate)",
+   "clause": "7.1",
+   "section": "Security and collateral",
+   "quote": "The loan-to-value ratio on income-producing real estate shall not exceed 65%.",
+   "clause_text": "The loan-to-value ratio on income-producing real estate shall not exceed 65%.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.1",
+    "quote": "The loan-to-value ratio on income-producing real estate shall not exceed 65%."
+   },
+   "value": 65.0,
+   "unit": "%",
+   "value_text": "65%",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "subject.amount_sar",
+    "collateral[].type",
+    "collateral[].value"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-08581689",
+   "type": "threshold",
+   "metric": "cash_margin",
+   "label": "Cash margin on contractor guarantees",
+   "clause": "7.2",
+   "section": "Security and collateral",
+   "quote": "Performance and advance payment guarantees issued for contractors shall carry a cash margin of not less than 10%.",
+   "clause_text": "Performance and advance payment guarantees issued for contractors shall carry a cash margin of not less than 10%.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.2",
+    "quote": "Performance and advance payment guarantees issued for contractors shall carry a cash margin of not less than 10%."
+   },
+   "value": 10.0,
+   "unit": "%",
+   "value_text": "10%",
+   "stricter": "higher",
+   "checkability": "auto",
+   "data_fields": [
+    "ev.security.cash_margin_pct"
+   ],
+   "why": "the review evidence holds every input",
+   "same_as": "EXC-01"
+  },
+  {
+   "id": "ONB-27942680",
+   "type": "threshold",
+   "metric": "valuation_months_stage3",
+   "label": "Stage 3 collateral valuation age",
+   "clause": "7.3",
+   "section": "Security and collateral",
+   "quote": "at least every 18 months for obligors in Stage 3.",
+   "clause_text": "Real estate collateral shall be revalued by a Bank-approved valuer at least every 24 months, and at least every 18 months for obligors in Stage 3.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.3",
+    "quote": "at least every 18 months for obligors in Stage 3."
+   },
+   "value": 18.0,
+   "unit": "months",
+   "value_text": "18 months",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "collateral[].valuation_date",
+    "corporate book: stage"
+   ],
+   "why": "valuation dates in the collateral register; Stage 3 from the corporate book",
+   "conflict": {
+    "regulation": "CBUAE CRM Art. 10.11",
+    "message": "Policy 7.3 allows 18 months; CBUAE CRM Art. 10.11 requires 12 months: the stricter (the regulation) applies and the policy should be amended."
+   }
+  },
+  {
+   "id": "ONB-78BF00B6",
+   "type": "threshold",
+   "metric": "valuation_months",
+   "label": "Collateral valuation age",
+   "clause": "7.3",
+   "section": "Security and collateral",
+   "quote": "Real estate collateral shall be revalued by a Bank-approved valuer at least every 24 months.",
+   "clause_text": "Real estate collateral shall be revalued by a Bank-approved valuer at least every 24 months, and at least every 18 months for obligors in Stage 3.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.3",
+    "quote": "Real estate collateral shall be revalued by a Bank-approved valuer at least every 24 months."
+   },
+   "value": 24.0,
+   "unit": "months",
+   "value_text": "24 months",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "collateral[].valuation_date"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-23ED8EF2",
+   "type": "threshold",
+   "metric": "legal_opinion_months",
+   "label": "Legal opinion age at drawdown",
+   "clause": "7.4",
+   "section": "Security and collateral",
+   "quote": "Legal opinions on security shall be no older than 24 months at the date of drawdown.",
+   "clause_text": "Legal opinions on security shall be no older than 24 months at the date of drawdown.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.4",
+    "quote": "Legal opinions on security shall be no older than 24 months at the date of drawdown."
+   },
+   "value": 24.0,
+   "unit": "months",
+   "value_text": "24 months",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "ev.security.legal_opinion_date"
+   ],
+   "why": "the review evidence holds every input",
+   "same_as": "EXC-04"
+  },
+  {
+   "id": "ONB-BF133B68",
+   "type": "threshold",
+   "metric": "perfection_deferral_days",
+   "label": "Deferral of security perfection",
+   "clause": "7.5",
+   "section": "Security and collateral",
+   "quote": "a deferral of perfection of up to 60 days requires the approval of the authority one level above the approving authority.",
+   "clause_text": "All security shall be perfected before the first drawdown; a deferral of perfection of up to 60 days requires the approval of the authority one level above the approving authority.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.5",
+    "quote": "a deferral of perfection of up to 60 days requires the approval of the authority one level above the approving authority."
+   },
+   "value": 60.0,
+   "unit": "days",
+   "value_text": "60 days",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [
+    "ev.security.corporate_guarantee_perfection"
+   ],
+   "why": "the security register records whether security is perfected, not the length of a deferral"
+  },
+  {
+   "id": "ONB-4542D5CF",
+   "type": "condition",
+   "metric": "perfection_before_drawdown",
+   "label": "Security perfected before drawdown",
+   "clause": "7.5",
+   "section": "Security and collateral",
+   "quote": "All security shall be perfected before the first drawdown; a deferral of perfection of up to 60 days requires the approval of the authority one level above the approving authority.",
+   "clause_text": "All security shall be perfected before the first drawdown; a deferral of perfection of up to 60 days requires the approval of the authority one level above the approving authority.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.5",
+    "quote": "All security shall be perfected before the first drawdown; a deferral of perfection of up to 60 days requires the approval of the authority one level above the approving authority."
+   },
+   "checkability": "auto",
+   "data_fields": [
+    "ev.security.corporate_guarantee_perfection"
+   ],
+   "why": "the review evidence holds every input",
+   "same_as": "EXC-03"
+  },
+  {
+   "id": "ONB-AFCB42CC",
+   "type": "threshold",
+   "metric": "collateral_cover",
+   "label": "Collateral cover after haircuts",
+   "clause": "7.6",
+   "section": "Security and collateral",
+   "quote": "Secured facilities shall have a collateral cover, after haircuts, of at least 125%.",
+   "clause_text": "Secured facilities shall have a collateral cover, after haircuts, of at least 125%.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.6",
+    "quote": "Secured facilities shall have a collateral cover, after haircuts, of at least 125%."
+   },
+   "value": 125.0,
+   "unit": "%",
+   "value_text": "125%",
+   "stricter": "higher",
+   "checkability": "manual",
+   "data_fields": [
+    "collateral[].value"
+   ],
+   "why": "the collateral register holds values but not the policy's haircuts"
+  },
+  {
+   "id": "ONB-207B767C",
+   "type": "condition",
+   "metric": "guarantee_format",
+   "label": "Guarantees dated and in the bank's format",
+   "clause": "7.7",
+   "section": "Security and collateral",
+   "quote": "Guarantees issued by the Bank shall carry an expiry date and follow the Bank's standard format.",
+   "clause_text": "Guarantees issued by the Bank shall carry an expiry date and follow the Bank's standard format.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.7",
+    "quote": "Guarantees issued by the Bank shall carry an expiry date and follow the Bank's standard format."
+   },
+   "checkability": "auto",
+   "data_fields": [
+    "ev.security.guarantee_expiry",
+    "ev.security.guarantee_format"
+   ],
+   "why": "the review evidence holds every input",
+   "same_as": "EXC-02"
+  },
+  {
+   "id": "ONB-BEC202C7",
+   "type": "threshold",
+   "metric": "review_months_sub",
+   "label": "Review frequency (B+ or worse)",
+   "clause": "8.1",
+   "section": "Monitoring, review and classification",
+   "quote": "obligors rated B+ or worse at least every 12 months.",
+   "clause_text": "Every corporate obligor shall be reviewed at least every 18 months; obligors rated B+ or worse at least every 12 months.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "8.1",
+    "quote": "obligors rated B+ or worse at least every 12 months."
+   },
+   "value": 12.0,
+   "unit": "months",
+   "value_text": "12 months",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books hold no review date"
+  },
+  {
+   "id": "ONB-F00275CA",
+   "type": "threshold",
+   "metric": "review_months",
+   "label": "Review frequency",
+   "clause": "8.1",
+   "section": "Monitoring, review and classification",
+   "quote": "Every corporate obligor shall be reviewed at least every 18 months.",
+   "clause_text": "Every corporate obligor shall be reviewed at least every 18 months; obligors rated B+ or worse at least every 12 months.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "8.1",
+    "quote": "Every corporate obligor shall be reviewed at least every 18 months."
+   },
+   "value": 18.0,
+   "unit": "months",
+   "value_text": "18 months",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books hold no review date",
+   "conflict": {
+    "regulation": "CBUAE CRM Art. 4.3",
+    "message": "Policy 8.1 allows 18 months; CBUAE CRM Art. 4.3 requires 12 months: the stricter (the regulation) applies and the policy should be amended."
+   }
+  },
+  {
+   "id": "ONB-0EAFC3A5",
+   "type": "threshold",
+   "metric": "covenant_cert_days",
+   "label": "Covenant certificate submission",
+   "clause": "8.2",
+   "section": "Monitoring, review and classification",
+   "quote": "Covenant compliance certificates shall be submitted within 120 days of the obligor's financial year end.",
+   "clause_text": "Covenant compliance certificates shall be submitted within 120 days of the obligor's financial year end.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "8.2",
+    "quote": "Covenant compliance certificates shall be submitted within 120 days of the obligor's financial year end."
+   },
+   "value": 120.0,
+   "unit": "days",
+   "value_text": "120 days",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books hold no certificate submission dates"
+  },
+  {
+   "id": "ONB-7ED788A0",
+   "type": "threshold",
+   "metric": "dpd_stage2",
+   "label": "Days past due to Stage 2",
+   "clause": "8.3",
+   "section": "Monitoring, review and classification",
+   "quote": "A facility more than 60 days past due shall be classified in Stage 2 and placed on the watchlist.",
+   "clause_text": "A facility more than 60 days past due shall be classified in Stage 2 and placed on the watchlist.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "8.3",
+    "quote": "A facility more than 60 days past due shall be classified in Stage 2 and placed on the watchlist."
+   },
+   "value": 60.0,
+   "unit": "days",
+   "value_text": "60 days",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "corporate book: dpd_days, stage"
+   ],
+   "why": "the CBUAE CRM checks read days past due and stage from the book",
+   "conflict": {
+    "regulation": "CBUAE CRM Art. 7.8",
+    "message": "Policy 8.3 allows 60 days; CBUAE CRM Art. 7.8 requires 30 days: the stricter (the regulation) applies and the policy should be amended."
+   }
+  },
+  {
+   "id": "ONB-4C29D8C4",
+   "type": "threshold",
+   "metric": "dpd_default",
+   "label": "Days past due to Stage 3",
+   "clause": "8.4",
+   "section": "Monitoring, review and classification",
+   "quote": "A facility more than 90 days past due on a material obligation shall be classified in Stage 3.",
+   "clause_text": "A facility more than 90 days past due on a material obligation shall be classified in Stage 3.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "8.4",
+    "quote": "A facility more than 90 days past due on a material obligation shall be classified in Stage 3."
+   },
+   "value": 90.0,
+   "unit": "days",
+   "value_text": "90 days",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "corporate book: dpd_days, stage"
+   ],
+   "why": "the CBUAE CRM checks read days past due and stage from the book"
+  },
+  {
+   "id": "ONB-AC5E00E7",
+   "type": "threshold",
+   "metric": "restructure_count",
+   "label": "Restructurings to Stage 3",
+   "clause": "8.5",
+   "section": "Monitoring, review and classification",
+   "quote": "A facility restructured three or more times in a context of financial difficulty shall be classified in Stage 3.",
+   "clause_text": "A facility restructured three or more times in a context of financial difficulty shall be classified in Stage 3.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "8.5",
+    "quote": "A facility restructured three or more times in a context of financial difficulty shall be classified in Stage 3."
+   },
+   "value": 3.0,
+   "unit": "times",
+   "value_text": "three or more times",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books flag a restructuring, not how many"
+  },
+  {
+   "id": "ONB-77F2105F",
+   "type": "threshold",
+   "metric": "moratorium_months",
+   "label": "Moratorium to Stage 2",
+   "clause": "8.6",
+   "section": "Monitoring, review and classification",
+   "quote": "A non-distressed restructuring with a repayment moratorium exceeding 9 months shall be classified in Stage 2.",
+   "clause_text": "A non-distressed restructuring with a repayment moratorium exceeding 9 months shall be classified in Stage 2.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "8.6",
+    "quote": "A non-distressed restructuring with a repayment moratorium exceeding 9 months shall be classified in Stage 2."
+   },
+   "value": 9.0,
+   "unit": "months",
+   "value_text": "9 months",
+   "stricter": "lower",
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "the books hold no moratorium period",
+   "conflict": {
+    "regulation": "CBUAE CRM Art. 9.31",
+    "message": "Policy 8.6 allows 9 months; CBUAE CRM Art. 9.31 requires 6 months: the stricter (the regulation) applies and the policy should be amended."
+   }
+  },
+  {
+   "id": "ONB-2D382926",
+   "type": "threshold",
+   "metric": "write_off_years",
+   "label": "Stage 3 write-off period",
+   "clause": "8.7",
+   "section": "Monitoring, review and classification",
+   "quote": "Stage 3 exposures shall be written off no later than 7 years after classification in Stage 3.",
+   "clause_text": "Stage 3 exposures shall be written off no later than 7 years after classification in Stage 3.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "8.7",
+    "quote": "Stage 3 exposures shall be written off no later than 7 years after classification in Stage 3."
+   },
+   "value": 7.0,
+   "unit": "years",
+   "value_text": "7 years",
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "corporate book: stage history"
+   ],
+   "why": "months in Stage 3 from the stage history (CBUAE CRM check CRM-12.5)",
+   "conflict": {
+    "regulation": "CBUAE CRM Art. 12.5",
+    "message": "Policy 8.7 allows 7 years; CBUAE CRM Art. 12.5 requires 5 years: the stricter (the regulation) applies and the policy should be amended."
+   }
+  },
+  {
+   "id": "ONB-C9C36194",
+   "type": "threshold",
+   "metric": "raroc_floor",
+   "label": "Lifetime RAROC floor",
+   "clause": "9.1",
+   "section": "Pricing and returns",
+   "quote": "The lifetime RAROC of a new facility shall not be below 12%.",
+   "clause_text": "The lifetime RAROC of a new facility shall not be below 12%.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "9.1",
+    "quote": "The lifetime RAROC of a new facility shall not be below 12%."
+   },
+   "value": 12.0,
+   "unit": "%",
+   "value_text": "12%",
+   "stricter": "higher",
+   "checkability": "auto",
+   "data_fields": [
+    "metrics.lifetime_raroc"
+   ],
+   "why": "the review evidence holds every input"
+  },
+  {
+   "id": "ONB-50BA30A4",
+   "type": "condition",
+   "metric": "cp_before_drawdown",
+   "label": "Conditions precedent evidenced before drawdown",
+   "clause": "10.1",
+   "section": "Credit committee practice",
+   "quote": "Conditions precedent are satisfied and evidenced before the first drawdown; conditions subsequent carry a due date and an owner.",
+   "clause_text": "Conditions precedent are satisfied and evidenced before the first drawdown; conditions subsequent carry a due date and an owner.",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "10.1",
+    "quote": "Conditions precedent are satisfied and evidenced before the first drawdown; conditions subsequent carry a due date and an owner."
+   },
+   "checkability": "manual",
+   "data_fields": [],
+   "why": "conditions are tracked in the Deal Desk conditions tracker; evidence is attached by a person"
+  },
+  {
+   "id": "ONB-A009459E",
+   "type": "threshold",
+   "metric": "max_tenor",
+   "label": "Maximum tenor by rating bucket",
+   "clause": "Table 6.1",
+   "section": "Tenor and repayment",
+   "quote": "Table 6.1 Maximum tenor by rating bucket: IG 10; BB 7; B 4; CCC-C 2",
+   "clause_text": "Table 6.1 Maximum tenor by rating bucket",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "Table 6.1",
+    "quote": "Table 6.1 Maximum tenor by rating bucket: IG 10; BB 7; B 4; CCC-C 2"
+   },
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "ask.tenor_years",
+    "subject.rating"
+   ],
+   "why": "the review evidence holds every input",
+   "value": {
+    "IG": 10.0,
+    "BB": 7.0,
+    "B": 4.0,
+    "CCC-C": 2.0
+   },
+   "unit": "years"
+  },
+  {
+   "id": "ONB-A47699EB",
+   "type": "threshold",
+   "metric": "margin_bounds",
+   "label": "Margin bounds by rating bucket",
+   "clause": "Table 9.2",
+   "section": "Pricing and returns",
+   "quote": "Table 9.2 Margin bounds by rating bucket (basis points over the base rate): IG 100 250; BB 175 375; B 300 500; CCC-C 450 650",
+   "clause_text": "Table 9.2 Margin bounds by rating bucket (basis points over the base rate)",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "Table 9.2",
+    "quote": "Table 9.2 Margin bounds by rating bucket (basis points over the base rate): IG 100 250; BB 175 375; B 300 500; CCC-C 450 650"
+   },
+   "stricter": "higher",
+   "checkability": "auto",
+   "data_fields": [
+    "ask.margin_bps",
+    "subject.rating"
+   ],
+   "why": "the review evidence holds every input",
+   "value": {
+    "IG": [
+     100.0,
+     250.0
+    ],
+    "BB": [
+     175.0,
+     375.0
+    ],
+    "B": [
+     300.0,
+     500.0
+    ],
+    "CCC-C": [
+     450.0,
+     650.0
+    ]
+   },
+   "unit": "bps"
+  },
+  {
+   "id": "ONB-F9EC319B",
+   "type": "threshold",
+   "metric": "doa",
+   "label": "Delegation of Authority",
+   "clause": "Appendix A",
+   "section": "Appendix A. Delegation of Authority matrix",
+   "quote": "Appendix A. Delegation of Authority matrix: Corporate Credit Manager 25 BBB-; Head of Credit 100 BB-; Chief Risk Officer 200 B-; Executive Credit Committee 300 CCC; Board Credit Committee above 300 C",
+   "clause_text": "Appendix A. Delegation of Authority matrix",
+   "status": "proposed",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "Appendix A",
+    "quote": "Appendix A. Delegation of Authority matrix: Corporate Credit Manager 25 BBB-; Head of Credit 100 BB-; Chief Risk Officer 200 B-; Executive Credit Committee 300 CCC; Board Credit Committee above 300 C"
+   },
+   "stricter": "lower",
+   "checkability": "auto",
+   "data_fields": [
+    "subject.amount_sar",
+    "subject.rating"
+   ],
+   "why": "the Deal Desk derives the approval level from exposure after the deal and rating",
+   "value": [
+    {
+     "level": "Corporate Credit Manager",
+     "max_exposure_policy": 25.0,
+     "max_exposure": 25.52,
+     "min_rating": "BBB-"
+    },
+    {
+     "level": "Head of Credit",
+     "max_exposure_policy": 100.0,
+     "max_exposure": 102.1,
+     "min_rating": "BB-"
+    },
+    {
+     "level": "Chief Risk Officer",
+     "max_exposure_policy": 200.0,
+     "max_exposure": 204.2,
+     "min_rating": "B-"
+    },
+    {
+     "level": "Executive Credit Committee",
+     "max_exposure_policy": 300.0,
+     "max_exposure": 306.3,
+     "min_rating": "CCC"
+    },
+    {
+     "level": "Board Credit Committee",
+     "max_exposure_policy": null,
+     "max_exposure": null,
+     "min_rating": "C"
+    }
+   ],
+   "unit": "AED m",
+   "conversion": "AED × 1.021 (AED/SAR in the Deal Desk parameters)"
+  }
+ ]
+}

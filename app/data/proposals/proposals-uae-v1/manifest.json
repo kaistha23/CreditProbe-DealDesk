@@ -1,0 +1,36 @@
+{
+ "domain": "proposals",
+ "as_of": "2026-10-13",
+ "currency": "AED",
+ "rows": {
+  "proposal": 2,
+  "proposal_facility": 9,
+  "proposal_finding": 60
+ },
+ "dictionary": {
+  "proposal_id": "Proposal identifier (PRP-\u2026).",
+  "borrower": "Borrower name.",
+  "group_name": "Economic group.",
+  "sector": "Sector.",
+  "rating": "Internal rating (global order AAA \u2026 C).",
+  "tier": "Review tier.",
+  "currency": "Currency of the limits.",
+  "total_existing_mn": "Existing limits, millions.",
+  "total_proposed_mn": "Proposed limits, millions.",
+  "quality_score": "Proposal quality score out of 100.",
+  "raroc_seed": "Relationship RAROC with fees and deposits at the seeded parameters.",
+  "hurdle_seed": "Hurdle at the seeded parameters.",
+  "watch_status": "Proposed watch status.",
+  "as_of": "Review date.",
+  "facility": "Facility name.",
+  "kind": "funded, performance_lg or financial_lg.",
+  "existing_mn": "Existing limit, millions.",
+  "proposed_mn": "Proposed limit, millions.",
+  "pricing_bps": "Margin or commission, basis points.",
+  "finding_id": "Finding identifier.",
+  "finding_type": "check, gap, weakness or watch.",
+  "text": "The finding.",
+  "result": "Pass / Fail (checks), Open (gaps and watch items), Covered / Uncovered (weaknesses).",
+  "reference": "CBUAE CRM article or the due date."
+ }
+}

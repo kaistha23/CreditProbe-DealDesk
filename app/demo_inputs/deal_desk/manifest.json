@@ -1,0 +1,96 @@
+{
+ "origin": "SYNTHETIC_DEMO",
+ "not_client_data": true,
+ "cases": [
+  {
+   "id": "DD-201",
+   "obligor": "Al Khobar Modern Logistics Company",
+   "group": "Al Khobar Modern Logistics Group (CG9317-006)",
+   "case": "Group member that clears easily: strong rating, secured, parent guarantee.",
+   "files": [
+    "CP_Demo_DD-201_AlKhobarModernLogistics_LongForm.docx",
+    "CP_Demo_DD-201_AlKhobarModernLogistics_ShortForm.xlsx"
+   ]
+  },
+  {
+   "id": "DD-202",
+   "obligor": "Rawabi Industrial Works Fabrication Company",
+   "group": "Rawabi Industrial Works Group CG1277 (CG1277)",
+   "case": "Group member that breaches the SAR 500m connected-group limit: the group already holds SAR 662m.",
+   "files": [
+    "CP_Demo_DD-202_RawabiIndustrialWorks_LongForm.docx",
+    "CP_Demo_DD-202_RawabiIndustrialWorks_ShortForm.xlsx"
+   ]
+  },
+  {
+   "id": "DD-203",
+   "obligor": "Najd Central Engineering Contracting Company",
+   "group": "Najd Central Engineering Group (CG6292-119)",
+   "case": "Below the hurdle as asked (unsecured, thin margin); fixable with collateral or a guarantee. No security or covenants stated: the thread asks for them.",
+   "files": [
+    "CP_Demo_DD-203_NajdCentralEngineering_LongForm.docx",
+    "CP_Demo_DD-203_NajdCentralEngineering_ShortForm.xlsx"
+   ]
+  },
+  {
+   "id": "DD-204",
+   "obligor": "Tabuk Dates Processing Company",
+   "group": null,
+   "case": "New to bank, clears comfortably.",
+   "files": [
+    "CP_Demo_DD-204_TabukDatesProcessing_LongForm.docx",
+    "CP_Demo_DD-204_TabukDatesProcessing_ShortForm.xlsx"
+   ]
+  },
+  {
+   "id": "DD-205",
+   "obligor": "Jazan Cold Chain Services Company",
+   "group": null,
+   "case": "Islamic structure (ijara) with no underlying asset pledged: fails the structure rule until an asset is identified.",
+   "files": [
+    "CP_Demo_DD-205_JazanColdChainLeasing_LongForm.docx",
+    "CP_Demo_DD-205_JazanColdChainLeasing_ShortForm.xlsx"
+   ]
+  },
+  {
+   "id": "DD-206",
+   "obligor": "Tuwaiq Modern Properties Development Company",
+   "group": "Tuwaiq Modern Properties Group (CG3425-011)",
+   "case": "Breaches a sector limit (real estate is already over its 10% risk-appetite cap) and, with the group's SAR 322m, the SAR 500m connected-group limit.",
+   "files": [
+    "CP_Demo_DD-206_TuwaiqModernProperties_LongForm.docx",
+    "CP_Demo_DD-206_TuwaiqModernProperties_ShortForm.xlsx"
+   ]
+  },
+  {
+   "id": "DD-207",
+   "obligor": "Taif First Logistics Company",
+   "group": "Taif First Logistics Group (CG9317-018)",
+   "case": "Group member with connected exposure; just below the hurdle as asked, fixable with a few bps of margin; revolving facility.",
+   "files": [
+    "CP_Demo_DD-207_TaifFirstLogistics_LongForm.docx",
+    "CP_Demo_DD-207_TaifFirstLogistics_ShortForm.xlsx"
+   ]
+  },
+  {
+   "id": "DD-208",
+   "obligor": "Qassim Specialist Healthcare Company",
+   "group": null,
+   "case": "New to bank, sub-investment grade; a Kafalah guarantee carries it over the hurdle.",
+   "files": [
+    "CP_Demo_DD-208_QassimSpecialistHealthcare_LongForm.docx",
+    "CP_Demo_DD-208_QassimSpecialistHealthcare_ShortForm.xlsx"
+   ]
+  },
+  {
+   "id": "DD-209",
+   "obligor": "Wadi Hanifah Technologies Company",
+   "group": "Wadi Hanifah Technologies Group (CG1191-011)",
+   "case": "Unfunded facility (performance LG) for a group member, with a 20% cash margin.",
+   "files": [
+    "CP_Demo_DD-209_WadiHanifahTechnologies_LongForm.docx",
+    "CP_Demo_DD-209_WadiHanifahTechnologies_ShortForm.xlsx"
+   ]
+  }
+ ]
+}

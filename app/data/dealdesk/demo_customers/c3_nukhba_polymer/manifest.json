@@ -1,0 +1,2966 @@
+{
+ "customer_key": "c3",
+ "proposal_id": "R16-C3",
+ "cif": null,
+ "customer_name": "Nukhba Polymer Industries Co.",
+ "cr_number": "2055104486",
+ "as_of": "2026-10-21",
+ "documents": [
+  {
+   "doc_id": "C3-01",
+   "doc_type": "national_id",
+   "subject": "saleh_ibrahim_al_mansour",
+   "title": "NATIONAL IDENTITY CARD",
+   "issuer": "Civil Status Registry (specimen)",
+   "issue_date": "2023-01-18",
+   "expiry_date": "2033-01-17",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/01_national_id__saleh_ibrahim_al_mansour.docx",
+    "pdf": "pdf/01_national_id__saleh_ibrahim_al_mansour.pdf",
+    "images": [
+     "images/01_national_id__saleh_ibrahim_al_mansour_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Saleh Ibrahim Al-Mansour",
+    "id_number": "1027745196",
+    "nationality": "Saudi",
+    "date_of_birth": "1964-12-03",
+    "issue_date": "2023-01-18",
+    "expiry_date": "2033-01-17"
+   }
+  },
+  {
+   "doc_id": "C3-02",
+   "doc_type": "national_id",
+   "subject": "khalid_ibrahim_al_mansour",
+   "title": "NATIONAL IDENTITY CARD",
+   "issuer": "Civil Status Registry (specimen)",
+   "issue_date": "2021-08-02",
+   "expiry_date": "2031-08-01",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/02_national_id__khalid_ibrahim_al_mansour.docx",
+    "pdf": "pdf/02_national_id__khalid_ibrahim_al_mansour.pdf",
+    "images": [
+     "images/02_national_id__khalid_ibrahim_al_mansour_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Khalid Ibrahim Al-Mansour",
+    "id_number": "1031198472",
+    "nationality": "Saudi",
+    "date_of_birth": "1970-04-19",
+    "issue_date": "2021-08-02",
+    "expiry_date": "2031-08-01"
+   }
+  },
+  {
+   "doc_id": "C3-03",
+   "doc_type": "articles_of_association",
+   "subject": null,
+   "title": "ARTICLES OF ASSOCIATION",
+   "issuer": "Nukhba Polymer Industries Co.",
+   "issue_date": "2019-05-12",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/03_articles_of_association.docx",
+    "pdf": "pdf/03_articles_of_association.pdf",
+    "images": [
+     "images/03_articles_of_association_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "legal_form": "Limited Liability Company",
+    "date_of_incorporation": "2011-09-04",
+    "share_capital": 100000000,
+    "amendment_date": "2019-05-12",
+    "shareholders": [
+     {
+      "name": "Saleh Ibrahim Al-Mansour",
+      "id_number": "1027745196",
+      "nationality": "Saudi",
+      "shares": 60000,
+      "pct": 60.0
+     },
+     {
+      "name": "Khalid Ibrahim Al-Mansour",
+      "id_number": "1031198472",
+      "nationality": "Saudi",
+      "shares": 40000,
+      "pct": 40.0
+     }
+    ],
+    "managers": [
+     {
+      "name": "Saleh Ibrahim Al-Mansour",
+      "role": "Chairman and General Manager",
+      "powers": "Sole signatory up to SAR 20m"
+     },
+     {
+      "name": "Khalid Ibrahim Al-Mansour",
+      "role": "Director, Operations",
+      "powers": "Jointly with the Chairman"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-04",
+   "doc_type": "commercial_registration",
+   "subject": null,
+   "title": "COMMERCIAL REGISTRATION CERTIFICATE",
+   "issuer": "Commercial Register (specimen)",
+   "issue_date": "2011-09-04",
+   "expiry_date": "2027-09-01",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/04_commercial_registration.docx",
+    "pdf": "pdf/04_commercial_registration.pdf",
+    "images": [
+     "images/04_commercial_registration_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "legal_form": "Limited Liability Company",
+    "city": "Jubail",
+    "activity": "Manufacture of plastic packaging",
+    "issue_date": "2011-09-04",
+    "expiry_date": "2027-09-01",
+    "share_capital": 100000000,
+    "owners": [
+     {
+      "name": "Saleh Ibrahim Al-Mansour",
+      "pct": 60.0
+     },
+     {
+      "name": "Khalid Ibrahim Al-Mansour",
+      "pct": 40.0
+     }
+    ],
+    "managers": [
+     {
+      "name": "Saleh Ibrahim Al-Mansour",
+      "role": "Chairman and General Manager"
+     },
+     {
+      "name": "Khalid Ibrahim Al-Mansour",
+      "role": "Director, Operations"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-05",
+   "doc_type": "vat_certificate",
+   "subject": null,
+   "title": "VAT REGISTRATION CERTIFICATE",
+   "issuer": "Tax Authority (specimen)",
+   "issue_date": "2018-01-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/05_vat_certificate.docx",
+    "pdf": "pdf/05_vat_certificate.pdf",
+    "images": [
+     "images/05_vat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "vat_number": "302055104400003",
+    "effective_date": "2018-01-01",
+    "filing_frequency": "Monthly",
+    "issue_date": "2018-01-11"
+   }
+  },
+  {
+   "doc_id": "C3-06",
+   "doc_type": "zakat_certificate",
+   "subject": null,
+   "title": "ZAKAT CERTIFICATE",
+   "issuer": "Zakat Authority (specimen)",
+   "issue_date": "2026-04-26",
+   "expiry_date": "2027-04-30",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/06_zakat_certificate.docx",
+    "pdf": "pdf/06_zakat_certificate.pdf",
+    "images": [
+     "images/06_zakat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "certificate_number": "ZC-2026-0412976",
+    "fiscal_year": "2025-12-31",
+    "issue_date": "2026-04-26",
+    "expiry_date": "2027-04-30"
+   }
+  },
+  {
+   "doc_id": "C3-07",
+   "doc_type": "nitaqat_certificate",
+   "subject": null,
+   "title": "NITAQAT CERTIFICATE",
+   "issuer": "Labour Registry (specimen)",
+   "issue_date": "2026-10-01",
+   "expiry_date": "2026-12-31",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/07_nitaqat_certificate.docx",
+    "pdf": "pdf/07_nitaqat_certificate.pdf",
+    "images": [
+     "images/07_nitaqat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "establishment_number": "3-2290187",
+    "nitaqat_band": "Medium Green",
+    "saudisation_pct": 26.9,
+    "band_threshold_pct": 23.0,
+    "total_staff": 386,
+    "saudi_staff": 104,
+    "issue_date": "2026-10-01",
+    "expiry_date": "2026-12-31"
+   }
+  },
+  {
+   "doc_id": "C3-08",
+   "doc_type": "vat_returns",
+   "subject": "oct2025_sep2026",
+   "title": "VAT RETURN FILINGS — LAST 12 MONTHS",
+   "issuer": "Tax Authority portal (specimen)",
+   "issue_date": "2026-10-17",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/08_vat_returns__oct2025_sep2026.docx",
+    "pdf": "pdf/08_vat_returns__oct2025_sep2026.pdf",
+    "images": [
+     "images/08_vat_returns__oct2025_sep2026_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "vat_number": "302055104400003",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "filing_frequency": "Monthly",
+    "total_taxable_sales": 217874000,
+    "total_output_vat": 32682000,
+    "returns": [
+     {
+      "period": "2025-10",
+      "taxable_sales": 18902000,
+      "zero_rated_sales": 6958000,
+      "output_vat": 2835000,
+      "input_vat": 2853000,
+      "net_vat_due": -18000,
+      "filed_on": "2025-11-17"
+     },
+     {
+      "period": "2025-11",
+      "taxable_sales": 18037000,
+      "zero_rated_sales": 6282000,
+      "output_vat": 2706000,
+      "input_vat": 2618000,
+      "net_vat_due": 88000,
+      "filed_on": "2025-12-17"
+     },
+     {
+      "period": "2025-12",
+      "taxable_sales": 19045000,
+      "zero_rated_sales": 5596000,
+      "output_vat": 2857000,
+      "input_vat": 2589000,
+      "net_vat_due": 268000,
+      "filed_on": "2026-01-17"
+     },
+     {
+      "period": "2026-01",
+      "taxable_sales": 16691000,
+      "zero_rated_sales": 5629000,
+      "output_vat": 2504000,
+      "input_vat": 2371000,
+      "net_vat_due": 133000,
+      "filed_on": "2026-02-17"
+     },
+     {
+      "period": "2026-02",
+      "taxable_sales": 17028000,
+      "zero_rated_sales": 5964000,
+      "output_vat": 2554000,
+      "input_vat": 2559000,
+      "net_vat_due": -5000,
+      "filed_on": "2026-03-17"
+     },
+     {
+      "period": "2026-03",
+      "taxable_sales": 19519000,
+      "zero_rated_sales": 5682000,
+      "output_vat": 2928000,
+      "input_vat": 2745000,
+      "net_vat_due": 183000,
+      "filed_on": "2026-04-17"
+     },
+     {
+      "period": "2026-04",
+      "taxable_sales": 17732000,
+      "zero_rated_sales": 5465000,
+      "output_vat": 2660000,
+      "input_vat": 2437000,
+      "net_vat_due": 223000,
+      "filed_on": "2026-05-17"
+     },
+     {
+      "period": "2026-05",
+      "taxable_sales": 18916000,
+      "zero_rated_sales": 5920000,
+      "output_vat": 2837000,
+      "input_vat": 2857000,
+      "net_vat_due": -20000,
+      "filed_on": "2026-06-17"
+     },
+     {
+      "period": "2026-06",
+      "taxable_sales": 18340000,
+      "zero_rated_sales": 4879000,
+      "output_vat": 2751000,
+      "input_vat": 2546000,
+      "net_vat_due": 205000,
+      "filed_on": "2026-07-17"
+     },
+     {
+      "period": "2026-07",
+      "taxable_sales": 18604000,
+      "zero_rated_sales": 6184000,
+      "output_vat": 2791000,
+      "input_vat": 2650000,
+      "net_vat_due": 141000,
+      "filed_on": "2026-08-17"
+     },
+     {
+      "period": "2026-08",
+      "taxable_sales": 18238000,
+      "zero_rated_sales": 5504000,
+      "output_vat": 2736000,
+      "input_vat": 2689000,
+      "net_vat_due": 47000,
+      "filed_on": "2026-09-17"
+     },
+     {
+      "period": "2026-09",
+      "taxable_sales": 16822000,
+      "zero_rated_sales": 6143000,
+      "output_vat": 2523000,
+      "input_vat": 2630000,
+      "net_vat_due": -107000,
+      "filed_on": "2026-10-17"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-09",
+   "doc_type": "simah_company",
+   "subject": null,
+   "title": "SIMAH COMMERCIAL CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-09",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/09_simah_company.docx",
+    "pdf": "pdf/09_simah_company.pdf",
+    "images": [
+     "images/09_simah_company_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "report_date": "2026-10-09",
+    "report_number": "SB-26-3301190",
+    "score": 598,
+    "total_limits": 205000000,
+    "total_outstanding": 143200000,
+    "total_overdue": 0,
+    "lenders_count": 2,
+    "defaults_count": 0,
+    "enquiries_6m": 3,
+    "facilities": [
+     {
+      "lender": "Coastal Gulf Bank",
+      "product": "Term loan",
+      "limit": 120000000,
+      "outstanding": 72000000,
+      "overdue": 0,
+      "status": "Restructured",
+      "opened": "2021-04-01",
+      "remark": "Rescheduled 18/03/2026; maturity 30/09/2028"
+     },
+     {
+      "lender": "Coastal Gulf Bank",
+      "product": "Short-term Murabaha",
+      "limit": 40000000,
+      "outstanding": 38400000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2021-04-01",
+      "remark": ""
+     },
+     {
+      "lender": "Coastal Gulf Bank",
+      "product": "Letters of credit (incl. acceptances)",
+      "limit": 30000000,
+      "outstanding": 23600000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2021-04-01",
+      "remark": ""
+     },
+     {
+      "lender": "Tihama Investment Bank",
+      "product": "Letters of guarantee",
+      "limit": 15000000,
+      "outstanding": 9200000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2022-02-14",
+      "remark": ""
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-10",
+   "doc_type": "simah_consumer",
+   "subject": "saleh_ibrahim_al_mansour",
+   "title": "SIMAH CONSUMER CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-09",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/10_simah_consumer__saleh_ibrahim_al_mansour.docx",
+    "pdf": "pdf/10_simah_consumer__saleh_ibrahim_al_mansour.pdf",
+    "images": [
+     "images/10_simah_consumer__saleh_ibrahim_al_mansour_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Saleh Ibrahim Al-Mansour",
+    "id_number": "1027745196",
+    "report_date": "2026-10-09",
+    "report_number": "SC-26-8801764",
+    "score": 702,
+    "total_outstanding": 41000,
+    "total_overdue": 0,
+    "worst_status_24m": "Current on own facilities",
+    "facilities": [
+     {
+      "lender": "Coastal Gulf Bank",
+      "product": "Credit card",
+      "limit": 200000,
+      "outstanding": 41000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Nukhba Polymer Industries Co.",
+      "lender": "Coastal Gulf Bank",
+      "amount": 190000000,
+      "status": "Restructured (03/2026)"
+     },
+     {
+      "beneficiary": "Nukhba Polymer Industries Co.",
+      "lender": "Tihama Investment Bank",
+      "amount": 15000000,
+      "status": "Current"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-11",
+   "doc_type": "simah_consumer",
+   "subject": "khalid_ibrahim_al_mansour",
+   "title": "SIMAH CONSUMER CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-09",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/11_simah_consumer__khalid_ibrahim_al_mansour.docx",
+    "pdf": "pdf/11_simah_consumer__khalid_ibrahim_al_mansour.pdf",
+    "images": [
+     "images/11_simah_consumer__khalid_ibrahim_al_mansour_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Khalid Ibrahim Al-Mansour",
+    "id_number": "1031198472",
+    "report_date": "2026-10-09",
+    "report_number": "SC-26-8801765",
+    "score": 736,
+    "total_outstanding": 1600000,
+    "total_overdue": 0,
+    "worst_status_24m": "Current (no delinquency)",
+    "facilities": [
+     {
+      "lender": "Tihama Investment Bank",
+      "product": "Real-estate finance",
+      "limit": 2400000,
+      "outstanding": 1600000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     }
+    ],
+    "guarantees": []
+   }
+  },
+  {
+   "doc_id": "C3-12",
+   "doc_type": "audited_fs",
+   "subject": "fy2024",
+   "title": "NUKHBA POLYMER INDUSTRIES CO. — FINANCIAL STATEMENTS FY2024",
+   "issuer": "Rawasi Audit & Advisory",
+   "issue_date": "2025-04-20",
+   "expiry_date": null,
+   "period_from": "2024-01-01",
+   "period_to": "2024-12-31",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/12_audited_fs__fy2024.docx",
+    "pdf": "pdf/12_audited_fs__fy2024.pdf",
+    "images": [
+     "images/12_audited_fs__fy2024_p2.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "fiscal_year": "2024-12-31",
+    "auditor": "Rawasi Audit & Advisory",
+    "opinion": "Unqualified",
+    "qawaem_reference": "QW-2025-2055104486",
+    "revenue": 318200000,
+    "cost_of_sales": 270200000,
+    "gross_profit": 48000000,
+    "operating_expenses": 20400000,
+    "operating_profit": 27600000,
+    "finance_cost": 11200000,
+    "zakat": 1400000,
+    "net_profit": 15000000,
+    "depreciation": 21800000,
+    "cash": 9100000,
+    "trade_receivables": 61200000,
+    "retention_receivables": 0,
+    "contract_assets": 0,
+    "inventory": 52000000,
+    "due_from_related": 0,
+    "other_current_assets": 8100000,
+    "current_assets": 130400000,
+    "ppe": 226000000,
+    "other_noncurrent_assets": 4000000,
+    "total_assets": 360400000,
+    "short_term_borrowings": 58000000,
+    "trade_payables": 47500000,
+    "due_to_related": 0,
+    "other_current_liabilities": 18100000,
+    "current_portion_ltd": 32000000,
+    "current_liabilities": 155600000,
+    "long_term_borrowings": 64000000,
+    "end_of_service": 8900000,
+    "total_liabilities": 228500000,
+    "share_capital": 100000000,
+    "statutory_reserve": 17700000,
+    "retained_earnings": 14200000,
+    "total_equity": 131900000,
+    "operating_cash_flow": 34800000,
+    "related_party_sales": 0
+   }
+  },
+  {
+   "doc_id": "C3-13",
+   "doc_type": "audited_fs",
+   "subject": "fy2025",
+   "title": "NUKHBA POLYMER INDUSTRIES CO. — FINANCIAL STATEMENTS FY2025",
+   "issuer": "Rawasi Audit & Advisory",
+   "issue_date": "2026-04-15",
+   "expiry_date": null,
+   "period_from": "2025-01-01",
+   "period_to": "2025-12-31",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/13_audited_fs__fy2025.docx",
+    "pdf": "pdf/13_audited_fs__fy2025.pdf",
+    "images": [
+     "images/13_audited_fs__fy2025_p1.jpg",
+     "images/13_audited_fs__fy2025_p2.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "fiscal_year": "2025-12-31",
+    "auditor": "Rawasi Audit & Advisory",
+    "opinion": "Unqualified",
+    "qawaem_reference": "QW-2026-2055104486",
+    "revenue": 296400000,
+    "cost_of_sales": 257300000,
+    "gross_profit": 39100000,
+    "operating_expenses": 20900000,
+    "operating_profit": 18200000,
+    "finance_cost": 12400000,
+    "zakat": 1000000,
+    "net_profit": 4800000,
+    "depreciation": 22600000,
+    "cash": 6200000,
+    "trade_receivables": 58400000,
+    "retention_receivables": 0,
+    "contract_assets": 0,
+    "inventory": 49700000,
+    "due_from_related": 0,
+    "other_current_assets": 8800000,
+    "current_assets": 123100000,
+    "ppe": 214600000,
+    "other_noncurrent_assets": 4100000,
+    "total_assets": 341800000,
+    "short_term_borrowings": 62300000,
+    "trade_payables": 44800000,
+    "due_to_related": 0,
+    "other_current_liabilities": 16600000,
+    "current_portion_ltd": 40000000,
+    "current_liabilities": 163700000,
+    "long_term_borrowings": 32000000,
+    "end_of_service": 9400000,
+    "total_liabilities": 205100000,
+    "share_capital": 100000000,
+    "statutory_reserve": 18200000,
+    "retained_earnings": 18500000,
+    "total_equity": 136700000,
+    "operating_cash_flow": 28100000,
+    "related_party_sales": 0
+   }
+  },
+  {
+   "doc_id": "C3-14",
+   "doc_type": "inhouse_fs",
+   "subject": "9m2026",
+   "title": "MANAGEMENT ACCOUNTS (UNAUDITED) — 9 MONTHS 2026",
+   "issuer": "Nukhba Polymer Industries Co.",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": "2026-01-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/14_inhouse_fs__9m2026.docx",
+    "pdf": "pdf/14_inhouse_fs__9m2026.pdf",
+    "images": [
+     "images/14_inhouse_fs__9m2026_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "period_from": "2026-01-01",
+    "period_to": "2026-09-30",
+    "prepared_by": "Fadi Nabil Haddad",
+    "revenue": 214100000,
+    "cost_of_sales": 187000000,
+    "gross_profit": 27100000,
+    "operating_expenses": 15600000,
+    "operating_profit": 11500000,
+    "finance_cost": 9600000,
+    "net_profit": 1900000,
+    "cash": 4100000,
+    "trade_receivables": 57000000,
+    "inventory": 54300000,
+    "current_assets": 124400000,
+    "total_assets": 330100000,
+    "short_term_borrowings": 62000000,
+    "current_liabilities": 145700000,
+    "long_term_borrowings": 36000000,
+    "total_liabilities": 191500000,
+    "total_equity": 138600000
+   }
+  },
+  {
+   "doc_id": "C3-15",
+   "doc_type": "bank_statement",
+   "subject": "coastal_current_account",
+   "title": "ACCOUNT STATEMENT",
+   "issuer": "Coastal Gulf Bank",
+   "issue_date": "2026-10-04",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/15_bank_statement__coastal_current_account.docx",
+    "pdf": "pdf/15_bank_statement__coastal_current_account.pdf",
+    "images": [
+     "images/15_bank_statement__coastal_current_account_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "bank_name": "Coastal Gulf Bank",
+    "account_number": "2201-558190-01",
+    "iban": "SA6640000002201558190010",
+    "account_type": "Current account (main operating)",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "opening_balance": 4900000,
+    "total_credits": 256448500,
+    "total_debits": 258348500,
+    "closing_balance": 3000000,
+    "returned_cheques": 0,
+    "monthly": [
+     {
+      "month": "2025-10",
+      "credits": 22242475,
+      "debits": 22400808,
+      "closing_balance": 4741667,
+      "avg_balance": 5677578,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-11",
+      "credits": 22130614,
+      "debits": 22288947,
+      "closing_balance": 4583334,
+      "avg_balance": 5932522,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-12",
+      "credits": 20507713,
+      "debits": 20666046,
+      "closing_balance": 4425001,
+      "avg_balance": 5588257,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-01",
+      "credits": 21028452,
+      "debits": 21186785,
+      "closing_balance": 4266668,
+      "avg_balance": 5340736,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-02",
+      "credits": 20915701,
+      "debits": 21074034,
+      "closing_balance": 4108335,
+      "avg_balance": 5267927,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-03",
+      "credits": 22179954,
+      "debits": 22338287,
+      "closing_balance": 3950002,
+      "avg_balance": 5464702,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-04",
+      "credits": 21928369,
+      "debits": 22086702,
+      "closing_balance": 3791669,
+      "avg_balance": 5485492,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-05",
+      "credits": 20572618,
+      "debits": 20730951,
+      "closing_balance": 3633336,
+      "avg_balance": 5111192,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-06",
+      "credits": 21007630,
+      "debits": 21165963,
+      "closing_balance": 3475003,
+      "avg_balance": 5452756,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-07",
+      "credits": 22262119,
+      "debits": 22420452,
+      "closing_balance": 3316670,
+      "avg_balance": 5141129,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-08",
+      "credits": 20163538,
+      "debits": 20321871,
+      "closing_balance": 3158337,
+      "avg_balance": 4491481,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-09",
+      "credits": 21509317,
+      "debits": 21667654,
+      "closing_balance": 3000000,
+      "avg_balance": 5223432,
+      "returned_cheques": 0
+     }
+    ],
+    "transactions": [
+     {
+      "date": "2025-10-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 6445615,
+      "balance": 11345615
+     },
+     {
+      "date": "2025-10-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1641210,
+      "credit": null,
+      "balance": 9704405
+     },
+     {
+      "date": "2025-10-10",
+      "description": "LC settlement — PET resin imports",
+      "debit": 8532821,
+      "credit": null,
+      "balance": 1171584
+     },
+     {
+      "date": "2025-10-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 3550341,
+      "balance": 4721925
+     },
+     {
+      "date": "2025-10-15",
+      "description": "GOSI contribution",
+      "debit": 222376,
+      "credit": null,
+      "balance": 4499549
+     },
+     {
+      "date": "2025-10-16",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3819055,
+      "credit": null,
+      "balance": 680494
+     },
+     {
+      "date": "2025-10-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 5611376,
+      "balance": 6291870
+     },
+     {
+      "date": "2025-10-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 2989578,
+      "credit": null,
+      "balance": 3302292
+     },
+     {
+      "date": "2025-10-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 6635143,
+      "balance": 9937435
+     },
+     {
+      "date": "2025-10-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2112002,
+      "credit": null,
+      "balance": 7825433
+     },
+     {
+      "date": "2025-10-28",
+      "description": "VAT payment",
+      "debit": 669964,
+      "credit": null,
+      "balance": 7155469
+     },
+     {
+      "date": "2025-10-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2413802,
+      "credit": null,
+      "balance": 4741667
+     },
+     {
+      "date": "2025-11-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 5379567,
+      "balance": 10121234
+     },
+     {
+      "date": "2025-11-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1637051,
+      "credit": null,
+      "balance": 8484183
+     },
+     {
+      "date": "2025-11-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 4785472,
+      "balance": 13269655
+     },
+     {
+      "date": "2025-11-12",
+      "description": "LC settlement — PET resin imports",
+      "debit": 8152308,
+      "credit": null,
+      "balance": 5117347
+     },
+     {
+      "date": "2025-11-15",
+      "description": "GOSI contribution",
+      "debit": 240172,
+      "credit": null,
+      "balance": 4877175
+     },
+     {
+      "date": "2025-11-16",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3920326,
+      "credit": null,
+      "balance": 956849
+     },
+     {
+      "date": "2025-11-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 5008427,
+      "balance": 5965276
+     },
+     {
+      "date": "2025-11-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 3054698,
+      "credit": null,
+      "balance": 2910578
+     },
+     {
+      "date": "2025-11-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 6957148,
+      "balance": 9867726
+     },
+     {
+      "date": "2025-11-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2190170,
+      "credit": null,
+      "balance": 7677556
+     },
+     {
+      "date": "2025-11-28",
+      "description": "VAT payment",
+      "debit": 634632,
+      "credit": null,
+      "balance": 7042924
+     },
+     {
+      "date": "2025-11-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2459590,
+      "credit": null,
+      "balance": 4583334
+     },
+     {
+      "date": "2025-12-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 6059802,
+      "balance": 10643136
+     },
+     {
+      "date": "2025-12-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1448619,
+      "credit": null,
+      "balance": 9194517
+     },
+     {
+      "date": "2025-12-10",
+      "description": "LC settlement — PET resin imports",
+      "debit": 7163010,
+      "credit": null,
+      "balance": 2031507
+     },
+     {
+      "date": "2025-12-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 3011606,
+      "balance": 5043113
+     },
+     {
+      "date": "2025-12-15",
+      "description": "GOSI contribution",
+      "debit": 200432,
+      "credit": null,
+      "balance": 4842681
+     },
+     {
+      "date": "2025-12-16",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3953622,
+      "credit": null,
+      "balance": 889059
+     },
+     {
+      "date": "2025-12-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 5368981,
+      "balance": 6258040
+     },
+     {
+      "date": "2025-12-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 2813298,
+      "credit": null,
+      "balance": 3444742
+     },
+     {
+      "date": "2025-12-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 6067324,
+      "balance": 9512066
+     },
+     {
+      "date": "2025-12-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2031895,
+      "credit": null,
+      "balance": 7480171
+     },
+     {
+      "date": "2025-12-28",
+      "description": "VAT payment",
+      "debit": 641702,
+      "credit": null,
+      "balance": 6838469
+     },
+     {
+      "date": "2025-12-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2413468,
+      "credit": null,
+      "balance": 4425001
+     },
+     {
+      "date": "2026-01-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 5870114,
+      "balance": 10295115
+     },
+     {
+      "date": "2026-01-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1472452,
+      "credit": null,
+      "balance": 8822663
+     },
+     {
+      "date": "2026-01-10",
+      "description": "LC settlement — PET resin imports",
+      "debit": 7519092,
+      "credit": null,
+      "balance": 1303571
+     },
+     {
+      "date": "2026-01-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 3215738,
+      "balance": 4519309
+     },
+     {
+      "date": "2026-01-15",
+      "description": "GOSI contribution",
+      "debit": 216297,
+      "credit": null,
+      "balance": 4303012
+     },
+     {
+      "date": "2026-01-16",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3854799,
+      "credit": null,
+      "balance": 448213
+     },
+     {
+      "date": "2026-01-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 6075876,
+      "balance": 6524089
+     },
+     {
+      "date": "2026-01-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 3035196,
+      "credit": null,
+      "balance": 3488893
+     },
+     {
+      "date": "2026-01-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 5866724,
+      "balance": 9355617
+     },
+     {
+      "date": "2026-01-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2156177,
+      "credit": null,
+      "balance": 7199440
+     },
+     {
+      "date": "2026-01-28",
+      "description": "VAT payment",
+      "debit": 683952,
+      "credit": null,
+      "balance": 6515488
+     },
+     {
+      "date": "2026-01-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2248820,
+      "credit": null,
+      "balance": 4266668
+     },
+     {
+      "date": "2026-02-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 4404874,
+      "balance": 8671542
+     },
+     {
+      "date": "2026-02-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1546188,
+      "credit": null,
+      "balance": 7125354
+     },
+     {
+      "date": "2026-02-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 4407343,
+      "balance": 11532697
+     },
+     {
+      "date": "2026-02-12",
+      "description": "LC settlement — PET resin imports",
+      "debit": 7671186,
+      "credit": null,
+      "balance": 3861511
+     },
+     {
+      "date": "2026-02-15",
+      "description": "GOSI contribution",
+      "debit": 206802,
+      "credit": null,
+      "balance": 3654709
+     },
+     {
+      "date": "2026-02-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 5572914,
+      "balance": 9227623
+     },
+     {
+      "date": "2026-02-18",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3803510,
+      "credit": null,
+      "balance": 5424113
+     },
+     {
+      "date": "2026-02-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 2824692,
+      "credit": null,
+      "balance": 2599421
+     },
+     {
+      "date": "2026-02-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 6530570,
+      "balance": 9129991
+     },
+     {
+      "date": "2026-02-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1973051,
+      "credit": null,
+      "balance": 7156940
+     },
+     {
+      "date": "2026-02-28",
+      "description": "VAT payment",
+      "debit": 640491,
+      "credit": null,
+      "balance": 6516449
+     },
+     {
+      "date": "2026-02-28",
+      "description": "Term loan instalment and profit",
+      "debit": 2408114,
+      "credit": null,
+      "balance": 4108335
+     },
+     {
+      "date": "2026-03-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 6273364,
+      "balance": 10381699
+     },
+     {
+      "date": "2026-03-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1524551,
+      "credit": null,
+      "balance": 8857148
+     },
+     {
+      "date": "2026-03-10",
+      "description": "LC settlement — PET resin imports",
+      "debit": 8061116,
+      "credit": null,
+      "balance": 796032
+     },
+     {
+      "date": "2026-03-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 4977640,
+      "balance": 5773672
+     },
+     {
+      "date": "2026-03-15",
+      "description": "GOSI contribution",
+      "debit": 229515,
+      "credit": null,
+      "balance": 5544157
+     },
+     {
+      "date": "2026-03-16",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 4030567,
+      "credit": null,
+      "balance": 1513590
+     },
+     {
+      "date": "2026-03-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 5124420,
+      "balance": 6638010
+     },
+     {
+      "date": "2026-03-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 3197492,
+      "credit": null,
+      "balance": 3440518
+     },
+     {
+      "date": "2026-03-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 5804530,
+      "balance": 9245048
+     },
+     {
+      "date": "2026-03-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2242763,
+      "credit": null,
+      "balance": 7002285
+     },
+     {
+      "date": "2026-03-28",
+      "description": "VAT payment",
+      "debit": 623474,
+      "credit": null,
+      "balance": 6378811
+     },
+     {
+      "date": "2026-03-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2428809,
+      "credit": null,
+      "balance": 3950002
+     },
+     {
+      "date": "2026-04-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 5885924,
+      "balance": 9835926
+     },
+     {
+      "date": "2026-04-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1702240,
+      "credit": null,
+      "balance": 8133686
+     },
+     {
+      "date": "2026-04-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 2980062,
+      "balance": 11113748
+     },
+     {
+      "date": "2026-04-12",
+      "description": "LC settlement — PET resin imports",
+      "debit": 7982794,
+      "credit": null,
+      "balance": 3130954
+     },
+     {
+      "date": "2026-04-15",
+      "description": "GOSI contribution",
+      "debit": 217525,
+      "credit": null,
+      "balance": 2913429
+     },
+     {
+      "date": "2026-04-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 7002298,
+      "balance": 9915727
+     },
+     {
+      "date": "2026-04-18",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3851299,
+      "credit": null,
+      "balance": 6064428
+     },
+     {
+      "date": "2026-04-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 3016333,
+      "credit": null,
+      "balance": 3048095
+     },
+     {
+      "date": "2026-04-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 6060085,
+      "balance": 9108180
+     },
+     {
+      "date": "2026-04-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2227957,
+      "credit": null,
+      "balance": 6880223
+     },
+     {
+      "date": "2026-04-28",
+      "description": "VAT payment",
+      "debit": 714467,
+      "credit": null,
+      "balance": 6165756
+     },
+     {
+      "date": "2026-04-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2374087,
+      "credit": null,
+      "balance": 3791669
+     },
+     {
+      "date": "2026-05-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 4771186,
+      "balance": 8562855
+     },
+     {
+      "date": "2026-05-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1442541,
+      "credit": null,
+      "balance": 7120314
+     },
+     {
+      "date": "2026-05-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 3797215,
+      "balance": 10917529
+     },
+     {
+      "date": "2026-05-12",
+      "description": "LC settlement — PET resin imports",
+      "debit": 7792504,
+      "credit": null,
+      "balance": 3125025
+     },
+     {
+      "date": "2026-05-15",
+      "description": "GOSI contribution",
+      "debit": 217973,
+      "credit": null,
+      "balance": 2907052
+     },
+     {
+      "date": "2026-05-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 6680507,
+      "balance": 9587559
+     },
+     {
+      "date": "2026-05-18",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3546284,
+      "credit": null,
+      "balance": 6041275
+     },
+     {
+      "date": "2026-05-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 2776120,
+      "credit": null,
+      "balance": 3265155
+     },
+     {
+      "date": "2026-05-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 5323710,
+      "balance": 8588865
+     },
+     {
+      "date": "2026-05-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2130070,
+      "credit": null,
+      "balance": 6458795
+     },
+     {
+      "date": "2026-05-28",
+      "description": "VAT payment",
+      "debit": 607437,
+      "credit": null,
+      "balance": 5851358
+     },
+     {
+      "date": "2026-05-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2218022,
+      "credit": null,
+      "balance": 3633336
+     },
+     {
+      "date": "2026-06-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 5960829,
+      "balance": 9594165
+     },
+     {
+      "date": "2026-06-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1545126,
+      "credit": null,
+      "balance": 8049039
+     },
+     {
+      "date": "2026-06-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 3775827,
+      "balance": 11824866
+     },
+     {
+      "date": "2026-06-12",
+      "description": "LC settlement — PET resin imports",
+      "debit": 7790639,
+      "credit": null,
+      "balance": 4034227
+     },
+     {
+      "date": "2026-06-15",
+      "description": "GOSI contribution",
+      "debit": 200487,
+      "credit": null,
+      "balance": 3833740
+     },
+     {
+      "date": "2026-06-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 5497617,
+      "balance": 9331357
+     },
+     {
+      "date": "2026-06-18",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3609348,
+      "credit": null,
+      "balance": 5722009
+     },
+     {
+      "date": "2026-06-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 2891632,
+      "credit": null,
+      "balance": 2830377
+     },
+     {
+      "date": "2026-06-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 5773357,
+      "balance": 8603734
+     },
+     {
+      "date": "2026-06-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2125628,
+      "credit": null,
+      "balance": 6478106
+     },
+     {
+      "date": "2026-06-28",
+      "description": "VAT payment",
+      "debit": 622960,
+      "credit": null,
+      "balance": 5855146
+     },
+     {
+      "date": "2026-06-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2380143,
+      "credit": null,
+      "balance": 3475003
+     },
+     {
+      "date": "2026-07-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 7524718,
+      "balance": 10999721
+     },
+     {
+      "date": "2026-07-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1516432,
+      "credit": null,
+      "balance": 9483289
+     },
+     {
+      "date": "2026-07-10",
+      "description": "LC settlement — PET resin imports",
+      "debit": 8210703,
+      "credit": null,
+      "balance": 1272586
+     },
+     {
+      "date": "2026-07-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 3877113,
+      "balance": 5149699
+     },
+     {
+      "date": "2026-07-15",
+      "description": "GOSI contribution",
+      "debit": 221610,
+      "credit": null,
+      "balance": 4928089
+     },
+     {
+      "date": "2026-07-16",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 4327898,
+      "credit": null,
+      "balance": 600191
+     },
+     {
+      "date": "2026-07-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 5539622,
+      "balance": 6139813
+     },
+     {
+      "date": "2026-07-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 2978290,
+      "credit": null,
+      "balance": 3161523
+     },
+     {
+      "date": "2026-07-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 5320666,
+      "balance": 8482189
+     },
+     {
+      "date": "2026-07-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2162689,
+      "credit": null,
+      "balance": 6319500
+     },
+     {
+      "date": "2026-07-28",
+      "description": "VAT payment",
+      "debit": 628471,
+      "credit": null,
+      "balance": 5691029
+     },
+     {
+      "date": "2026-07-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2374359,
+      "credit": null,
+      "balance": 3316670
+     },
+     {
+      "date": "2026-08-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 4450471,
+      "balance": 7767141
+     },
+     {
+      "date": "2026-08-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1557266,
+      "credit": null,
+      "balance": 6209875
+     },
+     {
+      "date": "2026-08-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 4428196,
+      "balance": 10638071
+     },
+     {
+      "date": "2026-08-12",
+      "description": "LC settlement — PET resin imports",
+      "debit": 7044260,
+      "credit": null,
+      "balance": 3593811
+     },
+     {
+      "date": "2026-08-15",
+      "description": "GOSI contribution",
+      "debit": 218036,
+      "credit": null,
+      "balance": 3375775
+     },
+     {
+      "date": "2026-08-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 5028134,
+      "balance": 8403909
+     },
+     {
+      "date": "2026-08-18",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 3795505,
+      "credit": null,
+      "balance": 4608404
+     },
+     {
+      "date": "2026-08-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 2879190,
+      "credit": null,
+      "balance": 1729214
+     },
+     {
+      "date": "2026-08-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 6256737,
+      "balance": 7985951
+     },
+     {
+      "date": "2026-08-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1988342,
+      "credit": null,
+      "balance": 5997609
+     },
+     {
+      "date": "2026-08-28",
+      "description": "VAT payment",
+      "debit": 612360,
+      "credit": null,
+      "balance": 5385249
+     },
+     {
+      "date": "2026-08-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2226912,
+      "credit": null,
+      "balance": 3158337
+     },
+     {
+      "date": "2026-09-05",
+      "description": "Gulf Beverage Bottling Co. — payment",
+      "debit": null,
+      "credit": 5739652,
+      "balance": 8897989
+     },
+     {
+      "date": "2026-09-08",
+      "description": "Electricity and utilities (factory)",
+      "debit": 1487427,
+      "credit": null,
+      "balance": 7410562
+     },
+     {
+      "date": "2026-09-12",
+      "description": "Eastern Dairy Foods Co. — payment",
+      "debit": null,
+      "credit": 4184391,
+      "balance": 11594953
+     },
+     {
+      "date": "2026-09-12",
+      "description": "LC settlement — PET resin imports",
+      "debit": 7768112,
+      "credit": null,
+      "balance": 3826841
+     },
+     {
+      "date": "2026-09-15",
+      "description": "GOSI contribution",
+      "debit": 205009,
+      "credit": null,
+      "balance": 3621832
+     },
+     {
+      "date": "2026-09-18",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 6877820,
+      "balance": 10499652
+     },
+     {
+      "date": "2026-09-18",
+      "description": "Local resin and masterbatch suppliers",
+      "debit": 4055208,
+      "credit": null,
+      "balance": 6444444
+     },
+     {
+      "date": "2026-09-20",
+      "description": "Murabaha repayment (net)",
+      "debit": 3041754,
+      "credit": null,
+      "balance": 3402690
+     },
+     {
+      "date": "2026-09-25",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 4707454,
+      "balance": 8110144
+     },
+     {
+      "date": "2026-09-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2269100,
+      "credit": null,
+      "balance": 5841044
+     },
+     {
+      "date": "2026-09-28",
+      "description": "VAT payment",
+      "debit": 629192,
+      "credit": null,
+      "balance": 5211852
+     },
+     {
+      "date": "2026-09-30",
+      "description": "Term loan instalment and profit",
+      "debit": 2211852,
+      "credit": null,
+      "balance": 3000000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-16",
+   "doc_type": "bank_statement",
+   "subject": "tihama_current_account",
+   "title": "ACCOUNT STATEMENT",
+   "issuer": "Tihama Investment Bank",
+   "issue_date": "2026-10-06",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/16_bank_statement__tihama_current_account.docx",
+    "pdf": "pdf/16_bank_statement__tihama_current_account.pdf",
+    "images": [
+     "images/16_bank_statement__tihama_current_account_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "bank_name": "Tihama Investment Bank",
+    "account_number": "077-4410552-3",
+    "iban": "SA2185000000774410552300",
+    "account_type": "Current account",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "opening_balance": 1500000,
+    "total_credits": 56293573,
+    "total_debits": 56793573,
+    "closing_balance": 1000000,
+    "returned_cheques": 0,
+    "monthly": [
+     {
+      "month": "2025-10",
+      "credits": 4882494,
+      "debits": 4924161,
+      "closing_balance": 1458333,
+      "avg_balance": 1601341,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-11",
+      "credits": 4857940,
+      "debits": 4899607,
+      "closing_balance": 1416666,
+      "avg_balance": 1533853,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-12",
+      "credits": 4501693,
+      "debits": 4543360,
+      "closing_balance": 1374999,
+      "avg_balance": 1598125,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-01",
+      "credits": 4616002,
+      "debits": 4657669,
+      "closing_balance": 1333332,
+      "avg_balance": 1289401,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-02",
+      "credits": 4591251,
+      "debits": 4632918,
+      "closing_balance": 1291665,
+      "avg_balance": 1435930,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-03",
+      "credits": 4868770,
+      "debits": 4910437,
+      "closing_balance": 1249998,
+      "avg_balance": 1429087,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-04",
+      "credits": 4813544,
+      "debits": 4855211,
+      "closing_balance": 1208331,
+      "avg_balance": 2332172,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-05",
+      "credits": 4515941,
+      "debits": 4557608,
+      "closing_balance": 1166664,
+      "avg_balance": 2144659,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-06",
+      "credits": 4611431,
+      "debits": 4653098,
+      "closing_balance": 1124997,
+      "avg_balance": 1195970,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-07",
+      "credits": 4886807,
+      "debits": 4928474,
+      "closing_balance": 1083330,
+      "avg_balance": 1204813,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-08",
+      "credits": 4426143,
+      "debits": 4467810,
+      "closing_balance": 1041663,
+      "avg_balance": 1962643,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-09",
+      "credits": 4721557,
+      "debits": 4763220,
+      "closing_balance": 1000000,
+      "avg_balance": 2152062,
+      "returned_cheques": 0
+     }
+    ],
+    "transactions": [
+     {
+      "date": "2025-10-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2667574,
+      "balance": 4167574
+     },
+     {
+      "date": "2025-10-12",
+      "description": "Supplier payments",
+      "debit": 3414044,
+      "credit": null,
+      "balance": 753530
+     },
+     {
+      "date": "2025-10-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2214920,
+      "balance": 2968450
+     },
+     {
+      "date": "2025-10-24",
+      "description": "Freight and logistics",
+      "debit": 1510117,
+      "credit": null,
+      "balance": 1458333
+     },
+     {
+      "date": "2025-11-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2533200,
+      "balance": 3991533
+     },
+     {
+      "date": "2025-11-12",
+      "description": "Supplier payments",
+      "debit": 3340850,
+      "credit": null,
+      "balance": 650683
+     },
+     {
+      "date": "2025-11-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2324740,
+      "balance": 2975423
+     },
+     {
+      "date": "2025-11-24",
+      "description": "Freight and logistics",
+      "debit": 1558757,
+      "credit": null,
+      "balance": 1416666
+     },
+     {
+      "date": "2025-12-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2596389,
+      "balance": 4013055
+     },
+     {
+      "date": "2025-12-12",
+      "description": "Supplier payments",
+      "debit": 3066489,
+      "credit": null,
+      "balance": 946566
+     },
+     {
+      "date": "2025-12-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 1905304,
+      "balance": 2851870
+     },
+     {
+      "date": "2025-12-24",
+      "description": "Freight and logistics",
+      "debit": 1476871,
+      "credit": null,
+      "balance": 1374999
+     },
+     {
+      "date": "2026-01-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2167913,
+      "balance": 3542912
+     },
+     {
+      "date": "2026-01-12",
+      "description": "Supplier payments",
+      "debit": 3311257,
+      "credit": null,
+      "balance": 231655
+     },
+     {
+      "date": "2026-01-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2448089,
+      "balance": 2679744
+     },
+     {
+      "date": "2026-01-24",
+      "description": "Freight and logistics",
+      "debit": 1346412,
+      "credit": null,
+      "balance": 1333332
+     },
+     {
+      "date": "2026-02-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2448514,
+      "balance": 3781846
+     },
+     {
+      "date": "2026-02-12",
+      "description": "Supplier payments",
+      "debit": 3161008,
+      "credit": null,
+      "balance": 620838
+     },
+     {
+      "date": "2026-02-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2142737,
+      "balance": 2763575
+     },
+     {
+      "date": "2026-02-24",
+      "description": "Freight and logistics",
+      "debit": 1471910,
+      "credit": null,
+      "balance": 1291665
+     },
+     {
+      "date": "2026-03-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2822917,
+      "balance": 4114582
+     },
+     {
+      "date": "2026-03-12",
+      "description": "Supplier payments",
+      "debit": 3486838,
+      "credit": null,
+      "balance": 627744
+     },
+     {
+      "date": "2026-03-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2045853,
+      "balance": 2673597
+     },
+     {
+      "date": "2026-03-24",
+      "description": "Freight and logistics",
+      "debit": 1423599,
+      "credit": null,
+      "balance": 1249998
+     },
+     {
+      "date": "2026-04-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2296927,
+      "balance": 3546925
+     },
+     {
+      "date": "2026-04-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2516617,
+      "balance": 6063542
+     },
+     {
+      "date": "2026-04-22",
+      "description": "Supplier payments",
+      "debit": 3365126,
+      "credit": null,
+      "balance": 2698416
+     },
+     {
+      "date": "2026-04-24",
+      "description": "Freight and logistics",
+      "debit": 1490085,
+      "credit": null,
+      "balance": 1208331
+     },
+     {
+      "date": "2026-05-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2056659,
+      "balance": 3264990
+     },
+     {
+      "date": "2026-05-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2459282,
+      "balance": 5724272
+     },
+     {
+      "date": "2026-05-22",
+      "description": "Supplier payments",
+      "debit": 3204467,
+      "credit": null,
+      "balance": 2519805
+     },
+     {
+      "date": "2026-05-24",
+      "description": "Freight and logistics",
+      "debit": 1353141,
+      "credit": null,
+      "balance": 1166664
+     },
+     {
+      "date": "2026-06-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2403066,
+      "balance": 3569730
+     },
+     {
+      "date": "2026-06-12",
+      "description": "Supplier payments",
+      "debit": 3274323,
+      "credit": null,
+      "balance": 295407
+     },
+     {
+      "date": "2026-06-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2208365,
+      "balance": 2503772
+     },
+     {
+      "date": "2026-06-24",
+      "description": "Freight and logistics",
+      "debit": 1378775,
+      "credit": null,
+      "balance": 1124997
+     },
+     {
+      "date": "2026-07-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2701057,
+      "balance": 3826054
+     },
+     {
+      "date": "2026-07-12",
+      "description": "Supplier payments",
+      "debit": 3506644,
+      "credit": null,
+      "balance": 319410
+     },
+     {
+      "date": "2026-07-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2185750,
+      "balance": 2505160
+     },
+     {
+      "date": "2026-07-24",
+      "description": "Freight and logistics",
+      "debit": 1421830,
+      "credit": null,
+      "balance": 1083330
+     },
+     {
+      "date": "2026-08-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 1915495,
+      "balance": 2998825
+     },
+     {
+      "date": "2026-08-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2510648,
+      "balance": 5509473
+     },
+     {
+      "date": "2026-08-22",
+      "description": "Supplier payments",
+      "debit": 3080835,
+      "credit": null,
+      "balance": 2428638
+     },
+     {
+      "date": "2026-08-24",
+      "description": "Freight and logistics",
+      "debit": 1386975,
+      "credit": null,
+      "balance": 1041663
+     },
+     {
+      "date": "2026-09-09",
+      "description": "Local customers — collections",
+      "debit": null,
+      "credit": 2360285,
+      "balance": 3401948
+     },
+     {
+      "date": "2026-09-22",
+      "description": "Export proceeds (GCC customers)",
+      "debit": null,
+      "credit": 2361272,
+      "balance": 5763220
+     },
+     {
+      "date": "2026-09-22",
+      "description": "Supplier payments",
+      "debit": 3261599,
+      "credit": null,
+      "balance": 2501621
+     },
+     {
+      "date": "2026-09-24",
+      "description": "Freight and logistics",
+      "debit": 1501621,
+      "credit": null,
+      "balance": 1000000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-17",
+   "doc_type": "facility_request_letter",
+   "subject": null,
+   "title": "REQUEST FOR CREDIT FACILITIES",
+   "issuer": "Nukhba Polymer Industries Co.",
+   "issue_date": "2026-10-08",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/17_facility_request_letter.docx",
+    "pdf": "pdf/17_facility_request_letter.pdf",
+    "images": [
+     "images/17_facility_request_letter_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "letter_date": "2026-10-08",
+    "addressed_to": "Sandstone Harbour Bank, Corporate Banking",
+    "requested_total": 157000000,
+    "facilities": [
+     {
+      "facility": "Term loan (takeover), 48 months",
+      "amount": 72000000,
+      "purpose": "Repayment of the Coastal Gulf Bank term loan"
+     },
+     {
+      "facility": "Short-term Murabaha",
+      "amount": 45000000,
+      "purpose": "Working capital; takeover of the Coastal Gulf Bank Murabaha"
+     },
+     {
+      "facility": "Letters of credit (sight / usance 120 days)",
+      "amount": 40000000,
+      "purpose": "PET resin imports"
+     }
+    ],
+    "signatory": "Saleh Ibrahim Al-Mansour",
+    "signatory_role": "Chairman and General Manager"
+   }
+  },
+  {
+   "doc_id": "C3-18",
+   "doc_type": "board_resolution",
+   "subject": null,
+   "title": "PARTNERS' RESOLUTION",
+   "issuer": "Nukhba Polymer Industries Co.",
+   "issue_date": "2026-10-07",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/18_board_resolution.docx",
+    "pdf": "pdf/18_board_resolution.pdf",
+    "images": [
+     "images/18_board_resolution_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "resolution_date": "2026-10-07",
+    "resolution_number": "PR-2026-05",
+    "authorised_amount": 180000000,
+    "authorised_persons": "Saleh Ibrahim Al-Mansour (Chairman and General Manager)"
+   }
+  },
+  {
+   "doc_id": "C3-19",
+   "doc_type": "authorised_signatories",
+   "subject": null,
+   "title": "AUTHORISED SIGNATORIES",
+   "issuer": "Nukhba Polymer Industries Co.",
+   "issue_date": "2026-10-07",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/19_authorised_signatories.docx",
+    "pdf": "pdf/19_authorised_signatories.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "as_of": "2026-10-07",
+    "signatories": [
+     {
+      "name": "Saleh Ibrahim Al-Mansour",
+      "id_number": "1027745196",
+      "role": "Chairman and General Manager",
+      "limit": "Up to SAR 20m alone",
+      "mode": "Single / joint above"
+     },
+     {
+      "name": "Khalid Ibrahim Al-Mansour",
+      "id_number": "1031198472",
+      "role": "Director, Operations",
+      "limit": "Jointly",
+      "mode": "Joint"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-20",
+   "doc_type": "personal_net_worth",
+   "subject": "saleh_ibrahim_al_mansour",
+   "title": "PERSONAL NET WORTH STATEMENT",
+   "issuer": "Saleh Ibrahim Al-Mansour",
+   "issue_date": "2026-07-31",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/20_personal_net_worth__saleh_ibrahim_al_mansour.docx",
+    "pdf": "pdf/20_personal_net_worth__saleh_ibrahim_al_mansour.pdf",
+    "images": [
+     "images/20_personal_net_worth__saleh_ibrahim_al_mansour_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Saleh Ibrahim Al-Mansour",
+    "id_number": "1027745196",
+    "statement_date": "2026-07-31",
+    "total_assets": 105200000,
+    "total_liabilities": 41000,
+    "net_worth": 105159000,
+    "assets": [
+     {
+      "asset": "Shares",
+      "description": "60% of Nukhba Polymer Industries Co. (book value)",
+      "value": 83200000
+     },
+     {
+      "asset": "Real estate",
+      "description": "Villa, Al Fanateer, Jubail",
+      "value": 6100000
+     },
+     {
+      "asset": "Real estate",
+      "description": "Commercial plot, Dammam (1,200 sq m)",
+      "value": 11500000
+     },
+     {
+      "asset": "Cash and deposits",
+      "description": "Current and deposit accounts",
+      "value": 4400000
+     }
+    ],
+    "liabilities": [
+     {
+      "liability": "Credit card",
+      "description": "Coastal Gulf Bank",
+      "value": 41000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-21",
+   "doc_type": "other_bank_offer_letter",
+   "subject": "coastal_gulf_bank",
+   "title": "FACILITY OFFER LETTER",
+   "issuer": "Coastal Gulf Bank",
+   "issue_date": "2023-06-12",
+   "expiry_date": "2027-12-31",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/21_other_bank_offer_letter__coastal_gulf_bank.docx",
+    "pdf": "pdf/21_other_bank_offer_letter__coastal_gulf_bank.pdf",
+    "images": [
+     "images/21_other_bank_offer_letter__coastal_gulf_bank_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "bank_name": "Coastal Gulf Bank",
+    "letter_date": "2023-06-12",
+    "letter_reference": "CGB/IND/23/0611",
+    "total_limits": 190000000,
+    "expiry_date": "2027-12-31",
+    "facilities": [
+     {
+      "facility": "Term loan (machinery), quarterly SAR 8.0m",
+      "limit": 120000000,
+      "pricing": "3M SAIBOR + 2.25%",
+      "tenor": "15 quarterly from 30/06/2024 to 31/12/2027"
+     },
+     {
+      "facility": "Short-term Murabaha",
+      "limit": 40000000,
+      "pricing": "3M SAIBOR + 2.25%",
+      "tenor": "up to 180 days"
+     },
+     {
+      "facility": "Letters of credit (sight / usance 120 days)",
+      "limit": 30000000,
+      "pricing": "0.30% per quarter",
+      "tenor": "per LC"
+     }
+    ],
+    "security": "First-ranking charge over the machinery; personal guarantee of Saleh Ibrahim Al-Mansour; promissory note SAR 190,000,000."
+   }
+  },
+  {
+   "doc_id": "C3-22",
+   "doc_type": "other_bank_statement",
+   "subject": "coastal_gulf_bank",
+   "title": "STATEMENT OF FACILITIES",
+   "issuer": "Coastal Gulf Bank",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/22_other_bank_statement__coastal_gulf_bank.docx",
+    "pdf": "pdf/22_other_bank_statement__coastal_gulf_bank.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "bank_name": "Coastal Gulf Bank",
+    "statement_date": "2026-09-30",
+    "total_limits": 190000000,
+    "total_outstanding": 134000000,
+    "facilities": [
+     {
+      "facility": "Term loan (machinery) — rescheduled",
+      "limit": 120000000,
+      "outstanding": 72000000,
+      "overdue": 0,
+      "maturity": "30/09/2028"
+     },
+     {
+      "facility": "Short-term Murabaha",
+      "limit": 40000000,
+      "outstanding": 38400000,
+      "overdue": 0,
+      "maturity": "rolling"
+     },
+     {
+      "facility": "Letters of credit (incl. acceptances)",
+      "limit": 30000000,
+      "outstanding": 23600000,
+      "overdue": 0,
+      "maturity": "per LC"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-23",
+   "doc_type": "other_bank_offer_letter",
+   "subject": "tihama_investment_bank",
+   "title": "FACILITY OFFER LETTER",
+   "issuer": "Tihama Investment Bank",
+   "issue_date": "2025-12-01",
+   "expiry_date": "2026-11-30",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/23_other_bank_offer_letter__tihama_investment_bank.docx",
+    "pdf": "pdf/23_other_bank_offer_letter__tihama_investment_bank.pdf",
+    "images": [
+     "images/23_other_bank_offer_letter__tihama_investment_bank_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "bank_name": "Tihama Investment Bank",
+    "letter_date": "2025-12-01",
+    "letter_reference": "TIB/CORP/25/2290",
+    "total_limits": 15000000,
+    "expiry_date": "2026-11-30",
+    "facilities": [
+     {
+      "facility": "Letters of guarantee",
+      "limit": 15000000,
+      "pricing": "0.80% p.a.",
+      "tenor": "per LG"
+     }
+    ],
+    "security": "Personal guarantee of Saleh Ibrahim Al-Mansour; 15% cash margin."
+   }
+  },
+  {
+   "doc_id": "C3-24",
+   "doc_type": "other_bank_statement",
+   "subject": "tihama_investment_bank",
+   "title": "STATEMENT OF FACILITIES",
+   "issuer": "Tihama Investment Bank",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/24_other_bank_statement__tihama_investment_bank.docx",
+    "pdf": "pdf/24_other_bank_statement__tihama_investment_bank.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "bank_name": "Tihama Investment Bank",
+    "statement_date": "2026-09-30",
+    "total_limits": 15000000,
+    "total_outstanding": 9200000,
+    "facilities": [
+     {
+      "facility": "Letters of guarantee",
+      "limit": 15000000,
+      "outstanding": 9200000,
+      "overdue": 0,
+      "maturity": "per LG"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-25",
+   "doc_type": "receivables_ageing",
+   "subject": null,
+   "title": "RECEIVABLES AGEING",
+   "issuer": "Nukhba Polymer Industries Co.",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/25_receivables_ageing.docx",
+    "pdf": "pdf/25_receivables_ageing.pdf",
+    "images": [
+     "images/25_receivables_ageing_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "as_of": "2026-09-30",
+    "total": 57000000,
+    "bucket_0_90": 51200000,
+    "bucket_91_180": 4500000,
+    "bucket_181_365": 1300000,
+    "bucket_over_365": 0,
+    "by_customer": [
+     {
+      "customer": "Gulf Beverage Bottling Co.",
+      "b0_90": 13900000,
+      "b91_180": 800000,
+      "b181_365": 0,
+      "over_365": 0,
+      "total": 14700000
+     },
+     {
+      "customer": "Eastern Dairy Foods Co.",
+      "b0_90": 8200000,
+      "b91_180": 0,
+      "b181_365": 0,
+      "over_365": 0,
+      "total": 8200000
+     },
+     {
+      "customer": "GCC export customers (14)",
+      "b0_90": 14600000,
+      "b91_180": 1900000,
+      "b181_365": 400000,
+      "over_365": 0,
+      "total": 16900000
+     },
+     {
+      "customer": "Local customers (96)",
+      "b0_90": 14500000,
+      "b91_180": 1800000,
+      "b181_365": 900000,
+      "over_365": 0,
+      "total": 17200000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-26",
+   "doc_type": "top_customers_suppliers",
+   "subject": null,
+   "title": "TOP CUSTOMERS AND SUPPLIERS",
+   "issuer": "Nukhba Polymer Industries Co.",
+   "issue_date": "2026-10-06",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/26_top_customers_suppliers.docx",
+    "pdf": "pdf/26_top_customers_suppliers.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "year": 2025,
+    "customers": [
+     {
+      "name": "Gulf Beverage Bottling Co.",
+      "relationship": "Third party",
+      "sales": 65200000,
+      "share_pct": 22.0,
+      "terms": "60 days"
+     },
+     {
+      "name": "Eastern Dairy Foods Co.",
+      "relationship": "Third party",
+      "sales": 41500000,
+      "share_pct": 14.0,
+      "terms": "45 days"
+     },
+     {
+      "name": "GCC export customers (14)",
+      "relationship": "Third parties",
+      "sales": 71100000,
+      "share_pct": 24.0,
+      "terms": "60-90 days, LC / open account"
+     },
+     {
+      "name": "Local customers (96)",
+      "relationship": "Third parties",
+      "sales": 118600000,
+      "share_pct": 40.0,
+      "terms": "30-60 days"
+     }
+    ],
+    "suppliers": [
+     {
+      "name": "Orient Polymers Trading FZE",
+      "country": "UAE",
+      "purchases": 98400000,
+      "share_pct": 38.2,
+      "terms": "LC 120 days usance"
+     },
+     {
+      "name": "Jubail Petrochemical Marketing Co.",
+      "country": "KSA",
+      "purchases": 61000000,
+      "share_pct": 23.7,
+      "terms": "30 days"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C3-27",
+   "doc_type": "valuation_report",
+   "subject": "machinery",
+   "title": "VALUATION REPORT",
+   "issuer": "Al Bunyan Asset Valuation Co.",
+   "issue_date": "2026-07-22",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/27_valuation_report__machinery.docx",
+    "pdf": "pdf/27_valuation_report__machinery.pdf",
+    "images": [
+     "images/27_valuation_report__machinery_p1.jpg"
+    ]
+   },
+   "fields": {
+    "property": "Production machinery: 6 PET preform lines, 4 blow-moulding lines, 2 film extruders (Jubail plant, leased land)",
+    "owner": "Nukhba Polymer Industries Co.",
+    "deed_number": "Leasehold — industrial lease JIC/IA2/214 (no title deed)",
+    "valuer": "Al Bunyan Asset Valuation Co.",
+    "valuation_date": "2026-07-22",
+    "market_value": 162000000,
+    "forced_sale_value": 105000000
+   }
+  },
+  {
+   "doc_id": "C3-28",
+   "doc_type": "insurance_policy",
+   "subject": "machinery",
+   "title": "INSURANCE POLICY SCHEDULE",
+   "issuer": "Najm Al Khaleej Cooperative Insurance Co.",
+   "issue_date": "2026-01-01",
+   "expiry_date": "2026-12-31",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/28_insurance_policy__machinery.docx",
+    "pdf": "pdf/28_insurance_policy__machinery.pdf",
+    "images": []
+   },
+   "fields": {
+    "policy_number": "IAR-26-330871",
+    "insured": "Nukhba Polymer Industries Co.",
+    "insurer": "Najm Al Khaleej Cooperative Insurance Co.",
+    "property": "Production machinery: 6 PET preform lines, 4 blow-moulding lines, 2 film extruders (Jubail plant, leased land)",
+    "sum_insured": 175000000,
+    "loss_payee": "Coastal Gulf Bank",
+    "issue_date": "2026-01-01",
+    "expiry_date": "2026-12-31"
+   }
+  },
+  {
+   "doc_id": "C3-29",
+   "doc_type": "site_visit_report",
+   "subject": null,
+   "title": "SITE VISIT REPORT",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-14",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/29_site_visit_report.docx",
+    "pdf": "pdf/29_site_visit_report.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "visit_date": "2026-10-14",
+    "visited_by": "Abeer Al-Omari",
+    "met_with": "Saleh Ibrahim Al-Mansour; Eng. Ravi Menon (Plant Manager)",
+    "premises": "Factory in Jubail Industrial City (leased land, own buildings and machinery)",
+    "staff_seen": 240,
+    "observations": "Plant running two shifts; one of six PET lines idle for lack of orders."
+   }
+  },
+  {
+   "doc_id": "C3-30",
+   "doc_type": "aml_kyc_questionnaire",
+   "subject": null,
+   "title": "AML / KYC QUESTIONNAIRE",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-07",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/30_aml_kyc_questionnaire.docx",
+    "pdf": "pdf/30_aml_kyc_questionnaire.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "completed_on": "2026-10-07",
+    "ubos": [
+     {
+      "name": "Saleh Ibrahim Al-Mansour",
+      "pct": 60.0,
+      "pep": "No"
+     },
+     {
+      "name": "Khalid Ibrahim Al-Mansour",
+      "pct": 40.0,
+      "pep": "No"
+     }
+    ],
+    "pep_flag": "No",
+    "countries": "KSA, UAE, Kuwait, Bahrain, Oman, China (resin)",
+    "cash_intensive": "No",
+    "risk_rating": "Medium"
+   }
+  },
+  {
+   "doc_id": "C3-31",
+   "doc_type": "simah_consent",
+   "subject": null,
+   "title": "CONSENT TO OBTAIN AND SHARE CREDIT INFORMATION (SIMAH)",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-07",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/31_simah_consent.docx",
+    "pdf": "pdf/31_simah_consent.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Nukhba Polymer Industries Co.",
+    "cr_number": "2055104486",
+    "signatory": "Saleh Ibrahim Al-Mansour",
+    "signed_on": "2026-10-07"
+   }
+  }
+ ],
+ "missing": [
+  {
+   "doc_type": "payables_ageing",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "title_deed",
+   "subject": "machinery",
+   "why": "Leasehold land: no title deed; industrial lease agreement not provided"
+  }
+ ],
+ "business_request": null,
+ "reference": {
+  "docx": "reference/reference_proposal.docx",
+  "pdf": "reference/reference_proposal.pdf"
+ }
+}

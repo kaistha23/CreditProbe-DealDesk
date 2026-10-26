@@ -1,0 +1,26 @@
+{
+ "name": "ccf",
+ "owner": "Risk Models",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Credit conversion factors by product: regulatory (SA) and economic (EAD for EL).",
+ "rows": {
+  "undrawn_committed": {
+   "regulatory": 0.4,
+   "economic": 0.6
+  },
+  "performance_lg": {
+   "regulatory": 0.5,
+   "economic": 0.5
+  },
+  "financial_lg": {
+   "regulatory": 1.0,
+   "economic": 1.0
+  },
+  "trade_lc": {
+   "regulatory": 0.2,
+   "economic": 0.2
+  }
+ }
+}

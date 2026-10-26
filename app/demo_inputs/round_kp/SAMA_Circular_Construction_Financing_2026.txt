@@ -1,0 +1,17 @@
+SAUDI CENTRAL BANK (SAMA) - CIRCULAR No. 47/2026 (SYNTHETIC TEST DOCUMENT)
+Prudential requirements for financing to construction and contracting companies
+This circular is a synthetic document written for testing CreditProbe. It is not issued by SAMA.
+This circular is effective from 1 December 2026.
+
+1. Scope
+1.1 This circular applies to all corporate financing that banks extend to construction and contracting companies, including term loans, revolving facilities and guarantee lines.
+
+2. Debt service capacity
+2.1 Banks shall not extend new financing to a construction or contracting company whose debt service coverage ratio (DSCR), after the new financing, is below 1.40x.
+2.2 For construction and contracting companies, total debt to EBITDA after the new financing must not exceed 3.50x.
+
+3. Collateral
+3.1 Valuations of collateral pledged by construction and contracting companies must be dated within 6 months of the credit decision.
+
+4. Reporting
+4.1 Banks shall report their exposure to the construction sector to SAMA every quarter, by obligor group.

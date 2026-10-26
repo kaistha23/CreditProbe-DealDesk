@@ -1,0 +1,165 @@
+{
+ "release_id": "scorecard-saudi-v1",
+ "build_version": "1.0.0",
+ "seed": 20261011,
+ "origin": "SYNTHETIC_DEMO",
+ "sme_revenue_cut_sar_mn": 30.0,
+ "scorecards": {
+  "RET-APP": {
+   "rows": 236920,
+   "development_rows": 39538,
+   "development_defaults": 953,
+   "periods": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ],
+   "variables": [
+    "bureau_score",
+    "enquiries_3m",
+    "balance_buffer_months",
+    "returned_payments_3m",
+    "external_facilities",
+    "employment_type"
+   ]
+  },
+  "RET-BEH": {
+   "rows": 198274,
+   "development_rows": 29455,
+   "development_defaults": 881,
+   "periods": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ],
+   "variables": [
+    "bureau_score",
+    "behaviour_score",
+    "balance_buffer_months",
+    "returned_payments_3m",
+    "delinquency_bucket",
+    "enquiries_3m",
+    "utilisation_pct",
+    "product"
+   ]
+  },
+  "SME-ANN": {
+   "rows": 28542,
+   "development_rows": 10714,
+   "development_defaults": 343,
+   "periods": [
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+   ],
+   "variables": [
+    "interest_cover_x",
+    "qualitative_score",
+    "ebitda_margin_pct",
+    "cash_conversion_pct",
+    "sector",
+    "balance_buffer_months",
+    "region",
+    "returned_payments_q"
+   ]
+  }
+ },
+ "keys": {
+  "retail": [
+   "customer_id",
+   "account_id",
+   "reporting_month"
+  ],
+  "corporate": [
+   "borrower_id",
+   "reporting_quarter"
+  ]
+ },
+ "planted": {
+  "RET-APP": {
+   "level_shift": [
+    0.0,
+    0.0,
+    0.03,
+    0.08
+   ],
+   "partner_extra_logit": 0.35,
+   "partner_from": "2025-08",
+   "enquiry_loading_decay_from": "2025-06"
+  },
+  "RET-BEH": {
+   "level_shift": [
+    0.15,
+    0.35,
+    0.6,
+    0.85
+   ],
+   "open_months_shift_per_month": 0.04
+  },
+  "SME-ANN": {
+   "source": "book borrower default path, rolled forward four quarters",
+   "sector_stress": [
+    "Construction",
+    "Real Estate"
+   ]
+  }
+ },
+ "sources": {
+  "retail": "v4-saudi-retail-20m-v5",
+  "corporate": "v4-saudi-corporate-20q-v4",
+  "bureau": "bureau-saudi-v1",
+  "open_banking": "open-banking-saudi-v1"
+ },
+ "note": "Scorecard outcomes are generated from the books' characteristics plus hidden factors; the books' point-in-time default flag is not a performance window and is not used as the outcome.",
+ "fingerprint": "5ccdae8a14b86a9aa3d4add2326ab542691d1584a0dfe84aaddeab439210378f"
+}

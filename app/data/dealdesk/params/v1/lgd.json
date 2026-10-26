@@ -1,0 +1,82 @@
+{
+ "name": "lgd",
+ "owner": "Risk Models",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Unsecured LGD by seniority, collateral haircuts (CP-4.1) and recovery time, LGD floor, structure adjustment. Round D: lien_deposit is the haircut row of the Deposit requirement term (lien-marked cash collateral).",
+ "policy": "CP-4.1 haircuts: cash 0%, real estate 30%, plant and equipment 45%, receivables 50%",
+ "rows": {
+  "unsecured": {
+   "senior": 0.45,
+   "subordinated": 0.75
+  },
+  "floor": 0.1,
+  "recovery_discount_rate": 0.08,
+  "collateral": {
+   "cash": {
+    "label": "Cash deposit",
+    "haircut": 0.0,
+    "recovery_years": 0.0,
+    "eligible_sa": true
+   },
+   "real_estate": {
+    "label": "Real estate",
+    "haircut": 0.3,
+    "recovery_years": 2.5,
+    "eligible_sa": false
+   },
+   "plant_equipment": {
+    "label": "Plant and equipment",
+    "haircut": 0.45,
+    "recovery_years": 1.5,
+    "eligible_sa": false
+   },
+   "receivables": {
+    "label": "Receivables",
+    "haircut": 0.5,
+    "recovery_years": 1.0,
+    "eligible_sa": false
+   },
+   "shares": {
+    "label": "Listed shares",
+    "haircut": 0.4,
+    "recovery_years": 0.5,
+    "eligible_sa": false
+   },
+   "vehicles": {
+    "label": "Vehicles",
+    "haircut": 0.4,
+    "recovery_years": 1.0,
+    "eligible_sa": false
+   },
+   "lien_deposit": {
+    "label": "Lien-marked cash deposit (Deposit requirement term)",
+    "haircut": 0.0,
+    "recovery_years": 0.0,
+    "eligible_sa": true,
+    "max_pct": 30,
+    "steps_pct": [
+     10,
+     20,
+     30
+    ],
+    "basis": "CP-4.1: cash held with the Bank under lien in the deal's currency, 0% haircut (Basel CRM, cash on deposit with the lending bank); max_pct is the optimiser's bound on a required deposit, steps_pct the levels it tries"
+   }
+  },
+  "structure": {
+   "conventional": 1.0,
+   "murabaha": 1.0,
+   "tawarruq": 1.0,
+   "ijara": 0.85,
+   "musharaka": 1.1
+  },
+  "guarantor_lgd": {
+   "government": 0.1,
+   "kafalah": 0.1,
+   "bank": 0.4,
+   "corporate": 0.45,
+   "personal": 0.7
+  }
+ }
+}

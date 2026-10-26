@@ -1,0 +1,35 @@
+{
+ "name": "stress",
+ "owner": "Risk Models",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Stress scenarios for the deal.",
+ "rows": {
+  "downgrade_1": {
+   "label": "Rating -1 notch",
+   "notches": 1
+  },
+  "downgrade_2": {
+   "label": "Rating -2 notches",
+   "notches": 2
+  },
+  "collateral_20": {
+   "label": "Collateral value -20%",
+   "collateral_shock": -0.2
+  },
+  "collateral_30": {
+   "label": "Collateral value -30%",
+   "collateral_shock": -0.3
+  },
+  "saibor_200": {
+   "label": "SAIBOR +200 bps",
+   "rate_shock_bps": 200
+  },
+  "utilisation": {
+   "label": "Utilisation shock",
+   "utilisation_pct": 100,
+   "ccf_add": 0.25
+  }
+ }
+}

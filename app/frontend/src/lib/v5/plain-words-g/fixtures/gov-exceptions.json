@@ -1,0 +1,587 @@
+{
+ "trace_id": "DT-5d47d13532c2",
+ "available": true,
+ "kind": "exception_intelligence",
+ "as_of": "2026Q2",
+ "window": "4 quarters after each decision",
+ "lines": [
+  "2,127 approved decisions carried at least one policy exception; their 12-month default rate was 8.1% (95% CI 7.0\u20139.4%) against 0.8% for 4,308 decisions without one.",
+  "Tighten DSCR below 1.25x (all decisions carrying it, n=90): defaults ran 61.63\u00d7 the risk-matched peer rate (CI 48.04\u201377.86), 77.8% observed vs 1.3% expected.",
+  "Tighten Rated below B- (new money) (sole exception, n=121): defaults ran 42.08\u00d7 the risk-matched peer rate (CI 29.92\u201357.52), 32.2% observed vs 0.8% expected.",
+  "Collateral cover below 125% exceptions performed in line with or better than peers (0.63\u00d7 expected, n=212); the mitigants recorded appear to work.",
+  "Too few cases to judge (Current ratio below 1.10x; fewer than 30 each): kept on watch."
+ ],
+ "peers": {
+  "exception": {
+   "n": 2127,
+   "default": {
+    "pct": 8.13,
+    "k": 173,
+    "n": 2127,
+    "ci_low_pct": 7.05,
+    "ci_high_pct": 9.37
+   },
+   "migration": {
+    "pct": 17.16,
+    "k": 365,
+    "n": 2127,
+    "ci_low_pct": 15.62,
+    "ci_high_pct": 18.82
+   }
+  },
+  "no_exception": {
+   "n": 4308,
+   "default": {
+    "pct": 0.77,
+    "k": 33,
+    "n": 4308,
+    "ci_low_pct": 0.55,
+    "ci_high_pct": 1.07
+   },
+   "migration": {
+    "pct": 9.77,
+    "k": 421,
+    "n": 4308,
+    "ci_low_pct": 8.92,
+    "ci_high_pct": 10.7
+   }
+  }
+ },
+ "types": [
+  {
+   "type": "dscr",
+   "label": "DSCR below 1.25x",
+   "n": 90,
+   "n_all": 90,
+   "n_sole": 25,
+   "judged_on": "all decisions carrying it",
+   "default": {
+    "pct": 77.78,
+    "k": 70,
+    "n": 90,
+    "ci_low_pct": 68.15,
+    "ci_high_pct": 85.13
+   },
+   "migration": {
+    "pct": 77.78,
+    "k": 70,
+    "n": 90,
+    "ci_low_pct": 68.15,
+    "ci_high_pct": 85.13
+   },
+   "expected_default_pct": 1.26,
+   "expected_migration_pct": 12.04,
+   "oe_default": 61.63,
+   "oe_default_ci": [
+    48.04,
+    77.86
+   ],
+   "oe_migration": 6.46,
+   "oe_migration_ci": [
+    5.04,
+    8.16
+   ],
+   "mean_notches": 0.7,
+   "mean_max_dpd": 211.3,
+   "basis_mix": {
+    "B": 37,
+    "BB": 33,
+    "Investment grade": 14,
+    "CCC and below": 6
+   },
+   "measured_on": "book",
+   "verdict": "tighten",
+   "figure": {
+    "value": 77.7778,
+    "unit": "%",
+    "basis": {
+     "relations": [
+      "gov_decision",
+      "gov_policy_exception",
+      "corp_facility_quarter",
+      "corp_borrower_quarter"
+     ],
+     "rows": 90,
+     "filter": {
+      "exception_type": "dscr",
+      "decision": "not declined"
+     },
+     "method": "12-month default rate of decisions carrying this exception",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "type": "leverage",
+   "label": "Debt/EBITDA above limit",
+   "n": 655,
+   "n_all": 903,
+   "n_sole": 655,
+   "judged_on": "sole exception",
+   "default": {
+    "pct": 3.36,
+    "k": 22,
+    "n": 655,
+    "ci_low_pct": 2.23,
+    "ci_high_pct": 5.03
+   },
+   "migration": {
+    "pct": 16.64,
+    "k": 109,
+    "n": 655,
+    "ci_low_pct": 13.99,
+    "ci_high_pct": 19.69
+   },
+   "expected_default_pct": 0.77,
+   "expected_migration_pct": 9.78,
+   "oe_default": 4.37,
+   "oe_default_ci": [
+    2.74,
+    6.61
+   ],
+   "oe_migration": 1.7,
+   "oe_migration_ci": [
+    1.4,
+    2.05
+   ],
+   "mean_notches": 0.27,
+   "mean_max_dpd": 6.5,
+   "basis_mix": {
+    "Investment grade": 324,
+    "BB": 235,
+    "B": 96
+   },
+   "measured_on": "book",
+   "verdict": "tighten",
+   "figure": {
+    "value": 3.3588,
+    "unit": "%",
+    "basis": {
+     "relations": [
+      "gov_decision",
+      "gov_policy_exception",
+      "corp_facility_quarter",
+      "corp_borrower_quarter"
+     ],
+     "rows": 655,
+     "filter": {
+      "exception_type": "leverage",
+      "decision": "not declined"
+     },
+     "method": "12-month default rate of decisions carrying this exception",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "type": "current_ratio",
+   "label": "Current ratio below 1.10x",
+   "n": 1,
+   "n_all": 1,
+   "n_sole": 0,
+   "judged_on": "all decisions carrying it",
+   "default": {
+    "pct": 100.0,
+    "k": 1,
+    "n": 1,
+    "ci_low_pct": 20.65,
+    "ci_high_pct": 100.0
+   },
+   "migration": {
+    "pct": 100.0,
+    "k": 1,
+    "n": 1,
+    "ci_low_pct": 20.65,
+    "ci_high_pct": 100.0
+   },
+   "expected_default_pct": 1.93,
+   "expected_migration_pct": 15.3,
+   "oe_default": 51.77,
+   "oe_default_ci": [
+    0.68,
+    288.04
+   ],
+   "oe_migration": 6.53,
+   "oe_migration_ci": [
+    0.09,
+    36.35
+   ],
+   "mean_notches": 0.0,
+   "mean_max_dpd": 300.0,
+   "basis_mix": {
+    "B": 1
+   },
+   "measured_on": "book",
+   "verdict": "watch",
+   "figure": {
+    "value": 100.0,
+    "unit": "%",
+    "basis": {
+     "relations": [
+      "gov_decision",
+      "gov_policy_exception",
+      "corp_facility_quarter",
+      "corp_borrower_quarter"
+     ],
+     "rows": 1,
+     "filter": {
+      "exception_type": "current_ratio",
+      "decision": "not declined"
+     },
+     "method": "12-month default rate of decisions carrying this exception",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "type": "rating",
+   "label": "Rated below B- (new money)",
+   "n": 121,
+   "n_all": 185,
+   "n_sole": 121,
+   "judged_on": "sole exception",
+   "default": {
+    "pct": 32.23,
+    "k": 39,
+    "n": 121,
+    "ci_low_pct": 24.56,
+    "ci_high_pct": 40.99
+   },
+   "migration": {
+    "pct": 32.23,
+    "k": 39,
+    "n": 121,
+    "ci_low_pct": 24.56,
+    "ci_high_pct": 40.99
+   },
+   "expected_default_pct": 0.77,
+   "expected_migration_pct": 9.77,
+   "oe_default": 42.08,
+   "oe_default_ci": [
+    29.92,
+    57.52
+   ],
+   "oe_migration": 3.3,
+   "oe_migration_ci": [
+    2.35,
+    4.51
+   ],
+   "mean_notches": 0.25,
+   "mean_max_dpd": 1.5,
+   "basis_mix": {
+    "CCC and below": 121
+   },
+   "measured_on": "book",
+   "verdict": "tighten",
+   "figure": {
+    "value": 32.2314,
+    "unit": "%",
+    "basis": {
+     "relations": [
+      "gov_decision",
+      "gov_policy_exception",
+      "corp_facility_quarter",
+      "corp_borrower_quarter"
+     ],
+     "rows": 121,
+     "filter": {
+      "exception_type": "rating",
+      "decision": "not declined"
+     },
+     "method": "12-month default rate of decisions carrying this exception",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "type": "collateral_cover",
+   "label": "Collateral cover below 125%",
+   "n": 212,
+   "n_all": 297,
+   "n_sole": 212,
+   "judged_on": "sole exception",
+   "default": {
+    "pct": 0.47,
+    "k": 1,
+    "n": 212,
+    "ci_low_pct": 0.08,
+    "ci_high_pct": 2.62
+   },
+   "migration": {
+    "pct": 7.55,
+    "k": 16,
+    "n": 212,
+    "ci_low_pct": 4.7,
+    "ci_high_pct": 11.91
+   },
+   "expected_default_pct": 0.75,
+   "expected_migration_pct": 9.71,
+   "oe_default": 0.63,
+   "oe_default_ci": [
+    0.01,
+    3.49
+   ],
+   "oe_migration": 0.78,
+   "oe_migration_ci": [
+    0.44,
+    1.26
+   ],
+   "mean_notches": 0.11,
+   "mean_max_dpd": 1.8,
+   "basis_mix": {
+    "Investment grade": 109,
+    "BB": 72,
+    "B": 31
+   },
+   "measured_on": "seeded",
+   "verdict": "keep",
+   "figure": {
+    "value": 0.4717,
+    "unit": "%",
+    "basis": {
+     "relations": [
+      "gov_decision",
+      "gov_policy_exception",
+      "corp_facility_quarter",
+      "corp_borrower_quarter"
+     ],
+     "rows": 212,
+     "filter": {
+      "exception_type": "collateral_cover",
+      "decision": "not declined"
+     },
+     "method": "12-month default rate of decisions carrying this exception",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "type": "pricing",
+   "label": "RAROC below 12% hurdle",
+   "n": 316,
+   "n_all": 448,
+   "n_sole": 316,
+   "judged_on": "sole exception",
+   "default": {
+    "pct": 1.9,
+    "k": 6,
+    "n": 316,
+    "ci_low_pct": 0.87,
+    "ci_high_pct": 4.08
+   },
+   "migration": {
+    "pct": 10.44,
+    "k": 33,
+    "n": 316,
+    "ci_low_pct": 7.53,
+    "ci_high_pct": 14.3
+   },
+   "expected_default_pct": 0.77,
+   "expected_migration_pct": 9.78,
+   "oe_default": 2.48,
+   "oe_default_ci": [
+    0.91,
+    5.4
+   ],
+   "oe_migration": 1.07,
+   "oe_migration_ci": [
+    0.73,
+    1.5
+   ],
+   "mean_notches": 0.16,
+   "mean_max_dpd": 2.6,
+   "basis_mix": {
+    "Investment grade": 165,
+    "BB": 98,
+    "B": 53
+   },
+   "measured_on": "seeded",
+   "verdict": "watch",
+   "figure": {
+    "value": 1.8987,
+    "unit": "%",
+    "basis": {
+     "relations": [
+      "gov_decision",
+      "gov_policy_exception",
+      "corp_facility_quarter",
+      "corp_borrower_quarter"
+     ],
+     "rows": 316,
+     "filter": {
+      "exception_type": "pricing",
+      "decision": "not declined"
+     },
+     "method": "12-month default rate of decisions carrying this exception",
+     "period": "2026Q2"
+    }
+   }
+  }
+ ],
+ "tighten": [
+  "dscr",
+  "leverage",
+  "rating"
+ ],
+ "ledger": [
+  {
+   "exception_id": "GD-06208-X1",
+   "decision_id": "GD-06208",
+   "borrower_id": "CB00039",
+   "borrower_name": "Najran Agri",
+   "quarter": "2025Q2",
+   "type": "collateral_cover",
+   "label": "Collateral cover below 125%",
+   "clause": "7.6",
+   "measured": {
+    "value": null,
+    "unit": ""
+   },
+   "approved_by": "Executive Credit Committee",
+   "mitigant": "Additional corporate guarantee from the parent",
+   "rm": "Khalid Al-Juhani",
+   "branch": "Hail",
+   "after": {
+    "stage_at_decision": 1,
+    "worst_stage": 1,
+    "max_dpd": 0,
+    "default": 0,
+    "notches": 0,
+    "to_quarter": "2026Q2"
+   }
+  },
+  {
+   "exception_id": "GD-06208-X2",
+   "decision_id": "GD-06208",
+   "borrower_id": "CB00039",
+   "borrower_name": "Najran Agri",
+   "quarter": "2025Q2",
+   "type": "late_financials",
+   "label": "Audited financials late",
+   "clause": "3.3",
+   "measured": {
+    "value": null,
+    "unit": ""
+   },
+   "approved_by": "Executive Credit Committee",
+   "mitigant": "Audited statements as condition subsequent within 60 days",
+   "rm": "Khalid Al-Juhani",
+   "branch": "Hail",
+   "after": {
+    "stage_at_decision": 1,
+    "worst_stage": 1,
+    "max_dpd": 0,
+    "default": 0,
+    "notches": 0,
+    "to_quarter": "2026Q2"
+   }
+  },
+  {
+   "exception_id": "GD-06212-X1",
+   "decision_id": "GD-06212",
+   "borrower_id": "CB00110",
+   "borrower_name": "Taif United Agri",
+   "quarter": "2025Q2",
+   "type": "pricing",
+   "label": "RAROC below 12% hurdle",
+   "clause": "9.1",
+   "measured": {
+    "value": null,
+    "unit": ""
+   },
+   "approved_by": "Chief Risk Officer",
+   "mitigant": "Ancillary business commitment",
+   "rm": "Khalid Al-Juhani",
+   "branch": "Hail",
+   "after": {
+    "stage_at_decision": 1,
+    "worst_stage": 1,
+    "max_dpd": 0,
+    "default": 0,
+    "notches": 0,
+    "to_quarter": "2026Q2"
+   }
+  },
+  {
+   "exception_id": "GD-06215-X1",
+   "decision_id": "GD-06215",
+   "borrower_id": "CB00132",
+   "borrower_name": "Al Kharj First Agri",
+   "quarter": "2025Q2",
+   "type": "collateral_cover",
+   "label": "Collateral cover below 125%",
+   "clause": "7.6",
+   "measured": {
+    "value": null,
+    "unit": ""
+   },
+   "approved_by": "Chief Risk Officer",
+   "mitigant": "Additional corporate guarantee from the parent",
+   "rm": "Khalid Al-Juhani",
+   "branch": "Hail",
+   "after": {
+    "stage_at_decision": 1,
+    "worst_stage": 1,
+    "max_dpd": 0,
+    "default": 0,
+    "notches": 0,
+    "to_quarter": "2026Q2"
+   }
+  },
+  {
+   "exception_id": "GD-06218-X1",
+   "decision_id": "GD-06218",
+   "borrower_id": "CB00144",
+   "borrower_name": "Najd Modern Agri",
+   "quarter": "2025Q2",
+   "type": "leverage",
+   "label": "Debt/EBITDA above limit",
+   "clause": "4.3",
+   "measured": {
+    "value": 9.835,
+    "unit": "x"
+   },
+   "approved_by": "Chief Risk Officer",
+   "mitigant": "Deleveraging covenant within 24 months",
+   "rm": "Khalid Al-Juhani",
+   "branch": "Hail",
+   "after": {
+    "stage_at_decision": 1,
+    "worst_stage": 2,
+    "max_dpd": 30,
+    "default": 0,
+    "notches": 0,
+    "to_quarter": "2026Q2"
+   }
+  },
+  {
+   "exception_id": "GD-06220-X1",
+   "decision_id": "GD-06220",
+   "borrower_id": "CB00155",
+   "borrower_name": "Sudair Modern Agri",
+   "quarter": "2025Q2",
+   "type": "leverage",
+   "label": "Debt/EBITDA above limit",
+   "clause": "4.3",
+   "measured": {
+    "value": 10.447,
+    "unit": "x"
+   },
+   "approved_by": "Executive Credit Committee",
+   "mitigant": "Deleveraging covenant within 24 months",
+   "rm": "Bandar Al-Dosari",
+   "branch": "Buraidah",
+   "after": {
+    "stage_at_decision": 2,
+    "worst_stage": 2,
+    "max_dpd": 0,
+    "default": 0,
+    "notches": 1,
+    "to_quarter": "2026Q2"
+   }
+  }
+ ],
+ "ledger_total": 2531,
+ "method": "Every approved policy exception and what happened after it (worst stage, max DPD, default, rating drift over the four quarters after the decision, read from the book), and loss and migration rates by exception type against non-exception peers. Peers are risk-matched: the expected rate for an exception type is the non-exception rate in each rating band, weighted by the type's own band mix, so a type that is simply given to weaker borrowers is not blamed for their rating. Rates carry 95% Wilson intervals and n; observed/expected carries a Poisson interval. Verdict per type: tighten (O/E interval above 1 and n >= 30), watch (O/E >= 1.25 or n < 30), keep.",
+ "data_note": "Decision history is a fictional seed published to Data Domains (domain governance, gov_* relations, ops/r13_seed_governance.py); outcomes (stage, DPD, default, rating drift) are the corporate book's own."
+}

@@ -1,0 +1,28 @@
+{
+ "name": "covenant_packages",
+ "owner": "Risk",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Covenant package overlay on PD and LGD (outside the PD model), capped.",
+ "rows": {
+  "cap": 0.15,
+  "packages": {
+   "none": {
+    "label": "No financial covenants",
+    "pd_multiplier": 1.0,
+    "lgd_multiplier": 1.0
+   },
+   "standard": {
+    "label": "Standard: DSCR, leverage, interest cover (CP-2.1)",
+    "pd_multiplier": 0.95,
+    "lgd_multiplier": 0.98
+   },
+   "enhanced": {
+    "label": "Enhanced: standard plus cash sweep and negative pledge",
+    "pd_multiplier": 0.9,
+    "lgd_multiplier": 0.95
+   }
+  }
+ }
+}

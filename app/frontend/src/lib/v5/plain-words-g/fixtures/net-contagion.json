@@ -1,0 +1,239 @@
+{
+ "period": "2026Q2",
+ "severity": "moderate",
+ "focal": {
+  "borrower_id": "CB00039",
+  "name": "Najran Agri",
+  "sector": "Agriculture and Agri-processing",
+  "rating": "BBB+",
+  "ead": 28.0945,
+  "ecl": 0.021772,
+  "ews_band": "none",
+  "group": "Najran Agri Holding"
+ },
+ "totals": {
+  "names": 6,
+  "exposure": 194.99200000000002,
+  "at_risk": 5.845723110000001,
+  "d_ecl_second": 0.0,
+  "d_ecl_focal": 9.992907386622974,
+  "to_stage2": 0,
+  "to_stage3": 0,
+  "focal_ead": 28.0945,
+  "total_exposure_with_focal": 223.08650000000003
+ },
+ "channels": [
+  {
+   "channel": "guarantee",
+   "label": "Guaranteed by it",
+   "names": 0,
+   "exposure": 0,
+   "at_risk": 0,
+   "d_ecl": 0
+  },
+  {
+   "channel": "group",
+   "label": "Same group",
+   "names": 0,
+   "exposure": 0,
+   "at_risk": 0,
+   "d_ecl": 0
+  },
+  {
+   "channel": "collateral",
+   "label": "Shared collateral",
+   "names": 0,
+   "exposure": 0,
+   "at_risk": 0,
+   "d_ecl": 0
+  },
+  {
+   "channel": "supplier",
+   "label": "Sells to it",
+   "names": 4,
+   "exposure": 124.9337,
+   "at_risk": 4.55497199,
+   "d_ecl": 0.0
+  },
+  {
+   "channel": "customer",
+   "label": "Buys from it",
+   "names": 2,
+   "exposure": 70.0583,
+   "at_risk": 1.29075112,
+   "d_ecl": 0.0
+  },
+  {
+   "channel": "employer",
+   "label": "Same project employer",
+   "names": 0,
+   "exposure": 0,
+   "at_risk": 0,
+   "d_ecl": 0
+  }
+ ],
+ "names": [
+  {
+   "borrower_id": "CB05147",
+   "name": "Hijaz United Trading",
+   "sector": "Wholesale Trade",
+   "rating": "BB",
+   "ews_band": "none",
+   "channels": [
+    "supplier"
+   ],
+   "why": "sells 6.0% of its revenue to it",
+   "exposure": 33.9334,
+   "ead": 33.9334,
+   "at_risk": 2.0292173200000003,
+   "notches": 0,
+   "d_ecl": 0.0,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "href": "/borrower-360?domain=corporate&customer_id=CB05147"
+  },
+  {
+   "borrower_id": "CB02479",
+   "name": "Yanbu Arabian Industries",
+   "sector": "Manufacturing",
+   "rating": "BB+",
+   "ews_band": "none",
+   "channels": [
+    "supplier"
+   ],
+   "why": "sells 3.0% of its revenue to it",
+   "exposure": 43.68110000000001,
+   "ead": 43.68110000000001,
+   "at_risk": 1.2973286700000002,
+   "notches": 0,
+   "d_ecl": 0.0,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "href": "/borrower-360?domain=corporate&customer_id=CB02479"
+  },
+  {
+   "borrower_id": "CB03374",
+   "name": "Wadi Hanifah Gulf Energy",
+   "sector": "Power and Utilities",
+   "rating": "A-",
+   "ews_band": "none",
+   "channels": [
+    "supplier"
+   ],
+   "why": "sells 5.3% of its revenue to it",
+   "exposure": 20.6688,
+   "ead": 20.6688,
+   "at_risk": 1.08717888,
+   "notches": 0,
+   "d_ecl": 0.0,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "href": "/borrower-360?domain=corporate&customer_id=CB03374"
+  },
+  {
+   "borrower_id": "CB01870",
+   "name": "Khamis Mushait Prime Hospitality",
+   "sector": "Hospitality",
+   "rating": "BBB-",
+   "ews_band": "low",
+   "channels": [
+    "customer"
+   ],
+   "why": "buys 9.4% of its inputs from it",
+   "exposure": 20.121299999999998,
+   "ead": 20.121299999999998,
+   "at_risk": 0.94368897,
+   "notches": 0,
+   "d_ecl": 0.0,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "href": "/borrower-360?domain=corporate&customer_id=CB01870"
+  },
+  {
+   "borrower_id": "CB04180",
+   "name": "Unayzah Modern Retail",
+   "sector": "Retail Trade",
+   "rating": "BBB-",
+   "ews_band": "none",
+   "channels": [
+    "customer"
+   ],
+   "why": "buys 1.4% of its inputs from it",
+   "exposure": 49.937000000000005,
+   "ead": 49.937000000000005,
+   "at_risk": 0.34706215,
+   "notches": 0,
+   "d_ecl": 0.0,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "href": "/borrower-360?domain=corporate&customer_id=CB04180"
+  },
+  {
+   "borrower_id": "CB05313",
+   "name": "Al Faisaliah Peninsula Trading",
+   "sector": "Wholesale Trade",
+   "rating": "BBB",
+   "ews_band": "none",
+   "channels": [
+    "supplier"
+   ],
+   "why": "sells 0.5% of its revenue to it",
+   "exposure": 26.650399999999998,
+   "ead": 26.650399999999998,
+   "at_risk": 0.14124711999999998,
+   "notches": 0,
+   "d_ecl": 0.0,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "href": "/borrower-360?domain=corporate&customer_id=CB05313"
+  }
+ ],
+ "limits": [
+  "Relationship coverage: 99.9% of corporate borrowers have at least one link in rel-saudi-v1; supplier and customer links are observed only through payments routed via the bank.",
+  "Links are one step from the failed name; a second failure among them is not chained.",
+  "Transmission rules are expert: guarantee support 50% of the guaranteed share of LGD, controlled group members 2 notches, suppliers 1\u20132 notches by revenue share, buyers 1 notch at \u226530% of purchases, shared collateral -30% (moderate, R13 \u00a7S calibrated severities).",
+  "Off-book counterparties (other banks' customers, the Deal Desk demo entities) are not in the book run."
+ ],
+ "coverage": {
+  "borrowers": 5412,
+  "with_supply_link": 5384,
+  "with_any_link": 5404,
+  "supply_link_pct": 99.48263118994826,
+  "any_link_pct": 99.85218033998522
+ },
+ "calibration": {
+  "source": "r13_s",
+  "label": "R13 \u00a7S calibrated severities",
+  "note": "Severities from R13 \u00a7S (dd_scenario_calibration, fingerprint b6de3e32253e): mild P75, moderate P92, severe max(P96, worst episode) of observed one-year moves for brent, gdp_nonoil, notches, repo, sector_sd; the other drivers carry \u00a7S's labelled fallback (expert or regulatory) where the data cannot support a percentile.",
+  "path": "Data Domains: dd_scenario_calibration"
+ },
+ "engine": {
+  "method": "delta",
+  "drivers": [
+   "staging"
+  ],
+  "seconds": 0.26
+ },
+ "money_unit": "SAR million",
+ "text": {
+  "headline": "If Najran Agri (CB00039) fails: 6 other borrowers carry SAR 195m of exposure linked to it, SAR 5.8m at risk; second-order ECL +SAR 0.0m on top of its own +SAR 10.0m.",
+  "lines": [
+   "As suppliers: 4 names, exposure SAR 125m, at risk SAR 4.6m, ECL +SAR 0.0m.",
+   "As buyers: 2 names, exposure SAR 70m, at risk SAR 1.3m, ECL +SAR 0.0m.",
+   "Most exposed: Hijaz United Trading (CB05147), sells 6.0% of its revenue to it."
+  ]
+ },
+ "view": {
+  "view": "intel_network_contagion",
+  "key": "CB00039",
+  "inputs_sha256": "ea69f883efa8eda4",
+  "path": "var/intel/network/contagion/ea69f883efa8eda4.json",
+  "content_sha256": "b7af27e4634af0dccf8667646ade687303d9b75e002b1a2705f5c5f4aa052c5a",
+  "published": true
+ },
+ "data_domains": {
+  "published_at": "2026-10-19T18:04:44Z",
+  "same_as_published": false,
+  "note": "Registered in Data Domains as Network intelligence \u00b7 net_contagion_view (published at moderate severity; this answer is recomputed live)"
+ }
+}

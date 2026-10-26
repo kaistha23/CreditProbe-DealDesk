@@ -1,0 +1,23 @@
+{
+ "total_ead_sar_mn": 153700.1,
+ "total_ecl_sar_mn": 7794.8,
+ "bad_borrowers_pct": 13.88,
+ "stage3_ead_pct": 8.15,
+ "stage2_ead_pct": 27.31,
+ "ecl_coverage_pct": 5.07,
+ "stage3_coverage_pct": 48.9,
+ "ecl_over_stage3_pct": 62.2,
+ "largest_borrower": "CB00004",
+ "largest_borrower_ead": 144.3,
+ "largest_borrower_pct": 0.094,
+ "top10_pct": 0.56,
+ "top20_pct": 0.97,
+ "largest_group": "CG6292",
+ "largest_group_ead": 18523.1,
+ "largest_group_pct": 12.05,
+ "groups_over_cp12_500": 8,
+ "pd_pit_ead_weighted_pct": 9.28,
+ "dpd90_borrowers": 601,
+ "bad_borrowers": 751,
+ "default_entry_rate_quarter_pct": 8.16
+}

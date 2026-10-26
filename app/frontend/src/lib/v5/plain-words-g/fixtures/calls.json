@@ -1,0 +1,423 @@
+{
+ "summary": "96 material names (relationship EAD at least SAR 50m) need a call (4 today, 63 this week; SAR 5,598m EAD). Start with Al Sahel Building Materials Trading LLC (SAR 178m: monitoring trigger hit); Tuwaiq Construction (SAR 107m: default reported at another bank); Gulf Horizon Trading (SAR 82m: days past due on our facilities). 2,405 smaller names with a signal stay with their RMs (full list).",
+ "total": 96,
+ "today": 4,
+ "this_week": 63,
+ "rows": [
+  {
+   "rank": 1,
+   "borrower_id": "XE-TWA-01",
+   "borrower_name": "Al Sahel Building Materials Trading LLC",
+   "sector": "Wholesale Trade",
+   "source": "deal_desk",
+   "proposal_id": "R12-TWA",
+   "top_facility": "R12-TWA:L0",
+   "ead_sar_mn": {
+    "value": 178.0,
+    "unit": "SAR m"
+   },
+   "materiality_sar_mn": {
+    "value": 124.6,
+    "unit": "SAR m"
+   },
+   "weight": 7,
+   "urgency": "this week",
+   "call_by": "2026-10-23",
+   "signals": [
+    {
+     "id": "trigger",
+     "label": "Monitoring trigger hit",
+     "weight": 4,
+     "value": {
+      "value": "Routed business below 1.5x limits"
+     },
+     "text": "Routed business below 1.5x limits"
+    },
+    {
+     "id": "cheques",
+     "label": "Cheques returned",
+     "weight": 3,
+     "value": {
+      "value": 2.0
+     },
+     "text": "2"
+    }
+   ],
+   "reason": "Monitoring trigger hit (Routed business below 1.5x limits); Cheques returned (2)",
+   "action": "Call the client: the plan's named trigger fired; agree the remedy the plan sets.",
+   "open": "/deal-desk/R12-TWA?from=early-warning"
+  },
+  {
+   "rank": 2,
+   "borrower_id": "CB00002",
+   "borrower_name": "Tuwaiq Construction",
+   "sector": "Construction",
+   "source": "book",
+   "proposal_id": null,
+   "top_facility": "CF000022",
+   "ead_sar_mn": {
+    "value": 107.2823,
+    "unit": "SAR m"
+   },
+   "materiality_sar_mn": {
+    "value": 107.2823,
+    "unit": "SAR m"
+   },
+   "weight": 10,
+   "urgency": "today",
+   "call_by": "2026-10-19",
+   "signals": [
+    {
+     "id": "bureau_default",
+     "label": "Default reported at another bank",
+     "weight": 5,
+     "value": {
+      "value": 1
+     },
+     "text": "new this quarter"
+    },
+    {
+     "id": "covenant_breach",
+     "label": "Covenant in breach",
+     "weight": 3,
+     "value": {
+      "value": 1
+     },
+     "text": "1"
+    },
+    {
+     "id": "bureau_debt",
+     "label": "Other-bank debt doubled",
+     "weight": 2,
+     "value": {
+      "value": 328
+     },
+     "text": "+328%"
+    }
+   ],
+   "reason": "Default reported at another bank (new this quarter); Covenant in breach (1); Other-bank debt doubled (+328%)",
+   "action": "Call the CFO today: confirm the other-bank default and our standstill position; send to Early Warning.",
+   "open": "/borrower-360?domain=corporate&customer_id=CB00002&from=early-warning"
+  },
+  {
+   "rank": 3,
+   "borrower_id": "CB00009",
+   "borrower_name": "Gulf Horizon Trading",
+   "sector": "Wholesale Trade",
+   "source": "book",
+   "proposal_id": null,
+   "top_facility": "CF000091",
+   "ead_sar_mn": {
+    "value": 81.7672,
+    "unit": "SAR m"
+   },
+   "materiality_sar_mn": {
+    "value": 65.41376,
+    "unit": "SAR m"
+   },
+   "weight": 8,
+   "urgency": "this week",
+   "call_by": "2026-10-23",
+   "signals": [
+    {
+     "id": "dpd",
+     "label": "Days past due on our facilities",
+     "weight": 4,
+     "value": {
+      "value": 30.0
+     },
+     "text": "30 days"
+    },
+    {
+     "id": "covenant_headroom",
+     "label": "Covenant headroom under 10%",
+     "weight": 2,
+     "value": {
+      "value": 8.4
+     },
+     "text": "8.4% headroom"
+    },
+    {
+     "id": "bureau_debt",
+     "label": "Other-bank debt doubled",
+     "weight": 2,
+     "value": {
+      "value": 249
+     },
+     "text": "+249%"
+    }
+   ],
+   "reason": "Days past due on our facilities (30 days); Covenant headroom under 10% (8.4% headroom); Other-bank debt doubled (+249%)",
+   "action": "Call the treasurer: agree the date the arrears clear; stop new drawings until they do.",
+   "open": "/borrower-360?domain=corporate&customer_id=CB00009&from=early-warning"
+  },
+  {
+   "rank": 4,
+   "borrower_id": "CB04620",
+   "borrower_name": "Khamis Mushait Prime Telecom",
+   "sector": "Telecommunications",
+   "source": "book",
+   "proposal_id": null,
+   "top_facility": "CF046201",
+   "ead_sar_mn": {
+    "value": 65.1438,
+    "unit": "SAR m"
+   },
+   "materiality_sar_mn": {
+    "value": 65.1438,
+    "unit": "SAR m"
+   },
+   "weight": 14,
+   "urgency": "this week",
+   "call_by": "2026-10-23",
+   "signals": [
+    {
+     "id": "dpd",
+     "label": "Days past due on our facilities",
+     "weight": 4,
+     "value": {
+      "value": 30.0
+     },
+     "text": "30 days"
+    },
+    {
+     "id": "cheques",
+     "label": "Cheques returned",
+     "weight": 3,
+     "value": {
+      "value": 1.0
+     },
+     "text": "1"
+    },
+    {
+     "id": "overdraft_excess",
+     "label": "Account in excess of limit",
+     "weight": 3,
+     "value": {
+      "value": 31.0
+     },
+     "text": "31 days in 3 months"
+    },
+    {
+     "id": "covenant_headroom",
+     "label": "Covenant headroom under 10%",
+     "weight": 2,
+     "value": {
+      "value": 9.5
+     },
+     "text": "9.5% headroom"
+    },
+    {
+     "id": "bureau_debt",
+     "label": "Other-bank debt doubled",
+     "weight": 2,
+     "value": {
+      "value": 198
+     },
+     "text": "+198%"
+    }
+   ],
+   "reason": "Days past due on our facilities (30 days); Cheques returned (1); Account in excess of limit (31 days in 3 months) and 2 more",
+   "action": "Call the treasurer: agree the date the arrears clear; stop new drawings until they do.",
+   "open": "/borrower-360?domain=corporate&customer_id=CB04620&from=early-warning"
+  },
+  {
+   "rank": 5,
+   "borrower_id": "CB01816",
+   "borrower_name": "Al Kharj Modern Hospitality",
+   "sector": "Hospitality",
+   "source": "book",
+   "proposal_id": null,
+   "top_facility": "CF018161",
+   "ead_sar_mn": {
+    "value": 63.2126,
+    "unit": "SAR m"
+   },
+   "materiality_sar_mn": {
+    "value": 63.2126,
+    "unit": "SAR m"
+   },
+   "weight": 13,
+   "urgency": "this week",
+   "call_by": "2026-10-23",
+   "signals": [
+    {
+     "id": "dpd",
+     "label": "Days past due on our facilities",
+     "weight": 4,
+     "value": {
+      "value": 30.0
+     },
+     "text": "30 days"
+    },
+    {
+     "id": "covenant_breach",
+     "label": "Covenant in breach",
+     "weight": 3,
+     "value": {
+      "value": 4
+     },
+     "text": "4"
+    },
+    {
+     "id": "cheques",
+     "label": "Cheques returned",
+     "weight": 3,
+     "value": {
+      "value": 1.0
+     },
+     "text": "1"
+    },
+    {
+     "id": "overdraft_excess",
+     "label": "Account in excess of limit",
+     "weight": 3,
+     "value": {
+      "value": 26.0
+     },
+     "text": "26 days in 3 months"
+    }
+   ],
+   "reason": "Days past due on our facilities (30 days); Covenant in breach (4); Cheques returned (1) and 1 more",
+   "action": "Call the treasurer: agree the date the arrears clear; stop new drawings until they do.",
+   "open": "/borrower-360?domain=corporate&customer_id=CB01816&from=early-warning"
+  },
+  {
+   "rank": 6,
+   "borrower_id": "CB04252",
+   "borrower_name": "Unayzah Gulf Retail",
+   "sector": "Retail Trade",
+   "source": "book",
+   "proposal_id": null,
+   "top_facility": "CF042525",
+   "ead_sar_mn": {
+    "value": 63.0265,
+    "unit": "SAR m"
+   },
+   "materiality_sar_mn": {
+    "value": 63.0265,
+    "unit": "SAR m"
+   },
+   "weight": 12,
+   "urgency": "this week",
+   "call_by": "2026-10-23",
+   "signals": [
+    {
+     "id": "dpd",
+     "label": "Days past due on our facilities",
+     "weight": 4,
+     "value": {
+      "value": 30.0
+     },
+     "text": "30 days"
+    },
+    {
+     "id": "covenant_breach",
+     "label": "Covenant in breach",
+     "weight": 3,
+     "value": {
+      "value": 6
+     },
+     "text": "6"
+    },
+    {
+     "id": "cheques",
+     "label": "Cheques returned",
+     "weight": 3,
+     "value": {
+      "value": 1.0
+     },
+     "text": "1"
+    },
+    {
+     "id": "ews_worse",
+     "label": "Early Warning band worsened",
+     "weight": 2,
+     "value": {
+      "value": "1\u21922"
+     },
+     "text": "1\u21922"
+    }
+   ],
+   "reason": "Days past due on our facilities (30 days); Covenant in breach (6); Cheques returned (1) and 1 more",
+   "action": "Call the treasurer: agree the date the arrears clear; stop new drawings until they do.",
+   "open": "/borrower-360?domain=corporate&customer_id=CB04252&from=early-warning"
+  }
+ ],
+ "by_signal": {
+  "bureau_default": 4,
+  "dpd": 29,
+  "payroll": 0,
+  "bureau_dpd": 7,
+  "ews_severe": 2,
+  "trigger": 1,
+  "covenant_breach": 29,
+  "cheques": 28,
+  "overdraft_excess": 24,
+  "inflow_fall": 4,
+  "ews_worse": 15,
+  "covenant_headroom": 26,
+  "bureau_debt": 28,
+  "bureau_enquiries": 7,
+  "tier_high": 0
+ },
+ "scope": "material",
+ "materiality_floor_sar_mn": 50.0,
+ "whole_book_total": 2501,
+ "below_floor": 2405,
+ "material_ead_sar_mn": 5597.917100000001,
+ "signals": [
+  {
+   "id": "bureau_default",
+   "label": "Default reported at another bank",
+   "weight": 5,
+   "action": "Call the CFO today: confirm the other-bank default and our standstill position; send to Early Warning."
+  },
+  {
+   "id": "dpd",
+   "label": "Days past due on our facilities",
+   "weight": 4,
+   "action": "Call the treasurer: agree the date the arrears clear; stop new drawings until they do."
+  },
+  {
+   "id": "payroll",
+   "label": "Payroll run missed",
+   "weight": 4,
+   "action": "Call the owner: ask why salaries were not paid through us and how liquidity stands this month."
+  },
+  {
+   "id": "bureau_dpd",
+   "label": "New past due at other banks",
+   "weight": 4,
+   "action": "Call the CFO: ask which bank is past due and why; request the latest cash-flow forecast."
+  },
+  {
+   "id": "ews_severe",
+   "label": "Early Warning high or critical",
+   "weight": 4,
+   "action": "Call the RM and the client this week: walk the Early Warning reasons and agree actions."
+  },
+  {
+   "id": "trigger",
+   "label": "Monitoring trigger hit",
+   "weight": 4,
+   "action": "Call the client: the plan's named trigger fired; agree the remedy the plan sets."
+  }
+ ],
+ "method": "Materiality = EAD \u00d7 min(1, total signal weight / 10); urgency from the strongest signal (5 today, 3\u20134 this week, 1\u20132 next week).",
+ "data_limits": [
+  "Conduct is monthly (deposits.dep_month to its last month): a salary run paid a few days late inside the month cannot be seen; a missed month can.",
+  "Bureau is quarterly (bureau.bureau_corp_quarter): a past due reported this week appears after the next bureau load.",
+  "Signals are compared with the previous period only (new since last quarter or month); a long-standing problem shows once it is already in arrears, Early Warning or covenants.",
+  "Defaulted names are in workout and are not on the call list.",
+  "No RM is recorded on back-book facilities; Deal Desk deals carry their RM.",
+  "No payroll customer missed a monthly run in the last 3 months of deposits.dep_month; payment dates are not in the relation, so a salary delay inside a month is not visible."
+ ],
+ "offset": 0,
+ "limit": 25,
+ "as_of": {
+  "book": "2026Q2",
+  "conduct": "2026-04..2026-06 vs 2025-10..2026-03",
+  "bureau": "2026Q2"
+ }
+}

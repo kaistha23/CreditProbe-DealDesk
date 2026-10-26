@@ -1,0 +1,33 @@
+{
+ "name": "opex",
+ "owner": "Finance",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Origination and annual servicing cost by segment.",
+ "rows": {
+  "corporate": {
+   "origination_fixed": 0.05,
+   "origination_bps": 15,
+   "servicing_fixed": 0.02,
+   "servicing_bps": 20
+  },
+  "sme": {
+   "origination_fixed": 0.03,
+   "origination_bps": 25,
+   "servicing_fixed": 0.02,
+   "servicing_bps": 35
+  },
+  "gre": {
+   "origination_fixed": 0.05,
+   "origination_bps": 10,
+   "servicing_fixed": 0.02,
+   "servicing_bps": 12
+  },
+  "covenant_monitoring": {
+   "none": 0.0,
+   "standard": 0.01,
+   "enhanced": 0.03
+  }
+ }
+}

@@ -1,0 +1,18 @@
+- CP_Demo_DD-201_AlKhobarModernLogistics_LongForm.docx: 35 of 35 fields read; please confirm; RAROC 29.84% vs 15%; hard: none; soft: none; group CG9317-006
+- CP_Demo_DD-201_AlKhobarModernLogistics_ShortForm.xlsx: 35 of 35 fields read; please confirm; RAROC 29.84% vs 15%; hard: none; soft: none; group CG9317-006
+- CP_Demo_DD-202_RawabiIndustrialWorks_LongForm.docx: 31 of 35 fields read; please confirm; RAROC 15.52% vs 15%; hard: ['Connected group']; soft: none; group CG1277
+- CP_Demo_DD-202_RawabiIndustrialWorks_ShortForm.xlsx: 31 of 35 fields read; please confirm; RAROC 15.52% vs 15%; hard: ['Connected group']; soft: none; group CG1277
+- CP_Demo_DD-203_NajdCentralEngineering_LongForm.docx: 27 of 35 fields read; please confirm; RAROC 14.99% vs 16%; hard: none; soft: none; group CG6292-119
+- CP_Demo_DD-203_NajdCentralEngineering_ShortForm.xlsx: 27 of 35 fields read; please confirm; RAROC 14.99% vs 16%; hard: none; soft: none; group CG6292-119
+- CP_Demo_DD-204_TabukDatesProcessing_LongForm.docx: 32 of 35 fields read; please confirm; RAROC 18.87% vs 15%; hard: none; soft: none; group DG180
+- CP_Demo_DD-204_TabukDatesProcessing_ShortForm.xlsx: 32 of 35 fields read; please confirm; RAROC 18.87% vs 15%; hard: none; soft: none; group DG181
+- CP_Demo_DD-205_JazanColdChainLeasing_LongForm.docx: 29 of 35 fields read; please confirm; RAROC 14.79% vs 15%; hard: ['Structure']; soft: none; group DG182
+- CP_Demo_DD-205_JazanColdChainLeasing_ShortForm.xlsx: 29 of 35 fields read; please confirm; RAROC 14.79% vs 15%; hard: ['Structure']; soft: none; group DG183
+- CP_Demo_DD-206_TuwaiqModernProperties_LongForm.docx: 31 of 35 fields read; please confirm; RAROC 17.77% vs 16%; hard: ['Connected group']; soft: ['Sector (appetite)']; group CG3425-011
+- CP_Demo_DD-206_TuwaiqModernProperties_ShortForm.xlsx: 31 of 35 fields read; please confirm; RAROC 17.77% vs 16%; hard: ['Connected group']; soft: ['Sector (appetite)']; group CG3425-011
+- CP_Demo_DD-207_TaifFirstLogistics_LongForm.docx: 31 of 35 fields read; please confirm; RAROC 13.35% vs 15%; hard: none; soft: none; group CG9317-018
+- CP_Demo_DD-207_TaifFirstLogistics_ShortForm.xlsx: 31 of 35 fields read; please confirm; RAROC 13.35% vs 15%; hard: none; soft: none; group CG9317-018
+- CP_Demo_DD-208_QassimSpecialistHealthcare_LongForm.docx: 32 of 35 fields read; please confirm; RAROC 43.15% vs 15%; hard: none; soft: none; group DG188
+- CP_Demo_DD-208_QassimSpecialistHealthcare_ShortForm.xlsx: 32 of 35 fields read; please confirm; RAROC 43.15% vs 15%; hard: none; soft: none; group DG189
+- CP_Demo_DD-209_WadiHanifahTechnologies_LongForm.docx: 31 of 35 fields read; please confirm; RAROC 50.80% vs 15%; hard: none; soft: none; group CG1191-011
+- CP_Demo_DD-209_WadiHanifahTechnologies_ShortForm.xlsx: 31 of 35 fields read; please confirm; RAROC 50.80% vs 15%; hard: none; soft: none; group CG1191-011

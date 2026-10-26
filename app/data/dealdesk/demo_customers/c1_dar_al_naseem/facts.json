@@ -1,0 +1,2346 @@
+{
+ "key": "c1",
+ "people": [
+  {
+   "key": "fahad",
+   "name": "Fahad Saad Al-Naseem",
+   "id_number": "1012345870",
+   "nationality": "Saudi",
+   "dob": "1965-07-22",
+   "id_issue": "2022-03-10",
+   "id_expiry": "2032-03-09",
+   "role": "Chairman and GM; 20% direct and 48% through Naseem Holding",
+   "guarantor": true,
+   "simah": {
+    "date": "2026-10-08",
+    "number": "SC-26-8790311",
+    "score": 731,
+    "worst": "Current on own facilities; guaranteed facility substandard",
+    "facilities": [
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Credit card",
+      "limit": 0.15,
+      "outstanding": 0.032,
+      "overdue": 0.0,
+      "status": "Current"
+     },
+     {
+      "lender": "Al Rimal Commercial Bank",
+      "product": "Real-estate finance",
+      "limit": 4.8,
+      "outstanding": 3.1,
+      "overdue": 0.0,
+      "status": "Current"
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Dar Al Naseem Medical Supplies Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 95.0,
+      "status": "Current"
+     },
+     {
+      "beneficiary": "Dar Al Naseem Medical Supplies Co.",
+      "lender": "Al Rimal Commercial Bank",
+      "amount": 45.0,
+      "status": "Current"
+     },
+     {
+      "beneficiary": "Naseem Lab Systems Co.",
+      "lender": "Al Rimal Commercial Bank",
+      "amount": 22.0,
+      "status": "Substandard (classified 07/2026)"
+     }
+    ],
+    "history": "Own facilities current for 24 months. Guaranteed facility of Naseem Lab Systems Co. at Al Rimal Commercial Bank: 90+ days past due from 05/2026, classified substandard in 07/2026."
+   },
+   "pnw": {
+    "date": "2026-08-31",
+    "assets": [
+     {
+      "asset": "Shares",
+      "description": "60% of Naseem Holding Co. (book value)",
+      "value": 52.8
+     },
+     {
+      "asset": "Shares",
+      "description": "20% of Dar Al Naseem Medical Supplies Co. (book value)",
+      "value": 15.2
+     },
+     {
+      "asset": "Real estate",
+      "description": "Residential compound, Al Narjis, Riyadh (valuation 03/2026)",
+      "value": 28.5
+     },
+     {
+      "asset": "Real estate",
+      "description": "Land, Al Kharj road (2,400 sq m)",
+      "value": 9.6
+     },
+     {
+      "asset": "Cash and deposits",
+      "description": "Current and deposit accounts",
+      "value": 11.9
+     },
+     {
+      "asset": "Listed shares",
+      "description": "Portfolio at market value",
+      "value": 6.3
+     }
+    ],
+    "liabilities": [
+     {
+      "liability": "Real-estate finance",
+      "description": "Al Rimal Commercial Bank",
+      "value": 3.1
+     },
+     {
+      "liability": "Credit card",
+      "description": "Sandstone Harbour Bank",
+      "value": 0.032
+     }
+    ]
+   }
+  },
+  {
+   "key": "majed",
+   "name": "Majed Saad Al-Naseem",
+   "id_number": "1019876543",
+   "nationality": "Saudi",
+   "dob": "1969-01-30",
+   "id_issue": "2020-09-14",
+   "id_expiry": "2030-09-13",
+   "role": "Director; 32% through Naseem Holding",
+   "guarantor": true,
+   "simah": {
+    "date": "2026-10-08",
+    "number": "SC-26-8790312",
+    "score": 748,
+    "worst": "Current (no delinquency)",
+    "facilities": [
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Auto finance",
+      "limit": 0.38,
+      "outstanding": 0.21,
+      "overdue": 0.0,
+      "status": "Current"
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Dar Al Naseem Medical Supplies Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 95.0,
+      "status": "Current"
+     }
+    ],
+    "history": "24 of 24 months current."
+   },
+   "pnw": {
+    "date": "2026-08-31",
+    "assets": [
+     {
+      "asset": "Shares",
+      "description": "40% of Naseem Holding Co. (book value)",
+      "value": 35.2
+     },
+     {
+      "asset": "Real estate",
+      "description": "Villa, Al Malqa, Riyadh",
+      "value": 8.4
+     },
+     {
+      "asset": "Cash and deposits",
+      "description": "Deposit accounts",
+      "value": 4.7
+     }
+    ],
+    "liabilities": [
+     {
+      "liability": "Auto finance",
+      "description": "Sandstone Harbour Bank",
+      "value": 0.21
+     }
+    ]
+   }
+  }
+ ],
+ "fs": {
+  "FY2023": {
+   "revenue": 158.9,
+   "cost_of_sales": 119.5,
+   "operating_expenses": 20.6,
+   "finance_cost": 3.9,
+   "zakat": 1.0,
+   "depreciation": 2.9,
+   "cash": 9.8,
+   "trade_receivables": 41.7,
+   "inventory": 36.5,
+   "due_from_related": 2.2,
+   "other_current_assets": 5.4,
+   "ppe": 24.1,
+   "other_noncurrent_assets": 1.0,
+   "short_term_borrowings": 28.3,
+   "trade_payables": 17.2,
+   "due_to_related": 0.9,
+   "current_portion_ltd": 2.0,
+   "long_term_borrowings": 10.0,
+   "end_of_service": 4.3,
+   "share_capital": 30.0,
+   "statutory_reserve": 6.42,
+   "retained_earnings": 20.38,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "other_current_liabilities": 1.2,
+   "gross_profit": 39.4,
+   "operating_profit": 18.8,
+   "net_profit": 13.9,
+   "current_assets": 95.6,
+   "total_assets": 120.7,
+   "total_equity": 56.8,
+   "current_liabilities": 49.6,
+   "total_liabilities": 63.9,
+   "ebitda": 21.7,
+   "operating_cash_flow": 9.6
+  },
+  "FY2024": {
+   "revenue": 182.4,
+   "cost_of_sales": 137.7,
+   "operating_expenses": 23.1,
+   "finance_cost": 4.6,
+   "zakat": 1.2,
+   "depreciation": 3.2,
+   "cash": 11.4,
+   "trade_receivables": 48.5,
+   "inventory": 41.2,
+   "due_from_related": 3.1,
+   "other_current_assets": 6.3,
+   "ppe": 24.8,
+   "other_noncurrent_assets": 1.1,
+   "short_term_borrowings": 32.6,
+   "trade_payables": 18.4,
+   "due_to_related": 1.0,
+   "current_portion_ltd": 2.0,
+   "long_term_borrowings": 8.0,
+   "end_of_service": 4.9,
+   "share_capital": 30.0,
+   "statutory_reserve": 8.0,
+   "retained_earnings": 22.9,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "other_current_liabilities": 8.6,
+   "gross_profit": 44.7,
+   "operating_profit": 21.6,
+   "net_profit": 15.8,
+   "current_assets": 110.5,
+   "total_assets": 136.4,
+   "total_equity": 60.9,
+   "current_liabilities": 62.6,
+   "total_liabilities": 75.5,
+   "ebitda": 24.8,
+   "operating_cash_flow": 15.0
+  },
+  "FY2025": {
+   "revenue": 251.7,
+   "cost_of_sales": 193.6,
+   "operating_expenses": 28.4,
+   "finance_cost": 6.9,
+   "zakat": 1.5,
+   "depreciation": 3.6,
+   "cash": 9.2,
+   "trade_receivables": 112.3,
+   "inventory": 52.6,
+   "due_from_related": 4.4,
+   "other_current_assets": 7.9,
+   "ppe": 26.1,
+   "other_noncurrent_assets": 1.2,
+   "short_term_borrowings": 78.4,
+   "trade_payables": 26.9,
+   "due_to_related": 1.2,
+   "current_portion_ltd": 2.0,
+   "long_term_borrowings": 6.0,
+   "end_of_service": 5.6,
+   "share_capital": 30.0,
+   "statutory_reserve": 10.13,
+   "retained_earnings": 36.07,
+   "related_party_sales": 78.0,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "other_current_liabilities": 17.4,
+   "gross_profit": 58.1,
+   "operating_profit": 29.7,
+   "net_profit": 21.3,
+   "current_assets": 186.4,
+   "total_assets": 213.7,
+   "total_equity": 76.2,
+   "current_liabilities": 125.9,
+   "total_liabilities": 137.5,
+   "ebitda": 33.3,
+   "operating_cash_flow": -35.0,
+   "dividends": 6.0
+  },
+  "9M2026": {
+   "revenue": 205.6,
+   "cost_of_sales": 159.5,
+   "operating_expenses": 23.9,
+   "finance_cost": 6.4,
+   "zakat": 0.0,
+   "depreciation": 2.9,
+   "cash": 7.6,
+   "trade_receivables": 148.9,
+   "inventory": 58.3,
+   "due_from_related": 5.0,
+   "other_current_assets": 8.4,
+   "ppe": 26.4,
+   "other_noncurrent_assets": 1.2,
+   "short_term_borrowings": 104.7,
+   "trade_payables": 29.8,
+   "due_to_related": 1.4,
+   "current_portion_ltd": 2.0,
+   "long_term_borrowings": 4.5,
+   "end_of_service": 6.1,
+   "share_capital": 30.0,
+   "statutory_reserve": 10.13,
+   "retained_earnings": 51.87,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "other_current_liabilities": 15.3,
+   "gross_profit": 46.1,
+   "operating_profit": 22.2,
+   "net_profit": 15.8,
+   "current_assets": 228.2,
+   "total_assets": 255.8,
+   "total_equity": 92.0,
+   "current_liabilities": 153.2,
+   "total_liabilities": 163.8,
+   "ebitda": 25.1,
+   "months": 9,
+   "operating_cash_flow": -23.2
+  }
+ },
+ "audit": {
+  "FY2024": {
+   "auditor": "Basma & Partners Chartered Accountants",
+   "opinion": "Unqualified",
+   "qawaem": "QW-2025-1010384527",
+   "city": "Riyadh",
+   "partner": "Hani Al-Basma",
+   "licence": "388",
+   "signed": "2025-04-17"
+  },
+  "FY2025": {
+   "auditor": "Basma & Partners Chartered Accountants",
+   "opinion": "Unqualified",
+   "qawaem": "QW-2026-1010384527",
+   "city": "Riyadh",
+   "partner": "Hani Al-Basma",
+   "licence": "388",
+   "signed": "2026-04-21"
+  }
+ },
+ "notes": {
+  "FY2024": [
+   [
+    "Note 8 — Trade receivables",
+    "Trade receivables SAR 48,500,000 (2023: 41,700,000), net of an allowance of SAR 1,900,000; government hospitals 41%, private hospitals and clinics 52%, pharmacies 7%."
+   ],
+   [
+    "Note 15 — Related parties",
+    "Due from Naseem Lab Systems Co. (a fellow subsidiary of Naseem Holding Co.) SAR 3,100,000 for equipment servicing."
+   ],
+   [
+    "Note 17 — Borrowings",
+    "Short-term Murabaha and trust receipts with two banks SAR 32,600,000; long-term loan secured by a mortgage over the company's warehouse in favour of Sandstone Harbour Bank."
+   ]
+  ],
+  "FY2025": [
+   [
+    "Note 8 — Trade receivables",
+    "Trade receivables SAR 112,300,000 (2024: 48,500,000), net of an allowance of SAR 2,400,000. The increase reflects the appointment of a regional distributor in February 2025 on 120-day terms."
+   ],
+   [
+    "Note 15 — Related parties",
+    "Sales to Al Tayf Healthcare Trading Est., an entity owned by a relative of a shareholder, SAR 78,000,000 (2024: nil); balance receivable SAR 61,400,000 (2024: nil), included in trade receivables. Due from Naseem Lab Systems Co. SAR 4,400,000 (2024: 3,100,000)."
+   ],
+   [
+    "Note 17 — Borrowings",
+    "Short-term Murabaha, trust receipts and LC acceptances SAR 78,400,000 (Sandstone Harbour Bank SAR 46,200,000; Al Rimal Commercial Bank SAR 32,200,000). Long-term loan SAR 8,000,000 secured by the warehouse mortgage."
+   ],
+   [
+    "Note 22 — Subsequent events",
+    "No adjusting events."
+   ]
+  ]
+ },
+ "inhouse_by": "Rania Yousef Khoury",
+ "inhouse_date": "2026-10-10",
+ "inhouse_notes": [
+  "Trade receivables include balances from the regional distributor on 120-day terms."
+ ],
+ "vat": [
+  {
+   "period": "2025-10",
+   "from": "2025-10-01",
+   "to": "2025-10-31",
+   "taxable_sales": 24.808,
+   "zero_rated": 0.0,
+   "output_vat": 3.721,
+   "input_vat": 2.926,
+   "filed_on": "2025-11-18"
+  },
+  {
+   "period": "2025-11",
+   "from": "2025-11-01",
+   "to": "2025-11-30",
+   "taxable_sales": 23.162,
+   "zero_rated": 0.0,
+   "output_vat": 3.474,
+   "input_vat": 2.691,
+   "filed_on": "2025-12-18"
+  },
+  {
+   "period": "2025-12",
+   "from": "2025-12-01",
+   "to": "2025-12-31",
+   "taxable_sales": 23.22,
+   "zero_rated": 0.0,
+   "output_vat": 3.483,
+   "input_vat": 2.671,
+   "filed_on": "2026-01-18"
+  },
+  {
+   "period": "2026-01",
+   "from": "2026-01-01",
+   "to": "2026-01-31",
+   "taxable_sales": 21.846,
+   "zero_rated": 0.0,
+   "output_vat": 3.277,
+   "input_vat": 2.408,
+   "filed_on": "2026-02-18"
+  },
+  {
+   "period": "2026-02",
+   "from": "2026-02-01",
+   "to": "2026-02-28",
+   "taxable_sales": 21.53,
+   "zero_rated": 0.0,
+   "output_vat": 3.23,
+   "input_vat": 2.46,
+   "filed_on": "2026-03-18"
+  },
+  {
+   "period": "2026-03",
+   "from": "2026-03-01",
+   "to": "2026-03-31",
+   "taxable_sales": 20.885,
+   "zero_rated": 0.0,
+   "output_vat": 3.133,
+   "input_vat": 2.266,
+   "filed_on": "2026-04-18"
+  },
+  {
+   "period": "2026-04",
+   "from": "2026-04-01",
+   "to": "2026-04-30",
+   "taxable_sales": 22.371,
+   "zero_rated": 0.0,
+   "output_vat": 3.356,
+   "input_vat": 2.564,
+   "filed_on": "2026-05-18"
+  },
+  {
+   "period": "2026-05",
+   "from": "2026-05-01",
+   "to": "2026-05-31",
+   "taxable_sales": 22.669,
+   "zero_rated": 0.0,
+   "output_vat": 3.4,
+   "input_vat": 2.485,
+   "filed_on": "2026-06-18"
+  },
+  {
+   "period": "2026-06",
+   "from": "2026-06-01",
+   "to": "2026-06-30",
+   "taxable_sales": 23.632,
+   "zero_rated": 0.0,
+   "output_vat": 3.545,
+   "input_vat": 2.617,
+   "filed_on": "2026-07-18"
+  },
+  {
+   "period": "2026-07",
+   "from": "2026-07-01",
+   "to": "2026-07-31",
+   "taxable_sales": 24.791,
+   "zero_rated": 0.0,
+   "output_vat": 3.719,
+   "input_vat": 2.74,
+   "filed_on": "2026-08-18"
+  },
+  {
+   "period": "2026-08",
+   "from": "2026-08-01",
+   "to": "2026-08-31",
+   "taxable_sales": 24.314,
+   "zero_rated": 0.0,
+   "output_vat": 3.647,
+   "input_vat": 2.868,
+   "filed_on": "2026-09-18"
+  },
+  {
+   "period": "2026-09",
+   "from": "2026-09-01",
+   "to": "2026-09-30",
+   "taxable_sales": 23.341,
+   "zero_rated": 0.0,
+   "output_vat": 3.501,
+   "input_vat": 2.567,
+   "filed_on": "2026-10-18"
+  }
+ ],
+ "accounts": [
+  {
+   "bank": "Sandstone Harbour Bank",
+   "number": "0105-220981-001",
+   "iban": "SA5277000001052209810011",
+   "type": "Current account (main operating)",
+   "opening": 6.1,
+   "issued": "2026-10-03",
+   "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "credit_items": [
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.703711,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      2.79642,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      2.891967,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      3.115777,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.67143,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.623558,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      3.292188,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      4.778476,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      2.589613,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.524679,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.100527,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      3.982984,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      2.515976,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      3.76165,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.311733,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      2.461386,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      3.026728,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      4.58307,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      3.492939,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      3.301322,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.493558,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      3.107918,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      4.06977,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      3.515612,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      3.102357,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.446165,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      2.497197,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      4.829871,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      3.096437,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.20108,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.189954,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      4.238072,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      3.492851,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      2.995457,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.547875,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.062808,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      4.706931,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      2.728109,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      4.551266,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.342178,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      5.396158,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      3.436461,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      2.524907,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      3.473935,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      3.195422,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.588399,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      4.896468,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      4.126899,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      3.696149,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.035559,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      4.05144,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      5.30696,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      4.755278,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      2.636024,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.455415,
+      24
+     ]
+    ],
+    [
+     [
+      "Ministry hospitals cluster — payment",
+      3.659433,
+      6
+     ],
+     [
+      "Private hospitals — collections",
+      5.522835,
+      13
+     ],
+     [
+      "Clinics and pharmacies — collections",
+      3.620985,
+      20
+     ],
+     [
+      "Private hospitals — collections",
+      3.988297,
+      27
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      2.5652,
+      24
+     ]
+    ]
+   ],
+   "debit_items": [
+    [
+     [
+      "LC settlement — imported supplies",
+      5.800396,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.384329,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.293543,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.145773,
+      15
+     ],
+     [
+      "VAT payment",
+      0.693945,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.634994,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      0.919048,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.373944,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.651915,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.739167,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.388981,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.161908,
+      15
+     ],
+     [
+      "VAT payment",
+      0.839626,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.651051,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      0.975413,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.46712,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.068405,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.218586,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.438101,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.153179,
+      15
+     ],
+     [
+      "VAT payment",
+      0.81348,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.617127,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      0.953306,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.477353,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.616445,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.70701,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.571428,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.172058,
+      15
+     ],
+     [
+      "VAT payment",
+      0.800912,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.621897,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      1.019583,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.422779,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.863895,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.619838,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.446513,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.165284,
+      15
+     ],
+     [
+      "VAT payment",
+      0.892903,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.647935,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      0.989536,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.729978,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.21404,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.642847,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.439832,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.155311,
+      15
+     ],
+     [
+      "VAT payment",
+      0.803624,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.666137,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      0.903081,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.312545,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.056325,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.732577,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.472489,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.164485,
+      15
+     ],
+     [
+      "VAT payment",
+      0.855086,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.635338,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      1.084803,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.529773,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.461765,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.745645,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.641345,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.175316,
+      15
+     ],
+     [
+      "VAT payment",
+      0.94518,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.713721,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      1.009967,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.76502,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.726925,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      3.89212,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.598052,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.175298,
+      15
+     ],
+     [
+      "VAT payment",
+      0.996272,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.754951,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      1.090644,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.859288,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      6.987081,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      4.256728,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.604158,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.16895,
+      15
+     ],
+     [
+      "VAT payment",
+      0.847062,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.684553,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      1.161017,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.700592,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      7.430683,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      4.16276,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.73324,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.182987,
+      15
+     ],
+     [
+      "VAT payment",
+      0.931381,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.793506,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      1.142662,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.894565,
+      25
+     ]
+    ],
+    [
+     [
+      "LC settlement — imported supplies",
+      7.386246,
+      11
+     ],
+     [
+      "Supplier payments (local)",
+      4.290213,
+      17
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.732241,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.206011,
+      15
+     ],
+     [
+      "VAT payment",
+      0.902151,
+      28
+     ],
+     [
+      "Murabaha profit and charges",
+      0.735268,
+      2
+     ],
+     [
+      "Warehouse and fleet expenses",
+      1.135016,
+      8
+     ],
+     [
+      "Murabaha repayment (net)",
+      3.036267,
+      25
+     ]
+    ]
+   ],
+   "returned": {
+    "2026-02": 1
+   }
+  },
+  {
+   "bank": "Al Rimal Commercial Bank",
+   "number": "330-118204-6",
+   "iban": "SA7155000000330118204600",
+   "type": "Current account",
+   "opening": 2.8,
+   "issued": "2026-10-05",
+   "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "credit_items": [
+    [
+     [
+      "Private hospitals — collections",
+      1.262075,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.120377,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.144899,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      0.943232,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.777499,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.082005,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.365841,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.179138,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      0.990743,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.324308,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.259334,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.414852,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.459357,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.242902,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.329582,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.586195,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.055647,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      0.94332,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.208627,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.442103,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.091946,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.830972,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.035526,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.003791,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.659812,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.165228,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.369466,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.686132,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.420138,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      0.872382,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.373612,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.816807,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.052321,
+      15
+     ]
+    ],
+    [
+     [
+      "Private hospitals — collections",
+      1.597693,
+      9
+     ],
+     [
+      "Clinics — collections",
+      1.600698,
+      22
+     ],
+     [
+      "Al Tayf Healthcare Trading Est. — payment",
+      1.099372,
+      15
+     ]
+    ]
+   ],
+   "debit_items": [
+    [
+     [
+      "Supplier payments",
+      2.244756,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      0.841421,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.192376,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.307131,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.354303,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      0.983544,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.208327,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.314895,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.230331,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      0.889,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.187387,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.287337,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.565448,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      0.988626,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.18961,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.313143,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.538697,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      1.012846,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.197152,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.341479,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.305528,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      0.852242,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.184431,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.301294,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.33873,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      0.981784,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.195263,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.285232,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.495829,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      0.969123,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.179045,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.284625,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.645478,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      1.041398,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.209693,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.35627,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.44822,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      1.055163,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.215559,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.318043,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.640499,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      1.131768,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.20286,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.325946,
+      19
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      2.663858,
+      12
+     ],
+     [
+      "Murabaha repayment (net)",
+      1.124247,
+      26
+     ],
+     [
+      "Profit and charges",
+      0.233551,
+      2
+     ],
+     [
+      "Logistics expenses",
+      0.334444,
+      19
+     ]
+    ]
+   ],
+   "returned": {}
+  }
+ ],
+ "simah_company": {
+  "date": "2026-10-08",
+  "number": "SB-26-3297704",
+  "score": 702,
+  "enquiries": 2,
+  "facilities": [
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Short-term Murabaha",
+    "limit": 40.0,
+    "outstanding": 39.6,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2017-05-02"
+   },
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Letters of credit (incl. acceptances)",
+    "limit": 30.0,
+    "outstanding": 18.4,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2017-05-02"
+   },
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Trust receipts",
+    "limit": 15.0,
+    "outstanding": 14.8,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2019-06-11"
+   },
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Letters of guarantee",
+    "limit": 10.0,
+    "outstanding": 3.1,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2017-05-02"
+   },
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Term loan (warehouse)",
+    "limit": 6.5,
+    "outstanding": 6.5,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2020-01-15"
+   },
+   {
+    "lender": "Al Rimal Commercial Bank",
+    "product": "Short-term Murabaha",
+    "limit": 30.0,
+    "outstanding": 29.1,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2022-08-01"
+   },
+   {
+    "lender": "Al Rimal Commercial Bank",
+    "product": "Letters of credit (incl. acceptances)",
+    "limit": 15.0,
+    "outstanding": 8.7,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2022-08-01"
+   }
+  ],
+  "history": "No delinquency on the company's own facilities in the last 24 months.",
+  "enquiry_text": "2 enquiries in the last 6 months: Sandstone Harbour Bank (10/2026), Al Rimal Commercial Bank (07/2026)."
+ },
+ "consent": {
+  "by": "Fahad Saad Al-Naseem",
+  "role": "Chairman and General Manager",
+  "on": "2026-10-11"
+ },
+ "request": {
+  "date": "2026-10-12",
+  "ref": "DNMS/FIN/2026/77",
+  "by": "Fahad Saad Al-Naseem",
+  "role": "Chairman and General Manager",
+  "body": "Our business grew by 38% in 2025, helped by our new regional distribution partner Al Tayf Healthcare Trading Est., which covers the Eastern and Southern regions. To support this growth we request the renewal of our facilities of SAR 95,000,000 and their increase to SAR 140,000,000:",
+  "facilities": [
+   {
+    "facility": "Short-term Murabaha",
+    "amount": 65.0,
+    "purpose": "Working capital (from SAR 40m)"
+   },
+   {
+    "facility": "Letters of credit (sight / usance)",
+    "amount": 40.0,
+    "purpose": "Imports of medical supplies (from SAR 30m)"
+   },
+   {
+    "facility": "Trust receipts",
+    "amount": 25.0,
+    "purpose": "Financing of LC settlements (from SAR 15m)"
+   },
+   {
+    "facility": "Letters of guarantee",
+    "amount": 10.0,
+    "purpose": "Tender and performance guarantees (unchanged)"
+   }
+  ],
+  "more": [
+   "The existing mortgage over our warehouse and the personal guarantees of the partners remain in place. We confirm there are no changes in ownership and no facilities with other banks other than those disclosed."
+  ]
+ },
+ "resolution": {
+  "date": "2026-10-11",
+  "number": "PR-2026-03",
+  "amount": 190.0,
+  "persons": "Fahad Saad Al-Naseem (Chairman and General Manager)",
+  "text": "The partners resolved to obtain and renew credit facilities from banks up to a total of SAR 190,000,000 and authorised the Chairman and General Manager to sign all facility and security documents."
+ },
+ "signatories": {
+  "as_of": "2026-10-11",
+  "rows": [
+   {
+    "name": "Fahad Saad Al-Naseem",
+    "id_number": "1012345870",
+    "role": "Chairman and General Manager",
+    "limit": "Unlimited",
+    "mode": "Single"
+   },
+   {
+    "name": "Majed Saad Al-Naseem",
+    "id_number": "1019876543",
+    "role": "Director",
+    "limit": "Up to SAR 5m",
+    "mode": "Single; joint above"
+   },
+   {
+    "name": "Rania Yousef Khoury",
+    "id_number": "2410938871",
+    "role": "Finance Manager",
+    "limit": "Up to SAR 0.5m (payments)",
+    "mode": "Joint"
+   }
+  ]
+ },
+ "other_banks": [
+  {
+   "bank": "Al Rimal Commercial Bank",
+   "offer_date": "2026-02-10",
+   "offer_ref": "ARCB/RUH/26/118",
+   "offer_expiry": "2027-01-31",
+   "offer_signed": "Yousef Al-Harbi",
+   "facilities": [
+    {
+     "facility": "Short-term Murabaha",
+     "limit": 30.0,
+     "pricing": "3M SAIBOR + 1.90%",
+     "tenor": "up to 120 days"
+    },
+    {
+     "facility": "Letters of credit (sight / usance 90 days)",
+     "limit": 15.0,
+     "pricing": "0.30% per quarter",
+     "tenor": "per LC"
+    }
+   ],
+   "security": "Personal guarantee of Fahad Saad Al-Naseem; promissory note SAR 45,000,000.",
+   "statement_date": "2026-09-30",
+   "statement": [
+    {
+     "facility": "Short-term Murabaha",
+     "limit": 30.0,
+     "outstanding": 29.1,
+     "overdue": 0.0,
+     "maturity": "rolling"
+    },
+    {
+     "facility": "Letters of credit (sight / usance 90 days)",
+     "limit": 15.0,
+     "outstanding": 8.7,
+     "overdue": 0.0,
+     "maturity": "per LC"
+    }
+   ]
+  }
+ ],
+ "rec_ageing": {
+  "as_of": "2026-09-30",
+  "rows": [
+   {
+    "customer": "Al Tayf Healthcare Trading Est.",
+    "b0_90": 37.9,
+    "b91_180": 34.8,
+    "b181_365": 19.9,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Ministry hospitals cluster (central region)",
+    "b0_90": 17.6,
+    "b91_180": 8.1,
+    "b181_365": 2.2,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Riyadh Care Private Hospitals Co.",
+    "b0_90": 9.7,
+    "b91_180": 1.1,
+    "b181_365": 0.0,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Al Shifa Medical Group",
+    "b0_90": 6.2,
+    "b91_180": 0.4,
+    "b181_365": 0.0,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Other hospitals, clinics and pharmacies (212 accounts)",
+    "b0_90": 7.6,
+    "b91_180": 2.1,
+    "b181_365": 1.3,
+    "over_365": 0.0
+   }
+  ]
+ },
+ "pay_ageing": {
+  "as_of": "2026-09-30",
+  "rows": [
+   {
+    "supplier": "Nordmed Instruments GmbH",
+    "b0_90": 9.6,
+    "b91_180": 0.0,
+    "over_180": 0.0
+   },
+   {
+    "supplier": "Pacific Rim Medical Consumables Ltd",
+    "b0_90": 7.2,
+    "b91_180": 0.8,
+    "over_180": 0.0
+   },
+   {
+    "supplier": "Gulf Surgical Supplies Co.",
+    "b0_90": 4.1,
+    "b91_180": 0.6,
+    "over_180": 0.0
+   },
+   {
+    "supplier": "Other suppliers",
+    "b0_90": 7.1,
+    "b91_180": 0.4,
+    "over_180": 0.0
+   }
+  ]
+ },
+ "top": {
+  "year": 2025,
+  "date": "2026-10-05",
+  "customers": [
+   {
+    "name": "Al Tayf Healthcare Trading Est.",
+    "relationship": "Third-party distributor (Eastern and Southern regions)",
+    "sales": 78.0,
+    "share": 31.0,
+    "terms": "120 days"
+   },
+   {
+    "name": "Ministry hospitals cluster (central region)",
+    "relationship": "Government",
+    "sales": 46.3,
+    "share": 18.4,
+    "terms": "90-120 days"
+   },
+   {
+    "name": "Riyadh Care Private Hospitals Co.",
+    "relationship": "Third party",
+    "sales": 24.9,
+    "share": 9.9,
+    "terms": "60 days"
+   },
+   {
+    "name": "Al Shifa Medical Group",
+    "relationship": "Third party",
+    "sales": 17.4,
+    "share": 6.9,
+    "terms": "60 days"
+   },
+   {
+    "name": "Other hospitals, clinics and pharmacies",
+    "relationship": "Third parties",
+    "sales": 85.1,
+    "share": 33.8,
+    "terms": "30-90 days"
+   }
+  ],
+  "suppliers": [
+   {
+    "name": "Nordmed Instruments GmbH",
+    "country": "Germany",
+    "purchases": 52.3,
+    "share": 26.9,
+    "terms": "LC 90 days usance"
+   },
+   {
+    "name": "Pacific Rim Medical Consumables Ltd",
+    "country": "Malaysia",
+    "purchases": 38.1,
+    "share": 19.6,
+    "terms": "LC at sight"
+   },
+   {
+    "name": "Gulf Surgical Supplies Co.",
+    "country": "KSA",
+    "purchases": 21.7,
+    "share": 11.2,
+    "terms": "45 days"
+   }
+  ],
+  "notes": [
+   "Sales shares are of FY2025 revenue (SAR 251,700,000)."
+  ]
+ },
+ "collateral": [
+  {
+   "key": "warehouse",
+   "property": "Warehouse and offices, plot 18/4, Second Industrial City, Riyadh (6,200 sq m land)",
+   "owner": "Dar Al Naseem Medical Supplies Co.",
+   "deed": "310118004427",
+   "valuation": {
+    "valuer": "Masdar Real Estate Valuation Co.",
+    "date": "2025-08-14",
+    "mv": 31.5,
+    "fsv": 24.0,
+    "signed": "Eng. Sami Al-Rowais",
+    "text": [
+     "Industrial plot with a 4,800 sq m warehouse (2015) and two-storey offices. Comparable method and cost approach.",
+     "Market value SAR 31,500,000; forced-sale value SAR 24,000,000 (76%). Valid for 12 months from the valuation date."
+    ]
+   },
+   "deed_doc": {
+    "area": 6200,
+    "date": "2014-06-19",
+    "encumbrance": "First-degree mortgage in favour of Sandstone Harbour Bank (2020)",
+    "text": "Industrial land plot with buildings, held freehold by the company."
+   },
+   "insurance": {
+    "number": "PAR-26-551902",
+    "insurer": "Najm Al Khaleej Cooperative Insurance Co.",
+    "sum": 28.0,
+    "loss_payee": "Sandstone Harbour Bank",
+    "from": "2026-03-01",
+    "to": "2027-02-28"
+   }
+  }
+ ],
+ "site_visit": {
+  "date": "2026-10-09",
+  "by": "Nawaf Al-Otaibi",
+  "met": "Fahad Saad Al-Naseem; Rania Yousef Khoury (Finance Manager)",
+  "premises": "Head office and warehouse, Second Industrial City, Riyadh (owned)",
+  "staff": 64,
+  "summary": "Warehouse well stocked and organised; cold-chain room in use; fleet of 22 delivery vans.",
+  "points": [
+   "Warehouse about 85% full; inventory system with batch and expiry tracking; management states slow-moving stock below 3%.",
+   "Growth since 2025 driven by the regional distributor Al Tayf Healthcare Trading Est. (Dammam and Abha warehouses, as per management).",
+   "Management plans to add a second warehouse in Dammam in 2027.",
+   "No adverse observation."
+  ]
+ },
+ "aml": {
+  "date": "2026-10-11",
+  "by": "Fahad Saad Al-Naseem",
+  "pep": "No",
+  "countries": "KSA; imports from Germany, Malaysia, USA, China",
+  "cash": "No",
+  "rating": "Low",
+  "ubos": [
+   {
+    "name": "Fahad Saad Al-Naseem",
+    "pct": 68.0,
+    "pep": "No"
+   },
+   {
+    "name": "Majed Saad Al-Naseem",
+    "pct": 32.0,
+    "pep": "No"
+   }
+  ],
+  "notes": [
+   "Related entities declared: Naseem Holding Co. (parent), Naseem Lab Systems Co. (sister). No other related parties declared."
+  ]
+ },
+ "missing": [],
+ "facts": {
+  "rev12": 276.8,
+  "collections_ratio": 0.796,
+  "collections_band": [
+   0.7,
+   0.84
+  ],
+  "tayf_rev12": 92.441,
+  "tayf_collected12": 44.649
+ },
+ "ask": {
+  "one_line": "Renew SAR 95m working-capital lines and increase to SAR 140m (STL 65, LC 40, TR 25, LG 10) + warehouse loan 6.5 running off.",
+  "requested_total_sar": 146500000,
+  "new_money_sar": 45000000,
+  "credit_recommends_total_sar": 116500000
+ },
+ "co": {
+  "key": "c1",
+  "folder": "c1_dar_al_naseem",
+  "proposal_id": "R16-C1",
+  "cif": "CB09001",
+  "group_id": "CG9001",
+  "name": "Dar Al Naseem Medical Supplies Co.",
+  "short": "Dar Al Naseem",
+  "cr_number": "1010384527",
+  "vat_number": "300384527100003",
+  "city": "Riyadh",
+  "sector": "Wholesale Trade",
+  "sub_sector": "Medical Supplies Distribution",
+  "case": "existing",
+  "case_label": "Existing customer, renewal + increase",
+  "part": "A",
+  "group_name": "Naseem Holding Group",
+  "legal_form": "Limited Liability Company",
+  "incorporated": "2009-02-15",
+  "capital_mn": 30.0,
+  "shares_total": 30000,
+  "share_value": 1000,
+  "address": "Prince Mohammed bin Saad Road, Al Sulay, Riyadh 14322",
+  "phone": "+966 11 255 7130",
+  "email": "accounts@daralnaseem.example",
+  "activity": "Wholesale trade in medical consumables, hospital equipment and laboratory supplies; import, storage and distribution.",
+  "activity_short": "Wholesale of medical supplies and hospital equipment",
+  "cr_issue": "2009-02-15",
+  "cr_expiry": "2027-06-03",
+  "cr_print": "2026-10-02",
+  "aoa_amended": "2021-11-08",
+  "vat_effective": "2018-01-01",
+  "vat_frequency": "Monthly",
+  "vat_cert_issue": "2018-01-09",
+  "zakat": {
+   "number": "ZC-2026-0398247",
+   "fy_end": "2025-12-31",
+   "issue": "2026-04-22",
+   "expiry": "2027-04-30"
+  },
+  "nitaqat": {
+   "establishment": "1-4471902",
+   "band": "Medium Green",
+   "rate": 27.1,
+   "threshold": 21.0,
+   "total": 214,
+   "saudi": 58,
+   "issue": "2026-10-01",
+   "expiry": "2026-12-31"
+  },
+  "shareholders": [
+   {
+    "name": "Naseem Holding Co.",
+    "id_number": "CR 1010298811",
+    "nationality": "Saudi company",
+    "shares": 24000,
+    "pct": 80.0
+   },
+   {
+    "name": "Fahad Saad Al-Naseem",
+    "id_number": "1012345870",
+    "nationality": "Saudi",
+    "shares": 6000,
+    "pct": 20.0
+   }
+  ],
+  "managers": [
+   {
+    "name": "Fahad Saad Al-Naseem",
+    "role": "Chairman and General Manager",
+    "powers": "Sole signatory"
+   },
+   {
+    "name": "Majed Saad Al-Naseem",
+    "role": "Director",
+    "powers": "Jointly with the General Manager above SAR 5m"
+   }
+  ],
+  "aoa_amendment_text": "Amended on 08/11/2021: transfer of 80% to Naseem Holding Co. (owned 60% by Fahad Saad Al-Naseem and 40% by Majed Saad Al-Naseem)."
+ }
+}

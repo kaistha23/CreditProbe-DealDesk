@@ -1,0 +1,465 @@
+{
+ "name": "stress_scenarios",
+ "owner": "Risk Models",
+ "version": "v1",
+ "effective_from": "2026-10-17",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Stress Lab scenarios for a single deal (R11): macro, sector, obligor, collateral, rating and combined shocks, the transmission from shocks to the obligor's financials and rating, and the pass, amber and breach rules. The R5 stress table (stress.json) is separate and unchanged.",
+ "groups": [
+  {
+   "id": "macro",
+   "label": "Macro"
+  },
+  {
+   "id": "sector",
+   "label": "Sector"
+  },
+  {
+   "id": "obligor",
+   "label": "Obligor"
+  },
+  {
+   "id": "collateral",
+   "label": "Collateral"
+  },
+  {
+   "id": "rating",
+   "label": "Rating"
+  },
+  {
+   "id": "combined",
+   "label": "Combined"
+  },
+  {
+   "id": "custom",
+   "label": "Custom"
+  }
+ ],
+ "shock_keys": {
+  "revenue_pct": "Change in revenue (decimal; -0.2 = revenue falls 20%). A number, or {default, by_sector}.",
+  "ebitda_margin_bps": "Change in EBITDA margin in basis points of revenue (negative = squeeze).",
+  "receivable_days": "Extra receivable or work-in-progress days, funded with new short-term debt.",
+  "delay_months": "Project delay: revenue deferred by the sector's project share x months / 12, and the delayed work carried as receivables.",
+  "customer_loss": "The largest customer is lost: revenue falls by the sector's largest-customer share.",
+  "rate_bps": "Change in the benchmark rate (SAIBOR / EIBOR) in bps: floating deal pricing and the obligor's existing debt.",
+  "collateral_pct": "Change in collateral value (decimal). A number for every pledged item, or {type: change}.",
+  "notches": "Rating downgrade in notches, on top of any downgrade implied by the stressed financials.",
+  "guarantee_unenforceable": "The guarantee (and credit insurance) gives no protection: PD, LGD and risk weight fall back to the obligor."
+ },
+ "transmission": {
+  "fixed_cost_share": {
+   "default": 0.08,
+   "by_sector": {
+    "Construction": 0.06,
+    "Manufacturing": 0.12,
+    "Chemicals": 0.14,
+    "Metals and Mining": 0.14,
+    "Hospitality": 0.18,
+    "Real Estate": 0.2,
+    "Healthcare": 0.12,
+    "Power and Utilities": 0.15,
+    "Telecommunications": 0.18,
+    "Transport and Logistics": 0.1,
+    "Wholesale Trade": 0.04,
+    "Retail Trade": 0.06
+   },
+   "basis": "Operating leverage: a revenue fall costs EBITDA at the EBITDA margin plus the share of revenue that is fixed cost (EBITDA change = revenue change x (EBITDA margin + fixed-cost share)). Shares are the Risk Models sector cost-structure assumptions."
+  },
+  "largest_customer_share": {
+   "default": 0.15,
+   "by_sector": {
+    "Construction": 0.3,
+    "Real Estate": 0.2,
+    "Power and Utilities": 0.35,
+    "Chemicals": 0.2,
+    "Manufacturing": 0.18,
+    "Wholesale Trade": 0.12,
+    "Retail Trade": 0.05,
+    "Healthcare": 0.2,
+    "Transport and Logistics": 0.18
+   },
+   "basis": "Sector concentration assumption for the largest customer's share of revenue where the proposal gives no customer split."
+  },
+  "project_revenue_share": {
+   "default": 0.15,
+   "by_sector": {
+    "Construction": 0.5,
+    "Real Estate": 0.4,
+    "Power and Utilities": 0.3,
+    "Metals and Mining": 0.25,
+    "Manufacturing": 0.15,
+    "Healthcare": 0.15
+   },
+   "basis": "Share of annual revenue tied to project milestones that a delay defers."
+  },
+  "short_term_funding_spread_bps": {
+   "value": 250,
+   "basis": "Working capital absorbed by longer receivable days is funded with short-term debt at the benchmark (FTP reference tenor) plus this spread, interest only."
+  },
+  "rating_overlay": {
+   "dscr_bands": [
+    2.0,
+    1.5,
+    1.25,
+    1.1,
+    1.0,
+    0.8
+   ],
+   "debt_ebitda_bands": [
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    8.0
+   ],
+   "notches_per_band": 1,
+   "basis": "Financial-stress rating overlay: one notch for each full band-width the stressed obligor's DSCR or Debt/EBITDA deteriorates from where it stands today (bands: DSCR 2.0, 1.5, 1.25, 1.1, 1.0, 0.8; Debt/EBITDA 3, 4, 5, 6, 8; linear inside a band; the larger of the two moves; never an upgrade; at most 8 notches; EBITDA at or below zero takes the maximum). The PD model has no financial-ratio features, so this overlay carries a financial shock into PD, rating and stage; the book's median DSCR falls and leverage rises from AA to C (corp_borrower_quarter 2026Q2).",
+   "max_notches": 8
+  },
+  "stage_rules": {
+   "sicr_notches_from": "pd_migration.sicr_notches",
+   "stage2_dscr_below": 1.0,
+   "stage3_grades": [
+    "CC",
+    "C"
+   ],
+   "basis": "IFRS 9 SICR: Stage 2 when the stressed rating is at least the policy's SICR notches (pd_migration) below the rating at origination (today, for a new deal), or the stressed DSCR is below 1.0 (debt service not covered, a watch-list trigger); Stage 3 at CC or worse (unlikely to pay)."
+  },
+  "bands": {
+   "amber_headroom": 0.1,
+   "raroc_amber_pts": 0.02,
+   "basis": "Pass, amber, breach: amber when a ratio is within 10% of its covenant or limit, or RAROC is within 2 points of the hurdle; breach when the limit, the covenant, DSCR 1.0, the hurdle or Stage 1 is lost."
+  },
+  "breakeven_ranges": {
+   "revenue_pct": [
+    0.0,
+    -0.95
+   ],
+   "ebitda_margin_bps": [
+    0,
+    -3000
+   ],
+   "collateral_pct": [
+    0.0,
+    -0.9
+   ],
+   "rate_bps": [
+    0,
+    1000
+   ],
+   "basis": "Reverse stress searches each driver over this range; a failure not reached inside it is reported as 'beyond range'."
+  }
+ },
+ "scenarios": [
+  {
+   "id": "oil_30",
+   "group": "macro",
+   "label": "Oil −30%",
+   "severity": "severe",
+   "shocks": {
+    "revenue_pct": {
+     "default": -0.06,
+     "by_sector": {
+      "Chemicals": -0.15,
+      "Metals and Mining": -0.12,
+      "Construction": -0.12,
+      "Real Estate": -0.1,
+      "Hospitality": -0.1,
+      "Wholesale Trade": -0.08,
+      "Manufacturing": -0.08,
+      "Transport and Logistics": -0.08,
+      "Retail Trade": -0.06,
+      "Information Technology": -0.05,
+      "Agriculture and Agri-processing": -0.04,
+      "Healthcare": -0.03,
+      "Power and Utilities": -0.03,
+      "Telecommunications": -0.03
+     }
+    }
+   },
+   "basis": "Brent 30% below the planning price for four quarters: government capex and petrochemical prices fall; revenue sensitivity by sector from the Risk Models GCC oil-transmission assumptions."
+  },
+  {
+   "id": "rates_200",
+   "group": "macro",
+   "label": "SAIBOR / EIBOR +200 bps",
+   "severity": "moderate",
+   "shocks": {
+    "rate_bps": 200
+   },
+   "basis": "A parallel 200 bps rise in the benchmark: floating deal pricing and the obligor's existing debt reprice; fixed-rate deals are match-funded."
+  },
+  {
+   "id": "gdp_3",
+   "group": "macro",
+   "label": "GDP −3%",
+   "severity": "severe",
+   "shocks": {
+    "revenue_pct": {
+     "default": -0.045,
+     "by_sector": {
+      "Construction": -0.09,
+      "Real Estate": -0.075,
+      "Hospitality": -0.075,
+      "Metals and Mining": -0.06,
+      "Retail Trade": -0.06,
+      "Wholesale Trade": -0.054,
+      "Manufacturing": -0.045,
+      "Transport and Logistics": -0.045,
+      "Chemicals": -0.045,
+      "Information Technology": -0.036,
+      "Telecommunications": -0.024,
+      "Agriculture and Agri-processing": -0.024,
+      "Healthcare": -0.015,
+      "Power and Utilities": -0.015
+     }
+    }
+   },
+   "basis": "Real non-oil GDP 3% below plan: revenue falls by the sector's GDP beta x 3% (beta 0.5 for utilities and healthcare to 3.0 for construction)."
+  },
+  {
+   "id": "re_20",
+   "group": "macro",
+   "label": "Real estate prices −20%",
+   "severity": "moderate",
+   "shocks": {
+    "collateral_pct": {
+     "real_estate": -0.2
+    },
+    "revenue_pct": {
+     "default": 0.0,
+     "by_sector": {
+      "Real Estate": -0.1,
+      "Construction": -0.05
+     }
+    }
+   },
+   "basis": "Real estate values 20% down: pledged real estate is revalued; real estate rents and new construction starts fall."
+  },
+  {
+   "id": "construction_downturn",
+   "group": "sector",
+   "label": "Construction downturn",
+   "severity": "severe",
+   "shocks": {
+    "revenue_pct": {
+     "default": 0.0,
+     "by_sector": {
+      "Construction": -0.25,
+      "Real Estate": -0.1,
+      "Metals and Mining": -0.1,
+      "Manufacturing": -0.06,
+      "Wholesale Trade": -0.04
+     }
+    },
+    "receivable_days": {
+     "default": 0,
+     "by_sector": {
+      "Construction": 60,
+      "Real Estate": 30,
+      "Metals and Mining": 20,
+      "Manufacturing": 15
+     }
+    }
+   },
+   "basis": "Construction revenue −25% and receivable days +60 (delayed government and developer payments); suppliers to construction take the spill-over."
+  },
+  {
+   "id": "trading_slowdown",
+   "group": "sector",
+   "label": "Trading slowdown",
+   "severity": "moderate",
+   "shocks": {
+    "revenue_pct": {
+     "default": 0.0,
+     "by_sector": {
+      "Wholesale Trade": -0.15,
+      "Retail Trade": -0.12,
+      "Transport and Logistics": -0.08,
+      "Manufacturing": -0.05,
+      "Chemicals": -0.05
+     }
+    },
+    "ebitda_margin_bps": {
+     "default": 0,
+     "by_sector": {
+      "Wholesale Trade": -100,
+      "Retail Trade": -100
+     }
+    },
+    "receivable_days": {
+     "default": 0,
+     "by_sector": {
+      "Wholesale Trade": 30,
+      "Retail Trade": 15
+     }
+    }
+   },
+   "basis": "Import and re-export volumes fall: trading revenue −15%, margin −100 bps, debtor days +30; logistics and manufacturers that sell through traders take the spill-over."
+  },
+  {
+   "id": "rev_10",
+   "group": "obligor",
+   "label": "Revenue −10%",
+   "severity": "mild",
+   "shocks": {
+    "revenue_pct": -0.1
+   },
+   "basis": "Obligor revenue 10% below the latest audited year, with operating leverage."
+  },
+  {
+   "id": "rev_20",
+   "group": "obligor",
+   "label": "Revenue −20%",
+   "severity": "moderate",
+   "shocks": {
+    "revenue_pct": -0.2
+   },
+   "basis": "Obligor revenue 20% below the latest audited year, with operating leverage."
+  },
+  {
+   "id": "rev_30",
+   "group": "obligor",
+   "label": "Revenue −30%",
+   "severity": "severe",
+   "shocks": {
+    "revenue_pct": -0.3
+   },
+   "basis": "Obligor revenue 30% below the latest audited year, with operating leverage."
+  },
+  {
+   "id": "customer_loss",
+   "group": "obligor",
+   "label": "Largest customer lost",
+   "severity": "moderate",
+   "shocks": {
+    "customer_loss": true
+   },
+   "basis": "The largest customer stops buying: revenue falls by the sector's largest-customer share."
+  },
+  {
+   "id": "delay_6",
+   "group": "obligor",
+   "label": "Project delay 6 months",
+   "severity": "moderate",
+   "shocks": {
+    "delay_months": 6
+   },
+   "basis": "Milestone revenue slips 6 months; the work done is carried as receivables until certified."
+  },
+  {
+   "id": "delay_12",
+   "group": "obligor",
+   "label": "Project delay 12 months",
+   "severity": "severe",
+   "shocks": {
+    "delay_months": 12
+   },
+   "basis": "Milestone revenue slips 12 months; the work done is carried as receivables until certified."
+  },
+  {
+   "id": "margin_300",
+   "group": "obligor",
+   "label": "EBITDA margin −300 bps",
+   "severity": "moderate",
+   "shocks": {
+    "ebitda_margin_bps": -300
+   },
+   "basis": "Input costs rise faster than prices: EBITDA margin 3 points lower on the same revenue."
+  },
+  {
+   "id": "coll_20",
+   "group": "collateral",
+   "label": "Collateral −20%",
+   "severity": "mild",
+   "shocks": {
+    "collateral_pct": -0.2
+   },
+   "basis": "Every pledged item revalued 20% lower (forced-sale discount over the haircut)."
+  },
+  {
+   "id": "coll_30",
+   "group": "collateral",
+   "label": "Collateral −30%",
+   "severity": "moderate",
+   "shocks": {
+    "collateral_pct": -0.3
+   },
+   "basis": "Every pledged item revalued 30% lower."
+  },
+  {
+   "id": "coll_40",
+   "group": "collateral",
+   "label": "Collateral −40%",
+   "severity": "severe",
+   "shocks": {
+    "collateral_pct": -0.4
+   },
+   "basis": "Every pledged item revalued 40% lower (distressed market)."
+  },
+  {
+   "id": "guarantee_void",
+   "group": "collateral",
+   "label": "Guarantee unenforceable",
+   "severity": "severe",
+   "shocks": {
+    "guarantee_unenforceable": true
+   },
+   "basis": "The guarantee or credit insurance cannot be called (open-ended wording, a defective legal opinion): the deal stands on the obligor alone."
+  },
+  {
+   "id": "notch_1",
+   "group": "rating",
+   "label": "Rating −1 notch",
+   "severity": "mild",
+   "shocks": {
+    "notches": 1
+   },
+   "basis": "One-notch downgrade: PD from the model at the lower grade."
+  },
+  {
+   "id": "notch_2",
+   "group": "rating",
+   "label": "Rating −2 notches",
+   "severity": "moderate",
+   "shocks": {
+    "notches": 2
+   },
+   "basis": "Two-notch downgrade: PD from the model at the lower grade."
+  },
+  {
+   "id": "notch_3",
+   "group": "rating",
+   "label": "Rating −3 notches",
+   "severity": "severe",
+   "shocks": {
+    "notches": 3
+   },
+   "basis": "Three-notch downgrade, the policy's SICR threshold: PD from the model at the lower grade."
+  },
+  {
+   "id": "severe",
+   "group": "combined",
+   "label": "Severe combined",
+   "severity": "severe",
+   "compose": [
+    "oil_30",
+    "rates_200",
+    "@sector",
+    "coll_30"
+   ],
+   "sector_scenario": {
+    "default": "gdp_3",
+    "by_sector": {
+     "Construction": "construction_downturn",
+     "Real Estate": "construction_downturn",
+     "Metals and Mining": "construction_downturn",
+     "Wholesale Trade": "trading_slowdown",
+     "Retail Trade": "trading_slowdown",
+     "Transport and Logistics": "trading_slowdown"
+    }
+   },
+   "basis": "Macro, sector and collateral together: oil −30%, rates +200 bps, the obligor's own sector downturn (GDP −3% where none is defined) and collateral −30%. Revenue changes compound; bps, days and notches add."
+  }
+ ]
+}

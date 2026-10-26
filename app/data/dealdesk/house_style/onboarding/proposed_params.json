@@ -1,0 +1,480 @@
+{
+ "status": "proposed",
+ "session_id": "example (fictional policy)",
+ "description": "PROPOSED parameter values in the Deal Desk params schema (risk_appetite, doa, market_bounds, desk), each with the clause it was learned from and the value in force. Not live.",
+ "changes": [
+  {
+   "item_id": "ONB-F81BE118",
+   "clause": "4.1",
+   "label": "Minimum rating for new money",
+   "table": "risk_appetite",
+   "row": "min_rating",
+   "field": "new_to_bank",
+   "proposed": "B-",
+   "unit_in_force": "rating",
+   "in_force": "B-",
+   "version_in_force": "v1",
+   "change": "same",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.1",
+    "quote": "The Bank shall not extend new money to an obligor rated below B- on the Bank's internal master scale. Existing obligors rated CCC may be renewed only with the approval of the Executive Credit Committee."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-ED8556B9",
+   "clause": "4.2",
+   "label": "DSCR after the deal",
+   "table": "risk_appetite",
+   "row": "dscr",
+   "field": "limit",
+   "proposed": 1.25,
+   "conversion": "",
+   "factor": 1.0,
+   "unit_in_force": "x",
+   "in_force": 1.2,
+   "version_in_force": "v1",
+   "change": "tighter",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.2",
+    "quote": "The debt service coverage ratio after the proposed facilities shall be not less than 1.25x."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-E1C72936",
+   "clause": "4.3",
+   "label": "Debt/EBITDA after the deal",
+   "table": "risk_appetite",
+   "row": "debt_ebitda",
+   "field": "limit",
+   "proposed": 3.5,
+   "conversion": "",
+   "factor": 1.0,
+   "unit_in_force": "x",
+   "in_force": 4.0,
+   "version_in_force": "v1",
+   "change": "tighter",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.3",
+    "quote": "Total debt to EBITDA after the proposed facilities shall not exceed 3.5x."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-57986149",
+   "clause": "4.5",
+   "label": "Balloon share",
+   "table": "risk_appetite",
+   "row": "balloon",
+   "field": "limit",
+   "proposed": 0.4,
+   "conversion": "",
+   "factor": 0.01,
+   "unit_in_force": "share",
+   "in_force": 0.5,
+   "version_in_force": "v1",
+   "change": "tighter",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.5",
+    "quote": "A balloon or bullet repayment shall not exceed 40% of the original facility amount."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-3621D18D",
+   "clause": "4.7",
+   "label": "Backlog cover (contractors)",
+   "table": "desk",
+   "row": "max_backlog_cover",
+   "field": "value",
+   "proposed": 3.0,
+   "conversion": "",
+   "factor": 1.0,
+   "in_force": 3.0,
+   "version_in_force": "v1",
+   "change": "same",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "4.7",
+    "quote": "For contractors, the order backlog shall not exceed 3.0 times annual revenue."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-A0B12CF8",
+   "clause": "5.1",
+   "label": "Single obligor limit",
+   "table": "risk_appetite",
+   "row": "single_name",
+   "field": "limit",
+   "proposed": 306.3,
+   "conversion": "AED 300m × 1.021 (AED/SAR in the Deal Desk parameters) = SAR 306.3m",
+   "factor": 1.021,
+   "unit_in_force": "SAR m",
+   "in_force": 250.0,
+   "version_in_force": "v1",
+   "change": "looser",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.1",
+    "quote": "Aggregate exposure to a single obligor shall not exceed AED 300 million."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-430EE752",
+   "clause": "5.2",
+   "label": "Connected group limit",
+   "table": "risk_appetite",
+   "row": "group_connected",
+   "field": "limit",
+   "proposed": 612.6,
+   "conversion": "AED 600m × 1.021 (AED/SAR in the Deal Desk parameters) = SAR 612.6m",
+   "factor": 1.021,
+   "unit_in_force": "SAR m",
+   "in_force": 500.0,
+   "version_in_force": "v1",
+   "change": "looser",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.2",
+    "quote": "Aggregate exposure to a group of connected obligors shall not exceed AED 600 million."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-EDD7034F",
+   "clause": "5.3",
+   "label": "Connected counterparties (share of Tier 1)",
+   "table": "risk_appetite",
+   "row": "group_large_exposure",
+   "field": "limit_pct_tier1",
+   "proposed": 0.25,
+   "conversion": "",
+   "factor": 0.01,
+   "unit_in_force": "SAR m",
+   "in_force": 0.25,
+   "version_in_force": "v1",
+   "change": "same",
+   "checkability": "manual",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.3",
+    "quote": "Exposure to a group of connected counterparties shall not exceed 25% of the Bank's Tier 1 capital."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-B029E0BB",
+   "clause": "5.4",
+   "label": "Single sector share of the book",
+   "table": "risk_appetite",
+   "row": "sector_policy",
+   "field": "limit",
+   "proposed": 0.15,
+   "conversion": "",
+   "factor": 0.01,
+   "unit_in_force": "share",
+   "in_force": 0.18,
+   "version_in_force": "v1",
+   "change": "tighter",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.4",
+    "quote": "No single economic sector shall exceed 15% of the corporate loan book."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-8F9F4EC6",
+   "clause": "5.5",
+   "label": "Real estate and construction share of the book",
+   "table": "risk_appetite",
+   "row": "re_construction_share",
+   "field": "limit",
+   "proposed": 0.2,
+   "conversion": "",
+   "factor": 0.01,
+   "unit_in_force": "share",
+   "in_force": 0.2285,
+   "version_in_force": "v1",
+   "change": "tighter",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "5.5",
+    "quote": "Real estate and construction together shall not exceed 20% of the corporate loan book."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-A604AE95",
+   "clause": "6.2",
+   "label": "Working capital tenor",
+   "table": "desk",
+   "row": "tenor_cap_years",
+   "field": "Working capital",
+   "proposed": 1.0,
+   "conversion": "",
+   "factor": 0.08333333,
+   "in_force": 1,
+   "version_in_force": "v1",
+   "change": "same",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "6.2",
+    "quote": "Working capital facilities shall not exceed a tenor of 12 months and are renewed on review."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-E9175727",
+   "clause": "7.1",
+   "label": "Loan to value (income-producing real estate)",
+   "table": "risk_appetite",
+   "row": "ltv",
+   "field": "limit",
+   "proposed": 0.65,
+   "conversion": "",
+   "factor": 0.01,
+   "unit_in_force": "share",
+   "in_force": 0.7,
+   "version_in_force": "v1",
+   "change": "tighter",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "7.1",
+    "quote": "The loan-to-value ratio on income-producing real estate shall not exceed 65%."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-C9C36194",
+   "clause": "9.1",
+   "label": "Lifetime RAROC floor",
+   "table": "risk_appetite",
+   "row": "raroc_floor",
+   "field": "limit",
+   "proposed": 0.12,
+   "conversion": "",
+   "factor": 0.01,
+   "unit_in_force": "share",
+   "in_force": 0.12,
+   "version_in_force": "v1",
+   "change": "same",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "9.1",
+    "quote": "The lifetime RAROC of a new facility shall not be below 12%."
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-A009459E",
+   "clause": "Table 6.1",
+   "label": "Maximum tenor by rating bucket",
+   "table": "risk_appetite",
+   "row": "max_tenor",
+   "field": "limits",
+   "proposed": {
+    "IG": 10.0,
+    "BB": 7.0,
+    "B": 4.0,
+    "CCC-C": 2.0
+   },
+   "unit_in_force": "years",
+   "in_force": {
+    "IG": 10,
+    "BB": 7,
+    "B": 5,
+    "CCC-C": 2
+   },
+   "version_in_force": "v1",
+   "change": "changed",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "Table 6.1",
+    "quote": "Table 6.1 Maximum tenor by rating bucket: IG 10; BB 7; B 4; CCC-C 2"
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-A47699EB",
+   "clause": "Table 9.2",
+   "label": "Margin bounds by rating bucket",
+   "table": "market_bounds",
+   "row": "by_bucket",
+   "field": "margin_bps",
+   "proposed": {
+    "IG": [
+     100.0,
+     250.0
+    ],
+    "BB": [
+     175.0,
+     375.0
+    ],
+    "B": [
+     300.0,
+     500.0
+    ],
+    "CCC-C": [
+     450.0,
+     650.0
+    ]
+   },
+   "in_force": {
+    "IG": [
+     90,
+     260
+    ],
+    "BB": [
+     175,
+     375
+    ],
+    "B": [
+     300,
+     500
+    ],
+    "CCC-C": [
+     450,
+     650
+    ]
+   },
+   "version_in_force": "v1",
+   "change": "changed",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "Table 9.2",
+    "quote": "Table 9.2 Margin bounds by rating bucket (basis points over the base rate): IG 100 250; BB 175 375; B 300 500; CCC-C 450 650"
+   },
+   "status": "proposed"
+  },
+  {
+   "item_id": "ONB-F9EC319B",
+   "clause": "Appendix A",
+   "label": "Delegation of Authority",
+   "table": "doa",
+   "row": "rows",
+   "field": "levels",
+   "proposed": [
+    {
+     "level": "Corporate Credit Manager",
+     "max_exposure_policy": 25.0,
+     "max_exposure": 25.52,
+     "min_rating": "BBB-"
+    },
+    {
+     "level": "Head of Credit",
+     "max_exposure_policy": 100.0,
+     "max_exposure": 102.1,
+     "min_rating": "BB-"
+    },
+    {
+     "level": "Chief Risk Officer",
+     "max_exposure_policy": 200.0,
+     "max_exposure": 204.2,
+     "min_rating": "B-"
+    },
+    {
+     "level": "Executive Credit Committee",
+     "max_exposure_policy": 300.0,
+     "max_exposure": 306.3,
+     "min_rating": "CCC"
+    },
+    {
+     "level": "Board Credit Committee",
+     "max_exposure_policy": null,
+     "max_exposure": null,
+     "min_rating": "C"
+    }
+   ],
+   "in_force": [
+    {
+     "level": "Corporate Credit Manager",
+     "max_exposure": 25.0,
+     "min_rating": "BBB-"
+    },
+    {
+     "level": "Head of Credit",
+     "max_exposure": 100.0,
+     "min_rating": "BB-"
+    },
+    {
+     "level": "Chief Risk Officer",
+     "max_exposure": 175.0,
+     "min_rating": "B-"
+    },
+    {
+     "level": "Executive Credit Committee",
+     "max_exposure": 250.0,
+     "min_rating": "CCC"
+    },
+    {
+     "level": "Board Credit Committee",
+     "max_exposure": 1000000000.0,
+     "min_rating": "C"
+    }
+   ],
+   "version_in_force": "v1",
+   "change": "changed",
+   "checkability": "auto",
+   "learned_from": {
+    "document": "Fictional_Bank_Credit_Policy.docx",
+    "sha256": "80972e8c3d68eef06020103678cdcd12e27bbfa60ee93a3d5dbba04dd7afff07",
+    "kind": "policy",
+    "clause": "Appendix A",
+    "quote": "Appendix A. Delegation of Authority matrix: Corporate Credit Manager 25 BBB-; Head of Credit 100 BB-; Chief Risk Officer 200 B-; Executive Credit Committee 300 CCC; Board Credit Committee above 300 C"
+   },
+   "status": "proposed"
+  }
+ ]
+}

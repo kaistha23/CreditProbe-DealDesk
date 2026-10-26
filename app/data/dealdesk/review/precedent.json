@@ -1,0 +1,20 @@
+{
+ "description": "R11 R5: precedent matching. Similar borrowers in the corporate book by sector, rating band, size band and the features the book holds; outcomes over 4 and 8 quarters. Relaxation steps apply in order until at least min_n borrowers match.",
+ "version": "r11-1",
+ "min_n": 15,
+ "horizons": [4, 8],
+ "sector_map": {"Trading": "Wholesale Trade"},
+ "relax": [
+  {"label": "sector, rating within 2 notches, size 0.25x-4x, features", "notches": 2, "size_band": 4, "features": true},
+  {"label": "sector, rating within 2 notches, features", "notches": 2, "size_band": null, "features": true},
+  {"label": "sector, rating within 2 notches", "notches": 2, "size_band": null, "features": false},
+  {"label": "sector, rating within 4 notches", "notches": 4, "size_band": null, "features": false}
+ ],
+ "features": [
+  {"label": "Leverage above 4x", "subject_key": "leverage", "op": ">", "threshold": 4.0, "book_column": "leverage_x"},
+  {"label": "DSCR below 1.25x", "subject_key": "dscr", "op": "<", "threshold": 1.25, "book_column": "dscr_x"},
+  {"label": "On the watchlist", "subject_key": "watchlist", "op": "flag", "threshold": null, "book_column": "watchlist_flag"},
+  {"label": "Backlog above 3x revenue", "subject_key": "backlog_cover_over_3x", "op": "flag", "threshold": null, "book_column": null, "reason": "The corporate book holds no backlog data."},
+  {"label": "Related-party share above 25%", "subject_key": "related_party_over_25pct", "op": "flag", "threshold": null, "book_column": null, "reason": "The corporate book holds no related-party balances."}
+ ]
+}

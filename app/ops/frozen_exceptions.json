@@ -1,0 +1,112 @@
+{
+ "exceptions": [
+  {
+   "id": "FX-R12-02c",
+   "path": "frontend/src/components/cockpit-v4/visuals.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-R12-02c.patch",
+   "base_sha256": "d7a998606818aa0c5a297923bc4ff1db367527ffd8d035c70cefa917ff20f732",
+   "patched_sha256": "982f344d21926738e3687512841aa330e6f71a17807ca206a19f7eb11e27db53",
+   "what": "Cockpit answer charts drawn with Plotly in the shared CreditProbe theme (PLAN_R12 N2, I10 b) via components/answer/cockpit-chart.tsx: positions from the canonical values, every visible string (hover, labels, ticks) from the server's display strings and axis ticks, same order; the SVG body stays as the fallback when no figure can be built. Combined patch with FX-1 (global rating order), superseding FX-1's registration of this file (its .patch stays as history).",
+   "approved_by": "PLAN_R12 N2 (Anne, 19 Oct 2026: BUILD, Session N2 'Cockpit through FX-R12-02'): registered exception FX-R12-02, presentation only"
+  },
+  {
+   "id": "FX-2",
+   "path": "backend/cockpit_v4/finalization.py",
+   "patch": "docs/v5/frozen_exceptions/FX-2.patch",
+   "base_sha256": "4ccabfa4f2642cba76582722736095ad0b2353aec03632a8e7f82113e6492e17",
+   "patched_sha256": "4e7c7747aefab1e20d3e195ad47e208221fc80bca5e629d95f87e087a9cd2b3b",
+   "what": "_check_ordering: a ranking chart over the whole result of one SQL step with no row limit is drawn in descending order of its charted measure instead of being refused (which cost a model round). Clipped, LIMITed or non-SQL results are refused as before.",
+   "approved_by": "PLAN_R2 item 2 (Anne, 11 Oct 2026): registered exception FX-2"
+  },
+  {
+   "id": "FX-14a",
+   "path": "frontend/src/components/cockpit-v4/attention-drawer.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-14a.patch",
+   "base_sha256": "27a96dd9465dd594c6a12a375a15061be45d489d2d4b68662cff23ac96932322",
+   "patched_sha256": "15b5e09e2b1a3f68c03896c143c007b04cc498a3f2bb24a512a4d03e8754c660",
+   "what": "Attention drawer: FX-4a (charts, Share, Add to investigation / report, wider card, display field, header and footer) plus FX-14a (G1): the 'Association, not established cause' line and the drill-down note move behind (i) popovers beside their headings; the note under Investigate further becomes the button's tooltip. One combined patch against the frozen base; supersedes FX-4a.",
+   "approved_by": "PLAN_R4 B1 and G1 (Anne, 11 Oct 2026): registered exception FX-14; attention selection, numbers, order and agent flow unchanged"
+  },
+  {
+   "id": "FX-14e",
+   "path": "frontend/src/components/cockpit-v4/data-books.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-14e.patch",
+   "base_sha256": "240c824a7c385288a430432861851ad540ccf7be4bec9e2176d39d56abf160c4",
+   "patched_sha256": "942a1c1c14dca19486bdf49ebe6134f5c1075b44f9036b78f41e648fac0249f0",
+   "what": "Cockpit data page: FX-6 (no provenance sentence) plus FX-14e (G1): the standfirst under 'Analytical books' moves behind an (i) beside the title. One combined patch against the frozen base; supersedes FX-6.",
+   "approved_by": "PLAN_R4 G1 (Anne, 11 Oct 2026): registered exception FX-14; content of the page unchanged"
+  },
+  {
+   "id": "FX-12",
+   "path": "frontend/src/components/cockpit-v4/answer-actions.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-12.patch",
+   "base_sha256": "ab2db712db9b4c05f51140012df2a20afd226fd62b8b5263610f7600c6a3e055",
+   "patched_sha256": "a6673961f2e8cd906f21db2d10e9914e4cf1ca8fae90a031371ce05130e01694",
+   "what": "Cockpit answer action row: FX-5's Share in Mail plus FX-12's Save as analysis and Save as investigation (PLAN_R3 S3-2). One combined patch against the frozen base, because the guard holds one registered patch per file; it supersedes the FX-5 registration of this file. The existing Save, Add to investigation, Comment, Share and Export are untouched.",
+   "approved_by": "PLAN_R3 S3-2 (Anne): Save as analysis / investigation on Cockpit answers; registered exception FX-12, additive only"
+  },
+  {
+   "id": "FX-7",
+   "path": "backend/cockpit_v4/credit_policy.py",
+   "patch": "docs/v5/frozen_exceptions/FX-7.patch",
+   "base_sha256": "b15a42250a2b2cf8b91e860785c9aa9e8a10002ba103e39e7719e9b4637aed36",
+   "patched_sha256": "7544213c7c8d6e7ef58a323887b0f40ae9859b5ba249b1fe526389e6514d38cc",
+   "what": "Policy pack loader reads the active versioned pack from Policy Docs (file named by COCKPIT_POLICY_PACK_FILE, re-read when it changes); unset or missing, the default credit_policy.json. Retrieval, receipts, the synopsis, citations and the refusal rules are unchanged.",
+   "approved_by": "PLAN_R3 S1-2 (Anne, 11 Oct 2026): registered exception FX-7"
+  },
+  {
+   "id": "FX-14c",
+   "path": "frontend/src/components/cockpit-v4/ecl-panel.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-14c.patch",
+   "base_sha256": "257f5fc641100208d26a8c1a53d08d3141f137e19f3a3fa3fd34252fd1a56b9d",
+   "patched_sha256": "82caf372d17d7fe89e51ef4da2c25b58c19f7f56a43a128a3edf58be3e20efc1",
+   "what": "ECL panel (B1): EAD, Recognised ECL, Coverage, each stage row and each decomposition component is a card that opens a drawer with its four charts (logic in components/v5/attention/ecl-cards.tsx). G1: the profile note, the method and the reconciliation sentence move behind an (i) beside the panel title; component explanations move into the component's drawer; 'Nothing was substituted' leaves the error line. A residual that does not reconcile is still shown inline. Figures, order and layout unchanged.",
+   "approved_by": "PLAN_R4 B1 and G1 (Anne, 11 Oct 2026): registered exception FX-14; attention selection, numbers, order and agent flow unchanged"
+  },
+  {
+   "id": "FX-14d",
+   "path": "frontend/src/components/cockpit-v4/attention-panel.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-14d.patch",
+   "base_sha256": "c5fc7cbd866c868b46d4bc55041d31693e4ef900a736d32050b991013d2546af",
+   "patched_sha256": "0c9e12a1a74630c45d317de2d566445738fbc029501d26af50e03e5b6388342c",
+   "what": "Attention panel (G1/G3): the footnote ('Movements in the recorded ... Not Early Warning: no live signal ... Computed from release ... with no model call') is replaced by an (i) beside the reporting period saying which two periods are compared and which release computed them (the feed's 'Not Early Warning' ownership note is no longer printed); the filler line under the ECL highlights heading is not printed; a card whose item has no one-line summary (the segment items) no longer prints a dangling ' \u00b7 ' after its measure. Cards, their order, numbers and click behaviour unchanged.",
+   "approved_by": "PLAN_R4 B1, G1 and G3 (Anne, 11 Oct 2026): registered exception FX-14; attention selection, numbers, order and agent flow unchanged"
+  },
+  {
+   "id": "FX-A4",
+   "path": "backend/cockpit_v4/product_knowledge.py",
+   "patch": "docs/v5/frozen_exceptions/FX-A4.patch",
+   "base_sha256": "309ff460a76f79a681c22200b69e1d796defff58399603ef8c507449542e777d",
+   "patched_sha256": "7c4796e5cb53ada06fac0d7d84bc7d7602dcc6e15b9305702c3198805e14f9c1",
+   "what": "Product help reads the v5 product knowledge base (docs/product_knowledge: each module's flow with links to its screens and a worked example computed on the current books) when COCKPIT_PRODUCT_KNOWLEDGE_V5 names the pack built by ops/build_product_knowledge.py: v5 modules become retrievable topics, a module's v5 section comes first, 'project' and the deck's Planner topic route to Projects. R6: the synopsis lists the current functionalities from the pack's overview (docs/product_knowledge/functionalities.md), grouped Intelligence / Work / Data / Admin, under the same key 'seven_functionalities' plus 'functionalities_note' with the true count, and the 'modules' section is the same list (no AI Project Planner; Deal Desk is a functionality). Unset, the loader is unchanged. R9 G6: with the pack carrying 'intelligence' (docs/product_knowledge/intelligence.md), the synopsis answers 'Who are you?' in the intelligence framing: headline = 'CreditProbe AI by Quantalpha is a credit risk intelligence layer for GCC banks', distinction, the seven Intelligence Packs, runs_on (beside LOS, rating and ECL systems), traceability and identity_note; the positioning retrieval puts that section first. Unset, unchanged.",
+   "approved_by": "PLAN_R4 A4 (Anne, 11 Oct 2026): Cockpit 'how does it work' help, registered exception; R6 product overview (Anne, 12 Oct 2026); R9 G6 intelligence framing (PLAN_R9, Anne, 13 Oct 2026)"
+  },
+  {
+   "id": "FX-R12-02a",
+   "path": "frontend/src/components/cockpit-v4/response-panel.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-R12-02a.patch",
+   "base_sha256": "7ae36504034c7ba257ef1eff9cb73202e91257b6c77a926048ea11f06509e0ec",
+   "patched_sha256": "b89b19908077c3441b4988441eb074227d38d8f1977a1d25348d33d948fccb88",
+   "what": "Cockpit answer panel in the shared answer style (PLAN_R12 N2): the narrative's first sentence shows as the headline and a long body sits behind Show more (components/answer/cockpit.tsx CockpitNarrative, which renders every part with the Cockpit's own Markdown); the follow-up chip LABELS read in banker words (the question sent is unchanged). Words, numbers, claims, evidence, actions and flow unchanged.",
+   "approved_by": "PLAN_R12 N2 (Anne, 19 Oct 2026: BUILD, Session N2 'Cockpit through FX-R12-02'): registered exception FX-R12-02, presentation only"
+  },
+  {
+   "id": "FX-R14-01",
+   "path": "frontend/src/components/cockpit-v4/cockpit-v4-home.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-R14-01.patch",
+   "base_sha256": "3489c0550521be3935945dda2d647dfffc48b354d328e1a0abdeca0468aa668d",
+   "patched_sha256": "5f5f3f34155291c735269e8e7421bd227b22cf0b1af5650fa4c14d7c0fe12bf4",
+   "what": "PLAN_R14 Session G (R13 carried gap, STATUS_R13_MERGE \u00a75 J2): the Cockpit queries control under the Ask box is rendered without its 'Attach a letter / Letters on file' row (CockpitQueries attach={false}); typed auditor and regulator questions are still answered there. Combined patch against the frozen base; supersedes FX-R13-01 (carried unchanged; FX-R13-01.patch stays as history).",
+   "approved_by": "Anne, PLAN_R14 (session g row: \"'Attach a letter' row (FX)\"; details \u00a7g: remove via FX-R14-01)"
+  },
+  {
+   "id": "FX-R16-T1",
+   "path": "frontend/src/components/cockpit-v4/thread-view.tsx",
+   "patch": "docs/v5/frozen_exceptions/FX-R16-T1.patch",
+   "base_sha256": "d655a0b5e4021e140a7d48875d0f95f242a71371bfff4208d59400fcbcbd4c03",
+   "patched_sha256": "970d5b6ca84495f393062b9fc6b401c12ed3ac49156ce1ab596b1ac7974f838f",
+   "what": "PLAN_R16 session t (M7): in the Cockpit thread, a 'write a memo / note / paper' request writes the house-style Word document (components/v5/thread/cockpit-actions.tsx, cockpitMemo) instead of a prose answer, asking the question part first when the request carries one, and the memo cards under the conversation (CockpitMemo). Combined patch against the frozen base; supersedes FX-R14-N1 (its microphone and speaker are carried unchanged; its .patch stays as history). The answer and its storage are unchanged.",
+   "approved_by": "Anne (PLAN_R16, R15_FEEDBACK M7)"
+  }
+ ]
+}

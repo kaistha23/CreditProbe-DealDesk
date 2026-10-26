@@ -1,0 +1,465 @@
+{
+ "deal": "DD-02",
+ "name": "Taif Central Engineering",
+ "sector": "Construction",
+ "population": "Construction borrowers in the corporate book",
+ "events": 467,
+ "method": {
+  "window_quarters": 4,
+  "horizon_quarters": 4,
+  "max_false_alarm": 0.1,
+  "target_lead": "2\u20133 quarters",
+  "objective": "median lead 2\u20133 quarters; maximise early hit rate \u2212 false-alarm rate within the false-alarm cap, leaving the client at least 15% headroom from today",
+  "min_early_hit": 0.25,
+  "min_headroom_pct": 15.0
+ },
+ "min_headroom_pct": 15.0,
+ "bounds": {
+  "dscr": {
+   "low": 1.0,
+   "high": 3.0
+  },
+  "leverage": {
+   "low": 1.5,
+   "high": 6.0
+  },
+  "interest_cover": {
+   "low": 1.0,
+   "high": 8.0
+  },
+  "current_ratio": {
+   "low": 0.8,
+   "high": 2.5
+  },
+  "ebitda_floor": {
+   "low": 50.0,
+   "high": 100.0
+  }
+ },
+ "summary": "Proposed package for Taif Central Engineering (2 covenants, each at least 15% from today's value), calibrated on Construction borrowers in the corporate book: DSCR (minimum): 1.66x \u2014 warned 2+ quarters ahead on 34% of 467 Stage 2/default events (median lead 3 quarters), false alarms 5%; Interest cover (minimum): 2.88x \u2014 warned 2+ quarters ahead on 27% of 467 Stage 2/default events (median lead 3 quarters), false alarms 8%.",
+ "coverage_note": "Even the best covenant level catches only 48% of bad cases 2+ quarters early: covenants are a partial warning and work alongside Early Warning, not instead of it.",
+ "findings": [
+  {
+   "covenant": "dscr",
+   "kind": "template_too_loose",
+   "severity": "minor",
+   "title": "Template DSCR 1.20x almost never warns: 1% of bad cases caught early",
+   "text": "The bank's standard level (the deal's covenant package) is too loose to warn: it caught 1% of Stage 2 or default events 2+ quarters ahead."
+  },
+  {
+   "covenant": "leverage",
+   "kind": "template_too_tight",
+   "severity": "major",
+   "title": "Template Debt / EBITDA 4.00x is mis-calibrated: it would fire on 71% of good borrowers",
+   "text": "The bank's standard level (the deal's covenant package) is breached in 71% of quarters of borrowers that did not go bad, so a breach says little; it warned 2+ quarters early on 75% of bad cases."
+  },
+  {
+   "covenant": "current_ratio",
+   "kind": "template_too_loose",
+   "severity": "minor",
+   "title": "Template Current ratio 1.35x almost never warns: 4% of bad cases caught early",
+   "text": "The bank's standard level (median as-set threshold in the book (Construction)) is too loose to warn: it caught 4% of Stage 2 or default events 2+ quarters ahead."
+  }
+ ],
+ "covenants": [
+  {
+   "covenant": "dscr",
+   "label": "DSCR (minimum)",
+   "direction": "min",
+   "unit": "x",
+   "current": {
+    "value": 2.248156,
+    "unit": "x"
+   },
+   "proposed": {
+    "events": 467,
+    "detected": 193,
+    "hit_rate": 0.4132762312633833,
+    "early_hit_rate": 0.34475374732334046,
+    "on_time_rate": 0.14346895074946467,
+    "median_lead_q": 3.0,
+    "false_alarm_rate": 0.047325475974614686,
+    "precision": 0.5797317436661699,
+    "quiet_quarters": 5515,
+    "threshold": 1.66,
+    "score": 0.2974282713487258,
+    "deal_headroom_pct": 35.4310843373494,
+    "lead_on_target": true,
+    "set_by_headroom": false,
+    "bounded": false
+   },
+   "statistical_best": {
+    "events": 467,
+    "detected": 193,
+    "hit_rate": 0.4132762312633833,
+    "early_hit_rate": 0.34475374732334046,
+    "on_time_rate": 0.14346895074946467,
+    "median_lead_q": 3.0,
+    "false_alarm_rate": 0.047325475974614686,
+    "precision": 0.5797317436661699,
+    "quiet_quarters": 5515,
+    "threshold": 1.66,
+    "score": 0.2974282713487258,
+    "deal_headroom_pct": 35.4310843373494,
+    "lead_on_target": true
+   },
+   "bounds": {
+    "low": 1.0,
+    "high": 3.0
+   },
+   "template": {
+    "events": 467,
+    "detected": 21,
+    "hit_rate": 0.044967880085653104,
+    "early_hit_rate": 0.010706638115631691,
+    "on_time_rate": 0.010706638115631691,
+    "median_lead_q": 1.0,
+    "false_alarm_rate": 0.0,
+    "precision": 1.0,
+    "quiet_quarters": 5515,
+    "threshold": 1.2,
+    "deal_headroom_pct": 87.34633333333332
+   },
+   "template_source": "the deal's covenant package",
+   "as_set": {
+    "events": 333,
+    "detected": 68,
+    "hit_rate": 0.2042042042042042,
+    "early_hit_rate": 0.10510510510510511,
+    "on_time_rate": 0.09309309309309309,
+    "median_lead_q": 2.0,
+    "false_alarm_rate": 0.0005095541401273885,
+    "precision": 0.9344262295081968,
+    "quiet_quarters": 3925,
+    "borrowers_with_covenant": 435,
+    "median_threshold": 1.501
+   },
+   "already_breached": false,
+   "recommended": true,
+   "why_not": null,
+   "template_meaningful": false,
+   "beats_template": false,
+   "verdict": "Recommend",
+   "trade_off_line": "At 1.66x, 35% headroom: early warning on 34%, false alarms 5%.",
+   "text": "DSCR (minimum) at 1.66x; the template 1.20x (the deal's covenant package) warns 2+ quarters early on 1% with 0% false alarms; the borrower is at 2.25x today (+35% headroom)"
+  },
+  {
+   "covenant": "interest_cover",
+   "label": "Interest cover (minimum)",
+   "direction": "min",
+   "unit": "x",
+   "current": {
+    "value": 4.926,
+    "unit": "x"
+   },
+   "proposed": {
+    "events": 467,
+    "detected": 160,
+    "hit_rate": 0.3426124197002141,
+    "early_hit_rate": 0.2676659528907923,
+    "on_time_rate": 0.09850107066381156,
+    "median_lead_q": 3.0,
+    "false_alarm_rate": 0.07561196736174071,
+    "precision": 0.44106463878326996,
+    "quiet_quarters": 5515,
+    "threshold": 2.88,
+    "score": 0.19205398552905162,
+    "deal_headroom_pct": 71.04166666666669,
+    "lead_on_target": true,
+    "set_by_headroom": false,
+    "bounded": false
+   },
+   "statistical_best": {
+    "events": 467,
+    "detected": 160,
+    "hit_rate": 0.3426124197002141,
+    "early_hit_rate": 0.2676659528907923,
+    "on_time_rate": 0.09850107066381156,
+    "median_lead_q": 3.0,
+    "false_alarm_rate": 0.07561196736174071,
+    "precision": 0.44106463878326996,
+    "quiet_quarters": 5515,
+    "threshold": 2.88,
+    "score": 0.19205398552905162,
+    "deal_headroom_pct": 71.04166666666669,
+    "lead_on_target": true
+   },
+   "bounds": {
+    "low": 1.0,
+    "high": 8.0
+   },
+   "template": {
+    "events": 467,
+    "detected": 101,
+    "hit_rate": 0.21627408993576017,
+    "early_hit_rate": 0.15845824411134904,
+    "on_time_rate": 0.059957173447537475,
+    "median_lead_q": 3.0,
+    "false_alarm_rate": 0.03245693563009973,
+    "precision": 0.5113924050632911,
+    "quiet_quarters": 5515,
+    "threshold": 2.5,
+    "deal_headroom_pct": 97.04
+   },
+   "template_source": "the deal's covenant package",
+   "as_set": {
+    "events": 320,
+    "detected": 70,
+    "hit_rate": 0.21875,
+    "early_hit_rate": 0.115625,
+    "on_time_rate": 0.08125,
+    "median_lead_q": 2.0,
+    "false_alarm_rate": 0.004188481675392671,
+    "precision": 0.8214285714285714,
+    "quiet_quarters": 3820,
+    "borrowers_with_covenant": 435,
+    "median_threshold": 2.626
+   },
+   "already_breached": false,
+   "recommended": true,
+   "why_not": null,
+   "template_meaningful": true,
+   "beats_template": true,
+   "verdict": "Recommend",
+   "trade_off_line": "At 2.88x, 71% headroom: early warning on 27%, false alarms 8%.",
+   "text": "Interest cover (minimum) at 2.88x; the template 2.50x (the deal's covenant package) warns 2+ quarters early on 16% with 3% false alarms; the borrower is at 4.93x today (+71% headroom)"
+  },
+  {
+   "covenant": "current_ratio",
+   "label": "Current ratio (minimum)",
+   "direction": "min",
+   "unit": "x",
+   "current": {
+    "value": 1.653,
+    "unit": "x"
+   },
+   "proposed": {
+    "events": 467,
+    "detected": 141,
+    "hit_rate": 0.3019271948608137,
+    "early_hit_rate": 0.21199143468950749,
+    "on_time_rate": 0.13704496788008566,
+    "median_lead_q": 2.0,
+    "false_alarm_rate": 0.0016319129646418858,
+    "precision": 0.9306930693069307,
+    "quiet_quarters": 5515,
+    "threshold": 1.43,
+    "score": 0.2103595217248656,
+    "deal_headroom_pct": 15.5944055944056,
+    "lead_on_target": true,
+    "set_by_headroom": false,
+    "bounded": false
+   },
+   "statistical_best": {
+    "events": 467,
+    "detected": 249,
+    "hit_rate": 0.5331905781584583,
+    "early_hit_rate": 0.41755888650963596,
+    "on_time_rate": 0.16059957173447537,
+    "median_lead_q": 3.0,
+    "false_alarm_rate": 0.03499546690843155,
+    "precision": 0.7083926031294452,
+    "quiet_quarters": 5515,
+    "threshold": 1.5,
+    "score": 0.38256341960120444,
+    "deal_headroom_pct": 10.200000000000003,
+    "lead_on_target": true
+   },
+   "bounds": {
+    "low": 0.8,
+    "high": 2.5
+   },
+   "template": {
+    "events": 467,
+    "detected": 48,
+    "hit_rate": 0.10278372591006424,
+    "early_hit_rate": 0.044967880085653104,
+    "on_time_rate": 0.044967880085653104,
+    "median_lead_q": 1.0,
+    "false_alarm_rate": 0.0,
+    "precision": 0.9523809523809523,
+    "quiet_quarters": 5515,
+    "threshold": 1.353,
+    "deal_headroom_pct": 22.172949002217297
+   },
+   "template_source": "median as-set threshold in the book (Construction)",
+   "as_set": {
+    "events": 407,
+    "detected": 36,
+    "hit_rate": 0.08845208845208845,
+    "early_hit_rate": 0.0343980343980344,
+    "on_time_rate": 0.0343980343980344,
+    "median_lead_q": 1.0,
+    "false_alarm_rate": 0.0,
+    "precision": 0.9375,
+    "quiet_quarters": 4845,
+    "borrowers_with_covenant": 538,
+    "median_threshold": 1.353
+   },
+   "already_breached": false,
+   "recommended": false,
+   "why_not": "warns 2+ quarters early on only 21% of events (minimum 25%)",
+   "template_meaningful": false,
+   "beats_template": false,
+   "verdict": "Not recommended",
+   "trade_off_line": "At 1.43x, 16% headroom: early warning on 21%, false alarms 0%; the statistical best 1.50x, 10% headroom would catch 42% with 3% false alarms, but leaves less than 15% cushion.",
+   "text": "Current ratio (minimum) at 1.43x; the template 1.35x (median as-set threshold in the book (Construction)) warns 2+ quarters early on 4% with 0% false alarms; the borrower is at 1.65x today (+16% headroom); not recommended: warns 2+ quarters early on only 21% of events (minimum 25%)"
+  },
+  {
+   "covenant": "leverage",
+   "label": "Debt / EBITDA (maximum)",
+   "direction": "max",
+   "unit": "x",
+   "current": {
+    "value": 2.579442,
+    "unit": "x"
+   },
+   "proposed": {
+    "events": 467,
+    "detected": 228,
+    "hit_rate": 0.48822269807280516,
+    "early_hit_rate": 0.47751605995717344,
+    "on_time_rate": 0.06638115631691649,
+    "median_lead_q": 4.0,
+    "false_alarm_rate": 0.38204895738893924,
+    "precision": 0.24048442906574394,
+    "quiet_quarters": 5515,
+    "threshold": 6.0,
+    "score": 0.09546710256823421,
+    "deal_headroom_pct": 57.00930000000001,
+    "lead_on_target": false,
+    "set_by_headroom": false,
+    "bounded": true
+   },
+   "statistical_best": {
+    "events": 467,
+    "detected": 228,
+    "hit_rate": 0.48822269807280516,
+    "early_hit_rate": 0.47751605995717344,
+    "on_time_rate": 0.06638115631691649,
+    "median_lead_q": 4.0,
+    "false_alarm_rate": 0.38204895738893924,
+    "precision": 0.24048442906574394,
+    "quiet_quarters": 5515,
+    "threshold": 6.0,
+    "score": 0.09546710256823421,
+    "deal_headroom_pct": 57.00930000000001,
+    "lead_on_target": false
+   },
+   "bounds": {
+    "low": 1.5,
+    "high": 6.0
+   },
+   "template": {
+    "events": 467,
+    "detected": 357,
+    "hit_rate": 0.7644539614561028,
+    "early_hit_rate": 0.7494646680942184,
+    "on_time_rate": 0.06638115631691649,
+    "median_lead_q": 4.0,
+    "false_alarm_rate": 0.71441523118767,
+    "precision": 0.2185823754789272,
+    "quiet_quarters": 5515,
+    "threshold": 4.0,
+    "deal_headroom_pct": 35.51395000000001
+   },
+   "template_source": "the deal's covenant package",
+   "as_set": {
+    "events": 328,
+    "detected": 21,
+    "hit_rate": 0.06402439024390244,
+    "early_hit_rate": 0.036585365853658534,
+    "on_time_rate": 0.03353658536585366,
+    "median_lead_q": 2.0,
+    "false_alarm_rate": 0.0002573340195573855,
+    "precision": 0.875,
+    "quiet_quarters": 3886,
+    "borrowers_with_covenant": 436,
+    "median_threshold": 7.226
+   },
+   "already_breached": false,
+   "recommended": false,
+   "why_not": "no threshold has a 2\u20133 quarter median lead within 10% false alarms",
+   "template_meaningful": true,
+   "beats_template": false,
+   "verdict": "Not recommended",
+   "trade_off_line": "At 6.00x, 57% headroom: early warning on 48%, false alarms 38%.",
+   "text": "Debt / EBITDA (maximum) at 6.00x; the template 4.00x (the deal's covenant package) warns 2+ quarters early on 75% with 71% false alarms; the borrower is at 2.58x today (+57% headroom); not recommended: no threshold has a 2\u20133 quarter median lead within 10% false alarms"
+  },
+  {
+   "covenant": "ebitda_floor",
+   "label": "EBITDA floor (% of EBITDA a year earlier)",
+   "direction": "min",
+   "unit": "%",
+   "current": {
+    "value": 102.71556,
+    "unit": "%"
+   },
+   "proposed": {
+    "events": 467,
+    "detected": 38,
+    "hit_rate": 0.08137044967880086,
+    "early_hit_rate": 0.05139186295503212,
+    "on_time_rate": 0.03854389721627409,
+    "median_lead_q": 2.0,
+    "false_alarm_rate": 0.00036264732547597464,
+    "precision": 0.9661016949152542,
+    "quiet_quarters": 5515,
+    "threshold": 89.0,
+    "score": 0.051029215629556146,
+    "deal_headroom_pct": 15.410741573033704,
+    "lead_on_target": true,
+    "set_by_headroom": true,
+    "bounded": false
+   },
+   "statistical_best": {
+    "events": 467,
+    "detected": 119,
+    "hit_rate": 0.25481798715203424,
+    "early_hit_rate": 0.20985010706638116,
+    "on_time_rate": 0.1006423982869379,
+    "median_lead_q": 3.0,
+    "false_alarm_rate": 0.011604714415231188,
+    "precision": 0.7956656346749226,
+    "quiet_quarters": 5515,
+    "threshold": 93.55,
+    "score": 0.19824539265114996,
+    "deal_headroom_pct": 9.79749866381614,
+    "lead_on_target": true
+   },
+   "bounds": {
+    "low": 50.0,
+    "high": 100.0
+   },
+   "template": null,
+   "template_source": "no template threshold",
+   "as_set": {
+    "events": 319,
+    "detected": 14,
+    "hit_rate": 0.0438871473354232,
+    "early_hit_rate": 0.0219435736677116,
+    "on_time_rate": 0.018808777429467086,
+    "median_lead_q": 1.5,
+    "false_alarm_rate": 0.0,
+    "precision": 1.0,
+    "quiet_quarters": 3776,
+    "borrowers_with_covenant": 434,
+    "median_threshold": 540.4200000000001
+   },
+   "already_breached": false,
+   "recommended": false,
+   "why_not": "warns 2+ quarters early on only 5% of events (minimum 25%)",
+   "template_meaningful": false,
+   "beats_template": false,
+   "verdict": "Not recommended",
+   "trade_off_line": "At 89%, 15% headroom: early warning on 5%, false alarms 0%; the statistical best 94%, 10% headroom would catch 21% with 1% false alarms, but leaves less than 15% cushion.",
+   "text": "EBITDA floor (% of EBITDA a year earlier) at 89%; the borrower is at 103% today (+15% headroom); not recommended: warns 2+ quarters early on only 5% of events (minimum 25%)"
+  }
+ ],
+ "data_limits": [
+  "History is 20 quarters (2021Q3\u20132026Q2), one partial credit cycle: rates carry wide bands; 467 events in the population.",
+  "Outcome is the first Stage 2/3 or default quarter of any of the borrower's facilities (cockpit.corp_facility_quarter); a borrower already in Stage 2 at the start of the window is not an event.",
+  "False alarms are measured only on quarters with a full 4-quarter outcome window.",
+  "Metrics are the book's quarterly ratios; a covenant tested on audited annual accounts would warn later than shown."
+ ]
+}

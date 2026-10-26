@@ -1,0 +1,819 @@
+{
+ "files": 23,
+ "factor": 1.0,
+ "tally": {
+  "unchanged": 4878,
+  "volatile:cached": 2,
+  "volatile:computed_ms": 2,
+  "volatile:item_id": 36,
+  "volatile:release_fingerprint": 64,
+  "scaled number": 2,
+  "zero residual (|x| < 1e-6 both)": 1
+ },
+ "problems": [
+  {
+   "path": "attention_corporate.json.ecl_highlights[0].display",
+   "before": "SAR 7,795 million",
+   "after": "SAR 6,994 million"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[0].headline",
+   "before": "Corporate recognised ECL is SAR 7,795 million",
+   "after": "Corporate recognised ECL is SAR 6,994 million"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[0].key_numbers[0].display",
+   "before": "SAR 7,795 million",
+   "after": "SAR 6,994 million"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[0].key_numbers[3].display",
+   "before": "5.07%",
+   "after": "4.55%"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[0].movement.to_display",
+   "before": "SAR 7,795 million",
+   "after": "SAR 6,994 million"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[1].one_line",
+   "before": "SAR 2,755 million of the SAR 7,795 million recognised.",
+   "after": "SAR 2,755 million of the SAR 6,994 million recognised."
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[1].what_changed",
+   "before": "SAR 2,755 million of the SAR 7,795 million recognised.",
+   "after": "SAR 2,755 million of the SAR 6,994 million recognised."
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[3].display",
+   "before": "35.46%",
+   "after": "34.10%"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[3].key_numbers[0].display",
+   "before": "35.46%",
+   "after": "34.10%"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[3].key_numbers[1].display",
+   "before": "SAR 54,505 million",
+   "after": "SAR 52,418 million"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[3].movement.to_display",
+   "before": "35.46%",
+   "after": "34.10%"
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[3].one_line",
+   "before": "SAR 54,505 million of SAR 153,700 million sits in Stage 2 or 3.",
+   "after": "SAR 52,418 million of SAR 153,700 million sits in Stage 2 or 3."
+  },
+  {
+   "path": "attention_corporate.json.ecl_highlights[3].what_changed",
+   "before": "SAR 54,505 million of SAR 153,700 million sits in Stage 2 or 3.",
+   "after": "SAR 52,418 million of SAR 153,700 million sits in Stage 2 or 3."
+  },
+  {
+   "path": "attention_corporate.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[0].score",
+   "before": 0.148624,
+   "after": 0.165646
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[1].headline",
+   "before": "Supply Chain Finance: ECL rose to SAR 899 million",
+   "after": "Supply Chain Finance: ECL rose to SAR 730 million"
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[1].key_numbers[0].display",
+   "before": "SAR 899 million",
+   "after": "SAR 730 million"
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[1].movement.to",
+   "before": 899.0084559999991,
+   "after": 729.7556828364177
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[1].movement.to_display",
+   "before": "SAR 899 million",
+   "after": "SAR 730 million"
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[1].score",
+   "before": 0.07768,
+   "after": 0.064312
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[1].what_changed",
+   "before": "Recognised ECL was SAR 241 million in 2026Q1 and is SAR 899 million in 2026Q2.",
+   "after": "Recognised ECL was SAR 241 million in 2026Q1 and is SAR 730 million in 2026Q2."
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[1].why_it_appeared",
+   "before": "It moved 273.24% higher than 2026Q1 on a segment holding 4.95% of the book's exposure at default.",
+   "after": "It moved 202.98% higher than 2026Q1 on a segment holding 4.95% of the book's exposure at default."
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[2].headline",
+   "before": "Makkah: ECL rose to SAR 1,835 million",
+   "after": "Makkah: ECL rose to SAR 1,741 million"
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[2].key_numbers[0].display",
+   "before": "SAR 1,835 million",
+   "after": "SAR 1,741 million"
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[2].movement.to",
+   "before": 1835.1014499999999,
+   "after": 1740.5851508859887
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[2].movement.to_display",
+   "before": "SAR 1,835 million",
+   "after": "SAR 1,741 million"
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[2].score",
+   "before": 0.06152,
+   "after": 0.056404
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[2].what_changed",
+   "before": "Recognised ECL was SAR 1,302 million in 2026Q1 and is SAR 1,835 million in 2026Q2.",
+   "after": "Recognised ECL was SAR 1,302 million in 2026Q1 and is SAR 1,741 million in 2026Q2."
+  },
+  {
+   "path": "attention_corporate.json.segments_requiring_attention[2].why_it_appeared",
+   "before": "It moved 40.91% higher than 2026Q1 on a segment holding 17.69% of the book's exposure at default.",
+   "after": "It moved 33.66% higher than 2026Q1 on a segment holding 17.69% of the book's exposure at default."
+  },
+  {
+   "path": "attention_corporate_item00.json.item.score",
+   "before": 0.148624,
+   "after": 0.165646
+  },
+  {
+   "path": "attention_corporate_item00.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item00.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item01.json.item.headline",
+   "before": "Supply Chain Finance: ECL rose to SAR 899 million",
+   "after": "Supply Chain Finance: ECL rose to SAR 730 million"
+  },
+  {
+   "path": "attention_corporate_item01.json.item.key_numbers[0].display",
+   "before": "SAR 899 million",
+   "after": "SAR 730 million"
+  },
+  {
+   "path": "attention_corporate_item01.json.item.movement.to",
+   "before": 899.0084559999991,
+   "after": 729.7556828364177
+  },
+  {
+   "path": "attention_corporate_item01.json.item.movement.to_display",
+   "before": "SAR 899 million",
+   "after": "SAR 730 million"
+  },
+  {
+   "path": "attention_corporate_item01.json.item.score",
+   "before": 0.07768,
+   "after": 0.064312
+  },
+  {
+   "path": "attention_corporate_item01.json.item.what_changed",
+   "before": "Recognised ECL was SAR 241 million in 2026Q1 and is SAR 899 million in 2026Q2.",
+   "after": "Recognised ECL was SAR 241 million in 2026Q1 and is SAR 730 million in 2026Q2."
+  },
+  {
+   "path": "attention_corporate_item01.json.item.why_it_appeared",
+   "before": "It moved 273.24% higher than 2026Q1 on a segment holding 4.95% of the book's exposure at default.",
+   "after": "It moved 202.98% higher than 2026Q1 on a segment holding 4.95% of the book's exposure at default."
+  },
+  {
+   "path": "attention_corporate_item01.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item01.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item02.json.item.headline",
+   "before": "Makkah: ECL rose to SAR 1,835 million",
+   "after": "Makkah: ECL rose to SAR 1,741 million"
+  },
+  {
+   "path": "attention_corporate_item02.json.item.key_numbers[0].display",
+   "before": "SAR 1,835 million",
+   "after": "SAR 1,741 million"
+  },
+  {
+   "path": "attention_corporate_item02.json.item.movement.to",
+   "before": 1835.1014499999999,
+   "after": 1740.5851508859887
+  },
+  {
+   "path": "attention_corporate_item02.json.item.movement.to_display",
+   "before": "SAR 1,835 million",
+   "after": "SAR 1,741 million"
+  },
+  {
+   "path": "attention_corporate_item02.json.item.score",
+   "before": 0.06152,
+   "after": 0.056404
+  },
+  {
+   "path": "attention_corporate_item02.json.item.what_changed",
+   "before": "Recognised ECL was SAR 1,302 million in 2026Q1 and is SAR 1,835 million in 2026Q2.",
+   "after": "Recognised ECL was SAR 1,302 million in 2026Q1 and is SAR 1,741 million in 2026Q2."
+  },
+  {
+   "path": "attention_corporate_item02.json.item.why_it_appeared",
+   "before": "It moved 40.91% higher than 2026Q1 on a segment holding 17.69% of the book's exposure at default.",
+   "after": "It moved 33.66% higher than 2026Q1 on a segment holding 17.69% of the book's exposure at default."
+  },
+  {
+   "path": "attention_corporate_item02.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item02.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item03.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item03.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item04.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item04.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item05.json.item.display",
+   "before": "SAR 7,795 million",
+   "after": "SAR 6,994 million"
+  },
+  {
+   "path": "attention_corporate_item05.json.item.headline",
+   "before": "Corporate recognised ECL is SAR 7,795 million",
+   "after": "Corporate recognised ECL is SAR 6,994 million"
+  },
+  {
+   "path": "attention_corporate_item05.json.item.key_numbers[0].display",
+   "before": "SAR 7,795 million",
+   "after": "SAR 6,994 million"
+  },
+  {
+   "path": "attention_corporate_item05.json.item.key_numbers[3].display",
+   "before": "5.07%",
+   "after": "4.55%"
+  },
+  {
+   "path": "attention_corporate_item05.json.item.movement.to_display",
+   "before": "SAR 7,795 million",
+   "after": "SAR 6,994 million"
+  },
+  {
+   "path": "attention_corporate_item05.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item05.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item06.json.item.one_line",
+   "before": "SAR 2,755 million of the SAR 7,795 million recognised.",
+   "after": "SAR 2,755 million of the SAR 6,994 million recognised."
+  },
+  {
+   "path": "attention_corporate_item06.json.item.what_changed",
+   "before": "SAR 2,755 million of the SAR 7,795 million recognised.",
+   "after": "SAR 2,755 million of the SAR 6,994 million recognised."
+  },
+  {
+   "path": "attention_corporate_item06.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item06.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item07.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item07.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item08.json.item.display",
+   "before": "35.46%",
+   "after": "34.10%"
+  },
+  {
+   "path": "attention_corporate_item08.json.item.key_numbers[0].display",
+   "before": "35.46%",
+   "after": "34.10%"
+  },
+  {
+   "path": "attention_corporate_item08.json.item.key_numbers[1].display",
+   "before": "SAR 54,505 million",
+   "after": "SAR 52,418 million"
+  },
+  {
+   "path": "attention_corporate_item08.json.item.movement.to_display",
+   "before": "35.46%",
+   "after": "34.10%"
+  },
+  {
+   "path": "attention_corporate_item08.json.item.one_line",
+   "before": "SAR 54,505 million of SAR 153,700 million sits in Stage 2 or 3.",
+   "after": "SAR 52,418 million of SAR 153,700 million sits in Stage 2 or 3."
+  },
+  {
+   "path": "attention_corporate_item08.json.item.what_changed",
+   "before": "SAR 54,505 million of SAR 153,700 million sits in Stage 2 or 3.",
+   "after": "SAR 52,418 million of SAR 153,700 million sits in Stage 2 or 3."
+  },
+  {
+   "path": "attention_corporate_item08.json.method.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "attention_corporate_item08.json.method_summary.candidates_considered",
+   "before": 87,
+   "after": 65
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.closing",
+   "before": 7794.753499000004,
+   "after": 6993.735349485124
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[2].amount",
+   "before": 1713.226725,
+   "after": 913.7290190550975
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[2].display_amount",
+   "before": "SAR 1,713 million",
+   "after": "SAR 914 million"
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[2].explanation",
+   "before": "The whole ECL change of 1572 facilities whose IFRS 9 stage changed. A move to Stage 2 or 3 switches the measurement basis to lifetime, so the change is attributed to the migration rather than split.",
+   "after": "The whole ECL change of 1461 facilities whose IFRS 9 stage changed. A move to Stage 2 or 3 switches the measurement basis to lifetime, so the change is attributed to the migration rather than split."
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[2].exposures",
+   "before": 1572,
+   "after": 1461
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[3].amount",
+   "before": 19.700549213778224,
+   "after": 21.797318133217374
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[3].display_amount",
+   "before": "SAR 20 million",
+   "after": "SAR 22 million"
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[3].exposures",
+   "before": 18854,
+   "after": 18965
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[4].amount",
+   "before": 174.0351097862212,
+   "after": 170.41789729679343
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[4].display_amount",
+   "before": "SAR 174 million",
+   "after": "SAR 170 million"
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.components[4].exposures",
+   "before": 18854,
+   "after": 18965
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.display_closing",
+   "before": "SAR 7,795 million",
+   "after": "SAR 6,994 million"
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.display_movement",
+   "before": "SAR 2,052 million",
+   "after": "SAR 1,251 million"
+  },
+  {
+   "path": "ecl_corporate.json.decomposition.movement",
+   "before": 2052.0412780000206,
+   "after": 1251.0231284851407
+  },
+  {
+   "path": "ecl_corporate.json.profile.coverage",
+   "before": 0.05071402932824111,
+   "after": 0.04550246517394643
+  },
+  {
+   "path": "ecl_corporate.json.profile.coverage_movement_pp",
+   "before": 0.012534933792074661,
+   "after": 0.007323369637779985
+  },
+  {
+   "path": "ecl_corporate.json.profile.display_coverage",
+   "before": "5.07%",
+   "after": "4.55%"
+  },
+  {
+   "path": "ecl_corporate.json.profile.display_ecl_movement",
+   "before": "SAR 2,052 million",
+   "after": "SAR 1,251 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.display_total_ecl",
+   "before": "SAR 7,795 million",
+   "after": "SAR 6,994 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.ecl_movement",
+   "before": 2052.041277999995,
+   "after": 1251.0231284851088
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].coverage",
+   "before": 0.0034552894162746682,
+   "after": 0.003464295414364453
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].coverage_movement_pp",
+   "before": -2.7880643469897683e-05,
+   "after": -1.8874645380112954e-05
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].display_ead",
+   "before": "SAR 99,195 million",
+   "after": "SAR 101,282 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].display_ead_movement",
+   "before": "SAR -1,888 million",
+   "after": "SAR 200 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].display_ecl",
+   "before": "SAR 343 million",
+   "after": "SAR 351 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].display_ecl_movement",
+   "before": "SAR -9 million",
+   "after": "SAR -1 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].display_share_of_ead",
+   "before": "64.54%",
+   "after": "65.90%"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].ead",
+   "before": 99194.78969999962,
+   "after": 101282.43899999962
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].ead_movement",
+   "before": -1887.6131000005553,
+   "after": 200.0361999994493
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].ecl",
+   "before": 342.74670700000013,
+   "after": 350.8722889833461
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].ecl_movement",
+   "before": -9.340492000000722,
+   "after": -1.2149100166547555
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].exposures",
+   "before": 14292,
+   "after": 14605
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].facilities",
+   "before": 14292,
+   "after": 14605
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].share_movement_pp",
+   "before": -0.026644355324677016,
+   "after": -0.013061743912928803
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].share_of_ead",
+   "before": 0.6453786479200234,
+   "after": 0.6589612593317716
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].coverage",
+   "before": 0.031651482925558694,
+   "after": 0.03163183597260292
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].coverage_movement_pp",
+   "before": 0.0015005756138915805,
+   "after": 0.0014809286609358055
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].display_coverage",
+   "before": "3.17%",
+   "after": "3.16%"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].display_ead",
+   "before": "SAR 41,980 million",
+   "after": "SAR 41,623 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].display_ead_movement",
+   "before": "SAR 1,488 million",
+   "after": "SAR 1,130 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].display_ecl",
+   "before": "SAR 1,329 million",
+   "after": "SAR 1,317 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].display_ecl_movement",
+   "before": "SAR 108 million",
+   "after": "SAR 96 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].display_share_of_ead",
+   "before": "27.31%",
+   "after": "27.08%"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].ead",
+   "before": 41980.13489999999,
+   "after": 41622.75229999999
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].ead_movement",
+   "before": 1487.5111000000907,
+   "after": 1130.1285000000935
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].ecl",
+   "before": 1328.7335230000003,
+   "after": 1316.6040734818807
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].ecl_movement",
+   "before": 107.84417599999756,
+   "after": 95.71472648187796
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].exposures",
+   "before": 5764,
+   "after": 5743
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].facilities",
+   "before": 5764,
+   "after": 5743
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].share_movement_pp",
+   "before": 0.003924243856998133,
+   "after": 0.001599050166122884
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].share_of_ead",
+   "before": 0.2731300986997534,
+   "after": 0.27080490500887816
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].coverage",
+   "before": 0.48887561558613135,
+   "after": 0.49340281708747863
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].coverage_movement_pp",
+   "before": 0.017189623914666052,
+   "after": 0.02171682541601333
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].display_coverage",
+   "before": "48.89%",
+   "after": "49.34%"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].display_ead",
+   "before": "SAR 12,525 million",
+   "after": "SAR 10,795 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].display_ead_movement",
+   "before": "SAR 3,685 million",
+   "after": "SAR 1,955 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].display_ecl",
+   "before": "SAR 6,123 million",
+   "after": "SAR 5,326 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].display_ecl_movement",
+   "before": "SAR 1,954 million",
+   "after": "SAR 1,157 million"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].display_share_of_ead",
+   "before": "8.15%",
+   "after": "7.02%"
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].ead",
+   "before": 12525.217199999992,
+   "after": 10794.950499999995
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].ead_movement",
+   "before": 3685.1503999999895,
+   "after": 1954.883699999993
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].ecl",
+   "before": 6123.273268999997,
+   "after": 5326.2589870198835
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].ecl_movement",
+   "before": 1953.5375939999985,
+   "after": 1156.5233120198855
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].exposures",
+   "before": 1862,
+   "after": 1570
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].facilities",
+   "before": 1862,
+   "after": 1570
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].share_movement_pp",
+   "before": 0.022720111467678876,
+   "after": 0.011462693746805953
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].share_of_ead",
+   "before": 0.08149125338022313,
+   "after": 0.07023383565935021
+  },
+  {
+   "path": "ecl_corporate.json.profile.total_ecl",
+   "before": 7794.753498999997,
+   "after": 6993.73534948511
+  }
+ ],
+ "float_noise": [
+  {
+   "path": "ecl_corporate.json.decomposition.residual",
+   "before": 2.091837814077735e-11,
+   "after": 3.205968823749572e-11
+  }
+ ],
+ "attention_headlines": [
+  {
+   "before": "Construction: ECL rose to SAR 2,755 million",
+   "after": "Construction: ECL rose to SAR 2,755 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Supply Chain Finance: ECL rose to SAR 899 million",
+   "after": "Supply Chain Finance: ECL rose to SAR 730 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Makkah: ECL rose to SAR 1,835 million",
+   "after": "Makkah: ECL rose to SAR 1,741 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Receivables: Loan to value rose to 172.67%",
+   "after": "Receivables: Loan to value rose to 172.67%",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Current Ratio: Covenant breaches rose to 12.76%",
+   "after": "Current Ratio: Covenant breaches rose to 12.76%",
+   "severity": [
+    "medium",
+    "medium"
+   ]
+  },
+  {
+   "before": "Mortgage: ECL rose to SAR 45 million",
+   "after": "Mortgage: ECL rose to SAR 45 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Affluent: ECL rose to SAR 56 million",
+   "after": "Affluent: ECL rose to SAR 56 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "2026: Stage 2 exposure rose to 4.25%",
+   "after": "2026: Stage 2 exposure rose to 4.25%",
+   "severity": [
+    "medium",
+    "medium"
+   ]
+  },
+  {
+   "before": "E: Stage 2 exposure rose to 47.90%",
+   "after": "E: Stage 2 exposure rose to 47.90%",
+   "severity": [
+    "low",
+    "low"
+   ]
+  },
+  {
+   "before": "Madinah: Delinquency rose to 2.97%",
+   "after": "Madinah: Delinquency rose to 2.97%",
+   "severity": [
+    "low",
+    "low"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "domain_id": "corporate",
+ "item": {
+  "comparison_basis": "previous quarter",
+  "comparison_month": "",
+  "comparison_period": "2026Q1",
+  "comparison_quarter": "2026Q1",
+  "domain_id": "corporate",
+  "drilldown": {
+   "available": [
+    "borrowers"
+   ],
+   "borrower_count": 2976,
+   "counterparty_column": "borrower_id",
+   "entity_count": 2976,
+   "entity_label": "borrowers",
+   "finer_dimension": "",
+   "measure_fields": [
+    "ecl_sar_mn"
+   ],
+   "note": "There is no subsegment level below product type in this book, so a finer cut is not available and none is implied.",
+   "period_column": "reporting_quarter",
+   "relation": "corp_facility_quarter",
+   "suggested_questions": [
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_quarter",
+     "question": "Show the borrowers behind Supply Chain Finance in 2026Q2.",
+     "relation": "corp_facility_quarter",
+     "required_fields": [
+      "borrower_id"
+     ],
+     "required_periods": [
+      "2026Q2"
+     ],
+     "required_quarters": [
+      "2026Q2"
+     ],
+     "segment": "supply_chain_finance",
+     "segment_dimension": "product_type"
+    },
+    {
+     "kind": "diagnostic",
+     "period_column": "reporting_quarter",
+     "question": "What drove the change in Recognised ECL for Supply Chain Finance in 2026Q2?",
+     "relation": "corp_facility_quarter",
+     "required_fields": [
+      "ecl_sar_mn"
+     ],
+     "required_periods": [
+      "2026Q2"
+     ],
+     "required_quarters": [
+      "2026Q2"
+     ],
+     "segment": "supply_chain_finance",
+     "segment_dimension": "product_type"
+    },
+    {
+     "kind": "crosscut",
+     "period_column": "reporting_quarter",
+     "question": "Split Supply Chain Finance by region.",
+     "relation": "corp_facility_quarter",
+     "required_fields": [
+      "region"
+     ],
+     "required_periods": [
+      "2026Q2"
+     ],
+     "required_quarters": [
+      "2026Q2"
+     ],
+     "segment": "supply_chain_finance",
+     "segment_dimension": "product_type"
+    },
+    {
+     "kind": "crosscut",
+     "period_column": "reporting_quarter",
+     "question": "Split Supply Chain Finance by relationship segment.",
+     "relation": "corp_facility_quarter",
+     "required_fields": [
+      "relationship_tier"
+     ],
+     "required_periods": [
+      "2026Q2"
+     ],
+     "required_quarters": [
+      "2026Q2"
+     ],
+     "segment": "supply_chain_finance",
+     "segment_dimension": "product_type"
+    },
+    {
+     "kind": "trend",
+     "period_column": "reporting_quarter",
+     "question": "How has Recognised ECL moved for Supply Chain Finance over the last 8 quarters?",
+     "relation": "corp_facility_quarter",
+     "required_fields": [
+      "ecl_sar_mn"
+     ],
+     "required_periods": [
+      "2024Q3",
+      "2024Q4",
+      "2025Q1",
+      "2025Q2",
+      "2025Q3",
+      "2025Q4",
+      "2026Q1",
+      "2026Q2"
+     ],
+     "required_quarters": [],
+     "segment": "supply_chain_finance",
+     "segment_dimension": "product_type"
+    }
+   ],
+   "unavailable": [
+    "subsegment"
+   ]
+  },
+  "evidence": {
+   "dimension": "product_type",
+   "measure": "ecl",
+   "relation": "corp_facility_quarter"
+  },
+  "evidence_url": "",
+  "family": "product_ecl",
+  "headline": "Supply Chain Finance: ECL rose to SAR 730 million",
+  "item_id": "att-34b2782fe9711c5b",
+  "key_numbers": [
+   {
+    "display": "SAR 730 million",
+    "label": "Recognised ECL, 2026Q2"
+   },
+   {
+    "display": "SAR 241 million",
+    "label": "Recognised ECL, 2026Q1"
+   },
+   {
+    "display": "SAR 7,602 million",
+    "label": "Exposure at default, 2026Q2"
+   },
+   {
+    "display": "4.95%",
+    "label": "Share of book"
+   }
+  ],
+  "metric": "ecl",
+  "metric_label": "Recognised ECL",
+  "movement": {
+   "from": 240.86322100000012,
+   "from_display": "SAR 241 million",
+   "to": 729.7556828364177,
+   "to_display": "SAR 730 million",
+   "unit": "SAR million"
+  },
+  "period_noun": "quarter",
+  "possible_drivers": [],
+  "release_fingerprint": "85a4db8b9154f2f99e71158e15b47b037e083bf1ae1a4fbce10150b8415b1f6d",
+  "release_id": "v4-saudi-corporate-20q-v4",
+  "reporting_month": "",
+  "reporting_period": "2026Q2",
+  "reporting_quarter": "2026Q2",
+  "scope": "segment",
+  "score": 0.064312,
+  "section": "attention",
+  "segment": "supply_chain_finance",
+  "segment_dimension": "product_type",
+  "segment_dimension_label": "Product type",
+  "segment_label": "Supply Chain Finance",
+  "severity": "high",
+  "what_changed": "Recognised ECL was SAR 241 million in 2026Q1 and is SAR 730 million in 2026Q2.",
+  "what_to_review_next": [
+   "Whether the increase is new exposure, migration or higher loss rates.",
+   "Which exposures contributed most of the movement.",
+   "Whether coverage moved with it or the book simply grew."
+  ],
+  "why_it_appeared": "It moved 202.98% higher than 2026Q1 on a segment holding 4.95% of the book's exposure at default."
+ },
+ "method": {
+  "candidates_considered": 65,
+  "families": [
+   "sector_stage2",
+   "sector_ecl",
+   "sector_coverage",
+   "sector_pastdue",
+   "product_stage2",
+   "product_ecl",
+   "region_ecl",
+   "sector_downgrades",
+   "sector_watchlist",
+   "sector_breaches",
+   "covenant_breaches",
+   "group_concentration",
+   "sector_ltv"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "method_summary": {
+  "candidates_considered": 65,
+  "families": [
+   "sector_stage2",
+   "sector_ecl",
+   "sector_coverage",
+   "sector_pastdue",
+   "product_stage2",
+   "product_ecl",
+   "region_ecl",
+   "sector_downgrades",
+   "sector_watchlist",
+   "sector_breaches",
+   "covenant_breaches",
+   "group_concentration",
+   "sector_ltv"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "release_fingerprint": "85a4db8b9154f2f99e71158e15b47b037e083bf1ae1a4fbce10150b8415b1f6d",
+ "release_id": "v4-saudi-corporate-20q-v4",
+ "reporting_month": "",
+ "reporting_quarter": ""
+}

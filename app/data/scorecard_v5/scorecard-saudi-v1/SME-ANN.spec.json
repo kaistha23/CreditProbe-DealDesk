@@ -1,0 +1,1022 @@
+{
+ "scorecard_id": "SME-ANN",
+ "name": "SME Scorecard",
+ "version": "1.4",
+ "type": "application",
+ "segment": "SME",
+ "book": "corporate",
+ "owner_key": "borrower_id",
+ "unit_key": "borrower_id",
+ "period_col": "reporting_quarter",
+ "frequency": "quarterly",
+ "development": [
+  "2021Q4",
+  "2023Q2"
+ ],
+ "monitoring": [
+  "2023Q3",
+  "2025Q2"
+ ],
+ "segment_col": "sector",
+ "has_overrides": true,
+ "sample_pct": 100,
+ "description": "Grades SME borrowers (revenue under SAR 30 million) on financials, qualitative score, bureau and Open Banking.",
+ "points": {
+  "base_score": 600.0,
+  "base_odds": 50.0,
+  "pdo": 40.0,
+  "factor": 57.70780163555854,
+  "offset": 374.245752409011
+ },
+ "intercept": 3.4800180693649287,
+ "variables": [
+  {
+   "name": "interest_cover_x",
+   "label": "Interest cover (x)",
+   "type": "numeric",
+   "iv": 0.7574130670912945,
+   "coef": 0.735050259258502,
+   "direction": -1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 3.1710000038146973,
+     "n": 1071,
+     "good": 958,
+     "bad": 113,
+     "share": 0.09996266567108457,
+     "bad_rate": 0.10550887021475257,
+     "woe": -1.3170228020093595,
+     "label": "< 3.17",
+     "points": 16.018092679908207
+    },
+    {
+     "lo": 3.1710000038146973,
+     "hi": 3.625,
+     "n": 1069,
+     "good": 1008,
+     "bad": 61,
+     "share": 0.09977599402650737,
+     "bad_rate": 0.05706267539756782,
+     "woe": -0.6534073449918067,
+     "label": "3.17 to < 3.62",
+     "points": 44.16742242743163
+    },
+    {
+     "lo": 3.625,
+     "hi": 3.8940000534057617,
+     "n": 1068,
+     "good": 1026,
+     "bad": 42,
+     "share": 0.09968265820421877,
+     "bad_rate": 0.03932584269662921,
+     "woe": -0.2661833670449841,
+     "label": "3.62 to < 3.89",
+     "points": 60.59274122630424
+    },
+    {
+     "lo": 3.8940000534057617,
+     "hi": 4.0879998207092285,
+     "n": 1072,
+     "good": 1050,
+     "bad": 22,
+     "share": 0.10005600149337315,
+     "bad_rate": 0.020522388059701493,
+     "woe": 0.39291668350107967,
+     "label": "3.89 to < 4.09",
+     "points": 88.5505358545565
+    },
+    {
+     "lo": 4.0879998207092285,
+     "hi": 4.382999897003174,
+     "n": 2144,
+     "good": 2100,
+     "bad": 44,
+     "share": 0.2001120029867463,
+     "bad_rate": 0.020522388059701493,
+     "woe": 0.403851973863641,
+     "label": "4.09 to < 4.38",
+     "points": 89.01439047253673
+    },
+    {
+     "lo": 4.382999897003174,
+     "hi": 4.6570000648498535,
+     "n": 2146,
+     "good": 2113,
+     "bad": 33,
+     "share": 0.2002986746313235,
+     "bad_rate": 0.01537744641192917,
+     "woe": 0.6939656536022228,
+     "label": "4.38 to < 4.66",
+     "points": 101.320471575486
+    },
+    {
+     "lo": 4.6570000648498535,
+     "hi": Infinity,
+     "n": 2144,
+     "good": 2130,
+     "bad": 14,
+     "share": 0.2001120029867463,
+     "bad_rate": 0.0065298507462686565,
+     "woe": 1.5393737959398368,
+     "label": "\u2265 4.66",
+     "points": 137.18110790974978
+    }
+   ]
+  },
+  {
+   "name": "qualitative_score",
+   "label": "Qualitative score",
+   "type": "numeric",
+   "iv": 0.37196203719895354,
+   "coef": 0.47665604656408533,
+   "direction": -1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 73.26300048828125,
+     "n": 1072,
+     "good": 980,
+     "bad": 92,
+     "share": 0.10005600149337315,
+     "bad_rate": 0.08582089552238806,
+     "woe": -1.0897355264555797,
+     "label": "< 73.26",
+     "points": 41.908635803125264
+    },
+    {
+     "lo": 73.26300048828125,
+     "hi": 74.41999816894531,
+     "n": 1066,
+     "good": 1023,
+     "bad": 43,
+     "share": 0.09949598655964159,
+     "bad_rate": 0.040337711069418386,
+     "woe": -0.2923670605668953,
+     "label": "73.26 to < 74.42",
+     "points": 63.84166885958739
+    },
+    {
+     "lo": 74.41999816894531,
+     "hi": 77.51000213623047,
+     "n": 2143,
+     "good": 2067,
+     "bad": 76,
+     "share": 0.2000186671644577,
+     "bad_rate": 0.03546430237984134,
+     "woe": -0.15378484150824495,
+     "label": "74.42 to < 77.51",
+     "points": 67.65361844335183
+    },
+    {
+     "lo": 77.51000213623047,
+     "hi": 78.13999938964844,
+     "n": 1038,
+     "good": 1013,
+     "bad": 25,
+     "share": 0.09688258353556095,
+     "bad_rate": 0.024084778420038536,
+     "woe": 0.23189698615407306,
+     "label": "77.51 to < 78.14",
+     "points": 78.26248076645162
+    },
+    {
+     "lo": 78.13999938964844,
+     "hi": 81.9000015258789,
+     "n": 3250,
+     "good": 3186,
+     "bad": 64,
+     "share": 0.30334142243793166,
+     "bad_rate": 0.019692307692307693,
+     "woe": 0.44942366337902084,
+     "label": "78.14 to < 81.9",
+     "points": 84.24593760772478
+    },
+    {
+     "lo": 81.9000015258789,
+     "hi": 82.1500015258789,
+     "n": 1071,
+     "good": 1053,
+     "bad": 18,
+     "share": 0.09996266567108457,
+     "bad_rate": 0.01680672268907563,
+     "woe": 0.5915129735863635,
+     "label": "81.9 to < 82.15",
+     "points": 88.15435595014594
+    },
+    {
+     "lo": 82.1500015258789,
+     "hi": Infinity,
+     "n": 1074,
+     "good": 1063,
+     "bad": 11,
+     "share": 0.10024267313795035,
+     "bad_rate": 0.010242085661080074,
+     "woe": 1.0763840716974862,
+     "label": "\u2265 82.15",
+     "points": 101.49159497820526
+    }
+   ]
+  },
+  {
+   "name": "ebitda_margin_pct",
+   "label": "EBITDA margin (%)",
+   "type": "numeric",
+   "iv": 0.35861389850847136,
+   "coef": 0.27197266074180804,
+   "direction": -1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 10.812300109863282,
+     "n": 1072,
+     "good": 989,
+     "bad": 83,
+     "share": 0.10005600149337315,
+     "bad_rate": 0.07742537313432836,
+     "woe": -0.9782363943877905,
+     "label": "< 10.81",
+     "points": 56.53037732820479
+    },
+    {
+     "lo": 10.812300109863282,
+     "hi": 12.857000160217284,
+     "n": 1071,
+     "good": 1021,
+     "bad": 50,
+     "share": 0.09996266567108457,
+     "bad_rate": 0.04668534080298786,
+     "woe": -0.4435354495972386,
+     "label": "10.81 to < 12.86",
+     "points": 64.9224789039981
+    },
+    {
+     "lo": 12.857000160217284,
+     "hi": 16.545600128173827,
+     "n": 2143,
+     "good": 2063,
+     "bad": 80,
+     "share": 0.2000186671644577,
+     "bad_rate": 0.03733084461035931,
+     "woe": -0.20668786280548243,
+     "label": "12.86 to < 16.55",
+     "points": 68.63978859963838
+    },
+    {
+     "lo": 16.545600128173827,
+     "hi": 18.26949977874756,
+     "n": 1071,
+     "good": 1043,
+     "bad": 28,
+     "share": 0.09996266567108457,
+     "bad_rate": 0.026143790849673203,
+     "woe": 0.14984211166904932,
+     "label": "16.55 to < 18.27",
+     "points": 74.23550671039892
+    },
+    {
+     "lo": 18.26949977874756,
+     "hi": 24.123599624633787,
+     "n": 3214,
+     "good": 3152,
+     "bad": 62,
+     "share": 0.2999813328355423,
+     "bad_rate": 0.019290603609209707,
+     "woe": 0.47019498352311745,
+     "label": "18.27 to < 24.12",
+     "points": 79.26342720855611
+    },
+    {
+     "lo": 24.123599624633787,
+     "hi": 26.19349994659424,
+     "n": 1071,
+     "good": 1056,
+     "bad": 15,
+     "share": 0.09996266567108457,
+     "bad_rate": 0.014005602240896359,
+     "woe": 0.7712872855573092,
+     "label": "24.12 to < 26.19",
+     "points": 83.98905413511812
+    },
+    {
+     "lo": 26.19349994659424,
+     "hi": Infinity,
+     "n": 1072,
+     "good": 1061,
+     "bad": 11,
+     "share": 0.10005600149337315,
+     "bad_rate": 0.010261194029850746,
+     "woe": 1.0745017182005052,
+     "label": "\u2265 26.19",
+     "points": 88.74798778350541
+    }
+   ]
+  },
+  {
+   "name": "cash_conversion_pct",
+   "label": "Cash conversion (%)",
+   "type": "numeric",
+   "iv": 0.3374291062427323,
+   "coef": 0.2880554494984059,
+   "direction": -1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 76.65329971313477,
+     "n": 1072,
+     "good": 978,
+     "bad": 94,
+     "share": 0.10005600149337315,
+     "bad_rate": 0.08768656716417911,
+     "woe": -1.1131685752371672,
+     "label": "< 76.65",
+     "points": 53.37948985018236
+    },
+    {
+     "lo": 76.65329971313477,
+     "hi": 77.39800262451172,
+     "n": 1068,
+     "good": 1027,
+     "bad": 41,
+     "share": 0.09968265820421877,
+     "bad_rate": 0.03838951310861423,
+     "woe": -0.24139900843986414,
+     "label": "76.65 to < 77.4",
+     "points": 67.87095610529816
+    },
+    {
+     "lo": 77.39800262451172,
+     "hi": 77.7969970703125,
+     "n": 1072,
+     "good": 1033,
+     "bad": 39,
+     "share": 0.10005600149337315,
+     "bad_rate": 0.036380597014925374,
+     "woe": -0.18618382035885436,
+     "label": "77.4 to < 77.8",
+     "points": 68.78880075750988
+    },
+    {
+     "lo": 77.7969970703125,
+     "hi": 77.9729995727539,
+     "n": 1066,
+     "good": 1034,
+     "bad": 32,
+     "share": 0.09949598655964159,
+     "bad_rate": 0.0300187617260788,
+     "woe": 0.009843880276304708,
+     "label": "77.8 to < 77.97",
+     "points": 72.04737838744319
+    },
+    {
+     "lo": 77.9729995727539,
+     "hi": Infinity,
+     "n": 6436,
+     "good": 6313,
+     "bad": 123,
+     "share": 0.6007093522493934,
+     "bad_rate": 0.01911124922311995,
+     "woe": 0.48361479323710205,
+     "label": "\u2265 77.97",
+     "points": 79.92289441749881
+    }
+   ]
+  },
+  {
+   "name": "sector",
+   "label": "Sector",
+   "type": "categorical",
+   "iv": 0.10095187301201025,
+   "coef": 0.20307856301662533,
+   "direction": 0,
+   "bins": [
+    {
+     "cats": [
+      "Construction"
+     ],
+     "n": 1323,
+     "good": 1267,
+     "bad": 56,
+     "share": 0.12348329288781035,
+     "bad_rate": 0.042328042328042326,
+     "woe": -0.34002843026065815,
+     "label": "Construction",
+     "points": 67.89887599856473
+    },
+    {
+     "cats": [
+      "Real Estate"
+     ],
+     "n": 1206,
+     "good": 1157,
+     "bad": 49,
+     "share": 0.11256300168004481,
+     "bad_rate": 0.0406301824212272,
+     "woe": -0.2985444111878566,
+     "label": "Real Estate",
+     "points": 68.38503623799055
+    },
+    {
+     "cats": [
+      "Manufacturing"
+     ],
+     "n": 979,
+     "good": 951,
+     "bad": 28,
+     "share": 0.09137577002053388,
+     "bad_rate": 0.028600612870275793,
+     "woe": 0.05754607188799818,
+     "label": "Manufacturing",
+     "points": 72.55813803426548
+    },
+    {
+     "cats": [
+      "Transport and Logistics"
+     ],
+     "n": 868,
+     "good": 843,
+     "bad": 25,
+     "share": 0.08101549374649991,
+     "bad_rate": 0.02880184331797235,
+     "woe": 0.04829192224804133,
+     "label": "Transport and Logistics",
+     "points": 72.44968664249585
+    },
+    {
+     "cats": [
+      "Information Technology"
+     ],
+     "n": 767,
+     "good": 753,
+     "bad": 14,
+     "share": 0.07158857569535187,
+     "bad_rate": 0.018252933507170794,
+     "woe": 0.4999908410664203,
+     "label": "Information Technology",
+     "points": 77.743244485475
+    },
+    {
+     "cats": [
+      "Retail Trade"
+     ],
+     "n": 739,
+     "good": 714,
+     "bad": 25,
+     "share": 0.06897517267127123,
+     "bad_rate": 0.03382949932341001,
+     "woe": -0.1176849823680594,
+     "label": "Retail Trade",
+     "points": 70.5045672087758
+    },
+    {
+     "cats": [
+      "Chemicals"
+     ],
+     "n": 727,
+     "good": 703,
+     "bad": 24,
+     "share": 0.0678551428038081,
+     "bad_rate": 0.033012379642365884,
+     "woe": -0.0931947685698388,
+     "label": "Chemicals",
+     "points": 70.79157334920876
+    },
+    {
+     "cats": [
+      "Hospitality"
+     ],
+     "n": 666,
+     "good": 633,
+     "bad": 33,
+     "share": 0.062161657644203845,
+     "bad_rate": 0.04954954954954955,
+     "woe": -0.5108749666434282,
+     "label": "Hospitality",
+     "points": 65.89668829136218
+    },
+    {
+     "cats": [
+      "Wholesale Trade"
+     ],
+     "n": 650,
+     "good": 635,
+     "bad": 15,
+     "share": 0.060668284487586335,
+     "bad_rate": 0.023076923076923078,
+     "woe": 0.2629825391307066,
+     "label": "Wholesale Trade",
+     "points": 74.96569266213882
+    },
+    {
+     "cats": [
+      "Metals and Mining"
+     ],
+     "n": 638,
+     "good": 625,
+     "bad": 13,
+     "share": 0.059548254620123205,
+     "bad_rate": 0.02037617554858934,
+     "woe": 0.3852721168889807,
+     "label": "Metals and Mining",
+     "points": 76.39883081343294
+    },
+    {
+     "cats": [
+      "Healthcare"
+     ],
+     "n": 622,
+     "good": 605,
+     "bad": 17,
+     "share": 0.058054881463505695,
+     "bad_rate": 0.027331189710610933,
+     "woe": 0.09326415449007745,
+     "label": "Healthcare",
+     "points": 72.97672601049759
+    },
+    {
+     "cats": [
+      "Agriculture and Agri-processing"
+     ],
+     "n": 581,
+     "good": 567,
+     "bad": 14,
+     "share": 0.054228112749673325,
+     "bad_rate": 0.024096385542168676,
+     "woe": 0.21650257235542786,
+     "label": "Agriculture and Agri-processing",
+     "points": 74.42098382531378
+    },
+    {
+     "cats": [
+      "Power and Utilities"
+     ],
+     "n": 503,
+     "good": 495,
+     "bad": 8,
+     "share": 0.046947918611162966,
+     "bad_rate": 0.015904572564612324,
+     "woe": 0.6149116627001707,
+     "label": "Power and Utilities",
+     "points": 79.09002658154982
+    },
+    {
+     "cats": [
+      "Telecommunications"
+     ],
+     "n": 445,
+     "good": 437,
+     "bad": 8,
+     "share": 0.04153444091842449,
+     "bad_rate": 0.017977528089887642,
+     "woe": 0.49042101472779726,
+     "label": "Telecommunications",
+     "points": 77.63109360983579
+    }
+   ]
+  },
+  {
+   "name": "balance_buffer_months",
+   "label": "Balance buffer (months)",
+   "type": "numeric",
+   "iv": 0.02786814863220892,
+   "coef": 0.392497536885278,
+   "direction": -1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 1.649999976158142,
+     "n": 1065,
+     "good": 1022,
+     "bad": 43,
+     "share": 0.099402650737353,
+     "bad_rate": 0.04037558685446009,
+     "woe": -0.2933445777512827,
+     "label": "< 1.65",
+     "points": 65.23943855056595
+    },
+    {
+     "lo": 1.649999976158142,
+     "hi": 2.130000114440918,
+     "n": 1074,
+     "good": 1035,
+     "bad": 39,
+     "share": 0.10024267313795035,
+     "bad_rate": 0.036312849162011177,
+     "woe": -0.18425051864503852,
+     "label": "1.65 to < 2.13",
+     "points": 67.71043753542381
+    },
+    {
+     "lo": 2.130000114440918,
+     "hi": 2.9000000953674316,
+     "n": 2134,
+     "good": 2061,
+     "bad": 73,
+     "share": 0.19917864476386038,
+     "bad_rate": 0.03420805998125586,
+     "woe": -0.11668578164543739,
+     "label": "2.13 to < 2.9",
+     "points": 69.24079031453905
+    },
+    {
+     "lo": 2.9000000953674316,
+     "hi": 6.420000076293945,
+     "n": 5362,
+     "good": 5213,
+     "bad": 149,
+     "share": 0.5004666791114429,
+     "bad_rate": 0.027788138754196196,
+     "woe": 0.10112077382530538,
+     "label": "2.9 to < 6.42",
+     "points": 74.17414582328817
+    },
+    {
+     "lo": 6.420000076293945,
+     "hi": Infinity,
+     "n": 1079,
+     "good": 1054,
+     "bad": 25,
+     "share": 0.10070935224939331,
+     "bad_rate": 0.023169601482854494,
+     "woe": 0.2715540201808476,
+     "label": "\u2265 6.42",
+     "points": 78.03448782706708
+    }
+   ]
+  },
+  {
+   "name": "region",
+   "label": "Region",
+   "type": "categorical",
+   "iv": 0.02427967617708256,
+   "coef": 1.140183582944224,
+   "direction": 0,
+   "bins": [
+    {
+     "cats": [
+      "Eastern Province"
+     ],
+     "n": 2723,
+     "good": 2649,
+     "bad": 74,
+     "share": 0.25415344409184243,
+     "bad_rate": 0.027175908923980904,
+     "woe": 0.1207375689737016,
+     "label": "Eastern Province",
+     "points": 79.8279718551505
+    },
+    {
+     "cats": [
+      "Riyadh"
+     ],
+     "n": 2568,
+     "good": 2476,
+     "bad": 92,
+     "share": 0.23968639163711034,
+     "bad_rate": 0.03582554517133956,
+     "woe": -0.16319662006368835,
+     "label": "Riyadh",
+     "points": 61.145815449898194
+    },
+    {
+     "cats": [
+      "Makkah"
+     ],
+     "n": 1964,
+     "good": 1910,
+     "bad": 54,
+     "share": 0.18331155497479934,
+     "bad_rate": 0.0274949083503055,
+     "woe": 0.10633003764415509,
+     "label": "Makkah",
+     "points": 78.8799924849144
+    },
+    {
+     "cats": [
+      "Madinah"
+     ],
+     "n": 958,
+     "good": 919,
+     "bad": 39,
+     "share": 0.0894157177524734,
+     "bad_rate": 0.0407098121085595,
+     "woe": -0.30306015543630166,
+     "label": "Madinah",
+     "points": 51.94314615501236
+    },
+    {
+     "cats": [
+      "Qassim"
+     ],
+     "n": 698,
+     "good": 679,
+     "bad": 19,
+     "share": 0.06514840395743887,
+     "bad_rate": 0.027220630372492838,
+     "woe": 0.10035324044789612,
+     "label": "Qassim",
+     "points": 78.48673424291988
+    },
+    {
+     "cats": [
+      "Hail"
+     ],
+     "n": 531,
+     "good": 518,
+     "bad": 13,
+     "share": 0.049561321635243606,
+     "bad_rate": 0.02448210922787194,
+     "woe": 0.19766081465159696,
+     "label": "Hail",
+     "points": 84.88932819207561
+    },
+    {
+     "cats": [
+      "Asir"
+     ],
+     "n": 510,
+     "good": 495,
+     "bad": 15,
+     "share": 0.047601269367183126,
+     "bad_rate": 0.029411764705882353,
+     "woe": 0.01413780227124037,
+     "label": "Asir",
+     "points": 72.81397498126034
+    },
+    {
+     "cats": [
+      "Tabuk",
+      "Northern Borders",
+      "Najran"
+     ],
+     "other": true,
+     "n": 762,
+     "good": 739,
+     "bad": 23,
+     "share": 0.0711218965839089,
+     "bad_rate": 0.030183727034120734,
+     "woe": -0.0016156665728600435,
+     "label": "Other",
+     "points": 71.77743630351767
+    }
+   ]
+  },
+  {
+   "name": "returned_payments_q",
+   "label": "Returned payments, quarter",
+   "type": "numeric",
+   "iv": 0.021095658654263008,
+   "coef": 0.5193533395491495,
+   "direction": 1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 1.0,
+     "n": 8511,
+     "good": 8269,
+     "bad": 242,
+     "share": 0.7943811834982266,
+     "bad_rate": 0.028433791563858536,
+     "woe": 0.078738088746709,
+     "label": "< 1",
+     "points": 74.24358185186628
+    },
+    {
+     "lo": 1.0,
+     "hi": Infinity,
+     "n": 2203,
+     "good": 2116,
+     "bad": 87,
+     "share": 0.20561881650177338,
+     "bad_rate": 0.03949160236041761,
+     "woe": -0.26470926097619146,
+     "label": "\u2265 1",
+     "points": 63.95021080222572
+    }
+   ]
+  }
+ ],
+ "excluded": [
+  {
+   "name": "leverage_x",
+   "label": "Leverage (x)",
+   "iv": 0.5483995025318363,
+   "type": "numeric"
+  },
+  {
+   "name": "dscr_x",
+   "label": "Debt service cover (x)",
+   "iv": 0.7489168129732835,
+   "type": "numeric"
+  },
+  {
+   "name": "current_ratio_x",
+   "label": "Current ratio (x)",
+   "iv": 0.3343176390117869,
+   "type": "numeric"
+  },
+  {
+   "name": "return_on_assets_pct",
+   "label": "Return on assets (%)",
+   "iv": 0.5481864391819843,
+   "type": "numeric"
+  },
+  {
+   "name": "revenue_growth_pct",
+   "label": "Revenue growth, year on year (%)",
+   "iv": 0.3079141205447758,
+   "type": "numeric"
+  },
+  {
+   "name": "enquiries_q",
+   "label": "Bureau enquiries, quarter",
+   "iv": 0.007959002688703783,
+   "type": "numeric"
+  },
+  {
+   "name": "external_dpd_days",
+   "label": "External days past due",
+   "iv": 0.0050699740905074675,
+   "type": "numeric"
+  },
+  {
+   "name": "relationship_tier",
+   "label": "Relationship tier",
+   "iv": 0.003911824394884238,
+   "type": "categorical"
+  }
+ ],
+ "grades": [
+  {
+   "low": 678.7267951292538,
+   "high": null,
+   "pd_dev": 0.008527131782945736,
+   "n_dev": 644,
+   "pd": 0.008527131782945736,
+   "grade": "G1"
+  },
+  {
+   "low": 656.0548684306663,
+   "high": 678.7267951292538,
+   "pd_dev": 0.006742738589211619,
+   "n_dev": 963,
+   "pd": 0.008527131782945736,
+   "grade": "G2"
+  },
+  {
+   "low": 633.4092870692526,
+   "high": 656.0548684306663,
+   "pd_dev": 0.009684361549497847,
+   "n_dev": 1393,
+   "pd": 0.009684361549497847,
+   "grade": "G3"
+  },
+  {
+   "low": 615.6154866744662,
+   "high": 633.4092870692526,
+   "pd_dev": 0.012991339107261825,
+   "n_dev": 1500,
+   "pd": 0.012991339107261825,
+   "grade": "G4"
+  },
+  {
+   "low": 594.9504449400886,
+   "high": 615.6154866744662,
+   "pd_dev": 0.019533527696793004,
+   "n_dev": 1714,
+   "pd": 0.019533527696793004,
+   "grade": "G5"
+  },
+  {
+   "low": 565.5224751678422,
+   "high": 594.9504449400886,
+   "pd_dev": 0.024972557628979142,
+   "n_dev": 1821,
+   "pd": 0.024972557628979142,
+   "grade": "G6"
+  },
+  {
+   "low": 524.2302451237813,
+   "high": 565.5224751678422,
+   "pd_dev": 0.05006218905472637,
+   "n_dev": 1607,
+   "pd": 0.05006218905472637,
+   "grade": "G7"
+  },
+  {
+   "low": null,
+   "high": 524.2302451237813,
+   "pd_dev": 0.11975768872320597,
+   "n_dev": 1072,
+   "pd": 0.11975768872320597,
+   "grade": "G8"
+  }
+ ],
+ "candidates": [
+  {
+   "name": "leverage_x",
+   "label": "Leverage (x)",
+   "type": "numeric"
+  },
+  {
+   "name": "dscr_x",
+   "label": "Debt service cover (x)",
+   "type": "numeric"
+  },
+  {
+   "name": "interest_cover_x",
+   "label": "Interest cover (x)",
+   "type": "numeric"
+  },
+  {
+   "name": "current_ratio_x",
+   "label": "Current ratio (x)",
+   "type": "numeric"
+  },
+  {
+   "name": "ebitda_margin_pct",
+   "label": "EBITDA margin (%)",
+   "type": "numeric"
+  },
+  {
+   "name": "return_on_assets_pct",
+   "label": "Return on assets (%)",
+   "type": "numeric"
+  },
+  {
+   "name": "cash_conversion_pct",
+   "label": "Cash conversion (%)",
+   "type": "numeric"
+  },
+  {
+   "name": "revenue_growth_pct",
+   "label": "Revenue growth, year on year (%)",
+   "type": "numeric"
+  },
+  {
+   "name": "qualitative_score",
+   "label": "Qualitative score",
+   "type": "numeric"
+  },
+  {
+   "name": "enquiries_q",
+   "label": "Bureau enquiries, quarter",
+   "type": "numeric"
+  },
+  {
+   "name": "external_dpd_days",
+   "label": "External days past due",
+   "type": "numeric"
+  },
+  {
+   "name": "balance_buffer_months",
+   "label": "Balance buffer (months)",
+   "type": "numeric"
+  },
+  {
+   "name": "returned_payments_q",
+   "label": "Returned payments, quarter",
+   "type": "numeric"
+  },
+  {
+   "name": "sector",
+   "label": "Sector",
+   "type": "categorical"
+  },
+  {
+   "name": "relationship_tier",
+   "label": "Relationship tier",
+   "type": "categorical"
+  },
+  {
+   "name": "region",
+   "label": "Region",
+   "type": "categorical"
+  }
+ ],
+ "periods": [
+  "2021Q4",
+  "2022Q1",
+  "2022Q2",
+  "2022Q3",
+  "2022Q4",
+  "2023Q1",
+  "2023Q2",
+  "2023Q3",
+  "2023Q4",
+  "2024Q1",
+  "2024Q2",
+  "2024Q3",
+  "2024Q4",
+  "2025Q1",
+  "2025Q2",
+  "2025Q3",
+  "2025Q4",
+  "2026Q1",
+  "2026Q2"
+ ],
+ "rows": 28542,
+ "development_rows": 10714,
+ "development_defaults": 343,
+ "last_matured": "2025Q2"
+}

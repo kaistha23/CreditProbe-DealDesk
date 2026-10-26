@@ -1,0 +1,210 @@
+{
+ "module": "r4",
+ "branch": "v5/r4",
+ "commit_code": "0d3454a",
+ "gate_run": "evidence/v5/gate/r4-20261011T180206Z.json",
+ "items": [
+  {
+   "item": "1. frozen guard",
+   "pass": true,
+   "detail": "FROZEN GUARD PASS (manifest): 148 frozen files match 831044ce2574 (registered exceptions, each exactly its patch: FX-7 backend/cockpit_v4/credit_policy.py; FX-2 backend/cockpit_v4/finalization.py; FX-A4 backend/cockpit_v4/product_knowledge.py; FX-12 frontend/src/components/cockpit-v4/answer-actions.tsx; FX-14a frontend/src/components/cockpit-v4/attention-drawer.tsx; FX-14d frontend/src/components/cockpit-v4/attention-panel.tsx; FX-14b frontend/src/components/cockpit-v4/cockpit-v4-home.tsx; FX-14e frontend/src/components/cockpit-v4/data-books.tsx; FX-14c frontend/src/components/cockpit-v4/ecl-panel.tsx; FX-1 frontend/src/components/cockpit-v4/visuals.tsx)",
+   "seconds": 0.1
+  },
+  {
+   "item": "2. sync tests",
+   "pass": true,
+   "detail": "80/80",
+   "seconds": 189.7
+  },
+  {
+   "item": "3a. r4 tests",
+   "pass": true,
+   "detail": "702/702",
+   "seconds": 1125.4
+  },
+  {
+   "item": "3b. EWS data suite (restoration)",
+   "pass": true,
+   "detail": "tests=296 passed=296 failed=0",
+   "seconds": 20.5
+  },
+  {
+   "item": "3b. EWS live API suite (restoration)",
+   "pass": true,
+   "detail": "\"passed\": 130,",
+   "seconds": 9.5
+  },
+  {
+   "item": "3b. frontend unit tests",
+   "pass": true,
+   "detail": "# tests 645 | # pass 645 | # fail 0",
+   "seconds": 16.1
+  },
+  {
+   "item": "3b. Deal Desk domain build check",
+   "pass": true,
+   "detail": "",
+   "seconds": 49.1
+  },
+  {
+   "item": "3b. frontend typecheck",
+   "pass": true,
+   "detail": "",
+   "seconds": 43.0
+  },
+  {
+   "item": "4b. Cockpit panels equal the post-rescale baseline",
+   "pass": true,
+   "detail": "PROBLEMS: 0",
+   "seconds": 0.3
+  },
+  {
+   "item": "5. browser smoke",
+   "pass": true,
+   "detail": "32/32 browser checks passed",
+   "seconds": 52.9
+  },
+  {
+   "item": "4a. Cockpit suite tests/cockpit_v4 (run in parallel with the gate, same commit)",
+   "pass": true,
+   "detail": "3437/3445 pass; exactly the 8 declared exceptions; no unexpected failure, none of the 8 passing"
+  },
+  {
+   "item": "6. UAT sweep (run in parallel groups of parts, each part complete; every part of ops/uat_sweep.py)",
+   "pass": true,
+   "detail": "518/518 steps, 7432 checks, 25 parts",
+   "parts": {
+    "cockpit": {
+     "passed": 6,
+     "steps": 6,
+     "checks": 35
+    },
+    "core": {
+     "passed": 18,
+     "steps": 18,
+     "checks": 212
+    },
+    "share": {
+     "passed": 1,
+     "steps": 1,
+     "checks": 10
+    },
+    "attention": {
+     "passed": 4,
+     "steps": 4,
+     "checks": 111
+    },
+    "mail": {
+     "passed": 12,
+     "steps": 12,
+     "checks": 153
+    },
+    "home": {
+     "passed": 4,
+     "steps": 4,
+     "checks": 43
+    },
+    "workspace": {
+     "passed": 5,
+     "steps": 5,
+     "checks": 21
+    },
+    "work": {
+     "passed": 20,
+     "steps": 20,
+     "checks": 177
+    },
+    "cohort": {
+     "passed": 16,
+     "steps": 16,
+     "checks": 194
+    },
+    "scorecard": {
+     "passed": 9,
+     "steps": 9,
+     "checks": 132
+    },
+    "playbook": {
+     "passed": 9,
+     "steps": 9,
+     "checks": 69
+    },
+    "corporate": {
+     "passed": 137,
+     "steps": 137,
+     "checks": 2055
+    },
+    "ai_work": {
+     "passed": 6,
+     "steps": 6,
+     "checks": 40
+    },
+    "dealdesk": {
+     "passed": 9,
+     "steps": 9,
+     "checks": 78
+    },
+    "retail": {
+     "passed": 117,
+     "steps": 117,
+     "checks": 1604
+    },
+    "r4-cards": {
+     "passed": 6,
+     "steps": 6,
+     "checks": 440
+    },
+    "r4-scorecard": {
+     "passed": 5,
+     "steps": 5,
+     "checks": 46
+    },
+    "modules": {
+     "passed": 62,
+     "steps": 62,
+     "checks": 462
+    },
+    "r4-g1": {
+     "passed": 2,
+     "steps": 2,
+     "checks": 42
+    },
+    "r4-b360": {
+     "passed": 18,
+     "steps": 18,
+     "checks": 346
+    },
+    "r4-data": {
+     "passed": 2,
+     "steps": 2,
+     "checks": 32
+    },
+    "labels": {
+     "passed": 3,
+     "steps": 3,
+     "checks": 102
+    },
+    "graph": {
+     "passed": 5,
+     "steps": 5,
+     "checks": 256
+    },
+    "exports": {
+     "passed": 2,
+     "steps": 2,
+     "checks": 24
+    },
+    "r4-ews": {
+     "passed": 40,
+     "steps": 40,
+     "checks": 748
+    }
+   }
+  }
+ ],
+ "scans": {
+  "label_scan": "0 distinct hits on every route",
+  "loose_text_scan": "0 known phrases on 28 screens"
+ },
+ "passed": true
+}

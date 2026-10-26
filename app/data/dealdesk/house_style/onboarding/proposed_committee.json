@@ -1,0 +1,342 @@
+{
+ "status": "proposed",
+ "session_id": "example (fictional policy)",
+ "questions": [
+  {
+   "id": "CQ-other_banks",
+   "type": "committee_question",
+   "metric": "other_banks",
+   "label": "Are the facilities at other banks confirmed by facility letters and the bureau?",
+   "question": "Are the facilities at other banks confirmed by facility letters and the bureau?",
+   "raised_in": 4,
+   "of": 6,
+   "memos": [
+    "PRP-A-GMC-OPINION",
+    "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+    "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+    "ONB-SHB-M03-Tilal-Orbit-Logistics-eac596"
+   ],
+   "quote": "AED 1,570m of new facilities at 3 other banks with no facility letters;",
+   "quotes": [
+    {
+     "doc_id": "PRP-A-GMC-OPINION",
+     "quote": "AED 1,570m of new facilities at 3 other banks with no facility letters;"
+    },
+    {
+     "doc_id": "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+     "quote": "Facility letters for the new facilities at other banks to be obtained and reconciled with the AECB report before drawdown."
+    },
+    {
+     "doc_id": "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "quote": "The committee asked whether the facilities at other banks match the bureau report."
+    },
+    {
+     "doc_id": "ONB-SHB-M03-Tilal-Orbit-Logistics-eac596",
+     "quote": "The committee asked for facility letters for the borrowings at other banks."
+    }
+   ],
+   "answer_pattern": "other banks?|bureau|AECB|SIMAH|CBRBR",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter answers it; the review flags a draft that leaves it open",
+   "learned_from": {
+    "documents": [
+     "PRP-A-GMC-OPINION",
+     "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+     "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "ONB-SHB-M03-Tilal-Orbit-Logistics-eac596"
+    ],
+    "quote": "AED 1,570m of new facilities at 3 other banks with no facility letters;",
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "CQ-pricing",
+   "type": "committee_question",
+   "metric": "pricing",
+   "label": "Does the pricing clear the hurdle?",
+   "question": "Does the pricing clear the hurdle?",
+   "raised_in": 4,
+   "of": 6,
+   "memos": [
+    "PRP-A-GMC-OPINION",
+    "PRP-B-ASB-OPINION",
+    "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+    "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c"
+   ],
+   "quote": "Relationship RAROC 14.2% including fees and deposits against a hurdle of 16.0%: below the hurdle.",
+   "quotes": [
+    {
+     "doc_id": "PRP-A-GMC-OPINION",
+     "quote": "Relationship RAROC 14.2% including fees and deposits against a hurdle of 16.0%: below the hurdle."
+    },
+    {
+     "doc_id": "PRP-B-ASB-OPINION",
+     "quote": "Relationship RAROC 11.5% including fees and deposits against a hurdle of 16.0%: below the hurdle."
+    },
+    {
+     "doc_id": "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "quote": "Pricing does not clear the hurdle;"
+    },
+    {
+     "doc_id": "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c",
+     "quote": "Pricing at 275 bps is below the hurdle for a B+ obligor."
+    }
+   ],
+   "answer_pattern": "RAROC|hurdle",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter answers it; the review flags a draft that leaves it open",
+   "learned_from": {
+    "documents": [
+     "PRP-A-GMC-OPINION",
+     "PRP-B-ASB-OPINION",
+     "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c"
+    ],
+    "quote": "Relationship RAROC 14.2% including fees and deposits against a hurdle of 16.0%: below the hurdle.",
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "CQ-related_party",
+   "type": "committee_question",
+   "metric": "related_party",
+   "label": "How much is due from related parties, and is it subordinated or settled?",
+   "question": "How much is due from related parties, and is it subordinated or settled?",
+   "raised_in": 4,
+   "of": 6,
+   "memos": [
+    "PRP-A-GMC-OPINION",
+    "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+    "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+    "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c"
+   ],
+   "quote": "the indicators (project delays, related-party dues, unexplained new facilities) are watch triggers under CBUAE CRM SICR guidance but none meets a mandatory Stage 2 criterion today.",
+   "quotes": [
+    {
+     "doc_id": "PRP-A-GMC-OPINION",
+     "quote": "the indicators (project delays, related-party dues, unexplained new facilities) are watch triggers under CBUAE CRM SICR guidance but none meets a mandatory Stage 2 criterion today."
+    },
+    {
+     "doc_id": "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+     "quote": "Amounts due from related parties to be subordinated to the Bank's facilities."
+    },
+    {
+     "doc_id": "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "quote": "Due from related parties to be reduced below AED 10m by the next review."
+    },
+    {
+     "doc_id": "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c",
+     "quote": "The committee asked how much is due from related parties after the change of ownership."
+    }
+   ],
+   "answer_pattern": "related[- ]part|due from|group compan",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter answers it; the review flags a draft that leaves it open",
+   "learned_from": {
+    "documents": [
+     "PRP-A-GMC-OPINION",
+     "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+     "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c"
+    ],
+    "quote": "the indicators (project delays, related-party dues, unexplained new facilities) are watch triggers under CBUAE CRM SICR guidance but none meets a mandatory Stage 2 criterion today.",
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "CQ-audited",
+   "type": "committee_question",
+   "metric": "audited",
+   "label": "Are audited standalone financials available, and is the opinion unqualified?",
+   "question": "Are audited standalone financials available, and is the opinion unqualified?",
+   "raised_in": 3,
+   "of": 6,
+   "memos": [
+    "PRP-B-ASB-OPINION",
+    "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+    "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c"
+   ],
+   "quote": "Qualified audit (Art 7.11f.ii) and connected-obligor default (Art 6.12) are SICR indicators;",
+   "quotes": [
+    {
+     "doc_id": "PRP-B-ASB-OPINION",
+     "quote": "Qualified audit (Art 7.11f.ii) and connected-obligor default (Art 6.12) are SICR indicators;"
+    },
+    {
+     "doc_id": "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "quote": "Audited standalone financial statements of the borrower to be submitted, the auditor to be on the approved list."
+    },
+    {
+     "doc_id": "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c",
+     "quote": "Declined pending a re-assessment of the change of ownership (KYC) and an unqualified audit opinion."
+    }
+   ],
+   "answer_pattern": "audited|auditor|qualif",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter answers it; the review flags a draft that leaves it open",
+   "learned_from": {
+    "documents": [
+     "PRP-B-ASB-OPINION",
+     "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c"
+    ],
+    "quote": "Qualified audit (Art 7.11f.ii) and connected-obligor default (Art 6.12) are SICR indicators;",
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "CQ-stress",
+   "type": "committee_question",
+   "metric": "stress",
+   "label": "Does repayment survive the stress case?",
+   "question": "Does repayment survive the stress case?",
+   "raised_in": 3,
+   "of": 6,
+   "memos": [
+    "PRP-A-GMC-OPINION",
+    "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+    "ONB-SHB-M03-Tilal-Orbit-Logistics-eac596"
+   ],
+   "quote": "Memo's own stress: peak deficit AED 84.6m in month 18 against AED 80m of funded lines",
+   "quotes": [
+    {
+     "doc_id": "PRP-A-GMC-OPINION",
+     "quote": "Memo's own stress: peak deficit AED 84.6m in month 18 against AED 80m of funded lines"
+    },
+    {
+     "doc_id": "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+     "quote": "The committee questioned whether repayment survives the stress case with a six-month delay on the larger project."
+    },
+    {
+     "doc_id": "ONB-SHB-M03-Tilal-Orbit-Logistics-eac596",
+     "quote": "The committee asked what the DSCR is after the deal under the stress case."
+    }
+   ],
+   "answer_pattern": "stress|sensitivit|deficit",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter answers it; the review flags a draft that leaves it open",
+   "learned_from": {
+    "documents": [
+     "PRP-A-GMC-OPINION",
+     "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+     "ONB-SHB-M03-Tilal-Orbit-Logistics-eac596"
+    ],
+    "quote": "Memo's own stress: peak deficit AED 84.6m in month 18 against AED 80m of funded lines",
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "CQ-cro",
+   "type": "committee_question",
+   "metric": "cro",
+   "label": "Has the CRO reviewed the proposal?",
+   "question": "Has the CRO reviewed the proposal?",
+   "raised_in": 2,
+   "of": 6,
+   "memos": [
+    "PRP-A-GMC-OPINION",
+    "PRP-B-ASB-OPINION"
+   ],
+   "quote": "CRO review required (CBUAE CRM Art.",
+   "quotes": [
+    {
+     "doc_id": "PRP-A-GMC-OPINION",
+     "quote": "CRO review required (CBUAE CRM Art."
+    },
+    {
+     "doc_id": "PRP-B-ASB-OPINION",
+     "quote": "CRO review required (CBUAE CRM Art."
+    }
+   ],
+   "answer_pattern": "\\bCRO\\b",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter answers it; the review flags a draft that leaves it open",
+   "learned_from": {
+    "documents": [
+     "PRP-A-GMC-OPINION",
+     "PRP-B-ASB-OPINION"
+    ],
+    "quote": "CRO review required (CBUAE CRM Art.",
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "CQ-projects",
+   "type": "committee_question",
+   "metric": "projects",
+   "label": "Are project delays and extensions of time formalised, and are certified payments collected?",
+   "question": "Are project delays and extensions of time formalised, and are certified payments collected?",
+   "raised_in": 2,
+   "of": 6,
+   "memos": [
+    "PRP-A-GMC-OPINION",
+    "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c"
+   ],
+   "quote": "Project 2 extension of time and the 4 certified payments (AED 23m)",
+   "quotes": [
+    {
+     "doc_id": "PRP-A-GMC-OPINION",
+     "quote": "Project 2 extension of time and the 4 certified payments (AED 23m)"
+    },
+    {
+     "doc_id": "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+     "quote": "The committee questioned whether repayment survives the stress case with a six-month delay on the larger project."
+    }
+   ],
+   "answer_pattern": "extension|delay|certified",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter answers it; the review flags a draft that leaves it open",
+   "learned_from": {
+    "documents": [
+     "PRP-A-GMC-OPINION",
+     "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c"
+    ],
+    "quote": "Project 2 extension of time and the 4 certified payments (AED 23m)",
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "CQ-routing",
+   "type": "committee_question",
+   "metric": "routing",
+   "label": "Is the turnover routing undertaking met?",
+   "question": "Is the turnover routing undertaking met?",
+   "raised_in": 2,
+   "of": 6,
+   "memos": [
+    "PRP-B-ASB-OPINION",
+    "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe"
+   ],
+   "quote": "Undertaking 2.0x the limit;",
+   "quotes": [
+    {
+     "doc_id": "PRP-B-ASB-OPINION",
+     "quote": "Undertaking 2.0x the limit;"
+    },
+    {
+     "doc_id": "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "quote": "Turnover routing undertaking of 70% to be met within six months, monitored quarterly."
+    }
+   ],
+   "answer_pattern": "routing|turnover",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter answers it; the review flags a draft that leaves it open",
+   "learned_from": {
+    "documents": [
+     "PRP-B-ASB-OPINION",
+     "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe"
+    ],
+    "quote": "Undertaking 2.0x the limit;",
+    "kind": "memo"
+   }
+  }
+ ]
+}

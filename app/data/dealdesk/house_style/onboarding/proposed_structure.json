@@ -1,0 +1,690 @@
+{
+ "status": "proposed",
+ "session_id": "example (fictional policy)",
+ "structure": [
+  {
+   "id": "STR-increase-contractor",
+   "type": "structure",
+   "metric": "increase|contractor",
+   "label": "Memo structure: increase, contractor",
+   "kind": "increase",
+   "segment": "contractor",
+   "memos": 5,
+   "sections": [
+    {
+     "key": "opinion",
+     "label": "Credit opinion",
+     "heading": "Opinion",
+     "share": 0.2,
+     "required": false
+    },
+    {
+     "key": "summary",
+     "label": "Executive summary",
+     "heading": "Executive summary",
+     "share": 0.2,
+     "required": false
+    },
+    {
+     "key": "obligor",
+     "label": "Obligor and group",
+     "heading": "Obligor",
+     "share": 0.6,
+     "required": true
+    },
+    {
+     "key": "checks",
+     "label": "Arithmetic and reconciliation",
+     "heading": "Arithmetic and reconciliation",
+     "share": 0.2,
+     "required": false
+    },
+    {
+     "key": "facilities",
+     "label": "Facilities",
+     "heading": "Facilities (AED million)",
+     "share": 0.2,
+     "required": false
+    },
+    {
+     "key": "request",
+     "label": "Request",
+     "heading": "Request",
+     "share": 0.8,
+     "required": true
+    },
+    {
+     "key": "financials",
+     "label": "Financial highlights",
+     "heading": "Financials (SAR m)",
+     "share": 0.8,
+     "required": true
+    },
+    {
+     "key": "gaps",
+     "label": "Information gaps",
+     "heading": "Information gaps (queries to the RM)",
+     "share": 0.2,
+     "required": false
+    },
+    {
+     "key": "risks",
+     "label": "Risks and mitigants",
+     "heading": "Weaknesses and mitigants",
+     "share": 0.4,
+     "required": false
+    },
+    {
+     "key": "security",
+     "label": "Security",
+     "heading": "Security",
+     "share": 0.4,
+     "required": false
+    },
+    {
+     "key": "business",
+     "label": "Business and projects",
+     "heading": "Business case",
+     "share": 0.6,
+     "required": true
+    },
+    {
+     "key": "counter",
+     "label": "Counter-proposals",
+     "heading": "Counter-proposals",
+     "share": 0.2,
+     "required": false
+    },
+    {
+     "key": "conditions",
+     "label": "Conditions and covenants",
+     "heading": "Committee decision and conditions",
+     "share": 0.2,
+     "required": false
+    },
+    {
+     "key": "recommendation",
+     "label": "Recommendation",
+     "heading": "Relationship manager's recommendation",
+     "share": 0.8,
+     "required": true
+    },
+    {
+     "key": "watch",
+     "label": "Watch entry",
+     "heading": "Proposed Accepted Risk Watch entry",
+     "share": 0.2,
+     "required": false
+    },
+    {
+     "key": "other",
+     "label": "other",
+     "heading": "Committee comments",
+     "share": 0.2,
+     "required": false
+    }
+   ],
+   "quote": "Opinion; Executive summary; Obligor; Arithmetic and reconciliation; Facilities (AED million); Request; Financials (SAR m); Information gaps (queries to the RM); Weaknesses and mitigants; Security; Business case; Counter-proposals; Committee decision and conditions; Relationship manager's recommendation; Proposed Accepted Risk Watch entry; Committee comments",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter follows it and the fidelity score checks it",
+   "learned_from": {
+    "documents": [
+     "DD-02",
+     "DD-11",
+     "PRP-A-GMC",
+     "PRP-A-GMC-OPINION",
+     "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c"
+    ],
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "STR-increase-corporate",
+   "type": "structure",
+   "metric": "increase|corporate",
+   "label": "Memo structure: increase, corporate",
+   "kind": "increase",
+   "segment": "corporate",
+   "memos": 4,
+   "sections": [
+    {
+     "key": "summary",
+     "label": "Executive summary",
+     "heading": "Executive summary",
+     "share": 0.25,
+     "required": false
+    },
+    {
+     "key": "obligor",
+     "label": "Obligor and group",
+     "heading": "Obligor",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "financials",
+     "label": "Financial highlights",
+     "heading": "Financials (SAR m)",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "request",
+     "label": "Request",
+     "heading": "Request",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "security",
+     "label": "Security",
+     "heading": "Security",
+     "share": 0.75,
+     "required": true
+    },
+    {
+     "key": "business",
+     "label": "Business and projects",
+     "heading": "Business case",
+     "share": 0.75,
+     "required": true
+    },
+    {
+     "key": "conditions",
+     "label": "Conditions and covenants",
+     "heading": "Committee decision and conditions",
+     "share": 0.25,
+     "required": false
+    },
+    {
+     "key": "recommendation",
+     "label": "Recommendation",
+     "heading": "Relationship manager's recommendation",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "other",
+     "label": "other",
+     "heading": "Committee comments",
+     "share": 0.25,
+     "required": false
+    }
+   ],
+   "quote": "Executive summary; Obligor; Financials (SAR m); Request; Security; Business case; Committee decision and conditions; Relationship manager's recommendation; Committee comments",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter follows it and the fidelity score checks it",
+   "learned_from": {
+    "documents": [
+     "DD-06",
+     "DD-12",
+     "DD-13",
+     "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c"
+    ],
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "STR-increase-trader",
+   "type": "structure",
+   "metric": "increase|trader",
+   "label": "Memo structure: increase, trader",
+   "kind": "increase",
+   "segment": "trader",
+   "memos": 3,
+   "sections": [
+    {
+     "key": "obligor",
+     "label": "Obligor and group",
+     "heading": "Obligor",
+     "share": 0.33,
+     "required": false
+    },
+    {
+     "key": "opinion",
+     "label": "Credit opinion",
+     "heading": "Opinion",
+     "share": 0.33,
+     "required": false
+    },
+    {
+     "key": "request",
+     "label": "Request",
+     "heading": "Request",
+     "share": 0.67,
+     "required": true
+    },
+    {
+     "key": "checks",
+     "label": "Arithmetic and reconciliation",
+     "heading": "Arithmetic and reconciliation",
+     "share": 0.33,
+     "required": false
+    },
+    {
+     "key": "facilities",
+     "label": "Facilities",
+     "heading": "Facilities (AED million)",
+     "share": 0.33,
+     "required": false
+    },
+    {
+     "key": "financials",
+     "label": "Financial highlights",
+     "heading": "Financials (SAR m)",
+     "share": 0.67,
+     "required": true
+    },
+    {
+     "key": "gaps",
+     "label": "Information gaps",
+     "heading": "Information gaps (queries to the RM)",
+     "share": 0.33,
+     "required": false
+    },
+    {
+     "key": "security",
+     "label": "Security",
+     "heading": "Security",
+     "share": 0.33,
+     "required": false
+    },
+    {
+     "key": "risks",
+     "label": "Risks and mitigants",
+     "heading": "Weaknesses and mitigants",
+     "share": 0.33,
+     "required": false
+    },
+    {
+     "key": "business",
+     "label": "Business and projects",
+     "heading": "Business case",
+     "share": 0.67,
+     "required": true
+    },
+    {
+     "key": "counter",
+     "label": "Counter-proposals",
+     "heading": "Counter-proposals",
+     "share": 0.33,
+     "required": false
+    },
+    {
+     "key": "recommendation",
+     "label": "Recommendation",
+     "heading": "Relationship manager's recommendation",
+     "share": 0.67,
+     "required": true
+    },
+    {
+     "key": "watch",
+     "label": "Watch entry",
+     "heading": "Proposed Accepted Risk Watch entry",
+     "share": 0.33,
+     "required": false
+    }
+   ],
+   "quote": "Obligor; Opinion; Request; Arithmetic and reconciliation; Facilities (AED million); Financials (SAR m); Information gaps (queries to the RM); Security; Weaknesses and mitigants; Business case; Counter-proposals; Relationship manager's recommendation; Proposed Accepted Risk Watch entry",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter follows it and the fidelity score checks it",
+   "learned_from": {
+    "documents": [
+     "DD-07",
+     "PRP-B-ASB",
+     "PRP-B-ASB-OPINION"
+    ],
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "STR-new-contractor",
+   "type": "structure",
+   "metric": "new|contractor",
+   "label": "Memo structure: new, contractor",
+   "kind": "new",
+   "segment": "contractor",
+   "memos": 3,
+   "sections": [
+    {
+     "key": "obligor",
+     "label": "Obligor and group",
+     "heading": "Obligor",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "financials",
+     "label": "Financial highlights",
+     "heading": "Financials (SAR m)",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "request",
+     "label": "Request",
+     "heading": "Request",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "security",
+     "label": "Security",
+     "heading": "Security",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "business",
+     "label": "Business and projects",
+     "heading": "Business case",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "recommendation",
+     "label": "Recommendation",
+     "heading": "Relationship manager's recommendation",
+     "share": 1.0,
+     "required": true
+    }
+   ],
+   "quote": "Obligor; Financials (SAR m); Request; Security; Business case; Relationship manager's recommendation",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter follows it and the fidelity score checks it",
+   "learned_from": {
+    "documents": [
+     "DD-03",
+     "DD-05",
+     "DD-09"
+    ],
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "STR-new-corporate",
+   "type": "structure",
+   "metric": "new|corporate",
+   "label": "Memo structure: new, corporate",
+   "kind": "new",
+   "segment": "corporate",
+   "memos": 5,
+   "sections": [
+    {
+     "key": "obligor",
+     "label": "Obligor and group",
+     "heading": "Obligor",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "financials",
+     "label": "Financial highlights",
+     "heading": "Financials (SAR m)",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "request",
+     "label": "Request",
+     "heading": "Request",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "security",
+     "label": "Security",
+     "heading": "Security",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "business",
+     "label": "Business and projects",
+     "heading": "Business case",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "recommendation",
+     "label": "Recommendation",
+     "heading": "Relationship manager's recommendation",
+     "share": 1.0,
+     "required": true
+    }
+   ],
+   "quote": "Obligor; Financials (SAR m); Request; Security; Business case; Relationship manager's recommendation",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter follows it and the fidelity score checks it",
+   "learned_from": {
+    "documents": [
+     "DD-01",
+     "DD-08",
+     "DD-10",
+     "DD-14",
+     "DD-15"
+    ],
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "STR-new-real_estate",
+   "type": "structure",
+   "metric": "new|real_estate",
+   "label": "Memo structure: new, real_estate",
+   "kind": "new",
+   "segment": "real_estate",
+   "memos": 2,
+   "sections": [
+    {
+     "key": "summary",
+     "label": "Executive summary",
+     "heading": "Executive summary",
+     "share": 0.5,
+     "required": false
+    },
+    {
+     "key": "obligor",
+     "label": "Obligor and group",
+     "heading": "Obligor",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "financials",
+     "label": "Financial highlights",
+     "heading": "Financials (SAR m)",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "request",
+     "label": "Request",
+     "heading": "Request",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "security",
+     "label": "Security",
+     "heading": "Security",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "business",
+     "label": "Business and projects",
+     "heading": "Business case",
+     "share": 0.5,
+     "required": false
+    },
+    {
+     "key": "conditions",
+     "label": "Conditions and covenants",
+     "heading": "Committee decision and conditions",
+     "share": 0.5,
+     "required": false
+    },
+    {
+     "key": "recommendation",
+     "label": "Recommendation",
+     "heading": "Relationship manager's recommendation",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "other",
+     "label": "other",
+     "heading": "Committee comments",
+     "share": 0.5,
+     "required": false
+    }
+   ],
+   "quote": "Executive summary; Obligor; Financials (SAR m); Request; Security; Business case; Committee decision and conditions; Relationship manager's recommendation; Committee comments",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter follows it and the fidelity score checks it",
+   "learned_from": {
+    "documents": [
+     "DD-04",
+     "ONB-SHB-M03-Tilal-Orbit-Logistics-eac596"
+    ],
+    "kind": "memo"
+   }
+  },
+  {
+   "id": "STR-renewal-trader",
+   "type": "structure",
+   "metric": "renewal|trader",
+   "label": "Memo structure: renewal, trader",
+   "kind": "renewal",
+   "segment": "trader",
+   "memos": 1,
+   "sections": [
+    {
+     "key": "summary",
+     "label": "Executive summary",
+     "heading": "Executive summary",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "obligor",
+     "label": "Obligor and group",
+     "heading": "Obligor and group",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "request",
+     "label": "Request",
+     "heading": "Facilities and request",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "financials",
+     "label": "Financial highlights",
+     "heading": "Financial analysis",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "conduct",
+     "label": "Account conduct and bureau",
+     "heading": "Account conduct and bureau report",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "recommendation",
+     "label": "Recommendation",
+     "heading": "Recommendation",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "conditions",
+     "label": "Conditions and covenants",
+     "heading": "Committee decision and conditions",
+     "share": 1.0,
+     "required": true
+    },
+    {
+     "key": "other",
+     "label": "other",
+     "heading": "Committee comments",
+     "share": 1.0,
+     "required": true
+    }
+   ],
+   "quote": "Executive summary; Obligor and group; Facilities and request; Financial analysis; Account conduct and bureau report; Recommendation; Committee decision and conditions; Committee comments",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "the drafter follows it and the fidelity score checks it",
+   "learned_from": {
+    "documents": [
+     "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe"
+    ],
+    "kind": "memo"
+   }
+  }
+ ],
+ "language": [
+  {
+   "id": "LANG-house",
+   "type": "language",
+   "metric": "house_language",
+   "label": "House language (Session P profile)",
+   "group": "house-ksa|new|corporate",
+   "documents": 5,
+   "phrases": [
+    "@ recommends the facility",
+    "covenant package standard",
+    "facility as requested",
+    "recommends the facility",
+    "recommends the facility as",
+    "the facility as requested"
+   ],
+   "openers": [],
+   "guide": "# House style: KSA reference house, new, corporate\n\nDerived from 5 documents (weighted 5.0); \n\n## Structure\n\n1. **Obligor** (Obligor and group; business voice; in 100% of memos; prose). Table: Field | Value.\n2. **Financials (SAR m)** (Financial highlights; business voice; in 100% of memos; prose). Table: Item | 2023 | 2024 | 2025 | 2026 P | 2027 P | 2028 P.\n3. **Request** (Request; business voice; in 100% of memos; prose). Table: Term | Requested.\n4. **Security** (Security; business voice; in 100% of memos; prose). Table: ID | Type | Value | Currency | Valuation date | Offered.\n5. **Business case** (Business and projects; business voice; in 100% of memos; prose). Table: Ancillary income (SAR m p.a.) | Amount.\n6. **Relationship manager's recommendation** (Recommendation; business voice; in 100% of memos; prose).\n\n## Numbers\n\n- Money: currency first, unit 'm', 1 decimal(s), thousands separator (e.g. AED 212.4m).\n- Percentages written with '%'; multiples with 'x'.\n\n## Voice and tone\n\n- **Business unit:** 9.64 words a sentence (sd 7.4); hedges 0.0 per 100 words; first person 0.0 per 100 words; passive in 0% of sentences.\n\n- Spelling: British.\n\n## Standard phrases and openers\n\n- \"@ recommends the facility\"\n- \"covenant package standard\"\n- \"facility as requested\"\n- \"recommends the facility\"\n- \"recommends the facility as\"\n- \"the facility as requested\"\n- Security: opens with \"covenant package standard\"; \"collateral none offered\"\n- Relationship manager's recommendation: opens with \"@ recommends the\"\n\n## Recommendation wording\n\n- \"@ recommends the facility as requested debottlenecking capex at\"\n- \"@ recommends the facility as requested grid reinforcement programme\"\n- \"@ recommends the facility as requested ijara of diagnostic\"\n- \"@ recommends the facility as requested purchase of packaging\"\n\n_'@' stands for a name and '#' for a figure: phrases never carry a client name or a number._\n",
+   "quote": "@ recommends the facility; covenant package standard; facility as requested; recommends the facility",
+   "status": "proposed",
+   "checkability": "auto",
+   "why": "accepted, the memos join the house-style corpus and the drafter writes in this language",
+   "learned_from": {
+    "documents": [
+     "DD-01",
+     "DD-02",
+     "DD-03",
+     "DD-04",
+     "DD-05",
+     "DD-06",
+     "DD-07",
+     "DD-08",
+     "DD-09",
+     "DD-10",
+     "DD-11",
+     "DD-12",
+     "DD-13",
+     "DD-14",
+     "DD-15",
+     "PRP-A-GMC",
+     "PRP-A-GMC-OPINION",
+     "PRP-B-ASB",
+     "PRP-B-ASB-OPINION",
+     "ONB-SHB-M01-Qasr-Lumen-Contracting-20375c",
+     "ONB-SHB-M02-Marjan-Vale-Trading-14a7fe",
+     "ONB-SHB-M03-Tilal-Orbit-Logistics-eac596",
+     "ONB-SHB-M04-Sadaf-Prism-Foods-dabb8c"
+    ],
+    "kind": "memo"
+   }
+  }
+ ]
+}

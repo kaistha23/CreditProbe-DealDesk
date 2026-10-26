@@ -1,0 +1,95 @@
+{
+ "document_held_out": {
+  "held_out": "DD-05",
+  "profile_group": "house-uae|new|contractor",
+  "redraft_score": 60.5,
+  "original_score": 50.1,
+  "band": {
+   "low": 50.6,
+   "high": 76.1,
+   "mean": 63.6,
+   "n": 4
+  },
+  "within_band": true,
+  "summary": "DD-05 held out and redrafted from its facts: 60.5 against the house band 50.6\u201376.1 (4 memos, leave-one-out)."
+ },
+ "section_held_out": [
+  {
+   "held_out": "PRP-A-GMC",
+   "sections": [
+    {
+     "section": "request",
+     "redraft_score": 47.9,
+     "original_score": 47.9,
+     "within_band": false,
+     "note": ""
+    },
+    {
+     "section": "facilities",
+     "redraft_score": 49.7,
+     "original_score": 50.0,
+     "within_band": true,
+     "note": ""
+    },
+    {
+     "section": "business",
+     "redraft_score": 47.0,
+     "original_score": 46.7,
+     "within_band": false,
+     "note": ""
+    },
+    {
+     "section": "recommendation",
+     "redraft_score": 48.0,
+     "original_score": 43.8,
+     "within_band": false,
+     "note": ""
+    }
+   ],
+   "profile_group": "house-uae|*|contractor",
+   "band": {
+    "low": 48.4,
+    "high": 98.8,
+    "mean": 67.1,
+    "n": 47
+   },
+   "within_band": false,
+   "summary": "PRP-A-GMC: 4 sections held out and redrafted from the facts; request 47.9, facilities 49.7, business 47.0, recommendation 48.0 against the house band 48.4\u201398.8 (47 sections of the bank's own memos)."
+  },
+  {
+   "held_out": "PRP-B-ASB",
+   "sections": [
+    {
+     "section": "request",
+     "redraft_score": 48.5,
+     "original_score": 48.5,
+     "within_band": true,
+     "note": ""
+    },
+    {
+     "section": "business",
+     "redraft_score": null,
+     "original_score": 50.0,
+     "within_band": true,
+     "note": "no prose: the facts fill the house table, or the data has nothing for this section"
+    },
+    {
+     "section": "recommendation",
+     "redraft_score": 48.9,
+     "original_score": 44.2,
+     "within_band": true,
+     "note": ""
+    }
+   ],
+   "profile_group": "house-uae|*|trader",
+   "band": {
+    "low": 48.4,
+    "high": 98.8,
+    "mean": 67.1,
+    "n": 47
+   },
+   "within_band": true,
+   "summary": "PRP-B-ASB: 3 sections held out and redrafted from the facts; request 48.5, recommendation 48.9 against the house band 48.4\u201398.8 (47 sections of the bank's own memos)."
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "document": "ID_ALIGNMENT",
+ "written_utc": "2026-10-12T01:40:04.864915+00:00",
+ "frozen_source": "/home/claude/creditprobe-v5/data/cockpit_v4_lake",
+ "domains": {
+  "corporate": {
+   "domain": "corporate",
+   "ews_release_id": "ews-saudi-corporate-20q-v4e2",
+   "source_release_id": "v4-saudi-corporate-20q-v4",
+   "exposure_period_keys": {
+    "frozen": 384009,
+    "ews": 384009,
+    "missing_from_ews": 0,
+    "not_in_frozen": 0
+   },
+   "owner_period_keys": {
+    "frozen": 108240,
+    "ews": 108240,
+    "missing_from_ews": 0,
+    "not_in_frozen": 0
+   },
+   "distinct_exposure_ids": 21918,
+   "distinct_exposure_ids_src": 21918,
+   "distinct_owner_ids": 5412,
+   "distinct_owner_ids_src": 5412,
+   "duplicate_exposure_keys": 0,
+   "duplicate_owner_keys": 0,
+   "orphan_exposures_without_owner_row": 0,
+   "orphan_exposures_in_frozen_source": 0,
+   "owner_to_exposure_relationship_diff": {
+    "frozen_not_in_ews": 0,
+    "ews_not_in_frozen": 0
+   },
+   "periods_ews": [
+    "2021Q3",
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+   ],
+   "periods_frozen": [
+    "2021Q3",
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+   ],
+   "latest_period": "2026Q2",
+   "reporting_currency": [
+    "SAR"
+   ],
+   "reporting_currency_frozen": [
+    "SAR"
+   ]
+  },
+  "retail": {
+   "domain": "retail",
+   "ews_release_id": "ews-saudi-retail-20m-v5e1",
+   "source_release_id": "v4-saudi-retail-20m-v5",
+   "exposure_period_keys": {
+    "frozen": 584372,
+    "ews": 584372,
+    "missing_from_ews": 0,
+    "not_in_frozen": 0
+   },
+   "owner_period_keys": {
+    "frozen": 438060,
+    "ews": 438060,
+    "missing_from_ews": 0,
+    "not_in_frozen": 0
+   },
+   "distinct_exposure_ids": 44027,
+   "distinct_exposure_ids_src": 44027,
+   "distinct_owner_ids": 26000,
+   "distinct_owner_ids_src": 26000,
+   "duplicate_exposure_keys": 0,
+   "duplicate_owner_keys": 0,
+   "orphan_exposures_without_owner_row": 0,
+   "orphan_exposures_in_frozen_source": 0,
+   "owner_to_exposure_relationship_diff": {
+    "frozen_not_in_ews": 0,
+    "ews_not_in_frozen": 0
+   },
+   "periods_ews": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ],
+   "periods_frozen": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ],
+   "latest_period": "2026-08",
+   "reporting_currency": [
+    "SAR"
+   ],
+   "reporting_currency_frozen": [
+    "SAR"
+   ]
+  }
+ }
+}

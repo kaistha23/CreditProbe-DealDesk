@@ -1,0 +1,703 @@
+{
+ "id": "pd_cbo_bm1230",
+ "reference": "BM-1230",
+ "kind": "regulation",
+ "title": "Credit Management – Prudential Framework (Annexure to Circular BM-1230)",
+ "issuer": "Central Bank of Oman",
+ "jurisdiction": "Oman",
+ "category": "Regulatory",
+ "effective_from": "2026-07-01",
+ "source_file": "demo_inputs/policy/CBO_BM-1230_Annexure_Credit_Management_Prudential_Framework.pdf",
+ "sections": [
+  {
+   "section": "BM-1230 Intro",
+   "title": "Introduction"
+  },
+  {
+   "section": "BM-1230 §1",
+   "title": "Regulatory Default"
+  },
+  {
+   "section": "BM-1230 §2",
+   "title": "Significant Increase in Credit Risk"
+  },
+  {
+   "section": "BM-1230 §3",
+   "title": "Loan/Financing Review Mechanism in Banks"
+  },
+  {
+   "section": "BM-1230 §4",
+   "title": "Restructuring /Rescheduling"
+  },
+  {
+   "section": "BM-1230 §5",
+   "title": "Classification and ECL Provisioning"
+  },
+  {
+   "section": "BM-1230 §6",
+   "title": "Write-off of Non-Performing Assets/Stage 3"
+  },
+  {
+   "section": "BM-1230 §7",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)"
+  }
+ ],
+ "clauses": [
+  {
+   "clause": "BM-1230 Intro (a)",
+   "number": "Intro (a)",
+   "section": "BM-1230 Intro",
+   "section_title": "Introduction",
+   "title": "Introduction",
+   "rule": "This Framework provides the guidance on the definitions of Regulatory Default, Significant Increase in Credit risk (SICR), the Loan Review Mechanism (LRM) in banks, Restructuring /Rescheduling, Classification and ECL Provisioning and Write-off of NPAs in relation to the provision of Credit Management Regulations applicable to FIs operating in the Sultanate of Oman."
+  },
+  {
+   "clause": "BM-1230 Intro (b)",
+   "number": "Intro (b)",
+   "section": "BM-1230 Intro",
+   "section_title": "Introduction",
+   "title": "Introduction",
+   "rule": "The principles set out in the BCBS documents entitled ‘Prudential treatment of Problem Assets-Definitions of Non-Performing Exposures and Forbearance (April 2017) and Guidance on Credit Risk and accounting for Expected Credit Losses (December 2015) have been adopted as the overarching principles underlying this Framework."
+  },
+  {
+   "clause": "BM-1230 Intro (c)",
+   "number": "Intro (c)",
+   "section": "BM-1230 Intro",
+   "section_title": "Introduction",
+   "title": "Introduction",
+   "rule": "This Framework shall repeal the Circulars BM 977, FM 13, BM 1149, BM 955 (Paragraph 3.8) and BSD/2016/BKUP/Banks & FLCs/447, BSD/CB/FLC/2019/004 and BSD/CB&FLCs/2021/03(Restructuring guidelines). However, the general considerations for IFRS 9 application are reproduced at Appendix."
+  },
+  {
+   "clause": "BM-1230 Intro (d)",
+   "number": "Intro (d)",
+   "section": "BM-1230 Intro",
+   "section_title": "Introduction",
+   "title": "Introduction",
+   "rule": "The Central Bank will update this Framework as and when deemed necessary to provide further guidance to the FIs."
+  },
+  {
+   "clause": "BM-1230 §1.1",
+   "number": "1.1",
+   "section": "BM-1230 §1",
+   "section_title": "Regulatory Default",
+   "title": "Scope",
+   "rule": "The definition will be applied to on-balance sheet loans and advances including the interest amount thereon, and to off-balance sheet items included by FI in its banking book."
+  },
+  {
+   "clause": "BM-1230 §1.2",
+   "number": "1.2",
+   "section": "BM-1230 §1",
+   "section_title": "Regulatory Default",
+   "title": "Recognition criteria",
+   "rule": "A uniform 90-days-past due criterion is applied to all types of exposure within the scope, including those secured by real estate and public sector/Government-related exposures. Overdrafts should be considered past due once the obligor has breached a contractual/sanctioned limit, or been advised of a limit lower than the current outstanding amount. In addition, default should be considered where the outstanding balance is continuously in excess of the approved limit by 90 days or non-payment of interest for 90 days past-due."
+  },
+  {
+   "clause": "BM-1230 §1.3",
+   "number": "1.3",
+   "section": "BM-1230 §1",
+   "section_title": "Regulatory Default",
+   "title": "Unlikeliness to Pay",
+   "rule": "An Obligor is unlikely to pay, full or part of its credit obligation. The likelihood of repayment should be assessed through a comprehensive analysis of the creditworthiness and financial condition of the obligor, using all available inputs, including but not limited to: (i) patterns of past repayment behaviour; (ii) new facts that affect the obligor’s capacity and unwillingness to pay; and (iii) financial analysis1, in order to form a balanced view on the current and future overall performance of the obligor. For this purpose, FIs should establish a set of criteria2, defined in the Board approved policy. However, the criteria for the SME and Retail obligors should be simple in nature."
+  },
+  {
+   "clause": "BM-1230 §1.4",
+   "number": "1.4",
+   "section": "BM-1230 §1",
+   "section_title": "Regulatory Default",
+   "title": "Role of Security/Collateral",
+   "rule": "Security/collateral has no role in the categorisation of non-performing exposures. Any recourse available to the FI shall not be considered in this judgment."
+  },
+  {
+   "clause": "BM-1230 §1.5",
+   "number": "1.5",
+   "section": "BM-1230 §1",
+   "section_title": "Regulatory Default",
+   "title": "Level of Application",
+   "rule": "a. In the case of exposures to a non-retail obligor/counterparty (i.e. corporate or SME) where the FI has more than one exposure to that Obligor, the bank should consider all exposures to that obligor as non-performing/Stage 3 when any material exposure becomes non-performing. In other words, non-performing status should be applied at the level of the obligor. A facility or a group of facilities with an obligor is considered material if their combined exposure is greater than 15% of the total funded exposure of that obligor to the FI. b. In the case of exposures to a retail obligor, the non-performing status can be applied at the credit facility level. c. In the case of exposures to a group, non-performing status can be applied at the obligor level. However, at the same time, the FI should also consider the performing or non-performing status of the other group entities when deciding about the status of any of the group entities."
+  },
+  {
+   "clause": "BM-1230 §2.1",
+   "number": "2.1",
+   "section": "BM-1230 §2",
+   "section_title": "Significant Increase in Credit Risk",
+   "title": "Significant Increase in Credit Risk",
+   "rule": "FI shall assess and document whether the credit risk on a facility has increased significantly since initial recognition. The identification of Significant Increase in Credit Risk (‘SICR’) should be undertaken in accordance with the IFRS 9 accounting standard; however, it is applied to all credit facilities including low-credit-risk exposures. As a part of the forward-looking credit risk assessment, the identification of SICR as precursor, should be employed in conjunction with a watchlist mechanism appropriate to the size and complexity of the FI. This approach should provide the basis for determining the staging of obligors and facilities as described under relevant section of classification and provisioning."
+  },
+  {
+   "clause": "BM-1230 §2.2",
+   "number": "2.2",
+   "section": "BM-1230 §2",
+   "section_title": "Significant Increase in Credit Risk",
+   "title": "Significant Increase in Credit Risk",
+   "rule": "The SICR review should include a comprehensive assessment of the quantitative and qualitative drivers of credit risk associated with each obligor. To make that assessment, FI shall compare the risk of a default occurring on a facility and/or obligor at the reporting date with the risk of a default as at the date of initial recognition and consider all the available, reasonable and supportable information, which indicates of significant increase in credit risk since initial recognition. Where reasonable and supportable forward-looking information is available, FI cannot rely solely on past-due information while determining whether credit risk has increased significantly since initial recognition."
+  },
+  {
+   "clause": "BM-1230 §2.3",
+   "number": "2.3",
+   "section": "BM-1230 §2",
+   "section_title": "Significant Increase in Credit Risk",
+   "title": "Significant Increase in Credit Risk",
+   "rule": "Furthermore, FIs should ensure that the assessment of SICR is applied at different levels of granularity for connected financial instruments, e.g. at the credit facility level, obligor level and/or group level. The assessment of SICR should be fully documented and retained as evidence by Risk Management."
+  },
+  {
+   "clause": "BM-1230 §2.4",
+   "number": "2.4",
+   "section": "BM-1230 §2",
+   "section_title": "Significant Increase in Credit Risk",
+   "title": "Significant Increase in Credit Risk",
+   "rule": "The SICR assessment shall be carried out on an individual basis at-least semi-annually for all non-retail obligors within the threshold range between 0.5 million to 1.0 million and above, as approved by Board/Board Risk Committee. For retail and other non-retail obligors (below afore-mentioned threshold), it will be conducted on half-yearly basis at the portfolio level. For this purpose, FI shall need to consider the linkages between macroeconomic factors and other attributes to the level of credit risk in a portfolio based on reasonable and supportable information."
+  },
+  {
+   "clause": "BM-1230 §2.5",
+   "number": "2.5",
+   "section": "BM-1230 §2",
+   "section_title": "Significant Increase in Credit Risk",
+   "title": "Days Past Due Trigger",
+   "rule": "a. Although, there is a rebuttable presumption that the credit risk on a financial asset has increased significantly when contractual payments\nare more than 30 days past due, however, such presumption can be rebutted cautiously and only in exceptional cases, duly supported by proper recording of justification and documentary evidence demonstrating that the credit risk has not increased significantly even though the contractual payments are more than 30 days past due. Such cases will be reviewed and approved by the CRO. Such override shall not be applicable to credit facilities, which are 60 days past due or more. b. Nevertheless, where the FI determines that there has been a significant increase in credit risk before contractual payments become more than 30 days past due, the rebuttable presumption shall not apply."
+  },
+  {
+   "clause": "BM-1230 §2.6",
+   "number": "2.6",
+   "section": "BM-1230 §2",
+   "section_title": "Significant Increase in Credit Risk",
+   "title": "Other Indicators",
+   "rule": "For obligors (both corporate and SME subject to specified threshold), in addition to past-due trigger, FIs shall consider the following additional indicators as forward-looking information relevant to the assessment of changes in credit risk, while formulating the Board approved comprehensive policy for determination of SICR:\na. Deterioration in the financial performance of the obligor, particularly a fall of 25% or more in EBIT together with an erosion in equity/net worth by more than 20% as compared with the previous year and other factors including but not limited to an increase in operating risks, working capital deficiencies, increase in balance-sheet leverage, rising liquidity risks resulting in a significant change in the obligor’s ability to meet its debt obligations. b. Significant changes in the operating performance and behaviour of the obligor, including an increase in the number or extent of delayed contractual payments and breaches of quantitative credit facility covenants including DSCR. c. Deterioration in the overall asset quality of the obligor and/or significant increase in credit risk on any other facility of the same obligor. d. An actual or expected downgrade in the internal credit rating of the obligor. Internal credit ratings are more reliable when they are mapped to external ratings. e. Downgrade in risk classification of the credit facility as per the latest available Mala’a report. f. Non-adherence to the repayment schedule and/or any deferral of installments or periodic interest payments other than regulatory deferrals. g. Unavailable, Inadequate or unreliable audited financial statements and/or a qualified opinion issued by the external auditors.\nh. Continued delay or non-cooperation by the obligor in relation to documentation or expected changes in the loan documentation including covenant waivers or amendments of terms. i. Significant changes in the value of the collateral supporting the obligation, where cashflows are expected from that collateral. j. The obligor is subject to pending litigation by third parties resulting in detrimental impact on the obligor’s financial position. k. Frequent changes in Senior Management or changes in the scope of business or organisational structure (such as the discontinuance of a business segment) that can result in a significant change in the Obligor’s ability to meet its obligations. l. Intra-group transfers of funds without underlying transactions. m. An existing or expected adverse change in the business, regulatory, economic, or technological environment of the obligor that results in a significant change in the obligor’s ability to meet its debt obligations. n. Significant changes, such as reductions in financial support from a parent entity or other affiliate that are expected to reduce the obligor’s economic incentive to make scheduled contractual payments. o. Changes in the FI’s credit management approach in relation to the facility/obligor including close monitoring of the facility/ or the bank specific intervention by the FI with the obligor."
+  },
+  {
+   "clause": "BM-1230 §2.7",
+   "number": "2.7",
+   "section": "BM-1230 §2",
+   "section_title": "Significant Increase in Credit Risk",
+   "title": "Override of SICR",
+   "rule": "Where it has been determined, in respect of any credit facility and/or obligor, that no SICR has occurred despite being triggered by the indicators/triggers above, such evidence and rationale of override should be formally evaluated and approved by the CRO. The cases of override shall be submitted to Board risk committee (or appropriate management authority/committee in case of branches foreign Banks) for information. l"
+  },
+  {
+   "clause": "BM-1230 §2.8",
+   "number": "2.8",
+   "section": "BM-1230 §2",
+   "section_title": "Significant Increase in Credit Risk",
+   "title": "MIS and Reporting",
+   "rule": "FIs should devise an adequate template and MIS for SICR review cases and report the override cases to CBO on quarterly basis in accordance with Annexure-I."
+  },
+  {
+   "clause": "BM-1230 §3.1",
+   "number": "3.1",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Introduction",
+   "rule": "The Loan Review Mechanism (LRM) is an effective tool capable of providing forward-looking insights for constantly evaluating the quality of the loan portfolio and to bring about qualitative improvements in the credit process. Banks should put in place an active LRM, duly supported by Board approved policy subject to annual review, and procedural manual, which help in evaluating the effectiveness of credit appraisal, credit grading & credit approval, credit disbursement and loan administration, and in assessing the adequacy of ECL provisions among other matters. Additionally, the LRM helps identify weaknesses/ shortcomings in the bank’s portfolio at an early stage, thereby providing adequate time to take remedial measures. The complexity and scope of LRM may vary based on Bank’ size, portfolio composition and management practices, however, this framework is intended to ensure that at minimum, banks’ own meet the following requirements."
+  },
+  {
+   "clause": "BM-1230 §3.2",
+   "number": "3.2",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Objectives",
+   "rule": "a. Ensure that the bank has laid down policies in the areas of credit appraisal, credit approval and credit administration processes. b. Assess the adequacy of and adherence to, credit policies and procedures, and to monitor the compliance with relevant laws and regulations. c. Evaluate the credit process and review of credit assessment and appraisal including assignment of ratings to obligors. d. Evaluate the portfolio quality and Identify loans, which exhibit credit weakness and potential problem areas/Early warning signals and recommend timely remedial measures to minimize credit losses. e. Provide inputs and feedback for determining the adequacy of ECL provisions/allowances for credit losses in compliance with CBO regulations and Bank’s internal policies. f. Review the concentrations in the credit portfolio and/or particular sectors and providing inputs where required, to avoid such concentration in the policy and process. g. Provide the Senior Management with the findings on the timely assessment of the overall quality of the credit portfolio and follow-up through tracking mechanism. h. Report the un-resolved deficiencies to the Board Audit committee on a quarterly basis."
+  },
+  {
+   "clause": "BM-1230 §3.3",
+   "number": "3.3",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Interconnectedness of the LRM and SICR/Watchlist Mechanism",
+   "rule": "The LRM and the Bank’s SICR/watchlist mechanism are tightly interconnected control layers within the bank’s credit risk management. As a part of forward-looking ongoing credit risk assessment, the identification of SICR as precursor, should be in conjunction with along with Banks’ watchlist mechanism appropriate to the size and complexity of the bank, while the LRM should act an independent assurance mechanism, which validates whether SICR triggers are properly defined and applied. In addition, ta feedback loop exists between Bank’s watchlist and LRM, where watchlist accounts should be accorded priority in loan review sampling, while the LRM may identify accounts that should be added to the watchlist. Both mechanisms should continuously inform and reinforce each other."
+  },
+  {
+   "clause": "BM-1230 §3.4.1",
+   "number": "3.4.1",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Qualification and Independence",
+   "rule": "Loan review personnel should be suitably qualified based on the level of education, extent of formal credit related and product-specific training and experience, and should possess sound knowledge of the credit process and practices as well as credit policies covering the types of credits/products offered by the bank. In addition, they should also be well versed in the relevant laws/regulations relating to the lending activities. The loan review function should be adequately staffed. The personnel involved the loan review function should be independent of, and not influenced by any person associated with the credit approval process/decisions. The loan review function should be placed under Internal Audit and headed by AGM and above. The findings of the reviews, where required, should be reported by the function directly to the Board Audit Committee (or appropriate management authority/committee in case of branches foreign banks) besides regular communication with the Senior Management for resolution of discrepancies /shortcomings."
+  },
+  {
+   "clause": "BM-1230 §3.4.2",
+   "number": "3.4.2",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Scope of Review",
+   "rule": "The loan review should cover all credits that are significant. Also, the review typically includes, in addition to all performing loans above a cut-off limit (separate cut-off for overseas portfolio), small credits, past due, new credits/sanctions, renewed credits, accounts having significant increase in credit risk including override accounts, restructured loans, loans previously considered non-performing or designated as stage 2 (upgraded loans), watchlist loans, stage 3 loans, loans under the regulatory dispensation/ECL staggering, related party loans and credit concentrations (e.g. large\nexposures, sector concentrations and group of connected counterparties), Islamic Banking financing & overseas branches loan portfolios, and credits identified by External Audit or CBO. The sample of each type of credit facility/portfolio selected for review should provide reasonable assurance that the results of the reviews have identified the major credit risk in the portfolio and reflect its quality as a whole. At-least 40% of the credit portfolio should be subjected to LRM in a year. The scope of the loan review should be documented and approved by the Board Audit Committee."
+  },
+  {
+   "clause": "BM-1230 §3.4.3",
+   "number": "3.4.3",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Frequency of Review",
+   "rule": "The LRM should be designed to provide feedback on effectiveness of the credit process and to identify incipient deterioration in portfolio quality. Reviews of high value credits including new credits/sanctions should be undertaken within three months of sanction/renewal. Otherwise, review could be at least annually, upon renewal or more frequently for Stage 2.b accounts (previously called SM) or when internal or external factors indicate a potential for deteriorating credit quality in particular type of credit or pool of credits. The annual loan review plan should be approved by the Board Audit Committee."
+  },
+  {
+   "clause": "BM-1230 §3.4.4",
+   "number": "3.4.4",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Depth of Review",
+   "rule": "a. It includes: i. Credit assessment and appraisal including accuracy and timeliness of credit ratings assigned to obligors by credit officers ii. Proper credit approvals iii. Sufficiency of credit & security documentation & proper perfection of liens. iv. Compliance with credit agreement covenants v. Adherence to internal policies and procedures, and applicable laws/ regulations. vi. Post-sanction monitoring and account conduct. vii. Appropriateness of the staging/classification assigned to the credits viii. Adequacy of the ECL provisions made against such credits ix. Overall portfolio quality and concentration. b. In addition, the credit reviews should consider the appropriateness and timeliness of the identification of problem credits by the line managers/ credit officers and for the adequacy of overall level of ECL provisions for the entire credit portfolio and for non-performing (stage 3) credits.\nc. The Loan review personnel should have unrestricted access to the records, credit files, security documentation, systems etc."
+  },
+  {
+   "clause": "BM-1230 §3.4.5",
+   "number": "3.4.5",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Review & Communication of findings and Follow-up",
+   "rule": "The findings of Credit Reviews should initially be discussed with line Mangers, Department Heads and with members of the Senior Management and any existing or planned corrective actions should be prompted for all noted deficiencies and identified weakness, including the timeframes for correction. Banks should devise proper mechanism of follow-up to track the corrective actions taken within the given timeframe. All the deficiencies and identified weaknesses in the individual accounts or credit process that remain unresolved beyond the given timeframes should immediately be reported to the Board Audit Committee (or appropriate management authority/committee in case of branches foreign Banks). Furthermore, the summary analysis reporting pack including number of credits reviewed, date of review, current credit quality grades and findings with comparative trends, level of ECL provisions of the portfolio, extent of compliance with internal policies and laws and regulations should be presented to the Board Audit Committee (or appropriate management authority/committee in case of branches foreign Banks) on quarterly basis. The submission to the Board Audit Committee should be minuted."
+  },
+  {
+   "clause": "BM-1230 §3.4.6",
+   "number": "3.4.6",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Interaction between the LRM and CBO",
+   "rule": "The interaction between the LRM and CBO is intended to be strengthened. The loan portfolio review conducted under LRM shall be used as an input for the supervisory assessment and vice versa. For the purpose to have a consistent approach, a standardised Loan Review Sheet format is attached at Annexure-VII, which will be used by banks’ LRM function."
+  },
+  {
+   "clause": "BM-1230 §3.4.7",
+   "number": "3.4.7",
+   "section": "BM-1230 §3",
+   "section_title": "Loan/Financing Review Mechanism in Banks",
+   "title": "Elements of LRM",
+   "rule": "The data relating to the top 20 obligors assessed during the period by the LRM function should be submitted to CBO. The reporting to the Central Bank shall be made on a quarterly basis within two months after the end of each quarter (e.g. by May 31 for the quarter ended March 31) as per the Annexure-II and III."
+  },
+  {
+   "clause": "BM-1230 §4.1",
+   "number": "4.1",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "Restructured /rescheduled credit facilities are loans/financing that have been modified at favorable terms and conditions for the obligor as a concession, after establishing the obligor’s financial condition/difficultly or ability to repay. Restructuring /Rescheduling shall also include modification of terms, such as reduction in interest rate or principal amount, a change in the contractual tenor to align with the obligor’s future cash flows, allowing moratorium (grace period), capitalizing arears, transfer of collateral and acquisition of equity interest, in full or partial satisfaction of the loan/financing, etc."
+  },
+  {
+   "clause": "BM-1230 §4.2",
+   "number": "4.2",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "FIs should have the Board approved policy on restructuring/rescheduling. The policy should cover at minimum, the definition of financial distress/difficulty; eligibility criteria including but not limited to the maximum number of restructurings; separate restructuring processes preferably for retail and non-retail facilities (for Islamic financing restructuring, in accordance with Shari’ah rules and principles), viability analysis, approval process etc."
+  },
+  {
+   "clause": "BM-1230 §4.3",
+   "number": "4.3",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "The non-exhaustive list of possible indicators of financial distress/difficulty, for the purpose of restructuring/rescheduling is given below: a. Obligor is currently past due on any of its material exposures. b. Obligor is not currently past due, but it is probable that it will become past due on any of its material exposures in the foreseeable future without the regulatory concession, for instance, when there has been a pattern of delinquency in payments on its material exposures. c. Obligor’s outstanding securities have been delisted, are in the process of being delisted, or are under threat of being delisted from an exchange due to non-compliance with the listing requirements or for financial reasons. d. On the basis of actual performance, estimates and projections that encompass the obligor’s current capabilities, the bank forecasts that all the obligor’s committed/available cash flows will be insufficient to service all of its loans or debt securities (both interest and principal) in accordance with the contractual terms of the existing agreements for the foreseeable future. e. Obligor’s existing exposures are categorised as exposures that have already evidenced distress/difficulty in the obligor’s ability to repay in accordance with the risk classification/categorization within bank’s internal credit rating system.\nf. Obligor is in non-performing status or would be categorised as non-performing without the concessions. g. The obligor cannot obtain funds from sources other than its existing banks/lenders at an effective interest rate equal to the prevailing market interest rate for similar loans or debt securities granted to a non-troubled obligor."
+  },
+  {
+   "clause": "BM-1230 §4.4",
+   "number": "4.4",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "Restructuring /Rescheduling should not be used as a means for pre-empting the classification of loans into adverse risk categories. The credit decisions to restructure/reschedule of loans/financing shall be backed by a thorough risk appraisal for clearly establishing the obligor’s repaying capacity, duly supported by adequate obligor’s cash flows under the revised terms. Any restructuring /rescheduling, which is not supported by proper credit risk assessments shall have to be classified according to the underlying risk profile of the obligor."
+  },
+  {
+   "clause": "BM-1230 §4.5",
+   "number": "4.5",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "Restructuring /Rescheduling should be categorized into two distinct groups;"
+  },
+  {
+   "clause": "BM-1230 §4.5.1",
+   "number": "4.5.1",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Distressed Restructuring/Rescheduling",
+   "rule": "The distressed restructuring of a credit obligation where this is likely to result in a diminished financial obligation caused by the material forgiveness, or postponement, of principal, interest or (where relevant) fees. This is subject to conditions that prior to restructuring, there are: a. Past dues in repayments/unlikely to pay the obligation on time. b. Significant increase in Credit Risk and/or Stage 2 as determined by FI. c. Extent of financial difficulty/distress."
+  },
+  {
+   "clause": "BM-1230 §4.5.2",
+   "number": "4.5.2",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Non-Distressed Restructuring/Rescheduling",
+   "rule": "Non-distressed restructuring/rescheduling occurs in such loans where obligors may face some extent of financial difficulty, however, the terms are amended primarily in the context of commercial, operational or regulatory requirements subject to the following conditions that prior restructuring: a. There were no past dues in repayments during last 12 months. b. Obligor was likely to pay the obligation on time. c. There was non-occurrence of SICR/ CRO Override.\nThe FIs may categorize such restructuring /rescheduling into sub-categories such as Re-profiling, Re-alignment, Refinancing, Repurposes etc.)."
+  },
+  {
+   "clause": "BM-1230 §4.6.1",
+   "number": "4.6.1",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "For Distressed Restructuring/Rescheduling",
+   "rule": "a. FIs shall maintain the risk classification of the credit facility/obligor at a minimum of Stage 2 (for regulatory classification as Stage 2.b) as minimum upon restructuring/ rescheduling. b. The cases where a credit facility is fully settled by a simultaneous or subsequent disbursement of a new credit facility to the Obligor in order to avoid/pre-empt risk classification should be considered as distressed restructuring/rescheduling. c. All such credit facilities that are past due more than 90 days at the finalization of the restructuring process should be classified as Stage 3. d. Any credit facility/financing extended to defaulted restructured/ rescheduled Obligor including “Purchased or Originated Credit Impaired” or “POCI”, should be classified as Stage 3."
+  },
+  {
+   "clause": "BM-1230 §4.6.2",
+   "number": "4.6.2",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "For Non-Distressed Restructuring/Rescheduling",
+   "rule": "a. FIs shall maintain the risk classification of the facility/ obligor at same level upon restructuring/rescheduling of non-distressed facility/obligor. b. Any non-distressed credit facility/obligor with incremental restructuring/ rescheduling tenor exceeding 05 years (including grace period) and/or material balloon (bullet) repayment (i.e. 40% or more of restructured outstanding), should be categorized at-least as Stage 2 (for regulatory classification as Stage 2.a), unless the credit facility/obligor is determined with proper justification as low credit risk by CRO."
+  },
+  {
+   "clause": "BM-1230 §4.6.3",
+   "number": "4.6.3",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Risk classification upon Restructuring /Rescheduling",
+   "rule": "Nevertheless, in some cases, the restructuring process may take time to reach its completion. Such a situation is sometimes referred by FIs as ‘standstill’. Any type of restructuring/rescheduling that remains in standstill for more than 90 days, during which the obligor is not meeting its financial obligations under the terms of the original credit facility, falls within the definition of regulatory default as defined under relevant section, therefore, should be classified as Stage 3. However, in exceptional cases, where due to unavoidable circumstances the completion of restructuring formalities is delayed beyond 90 days, the FI can take another 90 days maximum for completion of formalities, provided it has restructuring approval from the competent authority."
+  },
+  {
+   "clause": "BM-1230 §4.7",
+   "number": "4.7",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "Subsequent Migration/Downgrade Post-Restructuring/Rescheduling For Distressed and Non-distressed Restructured cases: a. Subsequent to restructuring, the facility/obligor should be downgraded to Stage 3, if the default criteria as defined in the document is met at any time until the tenor of the restructured/rescheduled facility. b. Whilst, the FIs should downgrade the facility/obligor, in case of occurrence of SICR and/or non-compliance of the restructured terms in accordance with the defined parameters in the FIs’ policy. c. Any credit facility/obligor that has been restructured 2nd time within the period of two (02) years (after grace period) of 1st restructuring, should be one-notch downgraded (e.g. credit facility categorised as Stage 2.b upon 1st restructuring, will be downgraded to Stage 3, upon the 2nd restructuring)."
+  },
+  {
+   "clause": "BM-1230 §4.8",
+   "number": "4.8",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Upgradation of Restructured/Rescheduled Credit Facilities",
+   "rule": "a. Any credit facility/obligor should be upgraded along with non-restructured/rescheduled status, only after ‘successful test of satisfactory performance’. b. For corporate and SME obligors, the satisfactory performance is defined as repayment of at-least 5% of restructured/rescheduled outstanding as minimum (in case of Stage 3, 10% of the outstanding amount or overdue amount prior restructuring) along with the compliance of all the terms and conditions of restructuring/ rescheduling including regular payment of all the dues as per the revised schedule for the period of at least one year from the date of repayment of principal or payment of interest/mark-up, whichever is later on the facility that has the longest moratorium (grace period). c. The afore-mentioned satisfactory period of one year shall be reduced to minimum three months after the obligor repays or adjusts in cash at least 30% of the total restructured loan/facility amount, either at the time of restructuring agreement or later on during the grace period. d. For retail obligors, the satisfactory performance is defined as compliance of all the terms and conditions of restructuring/ rescheduling including regular payment of all the dues as per the revised schedule for the period of at-least 6 months from the date of repayment of principal or payment of interest/mark-up, whichever is later on the facility that has the longest moratorium (grace period). In case of Stage 3 only, repayment of 10% of outstanding amount or overdue amount prior restructuring, as an additional criterion.\ne. The upgradation/migration from Stage 3 or Stage 2 to Stage 1, shall however, be subject to non-occurrence of Significant Increase in Credit Risk as defined under relevant section of SICR. f. All upgradations of restructured credit facilities/loans should be subject to internal audit review and subsequently submitted to the Audit Committee of the Board (or the appropriate management authority/committee in case of branches foreign banks). Applicable ECL provisions/overlays shall be retained as long as facility/obligor is reported as ‘restructured’. g. FIs shall ensure that post-upgradation of restructured facility, the obligor would be able to repay all future principal and interest/mark-up payments in accordance with the revised restructuring terms."
+  },
+  {
+   "clause": "BM-1230 §4.9",
+   "number": "4.9",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "For Step-up repayment structures, the FI should take cautious approach and define its own criteria, however, at minimum, the longer periods be considered under satisfactory performance for such repayment structures."
+  },
+  {
+   "clause": "BM-1230 §4.10",
+   "number": "4.10",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "FIs shall assess the existing portfolio of restructured/rescheduled loans and align it with the aforementioned regulatory stipulations. FIs shall maintain the risk classification and ECL provisions held in the covid-19 related cases."
+  },
+  {
+   "clause": "BM-1230 §4.11",
+   "number": "4.11",
+   "section": "BM-1230 §4",
+   "section_title": "Restructuring /Rescheduling",
+   "title": "Restructuring /Rescheduling",
+   "rule": "The reporting to the Central Bank shall be made in accordance with circular letter SD/CB &FLCs /2026/142 dated April 30, 2026. In addition, the FIs shall continue to report the financial disclosure as per attached format."
+  },
+  {
+   "clause": "BM-1230 §5.1",
+   "number": "5.1",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "The IFRS 9 accounting standard requires that financial assets including loans and investments, are classified on the basis of business model within which these are held and their contractual cash flow characteristics. It is therefore imperative that Boards of FIs clearly articulate their business models, adequately document the classification and measurement of financial instruments and establish the well-defined procedures for any change/deviation therefrom."
+  },
+  {
+   "clause": "BM-1230 §5.2",
+   "number": "5.2",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "FIs should have a well-defined classification and ECL provisioning policy approved by the Board (or the appropriate management authority/ committee in the case of branches foreign banks). Each FI should establish documented process to assess, monitor and determine a risk classification that reflect the current and expected creditworthiness of each credit facility /financial instrument, except for those measured at fair value. Upon this classification, FIs should determine the ECL provisions based on the application of these regulations. This process should be proactive, forward-looking and supported by adequate policies, systems and internal controls, data support, analytical tools and adequately trained personnel."
+  },
+  {
+   "clause": "BM-1230 §5.3",
+   "number": "5.3",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "The risk classification process should be based upon/aligned with the FI’s internal risk rating model. FIs should develop and utilize the effective internal risk rating model based on its own data to manage credit risk. To facilitate better comparison and comprehension of their internal ratings, FIs should map their internal credit risk rating models to credit definitions by internationally recognised independent rating agencies as far as possible. Where such mapping is not possible, the reasons thereof should be documented and approved by the Board of Directors. FIs are expected to consider the indicators of SICR as defined in the document as far as possible along with expert judgement while aligning their internal credit risk rating systems. The Internal credit rating/scoring models should be comprehensively evaluated and validated by the independent party. FIs should be in a position to present evidence of undertaking this classification process to CBO upon request."
+  },
+  {
+   "clause": "BM-1230 §5.4",
+   "number": "5.4",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "Classification process should incorporate following elements, at minimum: a. The regulatory requirements stipulated in the prudential framework. b. The regular review performed at facility level and/or obligor level and update of internal credit risk ratings, at a minimum every 12 months. Such a revie/w should take place more frequently in case of SICR occurrence in account along with continuous monitoring.\nc. Timely recording of past-due information for all credit facilities and update the staging/risk classification as per regulations accordingly, without pushing towards quarter end. d. Timely recognition of credit deterioration. If Obligor’s condition worsens, classification should be updated immediately."
+  },
+  {
+   "clause": "BM-1230 §5.5",
+   "number": "5.5",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "FI shall continue to classify the credit facility/financial instrument under three stages, in accordance with accounting standard for the financial reporting and financial statement purposes. However, for regulatory reporting purposes, FIs shall use the following three main stages and five sub-categories/stages for each credit facility/financial instrument, whereby the likelihood of default increases through the stages."
+  },
+  {
+   "clause": "BM-1230 §5.5.1",
+   "number": "5.5.1",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "Stage 3: Defaulted credit facility/obligor as per the definition of regulatory default as defined under relevant section. In addition, this Stage is further split into three sub-categories as defined below, where each credit facility/obligor should be allocated based on his number of Days Past Due (DPD). Such a split is required for CBO reporting purposes only.\nTable 1: Stage 3 sub-categories Sub-Category Definition Stage 3.a 90-179 DPD or No past due but unlikely to pay (as per paragraph 1.3) Stage 3.b 180-364 DPD Stage 3.c 365 and more DPD"
+  },
+  {
+   "clause": "BM-1230 §5.5.2",
+   "number": "5.5.2",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "Stage 2: Credit facilities subject to deterioration in creditworthiness as described under the relevant section of SICR. In addition, Stage 2 is further split into two sub-categories as defined below, where each credit facility should be allocated based on the number of days past due (DPD). Such a split is required for CBO reporting purposes only.\nTable 2: Stage 2 sub-categories Sub-Category Definition Stage 2.a 30-59 DPD or no past due but subject to Significant Increase in Credit Risk (SICR) Stage 2.b 60-89 DPD"
+  },
+  {
+   "clause": "BM-1230 §5.5.3",
+   "number": "5.5.3",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "Stage 1: Any credit facility/financial instrument not allocated to Stage 2 or Stage 3, that is currently fully performing and with robust expectation regarding the Obligor’s future creditworthiness."
+  },
+  {
+   "clause": "BM-1230 §5.6",
+   "number": "5.6",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Stage Migration/Upgradation",
+   "rule": "FIs should establish a policy governing the criteria for migration between Stages. The criteria should follow accounting principles and comply with the following minimum regulatory requirements:"
+  },
+  {
+   "clause": "BM-1230 §5.6.1",
+   "number": "5.6.1",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "Stage 3 to Stage 2: a. Credit facilities/Obligors should remain in Stage 3 until all arears that are 90 days or more are settled. In addition, for non-retail obligors only, at least three (03) instalments should have been made for monthly repayment schedule, and at least one (01) instalment for any other repayment schedule with longer intervals. For overdraft facilities, there is no breach/excess over limit as stipulated under paragraph 1.2, and at least one (01) regular interest payment should be made. Where the Installments funded through a new facility extended by FI, such repayment shall not solely qualify for upgradation, unless the aforementioned cooling period is met. b. Further, for non-retail obligors only, credit facility/ financial instrument subject to SICR occurrence and allocated to Stage 3 should not be upgraded from Stage 3 to Stage 1 directly. Instead, the Obligor should be upgraded to Stage 2 (either stage 2.a or 2.b, as case may be) initially and be subject to close monitoring and confirmation as per para 5.6.2. c. Any obligor in Stage 3, having partial write-off of an exposure and/or repossession of collateral, until it is being disposed of and realized the proceeds, shall not be upgraded."
+  },
+  {
+   "clause": "BM-1230 §5.6.2",
+   "number": "5.6.2",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "Stage 2.b to 2.a: To upgrade such sub-category shall be subject to settlement of the amount having 60 days past due."
+  },
+  {
+   "clause": "BM-1230 §5.6.3",
+   "number": "5.6.3",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "Stage 2 to Stage 1: For non-retail obligors, credit facilities should remain in Stage 2 until the occurrence of SICR, as described under relevant section, is no longer observed."
+  },
+  {
+   "clause": "BM-1230 §5.6.4",
+   "number": "5.6.4",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "For step-up repayment structures and working capital lines, the FI should define its own criteria, however, at minimum, include (i) longer periods shall be considered for step-up repayments, and (ii) a revolving working capital line/facility shall need to remain as Stage 2 until the non-occurrence of SICR is determined. Therefore, in all cases, FI should re-evaluate the occurrence of SICR as described in relevant section & determine staging accordingly."
+  },
+  {
+   "clause": "BM-1230 §5.6.5",
+   "number": "5.6.5",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Classification and ECL Provisioning",
+   "rule": "For retail obligors, FIs may define and document the minimum period governing the migration between stages based on the FI’s business model. Nevertheless, the criteria requiring settlement of amounts that are 90 days and 30 days past due shall continue to remain applicable."
+  },
+  {
+   "clause": "BM-1230 §5.7.1",
+   "number": "5.7.1",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Expected Credit Loss (ECL) Provisioning",
+   "rule": "The provisioning process should be documented, and approved by the Board or the relevant Board Committee. All FIs should implement the process to estimate and document the ECL provisions associated with each credit facility/financial instrument across all stages of the financial asset portfolio, in compliance with CBO regulations under this Prudential Framework. Such provisions should be estimated during the life of the credit facility and assessed at each reporting date/period. FIs shall recognise the ECL provisions in accordance with these regulations and charge them to the profit and loss account, at least by the end of each quarter."
+  },
+  {
+   "clause": "BM-1230 §5.7.2",
+   "number": "5.7.2",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Expected Credit Loss (ECL) Provisioning",
+   "rule": "The ECL provisioning process should include among others, the regular back testing of expected credit loss (ECL) against the historical losses."
+  },
+  {
+   "clause": "BM-1230 §5.7.3",
+   "number": "5.7.3",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Expected Credit Loss (ECL) Provisioning",
+   "rule": "For all credit facilities, where interest/profit is 90 days past due, the FI should immediately set aside full ECL provision at 100% of any interest/profit amount not received/realised in cash. The provision should be charged to the profit & loss statement in the relevant quarter. The interest/profit amount not received should be separately tracked as ‘Reserve Interest’ and identifiable as a component of the gross outstanding amount together with the related ECL provisions."
+  },
+  {
+   "clause": "BM-1230 §5.7.4",
+   "number": "5.7.4",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Expected Credit Loss (ECL) Provisioning",
+   "rule": "The collateral haircuts, credit conversion factors (CCFs) and ECL provisions floors as stipulated below shall be treated as minimum. FIs having the collateral haircuts, CCFs and other ECL parameters prior to the issuance of the framework shall not be reduced by the FI, merely to comply with minimum requirements, if these are higher/conservative than the minimum requirements, unless any material change in the model parameters is supported by the internal data and rationale, duly validated by an independent third party and approved by the Board. However, in case, the FIs are operating lower than those specified below in the framework, these should be adjusted to meet the minimum requirements."
+  },
+  {
+   "clause": "BM-1230 §5.7.5",
+   "number": "5.7.5",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Credit Risk Mitigation",
+   "rule": "a. FIs should implement rigorous collateral management and valuation policies to ensure a fair assessment of CRM. FIs may take CRM into account when determining the appropriate level of ECL provisions, but only to the extent permitted as per these regulations. The haircuts applied to collateral are only for the purpose of computing the EC\nprovision amount, while these haircuts have no impact on the legal rights of the FI in respect of any collateral. b. For Islamic FIs, the collateral should comply with Shari’ah principles.\nTable 3: Eligible Collateral and Minimum Haircuts\nMinimum Haircut To be applied from months since the exposure become Stage 3 Eligible Collateral At 90th From From From From day till 25 to 37 to 49 to 60 to 24 36 48 60 72 Months Months Months Months Months Cash (or cash equivalent) in OMR, N/A N/A N/A N/A N/A currencies pegged to USD and cases where there is no currency mismatch between the facility and the collateral Oman Government Guarantee/ N/A N/A N/A N/A N/A Bond/Sukuk/ security Bank Guarantee/Security (Bank licensed N/A N/A N/A N/A N/A in Oman) Foreign Sovereign Bonds/Sukuk with 0% 20% 40% 80% 100% rating rated above Investment grade Cash (or cash equivalent) Foreign 10% 20% 40% 80% 100% Currency (linked to country rating above Investment grade) Bank Guarantee/Security (Foreign bank 10% 20% 40% 80% 100% rated above Investment grade) Real Estate (Mortgaged Property) 20% 30% 40% 45% 50% Listed Shares on MSX/Recognised Stock 20% 40% 60% 80% 100% Exchange Confirmed/ Certified Assignment of 0% 20% 40% 80% 100% Receivables from Government/ Ministry Leased Machinery/Equipment (for FLCs) 20% 40% 60% 80% 100% Leased Machinery/Equipment (for Banks) 60% 80% 100% 100% 100% Fixed Assets other than real estate / 60% 80% 100% 100% 100% Commercial Charge Aircraft, Motor Vehicles & Boats/ Vessels 20% 40% 60% 80% 100% Post Dated Cheques* 100% 100% 100% 100% 100% Corporate Guarantee* 100% 100% 100% 100% 100% Personal Guarantee* 100% 100% 100% 100% 100% * These types of collaterals are ineligible for CRM purposes and accordingly, the exposures shall be considered unsecured for the purpose of computing ECL provisions.\nc. For certain collateral types, the valuation method is subject to following conditions: i. Cash collateral is eligible only where it is held under legally enforceable lien. ii. Oman Government Guarantee is eligible only where it remains unexpired. Expired guarantee shall not be eligible for CRM purposes, iii. Shares are eligible if they are listed and traded on MSX/Recognized Stock Exchange. The market value shall be applicable for haircut. iv. Real estate collateral criteria: • Real estate includes land and/or buildings only. • Real estate assets are eligible if an independent third-party valuation has been performed. For Stage 3 exposure, the valuation of real estate (a full-scope in case of non-retail obligor) should not be older than 03 years in order to avail the collateral benefit. It means, value of collateral is considered with 100% haircut. • FI shall establish the Board approved policy at minimum covering tiering/categories of valuators along with valuation thresholds. For Stage 3 exposure, each valuation after 03 years may be conducted by different valuator. • FI shall define its own criteria on real estate beyond 72 months since exposure become stage 3. d. At minimum, FIs should apply the eligible collaterals and associated haircuts as prescribed in the table for the Stage 3 credit facilities. However, the value of the eligible collateral should be based on the net realisable value, market conditions and material uncertainties, including but not limited to liquidation uncertainty, valuation uncertainty, costs associated with the liquidation of collateral and the time value of money. e. For Stage 1 and Stage 2, the haircuts specified in the column labelled ‘Up to 24 Months’ should be applied as the minimum floor. However, FIs are expected to have a framework to compute adequate haircuts based on the risk profile of their portfolios. f. In certain circumstances, the haircut can be capped at the values corresponding to column 'From 49 to 60 Months' as per the table, where the FI has i) a formal legal claim with respect to the liquidation of the specific collateral registered with the court, and ii) internal legal opinion confirming that the outcome of the legal process is likely to be in the favor of the FI."
+  },
+  {
+   "clause": "BM-1230 §5.7.6",
+   "number": "5.7.6",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Off-Balance-Sheet items",
+   "rule": "a. In respect of off-balance-sheet items particularly for non-retail customers, FIs should estimate the likelihood that unfunded Facilities become on-balance sheet funded facilities. For the purpose of determining EAD for ECL provision estimations, the credit risk exposure on off-balance-sheet items should be converted into credit exposure equivalents through the use of credit conversion factors. Accordingly, FIs should use the following CCFs, as minimum. Table 4: Off-Balance Sheet Items and Credit Conversion Factors\nS# Instruments CCF\n1. All direct credit subsitutes e.g. general guarantees of indebtedness 100% (including standby LCs serving as financial guantees for loans and securities) and acceptances (including endorsements with the character of acceptances) 2. Certain trasnaction-related contingent items (e.g. performance 50% bonds, bid bonds, warranties and standby LCs related to particular trasanctions. 3. Short-term, self-liquidating trade-related contingencies (such as 20% documentary credits collateralized by the underlying shipments) for both issuing bank/FI and confirming bank/FI. 4. Sale and repurchase agreement and asset sales with recourse, 100% where the credit risk remains with the bank/FI. 5. Forward asset purchases, forward depsoits and partly paid shares 100% and securities, which represents commitments with certain draw down. 6. Lending of securities or posting of securities as collateral including 100% instances where these arise out of repo style transactions. 7. Note issaunce facilities and revolving underwriting facilities. 50%\n8. Commitments(e.g. formal standby facilities and credit lines) with an 50% original maturity of over one year. 9. Commitments with an original maturity up to one year. 20% 10. Commitments that are unconditionally cancellable at any time by 0% the FI without prior notice or that effectively provide for automatic cancellation due to deterioration in a obligor’s creditworthiness. 11. Off-balance sheet items that are credit substitutes not explicitly 100% included in any other category (including credit derivatives such as credit default swaps)\nb. For Stage 3, if the FI determines that an unfunded Facility will not become an on-balance sheet Facility, then the FI should document robust evidence supported by legal opinion to confirm such treatment."
+  },
+  {
+   "clause": "BM-1230 §5.7.7",
+   "number": "5.7.7",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Minimum ECL Provision for Stage 1 and Stage 2",
+   "rule": "a. FIs are permitted to estimate expected credit loss (ECL) provisions through quantification of Probability of Default (PD) and Loss Given Default (LGD) incorporating Credit Risk Mitigants (CRM) as determined by the FI, but limited to the collateral and associated haircuts listed in the column labelled ‘Up to 24 Months’ as per table-3. The quantification of PD and LGD should reflect the risk profile of each credit facility and/or portfolio and the historical experience of the FI in terms of default, collateral management and recovery collections. b. The minimum provision floor for Stage 2.b shall be 3% of obligor’s gross outstanding/exposure. Whilst, the aggregate ECL provision under Stage 1 and Stage 2 at portfolio level should not be less than 1.5% of Credit Risk Weighted Assets (CRWA) at all times (For FLCs, 1.5% of total stage1 and Stage 2 gross outstanding/exposure as set out in Table 5. Table 5: Minimum ECL Provision for Stage 1 and Stage 2 Stages Obligor level Aggregate Portfolio Level Stage 1 The aggregate ECL Provision should Stage 2.a not be less than 1.5% of CRWA (For Minimum 3% of FLCs, 1.5% of total stage1 and Stage 2.b Obligor’s gross Stage 2 gross exposure/ exposure/ Outstanding outstanding) at all time.\nc. Where the Stage 1 and Stage 2 ECL provisions (for retail and non-retail) computed under these regulations exceed the ECL computed under the IFRS-9 standard, the shortfall in provision will be transferred to the Impairment Reserve within equity (net of taxes), which is not eligible for cash dividend and regulatory capital purposes. Disclosure for such difference shall continue to be made in the notes to the financial statements as per format given at Annexure-IV. d. Any subsequent utilisation of the Impairment Reserve shall require prior approval of CBO. e. The CBO may at its discretion, impose a floor higher than that of 1.50% of CRWA mentioned above at its discretion, for reasons including but not limited to supervisory observations indicating that the models used by FI for estimation of ECL, provide insufficient assurance for adequacy of provisions."
+  },
+  {
+   "clause": "BM-1230 §5.7.8",
+   "number": "5.7.8",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Minimum ECL Provision for Stage 3 (Non-Retail)",
+   "rule": "a. For non-retail (corporate or SME) obligors, FIs should implement a dedicated approach covering process and a methodology for the\ncomputation of ECL provisions associated to facilities allocated in Stage 3. The process, methodology and ECL provision results should be reviewed and approved by the management committee responsible for the oversight of the ECL provisions after formal review of ECL results by CRO (or equivalent formal arrangement). b. FI are required to compute the ECL provision, after deducting from the principal amount, the value of eligible collateral after haircuts as prescribed in Table 3, as well as the recoveries from the expected cash flows of specific credit facility. For this purpose, the FIs are not permitted to use LGD derived from statistical models based on their generic recovery rates. c. A secured exposure means a secured credit facility or the portion of the facility, which is covered by eligible collateral net of applicable haircut. An unsecured exposure means an unsecured credit facility or unsecured portion of a secured loan. d. The application of the minimum ECL provision floor separately for secured and unsecured exposures3 is organized as shown below. Table 6: Minimum ECL Provision for Stage 3 (Non-Retail)\nExposure Minimum ECL Provision Floor Secured Exposure (Full or Portion) 10% for 4 years and 25% thereafter.\nUnsecured Exposure (Full or Portion) 25% at the time of regulatory default, 40% at 1st year-end, 50% for 2nd year-end, 65% at 3rd year-end, 80% at 4th year-end and 100% by the end of 5th year.\ne. For the secured exposure/portion, the minimum ECL provision floor shall be 10%. For such exposures, the ECL provision should not be less than 25% after 4 years of becoming Stage 3. In this context, secured means that it is mitigated by the eligible collateral as defined under CRM (Table-3). f. For the unsecured exposure/portion, the ECL provision should not be less than 25% at the time of regulatory default/Stage 3, 40% at 1st year-end, 50% for 2nd year-end, 65% at 3rd year-end, 80% at 4th year-end and 100% by the end of 5th year.\n3 For instance, consider a facility of1000, with an eligible collateral of 600 after permissible haircut. For the first year, the secured portion is 600 and the unsecured portion is 400. The minimum ECL provision for secured portion is 600 x 10% = 60, while for unsecured portion is 400 x 25% = 100. Aggregate ECL provision for entire exposure is 60 + 100 = 160, notwithstanding the recoveries from the expected cash flows of specific credit facility. This estimation shall be undertaken again in the following years using the collateral haircuts in accordance with Table 3.\ng. FI following a conservative approach to the stage 3 in terms of ECL estimation shall continue to be operated at the existing levels, if the minimum ECL provision computed based on the regulatory requirements is lower."
+  },
+  {
+   "clause": "BM-1230 §5.7.9",
+   "number": "5.7.9",
+   "section": "BM-1230 §5",
+   "section_title": "Classification and ECL Provisioning",
+   "title": "Minimum ECL provision for Stage 3 (Retail)",
+   "rule": "a. For retail obligor, FIs should put in place comprehensive process and methodology for estimation of ECL provisions for facilities classified as Stage 3. However, FIs should ensure that the minimum ECL provisions as stipulated below are maintained against the principal amount of each defaulted facility after adjusting collateral net of haircuts4. Table 7: Minimum ECL Provision for Stage 3 (Retail) Net of Collateral after Haircut Days Past Due Minimum ECL Provision 90-179 Days 25% 180-365 days 50% 366-730 days 75% 731-1095 days & above 100%\nb. Where the Stage 3 Provisions (for both retail & non-retail) computed under this regulatory framework exceed the ECL computed under the IFRS-9 standard, the shortfall in provision will be taken to the profit and loss statement as being treated like other ECL provision requirements. c. The FI may however, approach to CBO for an exception to extend the recovery period beyond the regulatory threshold of three (03) years, duly supported by a comprehensive recovery data study and validated by an external consultant."
+  },
+  {
+   "clause": "BM-1230 §6.1",
+   "number": "6.1",
+   "section": "BM-1230 §6",
+   "section_title": "Write-off of Non-Performing Assets/Stage 3",
+   "title": "Write-off of Non-Performing Assets/Stage 3",
+   "rule": "A write-off is the removal of the FI’s claim from the balance sheet, where the FI has no reasonable expectation to recover the full or part of a exposure/debt as per the terms of the legal agreement. A write-off constitutes a derecognition event, where the gross carrying amount (fully or partially) of the financial asset (i.e. loans or financing) is reduced from the balance sheet through an equivalent amount of provisions routed through the income statement. Any amounts recovered after the write-off should be recognised back in the profit and loss statement."
+  },
+  {
+   "clause": "BM-1230 §6.2",
+   "number": "6.2",
+   "section": "BM-1230 §6",
+   "section_title": "Write-off of Non-Performing Assets/Stage 3",
+   "title": "Write-off of Non-Performing Assets/Stage 3",
+   "rule": "FIs should have a clearly defined and transparent write-off policy approved by the Board, setting out the approach, criteria, authority, accountability for negligence & inappropriate follow-up, independent review and audit, monitoring, reporting etc. On the assessment of recoverability and write-offs, the policy should include, at minimum, the drivers such as a) the obligor has been in arrears for a prolonged period of time with less or no expectation of recovery, after exhausting all recovery efforts b) legal expenses are expected to consume the majority of the recovered amount c) assessment of significant legal and accounting consequences d) Partial write-off is undertaken only where there is evidence that the obligor is unable to repay the amount of the exposure in full and there is a reasonable expectation of recovering a part of the exposure. Islamic Banking Entities (IBEs) and Windows shall comply with Shari’ah principles. Where already in place, the write off policy should be revised accordingly by the FIs."
+  },
+  {
+   "clause": "BM-1230 §6.3",
+   "number": "6.3",
+   "section": "BM-1230 §6",
+   "section_title": "Write-off of Non-Performing Assets/Stage 3",
+   "title": "Write-off of Non-Performing Assets/Stage 3",
+   "rule": "Before processing of a write-off proposal, the FIs shall comply with the following minimum criteria:\na. All cash collateral as defined under CRM and held under lien, has been realised and the sale proceeds of physical collateral thereof have been appropriated towards adjustment of the outstanding principal. b. Confirmation by the FIs that obligor or guarantor has no known means of repayment. c. The obligor has not created other business interests and assets out of the non-performing loans proposed to be written off. d. The obligor is not involved in any misappropriation of stocks, movable or immovable assets or security.\ne. No write-off will be allowed where the forced-sale value of securities/ collateral held, exceeds the recoverable outstanding amount, based on the latest valuation. f. In the normal course, no proposals for write-off/waiver in respect of claims on Senior Members and their related parties of any of the FI shall be considered. However, in exceptional and genuine cases, the proposal, duly endorsed by the full Board of Directors, should be referred to CBO in accordance with the format (Annexure-V). In cases, where the Central Bank does not raise any objection within 30 working days from date of reference, FI can write-off such claims. Details of such cases should also be disclosed in the financial statements for the relevant year. g. Each FI’s Board of Directors should clearly define the delegation authority to Board committee for approval of write-off cases (including technical write-off) and also the realistic but maximum expected recovery period for collateralised and uncollateralised exposures, since the date of migration to Stage 3. Beyond such period, write-off should be implemented. h. FIs should subject all write-offs, whether full or partial, to prior independent review and Internal Audit, and maintain all the relevant records for the subsequent review by the External Auditors and CBO."
+  },
+  {
+   "clause": "BM-1230 §6.4",
+   "number": "6.4",
+   "section": "BM-1230 §6",
+   "section_title": "Write-off of Non-Performing Assets/Stage 3",
+   "title": "Write-off of Non-Performing Assets/Stage 3",
+   "rule": "Any exception to the afore-mentioned criteria (other than the requirement to refer cases to CBO) should be subject to Board approval and oversight, based on commercial, accounting or legal justification duly supported by appropriate documentation available for the supervisory review."
+  },
+  {
+   "clause": "BM-1230 §6.5",
+   "number": "6.5",
+   "section": "BM-1230 §6",
+   "section_title": "Write-off of Non-Performing Assets/Stage 3",
+   "title": "Write-off of Non-Performing Assets/Stage 3",
+   "rule": "The FIs should exercise prudence in handling with the write-off cases. The decision to write-off the FI’s claim should generally be taken only when all remedial measures including legal action against the obligor and guarantors have been exhausted. Such write-off, in any case, does not impede the FIs from its legal right to recover the debt. In cases, where a write-off may take place before legal action against the obligor to recover the debt has been concluded in full, and/or FIs’ decision to forfeit the legal claim/waiver on the debt under settlement cases, such considerations should be clearly established and documented and requires the approval of the full Board of Directors."
+  },
+  {
+   "clause": "BM-1230 §6.6",
+   "number": "6.6",
+   "section": "BM-1230 §6",
+   "section_title": "Write-off of Non-Performing Assets/Stage 3",
+   "title": "Write-off of Non-Performing Assets/Stage 3",
+   "rule": "FIs should maintain the obligor-wise memorandum account/record of all cases subject to write-off (except full-settlement cases). All recoveries made from the accounts subject to earlier write-off should be recognised in the\nstatement of profit or loss. The records should be maintained for the review of the. CBO and to support claims in the courts. However, the FIs should close the records of such accounts in the event of collecting the required amount or following a formal decision to discontinue the claims against the obligors."
+  },
+  {
+   "clause": "BM-1230 §6.7",
+   "number": "6.7",
+   "section": "BM-1230 §6",
+   "section_title": "Write-off of Non-Performing Assets/Stage 3",
+   "title": "Write-off of Non-Performing Assets/Stage 3",
+   "rule": "FIs resorting to write-offs, whether termed ‘technical’ or otherwise, for the purpose of cleaning up of their balance sheets, should handle all such cases in accordance with the afore-mentioned stipulations. Any case, that does not meet the regulatory criteria as stipulated in paragraph 6.3, shall not be recognised as write-off, and be treated as a classified loan, for regulatory reporting purposes."
+  },
+  {
+   "clause": "BM-1230 §6.8",
+   "number": "6.8",
+   "section": "BM-1230 §6",
+   "section_title": "Write-off of Non-Performing Assets/Stage 3",
+   "title": "Write-off of Non-Performing Assets/Stage 3",
+   "rule": "FIs should disclose their write-off policies and the amounts actually written off, during a particular year, in their respective annual financial statements, to ensure greater transparency. All write-offs amounting to 200,000/- or above should be reported individually in accordance with the format (Annexure-VI)."
+  },
+  {
+   "clause": "BM-1230 §7.1",
+   "number": "7.1",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "The International accounting Standards board (IASB) issued International Financial Reporting Standard (IFRS) 9 on Financial Instruments in July 2104 as a replacement of the existing standard viz. International Accounting Standard (IAS) 39 on Financial Instruments: Recognition and Measurement. This new standard, formulated to address the accounting issues of the global financial crisis of 2007-2008, represents a paradigm shift in the accounting for financial instruments, especially with regard to their impairment."
+  },
+  {
+   "clause": "BM-1230 §7.2",
+   "number": "7.2",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "Considering the nature of business, accounting for financial instruments is critical in the banking and financial service industry. While the responsibility of preparing and ensuring fair presentation of the financial statements of a bank/FLC vests primarily with its Board, the Central Bank of Oman is interested in a high-quality implementation of IFRS 9 that results in reliable measurement of capital and augments market discipline through greater transparency. Therefore, these guidelines are not intended to override IFRS 9 and instead endeavour to promote consistency of application, facilitate greater comparability across the financial sector and address supervisory concerns. However, nothing should prevent FIs from more conservative criteria or requirements in accordance with the requirements of IFRS, than those laid out in this guidance."
+  },
+  {
+   "clause": "BM-1230 §7.3",
+   "number": "7.3",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "The Basel Committee on banking Supervision (BCBS) issued Guidance on Credit Risk and Accounting for Expected Credit Losses5 in December 2015, which is structured around 11 principles. The first eight principles deal with supervisory guidance for credit risk and accounting for expected credit losses and inter-alia cover issues such as responsibility of the Board, formulation of sound methodologies for measurement of credit risk, etc. The Central Bank expects FIs to follow the guidance issued by the BCBS."
+  },
+  {
+   "clause": "BM-1230 §7.4",
+   "number": "7.4",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "The guidelines apply mutatis mutandis to Islamic Banks and Islamic windows subject to any instructions by the Central Bank for Islamic Banking entities on IFRS 9 if, as and when such instructions are issued. Further, banks are advised to be guided by the principle of substance over form while applying IFRS 9 to their Islamic banking activities.\nClassification of Financial Instruments\nBusiness Models"
+  },
+  {
+   "clause": "BM-1230 §7.5",
+   "number": "7.5",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "IFRS 9 requires that financial assets are classified on the basis of the business model within which they are held and their contractual cash flow characteristics. It is therefore imperative that the Boards of FIs clearly articulate their business models and document them adequately. Further, senior management should ensure that operations are carried out as per Board approved business models and there is supporting evidence to demonstrate the same. Deviations from the business model and changes in the business model should be done in exceptional circumstances, in accordance with the requirements of IFRS 9. The nature, justification and impact of such deviations or changes should be recorded and approved at the Board level. Where material, such deviations should also be disclosed in the notes to the financial statements.\nSale out of amortised cost category"
+  },
+  {
+   "clause": "BM-1230 §7.6",
+   "number": "7.6",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "The Central Bank expects FIs to resort to sales of financial assets measured at amortised cost in limited and exceptional circumstances as permitted by IFRS 9. FIs should have prudent Board approved policies for sale out of amortised cost category. Further, the rationale for each sale out of amortised cost category should be clearly documented and subjected to annual review by the Board. It may be noted that misuse of the provisions of IFRS 9 for sale out amortised cost portfolios would invite supervisory measures.\nUse of the Fair Value Option"
+  },
+  {
+   "clause": "BM-1230 §7.7",
+   "number": "7.7",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "IFRS 9 vide paragraphs 4.1.5 and 4.2.2 allows entities the option to designate, at initial recognition, a financial asset or financial liability as measured at Fair Value Through Profit and Loss (FVTPL) if doing so eliminates or significantly reduces a measurement or recognition inconsistency (‘accounting mismatch’) that would otherwise arise from measuring assets and liabilities or recognizing the gains and losses on them on different bases. Where the fair value option is applied for financial instruments that are categorized as Level 3 in terms of the IFRS 13 hierarchy, details of the financial instruments and their valuation methodology should be submitted to the central Bank at the time of submission of audited financial statements under circular BM 980 dated December 18, 2004.\nSubsequent measurement of Financial Instruments\nUnquoted Equity Instruments"
+  },
+  {
+   "clause": "BM-1230 §7.8",
+   "number": "7.8",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "Unlike IAS 39, IFRS 9 does not allow for the recognition of unquoted equity investments at cost, though it acknowledges that in rare circumstances, cost of an instrument may be an appropriate estimate of fair value. FIs are advised to be prudent in the valuation of unquoted equity investments basing the same on current and relevant information rather than on out dated financial statements and meticulously adhere to the disclosure requirements of IFRS 13 for such cases. Further, details of the outstanding investments in unquoted equity investments including their cost, fair value and basis for arriving at the fair value should be submitted to the Central Bank at the time of submission of draft audited financial statements under circular BM 980.\nOwn Credit Risk on Financial Liabilities"
+  },
+  {
+   "clause": "BM-1230 §7.9",
+   "number": "7.9",
+   "section": "BM-1230 §7",
+   "section_title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "title": "Appendix -General Considerations for IFRS 9 Application (reproduced)",
+   "rule": "IFRS 9 allows Financial Liabilities to be designated as FVTPL, which may result in unrealized gains and losses in Other Comprehensive Income (OCI) on account of changes in own credit risk. Any unrealized gains and losses on account of own credit risk should be derecognized in the calculation of Common Equity 1 capital as required as per paragraph 14.10 of Guidelines on regulatory Capital under Basel III (CP-1)."
+  }
+ ]
+}

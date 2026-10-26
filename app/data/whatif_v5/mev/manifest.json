@@ -1,0 +1,222 @@
+{
+ "domain": "whatif_mev",
+ "country": "Saudi Arabia",
+ "frequency": "annual (calendar year)",
+ "retrieved": "2026-10-19",
+ "series": [
+  {
+   "key": "gdp_real",
+   "raw_series": "real_gdp_growth",
+   "source": "IMF WEO April 2026 via IMF DataMapper API (JSON snapshot ingested 2026-04-22, GitHub mirror ashishsalunkhe/geosyn); NGDP_RPCH",
+   "source_url": "https://www.imf.org/external/datamapper/NGDP_RPCH@WEO/SAU",
+   "vintage": "IMF WEO April 2026; IMF WEO October 2026",
+   "history": [
+    1990,
+    2025
+   ],
+   "projection": [
+    2026,
+    2030
+   ],
+   "retrieved": "2026-10-19",
+   "name": "Real GDP growth",
+   "coverage": "published 1990-2030; after 2030 held flat at the last value"
+  },
+  {
+   "key": "gdp_nonoil",
+   "raw_series": "nonoil_real_gdp_growth",
+   "source": "IMF Regional Economic Outlook (Middle East & Central Asia) via FRED series SAUNGDPXORPCHPT",
+   "source_url": "https://fred.stlouisfed.org/series/SAUNGDPXORPCHPT",
+   "vintage": "IMF 2026 Article IV (July 2026); IMF REO October 2025 (FRED update 2026-01-22)",
+   "history": [
+    2005,
+    2025
+   ],
+   "projection": [
+    2026,
+    2027
+   ],
+   "retrieved": "2026-10-10",
+   "name": "Non-oil real GDP growth",
+   "coverage": "published 2005-2027; before 2005 held at the first published value for the feature only; after 2027 held flat at the last value"
+  },
+  {
+   "key": "brent",
+   "raw_series": "brent_oil_price",
+   "source": "U.S. EIA Europe Brent Spot Price FOB (RBRTE), annual average, via GitHub datasets/oil-prices brent-year.csv",
+   "source_url": "https://www.eia.gov/dnav/pet/hist/RBRTEA.htm",
+   "vintage": "EIA via datasets/oil-prices (fetched 2026-10-10)",
+   "history": [
+    1990,
+    2025
+   ],
+   "projection": [
+    2026,
+    2027
+   ],
+   "retrieved": "2026-10-10",
+   "note": "History: EIA Europe Brent spot (annual and monthly averages, datasets/oil-prices mirror of the EIA API). Base path 2026-2027: IMF WEO oil-price assumption; 2028-2030 held at 2027.",
+   "name": "Oil price (Brent)",
+   "coverage": "published 1990-2027; after 2027 held flat at the last value"
+  },
+  {
+   "key": "cpi",
+   "raw_series": "cpi_inflation",
+   "source": "IMF WEO April 2026 via IMF DataMapper API (JSON snapshot ingested 2026-04-22, GitHub mirror ashishsalunkhe/geosyn); PCPIPCH",
+   "source_url": "https://www.imf.org/external/datamapper/PCPIPCH@WEO/SAU",
+   "vintage": "IMF WEO April 2026; IMF WEO October 2026",
+   "history": [
+    1990,
+    2025
+   ],
+   "projection": [
+    2026,
+    2030
+   ],
+   "retrieved": "2026-10-19",
+   "name": "CPI inflation",
+   "coverage": "published 1990-2030; after 2030 held flat at the last value"
+  },
+  {
+   "key": "unemployment",
+   "raw_series": "unemployment_rate",
+   "source": "IMF WEO LUR (GitHub mirror MohamedataS/Inflation-Forecasting-PanelModels 06-WEO_Data_EMP_LUR.csv)",
+   "source_url": "https://www.imf.org/external/datamapper/LUR@WEO/SAU",
+   "vintage": "GASTAT LMS Q1-Q4 2025 releases; IMF WEO April 2025; IMF WEO October 2024",
+   "history": [
+    1999,
+    2025
+   ],
+   "projection": null,
+   "retrieved": "2026-10-10",
+   "name": "Unemployment rate",
+   "coverage": "published 1999-2025; before 1999 held at the first published value for the feature only; after 2025 held flat at the last value"
+  },
+  {
+   "key": "repo",
+   "raw_series": "sama_repo_rate",
+   "source": "SAMA Monthly Statistical Bulletin Feb-2026, Sec.5 Table 6 Monetary Indicators (Interest Rates) (GitHub mirror civillizard/Saudi-Real-Estate-Data)",
+   "source_url": "https://www.sama.gov.sa/en-US/EconomicReports/Pages/MonthlyStatistics.aspx",
+   "vintage": "SAMA Monthly Bulletin Feb-2026",
+   "history": [
+    2007,
+    2025
+   ],
+   "projection": null,
+   "retrieved": "2026-10-10",
+   "name": "SAMA repo (policy) rate",
+   "coverage": "published 2007-2025; before 2007 held at the first published value for the feature only; after 2025 held flat at the last value"
+  },
+  {
+   "key": "saibor_3m",
+   "raw_series": "saibor_3m",
+   "source": "SAMA Monthly Statistical Bulletin Feb-2026, Sec.5 Table 6 Monetary Indicators (Interest Rates) (GitHub mirror civillizard/Saudi-Real-Estate-Data)",
+   "source_url": "https://www.sama.gov.sa/en-US/EconomicReports/Pages/MonthlyStatistics.aspx",
+   "vintage": "SAMA Monthly Bulletin Feb-2026",
+   "history": [
+    2007,
+    2025
+   ],
+   "projection": null,
+   "retrieved": "2026-10-10",
+   "name": "3-month SAIBOR",
+   "coverage": "published 2007-2025; before 2007 held at the first published value for the feature only; after 2025 held flat at the last value"
+  },
+  {
+   "key": "gov_spend",
+   "raw_series": "gov_expenditure_pct_gdp",
+   "source": "IMF WEO GGX_NGDP (GitHub mirror MohamedataS/Inflation-Forecasting-PanelModels 07.2-WEO_Data_GGX_NGDP.csv)",
+   "source_url": "https://www.imf.org/external/datamapper/GGX_NGDP@WEO/SAU",
+   "vintage": "IMF WEO October 2024",
+   "history": [
+    1990,
+    2024
+   ],
+   "projection": null,
+   "retrieved": "2026-10-10",
+   "name": "Government expenditure",
+   "coverage": "published 1990-2024; after 2024 held flat at the last value"
+  },
+  {
+   "key": "re_price",
+   "raw_series": "repi_index_2014base + repi_index_2023base",
+   "source": "GASTAT Real Estate Price Index (old 2014=100 to 2021; new 2023=100 from 2022, chained)",
+   "source_url": "https://datasource.kapsarc.org/explore/dataset/real-estate-price-index-by-sector-2023-100/",
+   "vintage": "GASTAT (extracted 2023-10-25; quarterly file to 2024Q1); GASTAT REPI 2023=100 (as of 2025Q3 release)",
+   "history": [
+    2014,
+    2025
+   ],
+   "projection": null,
+   "retrieved": "2026-10-10",
+   "note": "GASTAT changed method in 2024; the two indices disagree on 2022 (+1.1% old, +12.7% new). No published projection: held flat at 2025.",
+   "name": "Real estate price index",
+   "coverage": "published 2014-2025; before 2014 held at the first published value for the feature only; after 2025 held flat at the last value"
+  },
+  {
+   "key": "current_account",
+   "raw_series": "current_account_balance",
+   "source": "IMF WEO April 2026 via IMF DataMapper API (JSON snapshot ingested 2026-04-22, GitHub mirror ashishsalunkhe/geosyn); BCA_NGDPD",
+   "source_url": "https://www.imf.org/external/datamapper/BCA_NGDPD@WEO/SAU",
+   "vintage": "IMF WEO April 2026; IMF WEO October 2026",
+   "history": [
+    1990,
+    2025
+   ],
+   "projection": [
+    2026,
+    2030
+   ],
+   "retrieved": "2026-10-19",
+   "name": "Current account balance",
+   "coverage": "published 1990-2030; after 2030 held flat at the last value"
+  },
+  {
+   "key": "credit_growth",
+   "raw_series": "bank_credit_private_growth",
+   "source": "Computed from SAMA Monthly Statistical Bulletin Feb-2026, Table 12a Bank Claims on Private Sector (Grand Total)",
+   "source_url": "https://www.sama.gov.sa/en-US/EconomicReports/Pages/MonthlyStatistics.aspx",
+   "vintage": "SAMA Monthly Bulletin Feb-2026",
+   "history": [
+    1994,
+    2025
+   ],
+   "projection": null,
+   "retrieved": "2026-10-10",
+   "name": "Bank credit to the private sector",
+   "coverage": "published 1994-2025; before 1994 held at the first published value for the feature only; after 2025 held flat at the last value"
+  }
+ ],
+ "files": {
+  "brent_annual_eia.csv": "0ae43a2a7a108d0f8452769463ea6739f70d020f667f4c4b7b526d66e362238c",
+  "brent_monthly_eia.csv": "cfe36664ed84a17c87cba0a9bd8e82f0a4ba5a9be6e0252a6b1a4b5b1beb5fdb",
+  "latest_observations.csv": "43c4ca98e749c1403e854f13f80472b0819e29a1ad40924edb0c19f6be220ba1",
+  "mev_annual.csv": "665d9d42300fecf8b3ccd985fbb0f56122b2eb504e3f4c6b87d5dcd479ec9473",
+  "sources_raw.csv": "b4737916073aba423dd28838442ad6c82a325e93b3a6d18ccab383ccb1f6a1ae"
+ },
+ "latest_observations": "latest_observations.csv (dated Brent spot, EIA STEO, GASTAT flash GDP and CPI, PMI, MoF; read by the current-regime block, backend/scenarios/regime.py)",
+ "access_note": "R14 (19 Oct 2026): IMF WEO October 2026 figures for Saudi GDP, CPI, current account and the oil assumption replaced the April/July 2026 values (ops/r14_m_mev_refresh.py; each row names its URL). The build container could not reach imf.org could not reach imf.org, sama.gov.sa or stats.gov.sa directly. The figures were read from public GitHub mirrors of the IMF DataMapper/WEO extracts, the SAMA Monthly Statistical Bulletin and GASTAT files, from EIA via datasets/oil-prices, and from IMF press releases. ops/whatif_fetch_mev.py re-checks them against the IMF API on a machine that can reach it.",
+ "scenario_design": {
+  "weights": {
+   "base": 0.5,
+   "upturn": 0.2,
+   "downturn": 0.3
+  },
+  "upturn_sd": 1.0,
+  "downturn_sd": 1.5,
+  "upturn_profile": [
+   1.0,
+   1.0,
+   0.75,
+   0.5,
+   0.25
+  ],
+  "downturn_profile": [
+   1.0,
+   1.0,
+   0.6,
+   0.3,
+   0.1
+  ]
+ }
+}

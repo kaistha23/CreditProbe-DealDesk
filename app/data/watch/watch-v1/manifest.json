@@ -1,0 +1,51 @@
+{
+ "as_of": "2026Q2",
+ "built_with": "ops/build_watch.py",
+ "dictionary": {
+  "approved_by": "Committee or officer that accepted it.",
+  "approved_on": "Date the concern was accepted at approval.",
+  "article": "CBUAE CRM article the item relates to.",
+  "book": "The credit book the client belongs to (corporate).",
+  "critical": "A missed critical item escalates on its own.",
+  "currency": "Currency of the original exposure (SAR or AED).",
+  "due_date": "When it must happen.",
+  "ecl_sar_mn": {
+   "description": "Current ECL.",
+   "unit": "SAR million"
+  },
+  "ecl_stage2_sar_mn": {
+   "description": "ECL if moved to Stage 2 (lifetime PD on Stage 1 facilities).",
+   "unit": "SAR million"
+  },
+  "evidence": "Where the concern came from.",
+  "ews_score": "Early Warning score (highest over the client's exposures).",
+  "exposure_ccy_mn": "Exposure in the original currency, million.",
+  "exposure_sar_mn": {
+   "description": "Exposure, SAR million (AED converted at the peg).",
+   "unit": "SAR million"
+  },
+  "frequency": "How often the item is checked.",
+  "group_name": "Parent group name.",
+  "item_id": "Watch item ID.",
+  "metric": "What is measured to judge the trigger.",
+  "name": "Client name.",
+  "no_sicr_rationale": "Why the concern was accepted without a SICR at approval.",
+  "obligor_id": "Borrower ID (CB\u2026 in the book; UAE-\u2026 for proposal cases).",
+  "period": "The book's as-of quarter (YYYYQn).",
+  "rating": "Internal rating at the as-of quarter.",
+  "sector": "Economic sector of the client.",
+  "source": "book (a borrower of the corporate book) or proposal (a Deal Desk proposal case, AED).",
+  "stage": "Worst IFRS 9 stage of the client's facilities.",
+  "status": "on track / due (within 21 days) / missed.",
+  "tier": "1 (closest to SICR, monthly committee), 2, 3.",
+  "trigger": "The watch item: what must happen.",
+  "watch_id": "Accepted Risk Watch entry ID."
+ },
+ "domain_id": "watch",
+ "reference_date": "2026-10-13",
+ "release_id": "watch-v1",
+ "row_counts": {
+  "watch_client": 19,
+  "watch_item": 69
+ }
+}

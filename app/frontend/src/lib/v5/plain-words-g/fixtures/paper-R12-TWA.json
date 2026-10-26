@@ -1,0 +1,606 @@
+{
+ "proposal_id": "R12-TWA",
+ "kind": "bank_form_proposal",
+ "order": "proposal",
+ "title": "Credit proposal \u00b7 Al Sahel Building Materials Trading LLC",
+ "customer": "Al Sahel Building Materials Trading LLC",
+ "group": "Al Sahel Building Materials Group",
+ "currency": "SAR",
+ "as_of": "2026-06-30",
+ "as_of_label": "30 Jun 2026",
+ "request_kind": "renewal",
+ "rating": "BB+",
+ "sector": "Wholesale Trade",
+ "totals": {
+  "existing": 180.0,
+  "outstanding": 178.0,
+  "proposed": 180.0
+ },
+ "created": "2026-10-19T18:18:29+00:00",
+ "sections": [
+  {
+   "key": "header",
+   "n": 1,
+   "heading": "Header block",
+   "voice": "form",
+   "part": "anatomy",
+   "blocks": [
+    {
+     "t": "kv",
+     "pairs": [
+      [
+       "Branch / unit",
+       "Eastern Province Corporate Centre"
+      ],
+      [
+       "Customer",
+       "Al Sahel Building Materials Trading LLC"
+      ],
+      [
+       "Date account opened",
+       "15 Feb 2009"
+      ],
+      [
+       "CIF / base no.",
+       "CIF-0048213"
+      ],
+      [
+       "Group no.",
+       "XG-TWA"
+      ],
+      [
+       "Group",
+       "Al Sahel Building Materials Group"
+      ]
+     ],
+     "cols": 2
+    }
+   ],
+   "gaps": [],
+   "needs": [
+    "dd_proposal"
+   ],
+   "uses": [],
+   "contract_met": true,
+   "method": "deterministic"
+  },
+  {
+   "key": "action",
+   "n": 2,
+   "heading": "Action requested",
+   "voice": "business",
+   "part": "anatomy",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Business requests approval, as at 30 Jun 2026, to renew the Total limits of SAR 180.0m; reduce the Overdraft sub-limit from SAR 30.0m to SAR 20.0m, with total limits unchanged at SAR 180.0m.",
+     "exempt": false
+    },
+    {
+     "t": "p",
+     "text": "Purpose as per business: Annual renewal of the trade and working-capital limits of the building-materials trading arm (requested 1 Oct 2026).",
+     "exempt": false
+    },
+    {
+     "t": "p",
+     "text": "The limits were last approved by CC-2025-118 on 20 Aug 2025 at SAR 180.0m.",
+     "exempt": false
+    }
+   ],
+   "gaps": [],
+   "needs": [
+    "dd_proposal"
+   ],
+   "uses": [
+    "dd_facility_limit",
+    "dd_reference"
+   ],
+   "contract_met": true,
+   "method": "deterministic"
+  },
+  {
+   "key": "facilities",
+   "n": 3,
+   "heading": "Facilities",
+   "voice": "business",
+   "part": "anatomy",
+   "blocks": [
+    {
+     "t": "table",
+     "header": [
+      "Limit / sub-limit",
+      "Existing (SAR m)",
+      "Outstanding",
+      "Proposed",
+      "Cash margin",
+      "Particulars (pricing, validity, tenor, repayment)"
+     ],
+     "rows": [
+      [
+       "Total limits",
+       "180.0",
+       "178.0",
+       "180.0",
+       "\u2013",
+       "\u2013"
+      ],
+      [
+       "    Trade umbrella limit (interchangeable)",
+       "150.0",
+       "151.0",
+       "150.0",
+       "\u2013",
+       "Interchangeable between the sub-limits within SAR 150.0m; 12 months"
+      ],
+      [
+       "        LC sight / usance (up to 180 days)",
+       "150.0",
+       "62.0",
+       "150.0",
+       "10%",
+       "commission 0.75% p.a.; Validity up to 12 months; usance up to 180 days; Settled by LCM or own funds"
+      ],
+      [
+       "        LC maturity / trust receipts (sub-limit)",
+       "90.0",
+       "71.0",
+       "90.0",
+       "\u2013",
+       "3M SAIBOR + 2.25%, floor 5.50%; Against LC documents only; no inter-group use; Up to 120 days per drawing; Bullet per drawing"
+      ],
+      [
+       "        Performance and advance-payment LGs (sub-limit)",
+       "40.0",
+       "18.0",
+       "40.0",
+       "10%",
+       "commission 1.00% p.a.; Single LG cap SAR 10.0m; Up to 24 months"
+      ],
+      [
+       "    Overdraft",
+       "30.0",
+       "27.0",
+       "20.0",
+       "\u2013",
+       "3M SAIBOR + 2.50%, floor 6.00%; Reduced from SAR 30.0m to SAR 20.0m; 12 months, on demand; On demand"
+      ]
+     ],
+     "source": "Deal Desk \u00b7 dd_facility_limit \u00b7 7 rows \u00b7 2026Q2",
+     "widths": [
+      5.0,
+      1.6,
+      1.7,
+      1.6,
+      1.3,
+      5.8
+     ],
+     "size": 7
+    },
+    {
+     "t": "p",
+     "text": "Total limits of SAR 180.0m proposed against SAR 180.0m existing as at 30 Jun 2026; outstanding SAR 178.0m (98.9% of existing limits).",
+     "exempt": false
+    },
+    {
+     "t": "p",
+     "text": "2 funded line(s) priced at benchmark plus spread with a floor, as per business on 1 Oct 2026.",
+     "exempt": false
+    }
+   ],
+   "gaps": [],
+   "needs": [
+    "dd_facility_limit"
+   ],
+   "uses": [
+    "dd_proposal_facility"
+   ],
+   "contract_met": true,
+   "method": "deterministic"
+  },
+  {
+   "key": "security",
+   "n": 4,
+   "heading": "Security and support",
+   "voice": "business",
+   "part": "anatomy",
+   "blocks": [
+    {
+     "t": "h",
+     "text": "Security for All limits"
+    },
+    {
+     "t": "bullets",
+     "items": [
+      "Personal guarantee of Fahad Nasser Al-Sahili for SAR 180.0m, net worth SAR 240.0m per statement dated 31 Mar 2025; executed as at 30 Jun 2026. As per business: Net-worth statement older than 12 months.",
+      "Corporate guarantee of Sahel Steel Trading Est. for SAR 180.0m, net worth SAR 58.0m per statement dated 31 Dec 2025; not yet perfected, to be perfected by 31 Dec 2026. As per business: Guarantor 20% owned by the spouse of a bank staff member (b360_insider_link IL-TWA-1); legal opinion not yet obtained.",
+      "Corporate guarantee of Al Sahel Holding Company for SAR 180.0m, net worth SAR 312.0m per statement dated 31 Dec 2025; not yet perfected, to be perfected by 31 Dec 2026. As per business: New: proposed by credit.",
+      "Undated security cheque of Al Sahel Building Materials Trading LLC for SAR 180.0m; executed as at 30 Jun 2026. As per business: Undated security cheque.",
+      "Subordination of shareholder accounts of Al Sahel Holding Company for SAR 31.0m; executed as at 30 Jun 2026. As per business: Subordination of shareholder current account SAR 31.0m."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Security for Trade umbrella limit (interchangeable)"
+    },
+    {
+     "t": "bullets",
+     "items": [
+      "Assignment of receivables of Al Sahel Building Materials Trading LLC for SAR 120.0m; not yet perfected, to be perfected by 31 Dec 2026. As per business: Assignment of receivables of the top 10 debtors; notices not served.",
+      "Assignment of insurance of Al Sahel Building Materials Trading LLC for SAR 146.0m; executed as at 30 Jun 2026. As per business: Inventory insurance assigned; policy expires 2027-03-31."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Security for One-off LG against 100% cash margin"
+    },
+    {
+     "t": "bullets",
+     "items": [
+      "Cash margin of Al Sahel Building Materials Trading LLC for SAR 10.0m; not_applicable as at 30 Jun 2026. As per business: 100% cash margin under lien."
+     ]
+    }
+   ],
+   "gaps": [],
+   "needs": [
+    "dd_security"
+   ],
+   "uses": [],
+   "contract_met": true,
+   "method": "deterministic"
+  },
+  {
+   "key": "terms",
+   "n": 5,
+   "heading": "Terms and conditions",
+   "voice": "business",
+   "part": "anatomy",
+   "blocks": [
+    {
+     "t": "h",
+     "text": "Terms for Trade umbrella limit (interchangeable)"
+    },
+    {
+     "t": "numbered",
+     "items": [
+      "LCs to be opened only for the import of building materials for the company's own trading; no inter-group or related-party beneficiaries (condition 1 of 3; existing, complied as at 30 Jun 2026).",
+      "Single LG not to exceed SAR 10.0m; total LG outstanding not to exceed SAR 40.0m at any time (condition 2 of 3; existing, complied as at 30 Jun 2026).",
+      "LCM drawings settled first from the proceeds of the goods financed; maximum 120 days per drawing (condition 3 of 3; existing, complied as at 30 Jun 2026)."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Terms for Overdraft"
+    },
+    {
+     "t": "numbered",
+     "items": [
+      "Overdraft for working capital only; no payments to related parties from the overdraft account (existing condition of the last approval: not complied as at 30 Jun 2026)."
+     ]
+    },
+    {
+     "t": "h",
+     "text": "Terms for All limits"
+    },
+    {
+     "t": "numbered",
+     "items": [
+      "Audited financial statements within 120 days of year end; interim management accounts within 60 days of each half year (existing condition of the last approval: not complied as at 30 Jun 2026).",
+      "Route business through the bank of at least 2 times the total limits per year (SAR 360.0m) (existing condition of the last approval: not complied as at 30 Jun 2026).",
+      "Any change of auditor requires the bank's prior consent; the auditor must be on the bank's approved panel (existing condition of the last approval: not complied as at 30 Jun 2026).",
+      "Subordinate the shareholder current account of SAR 31.0m to the bank's facilities (condition 4 of 5; existing, complied as at 30 Jun 2026).",
+      "Assigned receivables aged below 120 days to cover at least 100% of LCM and overdraft outstanding (condition 5 of 5; new, proposed 30 Jun 2026)."
+     ]
+    }
+   ],
+   "gaps": [],
+   "needs": [
+    "dd_tnc"
+   ],
+   "uses": [
+    "dd_condition"
+   ],
+   "contract_met": true,
+   "method": "deterministic"
+  },
+  {
+   "key": "group_exposure",
+   "n": 6,
+   "heading": "Group exposure and references",
+   "voice": "credit",
+   "part": "anatomy",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Group exposure after this request is SAR 236.0m total, of which SAR 145.0m funded (61.4%), as at 30 Jun 2026.",
+     "exempt": false
+    },
+    {
+     "t": "p",
+     "text": "The approved group cap is SAR 250.0m and is unchanged; exposure uses 94.4% of the proposed cap as at 30 Jun 2026.",
+     "exempt": false
+    },
+    {
+     "t": "table",
+     "header": [
+      "Group entity",
+      "Relation",
+      "Funded (SAR m)",
+      "Total",
+      "Classification"
+     ],
+     "rows": [
+      [
+       "Al Sahel Holding Company",
+       "parent",
+       "\u2013",
+       "\u2013",
+       "Regular"
+      ],
+      [
+       "Al Sahel Building Materials Trading LLC",
+       "subject",
+       "110.0",
+       "180.0",
+       "Regular"
+      ],
+      [
+       "Al Sahel Ready-Mix Concrete Factory",
+       "sister",
+       "35.0",
+       "56.0",
+       "Regular"
+      ],
+      [
+       "Al Sahel Logistics Services",
+       "sister",
+       "0.0",
+       "0.0",
+       "doubtful"
+      ],
+      [
+       "Sahel Steel Trading Est.",
+       "guarantor",
+       "\u2013",
+       "\u2013",
+       "Regular"
+      ]
+     ],
+     "source": "Borrower 360 \u00b7 b360_entity \u00b7 5 rows \u00b7 2026Q2",
+     "widths": [
+      6.0,
+      3.0,
+      2.4,
+      2.4,
+      3.2
+     ],
+     "size": 7.5
+    },
+    {
+     "t": "h",
+     "text": "References"
+    },
+    {
+     "t": "bullets",
+     "items": [
+      "CC-2023-071 dated 30 Jul 2023: total limits SAR 140.0m (earliest approval per dd_reference); renewal at sar 140.0m..",
+      "CC-2024-097 dated 14 Aug 2024: total limits SAR 165.0m (PY SAR 140.0m); limits raised from sar 140.0m to sar 165.0m..",
+      "CC-2025-118 dated 20 Aug 2025: total limits SAR 180.0m (PY SAR 165.0m); renewal approved at sar 180.0m with a routing undertaking of 2x limits and the subordination of the shareholder account.."
+     ]
+    },
+    {
+     "t": "bullets",
+     "items": [
+      "Credit file requested on 1 Oct 2026, -93 days before the paper date of 30 Jun 2026.",
+      "Credit file request CFR-2026-0412 dated 24 Aug 2026: Credit file requested from business: audited FS FY2025, interim 6M2026, bureau reports, other-bank FALs (per dd_reference).",
+      "Email EM-2026-1903 dated 8 Oct 2026: Business conveys that the routing shortfall is due to the slowdown in government projects; no plan provided (per dd_reference).",
+      "Draft on 28 Sep 2026 by Tamer Al-Jaafari (per dd_workflow_event).",
+      "Submitted on 1 Oct 2026 by Tamer Al-Jaafari (per dd_workflow_event).",
+      "In review on 4 Oct 2026 by Dana Al-Khatib (per dd_workflow_event)."
+     ]
+    }
+   ],
+   "gaps": [],
+   "needs": [
+    "dd_proposal"
+   ],
+   "uses": [
+    "b360_entity",
+    "dd_reference",
+    "dd_workflow_event"
+   ],
+   "contract_met": true,
+   "method": "deterministic"
+  }
+ ],
+ "relations": {
+  "b360_board": {
+   "status": "live",
+   "rows": 4
+  },
+  "b360_entity": {
+   "status": "live",
+   "rows": 5
+  },
+  "b360_insider_link": {
+   "status": "live",
+   "rows": 1
+  },
+  "b360_ownership_change": {
+   "status": "live",
+   "rows": 2
+  },
+  "b360_shareholder": {
+   "status": "live",
+   "rows": 9
+  },
+  "bureau_cbrbr": {
+   "status": "live",
+   "rows": 5
+  },
+  "bureau_entity_report": {
+   "status": "live",
+   "rows": 8
+  },
+  "dd_account_conduct": {
+   "status": "live",
+   "rows": 24
+  },
+  "dd_business_profile": {
+   "status": "live",
+   "rows": 12
+  },
+  "dd_collateral_guarantee": {
+   "status": "empty",
+   "rows": 0
+  },
+  "dd_condition": {
+   "status": "live",
+   "rows": 7
+  },
+  "dd_document": {
+   "status": "live",
+   "rows": 61
+  },
+  "dd_document_rule": {
+   "status": "live",
+   "rows": 27
+  },
+  "dd_escrow_account": {
+   "status": "empty",
+   "rows": 0
+  },
+  "dd_facility_limit": {
+   "status": "live",
+   "rows": 7
+  },
+  "dd_financials_detail": {
+   "status": "live",
+   "rows": 6
+  },
+  "dd_forward_risk": {
+   "status": "missing",
+   "rows": 0
+  },
+  "dd_group_exposure": {
+   "status": "live",
+   "rows": 3
+  },
+  "dd_monitoring_plan": {
+   "status": "live",
+   "rows": 1
+  },
+  "dd_obligor_financials": {
+   "status": "empty",
+   "rows": 0
+  },
+  "dd_precedent": {
+   "status": "missing",
+   "rows": 0
+  },
+  "dd_project": {
+   "status": "empty",
+   "rows": 0
+  },
+  "dd_project_cashflow": {
+   "status": "empty",
+   "rows": 0
+  },
+  "dd_promise": {
+   "status": "live",
+   "rows": 1
+  },
+  "dd_proposal": {
+   "status": "live",
+   "rows": 1
+  },
+  "dd_proposal_facility": {
+   "status": "empty",
+   "rows": 0
+  },
+  "dd_query": {
+   "status": "live",
+   "rows": 4
+  },
+  "dd_raroc_drift": {
+   "status": "live",
+   "rows": 1
+  },
+  "dd_reference": {
+   "status": "live",
+   "rows": 5
+  },
+  "dd_result": {
+   "status": "engine",
+   "rows": 2
+  },
+  "dd_returned_cheque": {
+   "status": "live",
+   "rows": 7
+  },
+  "dd_review_finding": {
+   "status": "live",
+   "rows": 46
+  },
+  "dd_security": {
+   "status": "live",
+   "rows": 8
+  },
+  "dd_sme_application": {
+   "status": "empty",
+   "rows": 0
+  },
+  "dd_stress_result": {
+   "status": "live",
+   "rows": 40
+  },
+  "dd_stress_scenario": {
+   "status": "live",
+   "rows": 99
+  },
+  "dd_swot": {
+   "status": "live",
+   "rows": 20
+  },
+  "dd_syndication": {
+   "status": "empty",
+   "rows": 0
+  },
+  "dd_tnc": {
+   "status": "live",
+   "rows": 9
+  },
+  "dd_workflow_event": {
+   "status": "live",
+   "rows": 4
+  },
+  "other_bank_facility": {
+   "status": "live",
+   "rows": 6
+  },
+  "rel_shared_collateral": {
+   "status": "empty",
+   "rows": 0
+  }
+ },
+ "product": "corporate",
+ "lane": "full",
+ "required": [
+  "header",
+  "action",
+  "facilities",
+  "security",
+  "terms",
+  "group_exposure"
+ ],
+ "coverage": [],
+ "voice": [],
+ "density": {
+  "sentences": 262,
+  "failing": 0,
+  "share_ok": 1.0
+ },
+ "gaps": [],
+ "methods": [
+  "deterministic"
+ ]
+}

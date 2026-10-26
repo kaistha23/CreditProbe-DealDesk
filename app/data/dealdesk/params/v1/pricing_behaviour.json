@@ -1,0 +1,26 @@
+{
+ "name": "pricing_behaviour",
+ "owner": "Treasury",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Behavioural and ALM parameters for the pricing and structure levers: prepayment, fixed rate, sell-down, sculpting.",
+ "source": "Treasury ALM behavioural study 2026 (prepayment CPR by rating bucket, 2019\u20132026 corporate book); ALM fixed-rate hedging premium; syndications desk arranger skim on sold-down shares",
+ "rows": {
+  "prepayment_cpr": {
+   "IG": 0.06,
+   "BB": 0.04,
+   "B": 0.03,
+   "CCC-C": 0.02
+  },
+  "prepayment_fee_max_bps": 200,
+  "fixed_rate_alm_premium_bps": {
+   "SAR": 20,
+   "USD": 15
+  },
+  "arranger_skim_bps": 35,
+  "hold_min_pct": 40,
+  "sculpt_growth": 0.1,
+  "margin_ratchet_max_bps_per_notch": 50
+ }
+}

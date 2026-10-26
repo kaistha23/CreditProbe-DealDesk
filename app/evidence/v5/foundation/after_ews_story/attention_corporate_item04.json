@@ -1,0 +1,193 @@
+{
+ "domain_id": "corporate",
+ "item": {
+  "comparison_basis": "previous quarter",
+  "comparison_month": "",
+  "comparison_period": "2026Q1",
+  "comparison_quarter": "2026Q1",
+  "domain_id": "corporate",
+  "drilldown": {
+   "available": [
+    "facilities"
+   ],
+   "borrower_count": 6764,
+   "counterparty_column": "facility_id",
+   "entity_count": 6764,
+   "entity_label": "facilities",
+   "finer_dimension": "",
+   "measure_fields": [
+    "breach_flag"
+   ],
+   "note": "There is no subsegment level below covenant type in this book, so a finer cut is not available and none is implied.",
+   "period_column": "reporting_quarter",
+   "relation": "corp_covenant_quarter",
+   "suggested_questions": [
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_quarter",
+     "question": "Show the facilities behind Current Ratio in 2026Q2.",
+     "relation": "corp_covenant_quarter",
+     "required_fields": [
+      "facility_id"
+     ],
+     "required_periods": [
+      "2026Q2"
+     ],
+     "required_quarters": [
+      "2026Q2"
+     ],
+     "segment": "Current Ratio",
+     "segment_dimension": "covenant_type"
+    },
+    {
+     "kind": "diagnostic",
+     "period_column": "reporting_quarter",
+     "question": "What drove the change in Share of covenant tests breached for Current Ratio in 2026Q2?",
+     "relation": "corp_covenant_quarter",
+     "required_fields": [
+      "breach_flag"
+     ],
+     "required_periods": [
+      "2026Q2"
+     ],
+     "required_quarters": [
+      "2026Q2"
+     ],
+     "segment": "Current Ratio",
+     "segment_dimension": "covenant_type"
+    },
+    {
+     "kind": "trend",
+     "period_column": "reporting_quarter",
+     "question": "How has Share of covenant tests breached moved for Current Ratio over the last 8 quarters?",
+     "relation": "corp_covenant_quarter",
+     "required_fields": [
+      "breach_flag"
+     ],
+     "required_periods": [
+      "2024Q3",
+      "2024Q4",
+      "2025Q1",
+      "2025Q2",
+      "2025Q3",
+      "2025Q4",
+      "2026Q1",
+      "2026Q2"
+     ],
+     "required_quarters": [],
+     "segment": "Current Ratio",
+     "segment_dimension": "covenant_type"
+    }
+   ],
+   "unavailable": [
+    "subsegment"
+   ]
+  },
+  "evidence": {
+   "dimension": "covenant_type",
+   "measure": "breach_share",
+   "relation": "corp_covenant_quarter"
+  },
+  "evidence_url": "",
+  "family": "covenant_breaches",
+  "headline": "Current Ratio: Covenant breaches rose to 12.76%",
+  "item_id": "att-f07158187b0443e1",
+  "key_numbers": [
+   {
+    "display": "12.76%",
+    "label": "Share of covenant tests breached, 2026Q2"
+   },
+   {
+    "display": "10.26%",
+    "label": "Share of covenant tests breached, 2026Q1"
+   },
+   {
+    "display": "SAR 6,764 million",
+    "label": "Exposure at default, 2026Q2"
+   },
+   {
+    "display": "30.86%",
+    "label": "Share of book"
+   }
+  ],
+  "metric": "breach_share",
+  "metric_label": "Share of covenant tests breached",
+  "movement": {
+   "from": 0.10261760242792109,
+   "from_display": "10.26%",
+   "to": 0.12758722649319928,
+   "to_display": "12.76%",
+   "unit": "percent"
+  },
+  "period_noun": "quarter",
+  "possible_drivers": [],
+  "release_fingerprint": "85a4db8b9154f2f99e71158e15b47b037e083bf1ae1a4fbce10150b8415b1f6d",
+  "release_id": "v4-saudi-corporate-20q-v4",
+  "reporting_month": "",
+  "reporting_period": "2026Q2",
+  "reporting_quarter": "2026Q2",
+  "scope": "segment",
+  "score": 0.007706,
+  "section": "attention",
+  "segment": "Current Ratio",
+  "segment_dimension": "covenant_type",
+  "segment_dimension_label": "Covenant type",
+  "segment_label": "Current Ratio",
+  "severity": "medium",
+  "what_changed": "Share of covenant tests breached was 10.26% in 2026Q1 and is 12.76% in 2026Q2.",
+  "what_to_review_next": [
+   "What moved underneath this measure over the same quarter.",
+   "Whether the movement is concentrated or broad.",
+   "Whether other measures on this segment moved with it."
+  ],
+  "why_it_appeared": "It moved 2.50 pp higher than 2026Q1 on a segment holding 30.86% of the book's exposure at default."
+ },
+ "method": {
+  "candidates_considered": 65,
+  "families": [
+   "sector_stage2",
+   "sector_ecl",
+   "sector_coverage",
+   "sector_pastdue",
+   "product_stage2",
+   "product_ecl",
+   "region_ecl",
+   "sector_downgrades",
+   "sector_watchlist",
+   "sector_breaches",
+   "covenant_breaches",
+   "group_concentration",
+   "sector_ltv"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "method_summary": {
+  "candidates_considered": 65,
+  "families": [
+   "sector_stage2",
+   "sector_ecl",
+   "sector_coverage",
+   "sector_pastdue",
+   "product_stage2",
+   "product_ecl",
+   "region_ecl",
+   "sector_downgrades",
+   "sector_watchlist",
+   "sector_breaches",
+   "covenant_breaches",
+   "group_concentration",
+   "sector_ltv"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "release_fingerprint": "85a4db8b9154f2f99e71158e15b47b037e083bf1ae1a4fbce10150b8415b1f6d",
+ "release_id": "v4-saudi-corporate-20q-v4",
+ "reporting_month": "",
+ "reporting_quarter": ""
+}

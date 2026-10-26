@@ -1,0 +1,24 @@
+{
+ "module": "r5",
+ "commit": "861e277",
+ "utc": "20261012T030726Z",
+ "items_run": [
+  "5",
+  "6p"
+ ],
+ "passed": false,
+ "items": [
+  {
+   "item": "5. browser smoke",
+   "pass": true,
+   "detail": "32/32 browser checks passed",
+   "seconds": 35.7
+  },
+  {
+   "item": "6. UAT sweep (in parts)",
+   "pass": false,
+   "detail": "30/31 sweep steps passed (353 checks), in parts",
+   "seconds": 393.5
+  }
+ ]
+}

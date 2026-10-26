@@ -1,0 +1,657 @@
+{
+ "release_id": "dd-saudi-v1",
+ "domain": "deal_desk",
+ "as_of": "2026Q2",
+ "period_column": "reporting_quarter",
+ "relations": {
+  "dd_proposal": {
+   "label": "Credit proposals",
+   "key_columns": [
+    "proposal_id",
+    "reporting_quarter"
+   ],
+   "grain": "one row per proposal",
+   "rows": 15,
+   "columns": [
+    "proposal_id",
+    "reporting_quarter",
+    "obligor_id",
+    "obligor_name",
+    "cr_number",
+    "existing_flag",
+    "new_to_bank_flag",
+    "status",
+    "rm",
+    "business_unit",
+    "received_date",
+    "case_type",
+    "purpose",
+    "sector",
+    "sub_sector",
+    "sector_code",
+    "region",
+    "internal_rating",
+    "external_rating",
+    "group_id",
+    "group_name",
+    "simah_flag",
+    "sme_flag",
+    "gre_flag",
+    "existing_ead_sar_mn",
+    "facility_type",
+    "structure",
+    "currency",
+    "amount",
+    "amount_sar_mn",
+    "tenor_years",
+    "grace_years",
+    "amortisation",
+    "balloon_pct",
+    "margin_bps",
+    "upfront_fee_bps",
+    "commitment_fee_bps",
+    "commission_bps",
+    "utilisation_pct",
+    "funded_share_pct",
+    "cash_margin_pct",
+    "covenant_package",
+    "guarantee_id",
+    "guarantee_coverage_pct",
+    "memo_file"
+   ],
+   "content_sha256": "b9f9a527137baa98d4e30962d912c5e82038f6f33134c524f7d696d98a47e149"
+  },
+  "dd_proposal_facility": {
+   "label": "Proposal facility lines",
+   "key_columns": [
+    "proposal_id",
+    "line_id",
+    "reporting_quarter"
+   ],
+   "grain": "one row per proposal facility line",
+   "rows": 42,
+   "columns": [
+    "proposal_id",
+    "line_id",
+    "reporting_quarter",
+    "line_kind",
+    "facility_id",
+    "facility_type",
+    "funded_flag",
+    "currency",
+    "limit_sar_mn",
+    "drawn_sar_mn",
+    "ead_sar_mn",
+    "tenor_years",
+    "stage"
+   ],
+   "content_sha256": "9e66da1bdb6095aa5aaa1fdb4542e0b5e1965547859f83e9e54724f4b3658b18"
+  },
+  "dd_obligor_financials": {
+   "label": "Obligor financials",
+   "key_columns": [
+    "proposal_id",
+    "year",
+    "reporting_quarter"
+   ],
+   "grain": "one row per proposal and financial year",
+   "rows": 90,
+   "columns": [
+    "proposal_id",
+    "obligor_id",
+    "year",
+    "reporting_quarter",
+    "kind",
+    "revenue_sar_mn",
+    "ebitda_sar_mn",
+    "total_debt_sar_mn",
+    "debt_service_sar_mn",
+    "net_worth_sar_mn",
+    "current_ratio_x",
+    "source"
+   ],
+   "content_sha256": "e5c50b52070efd9739b7a7142a537ed9e266c96f495f866f590c2d732fa42190"
+  },
+  "dd_collateral_guarantee": {
+   "label": "Collateral and guarantees",
+   "key_columns": [
+    "proposal_id",
+    "item_id",
+    "reporting_quarter"
+   ],
+   "grain": "one row per collateral item or guarantee",
+   "rows": 17,
+   "columns": [
+    "proposal_id",
+    "item_id",
+    "reporting_quarter",
+    "item_kind",
+    "item_type",
+    "value",
+    "currency",
+    "value_sar_mn",
+    "valuation_date",
+    "haircut_pct",
+    "guarantor",
+    "guarantor_rating",
+    "coverage_pct",
+    "offered_in_ask_flag"
+   ],
+   "content_sha256": "91ca2bedf3722d05502aca5f9267f32835fa8f190f1348b16c9c35e371aadb29"
+  },
+  "dd_parameter": {
+   "label": "Parameter tables",
+   "key_columns": [
+    "table_name",
+    "param_key",
+    "reporting_quarter"
+   ],
+   "grain": "one row per parameter value",
+   "rows": 862,
+   "columns": [
+    "table_name",
+    "param_key",
+    "reporting_quarter",
+    "value_text",
+    "value_num",
+    "param_unit",
+    "owner",
+    "version",
+    "effective_date"
+   ],
+   "content_sha256": "1f06fa66d94036ba9670b9d158cb7b373d5a4c4029faaaf25d63dfda2da45008"
+  },
+  "dd_portfolio_snapshot": {
+   "label": "Portfolio snapshot and headroom",
+   "key_columns": [
+    "dimension",
+    "dimension_key",
+    "reporting_quarter"
+   ],
+   "grain": "one row per limit dimension and key",
+   "rows": 2813,
+   "columns": [
+    "dimension",
+    "dimension_key",
+    "dimension_name",
+    "reporting_quarter",
+    "ead_sar_mn",
+    "share_pct",
+    "limit_pct",
+    "limit_sar_mn_cap",
+    "headroom_sar_mn",
+    "limit_kind"
+   ],
+   "content_sha256": "ecbbc6529d30f851ada7ccc13b6a32df235c182554049fec6f08a6c3dc27e8d7"
+  },
+  "dd_result": {
+   "label": "Priced results",
+   "key_columns": [
+    "proposal_id",
+    "view",
+    "reporting_quarter"
+   ],
+   "grain": "one row per proposal and view (ask, recommended)",
+   "rows": 29,
+   "columns": [
+    "proposal_id",
+    "view",
+    "reporting_quarter",
+    "pd_12m",
+    "lgd_y1",
+    "ead_y1_sar_mn",
+    "el_y1_sar_mn",
+    "el_lifetime_sar_mn",
+    "rwa_y1_sar_mn",
+    "capital_y1_sar_mn",
+    "lifetime_raroc_pct",
+    "hurdle_pct",
+    "sva_sar_mn",
+    "breakeven_margin_bps",
+    "approval_level",
+    "decision",
+    "hard_breaches",
+    "soft_breaches",
+    "param_version",
+    "model_version",
+    "trace_note"
+   ],
+   "content_sha256": "916296ea5ef794f68512e1d1f4e818e3a9b5e702df31706ff98e83fea7f7586c"
+  }
+ },
+ "dictionary": {
+  "proposal_id": {
+   "description": "Deal Desk proposal identifier (DD-nn seeded, DD-1nn added by users).",
+   "unit": ""
+  },
+  "reporting_quarter": {
+   "description": "As-of quarter of the corporate book the proposal is checked against.",
+   "unit": ""
+  },
+  "obligor_id": {
+   "description": "Obligor: the book borrower id (CB#####) for an existing borrower, DN### for a new-to-bank name.",
+   "unit": ""
+  },
+  "obligor_name": {
+   "description": "Obligor's legal name.",
+   "unit": ""
+  },
+  "cr_number": {
+   "description": "Commercial registration number.",
+   "unit": ""
+  },
+  "existing_flag": {
+   "description": "1 when the obligor is an existing borrower in the corporate book.",
+   "unit": "flag (0/1)"
+  },
+  "new_to_bank_flag": {
+   "description": "1 when the obligor is new to the bank.",
+   "unit": "flag (0/1)"
+  },
+  "status": {
+   "description": "Pipeline status: new, in_review, counter_offered, approved or declined.",
+   "unit": ""
+  },
+  "rm": {
+   "description": "Relationship manager who submitted the proposal.",
+   "unit": ""
+  },
+  "business_unit": {
+   "description": "Business unit (sets the hurdle rate).",
+   "unit": ""
+  },
+  "received_date": {
+   "description": "Date the proposal was received.",
+   "unit": ""
+  },
+  "case_type": {
+   "description": "The test case the proposal represents (e.g. large_exposure, infeasible).",
+   "unit": ""
+  },
+  "sector": {
+   "description": "Obligor's sector (the book's sector names).",
+   "unit": ""
+  },
+  "sub_sector": {
+   "description": "Obligor's sub-sector.",
+   "unit": ""
+  },
+  "sector_code": {
+   "description": "ISIC-style sector code.",
+   "unit": ""
+  },
+  "region": {
+   "description": "Obligor's region.",
+   "unit": ""
+  },
+  "internal_rating": {
+   "description": "Internal rating (global order AAA to C).",
+   "unit": ""
+  },
+  "external_rating": {
+   "description": "External rating where the obligor has one; empty when unrated.",
+   "unit": ""
+  },
+  "group_id": {
+   "description": "Connected group (relationship-domain ownership group, CG\u2026 for book groups, DG\u2026 for new ones).",
+   "unit": ""
+  },
+  "group_name": {
+   "description": "Connected group name.",
+   "unit": ""
+  },
+  "simah_flag": {
+   "description": "SIMAH bureau flag: clear, watch or adverse.",
+   "unit": ""
+  },
+  "sme_flag": {
+   "description": "1 when the obligor is an SME.",
+   "unit": "flag (0/1)"
+  },
+  "gre_flag": {
+   "description": "1 when the obligor is a government-related entity.",
+   "unit": "flag (0/1)"
+  },
+  "existing_ead_sar_mn": {
+   "description": "Obligor's EAD in the corporate book at the as-of quarter before the deal.",
+   "unit": "SAR million"
+  },
+  "facility_type": {
+   "description": "Facility type: term_loan, revolver, performance_lg, financial_lg or trade_lc.",
+   "unit": ""
+  },
+  "structure": {
+   "description": "Structure: conventional, murabaha, tawarruq, ijara or musharaka.",
+   "unit": ""
+  },
+  "currency": {
+   "description": "Deal currency (SAR or USD).",
+   "unit": ""
+  },
+  "amount": {
+   "description": "Requested amount in the deal currency.",
+   "unit": "million (deal currency)"
+  },
+  "amount_sar_mn": {
+   "description": "Requested amount in SAR (USD at 3.75).",
+   "unit": "SAR million"
+  },
+  "tenor_years": {
+   "description": "Tenor.",
+   "unit": "years"
+  },
+  "grace_years": {
+   "description": "Profit-only years at the start.",
+   "unit": "years"
+  },
+  "amortisation": {
+   "description": "Amortisation profile: equal, bullet or balloon.",
+   "unit": ""
+  },
+  "balloon_pct": {
+   "description": "Share repaid at maturity when the profile is balloon.",
+   "unit": "%"
+  },
+  "margin_bps": {
+   "description": "Margin over SAIBOR (SAR) or SOFR (USD).",
+   "unit": "bps"
+  },
+  "upfront_fee_bps": {
+   "description": "Upfront fee on the amount.",
+   "unit": "bps"
+  },
+  "commitment_fee_bps": {
+   "description": "Commitment fee on the undrawn balance.",
+   "unit": "bps"
+  },
+  "commission_bps": {
+   "description": "LG/LC commission per year on the unfunded outstanding.",
+   "unit": "bps"
+  },
+  "utilisation_pct": {
+   "description": "Drawn share (revolver) or expected usage (LG/LC).",
+   "unit": "%"
+  },
+  "funded_share_pct": {
+   "description": "Funded share of the amount; the rest is unfunded.",
+   "unit": "%"
+  },
+  "cash_margin_pct": {
+   "description": "Cash margin held as collateral, as a share of the amount.",
+   "unit": "%"
+  },
+  "covenant_package": {
+   "description": "Covenant package: none, standard or enhanced.",
+   "unit": ""
+  },
+  "guarantee_id": {
+   "description": "Guarantee included in the ask, if any.",
+   "unit": ""
+  },
+  "guarantee_coverage_pct": {
+   "description": "Share of the exposure the guarantee covers.",
+   "unit": "%"
+  },
+  "memo_file": {
+   "description": "The credit memo document (data/dealdesk/memos).",
+   "unit": ""
+  },
+  "purpose": {
+   "description": "Purpose of the facility.",
+   "unit": ""
+  },
+  "line_id": {
+   "description": "Facility line: DD-nn-F (proposed funded), DD-nn-U (proposed unfunded), or the book facility id.",
+   "unit": ""
+  },
+  "line_kind": {
+   "description": "proposed or existing (a book facility of an existing borrower).",
+   "unit": ""
+  },
+  "facility_id": {
+   "description": "Book facility id (CF######) for existing lines; empty for proposed lines.",
+   "unit": ""
+  },
+  "funded_flag": {
+   "description": "1 for a funded line, 0 for an unfunded (LG/LC) line (book facility class for existing lines).",
+   "unit": "flag (0/1)"
+  },
+  "limit_sar_mn": {
+   "description": "Line limit.",
+   "unit": "SAR million"
+  },
+  "drawn_sar_mn": {
+   "description": "Drawn balance (existing lines at the as-of quarter).",
+   "unit": "SAR million"
+  },
+  "ead_sar_mn": {
+   "description": "Exposure at default.",
+   "unit": "SAR million"
+  },
+  "stage": {
+   "description": "IFRS 9 stage of an existing book facility.",
+   "unit": ""
+  },
+  "year": {
+   "description": "Financial year.",
+   "unit": ""
+  },
+  "kind": {
+   "description": "actual or projection.",
+   "unit": ""
+  },
+  "revenue_sar_mn": {
+   "description": "Revenue.",
+   "unit": "SAR million"
+  },
+  "ebitda_sar_mn": {
+   "description": "EBITDA.",
+   "unit": "SAR million"
+  },
+  "total_debt_sar_mn": {
+   "description": "Total financial debt.",
+   "unit": "SAR million"
+  },
+  "debt_service_sar_mn": {
+   "description": "Annual debt service (principal and profit).",
+   "unit": "SAR million"
+  },
+  "net_worth_sar_mn": {
+   "description": "Net worth.",
+   "unit": "SAR million"
+  },
+  "current_ratio_x": {
+   "description": "Current assets / current liabilities.",
+   "unit": "x"
+  },
+  "source": {
+   "description": "Where the figure comes from.",
+   "unit": ""
+  },
+  "item_id": {
+   "description": "Collateral (C\u2026) or guarantee (G\u2026) id within the proposal.",
+   "unit": ""
+  },
+  "item_kind": {
+   "description": "collateral or guarantee.",
+   "unit": ""
+  },
+  "item_type": {
+   "description": "Collateral type (cash, real_estate, plant_equipment, receivables, shares, vehicles) or guarantee type (corporate, personal, government, kafalah, bank).",
+   "unit": ""
+  },
+  "value": {
+   "description": "Collateral market value in its own currency.",
+   "unit": "million (item currency)"
+  },
+  "value_sar_mn": {
+   "description": "Collateral market value in SAR.",
+   "unit": "SAR million"
+  },
+  "valuation_date": {
+   "description": "Collateral valuation date.",
+   "unit": ""
+  },
+  "haircut_pct": {
+   "description": "Haircut applied to the collateral value (lgd parameter table).",
+   "unit": "%"
+  },
+  "guarantor": {
+   "description": "Guarantor's name.",
+   "unit": ""
+  },
+  "guarantor_rating": {
+   "description": "Guarantor's rating.",
+   "unit": ""
+  },
+  "coverage_pct": {
+   "description": "Guarantee coverage of the exposure.",
+   "unit": "%"
+  },
+  "offered_in_ask_flag": {
+   "description": "1 when the item is part of the client's ask, 0 when only available.",
+   "unit": "flag (0/1)"
+  },
+  "table_name": {
+   "description": "Parameter table.",
+   "unit": ""
+  },
+  "param_key": {
+   "description": "Path of the value inside the table (dot-separated).",
+   "unit": ""
+  },
+  "value_text": {
+   "description": "The parameter value as text.",
+   "unit": ""
+  },
+  "value_num": {
+   "description": "The parameter value when numeric.",
+   "unit": ""
+  },
+  "param_unit": {
+   "description": "Unit of the parameter value.",
+   "unit": ""
+  },
+  "owner": {
+   "description": "Named owner of the table (Treasury, Finance, Risk Models, CFO, Risk).",
+   "unit": ""
+  },
+  "version": {
+   "description": "Table version.",
+   "unit": ""
+  },
+  "effective_date": {
+   "description": "Date the version takes effect.",
+   "unit": ""
+  },
+  "dimension": {
+   "description": "Limit dimension: sector, rating_bucket, collateral_type or group.",
+   "unit": ""
+  },
+  "dimension_key": {
+   "description": "The sector, bucket, collateral type or connected group.",
+   "unit": ""
+  },
+  "dimension_name": {
+   "description": "Display name (groups).",
+   "unit": ""
+  },
+  "share_pct": {
+   "description": "Share of the corporate book's EAD.",
+   "unit": "%"
+  },
+  "limit_pct": {
+   "description": "Concentration limit as a share of the book, where one applies.",
+   "unit": "%"
+  },
+  "limit_sar_mn_cap": {
+   "description": "Absolute limit, where one applies (connected group).",
+   "unit": "SAR million"
+  },
+  "headroom_sar_mn": {
+   "description": "New EAD the dimension can take before its limit.",
+   "unit": "SAR million"
+  },
+  "limit_kind": {
+   "description": "hard or soft (soft limits can be exceeded with escalation).",
+   "unit": ""
+  },
+  "view": {
+   "description": "ask (the client's terms) or recommended (closest-to-ask structure that clears the hurdle and the limits).",
+   "unit": ""
+  },
+  "pd_12m": {
+   "description": "12-month PD from the XGBoost model after the covenant overlay.",
+   "unit": "probability (0-1)"
+  },
+  "lgd_y1": {
+   "description": "Year-1 facility LGD.",
+   "unit": "probability (0-1)"
+  },
+  "ead_y1_sar_mn": {
+   "description": "Year-1 EAD.",
+   "unit": "SAR million"
+  },
+  "el_y1_sar_mn": {
+   "description": "Year-1 expected loss.",
+   "unit": "SAR million"
+  },
+  "el_lifetime_sar_mn": {
+   "description": "Expected loss over the life (undiscounted).",
+   "unit": "SAR million"
+  },
+  "rwa_y1_sar_mn": {
+   "description": "Year-1 risk-weighted assets (SAMA Standardised Approach).",
+   "unit": "SAR million"
+  },
+  "capital_y1_sar_mn": {
+   "description": "Year-1 allocated capital (basis max of regulatory and economic, plus operational).",
+   "unit": "SAR million"
+  },
+  "lifetime_raroc_pct": {
+   "description": "Lifetime RAROC: PV(risk-adjusted profit) / PV(capital).",
+   "unit": "%"
+  },
+  "hurdle_pct": {
+   "description": "Hurdle rate.",
+   "unit": "%"
+  },
+  "sva_sar_mn": {
+   "description": "Shareholder value added: PV(risk-adjusted profit - hurdle x capital).",
+   "unit": "SAR million"
+  },
+  "breakeven_margin_bps": {
+   "description": "Margin at which lifetime RAROC equals the hurdle (funded deals).",
+   "unit": "bps"
+  },
+  "approval_level": {
+   "description": "Required approval level (Delegation of Authority).",
+   "unit": ""
+  },
+  "decision": {
+   "description": "approve_as_asked, counter_offer, escalate (only with a soft-limit breach) or decline.",
+   "unit": ""
+  },
+  "hard_breaches": {
+   "description": "Hard limits breached by this structure, separated by semicolons.",
+   "unit": ""
+  },
+  "soft_breaches": {
+   "description": "Soft limits breached by this structure, separated by semicolons.",
+   "unit": ""
+  },
+  "param_version": {
+   "description": "Parameter version the result was priced with.",
+   "unit": ""
+  },
+  "model_version": {
+   "description": "PD model version.",
+   "unit": ""
+  },
+  "trace_note": {
+   "description": "How the row was produced.",
+   "unit": ""
+  }
+ },
+ "documents": "Credit memos (.docx) stay as files in data/dealdesk/memos, one per proposal (memo_file)."
+}

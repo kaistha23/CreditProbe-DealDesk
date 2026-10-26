@@ -1,0 +1,365 @@
+{
+ "trace_id": "DT-e97ac6a0fdfb",
+ "available": true,
+ "kind": "inspection_pack",
+ "pack_id": "IP-1B179B4F21",
+ "pack_note": "IP-1B179B4F21 is this pack's reference: the same request and sample always give the same reference, so the reply to the inspector can cite it and the pack can be rebuilt later with the same figures.",
+ "summary": "5 borrowers, SAR 300.3m EAD; all 4 topics answered; approvals and conditions from the governance register (demo seed).",
+ "answers": [
+  {
+   "item": "CB00001",
+   "kind": "borrower",
+   "found": true,
+   "borrower_id": "CB00001",
+   "name": "Al Noor Infrastructure",
+   "href": "/borrower-360?domain=corporate&customer_id=CB00001&from=governance",
+   "ead": {
+    "value": 64.9081,
+    "unit": "SAR million"
+   },
+   "facilities": 3,
+   "stage_now": 3,
+   "max_dpd": 120,
+   "stage_path": "S1 \u2192 S2 2023Q2 \u2192 S1 2023Q3 \u2192 S2 2023Q4 \u2192 S3 2025Q4",
+   "approval": {
+    "ref": "GD-01481",
+    "level": "Executive Credit Committee",
+    "date": "2022-12-05",
+    "decision": "approved_with_conditions",
+    "text": "GD-01481, Executive Credit Committee, 5 Dec 2022",
+    "evidence": "governance register (demo seed)"
+   },
+   "conditions": {
+    "set": 4,
+    "met": 2,
+    "breached": 2,
+    "open": 0,
+    "text": "2 of 4 met; 2 breached",
+    "evidence": "governance register (demo seed)"
+   },
+   "exceptions": 2,
+   "decisions": 1,
+   "line": "SAR 64.9m EAD over 3 facilities, Stage 3 now; Stage path S1 \u2192 S2 2023Q2 \u2192 S1 2023Q3 \u2192 S2 2023Q4 \u2192 S3 2025Q4; Approved GD-01481, Executive Credit Committee, 5 Dec 2022; Conditions 2 of 4 met; 2 breached."
+  },
+  {
+   "item": "CB01088",
+   "kind": "borrower",
+   "found": true,
+   "borrower_id": "CB01088",
+   "name": "Qassim Western Contracting",
+   "href": "/borrower-360?domain=corporate&customer_id=CB01088&from=governance",
+   "ead": {
+    "value": 64.174,
+    "unit": "SAR million"
+   },
+   "facilities": 6,
+   "stage_now": 3,
+   "max_dpd": 120,
+   "stage_path": "S1 \u2192 S2 2026Q1 \u2192 S3 2026Q2",
+   "approval": {
+    "ref": "GD-05822",
+    "level": "Chief Risk Officer",
+    "date": "2025-02-05",
+    "decision": "approved_with_conditions",
+    "text": "GD-05822, Chief Risk Officer, 5 Feb 2025",
+    "evidence": "governance register (demo seed)"
+   },
+   "conditions": {
+    "set": 3,
+    "met": 3,
+    "breached": 0,
+    "open": 0,
+    "text": "3 of 3 met",
+    "evidence": "governance register (demo seed)"
+   },
+   "exceptions": 1,
+   "decisions": 1,
+   "line": "SAR 64.2m EAD over 6 facilities, Stage 3 now; Stage path S1 \u2192 S2 2026Q1 \u2192 S3 2026Q2; Approved GD-05822, Chief Risk Officer, 5 Feb 2025; Conditions 3 of 3 met."
+  },
+  {
+   "item": "CB01200",
+   "kind": "borrower",
+   "found": true,
+   "borrower_id": "CB01200",
+   "name": "Arar United Engineering",
+   "href": "/borrower-360?domain=corporate&customer_id=CB01200&from=governance",
+   "ead": {
+    "value": 58.3599,
+    "unit": "SAR million"
+   },
+   "facilities": 6,
+   "stage_now": 3,
+   "max_dpd": 210,
+   "stage_path": "S2 \u2192 S1 2021Q4 \u2192 S2 2023Q3 \u2192 S3 2026Q1",
+   "approval": {
+    "ref": "GD-00814",
+    "level": "Chief Risk Officer",
+    "date": "2022-05-13",
+    "decision": "approved_with_conditions",
+    "text": "GD-00814, Chief Risk Officer, 13 May 2022",
+    "evidence": "governance register (demo seed)"
+   },
+   "conditions": {
+    "set": 4,
+    "met": 4,
+    "breached": 0,
+    "open": 0,
+    "text": "4 of 4 met",
+    "evidence": "governance register (demo seed)"
+   },
+   "exceptions": 1,
+   "decisions": 1,
+   "line": "SAR 58.4m EAD over 6 facilities, Stage 3 now; Stage path S2 \u2192 S1 2021Q4 \u2192 S2 2023Q3 \u2192 S3 2026Q1; Approved GD-00814, Chief Risk Officer, 13 May 2022; Conditions 4 of 4 met."
+  },
+  {
+   "item": "CB01148",
+   "kind": "borrower",
+   "found": true,
+   "borrower_id": "CB01148",
+   "name": "Jazan National Engineering",
+   "href": "/borrower-360?domain=corporate&customer_id=CB01148&from=governance",
+   "ead": {
+    "value": 57.4905,
+    "unit": "SAR million"
+   },
+   "facilities": 6,
+   "stage_now": 3,
+   "max_dpd": 120,
+   "stage_path": "S1 \u2192 S2 2024Q2 \u2192 S3 2026Q2",
+   "approval": {
+    "ref": "GD-00083",
+    "level": "Head of Credit",
+    "date": "2021-11-25",
+    "decision": "approved_with_conditions",
+    "text": "GD-00083, Head of Credit, 25 Nov 2021",
+    "evidence": "governance register (demo seed)"
+   },
+   "conditions": {
+    "set": 2,
+    "met": 1,
+    "breached": 1,
+    "open": 0,
+    "text": "1 of 2 met; 1 breached",
+    "evidence": "governance register (demo seed)"
+   },
+   "exceptions": 0,
+   "decisions": 1,
+   "line": "SAR 57.5m EAD over 6 facilities, Stage 3 now; Stage path S1 \u2192 S2 2024Q2 \u2192 S3 2026Q2; Approved GD-00083, Head of Credit, 25 Nov 2021; Conditions 1 of 2 met; 1 breached."
+  },
+  {
+   "item": "CB00796",
+   "kind": "borrower",
+   "found": true,
+   "borrower_id": "CB00796",
+   "name": "Najd United Contracting",
+   "href": "/borrower-360?domain=corporate&customer_id=CB00796&from=governance",
+   "ead": {
+    "value": 55.3884,
+    "unit": "SAR million"
+   },
+   "facilities": 5,
+   "stage_now": 3,
+   "max_dpd": 120,
+   "stage_path": "S1 \u2192 S2 2025Q1 \u2192 S3 2026Q2",
+   "approval": {
+    "ref": "GD-01168",
+    "level": "Head of Credit",
+    "date": "2022-07-19",
+    "decision": "approved_with_conditions",
+    "text": "GD-01168, Head of Credit, 19 Jul 2022",
+    "evidence": "governance register (demo seed)"
+   },
+   "conditions": {
+    "set": 2,
+    "met": 2,
+    "breached": 0,
+    "open": 0,
+    "text": "2 of 2 met",
+    "evidence": "governance register (demo seed)"
+   },
+   "exceptions": 0,
+   "decisions": 1,
+   "line": "SAR 55.4m EAD over 5 facilities, Stage 3 now; Stage path S1 \u2192 S2 2025Q1 \u2192 S3 2026Q2; Approved GD-01168, Head of Credit, 19 Jul 2022; Conditions 2 of 2 met."
+  }
+ ],
+ "samples": [
+  {
+   "key": "auditor_stage3",
+   "who": "External auditor",
+   "label": "Auditor: Stage 3 sample in Construction",
+   "request": "The auditor asks for the approvals, conditions and stage history of the 5 largest Stage 3 borrowers in Construction"
+  },
+  {
+   "key": "sama_concentration",
+   "who": "Regulator",
+   "label": "SAMA: largest exposures and their approvals",
+   "request": "SAMA asks for the exposure, limits, rating, approvals and authority of the 10 largest borrowers"
+  },
+  {
+   "key": "ia_exceptions",
+   "who": "Internal audit",
+   "label": "Internal audit: policy exceptions on watch-list names",
+   "request": "Internal audit asks for the policy exceptions, approvals and conditions of the 5 largest watch list borrowers"
+  }
+ ],
+ "sections": [
+  "Cover: the request, the pack reference and the as-of quarter",
+  "Summary and the answer per item: EAD, stage path, approval with level and date, conditions and their status",
+  "Coverage check: each item and topic asked against what the data holds",
+  "Evidence per item: facilities, approval steps, conditions and exceptions",
+  "Policy clauses cited, quoted from the policy library",
+  "Method and data note; the Excel holds every figure with its relation, row and period"
+ ],
+ "as_of": "2026Q2",
+ "request": "The auditor asks for the approvals, conditions and stage history of the 5 largest Stage 3 borrowers in Construction",
+ "sample": [],
+ "ask": {
+  "ids": {},
+  "topics": [
+   "classification",
+   "approval",
+   "conditions",
+   "policy"
+  ],
+  "topics_implied": false,
+  "sample_size": 5,
+  "filters": [
+   [
+    "stage",
+    3
+   ]
+  ],
+  "sectors": [
+   "Construction"
+  ]
+ },
+ "sample_rule": "Sample drawn by CreditProbe: the 5 largest borrowers by EAD at 2026Q2 where stage = 3; sector in Construction (231 matched).",
+ "lines": [
+  "Asked: 5 items \u00d7 4 topics (stage and arrears, approvals and authority, conditions and covenants, policy clauses).",
+  "Sample drawn by CreditProbe: the 5 largest borrowers by EAD at 2026Q2 where stage = 3; sector in Construction (231 matched).",
+  "Answered 20 of 20 requests in full, 0 in part; 0 cannot be answered from Data Domains."
+ ],
+ "items": [
+  {
+   "kind": "borrower",
+   "id": "CB00001"
+  },
+  {
+   "kind": "borrower",
+   "id": "CB01088"
+  },
+  {
+   "kind": "borrower",
+   "id": "CB01200"
+  },
+  {
+   "kind": "borrower",
+   "id": "CB01148"
+  },
+  {
+   "kind": "borrower",
+   "id": "CB00796"
+  }
+ ],
+ "clauses": [
+  {
+   "clause": "1.1",
+   "heading": "1. Purpose, scope and authority",
+   "quote": "The Policy is owned by the Chief Risk Officer and is reviewed by the Board Credit Committee at least once a year, or earlier when the regulatory framework or the Bank's strategy changes.",
+   "policy_id": "POL-CR-01"
+  },
+  {
+   "clause": "1.2",
+   "heading": "1. Purpose, scope and authority",
+   "quote": "Where this Policy and an applicable regulation differ, the stricter of the two applies. Business units may adopt stricter internal standards but may not relax any requirement of this Policy.",
+   "policy_id": "POL-CR-01"
+  },
+  {
+   "clause": "1.3",
+   "heading": "1. Purpose, scope and authority",
+   "quote": "Every credit decision is documented in a credit application prepared by the business unit and independently reviewed by the Credit Risk division before it is presented to the approving authority.",
+   "policy_id": "POL-CR-01"
+  },
+  {
+   "clause": "2.1",
+   "heading": "2. Credit governance and delegation of authority",
+   "quote": "Facilities to a single obligor or group exceeding 10% of the Bank's Tier 1 capital are material facilities and require the approval of the Board of Directors.",
+   "policy_id": "POL-CR-01"
+  },
+  {
+   "clause": "3.2",
+   "heading": "3. The credit application",
+   "quote": "The application states the obligor's internal rating and its date, the aggregate exposure of the group after the request and the approving authority required under Appendix A.",
+   "policy_id": "POL-CR-01"
+  },
+  {
+   "clause": "3.3",
+   "heading": "3. The credit application",
+   "quote": "Audited financial statements for the last three financial years shall be analysed; management accounts older than six months are not accepted in place of audited statements.",
+   "policy_id": "POL-CR-01"
+  }
+ ],
+ "coverage": [
+  {
+   "item": "CB00001",
+   "kind": "borrower",
+   "topic": "classification",
+   "topic_label": "Stage and arrears",
+   "status": "answered",
+   "reason": "3 facilities at 2026Q2 from corp_facility_quarter; stage history 5 changes",
+   "evidence": "corporate book"
+  },
+  {
+   "item": "CB00001",
+   "kind": "borrower",
+   "topic": "approval",
+   "topic_label": "Approvals and authority",
+   "status": "answered",
+   "reason": "1 decisions with level-by-level steps; 0 workflow events.",
+   "evidence": "governance register (demo seed)"
+  },
+  {
+   "item": "CB00001",
+   "kind": "borrower",
+   "topic": "conditions",
+   "topic_label": "Conditions and covenants",
+   "status": "answered",
+   "reason": "4 conditions with status.",
+   "evidence": "governance register (demo seed)"
+  },
+  {
+   "item": "CB00001",
+   "kind": "borrower",
+   "topic": "policy",
+   "topic_label": "Policy clauses",
+   "status": "answered",
+   "reason": "Clauses quoted from dd_policy_clause.",
+   "evidence": "policy library"
+  },
+  {
+   "item": "CB01088",
+   "kind": "borrower",
+   "topic": "classification",
+   "topic_label": "Stage and arrears",
+   "status": "answered",
+   "reason": "6 facilities at 2026Q2 from corp_facility_quarter; stage history 3 changes",
+   "evidence": "corporate book"
+  },
+  {
+   "item": "CB01088",
+   "kind": "borrower",
+   "topic": "approval",
+   "topic_label": "Approvals and authority",
+   "status": "answered",
+   "reason": "1 decisions with level-by-level steps; 0 workflow events.",
+   "evidence": "governance register (demo seed)"
+  }
+ ],
+ "coverage_summary": {
+  "answered": 20,
+  "partial": 0,
+  "not_available": 0
+ },
+ "method": "Given a regulator's or auditor's request (free text, a sample list of borrowers, facilities or deals, or both), the engine assembles the evidence pack: figures with lineage to relation, row and period; the approvals and conditions history; the policy clauses that apply; and a coverage check of what was asked against what the pack answers. Parsing is deterministic (identifier patterns and a keyword map); when the request names no items, it draws the sample itself from the book (largest exposures matching the request's filters) and says so.",
+ "data_note": "Decision history is a fictional seed published to Data Domains (domain governance, gov_* relations, ops/r13_seed_governance.py); outcomes (stage, DPD, default, rating drift) are the corporate book's own."
+}

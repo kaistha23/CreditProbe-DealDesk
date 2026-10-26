@@ -1,0 +1,10 @@
+{
+ "bank": "house-uae",
+ "kind": "renewal",
+ "segment": "trader",
+ "voice": "business",
+ "weight": 5,
+ "primary": true,
+ "anatomy": "docs/v5/house_style/PROPOSAL_ANATOMY.md",
+ "fictional": true
+}

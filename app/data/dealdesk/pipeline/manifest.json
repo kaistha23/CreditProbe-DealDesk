@@ -1,0 +1,11 @@
+{
+ "domain": "dealdesk-pipeline",
+ "as_of": "2026Q2",
+ "applications": 27,
+ "dd_proposals_cached": 15,
+ "provenance": "Fictional pending applications built by backend/dealdesk/pipeline.py with the DD seed machinery (ops/dealdesk_build.py) on the corporate book v4-saudi-corporate-20q-v4 at 2026Q2; options.json caches each deal's engine options (keyed by proposal, parameter and model version).",
+ "files": {
+  "options.json": "7f795dd54d9a44475c4055c08e996e1de25e0405962a909e5b6d8616881eb4a2",
+  "pipeline.json": "ca97768150aacf8ed00e6827f938071ad6b5a6af5fc3974c2a000be4a105e382"
+ }
+}

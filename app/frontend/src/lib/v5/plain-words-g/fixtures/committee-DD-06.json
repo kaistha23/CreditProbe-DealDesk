@@ -1,0 +1,789 @@
+{
+ "proposal_id": "DD-06",
+ "kind": "committee_paper",
+ "summary": [
+  {
+   "key": "s_ask",
+   "n": null,
+   "heading": "The ask",
+   "voice": "business",
+   "part": "summary",
+   "blocks": [
+    {
+     "t": "kv",
+     "pairs": [
+      [
+       "Customer",
+       "Dhahran Continental Industries"
+      ],
+      [
+       "Group",
+       "Dhahran Continental Industries Holding"
+      ],
+      [
+       "Rating existing / proposed",
+       "BB+ / BB+"
+      ],
+      [
+       "Request",
+       "Renewal"
+      ],
+      [
+       "Total limits",
+       "SAR 26.5m \u2192 SAR 51.5m"
+      ],
+      [
+       "Approval authority",
+       "Head of Credit"
+      ]
+     ],
+     "cols": 2
+    },
+    {
+     "t": "p",
+     "text": "Business requests approval, as at 30 Jun 2026, to renew the Asset finance of SAR 12.0m; renew the Working capital of SAR 14.5m; approve a new Revolver of SAR 25.0m.",
+     "exempt": false
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "key": "s_verdict",
+   "n": null,
+   "heading": "Verdict",
+   "voice": "credit",
+   "part": "summary",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Verdict and monitoring tier not available: the stress verdict is not yet published to Data Domains as at 30 Jun 2026.",
+     "exempt": false
+    },
+    {
+     "t": "p",
+     "text": "Credit division recommends approval of total limits of SAR 51.5m with the 5 decisions in the recommendation, as at 30 Jun 2026.",
+     "exempt": false
+    },
+    {
+     "t": "p",
+     "text": "Review findings per dd_review_finding: 0 critical, 11 major, 1 minor as at 30 Jun 2026.",
+     "exempt": false
+    },
+    {
+     "t": "bullets",
+     "items": [
+      "Pricing clears the hurdle: RAROC 10.3% against a 15.0% hurdle: a pricing exception (major, per dd_review_finding, 30 Jun 2026).",
+      "Trade licence (valid): not provided: Trade licence (valid). Dhahran Continental Industries: not yet on file. Required by Credit Policy 3.1 KYC and constitution documents for every group entity (major, per dd_review_finding, 30 Jun 2026).",
+      "Memorandum and articles of association: not provided: Memorandum and articles of association. Dhahran Continental Industries: not yet on file. Required by Credit Policy 3.1 Constitution and signing authority (major, per dd_review_finding, 30 Jun 2026).",
+      "Interim financial statements (latest quarter or half-year): not provided: Interim financial statements (latest quarter or half-year). Dhahran Continental Industries: not yet on file. Required by Credit Policy 3.3 Interim financials within 90 days of period end (major, per dd_review_finding, 30 Jun 2026)."
+     ]
+    },
+    {
+     "t": "p",
+     "text": "Financial quality grade **A** as per CreditProbe's financial-quality screen as at 18 Oct 2026: 0 of 26 signals flagged on FY2023, FY2024, FY2025; no material quality concern in the data on file; only 4 of 26 signals could be assessed from the data on file (Financial quality in the synopsis, section 19).",
+     "exempt": false
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "key": "s_numbers",
+   "n": null,
+   "heading": "Key numbers",
+   "voice": "credit",
+   "part": "summary",
+   "blocks": [
+    {
+     "t": "table",
+     "header": [
+      "Measure",
+      "Value",
+      "Source"
+     ],
+     "rows": [
+      [
+       "Total limits",
+       "SAR 26.5m \u2192 SAR 51.5m",
+       "Deal Desk \u00b7 dd_deal \u00b7 1 row \u00b7 2026Q2"
+      ],
+      [
+       "RAROC as asked / hurdle",
+       "10.3% / 15.0%; SVA SAR -0.28m",
+       "Deal Desk \u00b7 dd_result \u00b7 2 rows \u00b7 2026Q2"
+      ],
+      [
+       "RAROC recommended",
+       "15.0%; SVA SAR 0.00m",
+       "Deal Desk \u00b7 dd_result \u00b7 2 rows \u00b7 2026Q2"
+      ],
+      [
+       "PD 12m / LGD / EAD",
+       "0.61% / 10.0% / SAR 21.0m",
+       "Deal Desk \u00b7 dd_result \u00b7 2 rows \u00b7 2026Q2"
+      ],
+      [
+       "P(Stage 2) / P(30+) next quarter",
+       "2.77% / 0.30%; EWS none",
+       "Deal Desk \u00b7 engine.forward_risk on dd_deal"
+      ],
+      [
+       "Revenue FY2025",
+       "SAR 83.8m (PY SAR 81.5m)",
+       "Deal Desk \u00b7 dd_obligor_financials \u00b7 6 rows \u00b7 2026Q2"
+      ]
+     ],
+     "source": "Data Domains as at 30 Jun 2026",
+     "widths": [
+      4.6,
+      6.4,
+      6.0
+     ],
+     "size": 7.5
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "key": "s_conditions",
+   "n": null,
+   "heading": "Conditions precedent and monitoring",
+   "voice": "credit",
+   "part": "summary",
+   "blocks": [
+    {
+     "t": "numbered",
+     "items": [
+      "Prior to limit loading: Trade licence (valid) (pending as at 30 Jun 2026; Credit Policy 3.1 KYC and constitution documents for every group entity).",
+      "Prior to limit loading: Memorandum and articles of association (pending as at 30 Jun 2026; Credit Policy 3.1 Constitution and signing authority).",
+      "Prior to limit loading: Interim financial statements (latest quarter or half-year) (pending as at 30 Jun 2026; Credit Policy 3.3 Interim financials within 90 days of period end).",
+      "Prior to limit loading: Insurance assigned to the bank (pending as at 30 Jun 2026; Credit Policy 7.5 Insurance of stock and financed assets).",
+      "Prior to limit loading: Board resolution or power of attorney to borrow (pending as at 30 Jun 2026; Credit Policy 3.1 Authority to borrow).",
+      "Prior to limit loading: KYC of shareholders and UBOs (ID, ownership chart) (pending as at 30 Jun 2026; Credit Policy 3.1 Beneficial ownership refreshed on every ownership change)."
+     ]
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "key": "s_decision",
+   "n": null,
+   "heading": "Committee decision",
+   "voice": "form",
+   "part": "summary",
+   "blocks": [
+    {
+     "t": "p",
+     "text": "Approval authority: **Head of Credit** for total limits of SAR 51.5m and group exposure of not provided, as at 30 Jun 2026.",
+     "exempt": true
+    },
+    {
+     "t": "sign",
+     "rows": [
+      [
+       "Chief Credit Officer",
+       ""
+      ],
+      [
+       "Chief Risk Officer",
+       ""
+      ],
+      [
+       "Committee chair",
+       ""
+      ]
+     ]
+    },
+    {
+     "t": "box",
+     "title": "Decision: [ ] Approved as recommended   [ ] Approved with amendments   [ ] Declined   [ ] Deferred",
+     "lines": 2
+    }
+   ],
+   "gaps": []
+  }
+ ],
+ "paper": {
+  "proposal_id": "DD-06",
+  "kind": "bank_form_proposal",
+  "order": "committee",
+  "title": "Credit proposal \u00b7 Dhahran Continental Industries",
+  "customer": "Dhahran Continental Industries",
+  "group": "Dhahran Continental Industries Holding",
+  "currency": "SAR",
+  "as_of": "2026-06-30",
+  "as_of_label": "30 Jun 2026",
+  "request_kind": "renewal",
+  "rating": "BB+",
+  "sector": "Manufacturing",
+  "totals": {
+   "existing": 26.5469,
+   "outstanding": 12.1846,
+   "proposed": 51.5469
+  },
+  "created": "2026-10-19T18:18:24+00:00",
+  "sections": [
+   {
+    "key": "header",
+    "n": 1,
+    "heading": "Header block",
+    "voice": "form",
+    "part": "anatomy",
+    "blocks": [
+     {
+      "t": "kv",
+      "pairs": [
+       [
+        "Branch / unit",
+        "Corporate Banking"
+       ],
+       [
+        "Customer",
+        "Dhahran Continental Industries"
+       ],
+       [
+        "Date account opened",
+        "not available"
+       ],
+       [
+        "CIF / base no.",
+        "CB02729"
+       ],
+       [
+        "Group no.",
+        "CG1965"
+       ],
+       [
+        "Group",
+        "Dhahran Continental Industries Holding"
+       ]
+      ],
+      "cols": 2
+     }
+    ],
+    "gaps": [
+     "Date account opened",
+     "Purpose code",
+     "Review date",
+     "Collateral code"
+    ],
+    "needs": [
+     "dd_proposal"
+    ],
+    "uses": [],
+    "contract_met": true,
+    "method": "deterministic"
+   },
+   {
+    "key": "action",
+    "n": 2,
+    "heading": "Action requested",
+    "voice": "business",
+    "part": "anatomy",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Business requests approval, as at 30 Jun 2026, to renew the Asset finance of SAR 12.0m; renew the Working capital of SAR 14.5m; approve a new Revolver of SAR 25.0m, taking total limits from SAR 26.5m to SAR 51.5m (+SAR 25.0m).",
+      "exempt": false
+     },
+     {
+      "t": "p",
+      "text": "Purpose as per business: Revolving working capital for steel fabrication orders (requested 3 Oct 2026).",
+      "exempt": false
+     },
+     {
+      "t": "p",
+      "text": "Previous committee reference not provided as at 30 Jun 2026.",
+      "exempt": false
+     }
+    ],
+    "gaps": [
+     "previous committee reference"
+    ],
+    "needs": [
+     "dd_proposal"
+    ],
+    "uses": [
+     "dd_facility_limit",
+     "dd_reference"
+    ],
+    "contract_met": true,
+    "method": "deterministic"
+   },
+   {
+    "key": "facilities",
+    "n": 3,
+    "heading": "Facilities",
+    "voice": "business",
+    "part": "anatomy",
+    "blocks": [
+     {
+      "t": "table",
+      "header": [
+       "Limit / sub-limit",
+       "Existing (SAR m)",
+       "Outstanding",
+       "Proposed",
+       "Cash margin",
+       "Particulars (pricing, validity, tenor, repayment)"
+      ],
+      "rows": [
+       [
+        "Asset finance",
+        "12.0",
+        "5.1",
+        "12.0",
+        "\u2013",
+        " years"
+       ],
+       [
+        "Working capital",
+        "14.5",
+        "7.1",
+        "14.5",
+        "\u2013",
+        " years"
+       ],
+       [
+        "Revolver",
+        "0.0",
+        "0.0",
+        "25.0",
+        "\u2013",
+        "3 years"
+       ],
+       [
+        "**Total limits**",
+        "26.5",
+        "12.2",
+        "51.5",
+        "",
+        ""
+       ]
+      ],
+      "source": "Deal Desk \u00b7 dd_proposal_facility \u00b7 3 rows \u00b7 2026Q2",
+      "widths": [
+       5.0,
+       1.6,
+       1.7,
+       1.6,
+       1.3,
+       5.8
+      ],
+      "size": 7
+     },
+     {
+      "t": "p",
+      "text": "Total limits of SAR 51.5m proposed against SAR 26.5m existing as at 30 Jun 2026; outstanding SAR 12.2m (45.9% of existing limits).",
+      "exempt": false
+     },
+     {
+      "t": "p",
+      "text": "The limit and sub-limit tree is not provided in Data Domains (dd_facility_limit empty) as at 30 Jun 2026; the 3 line(s) above are read from the proposal's ask.",
+      "exempt": false
+     }
+    ],
+    "gaps": [
+     "dd_facility_limit"
+    ],
+    "needs": [
+     "dd_facility_limit"
+    ],
+    "uses": [
+     "dd_proposal_facility"
+    ],
+    "contract_met": false,
+    "method": "deterministic"
+   },
+   {
+    "key": "security",
+    "n": 4,
+    "heading": "Security and support",
+    "voice": "business",
+    "part": "anatomy",
+    "blocks": [
+     {
+      "t": "h",
+      "text": "Security for All limits"
+     },
+     {
+      "t": "bullets",
+      "items": [
+       "receivables for SAR 20.0m; perfection status not provided as at 30 Jun 2026."
+      ]
+     },
+     {
+      "t": "p",
+      "text": "All 1 security items are executed or held as at 30 Jun 2026.",
+      "exempt": false
+     }
+    ],
+    "gaps": [],
+    "needs": [
+     "dd_security"
+    ],
+    "uses": [],
+    "contract_met": true,
+    "method": "deterministic"
+   },
+   {
+    "key": "terms",
+    "n": 5,
+    "heading": "Terms and conditions",
+    "voice": "business",
+    "part": "anatomy",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Terms and conditions not provided in Data Domains (dd_tnc empty) as at 30 Jun 2026.",
+      "exempt": false
+     }
+    ],
+    "gaps": [
+     "dd_tnc"
+    ],
+    "needs": [
+     "dd_tnc"
+    ],
+    "uses": [
+     "dd_condition"
+    ],
+    "contract_met": false,
+    "method": "deterministic"
+   },
+   {
+    "key": "group_exposure",
+    "n": 6,
+    "heading": "Group exposure and references",
+    "voice": "credit",
+    "part": "anatomy",
+    "blocks": [
+     {
+      "t": "p",
+      "text": "Group exposure not available in Data Domains as at 30 Jun 2026.",
+      "exempt": false
+     },
+     {
+      "t": "h",
+      "text": "References"
+     },
+     {
+      "t": "bullets",
+      "items": [
+       "Credit file requested on 3 Oct 2026, -95 days before the paper date of 30 Jun 2026."
+      ]
+     },
+     {
+      "t": "p",
+      "text": "Committee history not available in Data Domains as at 30 Jun 2026.",
+      "exempt": false
+     }
+    ],
+    "gaps": [
+     "group exposure"
+    ],
+    "needs": [
+     "dd_proposal"
+    ],
+    "uses": [
+     "b360_entity",
+     "dd_reference",
+     "dd_workflow_event"
+    ],
+    "contract_met": true,
+    "method": "deterministic"
+   }
+  ],
+  "relations": {
+   "b360_board": {
+    "status": "empty",
+    "rows": 0
+   },
+   "b360_entity": {
+    "status": "empty",
+    "rows": 0
+   },
+   "b360_insider_link": {
+    "status": "empty",
+    "rows": 0
+   },
+   "b360_ownership_change": {
+    "status": "empty",
+    "rows": 0
+   },
+   "b360_shareholder": {
+    "status": "empty",
+    "rows": 0
+   },
+   "bureau_cbrbr": {
+    "status": "empty",
+    "rows": 0
+   },
+   "bureau_entity_report": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_account_conduct": {
+    "status": "live",
+    "rows": 24
+   },
+   "dd_business_profile": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_collateral_guarantee": {
+    "status": "live",
+    "rows": 1
+   },
+   "dd_condition": {
+    "status": "live",
+    "rows": 3
+   },
+   "dd_document": {
+    "status": "live",
+    "rows": 14
+   },
+   "dd_document_rule": {
+    "status": "live",
+    "rows": 27
+   },
+   "dd_escrow_account": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_facility_limit": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_financials_detail": {
+    "status": "live",
+    "rows": 6
+   },
+   "dd_forward_risk": {
+    "status": "missing",
+    "rows": 0
+   },
+   "dd_group_exposure": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_monitoring_plan": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_obligor_financials": {
+    "status": "live",
+    "rows": 6
+   },
+   "dd_precedent": {
+    "status": "missing",
+    "rows": 0
+   },
+   "dd_project": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_project_cashflow": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_promise": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_proposal": {
+    "status": "live",
+    "rows": 1
+   },
+   "dd_proposal_facility": {
+    "status": "live",
+    "rows": 3
+   },
+   "dd_query": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_raroc_drift": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_reference": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_result": {
+    "status": "live",
+    "rows": 2
+   },
+   "dd_returned_cheque": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_review_finding": {
+    "status": "live",
+    "rows": 12
+   },
+   "dd_security": {
+    "status": "live",
+    "rows": 1
+   },
+   "dd_sme_application": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_stress_result": {
+    "status": "live",
+    "rows": 40
+   },
+   "dd_stress_scenario": {
+    "status": "live",
+    "rows": 99
+   },
+   "dd_swot": {
+    "status": "live",
+    "rows": 12
+   },
+   "dd_syndication": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_tnc": {
+    "status": "empty",
+    "rows": 0
+   },
+   "dd_workflow_event": {
+    "status": "empty",
+    "rows": 0
+   },
+   "other_bank_facility": {
+    "status": "empty",
+    "rows": 0
+   },
+   "rel_shared_collateral": {
+    "status": "empty",
+    "rows": 0
+   }
+  },
+  "product": "corporate",
+  "lane": "full",
+  "required": [
+   "header",
+   "action",
+   "facilities",
+   "security",
+   "terms",
+   "group_exposure"
+  ],
+  "coverage": [],
+  "voice": [],
+  "density": {
+   "sentences": 120,
+   "failing": 0,
+   "share_ok": 1.0
+  },
+  "gaps": [
+   {
+    "section": "header",
+    "heading": "Header block",
+    "missing": [
+     "Date account opened",
+     "Purpose code",
+     "Review date",
+     "Collateral code"
+    ]
+   },
+   {
+    "section": "action",
+    "heading": "Action requested",
+    "missing": [
+     "previous committee reference"
+    ]
+   },
+   {
+    "section": "facilities",
+    "heading": "Facilities",
+    "missing": [
+     "dd_facility_limit"
+    ]
+   },
+   {
+    "section": "terms",
+    "heading": "Terms and conditions",
+    "missing": [
+     "dd_tnc"
+    ]
+   },
+   {
+    "section": "group_exposure",
+    "heading": "Group exposure and references",
+    "missing": [
+     "group exposure"
+    ]
+   },
+   {
+    "section": "cp_group",
+    "heading": "Group and governance (CreditProbe)",
+    "missing": [
+     "b360_shareholder"
+    ]
+   }
+  ],
+  "methods": [
+   "deterministic"
+  ]
+ },
+ "density": [
+  "s_verdict: V1 fact (no figure and no attribution): Dhahran Continental Industries: not yet on file.",
+  "s_verdict: V1 fact (no figure and no attribution): Dhahran Continental Industries: not yet on file.",
+  "s_verdict: V1 fact (no figure and no attribution): Dhahran Continental Industries: not yet on file."
+ ],
+ "approval_authority": "Head of Credit",
+ "coverage": [],
+ "voice": [],
+ "gaps": [
+  {
+   "section": "header",
+   "heading": "Header block",
+   "missing": [
+    "Date account opened",
+    "Purpose code",
+    "Review date",
+    "Collateral code"
+   ]
+  },
+  {
+   "section": "action",
+   "heading": "Action requested",
+   "missing": [
+    "previous committee reference"
+   ]
+  },
+  {
+   "section": "facilities",
+   "heading": "Facilities",
+   "missing": [
+    "dd_facility_limit"
+   ]
+  },
+  {
+   "section": "terms",
+   "heading": "Terms and conditions",
+   "missing": [
+    "dd_tnc"
+   ]
+  },
+  {
+   "section": "group_exposure",
+   "heading": "Group exposure and references",
+   "missing": [
+    "group exposure"
+   ]
+  },
+  {
+   "section": "cp_group",
+   "heading": "Group and governance (CreditProbe)",
+   "missing": [
+    "b360_shareholder"
+   ]
+  }
+ ]
+}

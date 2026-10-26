@@ -1,0 +1,36 @@
+{
+ "name": "structures",
+ "owner": "Shariah and Risk",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Facility types and the structures each allows.",
+ "rows": {
+  "term_loan": [
+   "conventional",
+   "murabaha",
+   "tawarruq",
+   "ijara",
+   "musharaka"
+  ],
+  "revolver": [
+   "conventional",
+   "murabaha",
+   "tawarruq"
+  ],
+  "performance_lg": [
+   "conventional"
+  ],
+  "financial_lg": [
+   "conventional"
+  ],
+  "trade_lc": [
+   "conventional",
+   "murabaha"
+  ],
+  "ijara_requires": [
+   "real_estate",
+   "plant_equipment"
+  ]
+ }
+}

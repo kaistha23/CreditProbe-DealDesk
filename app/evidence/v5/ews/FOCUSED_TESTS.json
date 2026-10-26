@@ -1,0 +1,1272 @@
+{
+ "document": "FOCUSED_TESTS",
+ "base": "http://127.0.0.1:8501/api/v1/ews-domain/workspace",
+ "scope": "the API and reader paths this phase added or changed",
+ "browser_used": false,
+ "paid_inference": false,
+ "model_calls": 0,
+ "total": 130,
+ "passed": 130,
+ "failed": 0,
+ "checks": [
+  {
+   "check": "health reads no Cockpit",
+   "passed": true,
+   "got": false,
+   "expected": false
+  },
+  {
+   "check": "health writes no Cockpit",
+   "passed": true,
+   "got": false,
+   "expected": false
+  },
+  {
+   "check": "a frozen-lake path is refused",
+   "passed": true,
+   "got": "refused",
+   "expected": "refused"
+  },
+  {
+   "check": "an unknown domain is refused",
+   "passed": true,
+   "got": "refused",
+   "expected": "refused"
+  },
+  {
+   "check": "no cockpit import in backend/ews_domain",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "no cockpit lake path in the reader",
+   "passed": true,
+   "got": false,
+   "expected": false
+  },
+  {
+   "check": "no cockpit client import in the ported UI",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "every ported UI request goes to the EWS prefix",
+   "passed": true,
+   "got": [
+    "\"/api/v1/ews-domain/workspace\""
+   ],
+   "expected": [
+    "\"/api/v1/ews-domain/workspace\""
+   ]
+  },
+  {
+   "check": "the EWS store is the domain's own sqlite, not Cockpit state",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "the only writes are the preview cohort store and this domain's own datasets",
+   "passed": true,
+   "got": [
+    "COPY",
+    "CREATE",
+    "INSERT"
+   ],
+   "expected": [
+    "COPY",
+    "CREATE",
+    "INSERT"
+   ],
+   "note": "COPY/CREATE/INSERT appear in build_support.py (own datasets) and the preview cohort sqlite only; no schema write touches the Cockpit"
+  },
+  {
+   "check": "corporate: 20 periods on the feed",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "corporate: the trend carries every period",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "corporate: no trend point is a synthetic zero",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "corporate: severity cards reconcile on count and EAD",
+   "passed": true,
+   "got": {
+    "critical": [
+     442,
+     3208.6898
+    ],
+    "high": [
+     604,
+     4264.2341
+    ],
+    "low": [
+     6640,
+     47651.7476
+    ],
+    "moderate": [
+     2491,
+     17986.1812
+    ]
+   },
+   "expected": {
+    "high": [
+     604,
+     4264.2341
+    ],
+    "low": [
+     6640,
+     47651.7476
+    ],
+    "moderate": [
+     2491,
+     17986.1812
+    ],
+    "critical": [
+     442,
+     3208.6898
+    ]
+   }
+  },
+  {
+   "check": "corporate: a segment card exists for every segment",
+   "passed": true,
+   "got": 14,
+   "expected": 14
+  },
+  {
+   "check": "corporate: portfolio series carries 20 periods",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "corporate: portfolio series reconciles to the book at 2026Q2",
+   "passed": true,
+   "got": [
+    21918,
+    153700.1418
+   ],
+   "expected": [
+    21918,
+    153700.1418
+   ]
+  },
+  {
+   "check": "corporate: portfolio series has no zero row",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "corporate: segment series carries 20 periods",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "corporate: segment series reconciles to the book at 2026Q2",
+   "passed": true,
+   "got": [
+    21918,
+    153700.1418
+   ],
+   "expected": [
+    21918,
+    153700.1418
+   ]
+  },
+  {
+   "check": "corporate: segment series has no zero row",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "corporate: subsegment series carries 20 periods",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "corporate: subsegment series reconciles to the book at 2026Q2",
+   "passed": true,
+   "got": [
+    21918,
+    153700.1418
+   ],
+   "expected": [
+    21918,
+    153700.1418
+   ]
+  },
+  {
+   "check": "corporate: subsegment series has no zero row",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "corporate: no duplicate history key",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "corporate: every exposure has an owner",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "corporate: every published reason is a rule label",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "corporate: three published past-due bands",
+   "passed": true,
+   "got": 3,
+   "expected": 3
+  },
+  {
+   "check": "corporate: past-due 0-30 card counts the book's own rows",
+   "passed": true,
+   "got": 20944,
+   "expected": 20944
+  },
+  {
+   "check": "corporate: past-due 0-30 high/critical is the crossed population",
+   "passed": true,
+   "got": 325,
+   "expected": 325
+  },
+  {
+   "check": "corporate: past-due 1-10 card counts the book's own rows",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "corporate: past-due 1-10 high/critical is the crossed population",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "corporate: past-due 30-60 card counts the book's own rows",
+   "passed": true,
+   "got": 891,
+   "expected": 891
+  },
+  {
+   "check": "corporate: past-due 30-60 high/critical is the crossed population",
+   "passed": true,
+   "got": 83,
+   "expected": 83
+  },
+  {
+   "check": "corporate: an unpublished past-due band is refused",
+   "passed": true,
+   "got": 422,
+   "expected": 422
+  },
+  {
+   "check": "corporate: an unpublished reason is refused",
+   "passed": true,
+   "got": 422,
+   "expected": 422
+  },
+  {
+   "check": "corporate: rule x past-due x severity is one population",
+   "passed": true,
+   "got": 320,
+   "expected": 320
+  },
+  {
+   "check": "corporate: the ladder is segment to exposure",
+   "passed": true,
+   "got": [
+    "segment",
+    "subsegment",
+    "owner",
+    "exposure"
+   ],
+   "expected": [
+    "segment",
+    "subsegment",
+    "owner",
+    "exposure"
+   ]
+  },
+  {
+   "check": "corporate: the drill's owner history carries 20 periods",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "corporate: owner totals are a distinct owner count, not a row count",
+   "passed": true,
+   "got": 5412,
+   "expected": 5412
+  },
+  {
+   "check": "corporate: already-bad and warned-performing never overlap",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "corporate: every level card has its own series",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "corporate: drilling a segment narrows the book",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "corporate: the drilled rung is the sub-segment",
+   "passed": true,
+   "got": "subsegment",
+   "expected": "subsegment"
+  },
+  {
+   "check": "corporate: an unknown rung is refused",
+   "passed": true,
+   "got": 422,
+   "expected": 422
+  },
+  {
+   "check": "corporate: the grid key is the exposure key",
+   "passed": true,
+   "got": "facility_id",
+   "expected": "facility_id"
+  },
+  {
+   "check": "corporate: the grid returns only the locked severities",
+   "passed": true,
+   "got": [
+    "critical"
+   ],
+   "expected": [
+    "critical"
+   ]
+  },
+  {
+   "check": "corporate: the grid total is the book's own count",
+   "passed": true,
+   "got": 1046,
+   "expected": 1046
+  },
+  {
+   "check": "corporate: a column the release lacks is refused",
+   "passed": true,
+   "got": 422,
+   "expected": 422
+  },
+  {
+   "check": "corporate: the card makes no model call",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "corporate: no performance metric is claimed",
+   "passed": true,
+   "got": false,
+   "expected": false
+  },
+  {
+   "check": "corporate: every rule the release can evaluate is marked so",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "corporate: rule weights are the preserved weights",
+   "passed": true,
+   "got": {
+    "C-WATCH": 1,
+    "C-DOWNGRADE": 1,
+    "C-COVENANT": 1,
+    "C-DPD": 2,
+    "C-SICR": 1,
+    "C-UTIL": 1,
+    "C-DEFAULT": 2,
+    "C-BUR-EXTDPD": 3,
+    "C-BUR-ENQ": 1,
+    "C-OB-INFLOW": 1,
+    "C-OB-BUFFER": 1,
+    "C-OB-RETURNED": 1
+   },
+   "expected": {
+    "C-WATCH": 1,
+    "C-DOWNGRADE": 1,
+    "C-COVENANT": 1,
+    "C-DPD": 2,
+    "C-SICR": 1,
+    "C-UTIL": 1,
+    "C-DEFAULT": 2,
+    "C-BUR-EXTDPD": 3,
+    "C-BUR-ENQ": 1,
+    "C-OB-INFLOW": 1,
+    "C-OB-BUFFER": 1,
+    "C-OB-RETURNED": 1
+   }
+  },
+  {
+   "check": "corporate: the bands are the rule set's bands",
+   "passed": true,
+   "got": [
+    [
+     "critical",
+     10
+    ],
+    [
+     "high",
+     8
+    ],
+    [
+     "moderate",
+     4
+    ],
+    [
+     "low",
+     1
+    ]
+   ],
+   "expected": [
+    [
+     "critical",
+     10
+    ],
+    [
+     "high",
+     8
+    ],
+    [
+     "moderate",
+     4
+    ],
+    [
+     "low",
+     1
+    ]
+   ]
+  },
+  {
+   "check": "corporate: scored coverage is the period's own row count",
+   "passed": true,
+   "got": 21918,
+   "expected": 21918
+  },
+  {
+   "check": "corporate: the reference model is not deployed",
+   "passed": true,
+   "got": false,
+   "expected": false
+  },
+  {
+   "check": "corporate: the rule-set log records exactly the versions ews_rules holds",
+   "passed": true,
+   "got": [
+    true,
+    [
+     "gw-ews-1.3.0",
+     "gw-ews-1.2.0",
+     "gw-ews-1.1.0",
+     "gw-ews-1.0.0"
+    ],
+    [
+     "active",
+     "superseded",
+     "superseded",
+     "superseded"
+    ]
+   ],
+   "expected": [
+    true,
+    [
+     "gw-ews-1.3.0",
+     "gw-ews-1.2.0",
+     "gw-ews-1.1.0",
+     "gw-ews-1.0.0"
+    ],
+    [
+     "active",
+     "superseded",
+     "superseded",
+     "superseded"
+    ]
+   ]
+  },
+  {
+   "check": "corporate: the handoff names this domain's own id fields",
+   "passed": true,
+   "got": [
+    "facility_id",
+    "borrower_id"
+   ],
+   "expected": [
+    "facility_id",
+    "borrower_id"
+   ]
+  },
+  {
+   "check": "corporate: the handoff carries the exact period",
+   "passed": true,
+   "got": "2026Q2",
+   "expected": "2026Q2"
+  },
+  {
+   "check": "corporate: every receiver is declared pending",
+   "passed": true,
+   "got": [
+    "PENDING_RESTORATION"
+   ],
+   "expected": [
+    "PENDING_RESTORATION"
+   ]
+  },
+  {
+   "check": "corporate: the handoff writes nothing to the Cockpit",
+   "passed": true,
+   "got": [
+    false,
+    false
+   ],
+   "expected": [
+    false,
+    false
+   ]
+  },
+  {
+   "check": "corporate: the handoff population is the cohort it froze",
+   "passed": true,
+   "got": 1046,
+   "expected": 1046
+  },
+  {
+   "check": "corporate: the handoff counts the book's own rows",
+   "passed": true,
+   "got": 1046,
+   "expected": 1046
+  },
+  {
+   "check": "corporate: a not-live rule is named as not live, not dropped",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "corporate: the same selection freezes the same cohort",
+   "passed": true,
+   "got": [
+    "ews-cohort-03527be212cb",
+    "e2ae97455a88860e28cf4d06cdc91a33d9941e700f1d7b1bfea3a3998a1339db"
+   ],
+   "expected": [
+    "ews-cohort-03527be212cb",
+    "e2ae97455a88860e28cf4d06cdc91a33d9941e700f1d7b1bfea3a3998a1339db"
+   ]
+  },
+  {
+   "check": "corporate: the frozen cohort is exactly that population's ids",
+   "passed": true,
+   "got": [
+    56,
+    [
+     "CF007831",
+     "CF007833",
+     "CF007834",
+     "CF007912",
+     "CF008362",
+     "CF008364",
+     "CF008365",
+     "CF009262",
+     "CF009263",
+     "CF009591",
+     "CF009592",
+     "CF009593",
+     "CF009594",
+     "CF010611",
+     "CF010612",
+     "CF010961",
+     "CF010962",
+     "CF010963",
+     "CF010964",
+     "CF010965",
+     "CF012641",
+     "CF012642",
+     "CF012643",
+     "CF012645",
+     "CF024364"
+    ]
+   ],
+   "expected": [
+    56,
+    [
+     "CF007831",
+     "CF007833",
+     "CF007834",
+     "CF007912",
+     "CF008362",
+     "CF008364",
+     "CF008365",
+     "CF009262",
+     "CF009263",
+     "CF009591",
+     "CF009592",
+     "CF009593",
+     "CF009594",
+     "CF010611",
+     "CF010612",
+     "CF010961",
+     "CF010962",
+     "CF010963",
+     "CF010964",
+     "CF010965",
+     "CF012641",
+     "CF012642",
+     "CF012643",
+     "CF012645",
+     "CF024364"
+    ]
+   ]
+  },
+  {
+   "check": "corporate: a different population is a different cohort (and the same one is not)",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "corporate: a saved cohort reads back identically",
+   "passed": true,
+   "got": "e2ae97455a88860e28cf4d06cdc91a33d9941e700f1d7b1bfea3a3998a1339db",
+   "expected": "e2ae97455a88860e28cf4d06cdc91a33d9941e700f1d7b1bfea3a3998a1339db"
+  },
+  {
+   "check": "retail: 20 periods on the feed",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "retail: the trend carries every period",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "retail: no trend point is a synthetic zero",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "retail: severity cards reconcile on count and EAD",
+   "passed": true,
+   "got": {
+    "critical": [
+     753,
+     134.80638
+    ],
+    "high": [
+     1432,
+     366.94161
+    ],
+    "low": [
+     8958,
+     4677.23911
+    ],
+    "moderate": [
+     4245,
+     1305.83847
+    ]
+   },
+   "expected": {
+    "moderate": [
+     4245,
+     1305.83847
+    ],
+    "critical": [
+     753,
+     134.80638
+    ],
+    "low": [
+     8958,
+     4677.23911
+    ],
+    "high": [
+     1432,
+     366.94161
+    ]
+   }
+  },
+  {
+   "check": "retail: a segment card exists for every segment",
+   "passed": true,
+   "got": 5,
+   "expected": 5
+  },
+  {
+   "check": "retail: portfolio series carries 20 periods",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "retail: portfolio series reconciles to the book at 2026-08",
+   "passed": true,
+   "got": [
+    42327,
+    19738.8321
+   ],
+   "expected": [
+    42327,
+    19738.8321
+   ]
+  },
+  {
+   "check": "retail: portfolio series has no zero row",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "retail: segment series carries 20 periods",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "retail: segment series reconciles to the book at 2026-08",
+   "passed": true,
+   "got": [
+    42327,
+    19738.8321
+   ],
+   "expected": [
+    42327,
+    19738.8321
+   ]
+  },
+  {
+   "check": "retail: segment series has no zero row",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "retail: subsegment series carries 20 periods",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "retail: subsegment series reconciles to the book at 2026-08",
+   "passed": true,
+   "got": [
+    42327,
+    19738.8321
+   ],
+   "expected": [
+    42327,
+    19738.8321
+   ]
+  },
+  {
+   "check": "retail: subsegment series has no zero row",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "retail: no duplicate history key",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "retail: every exposure has an owner",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "retail: every published reason is a rule label",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "retail: three published past-due bands",
+   "passed": true,
+   "got": 3,
+   "expected": 3
+  },
+  {
+   "check": "retail: past-due 0-30 card counts the book's own rows",
+   "passed": true,
+   "got": 40190,
+   "expected": 40190
+  },
+  {
+   "check": "retail: past-due 0-30 high/critical is the crossed population",
+   "passed": true,
+   "got": 1107,
+   "expected": 1107
+  },
+  {
+   "check": "retail: past-due 1-10 card counts the book's own rows",
+   "passed": true,
+   "got": 221,
+   "expected": 221
+  },
+  {
+   "check": "retail: past-due 1-10 high/critical is the crossed population",
+   "passed": true,
+   "got": 68,
+   "expected": 68
+  },
+  {
+   "check": "retail: past-due 30-60 card counts the book's own rows",
+   "passed": true,
+   "got": 569,
+   "expected": 569
+  },
+  {
+   "check": "retail: past-due 30-60 high/critical is the crossed population",
+   "passed": true,
+   "got": 265,
+   "expected": 265
+  },
+  {
+   "check": "retail: an unpublished past-due band is refused",
+   "passed": true,
+   "got": 422,
+   "expected": 422
+  },
+  {
+   "check": "retail: an unpublished reason is refused",
+   "passed": true,
+   "got": 422,
+   "expected": 422
+  },
+  {
+   "check": "retail: rule x past-due x severity is one population",
+   "passed": true,
+   "got": 506,
+   "expected": 506
+  },
+  {
+   "check": "retail: the ladder is segment to exposure",
+   "passed": true,
+   "got": [
+    "segment",
+    "subsegment",
+    "owner",
+    "exposure"
+   ],
+   "expected": [
+    "segment",
+    "subsegment",
+    "owner",
+    "exposure"
+   ]
+  },
+  {
+   "check": "retail: the drill's owner history carries 20 periods",
+   "passed": true,
+   "got": 20,
+   "expected": 20
+  },
+  {
+   "check": "retail: owner totals are a distinct owner count, not a row count",
+   "passed": true,
+   "got": 25432,
+   "expected": 25432
+  },
+  {
+   "check": "retail: already-bad and warned-performing never overlap",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "retail: every level card has its own series",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "retail: drilling a segment narrows the book",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "retail: the drilled rung is the sub-segment",
+   "passed": true,
+   "got": "subsegment",
+   "expected": "subsegment"
+  },
+  {
+   "check": "retail: an unknown rung is refused",
+   "passed": true,
+   "got": 422,
+   "expected": 422
+  },
+  {
+   "check": "retail: the grid key is the exposure key",
+   "passed": true,
+   "got": "account_id",
+   "expected": "account_id"
+  },
+  {
+   "check": "retail: the grid returns only the locked severities",
+   "passed": true,
+   "got": [
+    "critical"
+   ],
+   "expected": [
+    "critical"
+   ]
+  },
+  {
+   "check": "retail: the grid total is the book's own count",
+   "passed": true,
+   "got": 2185,
+   "expected": 2185
+  },
+  {
+   "check": "retail: a column the release lacks is refused",
+   "passed": true,
+   "got": 422,
+   "expected": 422
+  },
+  {
+   "check": "retail: the card makes no model call",
+   "passed": true,
+   "got": 0,
+   "expected": 0
+  },
+  {
+   "check": "retail: no performance metric is claimed",
+   "passed": true,
+   "got": false,
+   "expected": false
+  },
+  {
+   "check": "retail: every rule the release can evaluate is marked so",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "retail: rule weights are the preserved weights",
+   "passed": true,
+   "got": {
+    "R-DPD": 3,
+    "R-SCORE-LOW": 1,
+    "R-SCORE-DOWN": 2,
+    "R-UTIL": 2,
+    "R-MINPAY": 1,
+    "R-BUR-SCORE": 1,
+    "R-BUR-EXTDPD": 1,
+    "R-BUR-ENQ": 2,
+    "R-OB-SALARY": 2,
+    "R-OB-BUFFER": 1,
+    "R-OB-INFLOW": 1
+   },
+   "expected": {
+    "R-DPD": 3,
+    "R-SCORE-LOW": 1,
+    "R-SCORE-DOWN": 2,
+    "R-UTIL": 2,
+    "R-MINPAY": 1,
+    "R-BUR-SCORE": 1,
+    "R-BUR-EXTDPD": 1,
+    "R-BUR-ENQ": 2,
+    "R-OB-SALARY": 2,
+    "R-OB-BUFFER": 1,
+    "R-OB-INFLOW": 1
+   }
+  },
+  {
+   "check": "retail: the bands are the rule set's bands",
+   "passed": true,
+   "got": [
+    [
+     "critical",
+     7
+    ],
+    [
+     "high",
+     5
+    ],
+    [
+     "moderate",
+     3
+    ],
+    [
+     "low",
+     1
+    ]
+   ],
+   "expected": [
+    [
+     "critical",
+     7
+    ],
+    [
+     "high",
+     5
+    ],
+    [
+     "moderate",
+     3
+    ],
+    [
+     "low",
+     1
+    ]
+   ]
+  },
+  {
+   "check": "retail: scored coverage is the period's own row count",
+   "passed": true,
+   "got": 42327,
+   "expected": 42327
+  },
+  {
+   "check": "retail: the reference model is not deployed",
+   "passed": true,
+   "got": false,
+   "expected": false
+  },
+  {
+   "check": "retail: the rule-set log records exactly the versions ews_rules holds",
+   "passed": true,
+   "got": [
+    true,
+    [
+     "gw-ews-1.3.0",
+     "gw-ews-1.2.0",
+     "gw-ews-1.1.0",
+     "gw-ews-1.0.0"
+    ],
+    [
+     "active",
+     "superseded",
+     "superseded",
+     "superseded"
+    ]
+   ],
+   "expected": [
+    true,
+    [
+     "gw-ews-1.3.0",
+     "gw-ews-1.2.0",
+     "gw-ews-1.1.0",
+     "gw-ews-1.0.0"
+    ],
+    [
+     "active",
+     "superseded",
+     "superseded",
+     "superseded"
+    ]
+   ]
+  },
+  {
+   "check": "retail: the handoff names this domain's own id fields",
+   "passed": true,
+   "got": [
+    "account_id",
+    "customer_id"
+   ],
+   "expected": [
+    "account_id",
+    "customer_id"
+   ]
+  },
+  {
+   "check": "retail: the handoff carries the exact period",
+   "passed": true,
+   "got": "2026-08",
+   "expected": "2026-08"
+  },
+  {
+   "check": "retail: every receiver is declared pending",
+   "passed": true,
+   "got": [
+    "PENDING_RESTORATION"
+   ],
+   "expected": [
+    "PENDING_RESTORATION"
+   ]
+  },
+  {
+   "check": "retail: the handoff writes nothing to the Cockpit",
+   "passed": true,
+   "got": [
+    false,
+    false
+   ],
+   "expected": [
+    false,
+    false
+   ]
+  },
+  {
+   "check": "retail: the handoff population is the cohort it froze",
+   "passed": true,
+   "got": 2185,
+   "expected": 2185
+  },
+  {
+   "check": "retail: the handoff counts the book's own rows",
+   "passed": true,
+   "got": 2185,
+   "expected": 2185
+  },
+  {
+   "check": "retail: a not-live rule is named as not live, not dropped",
+   "passed": true,
+   "got": [],
+   "expected": []
+  },
+  {
+   "check": "retail: the same selection freezes the same cohort",
+   "passed": true,
+   "got": [
+    "ews-cohort-c04432b782a3",
+    "b2441458e0c541008272684f51f724e18a253e34c414f36e4ad942f3736b0357"
+   ],
+   "expected": [
+    "ews-cohort-c04432b782a3",
+    "b2441458e0c541008272684f51f724e18a253e34c414f36e4ad942f3736b0357"
+   ]
+  },
+  {
+   "check": "retail: the frozen cohort is exactly that population's ids",
+   "passed": true,
+   "got": [
+    151,
+    [
+     "RA000149B5",
+     "RA000157M0",
+     "RA0002471",
+     "RA000268B2",
+     "RA0003030",
+     "RA000333B7",
+     "RA000354B0",
+     "RA0005850",
+     "RA000585B3",
+     "RA0007511",
+     "RA0008450",
+     "RA0008740",
+     "RA000933B7",
+     "RA0009570",
+     "RA0012410",
+     "RA0018010",
+     "RA0018011",
+     "RA001801B1",
+     "RA0019490",
+     "RA0025031",
+     "RA002503B7",
+     "RA002503M0",
+     "RA0026480",
+     "RA0028110",
+     "RA0028650"
+    ]
+   ],
+   "expected": [
+    151,
+    [
+     "RA000149B5",
+     "RA000157M0",
+     "RA0002471",
+     "RA000268B2",
+     "RA0003030",
+     "RA000333B7",
+     "RA000354B0",
+     "RA0005850",
+     "RA000585B3",
+     "RA0007511",
+     "RA0008450",
+     "RA0008740",
+     "RA000933B7",
+     "RA0009570",
+     "RA0012410",
+     "RA0018010",
+     "RA0018011",
+     "RA001801B1",
+     "RA0019490",
+     "RA0025031",
+     "RA002503B7",
+     "RA002503M0",
+     "RA0026480",
+     "RA0028110",
+     "RA0028650"
+    ]
+   ]
+  },
+  {
+   "check": "retail: a different population is a different cohort (and the same one is not)",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "retail: a saved cohort reads back identically",
+   "passed": true,
+   "got": "b2441458e0c541008272684f51f724e18a253e34c414f36e4ad942f3736b0357",
+   "expected": "b2441458e0c541008272684f51f724e18a253e34c414f36e4ad942f3736b0357"
+  },
+  {
+   "check": "corporate: the collateral support relation is readable at its own grain",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "corporate: the covenant support relation is readable at its own grain",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "retail: the behaviour support relation is readable at its own grain",
+   "passed": true,
+   "got": true,
+   "expected": true
+  },
+  {
+   "check": "retail: the collateral support relation is readable at its own grain",
+   "passed": true,
+   "got": true,
+   "expected": true
+  }
+ ]
+}

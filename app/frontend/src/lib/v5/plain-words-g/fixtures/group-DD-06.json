@@ -1,0 +1,817 @@
+{
+ "proposal_id": "DD-06",
+ "as_of": "2026Q2",
+ "facts": {
+  "proposal_id": "DD-06",
+  "obligor": {
+   "id": "CB02729",
+   "name": "Dhahran Continental Industries",
+   "existing": true
+  },
+  "as_of": "2026Q2",
+  "mode": "book",
+  "structure": {
+   "group_id": "CG1965",
+   "group_name": "Dhahran Continental Industries Holding",
+   "standalone": true,
+   "focal": {
+    "borrower_id": "CB02729",
+    "name": "Dhahran Continental Industries",
+    "in_book": true,
+    "role": null,
+    "ownership_pct": null
+   },
+   "parent": null,
+   "subsidiaries": [],
+   "sisters": [],
+   "members": 1,
+   "member_ids": [
+    "CB02729"
+   ]
+  },
+  "shareholders": {
+   "rows": [],
+   "identified_pct": 0,
+   "ubo_count": 0,
+   "ubo_identified": false,
+   "provided_by": "relationship domain"
+  },
+  "board": {
+   "rows": [],
+   "people": 0,
+   "linked_people": 0,
+   "other_borrowers": []
+  },
+  "insiders": {
+   "rows": [],
+   "count": 0,
+   "provided": false,
+   "note": "The insider and staff register (b360_insider_link) covers the R12 demo groups; not provided for this book borrower."
+  },
+  "ownership_changes": {
+   "rows": [],
+   "count": 0,
+   "lookback": "8 quarters"
+  },
+  "shared_collateral": {
+   "assets": [],
+   "count": 0,
+   "over_pledged": 0,
+   "co_claimant_ids": []
+  },
+  "guarantees": {
+   "rows": [
+    {
+     "direction": "received",
+     "guarantor_id": "CB00474",
+     "guaranteed_id": "CB02729",
+     "facility_id": "CF027292",
+     "amount": 4.0048,
+     "basis": "supplier"
+    },
+    {
+     "direction": "given",
+     "guarantor_id": "CB02729",
+     "guaranteed_id": "CB05304",
+     "facility_id": "CF053042",
+     "amount": 0.5084,
+     "basis": "supplier"
+    }
+   ],
+   "unperfected": []
+  },
+  "connected_parties": {
+   "rows": [
+    {
+     "borrower_id": "CB05304",
+     "name": "Taif Central Trading",
+     "links": [
+      "guarantee"
+     ],
+     "ead": 34.632000000000005,
+     "rating": "BB+",
+     "status": "classified",
+     "classified": true,
+     "in_arrears": true,
+     "in_litigation": false,
+     "watchlist": true,
+     "ews_band": "moderate",
+     "max_dpd_4q": 120,
+     "worst_stage": 3,
+     "reasons": [
+      "SICR-DEFER3",
+      "SICR-DPD30",
+      "SICR-QUALAUDIT",
+      "UTP-COVENANT",
+      "UTP-DPD90"
+     ],
+     "classified_basis": [
+      "stage 3",
+      "in default",
+      "unlikely to pay"
+     ],
+     "href": "/borrower-360?domain=corporate&customer_id=CB05304&period=2026Q2"
+    },
+    {
+     "borrower_id": "CB00474",
+     "name": "Al Ahsa Modern Chemicals",
+     "links": [
+      "guarantee"
+     ],
+     "ead": 18.4811,
+     "rating": "BB+",
+     "status": "performing",
+     "classified": false,
+     "in_arrears": false,
+     "in_litigation": false,
+     "watchlist": false,
+     "ews_band": "none",
+     "max_dpd_4q": 0,
+     "worst_stage": 1,
+     "reasons": [],
+     "classified_basis": [],
+     "href": "/borrower-360?domain=corporate&customer_id=CB00474&period=2026Q2"
+    }
+   ],
+   "count": 2,
+   "classified": 1,
+   "in_arrears": 1,
+   "in_litigation": 0,
+   "adverse": [
+    "CB05304"
+   ],
+   "adverse_ead": 34.632
+  }
+ },
+ "cap_test": {
+  "proposal_id": "DD-06",
+  "group_id": "CG1965",
+  "group_name": "Dhahran Continental Industries Holding",
+  "as_of": "2026Q2",
+  "before_ead": 18.3667,
+  "deal_ead_y1": 21.0,
+  "after_ead": 39.3667,
+  "headroom_before": 481.6333,
+  "headroom_after": 460.6333,
+  "binding_limit": 500.0,
+  "binding": "connected group limit",
+  "connected_group_limit": {
+   "limit_sar_mn": 500.0,
+   "basis": "CP-1.2: SAR 500m per connected group (ownership or control, relationship domain rel-saudi-v1)"
+  },
+  "approved_cap": null,
+  "status": "within",
+  "utilisation_pct": 7.87334,
+  "limits_total_sar_mn": 26.5469,
+  "limits_funded_sar_mn": 26.5469,
+  "members": [
+   {
+    "borrower_id": "CB02729",
+    "ead": 18.3667,
+    "limit": 26.5469,
+    "funded_limit": 26.5469,
+    "non_funded_limit": 0.0,
+    "drawn": 12.1846,
+    "name": "Dhahran Continental Industries",
+    "is_self": true
+   }
+  ],
+  "constraint_name": "group_connected",
+  "constraint_label": "Connected group",
+  "increase_ask": null,
+  "cap_asked_sar_mn": null,
+  "limits_proposed_sar_mn": null,
+  "basis": "EAD (corporate book)"
+ },
+ "conduct": {
+  "proposal_id": "DD-06",
+  "obligor_id": "CB02729",
+  "obligor": "Dhahran Continental Industries",
+  "as_of": "2026Q2",
+  "existing": true,
+  "relationship": {
+   "since": "2020-09-21",
+   "accounts": 1,
+   "active": 1,
+   "years": 6
+  },
+  "utilisation": {
+   "limits_sar_mn": 26.5469,
+   "drawn_sar_mn": 12.1846,
+   "utilisation_pct": 45.898391149249065,
+   "facilities": [
+    {
+     "facility_id": "CF027291",
+     "product": "asset_finance",
+     "class": "funded",
+     "limit": 12.0295,
+     "drawn": 5.1145,
+     "utilisation_pct": 42.516,
+     "avg_4q_pct": 44.525749999999995,
+     "max_4q_pct": 46.529,
+     "dpd_now": 0,
+     "stage": 1
+    },
+    {
+     "facility_id": "CF027292",
+     "product": "working_capital",
+     "class": "funded",
+     "limit": 14.5174,
+     "drawn": 7.0701,
+     "utilisation_pct": 48.701,
+     "avg_4q_pct": 50.71075,
+     "max_4q_pct": 52.714,
+     "dpd_now": 0,
+     "stage": 1
+    }
+   ],
+   "over_90_4q": [],
+   "excess_days_12m": 0,
+   "peak_od_use_pct_12m": 0
+  },
+  "past_dues": {
+   "quarters": [
+    {
+     "quarter": "2024Q3",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 47.52496866281185
+    },
+    {
+     "quarter": "2024Q4",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 49.632258787374354
+    },
+    {
+     "quarter": "2025Q1",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 47.771863539513184
+    },
+    {
+     "quarter": "2025Q2",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 45.923643533926835
+    },
+    {
+     "quarter": "2025Q3",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 47.9176206701179
+    },
+    {
+     "quarter": "2025Q4",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 49.911441864753854
+    }
+   ],
+   "quarters_past_due_8q": 0,
+   "max_dpd_8q": 0,
+   "max_dpd_4q": 0,
+   "last_past_due": null
+  },
+  "turnover": {
+   "credit_turnover_12m_sar_mn": 54.9075,
+   "credit_turnover_prev_12m_sar_mn": 54.768,
+   "growth_pct": 0.2547107800175308,
+   "to_limits_x": 2.0683205948717176,
+   "avg_balance_12m_sar_mn": 0.964575,
+   "routing_required_x": 1.5,
+   "routing_actual_x": 2.068,
+   "routing_compliant": true,
+   "routing_achieved_pct": 137.86666666666667,
+   "turnover_to_revenue": 0.698,
+   "months": [
+    {
+     "month": "2024-07",
+     "credit_turnover_sar_mn": 6.3444,
+     "avg_balance_sar_mn": 1.092,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-08",
+     "credit_turnover_sar_mn": 4.0606,
+     "avg_balance_sar_mn": 0.9352,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-09",
+     "credit_turnover_sar_mn": 5.4343,
+     "avg_balance_sar_mn": 1.1118,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-10",
+     "credit_turnover_sar_mn": 5.3677,
+     "avg_balance_sar_mn": 1.1035,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-11",
+     "credit_turnover_sar_mn": 3.6062,
+     "avg_balance_sar_mn": 0.9206,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-12",
+     "credit_turnover_sar_mn": 4.2174,
+     "avg_balance_sar_mn": 0.9007,
+     "cheques_returned_count": 0
+    }
+   ]
+  },
+  "returned_cheques": {
+   "count_12m": 0,
+   "amount_12m_sar_mn": 0.0,
+   "months_with_returns": 0,
+   "last_return": null,
+   "reasons": [],
+   "rate_pct": 0.0,
+   "dates": []
+  },
+  "bureau": {
+   "quarters": [
+    {
+     "quarter": "2024Q3",
+     "external_exposure_sar_mn": 7.10533,
+     "external_dpd_days": 0,
+     "enquiries": 0,
+     "default": false
+    },
+    {
+     "quarter": "2024Q4",
+     "external_exposure_sar_mn": 19.68853,
+     "external_dpd_days": 0,
+     "enquiries": 2,
+     "default": false
+    },
+    {
+     "quarter": "2025Q1",
+     "external_exposure_sar_mn": 10.44046,
+     "external_dpd_days": 0,
+     "enquiries": 3,
+     "default": false
+    },
+    {
+     "quarter": "2025Q2",
+     "external_exposure_sar_mn": 7.19081,
+     "external_dpd_days": 0,
+     "enquiries": 1,
+     "default": false
+    },
+    {
+     "quarter": "2025Q3",
+     "external_exposure_sar_mn": 12.08451,
+     "external_dpd_days": 0,
+     "enquiries": 0,
+     "default": false
+    },
+    {
+     "quarter": "2025Q4",
+     "external_exposure_sar_mn": 6.00924,
+     "external_dpd_days": 0,
+     "enquiries": 0,
+     "default": false
+    }
+   ],
+   "trend": "stable",
+   "exposure_slope_per_q": -0.46317309523809547,
+   "max_external_dpd_4q": 0,
+   "enquiries_4q": 0,
+   "entity_reports": []
+  },
+  "headline": "Relationship since 2020-09-21 (1 account); credit turnover SAR 54.9m in the 12 months to 2026Q2 (PY SAR 54.8m), 2.07x the limits of SAR 26.5m; routing undertaking 1.5x the limits, 138% achieved; 0 returned cheques (SAR 0.00m) in 12 months; utilisation 46% of limits; past dues in 0 of the last 8 quarters (max 0 days); bureau trend stable."
+ },
+ "governance": {
+  "proposal_id": "DD-06",
+  "as_of": "2026Q2",
+  "flags": [
+   {
+    "code": "GOV-CONN-CLASSIFIED",
+    "family": "governance",
+    "review_point": "group_and_connected",
+    "review_point_label": "Group and connected parties",
+    "severity": "high",
+    "notch": 1,
+    "title": "Connected party classified",
+    "detail": "1 connected party classified as at 2026Q2: Taif Central Trading (guarantee; stage 3, in default, unlikely to pay; exposure with the bank SAR 34.6m).",
+    "parties": "Taif Central Trading",
+    "condition": {
+     "kind": "condition precedent",
+     "owner": "Credit",
+     "due": "prior to limit loading",
+     "text": "No new money to the group while Taif Central Trading remain classified; cross-default to the connected obligors; regularisation plan with dates submitted by the RM.",
+     "condition_id": "C-DD-06-COND-GOV-CONN-CLASSIFIED",
+     "source_finding": "C-DD-06-GOV-CONN-CLASSIFIED"
+    },
+    "condition_only": false,
+    "finding_id": "C-DD-06-GOV-CONN-CLASSIFIED"
+   }
+  ],
+  "conditions": [
+   {
+    "kind": "condition precedent",
+    "owner": "Credit",
+    "due": "prior to limit loading",
+    "text": "No new money to the group while Taif Central Trading remain classified; cross-default to the connected obligors; regularisation plan with dates submitted by the RM.",
+    "condition_id": "C-DD-06-COND-GOV-CONN-CLASSIFIED",
+    "source_finding": "C-DD-06-GOV-CONN-CLASSIFIED"
+   }
+  ],
+  "overlay": {
+   "base_rating": "BB+",
+   "notches_raw": 1,
+   "notches": 1,
+   "capped": false,
+   "cap": 3,
+   "overlaid_rating": "BB",
+   "reasons": [
+    {
+     "code": "GOV-CONN-CLASSIFIED",
+     "title": "Connected party classified",
+     "notch": 1,
+     "severity": "high",
+     "finding_id": "C-DD-06-GOV-CONN-CLASSIFIED"
+    }
+   ],
+   "basis": "Credit policy: qualitative overlay of one notch per governance or conduct red flag, capped at three notches; overlays above the cap need the Chief Risk Officer.",
+   "text": "Rating overlay: 1 notch for 1 red flag: BB+ \u2192 BB."
+  },
+  "counts": {
+   "governance": 1,
+   "conduct": 0,
+   "high": 1
+  },
+  "rules_version": "r12-c-v1"
+ },
+ "swot": {
+  "proposal_id": "DD-06",
+  "obligor": "Dhahran Continental Industries",
+  "as_of": "2026Q2",
+  "points": [
+   {
+    "quadrant": "strength",
+    "kind": "financial",
+    "theme": "profitability",
+    "text": "EBITDA margin 26.9% in FY2025 (PY 27.0%), EBITDA SAR 22.6m.",
+    "link": {
+     "type": "metric",
+     "step": "analysis"
+    },
+    "metric": 0.26923765745328637,
+    "id": "DD-06-SW-S01"
+   },
+   {
+    "quadrant": "strength",
+    "kind": "financial",
+    "theme": "liquidity",
+    "text": "Current ratio 1.63x at FY2025 (PY 1.64x).",
+    "link": {
+     "type": "metric",
+     "step": "analysis"
+    },
+    "metric": 1.632,
+    "id": "DD-06-SW-S02"
+   },
+   {
+    "quadrant": "strength",
+    "kind": "financial",
+    "theme": "debt service",
+    "text": "DSCR 2.01x after the deal (policy floor 1.20x).",
+    "link": {
+     "type": "metric",
+     "step": "analysis",
+     "id": "dscr"
+    },
+    "metric": 2.006049283871542,
+    "id": "DD-06-SW-S03"
+   },
+   {
+    "quadrant": "strength",
+    "kind": "qualitative",
+    "theme": "track record",
+    "text": "Relationship since 2020-09-21 (6 years) with no past dues in the 8 quarters to 2026Q2 and 0 returned cheque(s) in 12 months.",
+    "link": {
+     "type": "fact",
+     "step": "review"
+    },
+    "metric": 6,
+    "id": "DD-06-SW-S04"
+   },
+   {
+    "quadrant": "strength",
+    "kind": "qualitative",
+    "theme": "track record",
+    "text": "Routing undertaking met: 2.07x the limits against 1.5x required (138%).",
+    "link": {
+     "type": "fact",
+     "step": "review"
+    },
+    "metric": 137.86666666666667,
+    "id": "DD-06-SW-S05"
+   },
+   {
+    "quadrant": "weakness",
+    "kind": "financial",
+    "theme": "leverage",
+    "text": "Debt / EBITDA 3.53x after the deal (policy limit 4.00x).",
+    "link": {
+     "type": "metric",
+     "step": "analysis",
+     "id": "debt_ebitda"
+    },
+    "metric": 3.5265188470066517,
+    "id": "DD-06-SW-W01"
+   }
+  ],
+  "quadrants": {
+   "strength": [
+    {
+     "quadrant": "strength",
+     "kind": "financial",
+     "theme": "profitability",
+     "text": "EBITDA margin 26.9% in FY2025 (PY 27.0%), EBITDA SAR 22.6m.",
+     "link": {
+      "type": "metric",
+      "step": "analysis"
+     },
+     "metric": 0.26923765745328637,
+     "id": "DD-06-SW-S01"
+    },
+    {
+     "quadrant": "strength",
+     "kind": "financial",
+     "theme": "liquidity",
+     "text": "Current ratio 1.63x at FY2025 (PY 1.64x).",
+     "link": {
+      "type": "metric",
+      "step": "analysis"
+     },
+     "metric": 1.632,
+     "id": "DD-06-SW-S02"
+    },
+    {
+     "quadrant": "strength",
+     "kind": "financial",
+     "theme": "debt service",
+     "text": "DSCR 2.01x after the deal (policy floor 1.20x).",
+     "link": {
+      "type": "metric",
+      "step": "analysis",
+      "id": "dscr"
+     },
+     "metric": 2.006049283871542,
+     "id": "DD-06-SW-S03"
+    },
+    {
+     "quadrant": "strength",
+     "kind": "qualitative",
+     "theme": "track record",
+     "text": "Relationship since 2020-09-21 (6 years) with no past dues in the 8 quarters to 2026Q2 and 0 returned cheque(s) in 12 months.",
+     "link": {
+      "type": "fact",
+      "step": "review"
+     },
+     "metric": 6,
+     "id": "DD-06-SW-S04"
+    },
+    {
+     "quadrant": "strength",
+     "kind": "qualitative",
+     "theme": "track record",
+     "text": "Routing undertaking met: 2.07x the limits against 1.5x required (138%).",
+     "link": {
+      "type": "fact",
+      "step": "review"
+     },
+     "metric": 137.86666666666667,
+     "id": "DD-06-SW-S05"
+    }
+   ],
+   "weakness": [
+    {
+     "quadrant": "weakness",
+     "kind": "financial",
+     "theme": "leverage",
+     "text": "Debt / EBITDA 3.53x after the deal (policy limit 4.00x).",
+     "link": {
+      "type": "metric",
+      "step": "analysis",
+      "id": "debt_ebitda"
+     },
+     "metric": 3.5265188470066517,
+     "id": "DD-06-SW-W01"
+    },
+    {
+     "quadrant": "weakness",
+     "kind": "financial",
+     "theme": "returns",
+     "text": "Lifetime RAROC 10.3% on the ask against a hurdle of 15.0%.",
+     "link": {
+      "type": "metric",
+      "step": "analysis",
+      "id": "raroc"
+     },
+     "metric": 10.307092823326997,
+     "id": "DD-06-SW-W02"
+    }
+   ],
+   "opportunity": [
+    {
+     "quadrant": "opportunity",
+     "kind": "financial",
+     "theme": "growth plan",
+     "text": "Revenue projected at SAR 94.2m by FY2028 (4.0% a year), as per business (RM projection: 4% growth on the 2025 actuals).",
+     "link": {
+      "type": "fact",
+      "step": "proposal"
+     },
+     "metric": 0.040000057696219615,
+     "id": "DD-06-SW-O01"
+    },
+    {
+     "quadrant": "opportunity",
+     "kind": "qualitative",
+     "theme": "deposits and cross-sell",
+     "text": "Average balances SAR 1.0m on credit turnover of SAR 54.9m in 12 months (1.8%): room for cash management and liability business.",
+     "link": {
+      "type": "metric",
+      "step": "structure"
+     },
+     "metric": 0.017567272230569593,
+     "id": "DD-06-SW-O02"
+    },
+    {
+     "quadrant": "opportunity",
+     "kind": "qualitative",
+     "theme": "group headroom",
+     "text": "SAR 460.6m of group headroom left under the connected group limit of SAR 500.0m after the deal: room for the group's other companies.",
+     "link": {
+      "type": "metric",
+      "step": "structure"
+     },
+     "metric": 460.6333,
+     "id": "DD-06-SW-O03"
+    }
+   ],
+   "threat": [
+    {
+     "quadrant": "threat",
+     "kind": "qualitative",
+     "theme": "connected parties",
+     "text": "1 connected party classified as at 2026Q2: Taif Central Trading (guarantee; stage 3, in default, unlikely to pay; exposure with the bank SAR 34.6m).",
+     "link": {
+      "type": "finding",
+      "id": "C-DD-06-GOV-CONN-CLASSIFIED",
+      "step": "review"
+     },
+     "metric": "GOV-CONN-CLASSIFIED",
+     "id": "DD-06-SW-T01"
+    },
+    {
+     "quadrant": "threat",
+     "kind": "qualitative",
+     "theme": "geopolitics and market",
+     "text": "Manufacturing is exposed to feedstock and energy prices, export routes and demand from the oil and gas supply chain; the Stress Lab macro family runs these shocks on this deal.",
+     "link": {
+      "type": "metric",
+      "step": "stress"
+     },
+     "metric": "Manufacturing",
+     "id": "DD-06-SW-T02"
+    }
+   ]
+  },
+  "counts": {
+   "strength": 5,
+   "weakness": 2,
+   "opportunity": 3,
+   "threat": 2
+  },
+  "summary": "Dhahran Continental Industries: 5 strengths, 2 weaknesses, 3 opportunities, 2 threats. Main weakness: Debt / EBITDA 3.53x after the deal (policy limit 4.00x).",
+  "writer": "deterministic"
+ },
+ "mitigants": {
+  "proposal_id": "DD-06",
+  "structure_label": "ask",
+  "rows": [
+   {
+    "swot_id": "DD-06-SW-W01",
+    "quadrant": "weakness",
+    "theme": "leverage",
+    "weakness": "Debt / EBITDA 3.53x after the deal (policy limit 4.00x).",
+    "status": "answered by the structure",
+    "structure": [
+     {
+      "lever": "covenants",
+      "text": "Covenant package standard: Debt / EBITDA and DSCR tested semi-annually."
+     }
+    ],
+    "conditions": [],
+    "suggestion": null,
+    "link": {
+     "type": "metric",
+     "step": "analysis",
+     "id": "debt_ebitda"
+    }
+   },
+   {
+    "swot_id": "DD-06-SW-W02",
+    "quadrant": "weakness",
+    "theme": "returns",
+    "weakness": "Lifetime RAROC 10.3% on the ask against a hurdle of 15.0%.",
+    "status": "open",
+    "structure": [],
+    "conditions": [],
+    "suggestion": "Raise the margin or fees, or add collateral to lower the LGD (Optimise).",
+    "link": {
+     "type": "metric",
+     "step": "analysis",
+     "id": "raroc"
+    }
+   },
+   {
+    "swot_id": "DD-06-SW-T01",
+    "quadrant": "threat",
+    "theme": "connected parties",
+    "weakness": "1 connected party classified as at 2026Q2: Taif Central Trading (guarantee; stage 3, in default, unlikely to pay; exposure with the bank SAR 34.6m).",
+    "status": "answered by a condition",
+    "structure": [],
+    "conditions": [
+     {
+      "condition_id": "C-DD-06-COND-GOV-CONN-CLASSIFIED",
+      "text": "No new money to the group while Taif Central Trading remain classified; cross-default to the connected obligors; regularisation plan with dates submitted by the RM.",
+      "kind": "condition precedent",
+      "due": "prior to limit loading"
+     }
+    ],
+    "suggestion": null,
+    "link": {
+     "type": "finding",
+     "id": "C-DD-06-GOV-CONN-CLASSIFIED",
+     "step": "review"
+    }
+   },
+   {
+    "swot_id": "DD-06-SW-T02",
+    "quadrant": "threat",
+    "theme": "geopolitics and market",
+    "weakness": "Manufacturing is exposed to feedstock and energy prices, export routes and demand from the oil and gas supply chain; the Stress Lab macro family runs these shocks on this deal.",
+    "status": "open",
+    "structure": [],
+    "conditions": [],
+    "suggestion": "Run the Stress Lab macro family on this deal; a driver that breaks at moderate severity becomes a named monitoring trigger.",
+    "link": {
+     "type": "metric",
+     "step": "stress"
+    }
+   }
+  ],
+  "counts": {
+   "total": 4,
+   "structure": 1,
+   "condition": 1,
+   "open": 2
+  },
+  "headline": "2 of 4 weaknesses and threats answered by the ask structure or its conditions; 2 open."
+ },
+ "figures": {
+  "group": [],
+  "cap": [],
+  "owners": [],
+  "conduct": [
+   {
+    "value": 2.068,
+    "unit": "x",
+    "label": "Routing achieved"
+   },
+   {
+    "value": 1.5,
+    "unit": "x",
+    "label": "Routing required"
+   },
+   {
+    "value": 0.0,
+    "unit": "%",
+    "label": "Returned-cheque rate"
+   }
+  ],
+  "bureau": [
+   {
+    "value": 0,
+    "unit": "days",
+    "label": "External days past due"
+   },
+   {
+    "value": 6.20864,
+    "unit": "SAR million",
+    "label": "External exposure"
+   }
+  ]
+ },
+ "not_published": [],
+ "gaps": []
+}

@@ -1,0 +1,1985 @@
+{
+ "key": "c3",
+ "people": [
+  {
+   "key": "saleh",
+   "name": "Saleh Ibrahim Al-Mansour",
+   "id_number": "1027745196",
+   "nationality": "Saudi",
+   "dob": "1964-12-03",
+   "id_issue": "2023-01-18",
+   "id_expiry": "2033-01-17",
+   "role": "Chairman and GM (60%)",
+   "guarantor": true,
+   "simah": {
+    "date": "2026-10-09",
+    "number": "SC-26-8801764",
+    "score": 702,
+    "worst": "Current on own facilities",
+    "facilities": [
+     {
+      "lender": "Coastal Gulf Bank",
+      "product": "Credit card",
+      "limit": 0.2,
+      "outstanding": 0.041,
+      "overdue": 0.0,
+      "status": "Current"
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Nukhba Polymer Industries Co.",
+      "lender": "Coastal Gulf Bank",
+      "amount": 190.0,
+      "status": "Restructured (03/2026)"
+     },
+     {
+      "beneficiary": "Nukhba Polymer Industries Co.",
+      "lender": "Tihama Investment Bank",
+      "amount": 15.0,
+      "status": "Current"
+     }
+    ],
+    "history": "Own facilities current. Guaranteed term loan of Nukhba Polymer Industries Co. at Coastal Gulf Bank: 31-60 days past due in 01-02/2026; restructured 18/03/2026."
+   },
+   "pnw": {
+    "date": "2026-07-31",
+    "assets": [
+     {
+      "asset": "Shares",
+      "description": "60% of Nukhba Polymer Industries Co. (book value)",
+      "value": 83.2
+     },
+     {
+      "asset": "Real estate",
+      "description": "Villa, Al Fanateer, Jubail",
+      "value": 6.1
+     },
+     {
+      "asset": "Real estate",
+      "description": "Commercial plot, Dammam (1,200 sq m)",
+      "value": 11.5
+     },
+     {
+      "asset": "Cash and deposits",
+      "description": "Current and deposit accounts",
+      "value": 4.4
+     }
+    ],
+    "liabilities": [
+     {
+      "liability": "Credit card",
+      "description": "Coastal Gulf Bank",
+      "value": 0.041
+     }
+    ]
+   }
+  },
+  {
+   "key": "khalid",
+   "name": "Khalid Ibrahim Al-Mansour",
+   "id_number": "1031198472",
+   "nationality": "Saudi",
+   "dob": "1970-04-19",
+   "id_issue": "2021-08-02",
+   "id_expiry": "2031-08-01",
+   "role": "Director (40%)",
+   "guarantor": false,
+   "simah": {
+    "date": "2026-10-09",
+    "number": "SC-26-8801765",
+    "score": 736,
+    "worst": "Current (no delinquency)",
+    "facilities": [
+     {
+      "lender": "Tihama Investment Bank",
+      "product": "Real-estate finance",
+      "limit": 2.4,
+      "outstanding": 1.6,
+      "overdue": 0.0,
+      "status": "Current"
+     }
+    ],
+    "guarantees": [],
+    "history": "24 of 24 months current."
+   }
+  }
+ ],
+ "fs": {
+  "FY2023": {
+   "revenue": 301.5,
+   "cost_of_sales": 247.8,
+   "operating_expenses": 19.1,
+   "finance_cost": 9.6,
+   "zakat": 1.6,
+   "depreciation": 20.9,
+   "cash": 11.2,
+   "trade_receivables": 57.9,
+   "inventory": 48.8,
+   "other_current_assets": 7.6,
+   "ppe": 238.0,
+   "other_noncurrent_assets": 3.9,
+   "short_term_borrowings": 51.0,
+   "trade_payables": 44.1,
+   "current_portion_ltd": 24.0,
+   "long_term_borrowings": 96.0,
+   "end_of_service": 8.2,
+   "share_capital": 100.0,
+   "statutory_reserve": 16.2,
+   "retained_earnings": 10.7,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "due_from_related": 0.0,
+   "due_to_related": 0.0,
+   "other_current_liabilities": 17.2,
+   "gross_profit": 53.7,
+   "operating_profit": 34.6,
+   "net_profit": 23.4,
+   "current_assets": 125.5,
+   "total_assets": 367.4,
+   "total_equity": 126.9,
+   "current_liabilities": 136.3,
+   "total_liabilities": 240.5,
+   "ebitda": 55.5,
+   "operating_cash_flow": 34.0
+  },
+  "FY2024": {
+   "revenue": 318.2,
+   "cost_of_sales": 270.2,
+   "operating_expenses": 20.4,
+   "finance_cost": 11.2,
+   "zakat": 1.4,
+   "depreciation": 21.8,
+   "cash": 9.1,
+   "trade_receivables": 61.2,
+   "inventory": 52.0,
+   "other_current_assets": 8.1,
+   "ppe": 226.0,
+   "other_noncurrent_assets": 4.0,
+   "short_term_borrowings": 58.0,
+   "trade_payables": 47.5,
+   "current_portion_ltd": 32.0,
+   "long_term_borrowings": 64.0,
+   "end_of_service": 8.9,
+   "share_capital": 100.0,
+   "statutory_reserve": 17.7,
+   "retained_earnings": 14.2,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "due_from_related": 0.0,
+   "due_to_related": 0.0,
+   "other_current_liabilities": 18.1,
+   "gross_profit": 48.0,
+   "operating_profit": 27.6,
+   "net_profit": 15.0,
+   "current_assets": 130.4,
+   "total_assets": 360.4,
+   "total_equity": 131.9,
+   "current_liabilities": 155.6,
+   "total_liabilities": 228.5,
+   "ebitda": 49.4,
+   "operating_cash_flow": 34.8
+  },
+  "FY2025": {
+   "revenue": 296.4,
+   "cost_of_sales": 257.3,
+   "operating_expenses": 20.9,
+   "finance_cost": 12.4,
+   "zakat": 1.0,
+   "depreciation": 22.6,
+   "cash": 6.2,
+   "trade_receivables": 58.4,
+   "inventory": 49.7,
+   "other_current_assets": 8.8,
+   "ppe": 214.6,
+   "other_noncurrent_assets": 4.1,
+   "short_term_borrowings": 62.3,
+   "trade_payables": 44.8,
+   "current_portion_ltd": 40.0,
+   "long_term_borrowings": 32.0,
+   "end_of_service": 9.4,
+   "share_capital": 100.0,
+   "statutory_reserve": 18.2,
+   "retained_earnings": 18.5,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "due_from_related": 0.0,
+   "due_to_related": 0.0,
+   "other_current_liabilities": 16.6,
+   "gross_profit": 39.1,
+   "operating_profit": 18.2,
+   "net_profit": 4.8,
+   "current_assets": 123.1,
+   "total_assets": 341.8,
+   "total_equity": 136.7,
+   "current_liabilities": 163.7,
+   "total_liabilities": 205.1,
+   "ebitda": 40.8,
+   "operating_cash_flow": 28.1
+  },
+  "9M2026": {
+   "revenue": 214.1,
+   "cost_of_sales": 187.0,
+   "operating_expenses": 15.6,
+   "finance_cost": 9.6,
+   "zakat": 0.0,
+   "depreciation": 17.1,
+   "cash": 4.1,
+   "trade_receivables": 57.0,
+   "inventory": 54.3,
+   "other_current_assets": 9.0,
+   "ppe": 201.5,
+   "other_noncurrent_assets": 4.2,
+   "short_term_borrowings": 62.0,
+   "trade_payables": 42.2,
+   "current_portion_ltd": 36.0,
+   "long_term_borrowings": 36.0,
+   "end_of_service": 9.8,
+   "share_capital": 100.0,
+   "statutory_reserve": 18.2,
+   "retained_earnings": 20.4,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "due_from_related": 0.0,
+   "due_to_related": 0.0,
+   "other_current_liabilities": 5.5,
+   "gross_profit": 27.1,
+   "operating_profit": 11.5,
+   "net_profit": 1.9,
+   "current_assets": 124.4,
+   "total_assets": 330.1,
+   "total_equity": 138.6,
+   "current_liabilities": 145.7,
+   "total_liabilities": 191.5,
+   "ebitda": 28.6,
+   "months": 9,
+   "operating_cash_flow": 2.3
+  }
+ },
+ "audit": {
+  "FY2024": {
+   "auditor": "Rawasi Audit & Advisory",
+   "opinion": "Unqualified",
+   "qawaem": "QW-2025-2055104486",
+   "city": "Dammam",
+   "partner": "Majid Al-Ghamdi",
+   "licence": "441",
+   "signed": "2025-04-20"
+  },
+  "FY2025": {
+   "auditor": "Rawasi Audit & Advisory",
+   "opinion": "Unqualified",
+   "qawaem": "QW-2026-2055104486",
+   "city": "Dammam",
+   "partner": "Majid Al-Ghamdi",
+   "licence": "441",
+   "signed": "2026-04-15"
+  }
+ },
+ "notes": {
+  "FY2024": [
+   [
+    "Note 16 — Borrowings",
+    "Term loan from Coastal Gulf Bank SAR 96,000,000 (2023: 120,000,000), repayable in 15 quarterly instalments of SAR 8,000,000 from 30/06/2024 to 31/12/2027, secured by a first-ranking charge over the machinery; financial covenant DSCR not below 1.25x."
+   ]
+  ],
+  "FY2025": [
+   [
+    "Note 16 — Borrowings",
+    "Term loan from Coastal Gulf Bank SAR 72,000,000, of which SAR 40,000,000 current at 31/12/2025; the instalment of SAR 8,000,000 due 31/12/2025 was unpaid at the year end. The DSCR covenant (1.25x) was not met at 31/12/2025; the lender has not demanded repayment. Short-term Murabaha and LC acceptances SAR 62,300,000."
+   ],
+   [
+    "Note 9 — Revenue",
+    "Export sales to GCC customers 24% (2024: 26%). Prices of PET resin rose 18% in 2025; selling prices lagged."
+   ],
+   [
+    "Note 24 — Subsequent events",
+    "On 18/03/2026 the Company and Coastal Gulf Bank agreed to reschedule the term loan: the four instalments due 31/12/2025 to 30/09/2026 (SAR 32,000,000) were deferred; the balance of SAR 72,000,000 is repayable in 8 quarterly instalments of SAR 9,000,000 from 31/12/2026, final maturity extended from 31/12/2027 to 30/09/2028."
+   ]
+  ]
+ },
+ "inhouse_by": "Fadi Nabil Haddad",
+ "inhouse_date": "2026-10-11",
+ "vat": [
+  {
+   "period": "2025-10",
+   "from": "2025-10-01",
+   "to": "2025-10-31",
+   "taxable_sales": 18.902,
+   "zero_rated": 6.958,
+   "output_vat": 2.835,
+   "input_vat": 2.853,
+   "filed_on": "2025-11-17"
+  },
+  {
+   "period": "2025-11",
+   "from": "2025-11-01",
+   "to": "2025-11-30",
+   "taxable_sales": 18.037,
+   "zero_rated": 6.282,
+   "output_vat": 2.706,
+   "input_vat": 2.618,
+   "filed_on": "2025-12-17"
+  },
+  {
+   "period": "2025-12",
+   "from": "2025-12-01",
+   "to": "2025-12-31",
+   "taxable_sales": 19.045,
+   "zero_rated": 5.596,
+   "output_vat": 2.857,
+   "input_vat": 2.589,
+   "filed_on": "2026-01-17"
+  },
+  {
+   "period": "2026-01",
+   "from": "2026-01-01",
+   "to": "2026-01-31",
+   "taxable_sales": 16.691,
+   "zero_rated": 5.629,
+   "output_vat": 2.504,
+   "input_vat": 2.371,
+   "filed_on": "2026-02-17"
+  },
+  {
+   "period": "2026-02",
+   "from": "2026-02-01",
+   "to": "2026-02-28",
+   "taxable_sales": 17.028,
+   "zero_rated": 5.964,
+   "output_vat": 2.554,
+   "input_vat": 2.559,
+   "filed_on": "2026-03-17"
+  },
+  {
+   "period": "2026-03",
+   "from": "2026-03-01",
+   "to": "2026-03-31",
+   "taxable_sales": 19.519,
+   "zero_rated": 5.682,
+   "output_vat": 2.928,
+   "input_vat": 2.745,
+   "filed_on": "2026-04-17"
+  },
+  {
+   "period": "2026-04",
+   "from": "2026-04-01",
+   "to": "2026-04-30",
+   "taxable_sales": 17.732,
+   "zero_rated": 5.465,
+   "output_vat": 2.66,
+   "input_vat": 2.437,
+   "filed_on": "2026-05-17"
+  },
+  {
+   "period": "2026-05",
+   "from": "2026-05-01",
+   "to": "2026-05-31",
+   "taxable_sales": 18.916,
+   "zero_rated": 5.92,
+   "output_vat": 2.837,
+   "input_vat": 2.857,
+   "filed_on": "2026-06-17"
+  },
+  {
+   "period": "2026-06",
+   "from": "2026-06-01",
+   "to": "2026-06-30",
+   "taxable_sales": 18.34,
+   "zero_rated": 4.879,
+   "output_vat": 2.751,
+   "input_vat": 2.546,
+   "filed_on": "2026-07-17"
+  },
+  {
+   "period": "2026-07",
+   "from": "2026-07-01",
+   "to": "2026-07-31",
+   "taxable_sales": 18.604,
+   "zero_rated": 6.184,
+   "output_vat": 2.791,
+   "input_vat": 2.65,
+   "filed_on": "2026-08-17"
+  },
+  {
+   "period": "2026-08",
+   "from": "2026-08-01",
+   "to": "2026-08-31",
+   "taxable_sales": 18.238,
+   "zero_rated": 5.504,
+   "output_vat": 2.736,
+   "input_vat": 2.689,
+   "filed_on": "2026-09-17"
+  },
+  {
+   "period": "2026-09",
+   "from": "2026-09-01",
+   "to": "2026-09-30",
+   "taxable_sales": 16.822,
+   "zero_rated": 6.143,
+   "output_vat": 2.523,
+   "input_vat": 2.63,
+   "filed_on": "2026-10-17"
+  }
+ ],
+ "accounts": [
+  {
+   "bank": "Coastal Gulf Bank",
+   "number": "2201-558190-01",
+   "iban": "SA6640000002201558190010",
+   "type": "Current account (main operating)",
+   "opening": 4.9,
+   "issued": "2026-10-04",
+   "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "credit_items": [
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      6.445615,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      3.550341,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      5.611376,
+      18
+     ],
+     [
+      "Local customers — collections",
+      6.635143,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      5.379567,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      4.785472,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      5.008427,
+      18
+     ],
+     [
+      "Local customers — collections",
+      6.957148,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      6.059802,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      3.011606,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      5.368981,
+      18
+     ],
+     [
+      "Local customers — collections",
+      6.067324,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      5.870114,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      3.215738,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      6.075876,
+      18
+     ],
+     [
+      "Local customers — collections",
+      5.866724,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      4.404874,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      4.407343,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      5.572914,
+      18
+     ],
+     [
+      "Local customers — collections",
+      6.53057,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      6.273364,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      4.97764,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      5.12442,
+      18
+     ],
+     [
+      "Local customers — collections",
+      5.80453,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      5.885924,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      2.980062,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      7.002298,
+      18
+     ],
+     [
+      "Local customers — collections",
+      6.060085,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      4.771186,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      3.797215,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      6.680507,
+      18
+     ],
+     [
+      "Local customers — collections",
+      5.32371,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      5.960829,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      3.775827,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      5.497617,
+      18
+     ],
+     [
+      "Local customers — collections",
+      5.773357,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      7.524718,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      3.877113,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      5.539622,
+      18
+     ],
+     [
+      "Local customers — collections",
+      5.320666,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      4.450471,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      4.428196,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      5.028134,
+      18
+     ],
+     [
+      "Local customers — collections",
+      6.256737,
+      25
+     ]
+    ],
+    [
+     [
+      "Gulf Beverage Bottling Co. — payment",
+      5.739652,
+      5
+     ],
+     [
+      "Eastern Dairy Foods Co. — payment",
+      4.184391,
+      12
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      6.87782,
+      18
+     ],
+     [
+      "Local customers — collections",
+      4.707454,
+      25
+     ]
+    ]
+   ],
+   "debit_items": [
+    [
+     [
+      "LC settlement — PET resin imports",
+      8.532821,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.819055,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.112002,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.222376,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.64121,
+      8
+     ],
+     [
+      "VAT payment",
+      0.669964,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.413802,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.989578,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      8.152308,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.920326,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.19017,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.240172,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.637051,
+      8
+     ],
+     [
+      "VAT payment",
+      0.634632,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.45959,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      3.054698,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      7.16301,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.953622,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.031895,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.200432,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.448619,
+      8
+     ],
+     [
+      "VAT payment",
+      0.641702,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.413468,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.813298,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      7.519092,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.854799,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.156177,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.216297,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.472452,
+      8
+     ],
+     [
+      "VAT payment",
+      0.683952,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.24882,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      3.035196,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      7.671186,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.80351,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.973051,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.206802,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.546188,
+      8
+     ],
+     [
+      "VAT payment",
+      0.640491,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.408114,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.824692,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      8.061116,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      4.030567,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.242763,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.229515,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.524551,
+      8
+     ],
+     [
+      "VAT payment",
+      0.623474,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.428809,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      3.197492,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      7.982794,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.851299,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.227957,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.217525,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.70224,
+      8
+     ],
+     [
+      "VAT payment",
+      0.714467,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.374087,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      3.016333,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      7.792504,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.546284,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.13007,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.217973,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.442541,
+      8
+     ],
+     [
+      "VAT payment",
+      0.607437,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.218022,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.77612,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      7.790639,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.609348,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.125628,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.200487,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.545126,
+      8
+     ],
+     [
+      "VAT payment",
+      0.62296,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.380143,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.891632,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      8.210703,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      4.327898,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.162689,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.22161,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.516432,
+      8
+     ],
+     [
+      "VAT payment",
+      0.628471,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.374359,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.97829,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      7.04426,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      3.795505,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      1.988342,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.218036,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.557266,
+      8
+     ],
+     [
+      "VAT payment",
+      0.61236,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.226912,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      2.87919,
+      20
+     ]
+    ],
+    [
+     [
+      "LC settlement — PET resin imports",
+      7.768112,
+      10
+     ],
+     [
+      "Local resin and masterbatch suppliers",
+      4.055208,
+      16
+     ],
+     [
+      "Payroll transfer (WPS)",
+      2.2691,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.205009,
+      15
+     ],
+     [
+      "Electricity and utilities (factory)",
+      1.487427,
+      8
+     ],
+     [
+      "VAT payment",
+      0.629192,
+      28
+     ],
+     [
+      "Term loan instalment and profit",
+      2.211852,
+      30
+     ],
+     [
+      "Murabaha repayment (net)",
+      3.041754,
+      20
+     ]
+    ]
+   ],
+   "returned": {},
+   "floor": 0.4
+  },
+  {
+   "bank": "Tihama Investment Bank",
+   "number": "077-4410552-3",
+   "iban": "SA2185000000774410552300",
+   "type": "Current account",
+   "opening": 1.5,
+   "issued": "2026-10-06",
+   "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "credit_items": [
+    [
+     [
+      "Local customers — collections",
+      2.667574,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.21492,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.5332,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.32474,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.596389,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      1.905304,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.167913,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.448089,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.448514,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.142737,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.822917,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.045853,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.296927,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.516617,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.056659,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.459282,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.403066,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.208365,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.701057,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.18575,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      1.915495,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.510648,
+      22
+     ]
+    ],
+    [
+     [
+      "Local customers — collections",
+      2.360285,
+      9
+     ],
+     [
+      "Export proceeds (GCC customers)",
+      2.361272,
+      22
+     ]
+    ]
+   ],
+   "debit_items": [
+    [
+     [
+      "Supplier payments",
+      3.414044,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.510117,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.34085,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.558757,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.066489,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.476871,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.311257,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.346412,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.161008,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.47191,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.486838,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.423599,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.365126,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.490085,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.204467,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.353141,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.274323,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.378775,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.506644,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.42183,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.080835,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.386975,
+      24
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      3.261599,
+      12
+     ],
+     [
+      "Freight and logistics",
+      1.501621,
+      24
+     ]
+    ]
+   ],
+   "returned": {},
+   "floor": 0.2
+  }
+ ],
+ "simah_company": {
+  "date": "2026-10-09",
+  "number": "SB-26-3301190",
+  "score": 598,
+  "enquiries": 3,
+  "defaults": 0,
+  "facilities": [
+   {
+    "lender": "Coastal Gulf Bank",
+    "product": "Term loan",
+    "limit": 120.0,
+    "outstanding": 72.0,
+    "overdue": 0.0,
+    "status": "Restructured",
+    "opened": "2021-04-01",
+    "remark": "Rescheduled 18/03/2026; maturity 30/09/2028"
+   },
+   {
+    "lender": "Coastal Gulf Bank",
+    "product": "Short-term Murabaha",
+    "limit": 40.0,
+    "outstanding": 38.4,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2021-04-01"
+   },
+   {
+    "lender": "Coastal Gulf Bank",
+    "product": "Letters of credit (incl. acceptances)",
+    "limit": 30.0,
+    "outstanding": 23.6,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2021-04-01"
+   },
+   {
+    "lender": "Tihama Investment Bank",
+    "product": "Letters of guarantee",
+    "limit": 15.0,
+    "outstanding": 9.2,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2022-02-14"
+   }
+  ],
+  "history": "Term loan with Coastal Gulf Bank: 31-60 days past due in 01/2026 and 02/2026 (instalment of SAR 8.0m due 31/12/2025 unpaid); restructured on 18/03/2026 (four instalments deferred; maturity 30/09/2028). Other facilities current.",
+  "enquiry_text": "3 enquiries in the last 6 months: Sandstone Harbour Bank (10/2026), Al Rimal Commercial Bank (07/2026), Arabian Crescent Bank (05/2026)."
+ },
+ "consent": {
+  "by": "Saleh Ibrahim Al-Mansour",
+  "role": "Chairman and General Manager",
+  "on": "2026-10-07"
+ },
+ "request": {
+  "date": "2026-10-08",
+  "ref": "NPI/CEO/2026/41",
+  "by": "Saleh Ibrahim Al-Mansour",
+  "role": "Chairman and General Manager",
+  "body": "We would like to move our main banking relationship to Sandstone Harbour Bank. We request the following facilities to take over our facilities with Coastal Gulf Bank (outstanding SAR 134,000,000 at 30/09/2026) and support our growth, at 3M SAIBOR + 1.25%:",
+  "facilities": [
+   {
+    "facility": "Term loan (takeover), 48 months",
+    "amount": 72.0,
+    "purpose": "Repayment of the Coastal Gulf Bank term loan"
+   },
+   {
+    "facility": "Short-term Murabaha",
+    "amount": 45.0,
+    "purpose": "Working capital; takeover of the Coastal Gulf Bank Murabaha"
+   },
+   {
+    "facility": "Letters of credit (sight / usance 120 days)",
+    "amount": 40.0,
+    "purpose": "PET resin imports"
+   }
+  ],
+  "more": [
+   "We have an excellent track record with Coastal Gulf Bank with no delays or restructuring, and we are moving only because of pricing.",
+   "We offer a first-ranking charge over our machinery (to be released by the current bank on takeover) and the personal guarantee of the undersigned."
+  ]
+ },
+ "resolution": {
+  "date": "2026-10-07",
+  "number": "PR-2026-05",
+  "amount": 180.0,
+  "persons": "Saleh Ibrahim Al-Mansour (Chairman and General Manager)",
+  "text": "The partners resolved to obtain facilities from Sandstone Harbour Bank up to SAR 180,000,000, to repay the facilities of Coastal Gulf Bank, and to grant a charge over the machinery."
+ },
+ "signatories": {
+  "as_of": "2026-10-07",
+  "rows": [
+   {
+    "name": "Saleh Ibrahim Al-Mansour",
+    "id_number": "1027745196",
+    "role": "Chairman and General Manager",
+    "limit": "Up to SAR 20m alone",
+    "mode": "Single / joint above"
+   },
+   {
+    "name": "Khalid Ibrahim Al-Mansour",
+    "id_number": "1031198472",
+    "role": "Director, Operations",
+    "limit": "Jointly",
+    "mode": "Joint"
+   }
+  ]
+ },
+ "other_banks": [
+  {
+   "bank": "Coastal Gulf Bank",
+   "offer_date": "2023-06-12",
+   "offer_ref": "CGB/IND/23/0611",
+   "offer_expiry": "2027-12-31",
+   "offer_signed": "Faris Al-Shammari",
+   "facilities": [
+    {
+     "facility": "Term loan (machinery), quarterly SAR 8.0m",
+     "limit": 120.0,
+     "pricing": "3M SAIBOR + 2.25%",
+     "tenor": "15 quarterly from 30/06/2024 to 31/12/2027"
+    },
+    {
+     "facility": "Short-term Murabaha",
+     "limit": 40.0,
+     "pricing": "3M SAIBOR + 2.25%",
+     "tenor": "up to 180 days"
+    },
+    {
+     "facility": "Letters of credit (sight / usance 120 days)",
+     "limit": 30.0,
+     "pricing": "0.30% per quarter",
+     "tenor": "per LC"
+    }
+   ],
+   "security": "First-ranking charge over the machinery; personal guarantee of Saleh Ibrahim Al-Mansour; promissory note SAR 190,000,000.",
+   "offer_terms": [
+    "Financial covenant: DSCR not below 1.25x, tested annually on audited accounts.",
+    "Assignment of insurance over the machinery."
+   ],
+   "statement_date": "2026-09-30",
+   "statement": [
+    {
+     "facility": "Term loan (machinery) — rescheduled",
+     "limit": 120.0,
+     "outstanding": 72.0,
+     "overdue": 0.0,
+     "maturity": "30/09/2028"
+    },
+    {
+     "facility": "Short-term Murabaha",
+     "limit": 40.0,
+     "outstanding": 38.4,
+     "overdue": 0.0,
+     "maturity": "rolling"
+    },
+    {
+     "facility": "Letters of credit (incl. acceptances)",
+     "limit": 30.0,
+     "outstanding": 23.6,
+     "overdue": 0.0,
+     "maturity": "per LC"
+    }
+   ],
+   "statement_notes": [
+    "Term loan schedule as amended on 18/03/2026: 8 quarterly instalments of SAR 9.0m from 31/12/2026 to 30/09/2028."
+   ]
+  },
+  {
+   "bank": "Tihama Investment Bank",
+   "offer_date": "2025-12-01",
+   "offer_ref": "TIB/CORP/25/2290",
+   "offer_expiry": "2026-11-30",
+   "offer_signed": "Mazen Al-Qurashi",
+   "facilities": [
+    {
+     "facility": "Letters of guarantee",
+     "limit": 15.0,
+     "pricing": "0.80% p.a.",
+     "tenor": "per LG"
+    }
+   ],
+   "security": "Personal guarantee of Saleh Ibrahim Al-Mansour; 15% cash margin.",
+   "statement_date": "2026-09-30",
+   "statement": [
+    {
+     "facility": "Letters of guarantee",
+     "limit": 15.0,
+     "outstanding": 9.2,
+     "overdue": 0.0,
+     "maturity": "per LG"
+    }
+   ]
+  }
+ ],
+ "rec_ageing": {
+  "as_of": "2026-09-30",
+  "rows": [
+   {
+    "customer": "Gulf Beverage Bottling Co.",
+    "b0_90": 13.9,
+    "b91_180": 0.8,
+    "b181_365": 0.0,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Eastern Dairy Foods Co.",
+    "b0_90": 8.2,
+    "b91_180": 0.0,
+    "b181_365": 0.0,
+    "over_365": 0.0
+   },
+   {
+    "customer": "GCC export customers (14)",
+    "b0_90": 14.6,
+    "b91_180": 1.9,
+    "b181_365": 0.4,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Local customers (96)",
+    "b0_90": 14.5,
+    "b91_180": 1.8,
+    "b181_365": 0.9,
+    "over_365": 0.0
+   }
+  ]
+ },
+ "top": {
+  "year": 2025,
+  "date": "2026-10-06",
+  "customers": [
+   {
+    "name": "Gulf Beverage Bottling Co.",
+    "relationship": "Third party",
+    "sales": 65.2,
+    "share": 22.0,
+    "terms": "60 days"
+   },
+   {
+    "name": "Eastern Dairy Foods Co.",
+    "relationship": "Third party",
+    "sales": 41.5,
+    "share": 14.0,
+    "terms": "45 days"
+   },
+   {
+    "name": "GCC export customers (14)",
+    "relationship": "Third parties",
+    "sales": 71.1,
+    "share": 24.0,
+    "terms": "60-90 days, LC / open account"
+   },
+   {
+    "name": "Local customers (96)",
+    "relationship": "Third parties",
+    "sales": 118.6,
+    "share": 40.0,
+    "terms": "30-60 days"
+   }
+  ],
+  "suppliers": [
+   {
+    "name": "Orient Polymers Trading FZE",
+    "country": "UAE",
+    "purchases": 98.4,
+    "share": 38.2,
+    "terms": "LC 120 days usance"
+   },
+   {
+    "name": "Jubail Petrochemical Marketing Co.",
+    "country": "KSA",
+    "purchases": 61.0,
+    "share": 23.7,
+    "terms": "30 days"
+   }
+  ]
+ },
+ "collateral": [
+  {
+   "key": "machinery",
+   "property": "Production machinery: 6 PET preform lines, 4 blow-moulding lines, 2 film extruders (Jubail plant, leased land)",
+   "owner": "Nukhba Polymer Industries Co.",
+   "deed": "Leasehold — industrial lease JIC/IA2/214 (no title deed)",
+   "valuation": {
+    "valuer": "Al Bunyan Asset Valuation Co.",
+    "date": "2026-07-22",
+    "mv": 162.0,
+    "fsv": 105.0,
+    "signed": "Eng. Talal Al-Juhani",
+    "text": [
+     "Machinery valued on depreciated replacement cost; average age 6.5 years; good condition.",
+     "Market value SAR 162,000,000; forced-sale value SAR 105,000,000. A first-ranking charge in favour of Coastal Gulf Bank is registered."
+    ]
+   },
+   "deed_doc": null,
+   "insurance": {
+    "number": "IAR-26-330871",
+    "insurer": "Najm Al Khaleej Cooperative Insurance Co.",
+    "sum": 175.0,
+    "loss_payee": "Coastal Gulf Bank",
+    "from": "2026-01-01",
+    "to": "2026-12-31",
+    "text": "Industrial all risks including machinery breakdown."
+   }
+  }
+ ],
+ "site_visit": {
+  "date": "2026-10-14",
+  "by": "Abeer Al-Omari",
+  "met": "Saleh Ibrahim Al-Mansour; Eng. Ravi Menon (Plant Manager)",
+  "premises": "Factory in Jubail Industrial City (leased land, own buildings and machinery)",
+  "staff": 240,
+  "summary": "Plant running two shifts; one of six PET lines idle for lack of orders.",
+  "points": [
+   "Two shifts instead of three since 2025; one PET preform line idle (management: temporary, awaiting a new beverage contract).",
+   "Raw-material stock adequate; finished goods for about 5 weeks.",
+   "Management explains the move by pricing; asked about the current bank's covenants, it said 'all in order'."
+  ]
+ },
+ "aml": {
+  "date": "2026-10-07",
+  "by": "Saleh Ibrahim Al-Mansour",
+  "pep": "No",
+  "countries": "KSA, UAE, Kuwait, Bahrain, Oman, China (resin)",
+  "cash": "No",
+  "rating": "Medium",
+  "ubos": [
+   {
+    "name": "Saleh Ibrahim Al-Mansour",
+    "pct": 60.0,
+    "pep": "No"
+   },
+   {
+    "name": "Khalid Ibrahim Al-Mansour",
+    "pct": 40.0,
+    "pep": "No"
+   }
+  ]
+ },
+ "skip": [
+  {
+   "doc_type": "title_deed",
+   "subject": "*"
+  }
+ ],
+ "missing": [
+  {
+   "doc_type": "payables_ageing",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "title_deed",
+   "subject": "machinery",
+   "why": "Leasehold land: no title deed; industrial lease agreement not provided"
+  }
+ ],
+ "facts": {
+  "rev12": 288.7
+ },
+ "ask": {
+  "one_line": "Take over Coastal Gulf Bank (SAR 134m outstanding) with SAR 157m: TL 72 + Murabaha 45 + LC 40 at SAIBOR + 1.25%.",
+  "requested_total_sar": 157000000,
+  "new_money_sar": 157000000,
+  "credit_recommends_total_sar": 0
+ },
+ "co": {
+  "key": "c3",
+  "folder": "c3_nukhba_polymer",
+  "proposal_id": "R16-C3",
+  "cif": "",
+  "group_id": "",
+  "name": "Nukhba Polymer Industries Co.",
+  "short": "Nukhba Polymer",
+  "cr_number": "2055104486",
+  "vat_number": "302055104400003",
+  "city": "Jubail",
+  "sector": "Manufacturing",
+  "sub_sector": "Plastics and Polymer Products",
+  "case": "new_to_bank",
+  "case_label": "New-to-bank manufacturer, takeover of another bank's facilities",
+  "part": "A (optional)",
+  "group_name": "",
+  "legal_form": "Limited Liability Company",
+  "incorporated": "2011-09-04",
+  "capital_mn": 100.0,
+  "shares_total": 100000,
+  "share_value": 1000,
+  "address": "Industrial Area 2, Street 214, Jubail Industrial City 35718",
+  "phone": "+966 13 340 9921",
+  "email": "finance@nukhba-polymer.example",
+  "activity": "Manufacture of plastic packaging: PET preforms, HDPE drums and jerrycans, and stretch films; sale in the Kingdom and export to GCC markets.",
+  "activity_short": "Manufacture of plastic packaging",
+  "cr_issue": "2011-09-04",
+  "cr_expiry": "2027-09-01",
+  "cr_print": "2026-10-04",
+  "aoa_amended": "2019-05-12",
+  "vat_effective": "2018-01-01",
+  "vat_frequency": "Monthly",
+  "vat_cert_issue": "2018-01-11",
+  "zakat": {
+   "number": "ZC-2026-0412976",
+   "fy_end": "2025-12-31",
+   "issue": "2026-04-26",
+   "expiry": "2027-04-30"
+  },
+  "nitaqat": {
+   "establishment": "3-2290187",
+   "band": "Medium Green",
+   "rate": 26.9,
+   "threshold": 23.0,
+   "total": 386,
+   "saudi": 104,
+   "issue": "2026-10-01",
+   "expiry": "2026-12-31"
+  },
+  "shareholders": [
+   {
+    "name": "Saleh Ibrahim Al-Mansour",
+    "id_number": "1027745196",
+    "nationality": "Saudi",
+    "shares": 60000,
+    "pct": 60.0
+   },
+   {
+    "name": "Khalid Ibrahim Al-Mansour",
+    "id_number": "1031198472",
+    "nationality": "Saudi",
+    "shares": 40000,
+    "pct": 40.0
+   }
+  ],
+  "managers": [
+   {
+    "name": "Saleh Ibrahim Al-Mansour",
+    "role": "Chairman and General Manager",
+    "powers": "Sole signatory up to SAR 20m"
+   },
+   {
+    "name": "Khalid Ibrahim Al-Mansour",
+    "role": "Director, Operations",
+    "powers": "Jointly with the Chairman"
+   }
+  ],
+  "aoa_amendment_text": "Amended on 12/05/2019 to raise the capital from SAR 60m to SAR 100m for the PET preform line."
+ }
+}

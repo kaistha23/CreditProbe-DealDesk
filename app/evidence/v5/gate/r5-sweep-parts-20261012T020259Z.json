@@ -1,0 +1,648 @@
+{
+ "module": "r5",
+ "utc": "20261012T020259Z",
+ "steps": 557,
+ "checks": 7876,
+ "failed_steps": 6,
+ "passed": false,
+ "healing": [
+  {
+   "before": "work",
+   "did": [
+    "modules restarted (5728 MB free)",
+    "ops/v5.sh start"
+   ]
+  },
+  {
+   "before": "home",
+   "did": [
+    "modules restarted (5678 MB free)",
+    "ops/v5.sh start"
+   ]
+  },
+  {
+   "before": "dealdesk",
+   "did": [
+    "modules restarted (5790 MB free)",
+    "ops/v5.sh start"
+   ]
+  },
+  {
+   "before": "r5-ews-story",
+   "did": [
+    "modules restarted (5662 MB free)",
+    "ops/v5.sh start"
+   ]
+  }
+ ],
+ "failed": [
+  {
+   "n": 4,
+   "book": "corporate",
+   "uat_step": "R2-4",
+   "title": "Attention drawer: Add to a new investigation, then to a report; both open and quote the card",
+   "checks": [
+    {
+     "check": "the investigation exists and quotes the card",
+     "pass": false,
+     "expected": "Recognised ECL was SAR 1,790 million in 2026Q1 and is SAR 2,",
+     "seen": ""
+    },
+    {
+     "check": "it links back to the attention item",
+     "pass": false,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the link reopens the same drawer",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the report section carries the drawer's charts (Playbook)",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the report holds the card as a section with its text",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "an existing report can be chosen",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "Escape closed the dialog and left the drawer open",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "a second Escape closes the drawer",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [],
+   "seconds": 2.6,
+   "pass": false,
+   "screenshot": "004_corporate_attention_drawer_add_to_a_new_investigation_then_t.png",
+   "part": "attention"
+  },
+  {
+   "n": 7,
+   "book": "both",
+   "uat_step": "R3-S1-2",
+   "title": "Policy Docs: the library (policies and the circular), the active pack, a document with its clauses and files; Back",
+   "checks": [
+    {
+     "check": "every document the API lists is on the screen",
+     "pass": true,
+     "expected": "4",
+     "seen": "4"
+    },
+    {
+     "check": "the active pack and its clause count",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the Circulars tab shows the circulars",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the policy's clauses are all shown",
+     "pass": true,
+     "expected": "13",
+     "seen": "13"
+    },
+    {
+     "check": "Word and PDF are attached",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the PDF reads as the Corporate Credit Policy with every clause",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "Back returns to the library",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the circular's three clauses, RP-5.1 highlighted",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the files downloaded",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:8506/api/v1/policy/documents"
+   ],
+   "seconds": 2.8,
+   "pass": false,
+   "screenshot": "007_both_policy_docs_the_library_policies_and_the_circular_.png",
+   "part": "playbook"
+  },
+  {
+   "n": 8,
+   "book": "both",
+   "uat_step": "R3-S1-2",
+   "title": "Add a circular: upload, AI interpretation, 'Add this to the Cockpit?' Yes, new pack version; then withdrawn (older versions stay on record)",
+   "checks": [
+    {
+     "check": "the interpretation shows the clause, its limit and the change",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "it asks \u201cAdd this to the Cockpit?\u201d",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "a new pack version is active",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the clause in the active pack is the new one",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "withdrawn: the clause in force is the one before",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "older versions stay on record",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:8506/api/v1/policy/documents",
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:8506/api/v1/policy/pack/versions"
+   ],
+   "seconds": 1.9,
+   "pass": false,
+   "screenshot": "008_both_add_a_circular_upload_ai_interpretation_add_this_t.png",
+   "part": "playbook"
+  },
+  {
+   "n": 1,
+   "book": "corporate",
+   "uat_step": "R4-A2-1",
+   "title": "Playbook top chat: 'I want to draft a corporate ECL report' discusses scope, proposes sections, takes a change and creates the report",
+   "checks": [
+    {
+     "check": "the chat offers the ECL report as a starting point",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the reply quotes corporate ECL from the books",
+     "pass": true,
+     "expected": "SAR 6.99bn",
+     "seen": "Answered in 0.1s\n\nShow process \u25be\n\nAn IFRS 9 ECL report for the corporate book. Where the book stands: Corporate ECL is SAR 6.99bn at 2026Q2 (SAR 1.25bn on the quarter), coverage 4.55%, Stage 2 27.1% o"
+    },
+    {
+     "check": "and the quarter's movement",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "the proposal lists the ECL sections",
+     "pass": true,
+     "expected": "",
+     "seen": "PROPOSED REPORT\n\nCorporate IFRS 9 ECL report, 2026Q2\n\nExecutive summary\nECL overview\nStage migration\nECL by sector\nEarly Warning\nScenarios and overlays\nPolicy and staging\nRecommendations"
+    },
+    {
+     "check": "the change is in the new proposal",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "step completed",
+     "pass": false,
+     "expected": "no exception",
+     "seen": "TimeoutError: Page.wait_for_function: Timeout 120000ms exceeded."
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [],
+   "seconds": 122.0,
+   "pass": false,
+   "screenshot": "001_corporate_playbook_top_chat_i_want_to_draft_a_corporate_ecl_.png",
+   "part": "ai_work"
+  },
+  {
+   "n": 2,
+   "book": "both",
+   "uat_step": "R4-DB2",
+   "title": "Each new domain opens a relation: grid rows, dictionary and Back",
+   "checks": [
+    {
+     "check": "scorecard/RET-APP: grid has rows",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "scorecard/RET-APP: dictionary has one row per field",
+     "pass": true,
+     "expected": "35",
+     "seen": "35"
+    },
+    {
+     "check": "scorecard/RET-APP: every field has a written definition",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "what_if/whatif_corporate: grid has rows",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "what_if/whatif_corporate: dictionary has one row per field",
+     "pass": true,
+     "expected": "88",
+     "seen": "88"
+    },
+    {
+     "check": "what_if/whatif_corporate: every field has a written definition",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "branches/branch_corporate_quarter: grid has rows",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "branches/branch_corporate_quarter: dictionary has one row per field",
+     "pass": true,
+     "expected": "9",
+     "seen": "9"
+    },
+    {
+     "check": "branches/branch_corporate_quarter: every field has a written definition",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:8504/api/v1/data/relations/scorecard/RET-APP/rows?period=2026-08&limit=50&offset=0",
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:8504/api/v1/data/relations/what_if/whatif_corporate/rows?period=2026Q2&limit=50&offset=0"
+   ],
+   "seconds": 3.4,
+   "pass": false,
+   "screenshot": "002_both_each_new_domain_opens_a_relation_grid_rows_diction.png",
+   "part": "r4-data"
+  },
+  {
+   "n": 7,
+   "book": "all",
+   "uat_step": "R5-G5",
+   "title": "No raw numbers: no visible number with more than 4 decimals, no share as a fraction, no raw key as a header, on every screen including thread answers (Deal Desk listed for Session D)",
+   "checks": [
+    {
+     "check": "/: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/?domain=retail: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/workspace: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/messages: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/analyses: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/analyses/ead-by-sector-2026q2: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/investigations: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/investigations/construction-ecl-rise-q2-2026: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/projects: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/projects/construction-deep-dive-q2-2026: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/projects/construction-deep-dive-q2-2026/threads/pt-construction-why: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/playbook: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/playbook?report=rp_ccp_q2_2026: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/policy-docs: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/policy-docs?doc=pd_circ_c_2026_03: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/early-warning: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/early-warning?domain=retail: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/early-warning/model: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/what-if: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/borrower-360: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/borrower-360?domain=retail: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/borrower-360?domain=corporate&customer_id=CB01312&period=2026Q2&tab=profile: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/borrower-360?domain=retail&customer_id=RC000001&period=2026-08&tab=profile: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/scorecard-validation: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/data-builder: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/cockpit/data: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/lenses: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/lenses?book=retail: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/what-if/thread/wt-c5eb2a6221da: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/scorecard-validation/thread/sv-9a0956503692: no raw number",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "evidence written",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:8505/api/v1/mail/counts",
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:8505/api/v1/mail/counts",
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:8505/api/v1/mail/notifications"
+   ],
+   "seconds": 120.0,
+   "pass": false,
+   "screenshot": "007_all_no_raw_numbers_no_visible_number_with_more_than_4_.png",
+   "part": "r5-threads"
+  }
+ ],
+ "parts": [
+  "cockpit",
+  "corporate",
+  "retail",
+  "modules",
+  "core",
+  "share",
+  "graph",
+  "attention",
+  "labels",
+  "workspace",
+  "work",
+  "exports",
+  "home",
+  "cohort",
+  "mail",
+  "scorecard",
+  "playbook",
+  "ai_work",
+  "dealdesk",
+  "lenses",
+  "admin",
+  "r4-cards",
+  "r4-b360",
+  "r4-ews",
+  "r4-scorecard",
+  "r4-g1",
+  "r4-data",
+  "r5-threads",
+  "r5-ews-story",
+  "r5-ui"
+ ]
+}

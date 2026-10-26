@@ -1,0 +1,437 @@
+{
+ "module": "r4",
+ "utc": "20261011T234711Z",
+ "steps": 518,
+ "checks": 7370,
+ "failed_steps": 5,
+ "passed": false,
+ "healing": [
+  {
+   "before": "core",
+   "did": [
+    "modules restarted (5554 MB free)",
+    "ops/v5.sh start"
+   ]
+  },
+  {
+   "before": "workspace",
+   "did": [
+    "Cockpit API and UI restarted",
+    "ops/v5.sh start"
+   ]
+  },
+  {
+   "before": "exports",
+   "did": [
+    "modules restarted (5390 MB free)",
+    "ops/v5.sh start"
+   ]
+  },
+  {
+   "before": "ai_work",
+   "did": [
+    "modules restarted (5302 MB free)",
+    "ops/v5.sh start"
+   ]
+  },
+  {
+   "before": "dealdesk",
+   "did": [
+    "ops/v5.sh start"
+   ]
+  }
+ ],
+ "failed": [
+  {
+   "n": 14,
+   "book": "both",
+   "uat_step": "R2-5",
+   "title": "Mail (Khalid): mark unread, star, archive, label, unarchive: counts follow",
+   "checks": [
+    {
+     "check": "opening a conversation marks it read",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "Mark unread: the unread count rises by one",
+     "pass": false,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "Star: appears under Starred",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "Label: shown on the conversation",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "Archive: leaves the Inbox, is in Archive",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "Move to Inbox and unstar: counts back to the start",
+     "pass": true,
+     "expected": "(0, 1)",
+     "seen": "(0, 1)"
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [],
+   "seconds": 3.9,
+   "pass": false,
+   "screenshot": "014_both_mail_khalid_mark_unread_star_archive_label_unarchi.png",
+   "part": "core"
+  },
+  {
+   "n": 1,
+   "book": "all",
+   "uat_step": "R2-10",
+   "title": "Label rule: signed-out sign-in page and every module screen, as the Administrator",
+   "checks": [
+    {
+     "check": "/login (signed out): no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/workspace: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/messages: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/projects: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/investigations: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/analyses: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/playbook: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/playbook?report=rp_ccp_q2_2026: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/policy-docs: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/policy-docs?doc=pd_circ_c_2026_03: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/early-warning: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/early-warning/model: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/what-if: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/deal-desk: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/deal-desk/DD-01: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/borrower-360: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/data-builder: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/data-builder/browse: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/data-builder/inbox: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/data-builder/new: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/data-builder/relationships: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/trace: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/workflow: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/agent-operations: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "/ai-studio: no banned label on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "step completed",
+     "pass": false,
+     "expected": "no exception",
+     "seen": "Error: Page.goto: net::ERR_CONNECTION_RESET at http://127.0.0.1:5500/ai-studio/brain-center\nCall log:\n  - navigating to \"http://127.0.0.1:5500/ai-studio/brain-center\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [
+    "request failed (net::ERR_CONNECTION_RESET): GET http://127.0.0.1:5500/ai-studio/brain-center"
+   ],
+   "seconds": 81.2,
+   "pass": false,
+   "screenshot": "001_all_label_rule_signed_out_sign_in_page_and_every_modul.png",
+   "part": "labels"
+  },
+  {
+   "n": 19,
+   "book": "both",
+   "uat_step": "S3-2",
+   "title": "Share an analysis through Mail (arrives in Sara's inbox); Share and Add to report open on investigations and projects",
+   "checks": [
+    {
+     "check": "step completed",
+     "pass": false,
+     "expected": "no exception",
+     "seen": "Error: Page.goto: Page crashed\nCall log:\n  - navigating to \"http://127.0.0.1:5500/analyses/ead-by-sector-2026q2\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [],
+   "seconds": 0.4,
+   "pass": false,
+   "screenshot": "(none: Page.screenshot: Target crashed \nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n)",
+   "part": "work"
+  },
+  {
+   "n": 7,
+   "book": "scorecard",
+   "uat_step": "S2-6",
+   "title": "Choose from the cards; a Mail or Playbook link (?validation=) opens the thread; an unknown thread is refused cleanly",
+   "checks": [
+    {
+     "check": "three scorecard cards are offered",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "choosing a card opens that scorecard's plan",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "?validation=<id> opens the validation's thread",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "an unknown thread says so, with a way back",
+     "pass": true,
+     "expected": "",
+     "seen": ""
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [
+    "request failed (net::ERR_ABORTED): GET http://127.0.0.1:5500/_next/static/chunks/node_modules_plotly_js-dist-min_plotly_min_00b0ol2.js"
+   ],
+   "seconds": 4.2,
+   "pass": false,
+   "screenshot": "007_scorecard_choose_from_the_cards_a_mail_or_playbook_link_vali.png",
+   "part": "scorecard"
+  },
+  {
+   "n": 5,
+   "book": "retail",
+   "uat_step": "R4-A3-1",
+   "title": "Project thread: '5 high-alert Early Warning clients in Stage 1' returns a table through the forked Cockpit agent; Back returns to the project",
+   "checks": [
+    {
+     "check": "step completed",
+     "pass": false,
+     "expected": "no exception",
+     "seen": "TimeoutError: Page.wait_for_selector: Timeout 120000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid=\\\"ws-thread-table-row\\\"]\") to be visible\n"
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [],
+   "seconds": 122.7,
+   "pass": false,
+   "screenshot": "(none: Page.screenshot: Target crashed \nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n)",
+   "part": "ai_work"
+  }
+ ],
+ "parts": [
+  "cockpit",
+  "corporate",
+  "retail",
+  "modules",
+  "core",
+  "share",
+  "graph",
+  "attention",
+  "labels",
+  "workspace",
+  "work",
+  "exports",
+  "home",
+  "cohort",
+  "mail",
+  "scorecard",
+  "playbook",
+  "ai_work",
+  "dealdesk",
+  "r4-cards",
+  "r4-b360",
+  "r4-ews",
+  "r4-scorecard",
+  "r4-g1",
+  "r4-data",
+  "r5-ui"
+ ]
+}

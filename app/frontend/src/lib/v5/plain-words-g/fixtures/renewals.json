@@ -1,0 +1,274 @@
+{
+ "window_days": 90,
+ "ref_date": "2026-10-19",
+ "scope": "material",
+ "materiality_floor_sar_mn": 50.0,
+ "names": 133,
+ "whole_book_total": 5031,
+ "whole_book_ead_sar_mn": 35311.1612,
+ "as_of": "2026Q2",
+ "summary": "242 material renewals (133 names with relationship EAD at least SAR 50m) due in the next 90 days (SAR 2,493m EAD): 116 clean on a one-page note, 126 exceptions for the CCO (SAR 1,353m). Most common exception reasons: on the watchlist or restructured (81), IFRS 9 stage 2 or 3 (80), rating down 2+ notches since origination (71). The other 4,789 renewals in the back book (smaller names) are in the full list.",
+ "counts": {
+  "clean": 116,
+  "exception": 126
+ },
+ "ead_sar_mn": {
+  "clean": 1139.8532,
+  "exception": 1352.6724000000002
+ },
+ "total": 242,
+ "by_criterion": {
+  "stage": 80,
+  "dpd": 18,
+  "ews": 2,
+  "watchlist": 81,
+  "downgrade": 71,
+  "covenant_breach": 31,
+  "covenant_headroom": 53,
+  "conditions": 1,
+  "promise": 214,
+  "raroc": 184,
+  "ebitda_fall": 1,
+  "leverage_up": 21,
+  "dscr_low": 15,
+  "bureau_dpd": 11,
+  "bureau_default": 6,
+  "bureau_debt": 43,
+  "cheques": 36,
+  "inflow_fall": 10,
+  "payroll": 0,
+  "tier_high": 0,
+  "trigger": 1,
+  "findings": 1
+ },
+ "criteria": [
+  {
+   "id": "stage",
+   "label": "IFRS 9 stage 2 or 3",
+   "op": ">=",
+   "threshold": 2,
+   "source": "ews.corp_exposure.stage",
+   "kind": "credit"
+  },
+  {
+   "id": "dpd",
+   "label": "Days past due on the facility",
+   "op": ">",
+   "threshold": 0,
+   "source": "ews.corp_exposure.dpd_days",
+   "kind": "credit"
+  },
+  {
+   "id": "ews",
+   "label": "Early Warning band high or critical",
+   "op": "=",
+   "threshold": 1,
+   "source": "ews.corp_exposure.ews_band",
+   "kind": "credit"
+  },
+  {
+   "id": "watchlist",
+   "label": "On the watchlist or restructured",
+   "op": "=",
+   "threshold": 1,
+   "source": "ews.corp_exposure.watchlist_flag / restructured_flag",
+   "kind": "credit"
+  },
+  {
+   "id": "downgrade",
+   "label": "Rating down 2+ notches since origination",
+   "op": ">=",
+   "threshold": 2,
+   "source": "ecl_runs.ecl_facility.rating vs origination.orig_facility",
+   "kind": "credit"
+  },
+  {
+   "id": "covenant_breach",
+   "label": "A covenant in breach at the last test",
+   "op": ">",
+   "threshold": 0,
+   "source": "ews.corp_covenant.breach_flag",
+   "kind": "credit"
+  }
+ ],
+ "rows": [
+  {
+   "facility_id": "R12-TWA:L0",
+   "borrower_id": "XE-TWA-01",
+   "borrower_name": "Al Sahel Building Materials Trading LLC",
+   "sector": "Wholesale Trade",
+   "product": "corporate",
+   "renewal_date": "2026-10-31",
+   "days_to_renewal": 12,
+   "ead_sar_mn": 178.0,
+   "limit_sar_mn": 180.0,
+   "stage": 1,
+   "rating_now": "BB",
+   "ews_band": "not scored",
+   "classification": "exception",
+   "fired": [
+    "conditions",
+    "trigger",
+    "findings"
+   ],
+   "commercial": [
+    "promise",
+    "raroc"
+   ],
+   "line": "An approval condition overdue or not complied; A named monitoring trigger hit; Open high or critical review finding",
+   "proposal_id": "R12-TWA",
+   "output": "full paper"
+  },
+  {
+   "facility_id": "CF000044",
+   "borrower_id": "CB00004",
+   "borrower_name": "Rawabi Industrial Works",
+   "sector": "Manufacturing",
+   "product": "working_capital",
+   "renewal_date": "2027-01-15",
+   "days_to_renewal": 88,
+   "ead_sar_mn": 43.1576,
+   "limit_sar_mn": 56.1022,
+   "stage": 2,
+   "rating_now": "BBB-",
+   "ews_band": "low",
+   "classification": "exception",
+   "fired": [
+    "stage",
+    "watchlist",
+    "downgrade"
+   ],
+   "commercial": [
+    "promise",
+    "raroc"
+   ],
+   "line": "IFRS 9 stage 2 or 3; On the watchlist or restructured; Rating down 2+ notches since origination",
+   "proposal_id": null,
+   "output": "full paper"
+  },
+  {
+   "facility_id": "CF000092",
+   "borrower_id": "CB00009",
+   "borrower_name": "Gulf Horizon Trading",
+   "sector": "Wholesale Trade",
+   "product": "term_loan",
+   "renewal_date": "2027-01-15",
+   "days_to_renewal": 88,
+   "ead_sar_mn": 23.0935,
+   "limit_sar_mn": 26.1994,
+   "stage": 1,
+   "rating_now": "BBB-",
+   "ews_band": "none",
+   "classification": "exception",
+   "fired": [
+    "bureau_debt"
+   ],
+   "commercial": [
+    "promise",
+    "raroc"
+   ],
+   "line": "Debt at other banks more than doubled in the quarter",
+   "proposal_id": null,
+   "output": "full paper"
+  },
+  {
+   "facility_id": "CF042525",
+   "borrower_id": "CB04252",
+   "borrower_name": "Unayzah Gulf Retail",
+   "sector": "Retail Trade",
+   "product": "trade_finance",
+   "renewal_date": "2027-01-15",
+   "days_to_renewal": 88,
+   "ead_sar_mn": 16.5794,
+   "limit_sar_mn": 16.8273,
+   "stage": 1,
+   "rating_now": "BBB-",
+   "ews_band": "low",
+   "classification": "exception",
+   "fired": [
+    "watchlist",
+    "covenant_breach",
+    "covenant_headroom",
+    "leverage_up",
+    "dscr_low",
+    "cheques"
+   ],
+   "commercial": [
+    "promise",
+    "raroc"
+   ],
+   "line": "On the watchlist or restructured; A covenant in breach at the last test; Covenant headroom below 10% (+3 more)",
+   "proposal_id": null,
+   "output": "full paper"
+  },
+  {
+   "facility_id": "CF006042",
+   "borrower_id": "CB00604",
+   "borrower_name": "Arar Peninsula Chemicals",
+   "sector": "Chemicals",
+   "product": "project_finance",
+   "renewal_date": "2027-01-15",
+   "days_to_renewal": 88,
+   "ead_sar_mn": 15.679200000000002,
+   "limit_sar_mn": 17.0717,
+   "stage": 1,
+   "rating_now": "A-",
+   "ews_band": "none",
+   "classification": "exception",
+   "fired": [
+    "leverage_up"
+   ],
+   "commercial": [
+    "promise"
+   ],
+   "line": "Leverage up more than 1.0x year on year",
+   "proposal_id": null,
+   "output": "full paper"
+  },
+  {
+   "facility_id": "CF010884",
+   "borrower_id": "CB01088",
+   "borrower_name": "Qassim Western Contracting",
+   "sector": "Construction",
+   "product": "term_loan",
+   "renewal_date": "2027-01-15",
+   "days_to_renewal": 88,
+   "ead_sar_mn": 15.624300000000002,
+   "limit_sar_mn": 15.6803,
+   "stage": 1,
+   "rating_now": "BBB+",
+   "ews_band": "low",
+   "classification": "exception",
+   "fired": [
+    "covenant_breach",
+    "covenant_headroom",
+    "leverage_up"
+   ],
+   "commercial": [
+    "promise",
+    "raroc"
+   ],
+   "line": "A covenant in breach at the last test; Covenant headroom below 10%; Leverage up more than 1.0x year on year",
+   "proposal_id": null,
+   "output": "full paper"
+  }
+ ],
+ "offset": 0,
+ "limit": 25,
+ "pending": [],
+ "data_limits": [
+  "Renewal dates come from the Book (origination date + tenor, or the deal's review date); facilities without either are not in the queue.",
+  "Financials are the latest quarter of the corporate book (cockpit.corp_borrower_quarter) against the same quarter a year earlier; audited statements and the RM's projections are not part of the refresh.",
+  "Conduct is monthly (deposits.dep_month): a salary run paid late inside the same month cannot be seen; a missed month can.",
+  "The stress tier is read from dd_monitoring_plan: most back-book facilities have no stress run on file, so the tier criteria rarely fire.",
+  "Approval conditions and review findings exist only for facilities with a Deal Desk file."
+ ],
+ "sectors": [
+  "Agriculture and Agri-processing",
+  "Chemicals",
+  "Construction",
+  "Healthcare",
+  "Hospitality",
+  "Information Technology"
+ ]
+}

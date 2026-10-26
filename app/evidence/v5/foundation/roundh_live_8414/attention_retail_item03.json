@@ -1,0 +1,226 @@
+{
+ "domain_id": "retail",
+ "item": {
+  "comparison_basis": "previous month",
+  "comparison_month": "2026-07",
+  "comparison_period": "2026-07",
+  "comparison_quarter": "",
+  "domain_id": "retail",
+  "drilldown": {
+   "available": [
+    "customers"
+   ],
+   "borrower_count": 3865,
+   "counterparty_column": "customer_id",
+   "entity_count": 3865,
+   "entity_label": "customers",
+   "finer_dimension": "",
+   "measure_fields": [
+    "stage",
+    "ead_sar_mn"
+   ],
+   "note": "There is no subsegment level below behaviour score band in this book, so a finer cut is not available and none is implied.",
+   "period_column": "reporting_month",
+   "relation": "retail_account_month",
+   "suggested_questions": [
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_month",
+     "question": "Show the customers behind E in 2026-08.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "customer_id"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "E",
+     "segment_dimension": "score_band"
+    },
+    {
+     "kind": "diagnostic",
+     "period_column": "reporting_month",
+     "question": "What drove the change in Stage 2 share of EAD for E in 2026-08?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "stage",
+      "ead_sar_mn"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "E",
+     "segment_dimension": "score_band"
+    },
+    {
+     "kind": "crosscut",
+     "period_column": "reporting_month",
+     "question": "Split E by product.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "product"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "E",
+     "segment_dimension": "score_band"
+    },
+    {
+     "kind": "crosscut",
+     "period_column": "reporting_month",
+     "question": "Split E by region.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "region"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "E",
+     "segment_dimension": "score_band"
+    },
+    {
+     "kind": "trend",
+     "period_column": "reporting_month",
+     "question": "How has Stage 2 share of EAD moved for E over the last 12 months?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "stage",
+      "ead_sar_mn"
+     ],
+     "required_periods": [
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
+     ],
+     "required_quarters": [],
+     "segment": "E",
+     "segment_dimension": "score_band"
+    }
+   ],
+   "unavailable": [
+    "subsegment"
+   ]
+  },
+  "evidence": {
+   "dimension": "score_band",
+   "measure": "stage2_share",
+   "relation": "retail_account_month"
+  },
+  "evidence_url": "",
+  "family": "band_stage2",
+  "headline": "E: Stage 2 exposure rose to 47.90%",
+  "item_id": "att-3e9ed91fecf70ee0",
+  "key_numbers": [
+   {
+    "display": "47.90%",
+    "label": "Stage 2 share of EAD, 2026-08"
+   },
+   {
+    "display": "45.32%",
+    "label": "Stage 2 share of EAD, 2026-07"
+   },
+   {
+    "display": "SAR 1,723 million",
+    "label": "Exposure at default, 2026-08"
+   },
+   {
+    "display": "8.73%",
+    "label": "Share of book"
+   }
+  ],
+  "metric": "stage2_share",
+  "metric_label": "Stage 2 share of EAD",
+  "movement": {
+   "from": 0.45323628002003835,
+   "from_display": "45.32%",
+   "to": 0.4789885147247356,
+   "to_display": "47.90%",
+   "unit": "percent"
+  },
+  "period_noun": "month",
+  "possible_drivers": [],
+  "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+  "release_id": "v4-saudi-retail-20m-v5",
+  "reporting_month": "2026-08",
+  "reporting_period": "2026-08",
+  "reporting_quarter": "",
+  "scope": "segment",
+  "score": 0.002473,
+  "section": "attention",
+  "segment": "E",
+  "segment_dimension": "score_band",
+  "segment_dimension_label": "Behaviour score band",
+  "segment_label": "E",
+  "severity": "low",
+  "what_changed": "Stage 2 share of EAD was 45.32% in 2026-07 and is 47.90% in 2026-08.",
+  "what_to_review_next": [
+   "Which exposures crossed into Stage 2, and on which trigger.",
+   "Whether the migration is concentrated in a few names or broad.",
+   "What the same segment's coverage did over the same month."
+  ],
+  "why_it_appeared": "It moved 2.58 pp higher than 2026-07 on a segment holding 8.73% of the book's exposure at default."
+ },
+ "method": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "method_summary": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+ "release_id": "v4-saudi-retail-20m-v5",
+ "reporting_month": "2026-08",
+ "reporting_quarter": "2026-08"
+}

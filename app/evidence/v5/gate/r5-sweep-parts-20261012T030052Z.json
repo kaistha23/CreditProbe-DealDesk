@@ -1,0 +1,58 @@
+{
+ "module": "r5",
+ "utc": "20261012T030052Z",
+ "steps": 31,
+ "checks": 353,
+ "failed_steps": 1,
+ "passed": false,
+ "healing": [
+  {
+   "before": "r4-data",
+   "did": [
+    "modules restarted (5844 MB free)",
+    "ops/v5.sh start"
+   ]
+  }
+ ],
+ "failed": [
+  {
+   "n": 5,
+   "book": "retail",
+   "uat_step": "R4-A3-1",
+   "title": "Project thread: '5 high-alert Early Warning clients in Stage 1' returns a table through the forked Cockpit agent; Back returns to the project",
+   "checks": [
+    {
+     "check": "step completed",
+     "pass": false,
+     "expected": "no exception",
+     "seen": "TimeoutError: Page.wait_for_selector: Timeout 120000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid=\\\"ws-thread-table-row\\\"]\") to be visible\n"
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [],
+   "seconds": 121.8,
+   "pass": false,
+   "screenshot": "(none: Page.screenshot: Target crashed \nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n)",
+   "part": "ai_work"
+  }
+ ],
+ "parts": [
+  "r5-ui",
+  "attention",
+  "playbook",
+  "r5-threads",
+  "r4-data",
+  "ai_work"
+ ]
+}

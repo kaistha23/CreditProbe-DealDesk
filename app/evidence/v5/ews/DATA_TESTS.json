@@ -1,0 +1,2981 @@
+{
+ "document": "DATA_TESTS",
+ "written_utc": "2026-10-12T01:40:04.864915+00:00",
+ "runner": "backend/ews_domain/run_data_tests.py",
+ "paid_inference_calls": 0,
+ "model_calls": 0,
+ "total": 299,
+ "passed": 299,
+ "failed": 0,
+ "exit_code": 0,
+ "ews_signal_audit": {
+  "corporate": {
+   "domain": "corporate",
+   "ruleset_version": "gw-ews-1.3.0",
+   "live_rules": [
+    "C-WATCH",
+    "C-DOWNGRADE",
+    "C-COVENANT",
+    "C-DPD",
+    "C-SICR",
+    "C-UTIL",
+    "C-DEFAULT",
+    "C-BUR-EXTDPD",
+    "C-BUR-ENQ",
+    "C-OB-INFLOW",
+    "C-OB-BUFFER",
+    "C-OB-RETURNED"
+   ],
+   "not_live_rules": [],
+   "per_rule": [
+    {
+     "id": "C-WATCH",
+     "label": "On watchlist",
+     "sql": "watchlist_flag = 1",
+     "weight": 1,
+     "exposures_tripping_all_periods": 70429,
+     "rows_naming_it_in_ews_reasons": 70429
+    },
+    {
+     "id": "C-DOWNGRADE",
+     "label": "Rating downgraded this quarter",
+     "sql": "rating_notches_moved < 0",
+     "weight": 1,
+     "exposures_tripping_all_periods": 30239,
+     "rows_naming_it_in_ews_reasons": 30239
+    },
+    {
+     "id": "C-COVENANT",
+     "label": "Covenant breach",
+     "sql": "covenant_breaches > 0",
+     "weight": 1,
+     "exposures_tripping_all_periods": 14754,
+     "rows_naming_it_in_ews_reasons": 14754
+    },
+    {
+     "id": "C-DPD",
+     "label": "Past due (DPD > 59)",
+     "sql": "dpd_days > 59",
+     "weight": 2,
+     "exposures_tripping_all_periods": 5264,
+     "rows_naming_it_in_ews_reasons": 5264
+    },
+    {
+     "id": "C-SICR",
+     "label": "SICR flag raised",
+     "sql": "sicr_flag = 1",
+     "weight": 1,
+     "exposures_tripping_all_periods": 70208,
+     "rows_naming_it_in_ews_reasons": 70208
+    },
+    {
+     "id": "C-UTIL",
+     "label": "High utilisation (>= 98%)",
+     "sql": "utilisation_pct >= 98",
+     "weight": 1,
+     "exposures_tripping_all_periods": 2436,
+     "rows_naming_it_in_ews_reasons": 2436
+    },
+    {
+     "id": "C-DEFAULT",
+     "label": "Stage 3 or in default",
+     "sql": "stage = 3 OR default_flag = 1",
+     "weight": 2,
+     "exposures_tripping_all_periods": 14544,
+     "rows_naming_it_in_ews_reasons": 14544
+    },
+    {
+     "id": "C-BUR-EXTDPD",
+     "label": "Past due at another lender (external DPD > 59)",
+     "sql": "external_dpd_days > 59",
+     "weight": 3,
+     "exposures_tripping_all_periods": 10813,
+     "rows_naming_it_in_ews_reasons": 10813
+    },
+    {
+     "id": "C-BUR-ENQ",
+     "label": "2 or more bureau enquiries this quarter",
+     "sql": "enquiries_q >= 2",
+     "weight": 1,
+     "exposures_tripping_all_periods": 65214,
+     "rows_naming_it_in_ews_reasons": 65214
+    },
+    {
+     "id": "C-OB-INFLOW",
+     "label": "Operating inflows fell by 30 per cent or more on the year",
+     "sql": "inflow_trend_pct <= -30",
+     "weight": 1,
+     "exposures_tripping_all_periods": 3346,
+     "rows_naming_it_in_ews_reasons": 3346
+    },
+    {
+     "id": "C-OB-BUFFER",
+     "label": "Operating balance under 1 month of obligations",
+     "sql": "balance_buffer_months < 1.0",
+     "weight": 1,
+     "exposures_tripping_all_periods": 11765,
+     "rows_naming_it_in_ews_reasons": 11765
+    },
+    {
+     "id": "C-OB-RETURNED",
+     "label": "2 or more returned payments this quarter",
+     "sql": "returned_payments_q >= 2",
+     "weight": 1,
+     "exposures_tripping_all_periods": 20231,
+     "rows_naming_it_in_ews_reasons": 20231
+    }
+   ],
+   "periods_in_reason_series": 20,
+   "band_counts_latest": [
+    [
+     "critical",
+     442,
+     3208.69
+    ],
+    [
+     "high",
+     604,
+     4264.234
+    ],
+    [
+     "low",
+     6640,
+     47651.748
+    ],
+    [
+     "moderate",
+     2491,
+     17986.181
+    ],
+    [
+     "none",
+     11741,
+     80589.289
+    ]
+   ],
+   "severe_ead_by_period": [
+    [
+     "2021Q3",
+     1012.534
+    ],
+    [
+     "2021Q4",
+     912.873
+    ],
+    [
+     "2022Q1",
+     1268.979
+    ],
+    [
+     "2022Q2",
+     1332.735
+    ],
+    [
+     "2022Q3",
+     1066.311
+    ],
+    [
+     "2022Q4",
+     1609.375
+    ],
+    [
+     "2023Q1",
+     2034.201
+    ],
+    [
+     "2023Q2",
+     2602.546
+    ],
+    [
+     "2023Q3",
+     4070.693
+    ],
+    [
+     "2023Q4",
+     4653.378
+    ],
+    [
+     "2024Q1",
+     4922.355
+    ],
+    [
+     "2024Q2",
+     4624.975
+    ],
+    [
+     "2024Q3",
+     4549.671
+    ],
+    [
+     "2024Q4",
+     3149.471
+    ],
+    [
+     "2025Q1",
+     2051.614
+    ],
+    [
+     "2025Q2",
+     2035.368
+    ],
+    [
+     "2025Q3",
+     2861.309
+    ],
+    [
+     "2025Q4",
+     3466.447
+    ],
+    [
+     "2026Q1",
+     5256.076
+    ],
+    [
+     "2026Q2",
+     7472.924
+    ]
+   ]
+  },
+  "retail": {
+   "domain": "retail",
+   "ruleset_version": "gw-ews-1.3.0",
+   "live_rules": [
+    "R-DPD",
+    "R-SCORE-LOW",
+    "R-SCORE-DOWN",
+    "R-UTIL",
+    "R-MINPAY",
+    "R-BUR-SCORE",
+    "R-BUR-EXTDPD",
+    "R-BUR-ENQ",
+    "R-OB-SALARY",
+    "R-OB-BUFFER",
+    "R-OB-INFLOW"
+   ],
+   "not_live_rules": [],
+   "per_rule": [
+    {
+     "id": "R-DPD",
+     "label": "Payment arrears (DPD > 0)",
+     "sql": "dpd_days > 0",
+     "weight": 3,
+     "exposures_tripping_all_periods": 33888,
+     "rows_naming_it_in_ews_reasons": 33888
+    },
+    {
+     "id": "R-SCORE-LOW",
+     "label": "Weak behaviour score band (E)",
+     "sql": "score_band = 'E'",
+     "weight": 1,
+     "exposures_tripping_all_periods": 48403,
+     "rows_naming_it_in_ews_reasons": 48403
+    },
+    {
+     "id": "R-SCORE-DOWN",
+     "label": "Behaviour score fell 2 or more bands",
+     "sql": "(customer_score_band_previous = 'A' AND customer_score_band IN ('C', 'D', 'E')) OR (customer_score_band_previous = 'B' AND customer_score_band IN ('D', 'E')) OR (customer_score_band_previous = 'C' AND customer_score_band = 'E')",
+     "weight": 2,
+     "exposures_tripping_all_periods": 4,
+     "rows_naming_it_in_ews_reasons": 4
+    },
+    {
+     "id": "R-UTIL",
+     "label": "High utilisation (>= 85%)",
+     "sql": "utilisation_pct >= 85",
+     "weight": 2,
+     "exposures_tripping_all_periods": 80789,
+     "rows_naming_it_in_ews_reasons": 80789
+    },
+    {
+     "id": "R-MINPAY",
+     "label": "Payment ratio below 30% and down 10 points or more in 3 months",
+     "sql": "payment_ratio_pct < 30 AND payment_ratio_change_3m <= -10",
+     "weight": 1,
+     "exposures_tripping_all_periods": 421,
+     "rows_naming_it_in_ews_reasons": 421
+    },
+    {
+     "id": "R-BUR-SCORE",
+     "label": "Bureau score below 580",
+     "sql": "bureau_score < 580",
+     "weight": 1,
+     "exposures_tripping_all_periods": 16992,
+     "rows_naming_it_in_ews_reasons": 16992
+    },
+    {
+     "id": "R-BUR-EXTDPD",
+     "label": "Past due at another lender (external DPD > 59)",
+     "sql": "external_dpd_days > 59",
+     "weight": 1,
+     "exposures_tripping_all_periods": 17939,
+     "rows_naming_it_in_ews_reasons": 17939
+    },
+    {
+     "id": "R-BUR-ENQ",
+     "label": "5 or more bureau enquiries in 3 months",
+     "sql": "enquiries_3m >= 5",
+     "weight": 2,
+     "exposures_tripping_all_periods": 11773,
+     "rows_naming_it_in_ews_reasons": 11773
+    },
+    {
+     "id": "R-OB-SALARY",
+     "label": "Salary credit missing this month (salaried customer)",
+     "sql": "salary_interruption_flag = 1",
+     "weight": 2,
+     "exposures_tripping_all_periods": 19687,
+     "rows_naming_it_in_ews_reasons": 19687
+    },
+    {
+     "id": "R-OB-BUFFER",
+     "label": "Balance buffer under 1 month of obligations",
+     "sql": "balance_buffer_months < 1.0",
+     "weight": 1,
+     "exposures_tripping_all_periods": 39354,
+     "rows_naming_it_in_ews_reasons": 39354
+    },
+    {
+     "id": "R-OB-INFLOW",
+     "label": "Account inflows fell by 40 per cent or more in 3 months",
+     "sql": "inflow_trend_pct <= -40",
+     "weight": 1,
+     "exposures_tripping_all_periods": 15736,
+     "rows_naming_it_in_ews_reasons": 15736
+    }
+   ],
+   "periods_in_reason_series": 20,
+   "band_counts_latest": [
+    [
+     "critical",
+     753,
+     134.806
+    ],
+    [
+     "high",
+     1432,
+     366.942
+    ],
+    [
+     "low",
+     8958,
+     4677.239
+    ],
+    [
+     "moderate",
+     4245,
+     1305.838
+    ],
+    [
+     "none",
+     26939,
+     13254.007
+    ]
+   ],
+   "severe_ead_by_period": [
+    [
+     "2025-01",
+     146.163
+    ],
+    [
+     "2025-02",
+     151.668
+    ],
+    [
+     "2025-03",
+     194.743
+    ],
+    [
+     "2025-04",
+     202.775
+    ],
+    [
+     "2025-05",
+     204.955
+    ],
+    [
+     "2025-06",
+     199.325
+    ],
+    [
+     "2025-07",
+     189.009
+    ],
+    [
+     "2025-08",
+     174.275
+    ],
+    [
+     "2025-09",
+     203.162
+    ],
+    [
+     "2025-10",
+     201.005
+    ],
+    [
+     "2025-11",
+     235.012
+    ],
+    [
+     "2025-12",
+     243.868
+    ],
+    [
+     "2026-01",
+     268.931
+    ],
+    [
+     "2026-02",
+     358.625
+    ],
+    [
+     "2026-03",
+     369.602
+    ],
+    [
+     "2026-04",
+     356.847
+    ],
+    [
+     "2026-05",
+     423.111
+    ],
+    [
+     "2026-06",
+     456.439
+    ],
+    [
+     "2026-07",
+     521.871
+    ],
+    [
+     "2026-08",
+     501.748
+    ]
+   ]
+  }
+ },
+ "failures": [],
+ "results": [
+  {
+   "test": "exposure_period_keys: EWS key set equals frozen key set",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": {
+    "missing": 0,
+    "extra": 0
+   },
+   "observed": {
+    "missing": 0,
+    "extra": 0
+   },
+   "detail": ""
+  },
+  {
+   "test": "owner_period_keys: EWS key set equals frozen key set",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": {
+    "missing": 0,
+    "extra": 0
+   },
+   "observed": {
+    "missing": 0,
+    "extra": 0
+   },
+   "detail": ""
+  },
+  {
+   "test": "distinct exposure ids match frozen",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 21918,
+   "observed": 21918,
+   "detail": ""
+  },
+  {
+   "test": "distinct owner ids match frozen",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 5412,
+   "observed": 5412,
+   "detail": ""
+  },
+  {
+   "test": "no duplicate exposure key x period",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "no duplicate owner key x period",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "orphan exposures equal frozen source behaviour",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "owner->exposure->period relationships identical",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": {
+    "a": 0,
+    "b": 0
+   },
+   "observed": {
+    "a": 0,
+    "b": 0
+   },
+   "detail": ""
+  },
+  {
+   "test": "period calendar identical to frozen",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": [
+    "2021Q3",
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+   ],
+   "observed": [
+    "2021Q3",
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+   ],
+   "detail": ""
+  },
+  {
+   "test": "period count is 20",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "latest period as user stated",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "2026Q2",
+   "observed": "2026Q2",
+   "detail": ""
+  },
+  {
+   "test": "reporting currency unchanged",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": [
+    "SAR"
+   ],
+   "observed": [
+    "SAR"
+   ],
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: borrower_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: borrower_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: borrower_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: borrower_name",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: borrower_name",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: borrower_name",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: cure_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: cure_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: cure_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: default_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: default_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: default_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: domain_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: domain_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: domain_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: dpd_days",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: dpd_days",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: dpd_days",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: drawn_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: drawn_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: drawn_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ead_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ead_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ead_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ecl_12m_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ecl_12m_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ecl_12m_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ecl_coverage_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ecl_coverage_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ecl_coverage_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ecl_lifetime_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ecl_lifetime_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ecl_lifetime_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ecl_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ecl_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ecl_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: facility_class",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: facility_class",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: facility_class",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: facility_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: facility_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: facility_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: lgd_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: lgd_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: lgd_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: limit_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: limit_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: limit_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: origination_quarter",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: origination_quarter",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: origination_quarter",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: past_due_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: past_due_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: past_due_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: pd_lifetime",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: pd_lifetime",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: pd_lifetime",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: pd_pit_12m",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: pd_pit_12m",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: pd_pit_12m",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: product_type",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: product_type",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: product_type",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: quarters_in_stage",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: quarters_in_stage",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: quarters_in_stage",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: recovery_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: recovery_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: recovery_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: region",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: region",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: region",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: relationship_tier",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: relationship_tier",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: relationship_tier",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: reporting_currency",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: reporting_currency",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: reporting_currency",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: reporting_quarter",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: reporting_quarter",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: reporting_quarter",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: sector",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: sector",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: sector",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: sicr_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: sicr_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: sicr_flag",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: stage",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: stage",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: stage",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: sub_sector",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: sub_sector",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: sub_sector",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: tenant_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: tenant_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: tenant_id",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: undrawn_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: undrawn_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: undrawn_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: utilisation_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: utilisation_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: utilisation_pct",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: write_off_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: write_off_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: write_off_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "period totals reconcile: ead_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "period totals reconcile: ecl_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "period totals reconcile: drawn_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "period totals reconcile: limit_sar_mn",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_score equals the independent sum of live rule weights",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_band equals the banded score (the book's band floors)",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-WATCH is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 70429,
+   "observed": 70429,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-DOWNGRADE is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 30239,
+   "observed": 30239,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-COVENANT is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 14754,
+   "observed": 14754,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-DPD is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 5264,
+   "observed": 5264,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-SICR is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 70208,
+   "observed": 70208,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-UTIL is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 2436,
+   "observed": 2436,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-DEFAULT is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 14544,
+   "observed": 14544,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-BUR-EXTDPD is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 10813,
+   "observed": 10813,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-BUR-ENQ is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 65214,
+   "observed": 65214,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-OB-INFLOW is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 3346,
+   "observed": 3346,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-OB-BUFFER is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 11765,
+   "observed": 11765,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where C-OB-RETURNED is true",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 20231,
+   "observed": 20231,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_portfolio.parquet reconciles to the exposure table",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_portfolio.parquet carries all 20 periods",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_portfolio.parquet has no synthetic zero rows",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_segment.parquet reconciles to the exposure table",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_segment.parquet carries all 20 periods",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_segment.parquet has no synthetic zero rows",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_subsegment.parquet reconciles to the exposure table",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_subsegment.parquet carries all 20 periods",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_subsegment.parquet has no synthetic zero rows",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_reason_period reconciles to the exposure reasons",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "reason series carries all 20 periods",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "severe EAD history has 20 non-synthetic points",
+   "domain": "corporate",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "exposure_period_keys: EWS key set equals frozen key set",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": {
+    "missing": 0,
+    "extra": 0
+   },
+   "observed": {
+    "missing": 0,
+    "extra": 0
+   },
+   "detail": ""
+  },
+  {
+   "test": "owner_period_keys: EWS key set equals frozen key set",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": {
+    "missing": 0,
+    "extra": 0
+   },
+   "observed": {
+    "missing": 0,
+    "extra": 0
+   },
+   "detail": ""
+  },
+  {
+   "test": "distinct exposure ids match frozen",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 44027,
+   "observed": 44027,
+   "detail": ""
+  },
+  {
+   "test": "distinct owner ids match frozen",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 26000,
+   "observed": 26000,
+   "detail": ""
+  },
+  {
+   "test": "no duplicate exposure key x period",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "no duplicate owner key x period",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "orphan exposures equal frozen source behaviour",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "owner->exposure->period relationships identical",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": {
+    "a": 0,
+    "b": 0
+   },
+   "observed": {
+    "a": 0,
+    "b": 0
+   },
+   "detail": ""
+  },
+  {
+   "test": "period calendar identical to frozen",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ],
+   "observed": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ],
+   "detail": ""
+  },
+  {
+   "test": "period count is 20",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "latest period as user stated",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "2026-08",
+   "observed": "2026-08",
+   "detail": ""
+  },
+  {
+   "test": "reporting currency unchanged",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": [
+    "SAR"
+   ],
+   "observed": [
+    "SAR"
+   ],
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: account_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: account_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: account_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: balance_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: balance_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: balance_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: behaviour_score",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: behaviour_score",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: behaviour_score",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: cure_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: cure_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: cure_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: customer_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: customer_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: customer_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: customer_segment",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: customer_segment",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: customer_segment",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: default_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: default_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: default_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: delinquency_bucket",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: delinquency_bucket",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: delinquency_bucket",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: delinquency_bucket_fine",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: delinquency_bucket_fine",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: delinquency_bucket_fine",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: domain_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: domain_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: domain_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: dpd_days",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: dpd_days",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: dpd_days",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ead_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ead_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ead_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ecl_12m_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ecl_12m_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ecl_12m_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ecl_lifetime_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ecl_lifetime_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ecl_lifetime_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: ecl_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: ecl_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: ecl_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: employment_type",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: employment_type",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: employment_type",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: lgd_pct",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: lgd_pct",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: lgd_pct",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: limit_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: limit_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: limit_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: months_on_book",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: months_on_book",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: months_on_book",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: origination_channel",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: origination_channel",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: origination_channel",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: origination_month",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: origination_month",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: origination_month",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: pd_lifetime",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: pd_lifetime",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: pd_lifetime",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: pd_pit_12m",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: pd_pit_12m",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: pd_pit_12m",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: product",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: product",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: product",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: recovery_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: recovery_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: recovery_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: region",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: region",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: region",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: reporting_currency",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: reporting_currency",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: reporting_currency",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: reporting_month",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: reporting_month",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: reporting_month",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: score_band",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: score_band",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: score_band",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: secured_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: secured_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: secured_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: sicr_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: sicr_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: sicr_flag",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: stage",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: stage",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: stage",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: sub_product",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: sub_product",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: sub_product",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: tenant_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: tenant_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: tenant_id",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "VARCHAR",
+   "observed": "VARCHAR",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: utilisation_pct",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: utilisation_pct",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: utilisation_pct",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: vintage_year",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: vintage_year",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: vintage_year",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "BIGINT",
+   "observed": "BIGINT",
+   "detail": ""
+  },
+  {
+   "test": "base field value equality: write_off_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "null count identical: write_off_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "type identical: write_off_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": "DOUBLE",
+   "observed": "DOUBLE",
+   "detail": ""
+  },
+  {
+   "test": "period totals reconcile: ead_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "period totals reconcile: ecl_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "period totals reconcile: balance_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "period totals reconcile: limit_sar_mn",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_score equals the independent sum of live rule weights",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_band equals the banded score (the book's band floors)",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-DPD is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 33888,
+   "observed": 33888,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-SCORE-LOW is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 48403,
+   "observed": 48403,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-SCORE-DOWN is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 4,
+   "observed": 4,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-UTIL is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 80789,
+   "observed": 80789,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-MINPAY is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 421,
+   "observed": 421,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-BUR-SCORE is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 16992,
+   "observed": 16992,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-BUR-EXTDPD is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 17939,
+   "observed": 17939,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-BUR-ENQ is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 11773,
+   "observed": 11773,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-OB-SALARY is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 19687,
+   "observed": 19687,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-OB-BUFFER is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 39354,
+   "observed": 39354,
+   "detail": ""
+  },
+  {
+   "test": "reason label present exactly where R-OB-INFLOW is true",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 15736,
+   "observed": 15736,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_portfolio.parquet reconciles to the exposure table",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_portfolio.parquet carries all 20 periods",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_portfolio.parquet has no synthetic zero rows",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_segment.parquet reconciles to the exposure table",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_segment.parquet carries all 20 periods",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_segment.parquet has no synthetic zero rows",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_subsegment.parquet reconciles to the exposure table",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_subsegment.parquet carries all 20 periods",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "ews_series_subsegment.parquet has no synthetic zero rows",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "ews_reason_period reconciles to the exposure reasons",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 0,
+   "observed": 0,
+   "detail": ""
+  },
+  {
+   "test": "reason series carries all 20 periods",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  },
+  {
+   "test": "severe EAD history has 20 non-synthetic points",
+   "domain": "retail",
+   "status": "PASS",
+   "expected": 20,
+   "observed": 20,
+   "detail": ""
+  }
+ ]
+}

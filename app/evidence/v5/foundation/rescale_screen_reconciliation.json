@@ -1,0 +1,175 @@
+{
+ "files": 23,
+ "factor": 0.01,
+ "tally": {
+  "unchanged": 4853,
+  "volatile:cached": 2,
+  "volatile:computed_ms": 2,
+  "scaled text": 121,
+  "volatile:item_id": 36,
+  "volatile:release_fingerprint": 64,
+  "scaled number": 35,
+  "zero residual (|x| < 1e-6 both)": 1,
+  "unchanged ratio (float noise < 1e-9 relative)": 14
+ },
+ "problems": [],
+ "float_noise": [
+  {
+   "path": "ecl_corporate.json.decomposition.residual",
+   "before": 1.7462298274040222e-10,
+   "after": 2.091837814077735e-11
+  },
+  {
+   "path": "ecl_corporate.json.profile.coverage",
+   "before": 0.050714029328240894,
+   "after": 0.05071402932824111
+  },
+  {
+   "path": "ecl_corporate.json.profile.coverage_movement_pp",
+   "before": 0.012534933792074376,
+   "after": 0.012534933792074661
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].coverage",
+   "before": 0.0034552894162746283,
+   "after": 0.0034552894162746682
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].coverage_movement_pp",
+   "before": -2.7880643469930643e-05,
+   "after": -2.7880643469897683e-05
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].share_movement_pp",
+   "before": -0.026644355324675906,
+   "after": -0.026644355324677016
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[0].share_of_ead",
+   "before": 0.6453786479200246,
+   "after": 0.6453786479200234
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].coverage",
+   "before": 0.0316514829255587,
+   "after": 0.031651482925558694
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].coverage_movement_pp",
+   "before": 0.001500575613891681,
+   "after": 0.0015005756138915805
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].share_movement_pp",
+   "before": 0.003924243856997411,
+   "after": 0.003924243856998133
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[1].share_of_ead",
+   "before": 0.27313009869975247,
+   "after": 0.2731300986997534
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].coverage",
+   "before": 0.48887561558613096,
+   "after": 0.48887561558613135
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].coverage_movement_pp",
+   "before": 0.017189623914665053,
+   "after": 0.017189623914666052
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].share_movement_pp",
+   "before": 0.022720111467678453,
+   "after": 0.022720111467678876
+  },
+  {
+   "path": "ecl_corporate.json.profile.stages[2].share_of_ead",
+   "before": 0.08149125338022285,
+   "after": 0.08149125338022313
+  }
+ ],
+ "attention_headlines": [
+  {
+   "before": "Construction: ECL rose to SAR 275,512 million",
+   "after": "Construction: ECL rose to SAR 2,755 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Supply Chain Finance: ECL rose to SAR 89,901 million",
+   "after": "Supply Chain Finance: ECL rose to SAR 899 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Makkah: ECL rose to SAR 183,510 million",
+   "after": "Makkah: ECL rose to SAR 1,835 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Receivables: Loan to value rose to 172.67%",
+   "after": "Receivables: Loan to value rose to 172.67%",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Current Ratio: Covenant breaches rose to 12.76%",
+   "after": "Current Ratio: Covenant breaches rose to 12.76%",
+   "severity": [
+    "medium",
+    "medium"
+   ]
+  },
+  {
+   "before": "Mortgage: ECL rose to SAR 45 million",
+   "after": "Mortgage: ECL rose to SAR 45 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "Affluent: ECL rose to SAR 56 million",
+   "after": "Affluent: ECL rose to SAR 56 million",
+   "severity": [
+    "high",
+    "high"
+   ]
+  },
+  {
+   "before": "2026: Stage 2 exposure rose to 4.25%",
+   "after": "2026: Stage 2 exposure rose to 4.25%",
+   "severity": [
+    "medium",
+    "medium"
+   ]
+  },
+  {
+   "before": "E: Stage 2 exposure rose to 47.90%",
+   "after": "E: Stage 2 exposure rose to 47.90%",
+   "severity": [
+    "low",
+    "low"
+   ]
+  },
+  {
+   "before": "Madinah: Delinquency rose to 2.97%",
+   "after": "Madinah: Delinquency rose to 2.97%",
+   "severity": [
+    "low",
+    "low"
+   ]
+  }
+ ]
+}

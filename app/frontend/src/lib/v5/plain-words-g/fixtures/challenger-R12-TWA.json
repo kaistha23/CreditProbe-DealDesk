@@ -1,0 +1,134 @@
+{
+ "trace_id": "DT-bf8dae7398bf",
+ "proposal_id": "R12-TWA",
+ "obligor": "Al Sahel Building Materials Trading LLC",
+ "headline": "7 questions committee is likely to ask about Al Sahel Building Materials Trading LLC; 4 of them the proposal does not answer. Hardest: Other-bank limits do not reconcile with the bureau: what is the answer?",
+ "questions": [
+  {
+   "id": "finding:B-R12-TWA-BUR-01-1",
+   "source": "findings",
+   "score": 92,
+   "question": "Other-bank limits do not reconcile with the bureau: what is the answer?",
+   "answer": "Peninsula Trade Bank / Al Sahel Building Materials Trading LLC: client declared SAR 40.0m, bureau shows SAR 110.0m (gap SAR 70.0m, 175%); not clarified. Peninsula Trade Bank / Al Sahel Logistics Services: not declared by the client; the bureau shows SAR 55.0m; not clarified. Open critical findings, raised in the review.",
+   "avoided": true,
+   "avoided_reason": "Open, with no query to the RM and no condition attached.",
+   "asks_for": "",
+   "category": "bureau_reconciliation:BUR-01",
+   "rank": 1
+  },
+  {
+   "id": "finding:B-R12-TWA-BUR-04-1",
+   "source": "findings",
+   "score": 92,
+   "question": "Group or connected entity classified: what is the answer?",
+   "answer": "Al Sahel Logistics Services (sister) classified Doubtful, outstanding SAR 58.0m, litigation SAR 41.0m. Open critical finding, raised in the review.",
+   "avoided": true,
+   "avoided_reason": "Open, with no query to the RM and no condition attached.",
+   "asks_for": "",
+   "category": "bureau_reconciliation:BUR-04",
+   "rank": 2
+  },
+  {
+   "id": "returns",
+   "source": "returns",
+   "score": 90,
+   "question": "Why bring a deal that earns 14.5% against a 15.0% hurdle?",
+   "answer": "Lifetime RAROC is 14.5% against a hurdle of 15.0% (SVA SAR -0.05m). The margin that brings it to the hurdle is 242 bps against 225 bps asked.",
+   "avoided": true,
+   "avoided_reason": "The proposal names no pricing or structure fix for the shortfall.",
+   "asks_for": "Reverse solver: the smallest change that clears",
+   "rank": 3
+  },
+  {
+   "id": "condition:CO-TWA-1",
+   "source": "conditions",
+   "score": 88,
+   "question": "The committee set \"Route business of at least 2x total limits (SAR 360.0m) per year through the bank\" last time and it was not met. Why renew on the same terms?",
+   "answer": "Set by Credit Committee (CC-2025-118): \"Route business of at least 2x total limits (SAR 360.0m) per year through the bank.\" Status not complied: measured 0.66 against at least 2.0 at 2026-08-31.",
+   "avoided": false,
+   "avoided_reason": "",
+   "asks_for": "",
+   "rank": 4
+  },
+  {
+   "id": "stress",
+   "source": "stress",
+   "score": 86,
+   "question": "It breaks at mild stress: what protects the bank when it does?",
+   "answer": "It breaks first at mild severity (6 scenarios: EBITDA margin \u221240 bps, Largest customer cuts a third, Oil \u221213%, Own-sector slowdown (\u00d70.64)) on covenants, DSCR, leverage, limits. Verdict under the R12 rule: Restructure, tier High. Named triggers on file: Routed business below 1.5x limits.",
+   "avoided": false,
+   "avoided_reason": "",
+   "asks_for": "Covenant on the breaking metric",
+   "rank": 5
+  },
+  {
+   "id": "capacity",
+   "source": "capacity",
+   "score": 64,
+   "question": "Can the client carry this debt, and how much covenant headroom is left?",
+   "answer": "After the deal DSCR is 1.56x (covenant 1.20x) and Debt/EBITDA 3.98x (covenant 4.00x), on the latest actual year of the proposal financials.",
+   "avoided": false,
+   "avoided_reason": "",
+   "asks_for": "",
+   "rank": 6
+  }
+ ],
+ "avoided": [
+  {
+   "id": "finding:B-R12-TWA-BUR-01-1",
+   "question": "Other-bank limits do not reconcile with the bureau: what is the answer?",
+   "reason": "Open, with no query to the RM and no condition attached.",
+   "source": "findings"
+  },
+  {
+   "id": "finding:B-R12-TWA-BUR-04-1",
+   "question": "Group or connected entity classified: what is the answer?",
+   "reason": "Open, with no query to the RM and no condition attached.",
+   "source": "findings"
+  },
+  {
+   "id": "finding:B-R12-TWA-INS-01-1",
+   "question": "Staff interest in a party to the deal: what is the answer?",
+   "reason": "Open, with no query to the RM and no condition attached.",
+   "source": "findings"
+  },
+  {
+   "id": "finding:Q-R12-TWA-AU-02",
+   "question": "Audit signals: Audit opinion: what is the answer?",
+   "reason": "Open, with no query to the RM and no condition attached.",
+   "source": "findings"
+  },
+  {
+   "id": "returns",
+   "question": "Why bring a deal that earns 14.5% against a 15.0% hurdle?",
+   "reason": "The proposal names no pricing or structure fix for the shortfall.",
+   "source": "returns"
+  },
+  {
+   "id": "condition:CO-TWA-2",
+   "question": "The committee set \"Submit audited financial statements within 120 days of year end\" last time and it was not met. Why renew on the same terms?",
+   "reason": "The proposal does not explain the missed condition and no query asks for it.",
+   "source": "conditions"
+  }
+ ],
+ "considered": 47,
+ "sources_used": [
+  "capacity",
+  "conditions",
+  "findings",
+  "group",
+  "precedent",
+  "queries"
+ ],
+ "approval": {
+  "level": "Head of Credit",
+  "rank": 2,
+  "reasons": [
+   "Obligor exposure after the deal SAR 90.5m, rating BB"
+  ],
+  "approvable": true,
+  "hard_breaches": [],
+  "soft_breaches": []
+ },
+ "method": "(deterministic writer, N3)\n  Candidate questions come from eight sources, each scored for how hard a committee would press it:\n    returns      engine.analyse: lifetime RAROC against the hurdle, breakeven margin (engine.breakeven_margin);\n                 when it clears, the downgrade notches before it stops clearing (optimizer.robustness)\n    limits       every hard or policy breach after the deal (constraints), with the approval level (DoA)\n    stress       the latest dd_stress_result run: the mildest severity that still breaks something, what breaks,\n                 the verdict and tier (stress2.verdict rule), and the named triggers of dd_monitoring_plan\n    findings     open critical and high dd_review_finding rows, with their evidence relation\n    weaknesses   dd_swot weaknesses and threats with no covering mitigant (covered_flag 0)\n    group        dd_group_exposure (group total) and the connected-group limit after the deal\n    conditions   dd_condition rows set by an earlier committee (prior_committee_ref) that were not complied or\n                 breached, and the earlier committee decision (dd_reference)\n    precedent    conditions earlier committees set on similar deals"
+}

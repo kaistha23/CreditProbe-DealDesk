@@ -1,0 +1,223 @@
+{
+ "domain_id": "retail",
+ "item": {
+  "comparison_basis": "previous month",
+  "comparison_month": "2026-07",
+  "comparison_period": "2026-07",
+  "comparison_quarter": "",
+  "domain_id": "retail",
+  "drilldown": {
+   "available": [
+    "customers"
+   ],
+   "borrower_count": 6347,
+   "counterparty_column": "customer_id",
+   "entity_count": 6347,
+   "entity_label": "customers",
+   "finer_dimension": "",
+   "measure_fields": [
+    "ecl_sar_mn"
+   ],
+   "note": "There is no subsegment level below customer segment in this book, so a finer cut is not available and none is implied.",
+   "period_column": "reporting_month",
+   "relation": "retail_account_month",
+   "suggested_questions": [
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_month",
+     "question": "Show the customers behind Affluent in 2026-08.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "customer_id"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "Affluent",
+     "segment_dimension": "customer_segment"
+    },
+    {
+     "kind": "diagnostic",
+     "period_column": "reporting_month",
+     "question": "What drove the change in Recognised ECL for Affluent in 2026-08?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "ecl_sar_mn"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "Affluent",
+     "segment_dimension": "customer_segment"
+    },
+    {
+     "kind": "crosscut",
+     "period_column": "reporting_month",
+     "question": "Split Affluent by product.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "product"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "Affluent",
+     "segment_dimension": "customer_segment"
+    },
+    {
+     "kind": "crosscut",
+     "period_column": "reporting_month",
+     "question": "Split Affluent by region.",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "region"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "Affluent",
+     "segment_dimension": "customer_segment"
+    },
+    {
+     "kind": "trend",
+     "period_column": "reporting_month",
+     "question": "How has Recognised ECL moved for Affluent over the last 12 months?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "ecl_sar_mn"
+     ],
+     "required_periods": [
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
+     ],
+     "required_quarters": [],
+     "segment": "Affluent",
+     "segment_dimension": "customer_segment"
+    }
+   ],
+   "unavailable": [
+    "subsegment"
+   ]
+  },
+  "evidence": {
+   "dimension": "customer_segment",
+   "measure": "ecl",
+   "relation": "retail_account_month"
+  },
+  "evidence_url": "",
+  "family": "segment_ecl",
+  "headline": "Affluent: ECL rose to SAR 56 million",
+  "item_id": "att-9168c2cb0e6a1162",
+  "key_numbers": [
+   {
+    "display": "SAR 56 million",
+    "label": "Recognised ECL, 2026-08"
+   },
+   {
+    "display": "SAR 50 million",
+    "label": "Recognised ECL, 2026-07"
+   },
+   {
+    "display": "SAR 4,913 million",
+    "label": "Exposure at default, 2026-08"
+   },
+   {
+    "display": "24.89%",
+    "label": "Share of book"
+   }
+  ],
+  "metric": "ecl",
+  "metric_label": "Recognised ECL",
+  "movement": {
+   "from": 49.63318600000008,
+   "from_display": "SAR 50 million",
+   "to": 55.98218900000012,
+   "to_display": "SAR 56 million",
+   "unit": "SAR million"
+  },
+  "period_noun": "month",
+  "possible_drivers": [],
+  "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+  "release_id": "v4-saudi-retail-20m-v5",
+  "reporting_month": "2026-08",
+  "reporting_period": "2026-08",
+  "reporting_quarter": "",
+  "scope": "segment",
+  "score": 0.02686,
+  "section": "attention",
+  "segment": "Affluent",
+  "segment_dimension": "customer_segment",
+  "segment_dimension_label": "Customer segment",
+  "segment_label": "Affluent",
+  "severity": "high",
+  "what_changed": "Recognised ECL was SAR 50 million in 2026-07 and is SAR 56 million in 2026-08.",
+  "what_to_review_next": [
+   "Whether the increase is new exposure, migration or higher loss rates.",
+   "Which exposures contributed most of the movement.",
+   "Whether coverage moved with it or the book simply grew."
+  ],
+  "why_it_appeared": "It moved 12.79% higher than 2026-07 on a segment holding 24.89% of the book's exposure at default."
+ },
+ "method": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "method_summary": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+ "release_id": "v4-saudi-retail-20m-v5",
+ "reporting_month": "2026-08",
+ "reporting_quarter": "2026-08"
+}

@@ -1,0 +1,46 @@
+{
+ "name": "doa",
+ "owner": "Risk",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Delegation of Authority: approval level by obligor exposure after the deal, rating and soft breaches.",
+ "simah_adverse_min_rank": 4,
+ "rows": [
+  {
+   "rank": 1,
+   "level": "Corporate Credit Manager",
+   "max_exposure": 25.0,
+   "min_rating": "BBB-",
+   "max_soft": 0
+  },
+  {
+   "rank": 2,
+   "level": "Head of Credit",
+   "max_exposure": 100.0,
+   "min_rating": "BB-",
+   "max_soft": 0
+  },
+  {
+   "rank": 3,
+   "level": "Chief Risk Officer",
+   "max_exposure": 175.0,
+   "min_rating": "B-",
+   "max_soft": 1
+  },
+  {
+   "rank": 4,
+   "level": "Executive Credit Committee",
+   "max_exposure": 250.0,
+   "min_rating": "CCC",
+   "max_soft": 2
+  },
+  {
+   "rank": 5,
+   "level": "Board Credit Committee",
+   "max_exposure": 1000000000.0,
+   "min_rating": "C",
+   "max_soft": 99
+  }
+ ]
+}

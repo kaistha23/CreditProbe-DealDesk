@@ -1,0 +1,469 @@
+{
+ "trace_id": "DT-592f5c82ea77",
+ "available": true,
+ "kind": "doa_calibration",
+ "as_of": "2026Q2",
+ "lines": [
+  "6,666 files: median turnaround 10 days (P75 15).",
+  "Chief Risk Officer holds the largest share of time: 23% of all days, median 5.8 days per file.",
+  "Chief Risk Officer stops signing files it does not decide; it is copied for information. It changed 6 of 522 files it passed up (1.1%, upper bound 2.5%) and held each for a median 5.9 days. Saves about 821 file-days a year; 6 past changes would have been forgone.",
+  "Corporate Credit Manager decides files rated BB- or better with no policy exception up to SAR 45m (today SAR 25m and BBB- or better; these go to Head of Credit). Head of Credit changed 189 of 2,887 such files (6.5%, upper bound 7.5%). Saves about 2,202 file-days a year; 157 past changes would have been forgone."
+ ],
+ "levels": [
+  {
+   "rank": 0,
+   "level": "Credit Risk review",
+   "files": 6666,
+   "median_days": 3.4,
+   "p75_days": 5.4,
+   "share_of_turnaround_pct": 30.3,
+   "pass_through": {
+    "n": 0,
+    "changed": null,
+    "median_days": null
+   },
+   "deciding": {
+    "n": 0,
+    "changed": null,
+    "declined": null,
+    "overturned": null,
+    "amended": null
+   },
+   "figure": {
+    "value": 3.4,
+    "unit": "days",
+    "basis": {
+     "relations": [
+      "gov_approval_step",
+      "gov_decision",
+      "dd_parameter"
+     ],
+     "rows": 6666,
+     "filter": {
+      "level_rank": 0
+     },
+     "method": "median calendar days at the level",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "rank": 1,
+   "level": "Corporate Credit Manager",
+   "files": 6666,
+   "median_days": 1.7,
+   "p75_days": 2.7,
+   "share_of_turnaround_pct": 15.2,
+   "pass_through": {
+    "n": 5822,
+    "changed": {
+     "pct": 9.24,
+     "k": 538,
+     "n": 5822,
+     "ci_low_pct": 8.52,
+     "ci_high_pct": 10.01
+    },
+    "median_days": 1.7
+   },
+   "deciding": {
+    "n": 844,
+    "changed": {
+     "pct": 7.46,
+     "k": 63,
+     "n": 844,
+     "ci_low_pct": 5.88,
+     "ci_high_pct": 9.44
+    },
+    "declined": {
+     "pct": 2.25,
+     "k": 19,
+     "n": 844,
+     "ci_low_pct": 1.45,
+     "ci_high_pct": 3.49
+    },
+    "overturned": {
+     "pct": 1.07,
+     "k": 9,
+     "n": 844,
+     "ci_low_pct": 0.56,
+     "ci_high_pct": 2.01
+    },
+    "amended": {
+     "pct": 4.15,
+     "k": 35,
+     "n": 844,
+     "ci_low_pct": 3.0,
+     "ci_high_pct": 5.71
+    }
+   },
+   "figure": {
+    "value": 1.7,
+    "unit": "days",
+    "basis": {
+     "relations": [
+      "gov_approval_step",
+      "gov_decision",
+      "dd_parameter"
+     ],
+     "rows": 6666,
+     "filter": {
+      "level_rank": 1
+     },
+     "method": "median calendar days at the level",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "rank": 2,
+   "level": "Head of Credit",
+   "files": 5822,
+   "median_days": 2.9,
+   "p75_days": 4.6,
+   "share_of_turnaround_pct": 22.8,
+   "pass_through": {
+    "n": 2935,
+    "changed": {
+     "pct": 6.85,
+     "k": 201,
+     "n": 2935,
+     "ci_low_pct": 5.99,
+     "ci_high_pct": 7.82
+    },
+    "median_days": 2.9
+   },
+   "deciding": {
+    "n": 2887,
+    "changed": {
+     "pct": 6.55,
+     "k": 189,
+     "n": 2887,
+     "ci_low_pct": 5.7,
+     "ci_high_pct": 7.51
+    },
+    "declined": {
+     "pct": 2.6,
+     "k": 75,
+     "n": 2887,
+     "ci_low_pct": 2.08,
+     "ci_high_pct": 3.24
+    },
+    "overturned": {
+     "pct": 1.35,
+     "k": 39,
+     "n": 2887,
+     "ci_low_pct": 0.99,
+     "ci_high_pct": 1.84
+    },
+    "amended": {
+     "pct": 2.6,
+     "k": 75,
+     "n": 2887,
+     "ci_low_pct": 2.08,
+     "ci_high_pct": 3.24
+    }
+   },
+   "figure": {
+    "value": 2.9,
+    "unit": "days",
+    "basis": {
+     "relations": [
+      "gov_approval_step",
+      "gov_decision",
+      "dd_parameter"
+     ],
+     "rows": 5822,
+     "filter": {
+      "level_rank": 2
+     },
+     "method": "median calendar days at the level",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "rank": 3,
+   "level": "Chief Risk Officer",
+   "files": 2935,
+   "median_days": 5.8,
+   "p75_days": 9.5,
+   "share_of_turnaround_pct": 23.4,
+   "pass_through": {
+    "n": 522,
+    "changed": {
+     "pct": 1.15,
+     "k": 6,
+     "n": 522,
+     "ci_low_pct": 0.53,
+     "ci_high_pct": 2.48
+    },
+    "median_days": 5.9
+   },
+   "deciding": {
+    "n": 2413,
+    "changed": {
+     "pct": 6.59,
+     "k": 159,
+     "n": 2413,
+     "ci_low_pct": 5.67,
+     "ci_high_pct": 7.65
+    },
+    "declined": {
+     "pct": 4.02,
+     "k": 97,
+     "n": 2413,
+     "ci_low_pct": 3.31,
+     "ci_high_pct": 4.88
+    },
+    "overturned": {
+     "pct": 1.28,
+     "k": 31,
+     "n": 2413,
+     "ci_low_pct": 0.91,
+     "ci_high_pct": 1.82
+    },
+    "amended": {
+     "pct": 1.28,
+     "k": 31,
+     "n": 2413,
+     "ci_low_pct": 0.91,
+     "ci_high_pct": 1.82
+    }
+   },
+   "figure": {
+    "value": 5.8,
+    "unit": "days",
+    "basis": {
+     "relations": [
+      "gov_approval_step",
+      "gov_decision",
+      "dd_parameter"
+     ],
+     "rows": 2935,
+     "filter": {
+      "level_rank": 3
+     },
+     "method": "median calendar days at the level",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "rank": 4,
+   "level": "Executive Credit Committee",
+   "files": 522,
+   "median_days": 10.9,
+   "p75_days": 17.1,
+   "share_of_turnaround_pct": 7.4,
+   "pass_through": {
+    "n": 38,
+    "changed": {
+     "pct": 15.79,
+     "k": 6,
+     "n": 38,
+     "ci_low_pct": 7.44,
+     "ci_high_pct": 30.42
+    },
+    "median_days": 11.6
+   },
+   "deciding": {
+    "n": 484,
+    "changed": {
+     "pct": 20.87,
+     "k": 101,
+     "n": 484,
+     "ci_low_pct": 17.48,
+     "ci_high_pct": 24.71
+    },
+    "declined": {
+     "pct": 7.23,
+     "k": 35,
+     "n": 484,
+     "ci_low_pct": 5.25,
+     "ci_high_pct": 9.89
+    },
+    "overturned": {
+     "pct": 1.45,
+     "k": 7,
+     "n": 484,
+     "ci_low_pct": 0.7,
+     "ci_high_pct": 2.95
+    },
+    "amended": {
+     "pct": 12.19,
+     "k": 59,
+     "n": 484,
+     "ci_low_pct": 9.57,
+     "ci_high_pct": 15.41
+    }
+   },
+   "figure": {
+    "value": 10.85,
+    "unit": "days",
+    "basis": {
+     "relations": [
+      "gov_approval_step",
+      "gov_decision",
+      "dd_parameter"
+     ],
+     "rows": 522,
+     "filter": {
+      "level_rank": 4
+     },
+     "method": "median calendar days at the level",
+     "period": "2026Q2"
+    }
+   }
+  },
+  {
+   "rank": 5,
+   "level": "Board Credit Committee",
+   "files": 38,
+   "median_days": 20.4,
+   "p75_days": 27.8,
+   "share_of_turnaround_pct": 0.9,
+   "pass_through": {
+    "n": 0,
+    "changed": null,
+    "median_days": null
+   },
+   "deciding": {
+    "n": 38,
+    "changed": {
+     "pct": 10.53,
+     "k": 4,
+     "n": 38,
+     "ci_low_pct": 4.17,
+     "ci_high_pct": 24.13
+    },
+    "declined": {
+     "pct": 2.63,
+     "k": 1,
+     "n": 38,
+     "ci_low_pct": 0.47,
+     "ci_high_pct": 13.5
+    },
+    "overturned": {
+     "pct": 0.0,
+     "k": 0,
+     "n": 38,
+     "ci_low_pct": 0.0,
+     "ci_high_pct": 9.18
+    },
+    "amended": {
+     "pct": 7.89,
+     "k": 3,
+     "n": 38,
+     "ci_low_pct": 2.72,
+     "ci_high_pct": 20.8
+    }
+   },
+   "figure": {
+    "value": 20.35,
+    "unit": "days",
+    "basis": {
+     "relations": [
+      "gov_approval_step",
+      "gov_decision",
+      "dd_parameter"
+     ],
+     "rows": 38,
+     "filter": {
+      "level_rank": 5
+     },
+     "method": "median calendar days at the level",
+     "period": "2026Q2"
+    }
+   }
+  }
+ ],
+ "proposals": [
+  {
+   "rule": "pass_through",
+   "level": "Chief Risk Officer",
+   "rank": 3,
+   "n": 522,
+   "changed": {
+    "pct": 1.15,
+    "k": 6,
+    "n": 522,
+    "ci_low_pct": 0.53,
+    "ci_high_pct": 2.48
+   },
+   "change": "Chief Risk Officer stops signing files it does not decide; it is copied for information.",
+   "days_saved_per_file": 5.9,
+   "files_per_year": 139,
+   "days_saved_per_year": 821,
+   "control_given_up": 6,
+   "why": "It changed 6 of 522 files it passed up (1.1%, upper bound 2.5%) and held each for a median 5.9 days."
+  },
+  {
+   "rule": "delegation_lift",
+   "level": "Corporate Credit Manager",
+   "rank": 1,
+   "from_level": "Head of Credit",
+   "n": 2887,
+   "changed": {
+    "pct": 6.55,
+    "k": 189,
+    "n": 2887,
+    "ci_low_pct": 5.7,
+    "ci_high_pct": 7.51
+   },
+   "change": "Corporate Credit Manager decides files rated BB- or better with no policy exception up to SAR 45m (today SAR 25m and BBB- or better; these go to Head of Credit).",
+   "param": {
+    "table": "doa",
+    "key": "Corporate Credit Manager.max_exposure",
+    "from": 25.0,
+    "to": 45.0,
+    "min_rating_from": "BBB-",
+    "min_rating_to": "BB-",
+    "condition": "rating BB- or better and no policy exception"
+   },
+   "files_per_year": 630,
+   "days_saved_per_file": 2.9,
+   "days_saved_per_year": 2202,
+   "control_given_up": 157,
+   "why": "Head of Credit changed 189 of 2,887 such files (6.5%, upper bound 7.5%)."
+  }
+ ],
+ "doa_today": [
+  {
+   "level": "Corporate Credit Manager",
+   "rank": 1,
+   "max_exposure": 25.0,
+   "max_soft": 0,
+   "min_rating": "BBB-"
+  },
+  {
+   "level": "Head of Credit",
+   "rank": 2,
+   "max_exposure": 100.0,
+   "max_soft": 0,
+   "min_rating": "BB-"
+  },
+  {
+   "level": "Chief Risk Officer",
+   "rank": 3,
+   "max_exposure": 175.0,
+   "max_soft": 1,
+   "min_rating": "B-"
+  },
+  {
+   "level": "Executive Credit Committee",
+   "rank": 4,
+   "max_exposure": 250.0,
+   "max_soft": 2,
+   "min_rating": "CCC"
+  },
+  {
+   "level": "Board Credit Committee",
+   "rank": 5,
+   "max_exposure": 1000000000.0,
+   "max_soft": 99,
+   "min_rating": "C"
+  }
+ ],
+ "method": "Where approval levels add delay without changing decisions. For every level of the delegation of authority (dd_parameter doa) the engine reads each past file's approval steps (gov_approval_step): days at the level, and what the level did, both when it only passed the file up (pass-through) and when it was the deciding level. A level \"changes\" a file when it amends terms, declines or overturns the recommendation. Rates carry 95% Wilson intervals.  Redesign rules (deterministic):   1. Pass-through sign-off: a level whose pass-through change rate has an upper bound below 5% (n >= 30) and that      holds files for 2 days or more stops signing files it does not decide (it is copied, not asked).   2. Delegation lift: for each deciding level, files rated BB- or better that it decided with no change (n >= 30,      change rate upper bound below 8%): the level below takes them up to the 75th percentile of their limits,      rounded to SAR 5 million. The control given up is counted: files in that band where the level did change something. Days saved are medians per file times files per year over the history.",
+ "data_note": "Decision history is a fictional seed published to Data Domains (domain governance, gov_* relations, ops/r13_seed_governance.py); outcomes (stage, DPD, default, rating drift) are the corporate book's own."
+}

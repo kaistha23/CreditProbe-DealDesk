@@ -1,0 +1,168 @@
+{
+ "session_id": "TRYS-20261019182005-e0c40456",
+ "mode": "deterministic",
+ "deal_id": "TRY-E0C40456",
+ "total_seconds": 4.21,
+ "complete": true,
+ "next": null,
+ "documents": {
+  "proposal": {
+   "name": "Gulf_Meridian_Contracting_credit_proposal.docx",
+   "method": "word",
+   "pages": 1,
+   "language": "en",
+   "characters": 2527
+  },
+  "policy": {
+   "name": "Fictional_Bank_Credit_Policy.docx",
+   "method": "word",
+   "pages": 1,
+   "language": "en",
+   "characters": 19262
+  }
+ },
+ "steps": [
+  {
+   "key": "read",
+   "label": "Read your documents",
+   "status": "done",
+   "seconds": 0.04,
+   "summary": "Read Gulf_Meridian_Contracting_credit_proposal.docx (word, English, 2,527 characters) and Fictional_Bank_Credit_Policy.docx (word).",
+   "result": {}
+  },
+  {
+   "key": "policy",
+   "label": "Learn your policy",
+   "status": "done",
+   "seconds": 0.31,
+   "summary": "Found 38 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.docx (20 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 0 items not in the policy, 0 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters.",
+   "result": {}
+  },
+  {
+   "key": "extract",
+   "label": "Extract the proposal into a deal",
+   "status": "done",
+   "seconds": 0.64,
+   "summary": "Gulf Meridian Contracting LLC: Construction, rated BB-; SAR 670.6m revolver, 1 year, 275 bps. 12 fields read, 4 defaults labelled.",
+   "result": {}
+  },
+  {
+   "key": "review",
+   "label": "Review against your policy",
+   "status": "done",
+   "seconds": 1.7,
+   "summary": "11 checks of your policy clauses: 7 met, 3 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 14 findings (1 critical, 5 major, 8 minor).",
+   "result": {
+    "decision": "Do not approve as proposed",
+    "severity": {
+     "critical": 1,
+     "major": 5,
+     "minor": 8
+    },
+    "policy_counts": {
+     "supported": 7,
+     "contradicted": 0,
+     "exception": 3,
+     "unverifiable": 1
+    },
+    "summary": "11 checks of your policy clauses: 7 met, 3 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 14 findings (1 critical, 5 major, 8 minor).",
+    "headline": "Do not approve as proposed: 2 critical, 2 major, 8 minor findings; price and structure to clear the hurdle; 7 documents missing",
+    "findings": [
+     {
+      "rule_id": "POL-AUDITED-YEARS-3-3",
+      "title": "Years of audited financial statements",
+      "severity": "major"
+     },
+     {
+      "rule_id": "POL-SINGLE-OBLIGOR-5-1",
+      "title": "Single obligor limit",
+      "severity": "major"
+     },
+     {
+      "rule_id": "POL-RAROC-FLOOR-9-1",
+      "title": "Lifetime RAROC floor",
+      "severity": "major"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-GOV-05-1",
+      "title": "CRO review signed",
+      "severity": "critical"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-CONS-07-1",
+      "title": "Pricing clears the hurdle",
+      "severity": "major"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-PRC-01-1",
+      "title": "Similar deals deteriorated more than the book",
+      "severity": "major"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-DR-01-1",
+      "title": "Trade licence (valid): not provided",
+      "severity": "minor"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-DR-02-1",
+      "title": "Memorandum and articles of association: not provided",
+      "severity": "minor"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-DR-04-1",
+      "title": "Interim financial statements (latest quarter or half-year): not provided",
+      "severity": "minor"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-DR-19-1",
+      "title": "Board resolution or power of attorney to borrow: not provided",
+      "severity": "minor"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-DR-20-1",
+      "title": "KYC of shareholders and UBOs (ID, ownership chart): not provided",
+      "severity": "minor"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-DR-23-1",
+      "title": "Central bank risk bureau (CBRBR) extract for the group: not provided",
+      "severity": "minor"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-DR-24-1",
+      "title": "Signed guarantee and security documents (perfected): not provided",
+      "severity": "minor"
+     },
+     {
+      "rule_id": "B-TRY-E0C40456-LNG-02-1",
+      "title": "One-sided memo",
+      "severity": "minor"
+     }
+    ]
+   }
+  },
+  {
+   "key": "counter",
+   "label": "Counter-proposal and committee paper",
+   "status": "done",
+   "seconds": 1.4,
+   "summary": "1 counter-proposal priced by the optimiser; the first: Price and structure to clear the hurdle. Committee paper: Session F committee paper, decision Do not approve as proposed.",
+   "result": {
+    "summary": "1 counter-proposal priced by the optimiser; the first: Price and structure to clear the hurdle. Committee paper: Session F committee paper, decision Do not approve as proposed."
+   }
+  },
+  {
+   "key": "draft",
+   "label": "Draft in your memo's language",
+   "status": "done",
+   "seconds": 0.12,
+   "summary": "English bank-form proposal: 26 sections, 1822 words.",
+   "result": {
+    "language": "en",
+    "words": 1822,
+    "style_score": null,
+    "summary": "English bank-form proposal: 26 sections, 1822 words."
+   }
+  }
+ ]
+}

@@ -1,0 +1,358 @@
+{
+ "ruleset": "gw-ews-1.1.0",
+ "previous": "gw-ews-1.0.0",
+ "targets": {
+  "warned_pct": [
+   10.0,
+   20.0
+  ],
+  "high_or_critical_pct_below": 7.0,
+  "constraints": [
+   "every already-bad customer stays warned",
+   "no rule switched off (weight 0)",
+   "critical band not empty"
+  ]
+ },
+ "books": {
+  "corporate": {
+   "as_of": "2026Q2",
+   "frontier": {
+    "combinations": 25920,
+    "combinations_meeting_targets": 14,
+    "combinations_meeting_targets_and_all_constraints": 2,
+    "lowest_warned_pct_with_all_constraints": 15.0
+   },
+   "meets_targets": true,
+   "before": {
+    "rules": {
+     "C-WATCH": [
+      null,
+      3
+     ],
+     "C-DOWNGRADE": [
+      0,
+      2
+     ],
+     "C-COVENANT": [
+      0,
+      2
+     ],
+     "C-DPD": [
+      0,
+      3
+     ],
+     "C-SICR": [
+      null,
+      2
+     ],
+     "C-UTIL": [
+      90,
+      1
+     ]
+    },
+    "band_floors": [
+     2,
+     4,
+     6
+    ],
+    "customers": 5412,
+    "warned": 2279,
+    "warned_pct": 42.11012564671101,
+    "high_or_critical": 2117,
+    "high_or_critical_pct": 39.11677753141168,
+    "bad": 751,
+    "bad_warned_pct": 100.0,
+    "bad_high_or_critical_pct": 100.0,
+    "forward_risk": 1528,
+    "bands": {
+     "critical": 1405,
+     "high": 712,
+     "moderate": 162,
+     "low": 454,
+     "none": 2679
+    },
+    "rule_customers": {
+     "C-WATCH": 1828,
+     "C-DOWNGRADE": 177,
+     "C-COVENANT": 945,
+     "C-DPD": 1085,
+     "C-SICR": 2105,
+     "C-UTIL": 1472
+    }
+   },
+   "after": {
+    "rules": {
+     "C-WATCH": [
+      null,
+      1
+     ],
+     "C-DOWNGRADE": [
+      0,
+      2
+     ],
+     "C-COVENANT": [
+      0,
+      1
+     ],
+     "C-DPD": [
+      59,
+      2
+     ],
+     "C-SICR": [
+      null,
+      1
+     ],
+     "C-UTIL": [
+      95,
+      1
+     ],
+     "C-DEFAULT": [
+      null,
+      2
+     ]
+    },
+    "band_floors": [
+     4,
+     7,
+     9
+    ],
+    "customers": 5412,
+    "warned": 878,
+    "warned_pct": 16.22320768662232,
+    "high_or_critical": 355,
+    "high_or_critical_pct": 6.55949741315595,
+    "bad": 751,
+    "bad_warned_pct": 100.0,
+    "bad_high_or_critical_pct": 47.270306258322236,
+    "forward_risk": 127,
+    "bands": {
+     "critical": 3,
+     "high": 352,
+     "moderate": 523,
+     "low": 1480,
+     "none": 3054
+    },
+    "rule_customers": {
+     "C-WATCH": 1828,
+     "C-DOWNGRADE": 177,
+     "C-COVENANT": 945,
+     "C-DPD": 601,
+     "C-SICR": 2105,
+     "C-UTIL": 584,
+     "C-DEFAULT": 751
+    },
+    "changes": 7,
+    "meets": true,
+    "silenced": 0,
+    "valid": true
+   },
+   "stability_before": [
+    {
+     "period": "2025Q3",
+     "warned_pct": 33.4,
+     "high_or_critical_pct": 27.5
+    },
+    {
+     "period": "2025Q4",
+     "warned_pct": 34.3,
+     "high_or_critical_pct": 30.0
+    },
+    {
+     "period": "2026Q1",
+     "warned_pct": 38.7,
+     "high_or_critical_pct": 34.5
+    },
+    {
+     "period": "2026Q2",
+     "warned_pct": 42.1,
+     "high_or_critical_pct": 39.1
+    }
+   ],
+   "stability_after": [
+    {
+     "period": "2025Q3",
+     "warned_pct": 5.7,
+     "high_or_critical_pct": 1.0
+    },
+    {
+     "period": "2025Q4",
+     "warned_pct": 7.3,
+     "high_or_critical_pct": 1.3
+    },
+    {
+     "period": "2026Q1",
+     "warned_pct": 9.7,
+     "high_or_critical_pct": 2.8
+    },
+    {
+     "period": "2026Q2",
+     "warned_pct": 16.2,
+     "high_or_critical_pct": 6.6
+    }
+   ]
+  },
+  "retail": {
+   "as_of": "2026-08",
+   "meets_targets": true,
+   "before": {
+    "rules": {
+     "R-DPD": [
+      0,
+      3
+     ],
+     "R-SCORE-LOW": [
+      "DE",
+      1
+     ],
+     "R-SCORE-DOWN": [
+      "Deteriorated",
+      2
+     ],
+     "R-UTIL": [
+      85,
+      2
+     ],
+     "R-MINPAY": [
+      35,
+      1
+     ],
+     "R-SALARY": [
+      null,
+      2
+     ]
+    },
+    "band_floors": [
+     2,
+     4,
+     6
+    ],
+    "customers": 25432,
+    "warned": 12202,
+    "warned_pct": 47.97892418999685,
+    "high_or_critical": 3887,
+    "high_or_critical_pct": 15.283894306385656,
+    "bad": 1114,
+    "bad_warned_pct": 100.0,
+    "bad_high_or_critical_pct": 90.66427289048474,
+    "forward_risk": 11088,
+    "bands": {
+     "critical": 423,
+     "high": 3464,
+     "moderate": 8315,
+     "low": 8884,
+     "none": 4346
+    },
+    "rule_customers": {
+     "R-DPD": 2893,
+     "R-SCORE-LOW": 9758,
+     "R-SCORE-DOWN": 0,
+     "R-UTIL": 4846,
+     "R-MINPAY": 18531,
+     "R-SALARY": 0
+    }
+   },
+   "after": {
+    "rules": {
+     "R-DPD": [
+      0,
+      4
+     ],
+     "R-SCORE-LOW": [
+      "E",
+      1
+     ],
+     "R-SCORE-DOWN": [
+      "2BANDS",
+      2
+     ],
+     "R-UTIL": [
+      85,
+      2
+     ],
+     "R-MINPAY": [
+      30,
+      1
+     ],
+     "R-SALARY": [
+      null,
+      2
+     ]
+    },
+    "band_floors": [
+     3,
+     5,
+     7
+    ],
+    "customers": 25432,
+    "warned": 4440,
+    "warned_pct": 17.458320226486318,
+    "high_or_critical": 1685,
+    "high_or_critical_pct": 6.625511167033658,
+    "bad": 1114,
+    "bad_warned_pct": 100.0,
+    "bad_high_or_critical_pct": 61.57989228007181,
+    "forward_risk": 3326,
+    "bands": {
+     "critical": 280,
+     "high": 1405,
+     "moderate": 2755,
+     "low": 8579,
+     "none": 12413
+    },
+    "rule_customers": {
+     "R-DPD": 2893,
+     "R-SCORE-LOW": 3865,
+     "R-SCORE-DOWN": 1,
+     "R-UTIL": 4846,
+     "R-MINPAY": 7710,
+     "R-SALARY": 0
+    },
+    "meets": true
+   },
+   "stability_before": [
+    {
+     "period": "2026-05",
+     "warned_pct": 33.3,
+     "high_or_critical_pct": 6.5
+    },
+    {
+     "period": "2026-06",
+     "warned_pct": 37.4,
+     "high_or_critical_pct": 9.4
+    },
+    {
+     "period": "2026-07",
+     "warned_pct": 42.3,
+     "high_or_critical_pct": 12.8
+    },
+    {
+     "period": "2026-08",
+     "warned_pct": 48.0,
+     "high_or_critical_pct": 15.3
+    }
+   ],
+   "stability_after": [
+    {
+     "period": "2026-05",
+     "warned_pct": 11.2,
+     "high_or_critical_pct": 2.8
+    },
+    {
+     "period": "2026-06",
+     "warned_pct": 12.4,
+     "high_or_critical_pct": 3.3
+    },
+    {
+     "period": "2026-07",
+     "warned_pct": 14.5,
+     "high_or_critical_pct": 4.4
+    },
+    {
+     "period": "2026-08",
+     "warned_pct": 17.5,
+     "high_or_critical_pct": 6.6
+    }
+   ]
+  }
+ }
+}

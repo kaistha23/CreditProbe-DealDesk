@@ -1,0 +1,364 @@
+{
+ "period": "2026Q2",
+ "event": {
+  "family": "oil",
+  "label": "Oil price move",
+  "severity": "moderate",
+  "params": {
+   "pct": -30.0
+  },
+  "text": "Oil price falls 30%",
+  "parsed": [
+   "oil -30%"
+  ],
+  "picked": false
+ },
+ "severity": "moderate",
+ "calibration": {
+  "source": "r13_s",
+  "label": "R13 \u00a7S calibrated severities",
+  "note": "Severities from R13 \u00a7S (dd_scenario_calibration, fingerprint b6de3e32253e): mild P75, moderate P92, severe max(P96, worst episode) of observed one-year moves for brent, gdp_nonoil, notches, repo, sector_sd; the other drivers carry \u00a7S's labelled fallback (expert or regulatory) where the data cannot support a percentile.",
+  "path": "Data Domains: dd_scenario_calibration"
+ },
+ "drivers": [
+  {
+   "driver": "brent",
+   "label": "Brent",
+   "value": -30.0,
+   "unit": "% of level",
+   "scope": "whole book",
+   "assumption": "Brent moves by this much from its current level and stays there for two years; each sector's cycle index follows through the What-If cycle model's oil betas.",
+   "basis": "stated in the event"
+  }
+ ],
+ "assumptions": [
+  "Only oil moves: GDP, rates and real-estate prices are held at plan (no joint draw until \u00a7S joint scenarios merge)."
+ ],
+ "impact": {
+  "ecl_before": 6993.7353494851095,
+  "ecl_after": 7080.706440394998,
+  "ecl_change": 86.97109090988852,
+  "ecl_change_pct": 1.2435570773533984,
+  "stage2_before_n": 5743,
+  "stage2_after_n": 5743,
+  "stage2_ead_before": 41622.7523,
+  "stage2_ead_after": 41622.7523,
+  "to_stage2_n": 0,
+  "to_stage3_n": 0,
+  "to_stage2_ead": 0.0,
+  "to_stage3_ead": 0.0,
+  "facilities": 21918,
+  "ead": 153700.14179999998
+ },
+ "channels": [
+  {
+   "channel": "macro",
+   "borrowers": 5412,
+   "ead": 153700.1418,
+   "d_ecl": 86.97109090988926,
+   "to_stage2": 0,
+   "to_stage3": 0
+  }
+ ],
+ "by_sector": [
+  {
+   "sector": "Construction",
+   "ead": 18695.2458,
+   "d_ecl": 29.646117514007113,
+   "to_stage2": 0
+  },
+  {
+   "sector": "Real Estate",
+   "ead": 16141.267600000001,
+   "d_ecl": 21.292194918666016,
+   "to_stage2": 0
+  },
+  {
+   "sector": "Hospitality",
+   "ead": 11141.4603,
+   "d_ecl": 6.265112637490848,
+   "to_stage2": 0
+  },
+  {
+   "sector": "Retail Trade",
+   "ead": 10848.026100000001,
+   "d_ecl": 5.247787062211035,
+   "to_stage2": 0
+  },
+  {
+   "sector": "Transport and Logistics",
+   "ead": 11392.040500000001,
+   "d_ecl": 4.273091276757049,
+   "to_stage2": 0
+  },
+  {
+   "sector": "Manufacturing",
+   "ead": 13454.7626,
+   "d_ecl": 4.090025314016099,
+   "to_stage2": 0
+  }
+ ],
+ "borrowers": [
+  {
+   "borrower_id": "CB00001",
+   "name": "Al Noor Infrastructure",
+   "sector": "Construction",
+   "channel": "macro",
+   "reason": "sector beta to the macro driver",
+   "share_pct": null,
+   "notches": null,
+   "ead": 64.9081,
+   "ecl_before": 38.45497,
+   "ecl_after": 38.77528091813252,
+   "d_ecl": 0.32031091813251766,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "moderate"
+  },
+  {
+   "borrower_id": "CB00796",
+   "name": "Najd United Contracting",
+   "sector": "Construction",
+   "channel": "macro",
+   "reason": "sector beta to the macro driver",
+   "share_pct": null,
+   "notches": null,
+   "ead": 55.388400000000004,
+   "ecl_before": 32.207515,
+   "ecl_after": 32.47738806717622,
+   "d_ecl": 0.2698730671762206,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "high"
+  },
+  {
+   "borrower_id": "CB01224",
+   "name": "Arar First Engineering",
+   "sector": "Construction",
+   "channel": "macro",
+   "reason": "sector beta to the macro driver",
+   "share_pct": null,
+   "notches": null,
+   "ead": 55.3668,
+   "ecl_before": 31.686695000000007,
+   "ecl_after": 31.953137217875152,
+   "d_ecl": 0.2664422178751469,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "critical"
+  },
+  {
+   "borrower_id": "CB03940",
+   "name": "Khamis Mushait National Estates",
+   "sector": "Real Estate",
+   "channel": "macro",
+   "reason": "sector beta to the macro driver",
+   "share_pct": null,
+   "notches": null,
+   "ead": 58.6728,
+   "ecl_before": 30.87282,
+   "ecl_after": 31.138391786461497,
+   "d_ecl": 0.26557178646149626,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "critical"
+  },
+  {
+   "borrower_id": "CB03796",
+   "name": "Khamis Mushait Integrated Properties",
+   "sector": "Real Estate",
+   "channel": "macro",
+   "reason": "sector beta to the macro driver",
+   "share_pct": null,
+   "notches": null,
+   "ead": 63.6614,
+   "ecl_before": 30.116734,
+   "ecl_after": 30.375789639294666,
+   "d_ecl": 0.2590556392946619,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "moderate"
+  },
+  {
+   "borrower_id": "CB03732",
+   "name": "Tuwaiq Central Properties",
+   "sector": "Real Estate",
+   "channel": "macro",
+   "reason": "sector beta to the macro driver",
+   "share_pct": null,
+   "notches": null,
+   "ead": 55.6346,
+   "ecl_before": 29.06315,
+   "ecl_after": 29.312856126134484,
+   "d_ecl": 0.2497061261344855,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "critical"
+  }
+ ],
+ "affected": {
+  "direct": 0,
+  "with_ecl_change": 5412
+ },
+ "employers": {
+  "retail_workforce": {
+   "customers": 8094,
+   "accounts": 12390,
+   "exposure": 6138.673030000015,
+   "stage2_exposure": 240.99073000000027,
+   "month": "2026-06"
+  }
+ },
+ "call_list": [
+  {
+   "borrower_id": "CB00001",
+   "name": "Al Noor Infrastructure",
+   "sector": "Construction",
+   "channel": "macro",
+   "ead": 64.9081,
+   "d_ecl": 0.32031091813251766,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "moderate",
+   "rating": "CC",
+   "reason": "moves with the macro driver through its sector beta; ECL +SAR 0.32m on EAD SAR 64.9m.",
+   "action": "Review the borrower's sensitivity to the move and its headroom; agree a monitoring date.",
+   "rm": "Nora Al-Ghamdi",
+   "rm_id": "RM0082",
+   "branch": "Riyadh Olaya",
+   "href": "/borrower-360?domain=corporate&customer_id=CB00001"
+  },
+  {
+   "borrower_id": "CB00796",
+   "name": "Najd United Contracting",
+   "sector": "Construction",
+   "channel": "macro",
+   "ead": 55.388400000000004,
+   "d_ecl": 0.2698730671762206,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "high",
+   "rating": "B+",
+   "reason": "moves with the macro driver through its sector beta; ECL +SAR 0.27m on EAD SAR 55.4m; already high in Early Warning.",
+   "action": "Review the borrower's sensitivity to the move and its headroom; agree a monitoring date.",
+   "rm": "Ziyad Al-Omari",
+   "rm_id": "RM0084",
+   "branch": "Buraidah",
+   "href": "/borrower-360?domain=corporate&customer_id=CB00796"
+  },
+  {
+   "borrower_id": "CB01224",
+   "name": "Arar First Engineering",
+   "sector": "Construction",
+   "channel": "macro",
+   "ead": 55.3668,
+   "d_ecl": 0.2664422178751469,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "critical",
+   "rating": "CC",
+   "reason": "moves with the macro driver through its sector beta; ECL +SAR 0.27m on EAD SAR 55.4m; already critical in Early Warning.",
+   "action": "Review the borrower's sensitivity to the move and its headroom; agree a monitoring date.",
+   "rm": "Dana Al-Faraj",
+   "rm_id": "RM0020",
+   "branch": "Dammam",
+   "href": "/borrower-360?domain=corporate&customer_id=CB01224"
+  },
+  {
+   "borrower_id": "CB03940",
+   "name": "Khamis Mushait National Estates",
+   "sector": "Real Estate",
+   "channel": "macro",
+   "ead": 58.6728,
+   "d_ecl": 0.26557178646149626,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "critical",
+   "rating": "B-",
+   "reason": "moves with the macro driver through its sector beta; ECL +SAR 0.27m on EAD SAR 58.7m; already critical in Early Warning.",
+   "action": "Review the borrower's sensitivity to the move and its headroom; agree a monitoring date.",
+   "rm": "Sara Al-Anazi",
+   "rm_id": "RM0091",
+   "branch": "Madinah Central",
+   "href": "/borrower-360?domain=corporate&customer_id=CB03940"
+  },
+  {
+   "borrower_id": "CB03796",
+   "name": "Khamis Mushait Integrated Properties",
+   "sector": "Real Estate",
+   "channel": "macro",
+   "ead": 63.6614,
+   "d_ecl": 0.2590556392946619,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "moderate",
+   "rating": "CC",
+   "reason": "moves with the macro driver through its sector beta; ECL +SAR 0.26m on EAD SAR 63.7m.",
+   "action": "Review the borrower's sensitivity to the move and its headroom; agree a monitoring date.",
+   "rm": "Shahad Al-Shehri",
+   "rm_id": "RM0081",
+   "branch": "Riyadh Olaya",
+   "href": "/borrower-360?domain=corporate&customer_id=CB03796"
+  },
+  {
+   "borrower_id": "CB03732",
+   "name": "Tuwaiq Central Properties",
+   "sector": "Real Estate",
+   "channel": "macro",
+   "ead": 55.6346,
+   "d_ecl": 0.2497061261344855,
+   "to_stage2": 0,
+   "to_stage3": 0,
+   "ews_band": "critical",
+   "rating": "C",
+   "reason": "moves with the macro driver through its sector beta; ECL +SAR 0.25m on EAD SAR 55.6m; already critical in Early Warning.",
+   "action": "Review the borrower's sensitivity to the move and its headroom; agree a monitoring date.",
+   "rm": "Nora Al-Zahrani",
+   "rm_id": "RM0026",
+   "branch": "Jubail",
+   "href": "/borrower-360?domain=corporate&customer_id=CB03732"
+  }
+ ],
+ "limits": [
+  "Relationship coverage: 99.5% of the 5,412 corporate borrowers have a supplier or customer link in rel-saudi-v1; supplier links are observed only through payments routed via the bank, so a counterparty banking elsewhere is not seen.",
+  "A book-wide macro move reaches every borrower through its sector's cycle beta; supplier links are not added on top (they are already in the sector betas).",
+  "Retail customers employed by the hit corporates are counted, not stressed: the retail book is not in this run.",
+  "The relationship manager on each call is from the Branches and RMs domain at the quarter.",
+  "Severities from R13 \u00a7S (dd_scenario_calibration, fingerprint b6de3e32253e): mild P75, moderate P92, severe max(P96, worst episode) of observed one-year moves for brent, gdp_nonoil, notches, repo, sector_sd; the other drivers carry \u00a7S's labelled fallback (expert or regulatory) where the data cannot support a percentile."
+ ],
+ "coverage": {
+  "borrowers": 5412,
+  "with_supply_link": 5384,
+  "with_any_link": 5404,
+  "supply_link_pct": 99.48263118994826,
+  "any_link_pct": 99.85218033998522
+ },
+ "deal_desk": [],
+ "engine": {
+  "method": "delta",
+  "drivers": [
+   "mev",
+   "staging"
+  ],
+  "seconds": 1.34
+ },
+ "money_unit": "SAR million",
+ "text": {
+  "headline": "Oil \u221230% (moderate): ECL +SAR 87.0m (+1.24%) to SAR 7,081m; Stage 2 +0 facilities (+SAR 0m EAD).",
+  "lines": [
+   "5,412 borrowers hit through their sector: EAD SAR 153,700m, ECL +SAR 87.0m, 0 to Stage 2, 0 to default.",
+   "Call 10 names today, first Al Noor Infrastructure (CB00001, RM Nora Al-Ghamdi): moves with the macro driver through its sector beta; ECL +SAR 0.32m on EAD SAR 64.9m.",
+   "Largest sector hit: Construction (ECL +SAR 29.6m).",
+   "Severity from the R13 \u00a7S calibrated severities.",
+   "8,094 retail customers salaried by the hit corporates (retail EAD SAR 6,138.7m, not stressed here)."
+  ]
+ },
+ "view": {
+  "view": "intel_network_event",
+  "key": "oil",
+  "inputs_sha256": "0f99fe88d5324571",
+  "path": "var/intel/network/event/0f99fe88d5324571.json",
+  "content_sha256": "95ffdea23727cb478ee60f1f923f27f9a05150d91e57dd14a81de82ed87aeca9",
+  "published": true
+ }
+}

@@ -1,0 +1,295 @@
+{
+ "routes": 32,
+ "hits": 0,
+ "hits_outside_dealdesk": 0,
+ "by_route": {
+  "/": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/?domain=retail": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/workspace": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/messages": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/analyses": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/analyses/ead-by-sector-2026q2": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/investigations": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/investigations/construction-ecl-rise-q2-2026": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/projects": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/projects/construction-deep-dive-q2-2026": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/projects/construction-deep-dive-q2-2026/threads/pt-construction-why": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/playbook": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/playbook?report=rp_ccp_q2_2026": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/policy-docs": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/policy-docs?doc=pd_circ_c_2026_03": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/early-warning": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/early-warning?domain=retail": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/early-warning/model": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/what-if": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/borrower-360": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/borrower-360?domain=retail": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/borrower-360?domain=corporate&customer_id=CB01312&period=2026Q2&tab=profile": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/borrower-360?domain=retail&customer_id=RC000001&period=2026-08&tab=profile": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/scorecard-validation": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/data-builder": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/cockpit/data": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/deal-desk": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/deal-desk/DD-01": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/lenses": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/lenses?book=retail": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/what-if/thread/wt-24cefcd0687e": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  },
+  "/scorecard-validation/thread/sv-7babc356bf41": {
+   "long_decimals": [],
+   "fractions": [],
+   "raw_keys": [],
+   "table_cells": [],
+   "empty_columns": [],
+   "thread_answers": [],
+   "plot_hover_inventory": []
+  }
+ }
+}

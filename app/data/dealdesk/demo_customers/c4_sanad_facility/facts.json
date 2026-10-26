@@ -1,0 +1,1221 @@
+{
+ "key": "c4",
+ "people": [
+  {
+   "key": "abdulaziz",
+   "name": "Abdulaziz Saleh Al-Mutlaq",
+   "id_number": "1068823410",
+   "nationality": "Saudi",
+   "dob": "1984-06-11",
+   "id_issue": "2024-02-05",
+   "id_expiry": "2034-02-04",
+   "role": "General Manager (90%)",
+   "guarantor": true,
+   "simah": {
+    "date": "2026-10-13",
+    "number": "SC-26-8823061",
+    "score": 541,
+    "worst": "90+ days past due (credit card, since 08/2026)",
+    "facilities": [
+     {
+      "lender": "Al Rimal Commercial Bank",
+      "product": "Credit card",
+      "limit": 0.06,
+      "outstanding": 0.0584,
+      "overdue": 0.0384,
+      "status": "90+ days past due",
+      "remark": "First missed payment 06/2026; 90+ days past due since 08/2026"
+     },
+     {
+      "lender": "Tihama Investment Bank",
+      "product": "Auto lease",
+      "limit": 0.21,
+      "outstanding": 0.094,
+      "overdue": 0.0,
+      "status": "Current"
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Sanad Smart Facility Services Co.",
+      "lender": "Tihama Investment Bank",
+      "amount": 4.0,
+      "status": "Current"
+     }
+    ],
+    "history": "Credit card 30 days past due in 06/2026, 60 in 07/2026, 90+ from 08/2026 (SAR 38,400 overdue). Other facilities current."
+   }
+  },
+  {
+   "key": "fahad",
+   "name": "Fahad Saleh Al-Mutlaq",
+   "id_number": "1074419035",
+   "nationality": "Saudi",
+   "dob": "1990-09-27",
+   "id_issue": "2016-08-16",
+   "id_expiry": "2026-08-15",
+   "role": "Partner (10%)",
+   "guarantor": false
+  }
+ ],
+ "fs": {
+  "FY2023": {
+   "revenue": 15.2,
+   "cost_of_sales": 12.1,
+   "operating_expenses": 1.6,
+   "finance_cost": 0.2,
+   "zakat": 0.05,
+   "depreciation": 0.5,
+   "cash": 0.9,
+   "trade_receivables": 4.2,
+   "inventory": 0.3,
+   "due_from_related": 0.3,
+   "other_current_assets": 0.6,
+   "ppe": 1.7,
+   "other_noncurrent_assets": 0.2,
+   "short_term_borrowings": 1.0,
+   "trade_payables": 1.5,
+   "current_portion_ltd": 0.4,
+   "long_term_borrowings": 0.8,
+   "end_of_service": 0.9,
+   "share_capital": 1.0,
+   "statutory_reserve": 0.1,
+   "retained_earnings": 1.9,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "due_to_related": 0.0,
+   "other_current_liabilities": 0.6,
+   "gross_profit": 3.1,
+   "operating_profit": 1.5,
+   "net_profit": 1.25,
+   "current_assets": 6.3,
+   "total_assets": 8.2,
+   "total_equity": 3.0,
+   "current_liabilities": 3.5,
+   "total_liabilities": 5.2,
+   "ebitda": 2.0,
+   "operating_cash_flow": 1.4
+  },
+  "FY2024": {
+   "revenue": 21.8,
+   "cost_of_sales": 17.0,
+   "operating_expenses": 2.1,
+   "finance_cost": 0.3,
+   "zakat": 0.1,
+   "depreciation": 0.6,
+   "cash": 1.2,
+   "trade_receivables": 6.1,
+   "inventory": 0.4,
+   "due_from_related": 0.6,
+   "other_current_assets": 0.8,
+   "ppe": 2.0,
+   "other_noncurrent_assets": 0.2,
+   "short_term_borrowings": 1.5,
+   "trade_payables": 1.9,
+   "current_portion_ltd": 0.8,
+   "long_term_borrowings": 1.2,
+   "end_of_service": 1.2,
+   "share_capital": 1.0,
+   "statutory_reserve": 0.14,
+   "retained_earnings": 3.16,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "due_to_related": 0.0,
+   "other_current_liabilities": 0.4,
+   "gross_profit": 4.8,
+   "operating_profit": 2.7,
+   "net_profit": 2.3,
+   "current_assets": 9.1,
+   "total_assets": 11.3,
+   "total_equity": 4.3,
+   "current_liabilities": 4.6,
+   "total_liabilities": 7.0,
+   "ebitda": 3.3,
+   "operating_cash_flow": 0.9
+  },
+  "FY2025": {
+   "revenue": 34.6,
+   "cost_of_sales": 27.3,
+   "operating_expenses": 3.0,
+   "finance_cost": 0.5,
+   "zakat": 0.2,
+   "depreciation": 0.8,
+   "cash": 1.9,
+   "trade_receivables": 9.8,
+   "inventory": 0.6,
+   "due_from_related": 1.2,
+   "other_current_assets": 1.1,
+   "ppe": 2.4,
+   "other_noncurrent_assets": 0.2,
+   "short_term_borrowings": 2.0,
+   "trade_payables": 3.1,
+   "current_portion_ltd": 0.8,
+   "long_term_borrowings": 1.2,
+   "end_of_service": 1.6,
+   "share_capital": 1.0,
+   "statutory_reserve": 0.5,
+   "retained_earnings": 5.9,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "due_to_related": 0.0,
+   "other_current_liabilities": 1.1,
+   "gross_profit": 7.3,
+   "operating_profit": 4.3,
+   "net_profit": 3.6,
+   "current_assets": 14.6,
+   "total_assets": 17.2,
+   "total_equity": 7.4,
+   "current_liabilities": 7.0,
+   "total_liabilities": 9.8,
+   "ebitda": 5.1,
+   "operating_cash_flow": 1.9
+  },
+  "9M2026": {
+   "revenue": 29.1,
+   "cost_of_sales": 23.2,
+   "operating_expenses": 2.5,
+   "finance_cost": 0.5,
+   "zakat": 0.0,
+   "depreciation": 0.7,
+   "cash": 1.4,
+   "trade_receivables": 12.9,
+   "inventory": 0.7,
+   "due_from_related": 2.1,
+   "other_current_assets": 1.3,
+   "ppe": 2.6,
+   "other_noncurrent_assets": 0.2,
+   "short_term_borrowings": 2.8,
+   "trade_payables": 3.6,
+   "current_portion_ltd": 0.8,
+   "long_term_borrowings": 0.6,
+   "end_of_service": 1.9,
+   "share_capital": 1.0,
+   "statutory_reserve": 0.5,
+   "retained_earnings": 8.8,
+   "retention_receivables": 0.0,
+   "contract_assets": 0.0,
+   "due_to_related": 0.0,
+   "other_current_liabilities": 1.2,
+   "gross_profit": 5.9,
+   "operating_profit": 3.4,
+   "net_profit": 2.9,
+   "current_assets": 18.4,
+   "total_assets": 21.2,
+   "total_equity": 10.3,
+   "current_liabilities": 8.4,
+   "total_liabilities": 10.9,
+   "ebitda": 4.1,
+   "months": 9,
+   "operating_cash_flow": 0.2
+  }
+ },
+ "audit": {
+  "FY2025": {
+   "auditor": "Al Wafa Chartered Accountants",
+   "opinion": "Unqualified",
+   "qawaem": "QW-2026-1010712290",
+   "city": "Riyadh",
+   "partner": "Turki Al-Harthi",
+   "licence": "602",
+   "signed": "2026-05-24",
+   "opinion_text": "In our opinion, the financial statements present fairly, in all material respects, the financial position of Sanad Smart Facility Services Co. as at 31/12/2025 and its financial performance and cash flows for the year then ended in accordance with IFRS for SMEs as endorsed in the Kingdom. Other matter: the comparative figures for 2024 were compiled and not audited."
+  }
+ },
+ "notes": {
+  "FY2025": [
+   [
+    "Note 6 — Revenue and concentration",
+    "Revenue from Rawdat Business Park Management Co. SAR 21,452,000 (62%) under a facility-management contract expiring on 30/06/2027 (2024: 58%)."
+   ],
+   [
+    "Note 8 — Due from shareholder",
+    "Current account of the majority shareholder SAR 1,200,000 (2024: 600,000), unsecured, no fixed terms."
+   ],
+   [
+    "Note 11 — Borrowings",
+    "SME term loan from Tihama Investment Bank SAR 2,000,000 (current 800,000) and short-term Murabaha SAR 2,000,000, guaranteed by the majority shareholder."
+   ]
+  ]
+ },
+ "inhouse_by": "Ahmed Fathi Saber",
+ "inhouse_date": "2026-10-09",
+ "vat": [
+  {
+   "period": "Q4 2025",
+   "from": "2025-10-01",
+   "to": "2025-12-31",
+   "taxable_sales": 9.979,
+   "zero_rated": 0.0,
+   "output_vat": 1.497,
+   "input_vat": 0.509,
+   "filed_on": "2026-01-19"
+  },
+  {
+   "period": "Q1 2026",
+   "from": "2026-01-01",
+   "to": "2026-03-31",
+   "taxable_sales": 9.313,
+   "zero_rated": 0.0,
+   "output_vat": 1.397,
+   "input_vat": 0.396,
+   "filed_on": "2026-04-19"
+  },
+  {
+   "period": "Q2 2026",
+   "from": "2026-04-01",
+   "to": "2026-06-30",
+   "taxable_sales": 9.837,
+   "zero_rated": 0.0,
+   "output_vat": 1.476,
+   "input_vat": 0.492,
+   "filed_on": "2026-07-19"
+  },
+  {
+   "period": "Q3 2026",
+   "from": "2026-07-01",
+   "to": "2026-09-30",
+   "taxable_sales": 10.194,
+   "zero_rated": 0.0,
+   "output_vat": 1.529,
+   "input_vat": 0.495,
+   "filed_on": "2026-10-19"
+  }
+ ],
+ "accounts": [
+  {
+   "bank": "Tihama Investment Bank",
+   "number": "077-6630418-1",
+   "iban": "SA5885000000776630418100",
+   "type": "Current account (main operating)",
+   "opening": 1.3,
+   "issued": "2026-10-07",
+   "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "credit_items": [
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      1.988564,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.360332,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      0.700297,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      1.9365,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.336036,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      0.792933,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      2.091804,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.397703,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      0.754327,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      1.960369,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.350038,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      0.821036,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      1.970689,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.422828,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      0.864966,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      2.164895,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.449533,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      1.008317,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      2.274085,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.442251,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      0.975955,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      2.270402,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.405657,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      0.941255,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      2.540083,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.439764,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      0.952532,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      2.361408,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.48564,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      1.07524,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      2.450007,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.474221,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      1.066783,
+      21
+     ]
+    ],
+    [
+     [
+      "Rawdat Business Park Management Co. — monthly invoice",
+      2.358674,
+      8
+     ],
+     [
+      "Al Ghadir Business Centre Owners Association",
+      0.475753,
+      14
+     ],
+     [
+      "Other commercial clients — collections",
+      1.147286,
+      21
+     ]
+    ]
+   ],
+   "debit_items": [
+    [
+     [
+      "Payroll transfer (WPS)",
+      1.797819,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.150407,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.503154,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.14406,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.187311,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.091162,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.179447,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      1.769855,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.167509,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.528783,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.144746,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.181923,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.100241,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.176579,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      1.905425,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.156589,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.568416,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.145849,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.183916,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.090798,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.197008,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      1.83277,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.167714,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.507469,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.160193,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.190062,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.090479,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.186923,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      1.918395,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.156107,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.563651,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.149306,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.194439,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.088326,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.192426,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      2.123857,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.190127,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.584134,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.182246,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.205767,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.110362,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.230419,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      2.157462,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.180494,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.611956,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.19373,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.21289,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.116379,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.223547,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      2.058009,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.175104,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.648714,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.202562,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.211544,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.114622,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.210926,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      2.297305,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.190868,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.650453,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.212267,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.239758,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.122323,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.223572,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      2.218106,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.211497,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.670493,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.210554,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.257349,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.130542,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.227914,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      2.272903,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.205774,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.665818,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.208189,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.248717,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.129394,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.264383,
+      20
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      2.376327,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.196696,
+      15
+     ],
+     [
+      "Subcontractors and materials",
+      0.614053,
+      12
+     ],
+     [
+      "VAT payment (quarterly)",
+      0.203913,
+      28
+     ],
+     [
+      "Office rent and vehicles",
+      0.231292,
+      3
+     ],
+     [
+      "SME loan instalment and profit",
+      0.116957,
+      1
+     ],
+     [
+      "Transfer to shareholder (personal account)",
+      0.246638,
+      20
+     ]
+    ]
+   ],
+   "returned": {},
+   "floor": 0.08
+  }
+ ],
+ "simah_company": {
+  "date": "2026-10-13",
+  "number": "SB-26-3302255",
+  "score": 671,
+  "enquiries": 1,
+  "facilities": [
+   {
+    "lender": "Tihama Investment Bank",
+    "product": "SME term loan",
+    "limit": 4.0,
+    "outstanding": 1.4,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2023-05-01"
+   },
+   {
+    "lender": "Tihama Investment Bank",
+    "product": "Short-term Murabaha",
+    "limit": 3.0,
+    "outstanding": 2.8,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2024-09-15"
+   }
+  ],
+  "history": "No delinquency on the company's facilities in the last 24 months.",
+  "enquiry_text": "1 enquiry in the last 6 months: Sandstone Harbour Bank (10/2026)."
+ },
+ "consent": {
+  "by": "Abdulaziz Saleh Al-Mutlaq",
+  "role": "General Manager",
+  "on": "2026-10-11"
+ },
+ "request": {
+  "date": "2026-10-11",
+  "ref": "SSFS/GM/2026/19",
+  "by": "Abdulaziz Saleh Al-Mutlaq",
+  "role": "General Manager",
+  "body": "Our revenue grew 59% in 2025 and continues to grow in 2026. We are bidding for the renewal and extension of our main contract and for two new business parks, and request:",
+  "facilities": [
+   {
+    "facility": "Overdraft",
+    "amount": 3.0,
+    "purpose": "Payroll and working capital"
+   },
+   {
+    "facility": "Letters of guarantee (bid and performance)",
+    "amount": 5.0,
+    "purpose": "Tenders and contract performance bonds"
+   }
+  ],
+  "more": [
+   "Our customers are reputable business-park operators and pay monthly. We offer the personal guarantee of the undersigned."
+  ]
+ },
+ "other_banks": [],
+ "top": {
+  "year": 2025,
+  "date": "2026-10-10",
+  "customers": [
+   {
+    "name": "Rawdat Business Park Management Co.",
+    "relationship": "Third party",
+    "sales": 21.452,
+    "share": 62.0,
+    "terms": "30 days; contract to 30/06/2027"
+   },
+   {
+    "name": "Al Ghadir Business Centre Owners Association",
+    "relationship": "Third party",
+    "sales": 4.152,
+    "share": 12.0,
+    "terms": "30 days"
+   },
+   {
+    "name": "Other commercial clients (11)",
+    "relationship": "Third parties",
+    "sales": 8.996,
+    "share": 26.0,
+    "terms": "30-60 days"
+   }
+  ],
+  "suppliers": [
+   {
+    "name": "Manpower subcontractors (3)",
+    "country": "KSA",
+    "purchases": 3.9,
+    "share": 41.0,
+    "terms": "30 days"
+   },
+   {
+    "name": "Cleaning materials and tools",
+    "country": "KSA",
+    "purchases": 2.1,
+    "share": 22.0,
+    "terms": "cash / 30 days"
+   }
+  ]
+ },
+ "aml": {
+  "date": "2026-10-11",
+  "by": "Abdulaziz Saleh Al-Mutlaq",
+  "pep": "No",
+  "countries": "KSA only",
+  "cash": "No",
+  "rating": "Low",
+  "ubos": [
+   {
+    "name": "Abdulaziz Saleh Al-Mutlaq",
+    "pct": 90.0,
+    "pep": "No"
+   },
+   {
+    "name": "Fahad Saleh Al-Mutlaq",
+    "pct": 10.0,
+    "pep": "No"
+   }
+  ],
+  "notes": [
+   "Customer declares no adverse credit history of the company or its owners."
+  ]
+ },
+ "collateral": [],
+ "missing": [
+  {
+   "doc_type": "audited_fs",
+   "subject": "fy2024",
+   "why": "FY2024 accounts compiled, not audited"
+  },
+  {
+   "doc_type": "simah_consumer",
+   "subject": "fahad_saleh_al_mutlaq",
+   "why": "Partner's report not obtained (consent not signed)"
+  },
+  {
+   "doc_type": "personal_net_worth",
+   "subject": "abdulaziz_saleh_al_mutlaq",
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "board_resolution",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "authorised_signatories",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "receivables_ageing",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "payables_ageing",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "other_bank_offer_letter",
+   "subject": "tihama_investment_bank",
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "other_bank_statement",
+   "subject": "tihama_investment_bank",
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "site_visit_report",
+   "subject": null,
+   "why": "Visit not yet done"
+  }
+ ],
+ "facts": {
+  "rev12": 39.0
+ },
+ "ask": {
+  "one_line": "New SME facilities SAR 8m: overdraft 3m + LGs 5m.",
+  "requested_total_sar": 8000000,
+  "new_money_sar": 8000000,
+  "credit_recommends_total_sar": 6500000
+ },
+ "co": {
+  "key": "c4",
+  "folder": "c4_sanad_facility",
+  "proposal_id": "R16-C4",
+  "cif": "",
+  "group_id": "",
+  "name": "Sanad Smart Facility Services Co.",
+  "short": "Sanad Facility",
+  "cr_number": "1010712290",
+  "vat_number": "301010712200003",
+  "city": "Riyadh",
+  "sector": "Services",
+  "sub_sector": "Facility Management",
+  "case": "new_to_bank_sme",
+  "case_label": "New-to-bank SME, thin file",
+  "part": "A (optional)",
+  "group_name": "",
+  "legal_form": "Limited Liability Company",
+  "incorporated": "2019-03-10",
+  "capital_mn": 1.0,
+  "shares_total": 1000,
+  "share_value": 1000,
+  "address": "Office 12, Al Ghadir Business Centre, King Abdulaziz Road, Riyadh 13311",
+  "phone": "+966 11 510 3328",
+  "email": "admin@sanad-fm.example",
+  "activity": "Facility management: cleaning, soft services, MEP maintenance and security coordination for commercial buildings and business parks.",
+  "activity_short": "Facility management services",
+  "cr_issue": "2019-03-10",
+  "cr_expiry": "2027-03-09",
+  "cr_print": "2026-10-12",
+  "aoa_amended": "2022-01-16",
+  "vat_effective": "2019-07-01",
+  "vat_frequency": "Quarterly",
+  "vat_cert_issue": "2019-07-08",
+  "zakat": {
+   "number": "ZC-2025-0731402",
+   "fy_end": "2024-12-31",
+   "issue": "2025-04-28",
+   "expiry": "2026-04-30"
+  },
+  "nitaqat": {
+   "establishment": "1-6630418",
+   "band": "Low Green",
+   "rate": 23.1,
+   "threshold": 22.9,
+   "total": 182,
+   "saudi": 42,
+   "issue": "2026-10-01",
+   "expiry": "2026-12-31"
+  },
+  "shareholders": [
+   {
+    "name": "Abdulaziz Saleh Al-Mutlaq",
+    "id_number": "1068823410",
+    "nationality": "Saudi",
+    "shares": 900,
+    "pct": 90.0
+   },
+   {
+    "name": "Fahad Saleh Al-Mutlaq",
+    "id_number": "1074419035",
+    "nationality": "Saudi",
+    "shares": 100,
+    "pct": 10.0
+   }
+  ],
+  "managers": [
+   {
+    "name": "Abdulaziz Saleh Al-Mutlaq",
+    "role": "General Manager",
+    "powers": "Sole signatory"
+   }
+  ],
+  "aoa_amendment_text": "Amended on 16/01/2022: entry of Fahad Saleh Al-Mutlaq with 10%."
+ }
+}

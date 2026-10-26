@@ -1,0 +1,121 @@
+{
+ "trace_id": "DT-29d9f87b93a6",
+ "proposal_id": "DD-06",
+ "obligor": "Dhahran Continental Industries",
+ "headline": "7 questions committee is likely to ask about Dhahran Continental Industries; 4 of them the proposal does not answer. Hardest: Why bring a deal that earns 10.3% against a 15.0% hurdle?",
+ "questions": [
+  {
+   "id": "returns",
+   "source": "returns",
+   "score": 90,
+   "question": "Why bring a deal that earns 10.3% against a 15.0% hurdle?",
+   "answer": "Lifetime RAROC is 10.3% against a hurdle of 15.0% (SVA SAR -0.28m). The margin that brings it to the hurdle is 282 bps against 190 bps asked.",
+   "avoided": true,
+   "avoided_reason": "The proposal names no pricing or structure fix for the shortfall.",
+   "asks_for": "Reverse solver: the smallest change that clears",
+   "rank": 1
+  },
+  {
+   "id": "stress",
+   "source": "stress",
+   "score": 86,
+   "question": "It breaks at mild stress: what protects the bank when it does?",
+   "answer": "It breaks first at mild severity (1 scenario: Revenue \u221210%) on covenants, leverage, limits. Verdict under the R12 rule: Restructure, tier High.",
+   "avoided": true,
+   "avoided_reason": "No covenant, trigger or monitoring plan covers the metric that breaks.",
+   "asks_for": "Covenant on the breaking metric",
+   "rank": 2
+  },
+  {
+   "id": "finding:C-DD-06-GOV-CONN-CLASSIFIED",
+   "source": "findings",
+   "score": 76,
+   "question": "Connected party classified: what is the answer?",
+   "answer": "1 connected party classified as at 2026Q2: Taif Central Trading (guarantee; stage 3, in default, unlikely to pay; exposure with the bank SAR 34.6m). Open high finding, raised in the review.",
+   "avoided": false,
+   "avoided_reason": "",
+   "asks_for": "",
+   "category": "governance",
+   "rank": 3
+  },
+  {
+   "id": "swot:DD-06-SW-T02",
+   "source": "weaknesses",
+   "score": 55,
+   "question": "Threat: Manufacturing is exposed to feedstock and energy prices, export routes and demand from the oil and gas supply chain; the Stress Lab macro family runs these shocks on this deal. What mitigates it?",
+   "answer": "No covering mitigant is recorded. Suggested in the SWOT: Run the Stress Lab macro family on this deal; a driver that breaks at moderate severity becomes a named monitoring trigger.",
+   "avoided": true,
+   "avoided_reason": "The SWOT marks it as not covered.",
+   "asks_for": "",
+   "rank": 4
+  },
+  {
+   "id": "precedent:CO-TWA-1",
+   "source": "precedent",
+   "score": 53.875,
+   "question": "On a similar deal (R12-TWA, Al Sahel Building Materials Trading LLC) the committee required \"Route business of at least 2x total limits (SAR 360.0m) per year through the bank\". Why not here?",
+   "answer": "Credit Committee set it (CC-2025-118, routing) on R12-TWA (Wholesale Trade, BB, similarity 0.39). This proposal carries no routing condition of that kind.",
+   "avoided": true,
+   "avoided_reason": "The proposal carries no equivalent condition.",
+   "asks_for": "",
+   "rank": 5
+  },
+  {
+   "id": "capacity",
+   "source": "capacity",
+   "score": 34,
+   "question": "Can the client carry this debt, and how much covenant headroom is left?",
+   "answer": "After the deal DSCR is 2.01x (covenant 1.20x) and Debt/EBITDA 3.53x (covenant 4.00x), on the latest actual year of the proposal financials.",
+   "avoided": false,
+   "avoided_reason": "",
+   "asks_for": "",
+   "rank": 6
+  }
+ ],
+ "avoided": [
+  {
+   "id": "returns",
+   "question": "Why bring a deal that earns 10.3% against a 15.0% hurdle?",
+   "reason": "The proposal names no pricing or structure fix for the shortfall.",
+   "source": "returns"
+  },
+  {
+   "id": "stress",
+   "question": "It breaks at mild stress: what protects the bank when it does?",
+   "reason": "No covenant, trigger or monitoring plan covers the metric that breaks.",
+   "source": "stress"
+  },
+  {
+   "id": "swot:DD-06-SW-T02",
+   "question": "Threat: Manufacturing is exposed to feedstock and energy prices, export routes and demand from the oil and gas supply chain; the Stress Lab macro family runs these shocks on this deal. What mitigates it?",
+   "reason": "The SWOT marks it as not covered.",
+   "source": "weaknesses"
+  },
+  {
+   "id": "precedent:CO-TWA-1",
+   "question": "On a similar deal (R12-TWA, Al Sahel Building Materials Trading LLC) the committee required \"Route business of at least 2x total limits (SAR 360.0m) per year through the bank\". Why not here?",
+   "reason": "The proposal carries no equivalent condition.",
+   "source": "precedent"
+  }
+ ],
+ "considered": 8,
+ "sources_used": [
+  "capacity",
+  "findings",
+  "group",
+  "precedent",
+  "returns",
+  "stress"
+ ],
+ "approval": {
+  "level": "Head of Credit",
+  "rank": 2,
+  "reasons": [
+   "Obligor exposure after the deal SAR 39.4m, rating BB+"
+  ],
+  "approvable": true,
+  "hard_breaches": [],
+  "soft_breaches": []
+ },
+ "method": "(deterministic writer, N3)\n  Candidate questions come from eight sources, each scored for how hard a committee would press it:\n    returns      engine.analyse: lifetime RAROC against the hurdle, breakeven margin (engine.breakeven_margin);\n                 when it clears, the downgrade notches before it stops clearing (optimizer.robustness)\n    limits       every hard or policy breach after the deal (constraints), with the approval level (DoA)\n    stress       the latest dd_stress_result run: the mildest severity that still breaks something, what breaks,\n                 the verdict and tier (stress2.verdict rule), and the named triggers of dd_monitoring_plan\n    findings     open critical and high dd_review_finding rows, with their evidence relation\n    weaknesses   dd_swot weaknesses and threats with no covering mitigant (covered_flag 0)\n    group        dd_group_exposure (group total) and the connected-group limit after the deal\n    conditions   dd_condition rows set by an earlier committee (prior_committee_ref) that were not complied or\n                 breached, and the earlier committee decision (dd_reference)\n    precedent    conditions earlier committees set on similar deals"
+}

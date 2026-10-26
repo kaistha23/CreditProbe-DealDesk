@@ -1,0 +1,694 @@
+{
+ "cases": [
+  {
+   "case": "twin_a Session F bank-form PDF + policy Word",
+   "complete": true,
+   "total_seconds": 4.61,
+   "wall_seconds": 4.65,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.34,
+     "summary": "Read R12-TWA_bank_form.pdf (pdf text, English, 36,289 characters) and Fictional_Bank_Credit_Policy.docx (word)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.3,
+     "summary": "Found 38 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.docx (20 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 0 items not in the policy, 0 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.31,
+     "summary": "Al Sahel Building Materials Trading LLC: Wholesale Trade, rated BB; SAR 180.0m revolver, 1 year, 225 bps. 15 fields read, 2 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 2.16,
+     "summary": "11 checks of your policy clauses: 8 met, 2 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 10 findings (0 critical, 3 major, 7 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.31,
+     "summary": "1 counter-proposal priced by the optimiser; the first: Price and structure to clear the hurdle. Committee paper: Session F committee paper, decision Approve with conditions."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.19,
+     "summary": "English bank-form proposal: 26 sections, 1480 words."
+    }
+   },
+   "deal": {
+    "name": "Al Sahel Building Materials Trading LLC",
+    "sector": "Wholesale Trade",
+    "rating": "BB",
+    "facility_type": "revolver",
+    "amount": 180.0,
+    "tenor_years": 1,
+    "margin_bps": 225
+   },
+   "defaults": 2,
+   "wipe": {
+    "rows_removed": 1,
+    "files": 1,
+    "seconds": 3.87
+   }
+  },
+  {
+   "case": "twin_a Session F bank-form Word + policy PDF",
+   "complete": true,
+   "total_seconds": 3.18,
+   "wall_seconds": 3.21,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.16,
+     "summary": "Read R12-TWA_bank_form.docx (word, English, 35,261 characters) and Fictional_Bank_Credit_Policy.pdf (pdf text)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.21,
+     "summary": "Found 34 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.pdf (18 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 4 items not in the policy, 3 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.41,
+     "summary": "Al Sahel Building Materials Trading LLC: Wholesale Trade, rated BB; SAR 180.0m revolver, 1 year, 225 bps. 15 fields read, 2 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.81,
+     "summary": "9 checks of your policy clauses: 6 met, 2 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 10 findings (0 critical, 3 major, 7 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.39,
+     "summary": "1 counter-proposal priced by the optimiser; the first: Price and structure to clear the hurdle. Committee paper: Session F committee paper, decision Approve with conditions."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.2,
+     "summary": "English bank-form proposal: 26 sections, 1484 words."
+    }
+   },
+   "deal": {
+    "name": "Al Sahel Building Materials Trading LLC",
+    "sector": "Wholesale Trade",
+    "rating": "BB",
+    "facility_type": "revolver",
+    "amount": 180.0,
+    "tenor_years": 1,
+    "margin_bps": 225
+   },
+   "defaults": 2,
+   "wipe": {
+    "rows_removed": 1,
+    "files": 1,
+    "seconds": 3.57
+   }
+  },
+  {
+   "case": "twin_b Session F bank-form PDF + policy Word",
+   "complete": true,
+   "total_seconds": 4.86,
+   "wall_seconds": 4.89,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.21,
+     "summary": "Read R12-TWB_bank_form.pdf (pdf text, English, 38,408 characters) and Fictional_Bank_Credit_Policy.docx (word)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.31,
+     "summary": "Found 38 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.docx (20 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 0 items not in the policy, 0 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.28,
+     "summary": "Gulf Meridian Contracting: Construction, rated BB-; SAR 514.0m revolver, 1 year, 275 bps. 15 fields read, 2 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 2.37,
+     "summary": "11 checks of your policy clauses: 6 met, 4 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 14 findings (0 critical, 7 major, 7 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.55,
+     "summary": "0 counter-proposals priced by the optimiser. Committee paper: Session F committee paper, decision Approve with conditions."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.14,
+     "summary": "English bank-form proposal: 26 sections, 1474 words."
+    }
+   },
+   "deal": {
+    "name": "Gulf Meridian Contracting",
+    "sector": "Construction",
+    "rating": "BB-",
+    "facility_type": "revolver",
+    "amount": 514.0,
+    "tenor_years": 1,
+    "margin_bps": 275
+   },
+   "defaults": 2,
+   "wipe": {
+    "rows_removed": 1,
+    "files": 1,
+    "seconds": 3.55
+   }
+  },
+  {
+   "case": "twin_b Session F bank-form Word + policy PDF",
+   "complete": true,
+   "total_seconds": 3.77,
+   "wall_seconds": 3.79,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.19,
+     "summary": "Read R12-TWB_bank_form.docx (word, English, 37,504 characters) and Fictional_Bank_Credit_Policy.pdf (pdf text)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.17,
+     "summary": "Found 34 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.pdf (18 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 4 items not in the policy, 3 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.52,
+     "summary": "Gulf Meridian Contracting: Construction, rated BB-; SAR 514.0m revolver, 1 year, 275 bps. 15 fields read, 2 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 1.09,
+     "summary": "9 checks of your policy clauses: 4 met, 4 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 14 findings (0 critical, 7 major, 7 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.63,
+     "summary": "0 counter-proposals priced by the optimiser. Committee paper: Session F committee paper, decision Approve with conditions."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.17,
+     "summary": "English bank-form proposal: 26 sections, 1489 words."
+    }
+   },
+   "deal": {
+    "name": "Gulf Meridian Contracting",
+    "sector": "Construction",
+    "rating": "BB-",
+    "facility_type": "revolver",
+    "amount": 514.0,
+    "tenor_years": 1,
+    "margin_bps": 275
+   },
+   "defaults": 2,
+   "wipe": {
+    "rows_removed": 1,
+    "files": 1,
+    "seconds": 3.72
+   }
+  },
+  {
+   "case": "twin_b Session F bank-form scanned PDF (OCR) + policy Word",
+   "complete": true,
+   "total_seconds": 97.15,
+   "wall_seconds": 97.18,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 88.31,
+     "summary": "Read R12-TWB_bank_form_scan.pdf (pdf scan (OCR), English, 38,115 characters) and Fictional_Bank_Credit_Policy.docx (word)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.34,
+     "summary": "Found 38 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.docx (20 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 0 items not in the policy, 0 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.31,
+     "summary": "Gulf Meridian Contracting: Construction, rated BB-; SAR 514.0m term loan, 5 years, 275 bps. 10 fields read, 4 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 2.89,
+     "summary": "11 checks of your policy clauses: 6 met, 2 breached, 3 need data the proposal does not give. With the CreditProbe rule book: 11 findings (0 critical, 4 major, 7 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 5.16,
+     "summary": "0 counter-proposals priced by the optimiser. Committee paper: Session F committee paper, decision Approve with conditions."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.14,
+     "summary": "English bank-form proposal: 26 sections, 1420 words."
+    }
+   },
+   "deal": {
+    "name": "Gulf Meridian Contracting",
+    "sector": "Construction",
+    "rating": "BB-",
+    "facility_type": "term_loan",
+    "amount": 514.0,
+    "tenor_years": 5,
+    "margin_bps": 275
+   },
+   "defaults": 4,
+   "wipe": {
+    "rows_removed": 1,
+    "files": 1,
+    "seconds": 3.51
+   }
+  },
+  {
+   "case": "twin_a Word + policy Word",
+   "complete": true,
+   "total_seconds": 2.06,
+   "wall_seconds": 2.09,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.03,
+     "summary": "Read Al_Sahel_Building_Materials_credit_proposal.docx (word, English, 1,609 characters) and Fictional_Bank_Credit_Policy.docx (word)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.29,
+     "summary": "Found 38 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.docx (20 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 0 items not in the policy, 0 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.25,
+     "summary": "Al Sahel Building Materials Trading LLC: Wholesale Trade, rated B+; SAR 25.5m revolver, 1 year, 315 bps. 11 fields read, 4 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.54,
+     "summary": "11 checks of your policy clauses: 7 met, 3 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 13 findings (1 critical, 4 major, 8 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 0.83,
+     "summary": "0 counter-proposals priced by the optimiser. Committee paper: Session F committee paper, decision Do not approve as proposed."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "English bank-form proposal: 26 sections, 1480 words."
+    }
+   },
+   "deal": {
+    "name": "Al Sahel Building Materials Trading LLC",
+    "sector": "Wholesale Trade",
+    "rating": "B+",
+    "facility_type": "revolver",
+    "amount": 25.525,
+    "tenor_years": 1,
+    "margin_bps": 315
+   },
+   "defaults": 4,
+   "wipe": {
+    "rows_removed": 2,
+    "files": 1,
+    "seconds": 3.45
+   }
+  },
+  {
+   "case": "twin_a PDF (LibreOffice export) + policy PDF",
+   "complete": true,
+   "total_seconds": 1.84,
+   "wall_seconds": 1.85,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.08,
+     "summary": "Read Al_Sahel_Building_Materials_credit_proposal.pdf (pdf text, English, 1,576 characters) and Fictional_Bank_Credit_Policy.pdf (pdf text)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.18,
+     "summary": "Found 34 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.pdf (18 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 4 items not in the policy, 3 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.14,
+     "summary": "Al Sahel Building Materials Trading LLC: Wholesale Trade, rated B+; SAR 25.5m revolver, 1 year, 315 bps. 11 fields read, 4 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.65,
+     "summary": "9 checks of your policy clauses: 5 met, 3 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 13 findings (1 critical, 4 major, 8 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 0.67,
+     "summary": "0 counter-proposals priced by the optimiser. Committee paper: Session F committee paper, decision Do not approve as proposed."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "English bank-form proposal: 26 sections, 1480 words."
+    }
+   },
+   "deal": {
+    "name": "Al Sahel Building Materials Trading LLC",
+    "sector": "Wholesale Trade",
+    "rating": "B+",
+    "facility_type": "revolver",
+    "amount": 25.525,
+    "tenor_years": 1,
+    "margin_bps": 315
+   },
+   "defaults": 4,
+   "wipe": {
+    "rows_removed": 2,
+    "files": 1,
+    "seconds": 3.59
+   }
+  },
+  {
+   "case": "twin_b Word + policy Word",
+   "complete": true,
+   "total_seconds": 2.59,
+   "wall_seconds": 2.62,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.05,
+     "summary": "Read Gulf_Meridian_Contracting_credit_proposal.docx (word, English, 2,527 characters) and Fictional_Bank_Credit_Policy.docx (word)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.35,
+     "summary": "Found 38 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.docx (20 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 0 items not in the policy, 0 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.15,
+     "summary": "Gulf Meridian Contracting LLC: Construction, rated BB-; SAR 670.6m revolver, 1 year, 275 bps. 12 fields read, 4 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.55,
+     "summary": "11 checks of your policy clauses: 7 met, 3 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 14 findings (1 critical, 5 major, 8 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.37,
+     "summary": "1 counter-proposal priced by the optimiser; the first: Price and structure to clear the hurdle. Committee paper: Session F committee paper, decision Do not approve as proposed."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "English bank-form proposal: 26 sections, 1531 words."
+    }
+   },
+   "deal": {
+    "name": "Gulf Meridian Contracting LLC",
+    "sector": "Construction",
+    "rating": "BB-",
+    "facility_type": "revolver",
+    "amount": 670.593,
+    "tenor_years": 1,
+    "margin_bps": 275
+   },
+   "defaults": 4,
+   "wipe": {
+    "rows_removed": 2,
+    "files": 1,
+    "seconds": 3.36
+   }
+  },
+  {
+   "case": "twin_b PDF (LibreOffice export) + policy PDF",
+   "complete": true,
+   "total_seconds": 2.43,
+   "wall_seconds": 2.45,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "Read Gulf_Meridian_Contracting_credit_proposal.pdf (pdf text, English, 2,484 characters) and Fictional_Bank_Credit_Policy.pdf (pdf text)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.17,
+     "summary": "Found 34 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.pdf (18 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 4 items not in the policy, 3 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "Gulf Meridian Contracting LLC: Construction, rated BB-; SAR 670.6m revolver, 1 year, 275 bps. 12 fields read, 4 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.61,
+     "summary": "9 checks of your policy clauses: 5 met, 3 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 14 findings (1 critical, 5 major, 8 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.29,
+     "summary": "1 counter-proposal priced by the optimiser; the first: Price and structure to clear the hurdle. Committee paper: Session F committee paper, decision Do not approve as proposed."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "English bank-form proposal: 26 sections, 1531 words."
+    }
+   },
+   "deal": {
+    "name": "Gulf Meridian Contracting LLC",
+    "sector": "Construction",
+    "rating": "BB-",
+    "facility_type": "revolver",
+    "amount": 670.593,
+    "tenor_years": 1,
+    "margin_bps": 275
+   },
+   "defaults": 4,
+   "wipe": {
+    "rows_removed": 2,
+    "files": 1,
+    "seconds": 3.28
+   }
+  },
+  {
+   "case": "twin_b scanned PDF (OCR) + policy Word",
+   "complete": true,
+   "total_seconds": 12.9,
+   "wall_seconds": 12.95,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 11.02,
+     "summary": "Read Gulf_Meridian_Contracting_credit_proposal_scan.pdf (pdf scan (OCR), English, 2,505 characters) and Fictional_Bank_Credit_Policy.docx (word)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.25,
+     "summary": "Found 38 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.docx (20 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 0 items not in the policy, 0 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.13,
+     "summary": "Gulf Meridian Contracting LLC: Construction, rated BB-; SAR 670.6m revolver, 1 year, 144 bps. 12 fields read, 4 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.49,
+     "summary": "11 checks of your policy clauses: 5 met, 5 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 16 findings (1 critical, 7 major, 8 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 0.89,
+     "summary": "1 counter-proposal priced by the optimiser; the first: Price and structure to clear the hurdle. Committee paper: Session F committee paper, decision Do not approve as proposed."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "English bank-form proposal: 26 sections, 1612 words."
+    }
+   },
+   "deal": {
+    "name": "Gulf Meridian Contracting LLC",
+    "sector": "Construction",
+    "rating": "BB-",
+    "facility_type": "revolver",
+    "amount": 670.593,
+    "tenor_years": 1,
+    "margin_bps": 144
+   },
+   "defaults": 4,
+   "wipe": {
+    "rows_removed": 2,
+    "files": 1,
+    "seconds": 3.53
+   }
+  },
+  {
+   "case": "Arabic proposal (Word) + policy Word",
+   "complete": true,
+   "total_seconds": 2.58,
+   "wall_seconds": 2.6,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.03,
+     "summary": "Read Wahat_Al_Rimal_Trading_proposal_AR.docx (word, Arabic, 500 characters) and Fictional_Bank_Credit_Policy.docx (word)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.25,
+     "summary": "Found 38 thresholds and 5 conditions in Fictional_Bank_Credit_Policy.docx (20 become review rules); 6 clauses weaker than the CBUAE CRM Standards; 0 items not in the policy, 0 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.13,
+     "summary": "شركة واحة الرمال للتجارة العامة: Wholesale Trade, rated BB+; SAR 45.0m term loan, 3 years, 275 bps. 13 fields read, 1 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.38,
+     "summary": "11 checks of your policy clauses: 7 met, 3 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 11 findings (0 critical, 3 major, 8 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.79,
+     "summary": "0 counter-proposals priced by the optimiser. Committee paper: Session F committee paper, decision Approve as proposed."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.0,
+     "summary": "مسودة باللغة العربية: 7 أقسام، 562 كلمة (Arabic draft, 7 sections, no model)."
+    }
+   },
+   "deal": {
+    "name": "شركة واحة الرمال للتجارة العامة",
+    "sector": "Wholesale Trade",
+    "rating": "BB+",
+    "facility_type": "term_loan",
+    "amount": 45.0,
+    "tenor_years": 3,
+    "margin_bps": 275
+   },
+   "defaults": 1,
+   "wipe": {
+    "rows_removed": 1,
+    "files": 1,
+    "seconds": 3.28
+   }
+  },
+  {
+   "case": "Arabic proposal (Word) + Arabic policy (Word)",
+   "complete": true,
+   "total_seconds": 2.48,
+   "wall_seconds": 2.49,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.02,
+     "summary": "Read Wahat_Al_Rimal_Trading_proposal_AR.docx (word, Arabic, 500 characters) and Sandy_Oasis_Bank_Policy_AR.docx (word)."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "Found 8 thresholds and 0 conditions in Sandy_Oasis_Bank_Policy_AR.docx (7 become review rules); 0 clauses weaker than the CBUAE CRM Standards; 30 items not in the policy, 10 of them on the CreditProbe default. Demo-only version: nothing changes in the bank's parameters."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.13,
+     "summary": "شركة واحة الرمال للتجارة العامة: Wholesale Trade, rated BB+; SAR 45.0m term loan, 3 years, 275 bps. 13 fields read, 1 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.39,
+     "summary": "5 checks of your policy clauses: 2 met, 2 breached, 1 need data the proposal does not give. With the CreditProbe rule book: 10 findings (0 critical, 2 major, 8 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.82,
+     "summary": "0 counter-proposals priced by the optimiser. Committee paper: Session F committee paper, decision Approve as proposed."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.0,
+     "summary": "مسودة باللغة العربية: 7 أقسام، 543 كلمة (Arabic draft, 7 sections, no model)."
+    }
+   },
+   "deal": {
+    "name": "شركة واحة الرمال للتجارة العامة",
+    "sector": "Wholesale Trade",
+    "rating": "BB+",
+    "facility_type": "term_loan",
+    "amount": 45.0,
+    "tenor_years": 3,
+    "margin_bps": 275
+   },
+   "defaults": 1,
+   "wipe": {
+    "rows_removed": 1,
+    "files": 1,
+    "seconds": 3.51
+   }
+  },
+  {
+   "case": "twin_b Word, no policy (defaults only)",
+   "complete": true,
+   "total_seconds": 2.12,
+   "wall_seconds": 2.12,
+   "steps": {
+    "read": {
+     "status": "done",
+     "seconds": 0.02,
+     "summary": "Read Gulf_Meridian_Contracting_credit_proposal.docx (word, English, 2,527 characters); no policy uploaded: CreditProbe defaults apply."
+    },
+    "policy": {
+     "status": "done",
+     "seconds": 0.0,
+     "summary": "No policy uploaded: every parameter uses the CreditProbe default, labelled."
+    },
+    "extract": {
+     "status": "done",
+     "seconds": 0.14,
+     "summary": "Gulf Meridian Contracting LLC: Construction, rated BB-; SAR 670.6m revolver, 1 year, 275 bps. 12 fields read, 4 defaults labelled."
+    },
+    "review": {
+     "status": "done",
+     "seconds": 0.7,
+     "summary": "0 checks of your policy clauses: 0 met, 0 breached, 0 need data the proposal does not give. With the CreditProbe rule book: 11 findings (1 critical, 2 major, 8 minor)."
+    },
+    "counter": {
+     "status": "done",
+     "seconds": 1.14,
+     "summary": "1 counter-proposal priced by the optimiser; the first: Price and structure to clear the hurdle. Committee paper: Session F committee paper, decision Do not approve as proposed."
+    },
+    "draft": {
+     "status": "done",
+     "seconds": 0.12,
+     "summary": "English bank-form proposal: 26 sections, 1465 words."
+    }
+   },
+   "deal": {
+    "name": "Gulf Meridian Contracting LLC",
+    "sector": "Construction",
+    "rating": "BB-",
+    "facility_type": "revolver",
+    "amount": 670.593,
+    "tenor_years": 1,
+    "margin_bps": 275
+   },
+   "defaults": 4,
+   "wipe": {
+    "rows_removed": 2,
+    "files": 1,
+    "seconds": 3.22
+   }
+  }
+ ],
+ "all_complete": true
+}

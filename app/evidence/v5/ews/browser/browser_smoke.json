@@ -1,0 +1,168 @@
+{
+ "ui": "http://127.0.0.1:5500",
+ "api": "http://127.0.0.1:8501",
+ "results": [
+  {
+   "step": "cockpit home renders the frozen toggle and attention",
+   "pass": true,
+   "detail": "CreditProbeAI\nby\nQuant\u03b1lpha\nAI POWERED\n2\n4\nExecutive Ivory\nAll systems operational\nv4.1\nAN\nAnne\nAdministrator\n\nHOME\n\nCockpit\n\nWORK\n\nMy workspace\nMail\n2\nProjects\nInvestigations\nAnalyses\nPolicy Docs\n\nIN"
+  },
+  {
+   "step": "sidebar lists the v5 modules (R5 navigation)",
+   "pass": true,
+   "detail": "HOME\n\nCockpit\n\nWORK\n\nMy workspace\nMail\n2\nProjects\nInvestigations\nAnalyses\nPolicy Docs\n\nINTELLIGENCE\n\nEarly Warning\nWhat-If\nDeal Desk\nBorrower 360\nScorecard Validation\nLenses\nPlaybook\n\nDATA\n\nData Domains\n\nADMIN\n\nWorkflow\nUsers & Teams\nAgent Operations\nAI Studio\nSettings\nAudit log"
+  },
+  {
+   "step": "cockpit home: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "corporate as-of shown",
+   "pass": true,
+   "detail": "AS OF Q2 2026 (30 Jun 2026) \u00b7 Corporate \u00b7 quarterly \u00b7 SAR \u00b7 ews-saudi-corporate-20q-v4e2"
+  },
+  {
+   "step": "corporate warned KPI equals the API",
+   "pass": true,
+   "detail": "WARNED\n\n1,049\n\n19.4% \u00b7 +134 on 2026Q1\n\nOpen the list"
+  },
+  {
+   "step": "corporate trend chart drawn (interactive)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "one card per sector",
+   "pass": true,
+   "detail": "14 vs 14"
+  },
+  {
+   "step": "interpretation shown",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "corporate portfolio: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "sector breadcrumbs",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "borrower list total equals the API",
+   "pass": true,
+   "detail": "94 borrowers \u00b7 SAR 3.15bn exposure \u00b7 sorted by score, then exposure. A customer's score is the highest rule-weight score"
+  },
+  {
+   "step": "borrower detail lists every facility",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "rule table rendered",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "corporate drill: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "Back returns to the borrower list",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "Borrower 360 received the borrower",
+   "pass": true,
+   "detail": "CB01312 2026Q2"
+  },
+  {
+   "step": "Borrower 360 links back to the same borrower in Early Warning",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "borrower 360 round trip: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "What-If cohort holds exactly the exported borrowers",
+   "pass": true,
+   "detail": "186 vs 186"
+  },
+  {
+   "step": "export to what-if: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "retail as-of shown",
+   "pass": true,
+   "detail": "AS OF Aug 2026 (31 Aug 2026) \u00b7 Retail \u00b7 monthly \u00b7 SAR \u00b7 ews-saudi-retail-20m-v5e1"
+  },
+  {
+   "step": "retail warned KPI equals the API",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "Salaried and Non-Salaried shown",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "sub-product breadcrumbs keep the classification",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "retail drill: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "Cockpit opened with the question prefilled",
+   "pass": true,
+   "detail": "What is driving the arrears and stage of customer RC006613?"
+  },
+  {
+   "step": "Cockpit opened on the Retail book",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "ask the cockpit: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "model details render for corporate",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "model details corporate: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "model details render for retail",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "step": "model details retail: no console errors, page errors or failed requests",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "failed": 0,
+ "problems": []
+}

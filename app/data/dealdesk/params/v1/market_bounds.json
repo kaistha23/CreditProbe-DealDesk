@@ -1,0 +1,89 @@
+{
+ "name": "market_bounds",
+ "owner": "Treasury",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Market-acceptable pricing by rating bucket; sector add-on on margins.",
+ "rows": {
+  "by_bucket": {
+   "IG": {
+    "margin_bps": [
+     90,
+     260
+    ],
+    "upfront_fee_bps": [
+     20,
+     100
+    ],
+    "commitment_fee_bps": [
+     10,
+     40
+    ],
+    "commission_bps": [
+     40,
+     120
+    ]
+   },
+   "BB": {
+    "margin_bps": [
+     175,
+     375
+    ],
+    "upfront_fee_bps": [
+     40,
+     125
+    ],
+    "commitment_fee_bps": [
+     15,
+     50
+    ],
+    "commission_bps": [
+     60,
+     160
+    ]
+   },
+   "B": {
+    "margin_bps": [
+     300,
+     500
+    ],
+    "upfront_fee_bps": [
+     50,
+     150
+    ],
+    "commitment_fee_bps": [
+     20,
+     60
+    ],
+    "commission_bps": [
+     90,
+     200
+    ]
+   },
+   "CCC-C": {
+    "margin_bps": [
+     450,
+     650
+    ],
+    "upfront_fee_bps": [
+     75,
+     175
+    ],
+    "commitment_fee_bps": [
+     25,
+     75
+    ],
+    "commission_bps": [
+     120,
+     250
+    ]
+   }
+  },
+  "sector_margin_addon_bps": {
+   "Real Estate": 25,
+   "Construction": 25
+  },
+  "min_amount_share": 0.6
+ }
+}

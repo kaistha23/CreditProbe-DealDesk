@@ -1,0 +1,405 @@
+{
+ "release": "v4-saudi-corporate-20q-v4",
+ "factor": 0.01,
+ "checks": [
+  {
+   "check": "corp_borrower_quarter: same rows, columns and order",
+   "pass": true,
+   "rows": 108240,
+   "columns": 42
+  },
+  {
+   "check": "corp_borrower_quarter: same dtypes",
+   "pass": true
+  },
+  {
+   "check": "corp_borrower_quarter: 35 non-money columns byte-identical (IDs, periods, ratings, PDs, LGD, %, multiples, flags, stages)",
+   "pass": true,
+   "columns": [
+    "tenant_id",
+    "dataset_release_id",
+    "domain_id",
+    "reporting_currency",
+    "borrower_id",
+    "borrower_name",
+    "group_id",
+    "group_name",
+    "reporting_quarter",
+    "sector",
+    "sub_sector",
+    "region",
+    "relationship_tier",
+    "rating_current",
+    "rating_previous",
+    "rating_at_origination",
+    "rating_notches_moved",
+    "rating_notches_from_origination",
+    "rating_migration",
+    "rating_outlook",
+    "rating_driver",
+    "pd_ttc_12m",
+    "leverage_x",
+    "dscr_x",
+    "interest_cover_x",
+    "current_ratio_x",
+    "quick_ratio_x",
+    "ebitda_margin_pct",
+    "return_on_assets_pct",
+    "cash_conversion_pct",
+    "qualitative_score",
+    "watchlist_flag",
+    "watchlist_reason",
+    "restructured_flag",
+    "quarters_on_watchlist"
+   ]
+  },
+  {
+   "check": "corp_borrower_quarter.revenue_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_borrower_quarter.ebitda_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_borrower_quarter.ebit_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_borrower_quarter.operating_cash_flow_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_borrower_quarter.total_debt_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_borrower_quarter.cash_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_borrower_quarter.net_debt_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter: same rows, columns and order",
+   "pass": true,
+   "rows": 384009,
+   "columns": 36
+  },
+  {
+   "check": "corp_facility_quarter: same dtypes",
+   "pass": true
+  },
+  {
+   "check": "corp_facility_quarter: 27 non-money columns byte-identical (IDs, periods, ratings, PDs, LGD, %, multiples, flags, stages)",
+   "pass": true,
+   "columns": [
+    "tenant_id",
+    "dataset_release_id",
+    "domain_id",
+    "reporting_currency",
+    "facility_id",
+    "borrower_id",
+    "borrower_name",
+    "reporting_quarter",
+    "product_type",
+    "facility_class",
+    "sector",
+    "sub_sector",
+    "region",
+    "relationship_tier",
+    "utilisation_pct",
+    "stage",
+    "sicr_flag",
+    "default_flag",
+    "dpd_days",
+    "pd_pit_12m",
+    "pd_lifetime",
+    "lgd_pct",
+    "ecl_coverage_pct",
+    "cure_flag",
+    "past_due_flag",
+    "quarters_in_stage",
+    "origination_quarter"
+   ]
+  },
+  {
+   "check": "corp_facility_quarter.limit_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter.drawn_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter.undrawn_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter.ead_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter.ecl_12m_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter.ecl_lifetime_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter.ecl_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter.write_off_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_facility_quarter.recovery_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_collateral_quarter: same rows, columns and order",
+   "pass": true,
+   "rows": 384009,
+   "columns": 16
+  },
+  {
+   "check": "corp_collateral_quarter: same dtypes",
+   "pass": true
+  },
+  {
+   "check": "corp_collateral_quarter: 14 non-money columns byte-identical (IDs, periods, ratings, PDs, LGD, %, multiples, flags, stages)",
+   "pass": true,
+   "columns": [
+    "tenant_id",
+    "dataset_release_id",
+    "domain_id",
+    "reporting_currency",
+    "collateral_id",
+    "facility_id",
+    "borrower_id",
+    "reporting_quarter",
+    "collateral_type",
+    "sector",
+    "haircut_pct",
+    "coverage_pct",
+    "ltv_pct",
+    "valuation_age_quarters"
+   ]
+  },
+  {
+   "check": "corp_collateral_quarter.market_value_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_collateral_quarter.allocated_value_sar_mn: every value = original x 0.01",
+   "pass": true,
+   "max_relative_deviation": 2.220446049250313e-16
+  },
+  {
+   "check": "corp_covenant_quarter: same rows, columns and order",
+   "pass": true,
+   "rows": 384009,
+   "columns": 19
+  },
+  {
+   "check": "corp_covenant_quarter: same dtypes",
+   "pass": true
+  },
+  {
+   "check": "corp_covenant_quarter: 19 non-money columns byte-identical (IDs, periods, ratings, PDs, LGD, %, multiples, flags, stages)",
+   "pass": true,
+   "columns": [
+    "tenant_id",
+    "dataset_release_id",
+    "domain_id",
+    "reporting_currency",
+    "covenant_id",
+    "facility_id",
+    "borrower_id",
+    "reporting_quarter",
+    "sector",
+    "covenant_type",
+    "threshold_value",
+    "observed_value",
+    "headroom_pct",
+    "test_status",
+    "breach_flag",
+    "waiver_flag",
+    "waiver_status",
+    "waiver_quarter",
+    "consecutive_breaches"
+   ]
+  },
+  {
+   "check": "per-quarter EAD, ECL and limit totals scale by exactly the factor (20 quarters)",
+   "pass": true
+  },
+  {
+   "check": "per-quarter facility and borrower counts identical",
+   "pass": true
+  },
+  {
+   "check": "coverage, utilisation and EAD share by quarter x sector, sub_sector, region, product_type, stage, relationship_tier unchanged",
+   "pass": true,
+   "max_relative_deviation": 4.1003827292621945e-16
+  },
+  {
+   "check": "rankings by EAD and by ECL within every quarter and dimension unchanged",
+   "pass": true,
+   "breaks": []
+  },
+  {
+   "check": "borrower ranking by EAD at 2026Q2 identical at stored (cent) precision, all 5,412",
+   "pass": true,
+   "exact_tie_borrowers": [
+    "CB00569",
+    "CB01823",
+    "CB03281",
+    "CB01925",
+    "CB00441",
+    "CB03074",
+    "CB03345",
+    "CB03509",
+    "CB01653",
+    "CB04760",
+    "CB05091",
+    "CB02186",
+    "CB03010",
+    "CB04721",
+    "CB01810",
+    "CB02270",
+    "CB03954",
+    "CB01226",
+    "CB02149",
+    "CB05182",
+    "CB03070",
+    "CB02704",
+    "CB04001",
+    "CB02258",
+    "CB00773",
+    "CB01942",
+    "CB03017",
+    "CB01359",
+    "CB02766",
+    "CB02826",
+    "CB02514",
+    "CB05210",
+    "CB04082",
+    "CB03522",
+    "CB00951",
+    "CB02173",
+    "CB00741",
+    "CB01277",
+    "CB02903",
+    "CB02527",
+    "CB01424",
+    "CB03878",
+    "CB04192",
+    "CB00654",
+    "CB01650",
+    "CB03613",
+    "CB04147",
+    "CB04122",
+    "CB02543",
+    "CB04556",
+    "CB04059",
+    "CB01290",
+    "CB00343",
+    "CB03458",
+    "CB00422",
+    "CB01479",
+    "CB00772",
+    "CB04783",
+    "CB00814",
+    "CB02843",
+    "CB02298",
+    "CB03571",
+    "CB00207",
+    "CB00767",
+    "CB01795",
+    "CB01979",
+    "CB00820",
+    "CB00871",
+    "CB02851",
+    "CB05078",
+    "CB04170",
+    "CB00367",
+    "CB04975",
+    "CB04087",
+    "CB01856",
+    "CB05296",
+    "CB04291",
+    "CB02827",
+    "CB01463",
+    "CB00452",
+    "CB01808",
+    "CB05031",
+    "CB03692",
+    "CB01478",
+    "CB00848",
+    "CB01372"
+   ]
+  },
+  {
+   "check": "collateral allocated/market value ratio by quarter unchanged",
+   "pass": true
+  }
+ ],
+ "profiles": {
+  "2026Q2_before": {
+   "total_ead_sar_mn": 15370014.2,
+   "total_ecl_sar_mn": 699373.5,
+   "total_limit_sar_mn": 19416863.8,
+   "coverage_pct": 4.5502,
+   "median_facility_ead_sar_mn": 660.645,
+   "median_borrower_ead_sar_mn": 2760.045,
+   "largest_borrower_ead_sar_mn": 14432.1,
+   "stage_counts": {
+    "1": 14605,
+    "2": 5743,
+    "3": 1570
+   },
+   "facilities": 21918,
+   "borrowers": 5412
+  },
+  "2026Q2_after": {
+   "total_ead_sar_mn": 153700.1,
+   "total_ecl_sar_mn": 6993.7,
+   "total_limit_sar_mn": 194168.6,
+   "coverage_pct": 4.5502,
+   "median_facility_ead_sar_mn": 6.606,
+   "median_borrower_ead_sar_mn": 27.6,
+   "largest_borrower_ead_sar_mn": 144.3,
+   "stage_counts": {
+    "1": 14605,
+    "2": 5743,
+    "3": 1570
+   },
+   "facilities": 21918,
+   "borrowers": 5412
+  },
+  "ews_story_applied": true
+ },
+ "failed": 0
+}

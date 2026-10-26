@@ -1,0 +1,3442 @@
+{
+ "customer_key": "c1",
+ "proposal_id": "R16-C1",
+ "cif": "CB09001",
+ "customer_name": "Dar Al Naseem Medical Supplies Co.",
+ "cr_number": "1010384527",
+ "as_of": "2026-10-21",
+ "documents": [
+  {
+   "doc_id": "C1-01",
+   "doc_type": "national_id",
+   "subject": "fahad_saad_al_naseem",
+   "title": "NATIONAL IDENTITY CARD",
+   "issuer": "Civil Status Registry (specimen)",
+   "issue_date": "2022-03-10",
+   "expiry_date": "2032-03-09",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/01_national_id__fahad_saad_al_naseem.docx",
+    "pdf": "pdf/01_national_id__fahad_saad_al_naseem.pdf",
+    "images": [
+     "images/01_national_id__fahad_saad_al_naseem_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Fahad Saad Al-Naseem",
+    "id_number": "1012345870",
+    "nationality": "Saudi",
+    "date_of_birth": "1965-07-22",
+    "issue_date": "2022-03-10",
+    "expiry_date": "2032-03-09"
+   }
+  },
+  {
+   "doc_id": "C1-02",
+   "doc_type": "national_id",
+   "subject": "majed_saad_al_naseem",
+   "title": "NATIONAL IDENTITY CARD",
+   "issuer": "Civil Status Registry (specimen)",
+   "issue_date": "2020-09-14",
+   "expiry_date": "2030-09-13",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/02_national_id__majed_saad_al_naseem.docx",
+    "pdf": "pdf/02_national_id__majed_saad_al_naseem.pdf",
+    "images": [
+     "images/02_national_id__majed_saad_al_naseem_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Majed Saad Al-Naseem",
+    "id_number": "1019876543",
+    "nationality": "Saudi",
+    "date_of_birth": "1969-01-30",
+    "issue_date": "2020-09-14",
+    "expiry_date": "2030-09-13"
+   }
+  },
+  {
+   "doc_id": "C1-03",
+   "doc_type": "articles_of_association",
+   "subject": null,
+   "title": "ARTICLES OF ASSOCIATION",
+   "issuer": "Dar Al Naseem Medical Supplies Co.",
+   "issue_date": "2021-11-08",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/03_articles_of_association.docx",
+    "pdf": "pdf/03_articles_of_association.pdf",
+    "images": [
+     "images/03_articles_of_association_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "legal_form": "Limited Liability Company",
+    "date_of_incorporation": "2009-02-15",
+    "share_capital": 30000000,
+    "amendment_date": "2021-11-08",
+    "shareholders": [
+     {
+      "name": "Naseem Holding Co.",
+      "id_number": "CR 1010298811",
+      "nationality": "Saudi company",
+      "shares": 24000,
+      "pct": 80.0
+     },
+     {
+      "name": "Fahad Saad Al-Naseem",
+      "id_number": "1012345870",
+      "nationality": "Saudi",
+      "shares": 6000,
+      "pct": 20.0
+     }
+    ],
+    "managers": [
+     {
+      "name": "Fahad Saad Al-Naseem",
+      "role": "Chairman and General Manager",
+      "powers": "Sole signatory"
+     },
+     {
+      "name": "Majed Saad Al-Naseem",
+      "role": "Director",
+      "powers": "Jointly with the General Manager above SAR 5m"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-04",
+   "doc_type": "commercial_registration",
+   "subject": null,
+   "title": "COMMERCIAL REGISTRATION CERTIFICATE",
+   "issuer": "Commercial Register (specimen)",
+   "issue_date": "2009-02-15",
+   "expiry_date": "2027-06-03",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/04_commercial_registration.docx",
+    "pdf": "pdf/04_commercial_registration.pdf",
+    "images": [
+     "images/04_commercial_registration_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "legal_form": "Limited Liability Company",
+    "city": "Riyadh",
+    "activity": "Wholesale of medical supplies and hospital equipment",
+    "issue_date": "2009-02-15",
+    "expiry_date": "2027-06-03",
+    "share_capital": 30000000,
+    "owners": [
+     {
+      "name": "Naseem Holding Co.",
+      "pct": 80.0
+     },
+     {
+      "name": "Fahad Saad Al-Naseem",
+      "pct": 20.0
+     }
+    ],
+    "managers": [
+     {
+      "name": "Fahad Saad Al-Naseem",
+      "role": "Chairman and General Manager"
+     },
+     {
+      "name": "Majed Saad Al-Naseem",
+      "role": "Director"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-05",
+   "doc_type": "vat_certificate",
+   "subject": null,
+   "title": "VAT REGISTRATION CERTIFICATE",
+   "issuer": "Tax Authority (specimen)",
+   "issue_date": "2018-01-09",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/05_vat_certificate.docx",
+    "pdf": "pdf/05_vat_certificate.pdf",
+    "images": [
+     "images/05_vat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "vat_number": "300384527100003",
+    "effective_date": "2018-01-01",
+    "filing_frequency": "Monthly",
+    "issue_date": "2018-01-09"
+   }
+  },
+  {
+   "doc_id": "C1-06",
+   "doc_type": "zakat_certificate",
+   "subject": null,
+   "title": "ZAKAT CERTIFICATE",
+   "issuer": "Zakat Authority (specimen)",
+   "issue_date": "2026-04-22",
+   "expiry_date": "2027-04-30",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/06_zakat_certificate.docx",
+    "pdf": "pdf/06_zakat_certificate.pdf",
+    "images": [
+     "images/06_zakat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "certificate_number": "ZC-2026-0398247",
+    "fiscal_year": "2025-12-31",
+    "issue_date": "2026-04-22",
+    "expiry_date": "2027-04-30"
+   }
+  },
+  {
+   "doc_id": "C1-07",
+   "doc_type": "nitaqat_certificate",
+   "subject": null,
+   "title": "NITAQAT CERTIFICATE",
+   "issuer": "Labour Registry (specimen)",
+   "issue_date": "2026-10-01",
+   "expiry_date": "2026-12-31",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/07_nitaqat_certificate.docx",
+    "pdf": "pdf/07_nitaqat_certificate.pdf",
+    "images": [
+     "images/07_nitaqat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "establishment_number": "1-4471902",
+    "nitaqat_band": "Medium Green",
+    "saudisation_pct": 27.1,
+    "band_threshold_pct": 21.0,
+    "total_staff": 214,
+    "saudi_staff": 58,
+    "issue_date": "2026-10-01",
+    "expiry_date": "2026-12-31"
+   }
+  },
+  {
+   "doc_id": "C1-08",
+   "doc_type": "vat_returns",
+   "subject": "oct2025_sep2026",
+   "title": "VAT RETURN FILINGS — LAST 12 MONTHS",
+   "issuer": "Tax Authority portal (specimen)",
+   "issue_date": "2026-10-18",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/08_vat_returns__oct2025_sep2026.docx",
+    "pdf": "pdf/08_vat_returns__oct2025_sep2026.pdf",
+    "images": [
+     "images/08_vat_returns__oct2025_sep2026_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "vat_number": "300384527100003",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "filing_frequency": "Monthly",
+    "total_taxable_sales": 276569000,
+    "total_output_vat": 41486000,
+    "returns": [
+     {
+      "period": "2025-10",
+      "taxable_sales": 24808000,
+      "zero_rated_sales": 0,
+      "output_vat": 3721000,
+      "input_vat": 2926000,
+      "net_vat_due": 795000,
+      "filed_on": "2025-11-18"
+     },
+     {
+      "period": "2025-11",
+      "taxable_sales": 23162000,
+      "zero_rated_sales": 0,
+      "output_vat": 3474000,
+      "input_vat": 2691000,
+      "net_vat_due": 783000,
+      "filed_on": "2025-12-18"
+     },
+     {
+      "period": "2025-12",
+      "taxable_sales": 23220000,
+      "zero_rated_sales": 0,
+      "output_vat": 3483000,
+      "input_vat": 2671000,
+      "net_vat_due": 812000,
+      "filed_on": "2026-01-18"
+     },
+     {
+      "period": "2026-01",
+      "taxable_sales": 21846000,
+      "zero_rated_sales": 0,
+      "output_vat": 3277000,
+      "input_vat": 2408000,
+      "net_vat_due": 869000,
+      "filed_on": "2026-02-18"
+     },
+     {
+      "period": "2026-02",
+      "taxable_sales": 21530000,
+      "zero_rated_sales": 0,
+      "output_vat": 3230000,
+      "input_vat": 2460000,
+      "net_vat_due": 770000,
+      "filed_on": "2026-03-18"
+     },
+     {
+      "period": "2026-03",
+      "taxable_sales": 20885000,
+      "zero_rated_sales": 0,
+      "output_vat": 3133000,
+      "input_vat": 2266000,
+      "net_vat_due": 867000,
+      "filed_on": "2026-04-18"
+     },
+     {
+      "period": "2026-04",
+      "taxable_sales": 22371000,
+      "zero_rated_sales": 0,
+      "output_vat": 3356000,
+      "input_vat": 2564000,
+      "net_vat_due": 792000,
+      "filed_on": "2026-05-18"
+     },
+     {
+      "period": "2026-05",
+      "taxable_sales": 22669000,
+      "zero_rated_sales": 0,
+      "output_vat": 3400000,
+      "input_vat": 2485000,
+      "net_vat_due": 915000,
+      "filed_on": "2026-06-18"
+     },
+     {
+      "period": "2026-06",
+      "taxable_sales": 23632000,
+      "zero_rated_sales": 0,
+      "output_vat": 3545000,
+      "input_vat": 2617000,
+      "net_vat_due": 928000,
+      "filed_on": "2026-07-18"
+     },
+     {
+      "period": "2026-07",
+      "taxable_sales": 24791000,
+      "zero_rated_sales": 0,
+      "output_vat": 3719000,
+      "input_vat": 2740000,
+      "net_vat_due": 979000,
+      "filed_on": "2026-08-18"
+     },
+     {
+      "period": "2026-08",
+      "taxable_sales": 24314000,
+      "zero_rated_sales": 0,
+      "output_vat": 3647000,
+      "input_vat": 2868000,
+      "net_vat_due": 779000,
+      "filed_on": "2026-09-18"
+     },
+     {
+      "period": "2026-09",
+      "taxable_sales": 23341000,
+      "zero_rated_sales": 0,
+      "output_vat": 3501000,
+      "input_vat": 2567000,
+      "net_vat_due": 934000,
+      "filed_on": "2026-10-18"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-09",
+   "doc_type": "simah_company",
+   "subject": null,
+   "title": "SIMAH COMMERCIAL CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-08",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/09_simah_company.docx",
+    "pdf": "pdf/09_simah_company.pdf",
+    "images": [
+     "images/09_simah_company_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "report_date": "2026-10-08",
+    "report_number": "SB-26-3297704",
+    "score": 702,
+    "total_limits": 146500000,
+    "total_outstanding": 120200000,
+    "total_overdue": 0,
+    "lenders_count": 2,
+    "defaults_count": 0,
+    "enquiries_6m": 2,
+    "facilities": [
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Short-term Murabaha",
+      "limit": 40000000,
+      "outstanding": 39600000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2017-05-02",
+      "remark": ""
+     },
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Letters of credit (incl. acceptances)",
+      "limit": 30000000,
+      "outstanding": 18400000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2017-05-02",
+      "remark": ""
+     },
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Trust receipts",
+      "limit": 15000000,
+      "outstanding": 14800000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2019-06-11",
+      "remark": ""
+     },
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Letters of guarantee",
+      "limit": 10000000,
+      "outstanding": 3100000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2017-05-02",
+      "remark": ""
+     },
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Term loan (warehouse)",
+      "limit": 6500000,
+      "outstanding": 6500000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2020-01-15",
+      "remark": ""
+     },
+     {
+      "lender": "Al Rimal Commercial Bank",
+      "product": "Short-term Murabaha",
+      "limit": 30000000,
+      "outstanding": 29100000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2022-08-01",
+      "remark": ""
+     },
+     {
+      "lender": "Al Rimal Commercial Bank",
+      "product": "Letters of credit (incl. acceptances)",
+      "limit": 15000000,
+      "outstanding": 8700000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2022-08-01",
+      "remark": ""
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-10",
+   "doc_type": "simah_consumer",
+   "subject": "fahad_saad_al_naseem",
+   "title": "SIMAH CONSUMER CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-08",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/10_simah_consumer__fahad_saad_al_naseem.docx",
+    "pdf": "pdf/10_simah_consumer__fahad_saad_al_naseem.pdf",
+    "images": [
+     "images/10_simah_consumer__fahad_saad_al_naseem_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Fahad Saad Al-Naseem",
+    "id_number": "1012345870",
+    "report_date": "2026-10-08",
+    "report_number": "SC-26-8790311",
+    "score": 731,
+    "total_outstanding": 3132000,
+    "total_overdue": 0,
+    "worst_status_24m": "Current on own facilities; guaranteed facility substandard",
+    "facilities": [
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Credit card",
+      "limit": 150000,
+      "outstanding": 32000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     },
+     {
+      "lender": "Al Rimal Commercial Bank",
+      "product": "Real-estate finance",
+      "limit": 4800000,
+      "outstanding": 3100000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Dar Al Naseem Medical Supplies Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 95000000,
+      "status": "Current"
+     },
+     {
+      "beneficiary": "Dar Al Naseem Medical Supplies Co.",
+      "lender": "Al Rimal Commercial Bank",
+      "amount": 45000000,
+      "status": "Current"
+     },
+     {
+      "beneficiary": "Naseem Lab Systems Co.",
+      "lender": "Al Rimal Commercial Bank",
+      "amount": 22000000,
+      "status": "Substandard (classified 07/2026)"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-11",
+   "doc_type": "simah_consumer",
+   "subject": "majed_saad_al_naseem",
+   "title": "SIMAH CONSUMER CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-08",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/11_simah_consumer__majed_saad_al_naseem.docx",
+    "pdf": "pdf/11_simah_consumer__majed_saad_al_naseem.pdf",
+    "images": [
+     "images/11_simah_consumer__majed_saad_al_naseem_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Majed Saad Al-Naseem",
+    "id_number": "1019876543",
+    "report_date": "2026-10-08",
+    "report_number": "SC-26-8790312",
+    "score": 748,
+    "total_outstanding": 210000,
+    "total_overdue": 0,
+    "worst_status_24m": "Current (no delinquency)",
+    "facilities": [
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Auto finance",
+      "limit": 380000,
+      "outstanding": 210000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Dar Al Naseem Medical Supplies Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 95000000,
+      "status": "Current"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-12",
+   "doc_type": "audited_fs",
+   "subject": "fy2024",
+   "title": "DAR AL NASEEM MEDICAL SUPPLIES CO. — FINANCIAL STATEMENTS FY2024",
+   "issuer": "Basma & Partners Chartered Accountants",
+   "issue_date": "2025-04-17",
+   "expiry_date": null,
+   "period_from": "2024-01-01",
+   "period_to": "2024-12-31",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/12_audited_fs__fy2024.docx",
+    "pdf": "pdf/12_audited_fs__fy2024.pdf",
+    "images": [
+     "images/12_audited_fs__fy2024_p2.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "fiscal_year": "2024-12-31",
+    "auditor": "Basma & Partners Chartered Accountants",
+    "opinion": "Unqualified",
+    "qawaem_reference": "QW-2025-1010384527",
+    "revenue": 182400000,
+    "cost_of_sales": 137700000,
+    "gross_profit": 44700000,
+    "operating_expenses": 23100000,
+    "operating_profit": 21600000,
+    "finance_cost": 4600000,
+    "zakat": 1200000,
+    "net_profit": 15800000,
+    "depreciation": 3200000,
+    "cash": 11400000,
+    "trade_receivables": 48500000,
+    "retention_receivables": 0,
+    "contract_assets": 0,
+    "inventory": 41200000,
+    "due_from_related": 3100000,
+    "other_current_assets": 6300000,
+    "current_assets": 110500000,
+    "ppe": 24800000,
+    "other_noncurrent_assets": 1100000,
+    "total_assets": 136400000,
+    "short_term_borrowings": 32600000,
+    "trade_payables": 18400000,
+    "due_to_related": 1000000,
+    "other_current_liabilities": 8600000,
+    "current_portion_ltd": 2000000,
+    "current_liabilities": 62600000,
+    "long_term_borrowings": 8000000,
+    "end_of_service": 4900000,
+    "total_liabilities": 75500000,
+    "share_capital": 30000000,
+    "statutory_reserve": 8000000,
+    "retained_earnings": 22900000,
+    "total_equity": 60900000,
+    "operating_cash_flow": 15000000,
+    "related_party_sales": 0
+   }
+  },
+  {
+   "doc_id": "C1-13",
+   "doc_type": "audited_fs",
+   "subject": "fy2025",
+   "title": "DAR AL NASEEM MEDICAL SUPPLIES CO. — FINANCIAL STATEMENTS FY2025",
+   "issuer": "Basma & Partners Chartered Accountants",
+   "issue_date": "2026-04-21",
+   "expiry_date": null,
+   "period_from": "2025-01-01",
+   "period_to": "2025-12-31",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/13_audited_fs__fy2025.docx",
+    "pdf": "pdf/13_audited_fs__fy2025.pdf",
+    "images": [
+     "images/13_audited_fs__fy2025_p1.jpg",
+     "images/13_audited_fs__fy2025_p2.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "fiscal_year": "2025-12-31",
+    "auditor": "Basma & Partners Chartered Accountants",
+    "opinion": "Unqualified",
+    "qawaem_reference": "QW-2026-1010384527",
+    "revenue": 251700000,
+    "cost_of_sales": 193600000,
+    "gross_profit": 58100000,
+    "operating_expenses": 28400000,
+    "operating_profit": 29700000,
+    "finance_cost": 6900000,
+    "zakat": 1500000,
+    "net_profit": 21300000,
+    "depreciation": 3600000,
+    "cash": 9200000,
+    "trade_receivables": 112300000,
+    "retention_receivables": 0,
+    "contract_assets": 0,
+    "inventory": 52600000,
+    "due_from_related": 4400000,
+    "other_current_assets": 7900000,
+    "current_assets": 186400000,
+    "ppe": 26100000,
+    "other_noncurrent_assets": 1200000,
+    "total_assets": 213700000,
+    "short_term_borrowings": 78400000,
+    "trade_payables": 26900000,
+    "due_to_related": 1200000,
+    "other_current_liabilities": 17400000,
+    "current_portion_ltd": 2000000,
+    "current_liabilities": 125900000,
+    "long_term_borrowings": 6000000,
+    "end_of_service": 5600000,
+    "total_liabilities": 137500000,
+    "share_capital": 30000000,
+    "statutory_reserve": 10130000,
+    "retained_earnings": 36070000,
+    "total_equity": 76200000,
+    "operating_cash_flow": -35000000,
+    "related_party_sales": 78000000
+   }
+  },
+  {
+   "doc_id": "C1-14",
+   "doc_type": "inhouse_fs",
+   "subject": "9m2026",
+   "title": "MANAGEMENT ACCOUNTS (UNAUDITED) — 9 MONTHS 2026",
+   "issuer": "Dar Al Naseem Medical Supplies Co.",
+   "issue_date": "2026-10-10",
+   "expiry_date": null,
+   "period_from": "2026-01-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/14_inhouse_fs__9m2026.docx",
+    "pdf": "pdf/14_inhouse_fs__9m2026.pdf",
+    "images": [
+     "images/14_inhouse_fs__9m2026_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "period_from": "2026-01-01",
+    "period_to": "2026-09-30",
+    "prepared_by": "Rania Yousef Khoury",
+    "revenue": 205600000,
+    "cost_of_sales": 159500000,
+    "gross_profit": 46100000,
+    "operating_expenses": 23900000,
+    "operating_profit": 22200000,
+    "finance_cost": 6400000,
+    "net_profit": 15800000,
+    "cash": 7600000,
+    "trade_receivables": 148900000,
+    "inventory": 58300000,
+    "current_assets": 228200000,
+    "total_assets": 255800000,
+    "short_term_borrowings": 104700000,
+    "current_liabilities": 153200000,
+    "long_term_borrowings": 4500000,
+    "total_liabilities": 163800000,
+    "total_equity": 92000000
+   }
+  },
+  {
+   "doc_id": "C1-15",
+   "doc_type": "bank_statement",
+   "subject": "sandstone_current_account",
+   "title": "ACCOUNT STATEMENT",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-03",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/15_bank_statement__sandstone_current_account.docx",
+    "pdf": "pdf/15_bank_statement__sandstone_current_account.pdf",
+    "images": [
+     "images/15_bank_statement__sandstone_current_account_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "bank_name": "Sandstone Harbour Bank",
+    "account_number": "0105-220981-001",
+    "iban": "SA5277000001052209810011",
+    "account_type": "Current account (main operating)",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "opening_balance": 6100000,
+    "total_credits": 206673824,
+    "total_debits": 207473824,
+    "closing_balance": 5300000,
+    "returned_cheques": 1,
+    "monthly": [
+     {
+      "month": "2025-10",
+      "credits": 15179305,
+      "debits": 15245972,
+      "closing_balance": 6033333,
+      "avg_balance": 5424611,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-11",
+      "credits": 16808514,
+      "debits": 16875181,
+      "closing_balance": 5966666,
+      "avg_balance": 5309103,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-12",
+      "credits": 15672870,
+      "debits": 15739537,
+      "closing_balance": 5899999,
+      "avg_balance": 5201693,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-01",
+      "credits": 16865445,
+      "debits": 16932112,
+      "closing_balance": 5833332,
+      "avg_balance": 5129266,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-02",
+      "credits": 17289215,
+      "debits": 17355882,
+      "closing_balance": 5766665,
+      "avg_balance": 5041421,
+      "returned_cheques": 1
+     },
+     {
+      "month": "2026-03",
+      "credits": 16070750,
+      "debits": 16137417,
+      "closing_balance": 5699998,
+      "avg_balance": 5217874,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-04",
+      "credits": 16464209,
+      "debits": 16530876,
+      "closing_balance": 5633331,
+      "avg_balance": 5074965,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-05",
+      "credits": 17391292,
+      "debits": 17457959,
+      "closing_balance": 5566664,
+      "avg_balance": 4712048,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-06",
+      "credits": 18026883,
+      "debits": 18093550,
+      "closing_balance": 5499997,
+      "avg_balance": 5414992,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-07",
+      "credits": 18343474,
+      "debits": 18410141,
+      "closing_balance": 5433330,
+      "avg_balance": 4804943,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-08",
+      "credits": 19205117,
+      "debits": 19271784,
+      "closing_balance": 5366663,
+      "avg_balance": 5608767,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-09",
+      "credits": 19356750,
+      "debits": 19423413,
+      "closing_balance": 5300000,
+      "avg_balance": 5134814,
+      "returned_cheques": 0
+     }
+    ],
+    "transactions": [
+     {
+      "date": "2025-10-02",
+      "description": "Murabaha profit and charges",
+      "debit": 634994,
+      "credit": null,
+      "balance": 5465006
+     },
+     {
+      "date": "2025-10-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3703711,
+      "balance": 9168717
+     },
+     {
+      "date": "2025-10-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 919048,
+      "credit": null,
+      "balance": 8249669
+     },
+     {
+      "date": "2025-10-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 5800396,
+      "credit": null,
+      "balance": 2449273
+     },
+     {
+      "date": "2025-10-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 2796420,
+      "balance": 5245693
+     },
+     {
+      "date": "2025-10-15",
+      "description": "GOSI contribution",
+      "debit": 145773,
+      "credit": null,
+      "balance": 5099920
+     },
+     {
+      "date": "2025-10-17",
+      "description": "Supplier payments (local)",
+      "debit": 3384329,
+      "credit": null,
+      "balance": 1715591
+     },
+     {
+      "date": "2025-10-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 2891967,
+      "balance": 4607558
+     },
+     {
+      "date": "2025-10-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2671430,
+      "balance": 7278988
+     },
+     {
+      "date": "2025-10-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2373944,
+      "credit": null,
+      "balance": 4905044
+     },
+     {
+      "date": "2025-10-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3115777,
+      "balance": 8020821
+     },
+     {
+      "date": "2025-10-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1293543,
+      "credit": null,
+      "balance": 6727278
+     },
+     {
+      "date": "2025-10-28",
+      "description": "VAT payment",
+      "debit": 693945,
+      "credit": null,
+      "balance": 6033333
+     },
+     {
+      "date": "2025-11-02",
+      "description": "Murabaha profit and charges",
+      "debit": 651051,
+      "credit": null,
+      "balance": 5382282
+     },
+     {
+      "date": "2025-11-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3623558,
+      "balance": 9005840
+     },
+     {
+      "date": "2025-11-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 975413,
+      "credit": null,
+      "balance": 8030427
+     },
+     {
+      "date": "2025-11-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 6651915,
+      "credit": null,
+      "balance": 1378512
+     },
+     {
+      "date": "2025-11-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3292188,
+      "balance": 4670700
+     },
+     {
+      "date": "2025-11-15",
+      "description": "GOSI contribution",
+      "debit": 161908,
+      "credit": null,
+      "balance": 4508792
+     },
+     {
+      "date": "2025-11-17",
+      "description": "Supplier payments (local)",
+      "debit": 3739167,
+      "credit": null,
+      "balance": 769625
+     },
+     {
+      "date": "2025-11-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 4778476,
+      "balance": 5548101
+     },
+     {
+      "date": "2025-11-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2524679,
+      "balance": 8072780
+     },
+     {
+      "date": "2025-11-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2467120,
+      "credit": null,
+      "balance": 5605660
+     },
+     {
+      "date": "2025-11-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 2589613,
+      "balance": 8195273
+     },
+     {
+      "date": "2025-11-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1388981,
+      "credit": null,
+      "balance": 6806292
+     },
+     {
+      "date": "2025-11-28",
+      "description": "VAT payment",
+      "debit": 839626,
+      "credit": null,
+      "balance": 5966666
+     },
+     {
+      "date": "2025-12-02",
+      "description": "Murabaha profit and charges",
+      "debit": 617127,
+      "credit": null,
+      "balance": 5349539
+     },
+     {
+      "date": "2025-12-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3100527,
+      "balance": 8450066
+     },
+     {
+      "date": "2025-12-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 953306,
+      "credit": null,
+      "balance": 7496760
+     },
+     {
+      "date": "2025-12-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 6068405,
+      "credit": null,
+      "balance": 1428355
+     },
+     {
+      "date": "2025-12-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3982984,
+      "balance": 5411339
+     },
+     {
+      "date": "2025-12-15",
+      "description": "GOSI contribution",
+      "debit": 153179,
+      "credit": null,
+      "balance": 5258160
+     },
+     {
+      "date": "2025-12-17",
+      "description": "Supplier payments (local)",
+      "debit": 3218586,
+      "credit": null,
+      "balance": 2039574
+     },
+     {
+      "date": "2025-12-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 2515976,
+      "balance": 4555550
+     },
+     {
+      "date": "2025-12-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2311733,
+      "balance": 6867283
+     },
+     {
+      "date": "2025-12-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2477353,
+      "credit": null,
+      "balance": 4389930
+     },
+     {
+      "date": "2025-12-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3761650,
+      "balance": 8151580
+     },
+     {
+      "date": "2025-12-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1438101,
+      "credit": null,
+      "balance": 6713479
+     },
+     {
+      "date": "2025-12-28",
+      "description": "VAT payment",
+      "debit": 813480,
+      "credit": null,
+      "balance": 5899999
+     },
+     {
+      "date": "2026-01-02",
+      "description": "Murabaha profit and charges",
+      "debit": 621897,
+      "credit": null,
+      "balance": 5278102
+     },
+     {
+      "date": "2026-01-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 2461386,
+      "balance": 7739488
+     },
+     {
+      "date": "2026-01-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 1019583,
+      "credit": null,
+      "balance": 6719905
+     },
+     {
+      "date": "2026-01-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3026728,
+      "balance": 9746633
+     },
+     {
+      "date": "2026-01-13",
+      "description": "LC settlement — imported supplies",
+      "debit": 6616445,
+      "credit": null,
+      "balance": 3130188
+     },
+     {
+      "date": "2026-01-15",
+      "description": "GOSI contribution",
+      "debit": 172058,
+      "credit": null,
+      "balance": 2958130
+     },
+     {
+      "date": "2026-01-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 4583070,
+      "balance": 7541200
+     },
+     {
+      "date": "2026-01-20",
+      "description": "Supplier payments (local)",
+      "debit": 3707010,
+      "credit": null,
+      "balance": 3834190
+     },
+     {
+      "date": "2026-01-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 3301322,
+      "balance": 7135512
+     },
+     {
+      "date": "2026-01-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2422779,
+      "credit": null,
+      "balance": 4712733
+     },
+     {
+      "date": "2026-01-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3492939,
+      "balance": 8205672
+     },
+     {
+      "date": "2026-01-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1571428,
+      "credit": null,
+      "balance": 6634244
+     },
+     {
+      "date": "2026-01-28",
+      "description": "VAT payment",
+      "debit": 800912,
+      "credit": null,
+      "balance": 5833332
+     },
+     {
+      "date": "2026-02-02",
+      "description": "Murabaha profit and charges",
+      "debit": 647935,
+      "credit": null,
+      "balance": 5185397
+     },
+     {
+      "date": "2026-02-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3493558,
+      "balance": 8678955
+     },
+     {
+      "date": "2026-02-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 989536,
+      "credit": null,
+      "balance": 7689419
+     },
+     {
+      "date": "2026-02-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 6863895,
+      "credit": null,
+      "balance": 825524
+     },
+     {
+      "date": "2026-02-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3107918,
+      "balance": 3933442
+     },
+     {
+      "date": "2026-02-15",
+      "description": "GOSI contribution",
+      "debit": 165284,
+      "credit": null,
+      "balance": 3768158
+     },
+     {
+      "date": "2026-02-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 4069770,
+      "balance": 7837928
+     },
+     {
+      "date": "2026-02-20",
+      "description": "Supplier payments (local)",
+      "debit": 3619838,
+      "credit": null,
+      "balance": 4218090
+     },
+     {
+      "date": "2026-02-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 3102357,
+      "balance": 7320447
+     },
+     {
+      "date": "2026-02-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2729978,
+      "credit": null,
+      "balance": 4590469
+     },
+     {
+      "date": "2026-02-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3515612,
+      "balance": 8106081
+     },
+     {
+      "date": "2026-02-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1446513,
+      "credit": null,
+      "balance": 6659568
+     },
+     {
+      "date": "2026-02-28",
+      "description": "VAT payment",
+      "debit": 892903,
+      "credit": null,
+      "balance": 5766665
+     },
+     {
+      "date": "2026-03-02",
+      "description": "Murabaha profit and charges",
+      "debit": 666137,
+      "credit": null,
+      "balance": 5100528
+     },
+     {
+      "date": "2026-03-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3446165,
+      "balance": 8546693
+     },
+     {
+      "date": "2026-03-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 903081,
+      "credit": null,
+      "balance": 7643612
+     },
+     {
+      "date": "2026-03-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 6214040,
+      "credit": null,
+      "balance": 1429572
+     },
+     {
+      "date": "2026-03-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 2497197,
+      "balance": 3926769
+     },
+     {
+      "date": "2026-03-15",
+      "description": "GOSI contribution",
+      "debit": 155311,
+      "credit": null,
+      "balance": 3771458
+     },
+     {
+      "date": "2026-03-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 4829871,
+      "balance": 8601329
+     },
+     {
+      "date": "2026-03-20",
+      "description": "Supplier payments (local)",
+      "debit": 3642847,
+      "credit": null,
+      "balance": 4958482
+     },
+     {
+      "date": "2026-03-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2201080,
+      "balance": 7159562
+     },
+     {
+      "date": "2026-03-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2312545,
+      "credit": null,
+      "balance": 4847017
+     },
+     {
+      "date": "2026-03-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3096437,
+      "balance": 7943454
+     },
+     {
+      "date": "2026-03-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1439832,
+      "credit": null,
+      "balance": 6503622
+     },
+     {
+      "date": "2026-03-28",
+      "description": "VAT payment",
+      "debit": 803624,
+      "credit": null,
+      "balance": 5699998
+     },
+     {
+      "date": "2026-04-02",
+      "description": "Murabaha profit and charges",
+      "debit": 635338,
+      "credit": null,
+      "balance": 5064660
+     },
+     {
+      "date": "2026-04-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3189954,
+      "balance": 8254614
+     },
+     {
+      "date": "2026-04-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 1084803,
+      "credit": null,
+      "balance": 7169811
+     },
+     {
+      "date": "2026-04-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 6056325,
+      "credit": null,
+      "balance": 1113486
+     },
+     {
+      "date": "2026-04-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 4238072,
+      "balance": 5351558
+     },
+     {
+      "date": "2026-04-15",
+      "description": "GOSI contribution",
+      "debit": 164485,
+      "credit": null,
+      "balance": 5187073
+     },
+     {
+      "date": "2026-04-17",
+      "description": "Supplier payments (local)",
+      "debit": 3732577,
+      "credit": null,
+      "balance": 1454496
+     },
+     {
+      "date": "2026-04-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 3492851,
+      "balance": 4947347
+     },
+     {
+      "date": "2026-04-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2547875,
+      "balance": 7495222
+     },
+     {
+      "date": "2026-04-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2529773,
+      "credit": null,
+      "balance": 4965449
+     },
+     {
+      "date": "2026-04-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 2995457,
+      "balance": 7960906
+     },
+     {
+      "date": "2026-04-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1472489,
+      "credit": null,
+      "balance": 6488417
+     },
+     {
+      "date": "2026-04-28",
+      "description": "VAT payment",
+      "debit": 855086,
+      "credit": null,
+      "balance": 5633331
+     },
+     {
+      "date": "2026-05-02",
+      "description": "Murabaha profit and charges",
+      "debit": 713721,
+      "credit": null,
+      "balance": 4919610
+     },
+     {
+      "date": "2026-05-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3062808,
+      "balance": 7982418
+     },
+     {
+      "date": "2026-05-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 1009967,
+      "credit": null,
+      "balance": 6972451
+     },
+     {
+      "date": "2026-05-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 6461765,
+      "credit": null,
+      "balance": 510686
+     },
+     {
+      "date": "2026-05-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 4706931,
+      "balance": 5217617
+     },
+     {
+      "date": "2026-05-15",
+      "description": "GOSI contribution",
+      "debit": 175316,
+      "credit": null,
+      "balance": 5042301
+     },
+     {
+      "date": "2026-05-17",
+      "description": "Supplier payments (local)",
+      "debit": 3745645,
+      "credit": null,
+      "balance": 1296656
+     },
+     {
+      "date": "2026-05-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 2728109,
+      "balance": 4024765
+     },
+     {
+      "date": "2026-05-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2342178,
+      "balance": 6366943
+     },
+     {
+      "date": "2026-05-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2765020,
+      "credit": null,
+      "balance": 3601923
+     },
+     {
+      "date": "2026-05-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 4551266,
+      "balance": 8153189
+     },
+     {
+      "date": "2026-05-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1641345,
+      "credit": null,
+      "balance": 6511844
+     },
+     {
+      "date": "2026-05-28",
+      "description": "VAT payment",
+      "debit": 945180,
+      "credit": null,
+      "balance": 5566664
+     },
+     {
+      "date": "2026-06-02",
+      "description": "Murabaha profit and charges",
+      "debit": 754951,
+      "credit": null,
+      "balance": 4811713
+     },
+     {
+      "date": "2026-06-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 5396158,
+      "balance": 10207871
+     },
+     {
+      "date": "2026-06-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 1090644,
+      "credit": null,
+      "balance": 9117227
+     },
+     {
+      "date": "2026-06-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 6726925,
+      "credit": null,
+      "balance": 2390302
+     },
+     {
+      "date": "2026-06-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3436461,
+      "balance": 5826763
+     },
+     {
+      "date": "2026-06-15",
+      "description": "GOSI contribution",
+      "debit": 175298,
+      "credit": null,
+      "balance": 5651465
+     },
+     {
+      "date": "2026-06-17",
+      "description": "Supplier payments (local)",
+      "debit": 3892120,
+      "credit": null,
+      "balance": 1759345
+     },
+     {
+      "date": "2026-06-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 2524907,
+      "balance": 4284252
+     },
+     {
+      "date": "2026-06-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 3195422,
+      "balance": 7479674
+     },
+     {
+      "date": "2026-06-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2859288,
+      "credit": null,
+      "balance": 4620386
+     },
+     {
+      "date": "2026-06-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3473935,
+      "balance": 8094321
+     },
+     {
+      "date": "2026-06-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1598052,
+      "credit": null,
+      "balance": 6496269
+     },
+     {
+      "date": "2026-06-28",
+      "description": "VAT payment",
+      "debit": 996272,
+      "credit": null,
+      "balance": 5499997
+     },
+     {
+      "date": "2026-07-02",
+      "description": "Murabaha profit and charges",
+      "debit": 684553,
+      "credit": null,
+      "balance": 4815444
+     },
+     {
+      "date": "2026-07-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3588399,
+      "balance": 8403843
+     },
+     {
+      "date": "2026-07-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 1161017,
+      "credit": null,
+      "balance": 7242826
+     },
+     {
+      "date": "2026-07-11",
+      "description": "LC settlement — imported supplies",
+      "debit": 6987081,
+      "credit": null,
+      "balance": 255745
+     },
+     {
+      "date": "2026-07-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 4896468,
+      "balance": 5152213
+     },
+     {
+      "date": "2026-07-15",
+      "description": "GOSI contribution",
+      "debit": 168950,
+      "credit": null,
+      "balance": 4983263
+     },
+     {
+      "date": "2026-07-17",
+      "description": "Supplier payments (local)",
+      "debit": 4256728,
+      "credit": null,
+      "balance": 726535
+     },
+     {
+      "date": "2026-07-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 4126899,
+      "balance": 4853434
+     },
+     {
+      "date": "2026-07-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2035559,
+      "balance": 6888993
+     },
+     {
+      "date": "2026-07-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2700592,
+      "credit": null,
+      "balance": 4188401
+     },
+     {
+      "date": "2026-07-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3696149,
+      "balance": 7884550
+     },
+     {
+      "date": "2026-07-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1604158,
+      "credit": null,
+      "balance": 6280392
+     },
+     {
+      "date": "2026-07-28",
+      "description": "VAT payment",
+      "debit": 847062,
+      "credit": null,
+      "balance": 5433330
+     },
+     {
+      "date": "2026-08-02",
+      "description": "Murabaha profit and charges",
+      "debit": 793506,
+      "credit": null,
+      "balance": 4639824
+     },
+     {
+      "date": "2026-08-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 4051440,
+      "balance": 8691264
+     },
+     {
+      "date": "2026-08-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 1142662,
+      "credit": null,
+      "balance": 7548602
+     },
+     {
+      "date": "2026-08-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 5306960,
+      "balance": 12855562
+     },
+     {
+      "date": "2026-08-13",
+      "description": "LC settlement — imported supplies",
+      "debit": 7430683,
+      "credit": null,
+      "balance": 5424879
+     },
+     {
+      "date": "2026-08-15",
+      "description": "GOSI contribution",
+      "debit": 182987,
+      "credit": null,
+      "balance": 5241892
+     },
+     {
+      "date": "2026-08-17",
+      "description": "Supplier payments (local)",
+      "debit": 4162760,
+      "credit": null,
+      "balance": 1079132
+     },
+     {
+      "date": "2026-08-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 4755278,
+      "balance": 5834410
+     },
+     {
+      "date": "2026-08-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2455415,
+      "balance": 8289825
+     },
+     {
+      "date": "2026-08-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 2894565,
+      "credit": null,
+      "balance": 5395260
+     },
+     {
+      "date": "2026-08-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 2636024,
+      "balance": 8031284
+     },
+     {
+      "date": "2026-08-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1733240,
+      "credit": null,
+      "balance": 6298044
+     },
+     {
+      "date": "2026-08-28",
+      "description": "VAT payment",
+      "debit": 931381,
+      "credit": null,
+      "balance": 5366663
+     },
+     {
+      "date": "2026-09-02",
+      "description": "Murabaha profit and charges",
+      "debit": 735268,
+      "credit": null,
+      "balance": 4631395
+     },
+     {
+      "date": "2026-09-06",
+      "description": "Ministry hospitals cluster — payment",
+      "debit": null,
+      "credit": 3659433,
+      "balance": 8290828
+     },
+     {
+      "date": "2026-09-08",
+      "description": "Warehouse and fleet expenses",
+      "debit": 1135016,
+      "credit": null,
+      "balance": 7155812
+     },
+     {
+      "date": "2026-09-13",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 5522835,
+      "balance": 12678647
+     },
+     {
+      "date": "2026-09-13",
+      "description": "LC settlement — imported supplies",
+      "debit": 7386246,
+      "credit": null,
+      "balance": 5292401
+     },
+     {
+      "date": "2026-09-15",
+      "description": "GOSI contribution",
+      "debit": 206011,
+      "credit": null,
+      "balance": 5086390
+     },
+     {
+      "date": "2026-09-17",
+      "description": "Supplier payments (local)",
+      "debit": 4290213,
+      "credit": null,
+      "balance": 796177
+     },
+     {
+      "date": "2026-09-20",
+      "description": "Clinics and pharmacies — collections",
+      "debit": null,
+      "credit": 3620985,
+      "balance": 4417162
+     },
+     {
+      "date": "2026-09-24",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 2565200,
+      "balance": 6982362
+     },
+     {
+      "date": "2026-09-25",
+      "description": "Murabaha repayment (net)",
+      "debit": 3036267,
+      "credit": null,
+      "balance": 3946095
+     },
+     {
+      "date": "2026-09-27",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 3988297,
+      "balance": 7934392
+     },
+     {
+      "date": "2026-09-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1732241,
+      "credit": null,
+      "balance": 6202151
+     },
+     {
+      "date": "2026-09-28",
+      "description": "VAT payment",
+      "debit": 902151,
+      "credit": null,
+      "balance": 5300000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-16",
+   "doc_type": "bank_statement",
+   "subject": "al_current_account",
+   "title": "ACCOUNT STATEMENT",
+   "issuer": "Al Rimal Commercial Bank",
+   "issue_date": "2026-10-05",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/16_bank_statement__al_current_account.docx",
+    "pdf": "pdf/16_bank_statement__al_current_account.pdf",
+    "images": [
+     "images/16_bank_statement__al_current_account_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "bank_name": "Al Rimal Commercial Bank",
+    "account_number": "330-118204-6",
+    "iban": "SA7155000000330118204600",
+    "account_type": "Current account",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "opening_balance": 2800000,
+    "total_credits": 46807932,
+    "total_debits": 47507932,
+    "closing_balance": 2100000,
+    "returned_cheques": 0,
+    "monthly": [
+     {
+      "month": "2025-10",
+      "credits": 3527351,
+      "debits": 3585684,
+      "closing_balance": 2741667,
+      "avg_balance": 2799585,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-11",
+      "credits": 3802736,
+      "debits": 3861069,
+      "closing_balance": 2683334,
+      "avg_balance": 2561366,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-12",
+      "credits": 3535722,
+      "debits": 3594055,
+      "closing_balance": 2625001,
+      "avg_balance": 2707552,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-01",
+      "credits": 3998494,
+      "debits": 4056827,
+      "closing_balance": 2566668,
+      "avg_balance": 2628389,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-02",
+      "credits": 4031841,
+      "debits": 4090174,
+      "closing_balance": 2508335,
+      "avg_balance": 2622644,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-03",
+      "credits": 3585162,
+      "debits": 3643495,
+      "closing_balance": 2450002,
+      "avg_balance": 2585807,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-04",
+      "credits": 3742676,
+      "debits": 3801009,
+      "closing_balance": 2391669,
+      "avg_balance": 2403657,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-05",
+      "credits": 3870289,
+      "debits": 3928622,
+      "closing_balance": 2333336,
+      "avg_balance": 2544226,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-06",
+      "credits": 4194506,
+      "debits": 4252839,
+      "closing_balance": 2275003,
+      "avg_balance": 2436235,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-07",
+      "credits": 3978652,
+      "debits": 4036985,
+      "closing_balance": 2216670,
+      "avg_balance": 2336816,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-08",
+      "credits": 4242740,
+      "debits": 4301073,
+      "closing_balance": 2158337,
+      "avg_balance": 2143345,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-09",
+      "credits": 4297763,
+      "debits": 4356100,
+      "closing_balance": 2100000,
+      "avg_balance": 2162492,
+      "returned_cheques": 0
+     }
+    ],
+    "transactions": [
+     {
+      "date": "2025-10-02",
+      "description": "Profit and charges",
+      "debit": 192376,
+      "credit": null,
+      "balance": 2607624
+     },
+     {
+      "date": "2025-10-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1262075,
+      "balance": 3869699
+     },
+     {
+      "date": "2025-10-12",
+      "description": "Supplier payments",
+      "debit": 2244756,
+      "credit": null,
+      "balance": 1624943
+     },
+     {
+      "date": "2025-10-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1144899,
+      "balance": 2769842
+     },
+     {
+      "date": "2025-10-19",
+      "description": "Logistics expenses",
+      "debit": 307131,
+      "credit": null,
+      "balance": 2462711
+     },
+     {
+      "date": "2025-10-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1120377,
+      "balance": 3583088
+     },
+     {
+      "date": "2025-10-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 841421,
+      "credit": null,
+      "balance": 2741667
+     },
+     {
+      "date": "2025-11-02",
+      "description": "Profit and charges",
+      "debit": 208327,
+      "credit": null,
+      "balance": 2533340
+     },
+     {
+      "date": "2025-11-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 943232,
+      "balance": 3476572
+     },
+     {
+      "date": "2025-11-12",
+      "description": "Supplier payments",
+      "debit": 2354303,
+      "credit": null,
+      "balance": 1122269
+     },
+     {
+      "date": "2025-11-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1082005,
+      "balance": 2204274
+     },
+     {
+      "date": "2025-11-19",
+      "description": "Logistics expenses",
+      "debit": 314895,
+      "credit": null,
+      "balance": 1889379
+     },
+     {
+      "date": "2025-11-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1777499,
+      "balance": 3666878
+     },
+     {
+      "date": "2025-11-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 983544,
+      "credit": null,
+      "balance": 2683334
+     },
+     {
+      "date": "2025-12-02",
+      "description": "Profit and charges",
+      "debit": 187387,
+      "credit": null,
+      "balance": 2495947
+     },
+     {
+      "date": "2025-12-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1365841,
+      "balance": 3861788
+     },
+     {
+      "date": "2025-12-12",
+      "description": "Supplier payments",
+      "debit": 2230331,
+      "credit": null,
+      "balance": 1631457
+     },
+     {
+      "date": "2025-12-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 990743,
+      "balance": 2622200
+     },
+     {
+      "date": "2025-12-19",
+      "description": "Logistics expenses",
+      "debit": 287337,
+      "credit": null,
+      "balance": 2334863
+     },
+     {
+      "date": "2025-12-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1179138,
+      "balance": 3514001
+     },
+     {
+      "date": "2025-12-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 889000,
+      "credit": null,
+      "balance": 2625001
+     },
+     {
+      "date": "2026-01-02",
+      "description": "Profit and charges",
+      "debit": 189610,
+      "credit": null,
+      "balance": 2435391
+     },
+     {
+      "date": "2026-01-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1324308,
+      "balance": 3759699
+     },
+     {
+      "date": "2026-01-12",
+      "description": "Supplier payments",
+      "debit": 2565448,
+      "credit": null,
+      "balance": 1194251
+     },
+     {
+      "date": "2026-01-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1414852,
+      "balance": 2609103
+     },
+     {
+      "date": "2026-01-19",
+      "description": "Logistics expenses",
+      "debit": 313143,
+      "credit": null,
+      "balance": 2295960
+     },
+     {
+      "date": "2026-01-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1259334,
+      "balance": 3555294
+     },
+     {
+      "date": "2026-01-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 988626,
+      "credit": null,
+      "balance": 2566668
+     },
+     {
+      "date": "2026-02-02",
+      "description": "Profit and charges",
+      "debit": 197152,
+      "credit": null,
+      "balance": 2369516
+     },
+     {
+      "date": "2026-02-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1459357,
+      "balance": 3828873
+     },
+     {
+      "date": "2026-02-12",
+      "description": "Supplier payments",
+      "debit": 2538697,
+      "credit": null,
+      "balance": 1290176
+     },
+     {
+      "date": "2026-02-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1329582,
+      "balance": 2619758
+     },
+     {
+      "date": "2026-02-19",
+      "description": "Logistics expenses",
+      "debit": 341479,
+      "credit": null,
+      "balance": 2278279
+     },
+     {
+      "date": "2026-02-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1242902,
+      "balance": 3521181
+     },
+     {
+      "date": "2026-02-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 1012846,
+      "credit": null,
+      "balance": 2508335
+     },
+     {
+      "date": "2026-03-02",
+      "description": "Profit and charges",
+      "debit": 184431,
+      "credit": null,
+      "balance": 2323904
+     },
+     {
+      "date": "2026-03-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1586195,
+      "balance": 3910099
+     },
+     {
+      "date": "2026-03-12",
+      "description": "Supplier payments",
+      "debit": 2305528,
+      "credit": null,
+      "balance": 1604571
+     },
+     {
+      "date": "2026-03-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 943320,
+      "balance": 2547891
+     },
+     {
+      "date": "2026-03-19",
+      "description": "Logistics expenses",
+      "debit": 301294,
+      "credit": null,
+      "balance": 2246597
+     },
+     {
+      "date": "2026-03-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1055647,
+      "balance": 3302244
+     },
+     {
+      "date": "2026-03-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 852242,
+      "credit": null,
+      "balance": 2450002
+     },
+     {
+      "date": "2026-04-02",
+      "description": "Profit and charges",
+      "debit": 195263,
+      "credit": null,
+      "balance": 2254739
+     },
+     {
+      "date": "2026-04-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1208627,
+      "balance": 3463366
+     },
+     {
+      "date": "2026-04-12",
+      "description": "Supplier payments",
+      "debit": 2338730,
+      "credit": null,
+      "balance": 1124636
+     },
+     {
+      "date": "2026-04-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1091946,
+      "balance": 2216582
+     },
+     {
+      "date": "2026-04-19",
+      "description": "Logistics expenses",
+      "debit": 285232,
+      "credit": null,
+      "balance": 1931350
+     },
+     {
+      "date": "2026-04-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1442103,
+      "balance": 3373453
+     },
+     {
+      "date": "2026-04-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 981784,
+      "credit": null,
+      "balance": 2391669
+     },
+     {
+      "date": "2026-05-02",
+      "description": "Profit and charges",
+      "debit": 179045,
+      "credit": null,
+      "balance": 2212624
+     },
+     {
+      "date": "2026-05-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1830972,
+      "balance": 4043596
+     },
+     {
+      "date": "2026-05-12",
+      "description": "Supplier payments",
+      "debit": 2495829,
+      "credit": null,
+      "balance": 1547767
+     },
+     {
+      "date": "2026-05-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1003791,
+      "balance": 2551558
+     },
+     {
+      "date": "2026-05-19",
+      "description": "Logistics expenses",
+      "debit": 284625,
+      "credit": null,
+      "balance": 2266933
+     },
+     {
+      "date": "2026-05-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1035526,
+      "balance": 3302459
+     },
+     {
+      "date": "2026-05-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 969123,
+      "credit": null,
+      "balance": 2333336
+     },
+     {
+      "date": "2026-06-02",
+      "description": "Profit and charges",
+      "debit": 209693,
+      "credit": null,
+      "balance": 2123643
+     },
+     {
+      "date": "2026-06-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1659812,
+      "balance": 3783455
+     },
+     {
+      "date": "2026-06-12",
+      "description": "Supplier payments",
+      "debit": 2645478,
+      "credit": null,
+      "balance": 1137977
+     },
+     {
+      "date": "2026-06-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1369466,
+      "balance": 2507443
+     },
+     {
+      "date": "2026-06-19",
+      "description": "Logistics expenses",
+      "debit": 356270,
+      "credit": null,
+      "balance": 2151173
+     },
+     {
+      "date": "2026-06-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1165228,
+      "balance": 3316401
+     },
+     {
+      "date": "2026-06-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 1041398,
+      "credit": null,
+      "balance": 2275003
+     },
+     {
+      "date": "2026-07-02",
+      "description": "Profit and charges",
+      "debit": 215559,
+      "credit": null,
+      "balance": 2059444
+     },
+     {
+      "date": "2026-07-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1686132,
+      "balance": 3745576
+     },
+     {
+      "date": "2026-07-12",
+      "description": "Supplier payments",
+      "debit": 2448220,
+      "credit": null,
+      "balance": 1297356
+     },
+     {
+      "date": "2026-07-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 872382,
+      "balance": 2169738
+     },
+     {
+      "date": "2026-07-19",
+      "description": "Logistics expenses",
+      "debit": 318043,
+      "credit": null,
+      "balance": 1851695
+     },
+     {
+      "date": "2026-07-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1420138,
+      "balance": 3271833
+     },
+     {
+      "date": "2026-07-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 1055163,
+      "credit": null,
+      "balance": 2216670
+     },
+     {
+      "date": "2026-08-02",
+      "description": "Profit and charges",
+      "debit": 202860,
+      "credit": null,
+      "balance": 2013810
+     },
+     {
+      "date": "2026-08-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1373612,
+      "balance": 3387422
+     },
+     {
+      "date": "2026-08-12",
+      "description": "Supplier payments",
+      "debit": 2640499,
+      "credit": null,
+      "balance": 746923
+     },
+     {
+      "date": "2026-08-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1052321,
+      "balance": 1799244
+     },
+     {
+      "date": "2026-08-19",
+      "description": "Logistics expenses",
+      "debit": 325946,
+      "credit": null,
+      "balance": 1473298
+     },
+     {
+      "date": "2026-08-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1816807,
+      "balance": 3290105
+     },
+     {
+      "date": "2026-08-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 1131768,
+      "credit": null,
+      "balance": 2158337
+     },
+     {
+      "date": "2026-09-02",
+      "description": "Profit and charges",
+      "debit": 233551,
+      "credit": null,
+      "balance": 1924786
+     },
+     {
+      "date": "2026-09-09",
+      "description": "Private hospitals — collections",
+      "debit": null,
+      "credit": 1597693,
+      "balance": 3522479
+     },
+     {
+      "date": "2026-09-12",
+      "description": "Supplier payments",
+      "debit": 2663858,
+      "credit": null,
+      "balance": 858621
+     },
+     {
+      "date": "2026-09-15",
+      "description": "Al Tayf Healthcare Trading Est. — payment",
+      "debit": null,
+      "credit": 1099372,
+      "balance": 1957993
+     },
+     {
+      "date": "2026-09-19",
+      "description": "Logistics expenses",
+      "debit": 334444,
+      "credit": null,
+      "balance": 1623549
+     },
+     {
+      "date": "2026-09-22",
+      "description": "Clinics — collections",
+      "debit": null,
+      "credit": 1600698,
+      "balance": 3224247
+     },
+     {
+      "date": "2026-09-26",
+      "description": "Murabaha repayment (net)",
+      "debit": 1124247,
+      "credit": null,
+      "balance": 2100000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-17",
+   "doc_type": "facility_request_letter",
+   "subject": null,
+   "title": "REQUEST FOR CREDIT FACILITIES",
+   "issuer": "Dar Al Naseem Medical Supplies Co.",
+   "issue_date": "2026-10-12",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/17_facility_request_letter.docx",
+    "pdf": "pdf/17_facility_request_letter.pdf",
+    "images": [
+     "images/17_facility_request_letter_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "letter_date": "2026-10-12",
+    "addressed_to": "Sandstone Harbour Bank, Corporate Banking",
+    "requested_total": 140000000,
+    "facilities": [
+     {
+      "facility": "Short-term Murabaha",
+      "amount": 65000000,
+      "purpose": "Working capital (from SAR 40m)"
+     },
+     {
+      "facility": "Letters of credit (sight / usance)",
+      "amount": 40000000,
+      "purpose": "Imports of medical supplies (from SAR 30m)"
+     },
+     {
+      "facility": "Trust receipts",
+      "amount": 25000000,
+      "purpose": "Financing of LC settlements (from SAR 15m)"
+     },
+     {
+      "facility": "Letters of guarantee",
+      "amount": 10000000,
+      "purpose": "Tender and performance guarantees (unchanged)"
+     }
+    ],
+    "signatory": "Fahad Saad Al-Naseem",
+    "signatory_role": "Chairman and General Manager"
+   }
+  },
+  {
+   "doc_id": "C1-18",
+   "doc_type": "board_resolution",
+   "subject": null,
+   "title": "PARTNERS' RESOLUTION",
+   "issuer": "Dar Al Naseem Medical Supplies Co.",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/18_board_resolution.docx",
+    "pdf": "pdf/18_board_resolution.pdf",
+    "images": [
+     "images/18_board_resolution_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "resolution_date": "2026-10-11",
+    "resolution_number": "PR-2026-03",
+    "authorised_amount": 190000000,
+    "authorised_persons": "Fahad Saad Al-Naseem (Chairman and General Manager)"
+   }
+  },
+  {
+   "doc_id": "C1-19",
+   "doc_type": "authorised_signatories",
+   "subject": null,
+   "title": "AUTHORISED SIGNATORIES",
+   "issuer": "Dar Al Naseem Medical Supplies Co.",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/19_authorised_signatories.docx",
+    "pdf": "pdf/19_authorised_signatories.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "as_of": "2026-10-11",
+    "signatories": [
+     {
+      "name": "Fahad Saad Al-Naseem",
+      "id_number": "1012345870",
+      "role": "Chairman and General Manager",
+      "limit": "Unlimited",
+      "mode": "Single"
+     },
+     {
+      "name": "Majed Saad Al-Naseem",
+      "id_number": "1019876543",
+      "role": "Director",
+      "limit": "Up to SAR 5m",
+      "mode": "Single; joint above"
+     },
+     {
+      "name": "Rania Yousef Khoury",
+      "id_number": "2410938871",
+      "role": "Finance Manager",
+      "limit": "Up to SAR 0.5m (payments)",
+      "mode": "Joint"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-20",
+   "doc_type": "personal_net_worth",
+   "subject": "fahad_saad_al_naseem",
+   "title": "PERSONAL NET WORTH STATEMENT",
+   "issuer": "Fahad Saad Al-Naseem",
+   "issue_date": "2026-08-31",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/20_personal_net_worth__fahad_saad_al_naseem.docx",
+    "pdf": "pdf/20_personal_net_worth__fahad_saad_al_naseem.pdf",
+    "images": [
+     "images/20_personal_net_worth__fahad_saad_al_naseem_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Fahad Saad Al-Naseem",
+    "id_number": "1012345870",
+    "statement_date": "2026-08-31",
+    "total_assets": 124300000,
+    "total_liabilities": 3132000,
+    "net_worth": 121168000,
+    "assets": [
+     {
+      "asset": "Shares",
+      "description": "60% of Naseem Holding Co. (book value)",
+      "value": 52800000
+     },
+     {
+      "asset": "Shares",
+      "description": "20% of Dar Al Naseem Medical Supplies Co. (book value)",
+      "value": 15200000
+     },
+     {
+      "asset": "Real estate",
+      "description": "Residential compound, Al Narjis, Riyadh (valuation 03/2026)",
+      "value": 28500000
+     },
+     {
+      "asset": "Real estate",
+      "description": "Land, Al Kharj road (2,400 sq m)",
+      "value": 9600000
+     },
+     {
+      "asset": "Cash and deposits",
+      "description": "Current and deposit accounts",
+      "value": 11900000
+     },
+     {
+      "asset": "Listed shares",
+      "description": "Portfolio at market value",
+      "value": 6300000
+     }
+    ],
+    "liabilities": [
+     {
+      "liability": "Real-estate finance",
+      "description": "Al Rimal Commercial Bank",
+      "value": 3100000
+     },
+     {
+      "liability": "Credit card",
+      "description": "Sandstone Harbour Bank",
+      "value": 32000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-21",
+   "doc_type": "personal_net_worth",
+   "subject": "majed_saad_al_naseem",
+   "title": "PERSONAL NET WORTH STATEMENT",
+   "issuer": "Majed Saad Al-Naseem",
+   "issue_date": "2026-08-31",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/21_personal_net_worth__majed_saad_al_naseem.docx",
+    "pdf": "pdf/21_personal_net_worth__majed_saad_al_naseem.pdf",
+    "images": [
+     "images/21_personal_net_worth__majed_saad_al_naseem_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Majed Saad Al-Naseem",
+    "id_number": "1019876543",
+    "statement_date": "2026-08-31",
+    "total_assets": 48300000,
+    "total_liabilities": 210000,
+    "net_worth": 48090000,
+    "assets": [
+     {
+      "asset": "Shares",
+      "description": "40% of Naseem Holding Co. (book value)",
+      "value": 35200000
+     },
+     {
+      "asset": "Real estate",
+      "description": "Villa, Al Malqa, Riyadh",
+      "value": 8400000
+     },
+     {
+      "asset": "Cash and deposits",
+      "description": "Deposit accounts",
+      "value": 4700000
+     }
+    ],
+    "liabilities": [
+     {
+      "liability": "Auto finance",
+      "description": "Sandstone Harbour Bank",
+      "value": 210000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-22",
+   "doc_type": "other_bank_offer_letter",
+   "subject": "al_rimal_commercial_bank",
+   "title": "FACILITY OFFER LETTER",
+   "issuer": "Al Rimal Commercial Bank",
+   "issue_date": "2026-02-10",
+   "expiry_date": "2027-01-31",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/22_other_bank_offer_letter__al_rimal_commercial_bank.docx",
+    "pdf": "pdf/22_other_bank_offer_letter__al_rimal_commercial_bank.pdf",
+    "images": [
+     "images/22_other_bank_offer_letter__al_rimal_commercial_bank_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "bank_name": "Al Rimal Commercial Bank",
+    "letter_date": "2026-02-10",
+    "letter_reference": "ARCB/RUH/26/118",
+    "total_limits": 45000000,
+    "expiry_date": "2027-01-31",
+    "facilities": [
+     {
+      "facility": "Short-term Murabaha",
+      "limit": 30000000,
+      "pricing": "3M SAIBOR + 1.90%",
+      "tenor": "up to 120 days"
+     },
+     {
+      "facility": "Letters of credit (sight / usance 90 days)",
+      "limit": 15000000,
+      "pricing": "0.30% per quarter",
+      "tenor": "per LC"
+     }
+    ],
+    "security": "Personal guarantee of Fahad Saad Al-Naseem; promissory note SAR 45,000,000."
+   }
+  },
+  {
+   "doc_id": "C1-23",
+   "doc_type": "other_bank_statement",
+   "subject": "al_rimal_commercial_bank",
+   "title": "STATEMENT OF FACILITIES",
+   "issuer": "Al Rimal Commercial Bank",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/23_other_bank_statement__al_rimal_commercial_bank.docx",
+    "pdf": "pdf/23_other_bank_statement__al_rimal_commercial_bank.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "bank_name": "Al Rimal Commercial Bank",
+    "statement_date": "2026-09-30",
+    "total_limits": 45000000,
+    "total_outstanding": 37800000,
+    "facilities": [
+     {
+      "facility": "Short-term Murabaha",
+      "limit": 30000000,
+      "outstanding": 29100000,
+      "overdue": 0,
+      "maturity": "rolling"
+     },
+     {
+      "facility": "Letters of credit (sight / usance 90 days)",
+      "limit": 15000000,
+      "outstanding": 8700000,
+      "overdue": 0,
+      "maturity": "per LC"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-24",
+   "doc_type": "receivables_ageing",
+   "subject": null,
+   "title": "RECEIVABLES AGEING",
+   "issuer": "Dar Al Naseem Medical Supplies Co.",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/24_receivables_ageing.docx",
+    "pdf": "pdf/24_receivables_ageing.pdf",
+    "images": [
+     "images/24_receivables_ageing_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "as_of": "2026-09-30",
+    "total": 148900000,
+    "bucket_0_90": 79000000,
+    "bucket_91_180": 46500000,
+    "bucket_181_365": 23400000,
+    "bucket_over_365": 0,
+    "by_customer": [
+     {
+      "customer": "Al Tayf Healthcare Trading Est.",
+      "b0_90": 37900000,
+      "b91_180": 34800000,
+      "b181_365": 19900000,
+      "over_365": 0,
+      "total": 92600000
+     },
+     {
+      "customer": "Ministry hospitals cluster (central region)",
+      "b0_90": 17600000,
+      "b91_180": 8100000,
+      "b181_365": 2200000,
+      "over_365": 0,
+      "total": 27900000
+     },
+     {
+      "customer": "Riyadh Care Private Hospitals Co.",
+      "b0_90": 9700000,
+      "b91_180": 1100000,
+      "b181_365": 0,
+      "over_365": 0,
+      "total": 10800000
+     },
+     {
+      "customer": "Al Shifa Medical Group",
+      "b0_90": 6200000,
+      "b91_180": 400000,
+      "b181_365": 0,
+      "over_365": 0,
+      "total": 6600000
+     },
+     {
+      "customer": "Other hospitals, clinics and pharmacies (212 accounts)",
+      "b0_90": 7600000,
+      "b91_180": 2100000,
+      "b181_365": 1300000,
+      "over_365": 0,
+      "total": 11000000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-25",
+   "doc_type": "payables_ageing",
+   "subject": null,
+   "title": "PAYABLES AGEING",
+   "issuer": "Dar Al Naseem Medical Supplies Co.",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/25_payables_ageing.docx",
+    "pdf": "pdf/25_payables_ageing.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "as_of": "2026-09-30",
+    "total": 29800000,
+    "bucket_0_90": 28000000,
+    "bucket_91_180": 1800000,
+    "bucket_over_180": 0,
+    "by_supplier": [
+     {
+      "supplier": "Nordmed Instruments GmbH",
+      "b0_90": 9600000,
+      "b91_180": 0,
+      "over_180": 0,
+      "total": 9600000
+     },
+     {
+      "supplier": "Pacific Rim Medical Consumables Ltd",
+      "b0_90": 7200000,
+      "b91_180": 800000,
+      "over_180": 0,
+      "total": 8000000
+     },
+     {
+      "supplier": "Gulf Surgical Supplies Co.",
+      "b0_90": 4100000,
+      "b91_180": 600000,
+      "over_180": 0,
+      "total": 4700000
+     },
+     {
+      "supplier": "Other suppliers",
+      "b0_90": 7100000,
+      "b91_180": 400000,
+      "over_180": 0,
+      "total": 7500000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-26",
+   "doc_type": "top_customers_suppliers",
+   "subject": null,
+   "title": "TOP CUSTOMERS AND SUPPLIERS",
+   "issuer": "Dar Al Naseem Medical Supplies Co.",
+   "issue_date": "2026-10-05",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/26_top_customers_suppliers.docx",
+    "pdf": "pdf/26_top_customers_suppliers.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "year": 2025,
+    "customers": [
+     {
+      "name": "Al Tayf Healthcare Trading Est.",
+      "relationship": "Third-party distributor (Eastern and Southern regions)",
+      "sales": 78000000,
+      "share_pct": 31.0,
+      "terms": "120 days"
+     },
+     {
+      "name": "Ministry hospitals cluster (central region)",
+      "relationship": "Government",
+      "sales": 46300000,
+      "share_pct": 18.4,
+      "terms": "90-120 days"
+     },
+     {
+      "name": "Riyadh Care Private Hospitals Co.",
+      "relationship": "Third party",
+      "sales": 24900000,
+      "share_pct": 9.9,
+      "terms": "60 days"
+     },
+     {
+      "name": "Al Shifa Medical Group",
+      "relationship": "Third party",
+      "sales": 17400000,
+      "share_pct": 6.9,
+      "terms": "60 days"
+     },
+     {
+      "name": "Other hospitals, clinics and pharmacies",
+      "relationship": "Third parties",
+      "sales": 85100000,
+      "share_pct": 33.8,
+      "terms": "30-90 days"
+     }
+    ],
+    "suppliers": [
+     {
+      "name": "Nordmed Instruments GmbH",
+      "country": "Germany",
+      "purchases": 52300000,
+      "share_pct": 26.9,
+      "terms": "LC 90 days usance"
+     },
+     {
+      "name": "Pacific Rim Medical Consumables Ltd",
+      "country": "Malaysia",
+      "purchases": 38100000,
+      "share_pct": 19.6,
+      "terms": "LC at sight"
+     },
+     {
+      "name": "Gulf Surgical Supplies Co.",
+      "country": "KSA",
+      "purchases": 21700000,
+      "share_pct": 11.2,
+      "terms": "45 days"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C1-27",
+   "doc_type": "valuation_report",
+   "subject": "warehouse",
+   "title": "VALUATION REPORT",
+   "issuer": "Masdar Real Estate Valuation Co.",
+   "issue_date": "2025-08-14",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "expired",
+   "files": {
+    "docx": "word/27_valuation_report__warehouse.docx",
+    "pdf": "pdf/27_valuation_report__warehouse.pdf",
+    "images": [
+     "images/27_valuation_report__warehouse_p1.jpg"
+    ]
+   },
+   "fields": {
+    "property": "Warehouse and offices, plot 18/4, Second Industrial City, Riyadh (6,200 sq m land)",
+    "owner": "Dar Al Naseem Medical Supplies Co.",
+    "deed_number": "310118004427",
+    "valuer": "Masdar Real Estate Valuation Co.",
+    "valuation_date": "2025-08-14",
+    "market_value": 31500000,
+    "forced_sale_value": 24000000
+   }
+  },
+  {
+   "doc_id": "C1-28",
+   "doc_type": "title_deed",
+   "subject": "warehouse",
+   "title": "TITLE DEED",
+   "issuer": "Real Estate Registry (specimen)",
+   "issue_date": "2014-06-19",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/28_title_deed__warehouse.docx",
+    "pdf": "pdf/28_title_deed__warehouse.pdf",
+    "images": [
+     "images/28_title_deed__warehouse_p1.jpg"
+    ]
+   },
+   "fields": {
+    "deed_number": "310118004427",
+    "owner": "Dar Al Naseem Medical Supplies Co.",
+    "property": "Warehouse and offices, plot 18/4, Second Industrial City, Riyadh (6,200 sq m land)",
+    "area_sqm": 6200,
+    "deed_date": "2014-06-19",
+    "encumbrance": "First-degree mortgage in favour of Sandstone Harbour Bank (2020)"
+   }
+  },
+  {
+   "doc_id": "C1-29",
+   "doc_type": "insurance_policy",
+   "subject": "warehouse",
+   "title": "INSURANCE POLICY SCHEDULE",
+   "issuer": "Najm Al Khaleej Cooperative Insurance Co.",
+   "issue_date": "2026-03-01",
+   "expiry_date": "2027-02-28",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/29_insurance_policy__warehouse.docx",
+    "pdf": "pdf/29_insurance_policy__warehouse.pdf",
+    "images": []
+   },
+   "fields": {
+    "policy_number": "PAR-26-551902",
+    "insured": "Dar Al Naseem Medical Supplies Co.",
+    "insurer": "Najm Al Khaleej Cooperative Insurance Co.",
+    "property": "Warehouse and offices, plot 18/4, Second Industrial City, Riyadh (6,200 sq m land)",
+    "sum_insured": 28000000,
+    "loss_payee": "Sandstone Harbour Bank",
+    "issue_date": "2026-03-01",
+    "expiry_date": "2027-02-28"
+   }
+  },
+  {
+   "doc_id": "C1-30",
+   "doc_type": "site_visit_report",
+   "subject": null,
+   "title": "SITE VISIT REPORT",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-09",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/30_site_visit_report.docx",
+    "pdf": "pdf/30_site_visit_report.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "visit_date": "2026-10-09",
+    "visited_by": "Nawaf Al-Otaibi",
+    "met_with": "Fahad Saad Al-Naseem; Rania Yousef Khoury (Finance Manager)",
+    "premises": "Head office and warehouse, Second Industrial City, Riyadh (owned)",
+    "staff_seen": 64,
+    "observations": "Warehouse well stocked and organised; cold-chain room in use; fleet of 22 delivery vans."
+   }
+  },
+  {
+   "doc_id": "C1-31",
+   "doc_type": "aml_kyc_questionnaire",
+   "subject": null,
+   "title": "AML / KYC QUESTIONNAIRE",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/31_aml_kyc_questionnaire.docx",
+    "pdf": "pdf/31_aml_kyc_questionnaire.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "completed_on": "2026-10-11",
+    "ubos": [
+     {
+      "name": "Fahad Saad Al-Naseem",
+      "pct": 68.0,
+      "pep": "No"
+     },
+     {
+      "name": "Majed Saad Al-Naseem",
+      "pct": 32.0,
+      "pep": "No"
+     }
+    ],
+    "pep_flag": "No",
+    "countries": "KSA; imports from Germany, Malaysia, USA, China",
+    "cash_intensive": "No",
+    "risk_rating": "Low"
+   }
+  },
+  {
+   "doc_id": "C1-32",
+   "doc_type": "simah_consent",
+   "subject": null,
+   "title": "CONSENT TO OBTAIN AND SHARE CREDIT INFORMATION (SIMAH)",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/32_simah_consent.docx",
+    "pdf": "pdf/32_simah_consent.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Dar Al Naseem Medical Supplies Co.",
+    "cr_number": "1010384527",
+    "signatory": "Fahad Saad Al-Naseem",
+    "signed_on": "2026-10-11"
+   }
+  }
+ ],
+ "missing": [],
+ "business_request": null,
+ "reference": {
+  "docx": "reference/reference_proposal.docx",
+  "pdf": "reference/reference_proposal.pdf"
+ }
+}

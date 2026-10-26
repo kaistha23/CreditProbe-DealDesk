@@ -1,0 +1,5 @@
+{
+ "description": "The bank's approved auditor list for corporate borrowers (fictional firm names). Credit Policy 4.6: audited accounts by a firm on this list.",
+ "version": "2026-07",
+ "auditors": ["Emirates Assurance Partners", "Gulf Audit Alliance", "Meydan Chartered Accountants", "Saadiyat Audit & Advisory", "Corniche Assurance LLP", "Riyadh Assurance Group", "Najd Chartered Accountants"]
+}

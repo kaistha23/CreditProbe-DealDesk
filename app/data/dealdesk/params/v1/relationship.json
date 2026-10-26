@@ -1,0 +1,53 @@
+{
+ "name": "relationship",
+ "owner": "Finance",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Cross-sell commitments: realisation of committed ancillary income for relationship RAROC (uncommitted lines use returns.ancillary_realisation). Round D: deposit_requirement prices required operating balances (the Deposit requirement term) into relationship RAROC.",
+ "source": "Corporate Banking relationship P&L 2025: realised share of committed and uncommitted cross-sell",
+ "rows": {
+  "committed_realisation": 0.9,
+  "lines": {
+   "cash_management": "Operating accounts and cash management",
+   "payroll": "Payroll",
+   "fx": "FX",
+   "trade": "Trade finance",
+   "deposits": "Deposits"
+  },
+  "committed_realisation_basis": "flat",
+  "actual_min_promises": 5,
+  "book": {
+   "reference_date": "today",
+   "utilisation_at_origination": 0.75,
+   "ftp_pass_through": 0.9,
+   "routing_income_bps_of_turnover": 15,
+   "lgd_collateral_haircut": 0.4,
+   "repricing_window_months": [
+    3,
+    6
+   ],
+   "renewals_due_days": 90,
+   "downgrade_notches": 2,
+   "ews_warning_bands": [
+    "high",
+    "critical"
+   ],
+   "promise_unmet_below": 0.8,
+   "tier_review_months": {
+    "High": 3,
+    "Medium": 6,
+    "Standard": 12
+   },
+   "hurdle_override_min_facilities": 30,
+   "hurdle_override_min_drift": 0.005,
+   "materiality_floor_sar_mn": 50,
+   "materiality_drift_below_hurdle": 0.02
+  },
+  "deposit_requirement": {
+   "profit_paid_rate": 0.0,
+   "max_pct": 50,
+   "basis": "Required operating balances on current accounts pay no profit; they earn the Treasury FTP credit for stable deposits (uae_desk.deposit_ftp_credit) and are realised at relationship.committed_realisation, as a committed cross-sell line. max_pct bounds the requirement as a % of the limit."
+  }
+ }
+}

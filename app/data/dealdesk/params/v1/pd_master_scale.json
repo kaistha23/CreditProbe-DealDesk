@@ -1,0 +1,105 @@
+{
+ "name": "pd_master_scale",
+ "owner": "Risk Models",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "12-month TTC PD by internal grade (the corporate book's master scale).",
+ "rows": [
+  {
+   "rating": "AAA",
+   "pd_ttc": 0.0001,
+   "bucket": "IG"
+  },
+  {
+   "rating": "AA+",
+   "pd_ttc": 0.00018,
+   "bucket": "IG"
+  },
+  {
+   "rating": "AA",
+   "pd_ttc": 0.000263,
+   "bucket": "IG"
+  },
+  {
+   "rating": "AA-",
+   "pd_ttc": 0.000389,
+   "bucket": "IG"
+  },
+  {
+   "rating": "A+",
+   "pd_ttc": 0.000576,
+   "bucket": "IG"
+  },
+  {
+   "rating": "A",
+   "pd_ttc": 0.000853,
+   "bucket": "IG"
+  },
+  {
+   "rating": "A-",
+   "pd_ttc": 0.001262,
+   "bucket": "IG"
+  },
+  {
+   "rating": "BBB+",
+   "pd_ttc": 0.001868,
+   "bucket": "IG"
+  },
+  {
+   "rating": "BBB",
+   "pd_ttc": 0.002765,
+   "bucket": "IG"
+  },
+  {
+   "rating": "BBB-",
+   "pd_ttc": 0.004092,
+   "bucket": "IG"
+  },
+  {
+   "rating": "BB+",
+   "pd_ttc": 0.006058,
+   "bucket": "BB"
+  },
+  {
+   "rating": "BB",
+   "pd_ttc": 0.008966,
+   "bucket": "BB"
+  },
+  {
+   "rating": "BB-",
+   "pd_ttc": 0.013271,
+   "bucket": "BB"
+  },
+  {
+   "rating": "B+",
+   "pd_ttc": 0.019644,
+   "bucket": "B"
+  },
+  {
+   "rating": "B",
+   "pd_ttc": 0.029077,
+   "bucket": "B"
+  },
+  {
+   "rating": "B-",
+   "pd_ttc": 0.043038,
+   "bucket": "B"
+  },
+  {
+   "rating": "CCC",
+   "pd_ttc": 0.063704,
+   "bucket": "CCC-C"
+  },
+  {
+   "rating": "CC",
+   "pd_ttc": 0.094293,
+   "bucket": "CCC-C"
+  },
+  {
+   "rating": "C",
+   "pd_ttc": 0.139569,
+   "bucket": "CCC-C"
+  }
+ ]
+}

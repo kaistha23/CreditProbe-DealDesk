@@ -1,0 +1,968 @@
+{
+ "project": {
+  "proposal_id": "TST-TWB",
+  "product": "contracting",
+  "has_data": true,
+  "answer": "3 projects (1 flagged, 1 with an extension of time not formalised); cover ratio 3.62x against 1.25x; peak project deficit SAR 20.0m in Nov 2026; at 90 days' payment delay the peak deficit is SAR 49.0m; no break; Saadiyat Crest Developments holds 87% of the remaining backlog (above the 60% guide).",
+  "status": {
+   "as_of": "2026-06-30",
+   "rows": [
+    {
+     "project_id": "PRJ-1",
+     "project_name": "Crest Towers podium and two residential blocks",
+     "status": "delayed",
+     "employer": "Saadiyat Crest Developments",
+     "employer_entity_id": "E-SCD",
+     "consultant": "Harbour Line Consultants",
+     "currency": "SAR",
+     "limit_id": "L-P1",
+     "contract_value_original": 180.0,
+     "contract_value_revised": 196.0,
+     "variation_pct": 0.0888888888888888,
+     "start_date": "2024-03-01",
+     "completion_date_original": "2026-06-30",
+     "completion_date_revised": "2026-12-31",
+     "wd_pct": 0.62,
+     "planned_pct": 0.88,
+     "time_elapsed_pct": 0.8222222222222222,
+     "slip_pts": 26.0,
+     "eot_days": 184,
+     "eot_formalised": false,
+     "eot_label": "184 days, not formalised",
+     "billed": 118.0,
+     "amount_received": 98.0,
+     "amount_due": 14.5,
+     "days_due": 107,
+     "retention": 5.5,
+     "advance": 4.0,
+     "pending_certs": 2,
+     "last_certificate": {
+      "no": 21,
+      "date": "2026-05-31",
+      "last_payment": "2026-03-15"
+     },
+     "remaining_proceeds": 98.0,
+     "backlog": 78.0,
+     "financed": true,
+     "funded_outstanding": 20.0,
+     "narrative": null,
+     "flags": [
+      "Work done 62% against 88% planned (26 points behind)",
+      "Extension of time of 184 days not formalised",
+      "SAR 14.5m certified and unpaid for 107 days",
+      "Demand or claim letter on file"
+     ]
+    },
+    {
+     "project_id": "PRJ-2",
+     "project_name": "Coastal road interchange, package B",
+     "status": "ongoing",
+     "employer": "Saadiyat Crest Developments",
+     "employer_entity_id": "E-SCD",
+     "consultant": "Harbour Line Consultants",
+     "currency": "SAR",
+     "limit_id": "L-P2",
+     "contract_value_original": 95.0,
+     "contract_value_revised": 95.0,
+     "variation_pct": 0.0,
+     "start_date": "2025-01-15",
+     "completion_date_original": "2027-01-15",
+     "completion_date_revised": "2027-01-15",
+     "wd_pct": 0.41,
+     "planned_pct": 0.45,
+     "time_elapsed_pct": 0.7273972602739726,
+     "slip_pts": 4.0,
+     "eot_days": 0,
+     "eot_formalised": null,
+     "eot_label": "None",
+     "billed": 39.0,
+     "amount_received": 36.0,
+     "amount_due": 3.1,
+     "days_due": 20,
+     "retention": 0.0,
+     "advance": 0.0,
+     "pending_certs": 0,
+     "last_certificate": {
+      "no": 12,
+      "date": "2026-05-31",
+      "last_payment": null
+     },
+     "remaining_proceeds": 59.0,
+     "backlog": 56.0,
+     "financed": true,
+     "funded_outstanding": 0.0,
+     "narrative": null,
+     "flags": []
+    },
+    {
+     "project_id": "PRJ-3",
+     "project_name": "District cooling plant civil works",
+     "status": "ongoing",
+     "employer": "Wadi Noor Utilities",
+     "employer_entity_id": "E-WNU",
+     "consultant": "Sandline Engineering",
+     "currency": "SAR",
+     "limit_id": null,
+     "contract_value_original": 60.0,
+     "contract_value_revised": 64.0,
+     "variation_pct": 0.06666666666666665,
+     "start_date": "2025-06-01",
+     "completion_date_original": "2026-11-30",
+     "completion_date_revised": "2027-02-28",
+     "wd_pct": 0.7,
+     "planned_pct": 0.72,
+     "time_elapsed_pct": 0.6185243328100472,
+     "slip_pts": 2.0,
+     "eot_days": 90,
+     "eot_formalised": true,
+     "eot_label": "90 days, formalised",
+     "billed": 44.0,
+     "amount_received": 40.0,
+     "amount_due": 2.0,
+     "days_due": 15,
+     "retention": 0.0,
+     "advance": 0.0,
+     "pending_certs": 0,
+     "last_certificate": {
+      "no": 15,
+      "date": "2026-06-15",
+      "last_payment": null
+     },
+     "remaining_proceeds": 24.0,
+     "backlog": 20.0,
+     "financed": true,
+     "funded_outstanding": 0.0,
+     "narrative": null,
+     "flags": []
+    }
+   ],
+   "totals": {
+    "projects": 3,
+    "financed": 3,
+    "contract_value_revised": 355.0,
+    "amount_received": 174.0,
+    "amount_due": 19.6,
+    "remaining_proceeds": 181.0,
+    "backlog": 154.0,
+    "with_flags": 1,
+    "eot_not_formalised": 1
+   }
+  },
+  "cover_ratio": {
+   "remaining_proceeds": 181.0,
+   "funded_outstanding": 50.0,
+   "ratio": 3.62,
+   "min": 1.25,
+   "ok": true,
+   "text": "Remaining contract proceeds SAR 181.0m cover funded outstanding SAR 50.0m 3.62x (minimum 1.25x)"
+  },
+  "cash_flow": {
+   "months": [
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10",
+    "2026-11",
+    "2026-12",
+    "2027-01",
+    "2027-02",
+    "2027-03",
+    "2027-04"
+   ],
+   "costs": [
+    9.0,
+    11.0,
+    12.0,
+    12.0,
+    11.0,
+    10.0,
+    8.0,
+    6.0,
+    4.0,
+    2.0
+   ],
+   "receipts": [
+    0.0,
+    3.0,
+    7.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    12.0,
+    11.0,
+    9.0
+   ],
+   "advance": [
+    6.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "retention": [
+    0.0,
+    0.3,
+    0.7,
+    0.9,
+    1.0,
+    1.1,
+    1.2,
+    1.2,
+    1.1,
+    0.9
+   ],
+   "net": [
+    -3.0,
+    -8.0,
+    -5.0,
+    -3.0,
+    -1.0,
+    1.0,
+    4.0,
+    6.0,
+    7.0,
+    7.0
+   ],
+   "cumulative": [
+    -3.0,
+    -11.0,
+    -16.0,
+    -19.0,
+    -20.0,
+    -19.0,
+    -15.0,
+    -9.0,
+    -2.0,
+    5.0
+   ],
+   "deficit": [
+    3.0,
+    11.0,
+    16.0,
+    19.0,
+    20.0,
+    19.0,
+    15.0,
+    9.0,
+    2.0,
+    0.0
+   ],
+   "peak_deficit": 20.0,
+   "peak_month": "2026-11",
+   "months_in_deficit": 9,
+   "total_costs": 85.0,
+   "total_receipts": 84.0,
+   "total_advance": 6.0,
+   "retention_held": 8.4,
+   "projects": [
+    "PRJ-NEW"
+   ]
+  },
+  "delay_stress": {
+   "months": [
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10",
+    "2026-11",
+    "2026-12",
+    "2027-01",
+    "2027-02",
+    "2027-03",
+    "2027-04"
+   ],
+   "rows": [
+    {
+     "delay_days": 0,
+     "label": "Base",
+     "peak_deficit": 20.0,
+     "peak_month": "2026-11",
+     "extra_funding": 0.0,
+     "deficit": [
+      3.0,
+      11.0,
+      16.0,
+      19.0,
+      20.0,
+      19.0,
+      15.0,
+      9.0,
+      2.0,
+      0.0
+     ],
+     "funded_outstanding": 50.0,
+     "cover_ratio": 3.62,
+     "cover_ok": true,
+     "within_limit": true,
+     "headroom": 60.0
+    },
+    {
+     "delay_days": 30,
+     "label": "Payments 30 days late",
+     "peak_deficit": 30.0,
+     "peak_month": "2026-11",
+     "extra_funding": 10.0,
+     "deficit": [
+      3.0,
+      14.0,
+      23.0,
+      28.0,
+      30.0,
+      30.0,
+      27.0,
+      21.0,
+      13.0,
+      4.0
+     ],
+     "funded_outstanding": 60.0,
+     "cover_ratio": 3.0166666666666666,
+     "cover_ok": true,
+     "within_limit": true,
+     "headroom": 50.0
+    },
+    {
+     "delay_days": 60,
+     "label": "Payments 60 days late",
+     "peak_deficit": 40.0,
+     "peak_month": "2026-12",
+     "extra_funding": 20.0,
+     "deficit": [
+      3.0,
+      14.0,
+      26.0,
+      35.0,
+      39.0,
+      40.0,
+      38.0,
+      33.0,
+      25.0,
+      15.0
+     ],
+     "funded_outstanding": 70.0,
+     "cover_ratio": 2.585714285714286,
+     "cover_ok": true,
+     "within_limit": true,
+     "headroom": 40.0
+    },
+    {
+     "delay_days": 90,
+     "label": "Payments 90 days late",
+     "peak_deficit": 49.0,
+     "peak_month": "2026-12",
+     "extra_funding": 29.0,
+     "deficit": [
+      3.0,
+      14.0,
+      26.0,
+      38.0,
+      46.0,
+      49.0,
+      48.0,
+      44.0,
+      37.0,
+      27.0
+     ],
+     "funded_outstanding": 79.0,
+     "cover_ratio": 2.2911392405063293,
+     "cover_ok": true,
+     "within_limit": true,
+     "headroom": 31.0
+    }
+   ],
+   "cover_ratio_min": 1.25,
+   "funded_limit": 80.0,
+   "first_break": null
+  },
+  "employer_credit": {
+   "rows": [
+    {
+     "employer": "Saadiyat Crest Developments",
+     "entity_id": "E-SCD",
+     "projects": 2,
+     "backlog": 134.0,
+     "amount_due": 17.6,
+     "max_days_due": 107,
+     "contract_value": 291.0,
+     "rating": null,
+     "backlog_share": 0.8701298701298701,
+     "bureau": {
+      "provided": true,
+      "overdue": 0.0,
+      "returned_cheques": 0,
+      "score": 712,
+      "court_cases": 1,
+      "worst_status": null
+     }
+    },
+    {
+     "employer": "Wadi Noor Utilities",
+     "entity_id": "E-WNU",
+     "projects": 1,
+     "backlog": 20.0,
+     "amount_due": 2.0,
+     "max_days_due": 15,
+     "contract_value": 64.0,
+     "rating": null,
+     "backlog_share": 0.12987012987012986,
+     "bureau": {
+      "provided": false,
+      "reason": "not shared by the client"
+     }
+    }
+   ],
+   "total_backlog": 154.0,
+   "top_share": 0.8701298701298701,
+   "top_n": 1,
+   "top2_share": 1.0,
+   "concentration_max": 0.6,
+   "concentrated": true,
+   "text": "Saadiyat Crest Developments holds 87% of the remaining backlog (above the 60% guide)"
+  },
+  "lgs": {
+   "rows": [
+    {
+     "limit_id": "L-P1-APG",
+     "parent_limit_id": "L-P1",
+     "type": "apg",
+     "label": "Advance payment guarantee",
+     "name": null,
+     "project_id": "PRJ-1",
+     "existing": 0.0,
+     "outstanding": 12.0,
+     "proposed": 19.6,
+     "cash_margin_pct": 0.1,
+     "commission_pct_pa": null,
+     "ccf_row": "performance_lg",
+     "ccf_regulatory": 0.5,
+     "ccf_economic": 0.5,
+     "ead_regulatory": 8.82,
+     "ead_economic": 8.82
+    },
+    {
+     "limit_id": "L-P1-PB",
+     "parent_limit_id": "L-P1",
+     "type": "pb",
+     "label": "Performance bond",
+     "name": null,
+     "project_id": "PRJ-1",
+     "existing": 0.0,
+     "outstanding": 19.6,
+     "proposed": 19.6,
+     "cash_margin_pct": 0.1,
+     "commission_pct_pa": null,
+     "ccf_row": "performance_lg",
+     "ccf_regulatory": 0.5,
+     "ccf_economic": 0.5,
+     "ead_regulatory": 8.82,
+     "ead_economic": 8.82
+    },
+    {
+     "limit_id": "L-BB",
+     "parent_limit_id": "L-TOT",
+     "type": "bid_bond",
+     "label": "Bid bond",
+     "name": null,
+     "project_id": null,
+     "existing": 0.0,
+     "outstanding": 1.5,
+     "proposed": 5.0,
+     "cash_margin_pct": 0.0,
+     "commission_pct_pa": null,
+     "ccf_row": "performance_lg",
+     "ccf_regulatory": 0.5,
+     "ccf_economic": 0.5,
+     "ead_regulatory": 2.5,
+     "ead_economic": 2.5
+    },
+    {
+     "limit_id": "L-RB",
+     "parent_limit_id": "L-TOT",
+     "type": "rb",
+     "label": "Retention bond",
+     "name": null,
+     "project_id": null,
+     "existing": 0.0,
+     "outstanding": 4.0,
+     "proposed": 8.0,
+     "cash_margin_pct": 0.0,
+     "commission_pct_pa": null,
+     "ccf_row": "performance_lg",
+     "ccf_regulatory": 0.5,
+     "ccf_economic": 0.5,
+     "ead_regulatory": 4.0,
+     "ead_economic": 4.0
+    }
+   ],
+   "by_type": [
+    {
+     "type": "apg",
+     "label": "Advance payment guarantee",
+     "proposed": 19.6,
+     "outstanding": 12.0,
+     "ead_regulatory": 8.82,
+     "ead_economic": 8.82
+    },
+    {
+     "type": "pb",
+     "label": "Performance bond",
+     "proposed": 19.6,
+     "outstanding": 19.6,
+     "ead_regulatory": 8.82,
+     "ead_economic": 8.82
+    },
+    {
+     "type": "bid_bond",
+     "label": "Bid bond",
+     "proposed": 5.0,
+     "outstanding": 1.5,
+     "ead_regulatory": 2.5,
+     "ead_economic": 2.5
+    },
+    {
+     "type": "rb",
+     "label": "Retention bond",
+     "proposed": 8.0,
+     "outstanding": 4.0,
+     "ead_regulatory": 4.0,
+     "ead_economic": 4.0
+    }
+   ],
+   "total_proposed": 52.2,
+   "total_ead_regulatory": 24.14
+  },
+  "funded_limit": 80.0
+ },
+ "escrow": {
+  "proposal_id": "TST-ESC",
+  "product": "escrow",
+  "has_data": true,
+  "answer": "Marina Vista Off-plan: 286 of 420 units sold (68%), 40% of sales value collected, construction 46% complete; cover ratio 0.95x against 1.20x; 2 months with a release outside the rules.",
+  "account": {
+   "escrow_id": "ESC-1",
+   "account_ref": "ESC-0001",
+   "project_name": "Marina Vista Off-plan",
+   "developer": "Marina Vista Properties",
+   "escrow_agent": "the bank",
+   "construction_progress_pct": 0.46,
+   "construction_cost": 400.0,
+   "currency": "SAR"
+  },
+  "collections": {
+   "units_total": 420,
+   "units_sold": 286,
+   "sold_pct": 0.680952380952381,
+   "sales_value_contracted": 610.0,
+   "collected_to_date": 244.0,
+   "collected_pct": 0.4,
+   "to_collect": 366.0,
+   "unsold_inventory_value": null,
+   "series": [
+    {
+     "month": "2026-04",
+     "collected": 80.0,
+     "due": null,
+     "overdue": null,
+     "units_sold_cum": 250
+    },
+    {
+     "month": "2026-05",
+     "collected": 84.0,
+     "due": null,
+     "overdue": null,
+     "units_sold_cum": 270
+    },
+    {
+     "month": "2026-06",
+     "collected": 80.0,
+     "due": null,
+     "overdue": null,
+     "units_sold_cum": 286
+    }
+   ],
+   "buyer_arrears": null,
+   "collection_rate_last": null
+  },
+  "cover": {
+   "escrow_balance": 77.8,
+   "receivable": 366.0,
+   "to_collect": 366.0,
+   "loan_outstanding": 250.0,
+   "cost_to_complete": 216.0,
+   "ratio": 0.9523605150214592,
+   "min": 1.2,
+   "ok": false,
+   "text": "Escrow balance SAR 77.8m and instalments still to collect SAR 366.0m cover the loan outstanding SAR 250.0m and the cost to complete SAR 216.0m 0.95x (minimum 1.20x)"
+  },
+  "waterfall": {
+   "collections": 244.0,
+   "paid_out": 216.2,
+   "tiers": [
+    {
+     "priority": 1,
+     "bucket": "Construction (certified progress)",
+     "rule": "certified progress x cost",
+     "allocated": 170.0,
+     "share": 0.786308973172988
+    },
+    {
+     "priority": 2,
+     "bucket": "Retention until handover",
+     "rule": "5% of collections",
+     "allocated": 12.2,
+     "share": 0.05642923219241443
+    },
+    {
+     "priority": 3,
+     "bucket": "Bank debt service",
+     "rule": "scheduled instalments",
+     "allocated": 24.0,
+     "share": 0.11100832562442184
+    },
+    {
+     "priority": 4,
+     "bucket": "Developer surplus",
+     "rule": "only when cover >= 1.20x",
+     "allocated": 10.0,
+     "share": 0.04625346901017577
+    }
+   ],
+   "unallocated": 77.8
+  },
+  "releases": {
+   "rows": [
+    {
+     "release_id": "2026-04",
+     "date": "2026-04",
+     "purpose": "Monthly releases",
+     "amount": 68.0,
+     "construction": 60.0,
+     "debt_service": 8.0,
+     "developer": 0.0,
+     "collections": 80.0,
+     "retention": 4.0,
+     "progress_pct": 0.3,
+     "milestone_pct": null,
+     "consultant_certified": null,
+     "compliant": true,
+     "breaches": []
+    },
+    {
+     "release_id": "2026-05",
+     "date": "2026-05",
+     "purpose": "Monthly releases",
+     "amount": 98.0,
+     "construction": 90.0,
+     "debt_service": 8.0,
+     "developer": 0.0,
+     "collections": 84.0,
+     "retention": 4.2,
+     "progress_pct": 0.36,
+     "milestone_pct": null,
+     "consultant_certified": null,
+     "compliant": false,
+     "breaches": [
+      "construction released SAR 150.0m to date against certified progress 36% x cost SAR 400.0m = SAR 144.0m"
+     ]
+    },
+    {
+     "release_id": "2026-06",
+     "date": "2026-06",
+     "purpose": "Monthly releases",
+     "amount": 38.0,
+     "construction": 20.0,
+     "debt_service": 8.0,
+     "developer": 10.0,
+     "collections": 80.0,
+     "retention": 4.0,
+     "progress_pct": 0.46,
+     "milestone_pct": null,
+     "consultant_certified": null,
+     "compliant": false,
+     "breaches": [
+      "developer surplus SAR 10.0m released at cover 0.95x (minimum 1.20x)"
+     ]
+    }
+   ],
+   "released": 204.0,
+   "breaches": 2,
+   "rules": [
+    "Releases against the consultant's certified progress only",
+    "Construction releases within certified progress x construction cost (SAR 400.0m)",
+    "Retention of 5% of each collection until handover",
+    "Developer surplus only while the cover ratio is at least 1.20x"
+   ]
+  }
+ },
+ "syndication": {
+  "proposal_id": "TST-SYN",
+  "product": "syndicated",
+  "has_data": true,
+  "answer": "Mandated lead arranger in a SAR 4,500.0m facility: we commit SAR 1,125.0m (25%) and hold SAR 562.5m (12.5%) after the sell-down; no blocking minority at a 67% majority.",
+  "facility": {
+   "name": "Najd Petrochem term facility",
+   "borrower": "Najd Petrochem",
+   "currency": "SAR",
+   "facility_total": 4500.0,
+   "our_commitment": 1125.0,
+   "final_hold": 562.5,
+   "our_share": 0.25,
+   "final_share": 0.125,
+   "lenders": 9,
+   "agent": "Falcon Bay Bank",
+   "mla_banks": "Falcon Bay Bank; Red Sea Capital Bank",
+   "pari_passu": true,
+   "tenor_years": 7,
+   "margin_bps": 175,
+   "participation_fee_bps": 60,
+   "sell_down_by": "2027-05-15",
+   "security": null
+  },
+  "role": {
+   "key": "lead",
+   "label": "Mandated lead arranger",
+   "documents": "full",
+   "fees": "arrangement fee and skim on the sold share",
+   "information": "direct, as arranger"
+  },
+  "sell_down": [
+   {
+    "step": 0,
+    "date": "2026-11-15",
+    "hold": 1125.0,
+    "buyer_type": "At signing",
+    "share_of_facility": 0.25,
+    "analytics": null
+   },
+   {
+    "step": 1,
+    "date": "2027-05-15",
+    "hold": 562.5,
+    "buyer_type": "After selling down SAR 562.5m",
+    "share_of_facility": 0.125,
+    "analytics": null
+   }
+  ],
+  "analytics": null,
+  "lenders": {
+   "majority_pct": 0.6667000000000001,
+   "our_vote": 0.125,
+   "blocking_minority": false,
+   "info_from_agent": "Information memorandum and Q2 compliance certificate received",
+   "agent_info_date": null,
+   "agent_info_age_days": null
+  },
+  "covenants_text": "Net debt / EBITDA <= 3.5x; DSCR >= 1.3x",
+  "covenants": [],
+  "flags": []
+ },
+ "sme_lane": {
+  "applications": [
+   {
+    "application_id": "TST-SME1",
+    "applicant": "Qamar Print House",
+    "sector": "Wholesale Trade",
+    "amount_sar_mn": 1.5,
+    "decision": "Approve",
+    "lane": "fast_track",
+    "answer": "Approve: Qamar Print House, SAR 1.50 million over 3 years; SME Scorecard score 686, grade G1 (PD 0.85%); 6 of 6 programme rules met; authority SME Credit Manager.",
+    "grade": "G1",
+    "score": 686.0,
+    "doa_level": "SME Credit Manager",
+    "exceptions": 0
+   },
+   {
+    "application_id": "TST-SME2",
+    "applicant": "Dune Ridge Logistics",
+    "sector": "Transport and Logistics",
+    "amount_sar_mn": 2.8,
+    "decision": "Refer to full flow",
+    "lane": "full",
+    "answer": "Refer to full flow: Dune Ridge Logistics, SAR 2.80 million over 4 years; SME Scorecard score 551, grade G7 (PD 5.00%); 5 of 6 programme rules met; authority Head of SME Credit.",
+    "grade": "G7",
+    "score": 551.0,
+    "doa_level": "Head of SME Credit",
+    "exceptions": 1
+   },
+   {
+    "application_id": "TST-SME3",
+    "applicant": "Saffron Leaf Kitchens",
+    "sector": "Hospitality",
+    "amount_sar_mn": 4.2,
+    "decision": "Decline",
+    "lane": "fast_track",
+    "answer": "Decline: Saffron Leaf Kitchens, SAR 4.20 million over 5 years; SME Scorecard score 415, grade G8 (PD 11.98%); 4 of 11 programme rules met; authority Head of SME Credit.",
+    "grade": "G8",
+    "score": 414.9,
+    "doa_level": "Head of SME Credit",
+    "exceptions": 7
+   }
+  ],
+  "counts": {
+   "total": 3,
+   "by_decision": {
+    "Approve": 1,
+    "Approve with conditions": 0,
+    "Refer to full flow": 1,
+    "Decline": 1
+   },
+   "in_lane": 2,
+   "to_full_flow": 1,
+   "ready_to_approve": 1
+  }
+ },
+ "sme_count": {
+  "card": "SME fast track",
+  "count": 3,
+  "total": 3,
+  "by_decision": {
+   "Approve": 1,
+   "Approve with conditions": 0,
+   "Refer to full flow": 1,
+   "Decline": 1
+  },
+  "in_lane": 2,
+  "to_full_flow": 1,
+  "ready_to_approve": 1,
+  "sub": "1 ready to approve \u00b7 1 to the full flow \u00b7 1 declined"
+ },
+ "sme_one": {
+  "application_id": "TST-SME2",
+  "applicant": "Dune Ridge Logistics",
+  "proposal_id": "TST-SME2",
+  "sector": "Transport and Logistics",
+  "region": null,
+  "amount_sar_mn": 2.8,
+  "tenor_years": 4.0,
+  "product": "Term loan",
+  "existing_exposure_sar_mn": 0.0,
+  "received_date": "2026-10-14",
+  "rm": null,
+  "programme": "SME equipment",
+  "years_in_business": 4,
+  "annual_sales_mn": 22.0,
+  "recorded": {
+   "decision": null,
+   "doa_level": null,
+   "decided_date": null
+  },
+  "scorecard": {
+   "scorecard": {
+    "id": "SME-ANN",
+    "name": "SME Scorecard",
+    "version": "1.4"
+   },
+   "score": 551.0,
+   "grade": "G7",
+   "pd": 0.05,
+   "lines": [],
+   "recorded": true
+  },
+  "rules": [
+   {
+    "id": "amount",
+    "rule": "Amount within the programme",
+    "value": 2.8,
+    "value_text": "SAR 2.80 million",
+    "threshold": "\u2264 SAR 10 million",
+    "pass": true,
+    "on_fail": "exception"
+   },
+   {
+    "id": "tenor",
+    "rule": "Tenor within the programme",
+    "value": 4.0,
+    "value_text": "4 years",
+    "threshold": "\u2264 5 years",
+    "pass": true,
+    "on_fail": "exception"
+   },
+   {
+    "id": "grade_floor",
+    "rule": "Scorecard grade above the decline cut-off",
+    "value": "G7",
+    "value_text": "G7",
+    "threshold": "G1 to G7",
+    "pass": true,
+    "on_fail": "hard"
+   },
+   {
+    "id": "grade",
+    "rule": "Scorecard grade within the lane",
+    "value": "G7",
+    "value_text": "G7",
+    "threshold": "G1 to G6",
+    "pass": false,
+    "on_fail": "exception"
+   },
+   {
+    "id": "sector",
+    "rule": "Sector in the programme",
+    "value": "Transport and Logistics",
+    "value_text": "Transport and Logistics",
+    "threshold": "not Metals and Mining",
+    "pass": true,
+    "on_fail": "exception"
+   },
+   {
+    "id": "policy_1",
+    "rule": "Years in business at least 3",
+    "value": 4,
+    "value_text": "4",
+    "threshold": ">= 3",
+    "pass": true,
+    "on_fail": "exception"
+   }
+  ],
+  "doa": {
+   "level": "Head of SME Credit",
+   "in_lane": true,
+   "exposure_sar_mn": 2.8,
+   "reason": "Exposure SAR 2.80 million up to SAR 5 million; one level up for grade G7",
+   "levels": [
+    {
+     "level": "SME Credit Officer",
+     "max_sar_mn": 1.0
+    },
+    {
+     "level": "SME Credit Manager",
+     "max_sar_mn": 5.0
+    },
+    {
+     "level": "Head of SME Credit",
+     "max_sar_mn": 10.0
+    }
+   ]
+  },
+  "decision": "Refer to full flow",
+  "lane": "full",
+  "conditions": [],
+  "exceptions": [
+   "Scorecard grade within the lane: G7 against G1 to G6"
+  ],
+  "route": {
+   "to": "full_flow",
+   "reasons": [
+    "Scorecard grade within the lane: G7 against G1 to G6"
+   ],
+   "proposal_id": "TST-SME2"
+  },
+  "paper": {
+   "headline": "Refer to full flow: Dune Ridge Logistics, SAR 2.80 million over 4 years; SME Scorecard score 551, grade G7 (PD 5.00%); 5 of 6 programme rules met; authority Head of SME Credit.",
+   "lines": [
+    "Applicant: Dune Ridge Logistics (Transport and Logistics); application TST-SME2 (SME equipment) received 2026-10-14; 4 years in business; annual sales SAR 22.0 million.",
+    "Request: Term loan SAR 2.80 million, tenor 4 years; existing exposure SAR 0.00 million; total SAR 2.80 million.",
+    "Scorecard: 551 points, grade G7, grade PD 5.00%. As recorded with the application (SME-ANN v1.4).",
+    "Programme rules: 5 of 6 met; not met: Scorecard grade within the lane (G7 against G1 to G6).",
+    "Authority: Head of SME Credit (Exposure SAR 2.80 million up to SAR 5 million; one level up for grade G7).",
+    "Exceptions, routed to the full Deal Desk flow: Scorecard grade within the lane: G7 against G1 to G6."
+   ]
+  },
+  "answer": "Refer to full flow: Dune Ridge Logistics, SAR 2.80 million over 4 years; SME Scorecard score 551, grade G7 (PD 5.00%); 5 of 6 programme rules met; authority Head of SME Credit."
+ }
+}

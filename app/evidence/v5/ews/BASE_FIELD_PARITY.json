@@ -1,0 +1,718 @@
+{
+ "document": "BASE_FIELD_PARITY",
+ "written_utc": "2026-10-12T01:40:04.864915+00:00",
+ "method": "every column shared between the new EWS exposure table and the frozen source exposure table, compared value for value on the canonical key x period with IS DISTINCT FROM so that NULL == NULL and NULL != value; plus parquet type equality, null counts and per-period money totals",
+ "units": "unconverted frozen units: SAR million for *_sar_mn, percent for *_pct, days for dpd_days",
+ "domains": {
+  "corporate": {
+   "domain": "corporate",
+   "shared_base_fields": 35,
+   "fields": [
+    {
+     "column": "borrower_id",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "borrower_name",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "cure_flag",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "default_flag",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "domain_id",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "dpd_days",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "drawn_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "ead_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "ecl_12m_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "ecl_coverage_pct",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "ecl_lifetime_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "ecl_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "facility_class",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "facility_id",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "lgd_pct",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "limit_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "origination_quarter",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "past_due_flag",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "pd_lifetime",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "pd_pit_12m",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "product_type",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "quarters_in_stage",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "recovery_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "region",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "relationship_tier",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "reporting_currency",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "reporting_quarter",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "sector",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "sicr_flag",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "stage",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "sub_sector",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "tenant_id",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "undrawn_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "utilisation_pct",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "write_off_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    }
+   ],
+   "money_totals": [
+    {
+     "column": "ead_sar_mn",
+     "periods_not_reconciling": 0
+    },
+    {
+     "column": "ecl_sar_mn",
+     "periods_not_reconciling": 0
+    },
+    {
+     "column": "drawn_sar_mn",
+     "periods_not_reconciling": 0
+    },
+    {
+     "column": "limit_sar_mn",
+     "periods_not_reconciling": 0
+    }
+   ],
+   "owner_aggregates_not_copied_to_exposure": [
+    "total_ead_sar_mn",
+    "total_ecl_sar_mn",
+    "revenue_sar_mn",
+    "ebitda_sar_mn",
+    "total_debt_sar_mn"
+   ]
+  },
+  "retail": {
+   "domain": "retail",
+   "shared_base_fields": 37,
+   "fields": [
+    {
+     "column": "account_id",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "balance_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "behaviour_score",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "cure_flag",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "customer_id",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "customer_segment",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "default_flag",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "delinquency_bucket",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "delinquency_bucket_fine",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "domain_id",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "dpd_days",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "ead_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "ecl_12m_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "ecl_lifetime_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "ecl_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "employment_type",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "lgd_pct",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "limit_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "months_on_book",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "origination_channel",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "origination_month",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "pd_lifetime",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "pd_pit_12m",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "product",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "recovery_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "region",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "reporting_currency",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "reporting_month",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "score_band",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "secured_flag",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "sicr_flag",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "stage",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "sub_product",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "tenant_id",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "VARCHAR",
+     "type_frozen": "VARCHAR",
+     "type_identical": true
+    },
+    {
+     "column": "utilisation_pct",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    },
+    {
+     "column": "vintage_year",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "BIGINT",
+     "type_frozen": "BIGINT",
+     "type_identical": true
+    },
+    {
+     "column": "write_off_sar_mn",
+     "mismatches": 0,
+     "nulls_ews": 0,
+     "nulls_frozen": 0,
+     "type_ews": "DOUBLE",
+     "type_frozen": "DOUBLE",
+     "type_identical": true
+    }
+   ],
+   "money_totals": [
+    {
+     "column": "ead_sar_mn",
+     "periods_not_reconciling": 0
+    },
+    {
+     "column": "ecl_sar_mn",
+     "periods_not_reconciling": 0
+    },
+    {
+     "column": "balance_sar_mn",
+     "periods_not_reconciling": 0
+    },
+    {
+     "column": "limit_sar_mn",
+     "periods_not_reconciling": 0
+    }
+   ],
+   "owner_aggregates_not_copied_to_exposure": [
+    "total_ead_sar_mn",
+    "total_ecl_sar_mn",
+    "revenue_sar_mn",
+    "ebitda_sar_mn",
+    "total_debt_sar_mn"
+   ]
+  }
+ }
+}

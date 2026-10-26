@@ -1,0 +1,46 @@
+{
+  "version": "mmsg-monitoring-policy-1.0",
+  "note": "The bank's pre-defined monitoring limits per MMSG criterion. The MMSG asks for a list of metrics compared against pre-defined limits (MMG 2.11.1) and leaves the values to the bank; the values below are this bank's policy, not numbers taken from the MMSG. Gini, KS, calibration, PSI, CSI and override limits are the validation engine's own thresholds (backend/scorecard_v5/engine.py), so monitoring and validation never disagree.",
+  "references": {
+    "discrimination": "MMG 2.7.5 (accuracy ratio / Gini as the discriminatory-power metric); MMG 2.11.2 (track the change in discriminatory power against a maximum acceptable drop)",
+    "calibration": "MMG 2.11.1 (metrics compared against pre-defined limits); MMS 3.6.3 (monitoring metrics, limits and reporting per model)",
+    "stability": "MMS 3.6.3 (whether changes in the economic and business environment affect the model's assumptions and performance)",
+    "overrides": "MMS 3.5.3 (an approved, controlled override policy); MMG 2.10.1-2.10.2 (override limits; the validator measures the frequency of overrides and their notches)",
+    "migration": "MMG 2.11.1 (performance and stability metrics against pre-defined limits)",
+    "data_quality": "MMG 2.11.3 (i) and (vi) (development and validation data in the scope of a validation)",
+    "usage": "MMS 3.5.1-3.5.2 (conditions for using models defined, monitored and managed; expected usage and its control); MMS 3.6.2 (appropriate use confirmed before performance monitoring)",
+    "cycle": "MMS 3.7.1 (all models validated on a regular basis by model type; minimum frequencies in MMS Part II, Article 10); the cycle months below are this bank's policy and are to be checked against the MMS Article 10 table",
+    "findings": "MMS 3.7.10 (high-severity findings remedied promptly; adjustments and overrides must not become regular practice)",
+    "reporting": "MMS 3.6.4 (monitoring reports to the Model Oversight Committee at least every quarter); MMS 3.6.6 (each report carries an explicit conclusion on model performance)",
+    "decisions": "MMS 4.3.3 (after validation: leave the model unchanged, a temporary adjustment with a remediation plan, recalibrate, redevelop or acquire, or withdraw)",
+    "conclusion": "MMS 3.7.8 (a validation results in a fully articulated judgement on the suitability of the model)",
+    "tiering": "MMS 3.1.5 and 4.4.5 (models grouped by model risk into at least two tiers)"
+  },
+  "criteria": {
+    "discrimination": {"title": "Discrimination", "what": "Does the score still rank good and bad customers apart?"},
+    "calibration": {"title": "Calibration", "what": "Do the grade PDs match the defaults that happened?"},
+    "stability": {"title": "Stability", "what": "Has the scored population moved away from the one the scorecard was built on?"},
+    "overrides": {"title": "Overrides", "what": "How often do officers override the score, why, and how do the overridden cases perform?"},
+    "migration": {"title": "Grade migration and concentration", "what": "Are grades moving or bunching in a way the model did not expect?"},
+    "data_quality": {"title": "Data quality", "what": "Are the inputs complete and inside the ranges the model knows?"},
+    "usage": {"title": "Use against intended scope", "what": "Is the scorecard used only where it was built and approved to be used?"},
+    "cycle": {"title": "Validation cycle", "what": "Is the last full independent validation inside the cycle for the model's tier?"},
+    "findings": {"title": "Open findings", "what": "Are earlier validation findings being fixed by their due dates?"}
+  },
+  "limits": {
+    "gini_drop_rel": {"label": "Relative fall in Gini since development", "kind": "low", "green": 0.10, "amber": 0.20, "format": "pct", "criterion": "discrimination"},
+    "migration_2notch": {"label": "Share moving two or more grades in a year", "kind": "low", "green": 0.10, "amber": 0.20, "format": "pct", "criterion": "migration"},
+    "grade_max_share": {"label": "Largest single-grade share of the scored population", "kind": "low", "green": 0.25, "amber": 0.30, "format": "pct", "criterion": "migration"},
+    "grade_share_shift": {"label": "Largest grade-share change against development (points)", "kind": "low", "green": 0.05, "amber": 0.10, "format": "pct", "criterion": "migration"},
+    "missing_inputs": {"label": "Largest missing rate of a model input", "kind": "low", "green": 0.01, "amber": 0.05, "format": "pct", "criterion": "data_quality"},
+    "unseen_bins": {"label": "Rows with an input outside the development ranges", "kind": "low", "green": 0.02, "amber": 0.05, "format": "pct", "criterion": "data_quality"},
+    "missing_outcome": {"label": "Matured rows without a recorded outcome", "kind": "low", "green": 0.0, "amber": 0.01, "format": "pct", "criterion": "data_quality"},
+    "out_of_scope": {"label": "Scored population outside the approved scope", "kind": "low", "green": 0.02, "amber": 0.05, "format": "pct", "criterion": "usage"},
+    "cycle_used": {"label": "Months since the last full independent validation, share of the tier's cycle", "kind": "low", "green": 0.85, "amber": 1.0, "format": "pct", "criterion": "cycle"},
+    "findings_overdue": {"label": "Open findings past their due date", "kind": "low", "green": 0, "amber": 0, "format": "int", "criterion": "findings"}
+  },
+  "cycle_months": {"Tier 1": 24, "Tier 2": 36},
+  "finding_due_days": {"High": 90, "Medium": 180, "Low": 365},
+  "outcome_window": {"monthly": 4, "quarterly": 4},
+  "breaches": {"max": 10, "min": 5}
+}

@@ -1,0 +1,1607 @@
+{
+ "proposal_id": "R12-TWA",
+ "as_of": "2026Q2",
+ "facts": {
+  "proposal_id": "R12-TWA",
+  "obligor": {
+   "id": "XE-TWA-01",
+   "name": "Al Sahel Building Materials Trading LLC",
+   "existing": true
+  },
+  "as_of": "2026Q2",
+  "mode": "entity",
+  "structure": {
+   "group_id": "XG-TWA",
+   "group_name": "Al Sahel Building Materials Group",
+   "standalone": false,
+   "focal": {
+    "borrower_id": "XE-TWA-01",
+    "name": "Al Sahel Building Materials Trading LLC",
+    "in_book": false,
+    "role": "subject",
+    "ownership_pct": null,
+    "book_id": null,
+    "licence_no": "CR-2050-1177",
+    "incorporation_date": "2008-09-01",
+    "incorporation_place": "Dammam",
+    "legal_status": "LLC",
+    "activity": "Wholesale trading of steel, cement, timber and building materials",
+    "staff_count": 214
+   },
+   "parent": {
+    "borrower_id": "XE-TWA-00",
+    "name": "Al Sahel Holding Company",
+    "link": "parent",
+    "role": "parent",
+    "ownership_pct": null,
+    "ead": 0.0,
+    "rating": null,
+    "status": "performing",
+    "ews_band": "none",
+    "href": null,
+    "activity": "Holding of trading and industrial companies",
+    "country": "Saudi Arabia",
+    "book_id": null
+   },
+   "subsidiaries": [],
+   "sisters": [
+    {
+     "borrower_id": "XE-TWA-02",
+     "name": "Al Sahel Ready-Mix Concrete Factory",
+     "link": "sister",
+     "role": "sister",
+     "ownership_pct": null,
+     "ead": 41.0,
+     "rating": null,
+     "status": "in arrears",
+     "ews_band": "none",
+     "href": null,
+     "activity": "Manufacture of ready-mix concrete and blocks",
+     "country": "Saudi Arabia",
+     "book_id": null
+    },
+    {
+     "borrower_id": "XE-TWA-03",
+     "name": "Al Sahel Logistics Services",
+     "link": "sister",
+     "role": "sister",
+     "ownership_pct": null,
+     "ead": 0.0,
+     "rating": null,
+     "status": "classified",
+     "ews_band": "none",
+     "href": null,
+     "activity": "Road freight and warehousing",
+     "country": "Saudi Arabia",
+     "book_id": null
+    }
+   ],
+   "members": 5,
+   "member_ids": [
+    "XE-TWA-00",
+    "XE-TWA-01",
+    "XE-TWA-02",
+    "XE-TWA-03",
+    "XE-TWA-04"
+   ]
+  },
+  "shareholders": {
+   "rows": [
+    {
+     "name": "Al Sahel Holding Company",
+     "pct": 90.0,
+     "ubo": false,
+     "nationality": "Saudi Arabia",
+     "kind": "company",
+     "borrower_id": "XE-TWA-00",
+     "person_id": "XE-TWA-00",
+     "birth_year": null,
+     "since": "2008-09-01",
+     "nominee": false,
+     "indirect_pct": null,
+     "source": "b360_shareholder"
+    },
+    {
+     "name": "Fahad Nasser Al-Sahili",
+     "pct": 10.0,
+     "ubo": true,
+     "nationality": "Saudi",
+     "kind": "person",
+     "borrower_id": null,
+     "person_id": "XP-TWA-01",
+     "birth_year": 1961,
+     "since": "2008-09-01",
+     "nominee": false,
+     "indirect_pct": null,
+     "source": "b360_shareholder"
+    },
+    {
+     "name": "Saeed Nasser Al-Sahili",
+     "pct": null,
+     "indirect_pct": 22.5,
+     "ubo": true,
+     "nationality": "Saudi",
+     "kind": "person",
+     "borrower_id": null,
+     "person_id": "XP-TWA-02",
+     "via": "Al Sahel Holding Company",
+     "birth_year": 1966,
+     "source": "b360_shareholder"
+    },
+    {
+     "name": "Mona Fahad Al-Sahili",
+     "pct": null,
+     "indirect_pct": 18.0,
+     "ubo": false,
+     "nationality": "Saudi",
+     "kind": "person",
+     "borrower_id": null,
+     "person_id": "XP-TWA-03",
+     "via": "Al Sahel Holding Company",
+     "birth_year": 1990,
+     "source": "b360_shareholder"
+    }
+   ],
+   "identified_pct": 100.0,
+   "ubo_count": 2,
+   "ubo_identified": true,
+   "provided_by": "b360_shareholder"
+  },
+  "board": {
+   "rows": [
+    {
+     "person_id": "XP-TWA-01",
+     "name": "Fahad Nasser Al-Sahili",
+     "roles": [
+      "Chairman"
+     ],
+     "key_person": true,
+     "nationality": "Saudi",
+     "appointed": "2008-09-01",
+     "other_borrowers": [],
+     "other_directorships": "chairman of Al Sahel Holding Company; director of Al Sahel Ready-Mix Concrete Factory; director of Al Sahel Logistics Services; owner_manager of Sahel Steel Trading Est.",
+     "linked_to_stressed": []
+    },
+    {
+     "person_id": "XP-TWA-05",
+     "name": "Rami Adel Haddara",
+     "roles": [
+      "GM"
+     ],
+     "key_person": true,
+     "nationality": "Jordanian",
+     "appointed": "2017-01-15",
+     "other_borrowers": [],
+     "other_directorships": null,
+     "linked_to_stressed": []
+    },
+    {
+     "person_id": "XP-TWA-06",
+     "name": "Yousef Karim Al-Nairi",
+     "roles": [
+      "CFO"
+     ],
+     "key_person": false,
+     "nationality": "Egyptian",
+     "appointed": "2021-06-01",
+     "other_borrowers": [],
+     "other_directorships": null,
+     "linked_to_stressed": []
+    }
+   ],
+   "people": 3,
+   "linked_people": 0,
+   "other_borrowers": []
+  },
+  "insiders": {
+   "rows": [
+    {
+     "party": "Omar Khalil Kettani",
+     "borrower_id": "XE-TWA-04",
+     "entity": "Sahel Steel Trading Est.",
+     "link": "staff relative",
+     "role": "Senior Relationship Manager, Trade Finance",
+     "relationship": "spouse of the 20% shareholder Huda Sami Kettani",
+     "pct": 20.0,
+     "disclosed": false,
+     "detected_by": "Staff register match on the guarantor's shareholder (surname and family book)",
+     "detail": "The guarantor of the renewal is 20% owned by the spouse of a bank staff member; not disclosed in the proposal."
+    }
+   ],
+   "count": 1,
+   "provided": true
+  },
+  "ownership_changes": {
+   "rows": [
+    {
+     "date": "2025-09-14",
+     "entity": "Al Sahel Holding Company",
+     "holder": "Saeed Nasser Al-Sahili",
+     "from": "45.0%",
+     "to": "25.0%",
+     "pct": 25.0,
+     "kind": "transfer",
+     "disclosed": false,
+     "detail": "20% transferred to Mona Fahad Al-Sahili; not disclosed in the proposal, seen in the amended MoA dated 2025-09-14.",
+     "source": "b360_ownership_change"
+    },
+    {
+     "date": "2025-09-14",
+     "entity": "Al Sahel Holding Company",
+     "holder": "Mona Fahad Al-Sahili",
+     "from": "0.0%",
+     "to": "20.0%",
+     "pct": 20.0,
+     "kind": "entry",
+     "disclosed": false,
+     "detail": "New shareholder of the holding company.",
+     "source": "b360_ownership_change"
+    }
+   ],
+   "count": 2,
+   "lookback": "2 years"
+  },
+  "shared_collateral": {
+   "assets": [],
+   "count": 0,
+   "over_pledged": 0,
+   "co_claimant_ids": []
+  },
+  "guarantees": {
+   "rows": [
+    {
+     "direction": "received",
+     "guarantor_id": "XP-TWA-01",
+     "guarantor": "Fahad Nasser Al-Sahili",
+     "guaranteed_id": "XE-TWA-01",
+     "facility_id": "ALL",
+     "amount": 180.0,
+     "basis": "personal guarantee",
+     "perfection": "perfected",
+     "net_worth_mn": 240.0,
+     "net_worth_statement_date": "2025-03-31",
+     "pari_passu": false
+    },
+    {
+     "direction": "received",
+     "guarantor_id": "XE-TWA-04",
+     "guarantor": "Sahel Steel Trading Est.",
+     "guaranteed_id": "XE-TWA-01",
+     "facility_id": "ALL",
+     "amount": 180.0,
+     "basis": "corporate guarantee",
+     "perfection": "pending",
+     "net_worth_mn": 58.0,
+     "net_worth_statement_date": "2025-12-31",
+     "pari_passu": false
+    },
+    {
+     "direction": "received",
+     "guarantor_id": "XE-TWA-00",
+     "guarantor": "Al Sahel Holding Company",
+     "guaranteed_id": "XE-TWA-01",
+     "facility_id": "ALL",
+     "amount": 180.0,
+     "basis": "corporate guarantee",
+     "perfection": "not_perfected",
+     "net_worth_mn": 312.0,
+     "net_worth_statement_date": "2025-12-31",
+     "pari_passu": false
+    }
+   ],
+   "unperfected": [
+    {
+     "guarantor_id": "Sahel Steel Trading Est.",
+     "amount": 180.0,
+     "kind": "corporate_guarantee",
+     "deadline": "2026-12-31"
+    },
+    {
+     "guarantor_id": "Al Sahel Holding Company",
+     "amount": 180.0,
+     "kind": "corporate_guarantee",
+     "deadline": "2026-12-31"
+    },
+    {
+     "guarantor_id": "Al Sahel Building Materials Trading LLC",
+     "amount": 120.0,
+     "kind": "assignment_receivables",
+     "deadline": "2026-12-31"
+    }
+   ]
+  },
+  "connected_parties": {
+   "rows": [
+    {
+     "borrower_id": "XE-TWA-03",
+     "name": "Al Sahel Logistics Services",
+     "links": [
+      "group"
+     ],
+     "ead": 0.0,
+     "rating": null,
+     "status": "classified",
+     "classified": true,
+     "in_arrears": true,
+     "in_litigation": true,
+     "watchlist": false,
+     "ews_band": "none",
+     "max_dpd_4q": 210,
+     "worst_stage": null,
+     "reasons": [
+      "BUREAU-COURT-CASE"
+     ],
+     "classified_basis": [
+      "classified doubtful"
+     ],
+     "note": "Classified doubtful at Peninsula Trade Bank since 2025-11; two court cases filed by lenders (SAR 41.0m). Licence expired 2026-09-30.",
+     "href": null
+    },
+    {
+     "borrower_id": "XE-TWA-02",
+     "name": "Al Sahel Ready-Mix Concrete Factory",
+     "links": [
+      "group"
+     ],
+     "ead": 41.0,
+     "rating": null,
+     "status": "in arrears",
+     "classified": false,
+     "in_arrears": true,
+     "in_litigation": false,
+     "watchlist": false,
+     "ews_band": "none",
+     "max_dpd_4q": 35,
+     "worst_stage": null,
+     "reasons": [],
+     "classified_basis": [],
+     "note": null,
+     "href": null
+    },
+    {
+     "borrower_id": "XE-TWA-00",
+     "name": "Al Sahel Holding Company",
+     "links": [
+      "group"
+     ],
+     "ead": 0.0,
+     "rating": null,
+     "status": "performing",
+     "classified": false,
+     "in_arrears": false,
+     "in_litigation": false,
+     "watchlist": false,
+     "ews_band": "none",
+     "max_dpd_4q": 0,
+     "worst_stage": null,
+     "reasons": [],
+     "classified_basis": [],
+     "note": null,
+     "href": null
+    },
+    {
+     "borrower_id": "XE-TWA-04",
+     "name": "Sahel Steel Trading Est.",
+     "links": [
+      "group"
+     ],
+     "ead": 0.0,
+     "rating": null,
+     "status": "performing",
+     "classified": false,
+     "in_arrears": false,
+     "in_litigation": false,
+     "watchlist": false,
+     "ews_band": "none",
+     "max_dpd_4q": 0,
+     "worst_stage": null,
+     "reasons": [],
+     "classified_basis": [],
+     "note": null,
+     "href": null
+    }
+   ],
+   "count": 4,
+   "classified": 1,
+   "in_arrears": 2,
+   "in_litigation": 1,
+   "adverse": [
+    "XE-TWA-03",
+    "XE-TWA-02"
+   ],
+   "adverse_ead": 41.0
+  }
+ },
+ "cap_test": {
+  "proposal_id": "R12-TWA",
+  "group_id": "XG-TWA",
+  "group_name": "Al Sahel Building Materials Group",
+  "as_of": "2026Q2",
+  "before_ead": 66.0,
+  "deal_ead_y1": 90.52499999999999,
+  "after_ead": 156.52499999999998,
+  "headroom_before": 184.0,
+  "headroom_after": 93.47500000000002,
+  "binding_limit": 250.0,
+  "binding": "approved cap",
+  "connected_group_limit": {
+   "limit_sar_mn": 500.0,
+   "basis": "CP-1.2: SAR 500m per connected group (ownership or control, relationship domain rel-saudi-v1)"
+  },
+  "approved_cap": {
+   "limit_sar_mn": 250.0,
+   "approved_by": "Credit Committee level 2",
+   "approved_on": "2025-08-20",
+   "committee_ref": "CC-2025-118"
+  },
+  "status": "within",
+  "utilisation_pct": 62.60999999999999,
+  "limits_total_sar_mn": 236.0,
+  "limits_funded_sar_mn": 155.0,
+  "members": [
+   {
+    "borrower_id": "XE-TWA-01",
+    "name": "Al Sahel Building Materials Trading LLC",
+    "ead": 178.0,
+    "limit": 180.0,
+    "funded_limit": 120.0,
+    "non_funded_limit": 60.0,
+    "drawn": 178.0,
+    "proposed_limit": 180.0,
+    "funded_proposed": 110.0,
+    "is_self": true
+   },
+   {
+    "borrower_id": "XE-TWA-02",
+    "name": "Al Sahel Ready-Mix Concrete Factory",
+    "ead": 41.0,
+    "limit": 56.0,
+    "funded_limit": 35.0,
+    "non_funded_limit": 21.0,
+    "drawn": 41.0,
+    "proposed_limit": 56.0,
+    "funded_proposed": 35.0,
+    "is_self": false
+   },
+   {
+    "borrower_id": "XE-TWA-03",
+    "name": "Al Sahel Logistics Services",
+    "ead": 0.0,
+    "limit": 0.0,
+    "funded_limit": 0.0,
+    "non_funded_limit": 0.0,
+    "drawn": 0.0,
+    "proposed_limit": 0.0,
+    "funded_proposed": 0.0,
+    "is_self": false
+   }
+  ],
+  "constraint_name": "group_connected",
+  "constraint_label": "Connected group (approved cap)",
+  "increase_ask": null,
+  "cap_asked_sar_mn": 250.0,
+  "limits_proposed_sar_mn": 236.0,
+  "basis": "limits (dd_group_exposure)"
+ },
+ "conduct": {
+  "proposal_id": "R12-TWA",
+  "obligor_id": "XE-TWA-01",
+  "obligor": "Al Sahel Building Materials Trading LLC",
+  "as_of": "2026Q2",
+  "existing": true,
+  "relationship": {
+   "since": "2009-02-15",
+   "accounts": 1,
+   "active": 1,
+   "years": 17
+  },
+  "utilisation": {
+   "limits_sar_mn": 180.0,
+   "drawn_sar_mn": 140.51,
+   "utilisation_pct": 78.06111111111112,
+   "facilities": [
+    {
+     "facility_id": "ALL",
+     "product": "all limits",
+     "class": "total",
+     "limit": 180.0,
+     "drawn": 140.51,
+     "utilisation_pct": 78.1,
+     "avg_4q_pct": 85.27499999999999,
+     "max_4q_pct": 94.8,
+     "dpd_now": 0,
+     "stage": null
+    }
+   ],
+   "over_90_4q": [],
+   "excess_days_12m": 0,
+   "peak_od_use_pct_12m": 94.8
+  },
+  "past_dues": {
+   "quarters": [
+    {
+     "quarter": "2024Q3",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 88.0
+    },
+    {
+     "quarter": "2024Q4",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 93.6
+    },
+    {
+     "quarter": "2025Q1",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 97.3
+    },
+    {
+     "quarter": "2025Q2",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 97.7
+    },
+    {
+     "quarter": "2025Q3",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 94.8
+    },
+    {
+     "quarter": "2025Q4",
+     "max_dpd": 0,
+     "past_due_facilities": 0,
+     "utilisation_pct": 89.4
+    }
+   ],
+   "quarters_past_due_8q": 2,
+   "max_dpd_8q": 12,
+   "max_dpd_4q": 12,
+   "last_past_due": "2026Q2"
+  },
+  "turnover": {
+   "credit_turnover_12m_sar_mn": 463.02,
+   "credit_turnover_prev_12m_sar_mn": 441.35,
+   "growth_pct": 4.9099354253993255,
+   "to_limits_x": 2.5723333333333334,
+   "avg_balance_12m_sar_mn": 8.116666666666667,
+   "routing_required_x": 2.0,
+   "routing_actual_x": 0.66,
+   "routing_compliant": false,
+   "routing_achieved_pct": 33.0,
+   "turnover_to_revenue": null,
+   "routed_business_12m_sar_mn": 142.6,
+   "routing_unit": "x",
+   "routing_text": "Route business of at least 2x total limits (SAR 360.0m) per year through the bank.",
+   "routing_measured_at": "2026-08-31",
+   "months": [
+    {
+     "month": "2024-07",
+     "credit_turnover_sar_mn": 36.0,
+     "avg_balance_sar_mn": 13.0,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-08",
+     "credit_turnover_sar_mn": 37.59,
+     "avg_balance_sar_mn": 12.88,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-09",
+     "credit_turnover_sar_mn": 38.8,
+     "avg_balance_sar_mn": 12.51,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-10",
+     "credit_turnover_sar_mn": 39.35,
+     "avg_balance_sar_mn": 11.93,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-11",
+     "credit_turnover_sar_mn": 39.11,
+     "avg_balance_sar_mn": 11.16,
+     "cheques_returned_count": 0
+    },
+    {
+     "month": "2024-12",
+     "credit_turnover_sar_mn": 38.19,
+     "avg_balance_sar_mn": 10.26,
+     "cheques_returned_count": 0
+    }
+   ]
+  },
+  "returned_cheques": {
+   "count_12m": 7,
+   "amount_12m_sar_mn": 4.6000000000000005,
+   "months_with_returns": 5,
+   "last_return": "2026-06",
+   "reasons": [
+    "insufficient funds"
+   ],
+   "rate_pct": null,
+   "regularised": 5,
+   "dates": [
+    {
+     "month": "2026-01-10",
+     "count": 1,
+     "amount": 0.55,
+     "reason": "insufficient funds"
+    },
+    {
+     "month": "2026-01-17",
+     "count": 1,
+     "amount": 0.55,
+     "reason": "insufficient funds"
+    },
+    {
+     "month": "2026-02-10",
+     "count": 1,
+     "amount": 0.4,
+     "reason": "insufficient funds"
+    },
+    {
+     "month": "2026-03-10",
+     "count": 1,
+     "amount": 0.8,
+     "reason": "insufficient funds"
+    },
+    {
+     "month": "2026-03-17",
+     "count": 1,
+     "amount": 0.8,
+     "reason": "insufficient funds"
+    },
+    {
+     "month": "2026-05-10",
+     "count": 1,
+     "amount": 0.9,
+     "reason": "insufficient funds"
+    }
+   ]
+  },
+  "bureau": {
+   "quarters": [],
+   "trend": "stable",
+   "exposure_slope_per_q": null,
+   "max_external_dpd_4q": 0,
+   "enquiries_4q": null,
+   "entity_reports": [
+    {
+     "entity": "Al Sahel Holding Company",
+     "role": "company",
+     "outstanding_sar_mn": 18.0,
+     "overdue_sar_mn": 0.0,
+     "returned_cheques": 0,
+     "score": 655,
+     "court_cases": 0,
+     "report_date": "2026-09-21",
+     "provided": true,
+     "not_provided_reason": "",
+     "worst_status": "current"
+    },
+    {
+     "entity": "Al Sahel Building Materials Trading LLC",
+     "role": "company",
+     "outstanding_sar_mn": 411.0,
+     "overdue_sar_mn": 0.0,
+     "returned_cheques": 7,
+     "score": 612,
+     "court_cases": 0,
+     "report_date": "2026-09-21",
+     "provided": true,
+     "not_provided_reason": "",
+     "worst_status": "current"
+    },
+    {
+     "entity": "Al Sahel Ready-Mix Concrete Factory",
+     "role": "company",
+     "outstanding_sar_mn": 95.0,
+     "overdue_sar_mn": 1.2,
+     "returned_cheques": 0,
+     "score": 598,
+     "court_cases": 0,
+     "report_date": "2026-09-21",
+     "provided": true,
+     "not_provided_reason": "",
+     "worst_status": "30 days"
+    },
+    {
+     "entity": "Al Sahel Logistics Services",
+     "role": "company",
+     "outstanding_sar_mn": 58.0,
+     "overdue_sar_mn": 38.5,
+     "returned_cheques": 3,
+     "score": 421,
+     "court_cases": 2,
+     "report_date": "2026-09-21",
+     "provided": true,
+     "not_provided_reason": "",
+     "worst_status": "doubtful"
+    },
+    {
+     "entity": "Sahel Steel Trading Est.",
+     "role": "guarantor",
+     "outstanding_sar_mn": 24.0,
+     "overdue_sar_mn": 0.0,
+     "returned_cheques": 0,
+     "score": 664,
+     "court_cases": 0,
+     "report_date": "2026-09-21",
+     "provided": true,
+     "not_provided_reason": "",
+     "worst_status": "current"
+    },
+    {
+     "entity": "Fahad Nasser Al-Sahili",
+     "role": "ubo",
+     "outstanding_sar_mn": 12.0,
+     "overdue_sar_mn": 0.0,
+     "returned_cheques": 0,
+     "score": 701,
+     "court_cases": 0,
+     "report_date": "2026-09-21",
+     "provided": true,
+     "not_provided_reason": "",
+     "worst_status": "current"
+    }
+   ],
+   "not_provided": [
+    "Saeed Nasser Al-Sahili",
+    "Mona Fahad Al-Sahili"
+   ]
+  },
+  "headline": "Relationship since 2009-02-15 (1 account); credit turnover SAR 463.0m in the 12 months to 2026Q2 (PY SAR 441.4m), 2.57x the limits of SAR 180.0m; routing undertaking 2.0x the limits, 33% achieved; 7 returned cheques (SAR 4.60m) in 12 months; utilisation 78% of limits; past dues in 2 of the last 8 quarters (max 12 days)."
+ },
+ "governance": {
+  "proposal_id": "R12-TWA",
+  "as_of": "2026Q2",
+  "flags": [
+   {
+    "code": "CON-BUREAU-COURT",
+    "family": "conduct",
+    "review_point": "track_record",
+    "review_point_label": "Track record",
+    "severity": "high",
+    "notch": 1,
+    "title": "Court cases on the bureau",
+    "detail": "Court cases on the bureau: Al Sahel Logistics Services (2).",
+    "parties": "Al Sahel Logistics Services",
+    "condition": {
+     "kind": "condition precedent",
+     "owner": "Legal",
+     "due": "prior to limit loading",
+     "text": "Copies and legal assessment of the court cases reported on the bureau for Al Sahel Logistics Services.",
+     "condition_id": "C-R12-TWA-COND-CON-BUREAU-COURT",
+     "source_finding": "C-R12-TWA-CON-BUREAU-COURT"
+    },
+    "condition_only": false,
+    "finding_id": "C-R12-TWA-CON-BUREAU-COURT"
+   },
+   {
+    "code": "CON-RETURNED-CHEQUES",
+    "family": "conduct",
+    "review_point": "track_record",
+    "review_point_label": "Track record",
+    "severity": "high",
+    "notch": 1,
+    "title": "Returned cheques",
+    "detail": "7 cheques returned in the 12 months to 2026Q2 (SAR 4.60m), in 5 months: 2026-01-17 (1), 2026-02-10 (1), 2026-03-10 (1), 2026-03-17 (1), 2026-05-10 (1), 2026-06-10 (1); reasons: insufficient funds.",
+    "parties": "7 returned cheques",
+    "condition": {
+     "kind": "monitoring",
+     "owner": "RM",
+     "due": "monthly for 6 months",
+     "text": "Written explanation of the 7 returned cheques; no further returned cheques over the next 6 months, monitored monthly by the RM; undated security cheques for the facility amount.",
+     "condition_id": "C-R12-TWA-COND-CON-RETURNED-CHEQUES",
+     "source_finding": "C-R12-TWA-CON-RETURNED-CHEQUES"
+    },
+    "condition_only": false,
+    "finding_id": "C-R12-TWA-CON-RETURNED-CHEQUES"
+   },
+   {
+    "code": "GOV-CONN-CLASSIFIED",
+    "family": "governance",
+    "review_point": "group_and_connected",
+    "review_point_label": "Group and connected parties",
+    "severity": "high",
+    "notch": 1,
+    "title": "Connected party classified",
+    "detail": "1 connected party classified as at 2026Q2: Al Sahel Logistics Services (group; classified doubtful; no exposure with the bank; Classified doubtful at Peninsula Trade Bank since 2025-11; two court cases filed by lenders (SAR 41.0m). Licence expired 2026-09-30.).",
+    "parties": "Al Sahel Logistics Services",
+    "condition": {
+     "kind": "condition precedent",
+     "owner": "Credit",
+     "due": "prior to limit loading",
+     "text": "No new money to the group while Al Sahel Logistics Services remain classified; cross-default to the connected obligors; regularisation plan with dates submitted by the RM.",
+     "condition_id": "C-R12-TWA-COND-GOV-CONN-CLASSIFIED",
+     "source_finding": "C-R12-TWA-GOV-CONN-CLASSIFIED"
+    },
+    "condition_only": false,
+    "finding_id": "C-R12-TWA-GOV-CONN-CLASSIFIED"
+   },
+   {
+    "code": "GOV-INSIDER",
+    "family": "governance",
+    "review_point": "group_and_connected",
+    "review_point_label": "Group and connected parties",
+    "severity": "high",
+    "notch": 1,
+    "title": "Insider or staff link",
+    "detail": "1 insider or staff link to the obligor or its group: Omar Khalil Kettani (staff relative, Senior Relationship Manager, Trade Finance, 20.0%).",
+    "parties": "Omar Khalil Kettani (staff relative, Senior Relationship Manager, Trade Finance, 20.0%)",
+    "condition": {
+     "kind": "condition precedent",
+     "owner": "Credit",
+     "due": "prior to limit loading",
+     "text": "Related-party approval: the exposure to Omar Khalil Kettani (staff relative, Senior Relationship Manager, Trade Finance, 20.0%) is approved by the Board Credit Committee under the related-party policy, on terms no more favourable than for unrelated obligors (arm's length), and recorded in the related-party register.",
+     "condition_id": "C-R12-TWA-COND-GOV-INSIDER",
+     "source_finding": "C-R12-TWA-GOV-INSIDER"
+    },
+    "condition_only": false,
+    "finding_id": "C-R12-TWA-GOV-INSIDER"
+   },
+   {
+    "code": "CON-ROUTING",
+    "family": "conduct",
+    "review_point": "track_record",
+    "review_point_label": "Track record",
+    "severity": "medium",
+    "notch": 1,
+    "title": "Routing undertaking not met",
+    "detail": "Business routing undertaking not met: 2.0x the limits required, 0.66x achieved (33%) in the 12 months to 2026Q2.",
+    "parties": "2.0x the limits required, 0.66x achieved (33%)",
+    "condition": {
+     "kind": "undertaking",
+     "owner": "RM",
+     "due": "quarterly",
+     "text": "Routing undertaking: 2.0x the limits required, 0.66x achieved (33%); status reviewed quarterly by the RM and regional head; margin step-up of 25 bps while below 75% achieved.",
+     "condition_id": "C-R12-TWA-COND-CON-ROUTING",
+     "source_finding": "C-R12-TWA-CON-ROUTING"
+    },
+    "condition_only": false,
+    "finding_id": "C-R12-TWA-CON-ROUTING"
+   },
+   {
+    "code": "GOV-CONN-ARREARS",
+    "family": "governance",
+    "review_point": "group_and_connected",
+    "review_point_label": "Group and connected parties",
+    "severity": "medium",
+    "notch": 1,
+    "title": "Connected party in arrears",
+    "detail": "1 connected party in arrears in the 4 quarters to 2026Q2: Al Sahel Ready-Mix Concrete Factory (max 35 days past due).",
+    "parties": "Al Sahel Ready-Mix Concrete Factory",
+    "condition": {
+     "kind": "condition precedent",
+     "owner": "RM",
+     "due": "prior to limit loading",
+     "text": "Past dues of Al Sahel Ready-Mix Concrete Factory regularised and confirmed by Credit Administration prior to limit loading.",
+     "condition_id": "C-R12-TWA-COND-GOV-CONN-ARREARS",
+     "source_finding": "C-R12-TWA-GOV-CONN-ARREARS"
+    },
+    "condition_only": false,
+    "finding_id": "C-R12-TWA-GOV-CONN-ARREARS"
+   }
+  ],
+  "conditions": [
+   {
+    "kind": "condition precedent",
+    "owner": "Legal",
+    "due": "prior to limit loading",
+    "text": "Copies and legal assessment of the court cases reported on the bureau for Al Sahel Logistics Services.",
+    "condition_id": "C-R12-TWA-COND-CON-BUREAU-COURT",
+    "source_finding": "C-R12-TWA-CON-BUREAU-COURT"
+   },
+   {
+    "kind": "monitoring",
+    "owner": "RM",
+    "due": "monthly for 6 months",
+    "text": "Written explanation of the 7 returned cheques; no further returned cheques over the next 6 months, monitored monthly by the RM; undated security cheques for the facility amount.",
+    "condition_id": "C-R12-TWA-COND-CON-RETURNED-CHEQUES",
+    "source_finding": "C-R12-TWA-CON-RETURNED-CHEQUES"
+   },
+   {
+    "kind": "condition precedent",
+    "owner": "Credit",
+    "due": "prior to limit loading",
+    "text": "No new money to the group while Al Sahel Logistics Services remain classified; cross-default to the connected obligors; regularisation plan with dates submitted by the RM.",
+    "condition_id": "C-R12-TWA-COND-GOV-CONN-CLASSIFIED",
+    "source_finding": "C-R12-TWA-GOV-CONN-CLASSIFIED"
+   },
+   {
+    "kind": "condition precedent",
+    "owner": "Credit",
+    "due": "prior to limit loading",
+    "text": "Related-party approval: the exposure to Omar Khalil Kettani (staff relative, Senior Relationship Manager, Trade Finance, 20.0%) is approved by the Board Credit Committee under the related-party policy, on terms no more favourable than for unrelated obligors (arm's length), and recorded in the related-party register.",
+    "condition_id": "C-R12-TWA-COND-GOV-INSIDER",
+    "source_finding": "C-R12-TWA-GOV-INSIDER"
+   },
+   {
+    "kind": "undertaking",
+    "owner": "RM",
+    "due": "quarterly",
+    "text": "Routing undertaking: 2.0x the limits required, 0.66x achieved (33%); status reviewed quarterly by the RM and regional head; margin step-up of 25 bps while below 75% achieved.",
+    "condition_id": "C-R12-TWA-COND-CON-ROUTING",
+    "source_finding": "C-R12-TWA-CON-ROUTING"
+   },
+   {
+    "kind": "condition precedent",
+    "owner": "RM",
+    "due": "prior to limit loading",
+    "text": "Past dues of Al Sahel Ready-Mix Concrete Factory regularised and confirmed by Credit Administration prior to limit loading.",
+    "condition_id": "C-R12-TWA-COND-GOV-CONN-ARREARS",
+    "source_finding": "C-R12-TWA-GOV-CONN-ARREARS"
+   }
+  ],
+  "overlay": {
+   "base_rating": "BB",
+   "notches_raw": 8,
+   "notches": 3,
+   "capped": true,
+   "cap": 3,
+   "overlaid_rating": "B",
+   "reasons": [
+    {
+     "code": "CON-BUREAU-COURT",
+     "title": "Court cases on the bureau",
+     "notch": 1,
+     "severity": "high",
+     "finding_id": "C-R12-TWA-CON-BUREAU-COURT"
+    },
+    {
+     "code": "CON-RETURNED-CHEQUES",
+     "title": "Returned cheques",
+     "notch": 1,
+     "severity": "high",
+     "finding_id": "C-R12-TWA-CON-RETURNED-CHEQUES"
+    },
+    {
+     "code": "GOV-CONN-CLASSIFIED",
+     "title": "Connected party classified",
+     "notch": 1,
+     "severity": "high",
+     "finding_id": "C-R12-TWA-GOV-CONN-CLASSIFIED"
+    },
+    {
+     "code": "GOV-INSIDER",
+     "title": "Insider or staff link",
+     "notch": 1,
+     "severity": "high",
+     "finding_id": "C-R12-TWA-GOV-INSIDER"
+    },
+    {
+     "code": "CON-ROUTING",
+     "title": "Routing undertaking not met",
+     "notch": 1,
+     "severity": "medium",
+     "finding_id": "C-R12-TWA-CON-ROUTING"
+    },
+    {
+     "code": "GOV-CONN-ARREARS",
+     "title": "Connected party in arrears",
+     "notch": 1,
+     "severity": "medium",
+     "finding_id": "C-R12-TWA-GOV-CONN-ARREARS"
+    }
+   ],
+   "basis": "Credit policy: qualitative overlay of one notch per governance or conduct red flag, capped at three notches; overlays above the cap need the Chief Risk Officer.",
+   "text": "Rating overlay: 3 notches for 8 red flags (capped at 3): BB \u2192 B."
+  },
+  "counts": {
+   "governance": 6,
+   "conduct": 3,
+   "high": 4
+  },
+  "rules_version": "r12-c-v1"
+ },
+ "swot": {
+  "proposal_id": "R12-TWA",
+  "obligor": "Al Sahel Building Materials Trading LLC",
+  "as_of": "2026Q2",
+  "points": [
+   {
+    "quadrant": "strength",
+    "kind": "financial",
+    "theme": "debt service",
+    "text": "DSCR 1.56x after the deal (policy floor 1.20x).",
+    "link": {
+     "type": "metric",
+     "step": "analysis",
+     "id": "dscr"
+    },
+    "metric": 1.555934634537697,
+    "id": "R12-TWA-SW-S01"
+   },
+   {
+    "quadrant": "strength",
+    "kind": "qualitative",
+    "theme": "management",
+    "text": "Board and key persons identified (3), led by Fahad Nasser Al-Sahili (Chairman); no link to a stressed borrower.",
+    "link": {
+     "type": "fact",
+     "step": "review"
+    },
+    "metric": 3,
+    "id": "R12-TWA-SW-S02"
+   },
+   {
+    "quadrant": "strength",
+    "kind": "qualitative",
+    "theme": "ownership",
+    "text": "Ownership concentrated in Al Sahel Holding Company (90.0%), identified as the controlling shareholder.",
+    "link": {
+     "type": "fact",
+     "step": "review"
+    },
+    "metric": 90.0,
+    "id": "R12-TWA-SW-S03"
+   },
+   {
+    "quadrant": "strength",
+    "kind": "qualitative",
+    "theme": "group support",
+    "text": "Member of Al Sahel Building Materials Group (5 companies in the bank's book, parent Al Sahel Holding Company).",
+    "link": {
+     "type": "fact",
+     "step": "structure"
+    },
+    "metric": 5,
+    "id": "R12-TWA-SW-S04"
+   },
+   {
+    "quadrant": "weakness",
+    "kind": "financial",
+    "theme": "profitability",
+    "text": "EBITDA margin 6.8% in FY2025 (PY 7.6%), EBITDA SAR 48.0m.",
+    "link": {
+     "type": "metric",
+     "step": "analysis"
+    },
+    "metric": 0.06837606837606838,
+    "id": "R12-TWA-SW-W01"
+   },
+   {
+    "quadrant": "weakness",
+    "kind": "financial",
+    "theme": "leverage",
+    "text": "Debt / EBITDA 3.98x after the deal (policy limit 4.00x).",
+    "link": {
+     "type": "metric",
+     "step": "analysis",
+     "id": "debt_ebitda"
+    },
+    "metric": 3.9791666666666665,
+    "id": "R12-TWA-SW-W02"
+   }
+  ],
+  "quadrants": {
+   "strength": [
+    {
+     "quadrant": "strength",
+     "kind": "financial",
+     "theme": "debt service",
+     "text": "DSCR 1.56x after the deal (policy floor 1.20x).",
+     "link": {
+      "type": "metric",
+      "step": "analysis",
+      "id": "dscr"
+     },
+     "metric": 1.555934634537697,
+     "id": "R12-TWA-SW-S01"
+    },
+    {
+     "quadrant": "strength",
+     "kind": "qualitative",
+     "theme": "management",
+     "text": "Board and key persons identified (3), led by Fahad Nasser Al-Sahili (Chairman); no link to a stressed borrower.",
+     "link": {
+      "type": "fact",
+      "step": "review"
+     },
+     "metric": 3,
+     "id": "R12-TWA-SW-S02"
+    },
+    {
+     "quadrant": "strength",
+     "kind": "qualitative",
+     "theme": "ownership",
+     "text": "Ownership concentrated in Al Sahel Holding Company (90.0%), identified as the controlling shareholder.",
+     "link": {
+      "type": "fact",
+      "step": "review"
+     },
+     "metric": 90.0,
+     "id": "R12-TWA-SW-S03"
+    },
+    {
+     "quadrant": "strength",
+     "kind": "qualitative",
+     "theme": "group support",
+     "text": "Member of Al Sahel Building Materials Group (5 companies in the bank's book, parent Al Sahel Holding Company).",
+     "link": {
+      "type": "fact",
+      "step": "structure"
+     },
+     "metric": 5,
+     "id": "R12-TWA-SW-S04"
+    }
+   ],
+   "weakness": [
+    {
+     "quadrant": "weakness",
+     "kind": "financial",
+     "theme": "profitability",
+     "text": "EBITDA margin 6.8% in FY2025 (PY 7.6%), EBITDA SAR 48.0m.",
+     "link": {
+      "type": "metric",
+      "step": "analysis"
+     },
+     "metric": 0.06837606837606838,
+     "id": "R12-TWA-SW-W01"
+    },
+    {
+     "quadrant": "weakness",
+     "kind": "financial",
+     "theme": "leverage",
+     "text": "Debt / EBITDA 3.98x after the deal (policy limit 4.00x).",
+     "link": {
+      "type": "metric",
+      "step": "analysis",
+      "id": "debt_ebitda"
+     },
+     "metric": 3.9791666666666665,
+     "id": "R12-TWA-SW-W02"
+    },
+    {
+     "quadrant": "weakness",
+     "kind": "financial",
+     "theme": "returns",
+     "text": "Lifetime RAROC 14.5% on the ask against a hurdle of 15.0%.",
+     "link": {
+      "type": "metric",
+      "step": "analysis",
+      "id": "raroc"
+     },
+     "metric": 14.51798109226905,
+     "id": "R12-TWA-SW-W03"
+    },
+    {
+     "quadrant": "weakness",
+     "kind": "qualitative",
+     "theme": "governance",
+     "text": "1 insider or staff link to the obligor or its group: Omar Khalil Kettani (staff relative, Senior Relationship Manager, Trade Finance, 20.0%).",
+     "link": {
+      "type": "finding",
+      "id": "C-R12-TWA-GOV-INSIDER",
+      "step": "review"
+     },
+     "metric": "GOV-INSIDER",
+     "id": "R12-TWA-SW-W04"
+    },
+    {
+     "quadrant": "weakness",
+     "kind": "qualitative",
+     "theme": "collateral",
+     "text": "3 security items not perfected as at 2026Q2: corporate guarantee by Sahel Steel Trading Est. (SAR 180.0m, deadline 2026-12-31); corporate guarantee by Al Sahel Holding Company (SAR 180.0m, deadline 2026-12-31); assignment receivables by Al Sahel Building Materials Trading LLC (SAR 120.0m, deadline 2026-12-31).",
+     "link": {
+      "type": "finding",
+      "id": "C-R12-TWA-GOV-GUARANTEE-UNPERFECTED",
+      "step": "review"
+     },
+     "metric": "GOV-GUARANTEE-UNPERFECTED",
+     "id": "R12-TWA-SW-W05"
+    },
+    {
+     "quadrant": "weakness",
+     "kind": "qualitative",
+     "theme": "track record",
+     "text": "7 cheques returned in the 12 months to 2026Q2 (SAR 4.60m), in 5 months: 2026-01-17 (1), 2026-02-10 (1), 2026-03-10 (1), 2026-03-17 (1), 2026-05-10 (1), 2026-06-10 (1); reasons: insufficient funds.",
+     "link": {
+      "type": "finding",
+      "id": "C-R12-TWA-CON-RETURNED-CHEQUES",
+      "step": "review"
+     },
+     "metric": "CON-RETURNED-CHEQUES",
+     "id": "R12-TWA-SW-W06"
+    }
+   ],
+   "opportunity": [
+    {
+     "quadrant": "opportunity",
+     "kind": "financial",
+     "theme": "growth plan",
+     "text": "Revenue projected at SAR 838.0m by FY2028 (6.1% a year), as per business (Management projections as per business).",
+     "link": {
+      "type": "fact",
+      "step": "proposal"
+     },
+     "metric": 0.06080518913084121,
+     "id": "R12-TWA-SW-O01"
+    },
+    {
+     "quadrant": "opportunity",
+     "kind": "qualitative",
+     "theme": "deposits and cross-sell",
+     "text": "Average balances SAR 8.1m on credit turnover of SAR 463.0m in 12 months (1.8%): room for cash management and liability business.",
+     "link": {
+      "type": "metric",
+      "step": "structure"
+     },
+     "metric": 0.017529840323672125,
+     "id": "R12-TWA-SW-O02"
+    },
+    {
+     "quadrant": "opportunity",
+     "kind": "qualitative",
+     "theme": "group headroom",
+     "text": "SAR 93.5m of group headroom left under the approved cap of SAR 250.0m after the deal: room for the group's other companies.",
+     "link": {
+      "type": "metric",
+      "step": "structure"
+     },
+     "metric": 93.47500000000002,
+     "id": "R12-TWA-SW-O03"
+    }
+   ],
+   "threat": [
+    {
+     "quadrant": "threat",
+     "kind": "qualitative",
+     "theme": "ownership change",
+     "text": "Ownership changed in the last 2 years: 2025-09-14: Saeed Nasser Al-Sahili in Al Sahel Holding Company, 45.0% \u2192 25.0% (not disclosed); 2025-09-14: Mona Fahad Al-Sahili in Al Sahel Holding Company, 0.0% \u2192 20.0% (not disclosed).",
+     "link": {
+      "type": "finding",
+      "id": "C-R12-TWA-GOV-OWNERSHIP-CHANGE",
+      "step": "review"
+     },
+     "metric": "GOV-OWNERSHIP-CHANGE",
+     "id": "R12-TWA-SW-T01"
+    },
+    {
+     "quadrant": "threat",
+     "kind": "qualitative",
+     "theme": "connected parties",
+     "text": "1 connected party classified as at 2026Q2: Al Sahel Logistics Services (group; classified doubtful; no exposure with the bank; Classified doubtful at Peninsula Trade Bank since 2025-11; two court cases filed by lenders (SAR 41.0m). Licence expired 2026-09-30.).",
+     "link": {
+      "type": "finding",
+      "id": "C-R12-TWA-GOV-CONN-CLASSIFIED",
+      "step": "review"
+     },
+     "metric": "GOV-CONN-CLASSIFIED",
+     "id": "R12-TWA-SW-T02"
+    },
+    {
+     "quadrant": "threat",
+     "kind": "qualitative",
+     "theme": "connected parties",
+     "text": "1 connected party in litigation (SICR litigation indicator or court cases on the bureau): Al Sahel Logistics Services; combined exposure with the bank SAR 0.0m.",
+     "link": {
+      "type": "finding",
+      "id": "C-R12-TWA-GOV-CONN-LITIGATION",
+      "step": "review"
+     },
+     "metric": "GOV-CONN-LITIGATION",
+     "id": "R12-TWA-SW-T03"
+    },
+    {
+     "quadrant": "threat",
+     "kind": "qualitative",
+     "theme": "connected parties",
+     "text": "1 connected party in arrears in the 4 quarters to 2026Q2: Al Sahel Ready-Mix Concrete Factory (max 35 days past due).",
+     "link": {
+      "type": "finding",
+      "id": "C-R12-TWA-GOV-CONN-ARREARS",
+      "step": "review"
+     },
+     "metric": "GOV-CONN-ARREARS",
+     "id": "R12-TWA-SW-T04"
+    },
+    {
+     "quadrant": "threat",
+     "kind": "qualitative",
+     "theme": "bureau",
+     "text": "Court cases on the bureau: Al Sahel Logistics Services (2).",
+     "link": {
+      "type": "finding",
+      "id": "C-R12-TWA-CON-BUREAU-COURT",
+      "step": "review"
+     },
+     "metric": "CON-BUREAU-COURT",
+     "id": "R12-TWA-SW-T05"
+    },
+    {
+     "quadrant": "threat",
+     "kind": "qualitative",
+     "theme": "geopolitics and market",
+     "text": "Wholesale Trade is exposed to the oil price through government spending, and SAIBOR; the Stress Lab macro family runs these shocks on this deal.",
+     "link": {
+      "type": "metric",
+      "step": "stress"
+     },
+     "metric": "Wholesale Trade",
+     "id": "R12-TWA-SW-T06"
+    }
+   ]
+  },
+  "counts": {
+   "strength": 4,
+   "weakness": 7,
+   "opportunity": 3,
+   "threat": 6
+  },
+  "summary": "Al Sahel Building Materials Trading LLC: 4 strengths, 7 weaknesses, 3 opportunities, 6 threats. Main weakness: EBITDA margin 6.8% in FY2025 (PY 7.6%), EBITDA SAR 48.0m.",
+  "writer": "deterministic"
+ },
+ "mitigants": {
+  "proposal_id": "R12-TWA",
+  "structure_label": "ask",
+  "rows": [
+   {
+    "swot_id": "R12-TWA-SW-W01",
+    "quadrant": "weakness",
+    "theme": "profitability",
+    "weakness": "EBITDA margin 6.8% in FY2025 (PY 7.6%), EBITDA SAR 48.0m.",
+    "status": "open",
+    "structure": [],
+    "conditions": [],
+    "suggestion": "Add a margin test to the covenants and review the pricing ratchet.",
+    "link": {
+     "type": "metric",
+     "step": "analysis"
+    }
+   },
+   {
+    "swot_id": "R12-TWA-SW-W02",
+    "quadrant": "weakness",
+    "theme": "leverage",
+    "weakness": "Debt / EBITDA 3.98x after the deal (policy limit 4.00x).",
+    "status": "answered by the structure",
+    "structure": [
+     {
+      "lever": "covenants",
+      "text": "Covenant package standard: Debt / EBITDA and DSCR tested semi-annually."
+     }
+    ],
+    "conditions": [],
+    "suggestion": null,
+    "link": {
+     "type": "metric",
+     "step": "analysis",
+     "id": "debt_ebitda"
+    }
+   },
+   {
+    "swot_id": "R12-TWA-SW-W03",
+    "quadrant": "weakness",
+    "theme": "returns",
+    "weakness": "Lifetime RAROC 14.5% on the ask against a hurdle of 15.0%.",
+    "status": "open",
+    "structure": [],
+    "conditions": [],
+    "suggestion": "Raise the margin or fees, or add collateral to lower the LGD (Optimise).",
+    "link": {
+     "type": "metric",
+     "step": "analysis",
+     "id": "raroc"
+    }
+   },
+   {
+    "swot_id": "R12-TWA-SW-W04",
+    "quadrant": "weakness",
+    "theme": "governance",
+    "weakness": "1 insider or staff link to the obligor or its group: Omar Khalil Kettani (staff relative, Senior Relationship Manager, Trade Finance, 20.0%).",
+    "status": "answered by a condition",
+    "structure": [],
+    "conditions": [
+     {
+      "condition_id": "C-R12-TWA-COND-GOV-INSIDER",
+      "text": "Related-party approval: the exposure to Omar Khalil Kettani (staff relative, Senior Relationship Manager, Trade Finance, 20.0%) is approved by the Board Credit Committee under the related-party policy, on terms no more favourable than for unrelated obligors (arm's length), and recorded in the related-party register.",
+      "kind": "condition precedent",
+      "due": "prior to limit loading"
+     }
+    ],
+    "suggestion": null,
+    "link": {
+     "type": "finding",
+     "id": "C-R12-TWA-GOV-INSIDER",
+     "step": "review"
+    }
+   },
+   {
+    "swot_id": "R12-TWA-SW-W05",
+    "quadrant": "weakness",
+    "theme": "collateral",
+    "weakness": "3 security items not perfected as at 2026Q2: corporate guarantee by Sahel Steel Trading Est. (SAR 180.0m, deadline 2026-12-31); corporate guarantee by Al Sahel Holding Company (SAR 180.0m, deadline 2026-12-31); assignment receivables by Al Sahel Building Materials Trading LLC (SAR 120.0m, deadline 2026-12-31).",
+    "status": "answered by a condition",
+    "structure": [],
+    "conditions": [
+     {
+      "condition_id": "C-R12-TWA-COND-GOV-GUARANTEE-UNPERFECTED",
+      "text": "Perfection of the security not yet perfected (corporate guarantee by Sahel Steel Trading Est. (SAR 180.0m, deadline 2026-12-31); corporate guarantee by Al Sahel Holding Company (SAR 180.0m, deadline 2026-12-31); assignment receivables by Al Sahel Building Materials Trading LLC (SAR 120.0m, deadline 2026-12-31)) by its deadline and within 60 days of limit loading at the latest, with board resolutions and, for guarantees, a net-worth statement not older than 12 months.",
+      "kind": "undertaking",
+      "due": "within 60 days"
+     }
+    ],
+    "suggestion": null,
+    "link": {
+     "type": "finding",
+     "id": "C-R12-TWA-GOV-GUARANTEE-UNPERFECTED",
+     "step": "review"
+    }
+   },
+   {
+    "swot_id": "R12-TWA-SW-W06",
+    "quadrant": "weakness",
+    "theme": "track record",
+    "weakness": "7 cheques returned in the 12 months to 2026Q2 (SAR 4.60m), in 5 months: 2026-01-17 (1), 2026-02-10 (1), 2026-03-10 (1), 2026-03-17 (1), 2026-05-10 (1), 2026-06-10 (1); reasons: insufficient funds.",
+    "status": "answered by a condition",
+    "structure": [],
+    "conditions": [
+     {
+      "condition_id": "C-R12-TWA-COND-CON-RETURNED-CHEQUES",
+      "text": "Written explanation of the 7 returned cheques; no further returned cheques over the next 6 months, monitored monthly by the RM; undated security cheques for the facility amount.",
+      "kind": "monitoring",
+      "due": "monthly for 6 months"
+     }
+    ],
+    "suggestion": null,
+    "link": {
+     "type": "finding",
+     "id": "C-R12-TWA-CON-RETURNED-CHEQUES",
+     "step": "review"
+    }
+   }
+  ],
+  "counts": {
+   "total": 13,
+   "structure": 1,
+   "condition": 9,
+   "open": 3
+  },
+  "headline": "10 of 13 weaknesses and threats answered by the ask structure or its conditions; 3 open."
+ },
+ "figures": {
+  "group": [
+   {
+    "value": 180.0,
+    "unit": "SAR million",
+    "label": "Al Sahel Building Materials Trading LLC: total proposed"
+   },
+   {
+    "value": 178.0,
+    "unit": "SAR million",
+    "label": "Al Sahel Building Materials Trading LLC: outstanding"
+   },
+   {
+    "value": 56.0,
+    "unit": "SAR million",
+    "label": "Al Sahel Ready-Mix Concrete Factory: total proposed"
+   },
+   {
+    "value": 41.0,
+    "unit": "SAR million",
+    "label": "Al Sahel Ready-Mix Concrete Factory: outstanding"
+   },
+   {
+    "value": 0.0,
+    "unit": "SAR million",
+    "label": "Al Sahel Logistics Services: total proposed"
+   },
+   {
+    "value": 0.0,
+    "unit": "SAR million",
+    "label": "Al Sahel Logistics Services: outstanding"
+   }
+  ],
+  "cap": [
+   {
+    "value": 250.0,
+    "unit": "SAR million",
+    "label": "Group cap approved 2025-08-20 (CC-2025-118)"
+   },
+   {
+    "value": 230.0,
+    "unit": "SAR million",
+    "label": "Group cap approved 2024-08-14 (CC-2024-097)"
+   },
+   {
+    "value": 200.0,
+    "unit": "SAR million",
+    "label": "Group cap approved 2023-07-30 (CC-2023-071)"
+   },
+   {
+    "value": 250.0,
+    "unit": "SAR million",
+    "label": "Group cap today"
+   },
+   {
+    "value": 250.0,
+    "unit": "SAR million",
+    "label": "Group cap asked"
+   }
+  ],
+  "owners": [
+   {
+    "value": 90.0,
+    "unit": "%",
+    "label": "Al Sahel Holding Company: shareholding"
+   },
+   {
+    "value": 10.0,
+    "unit": "%",
+    "label": "Fahad Nasser Al-Sahili: shareholding"
+   }
+  ],
+  "conduct": [
+   {
+    "value": 2,
+    "unit": "count",
+    "label": "Returned cheques 2026-01"
+   },
+   {
+    "value": 1,
+    "unit": "count",
+    "label": "Returned cheques 2026-02"
+   },
+   {
+    "value": 2,
+    "unit": "count",
+    "label": "Returned cheques 2026-03"
+   },
+   {
+    "value": 1,
+    "unit": "count",
+    "label": "Returned cheques 2026-05"
+   },
+   {
+    "value": 1,
+    "unit": "count",
+    "label": "Returned cheques 2026-06"
+   },
+   {
+    "value": 0.66,
+    "unit": "routing_multiple",
+    "label": "Routing achieved"
+   }
+  ],
+  "bureau": [
+   {
+    "value": 0,
+    "unit": "count",
+    "label": "Al Sahel Holding Company: court cases"
+   },
+   {
+    "value": 0,
+    "unit": "count",
+    "label": "Al Sahel Building Materials Trading LLC: court cases"
+   },
+   {
+    "value": 0,
+    "unit": "count",
+    "label": "Al Sahel Ready-Mix Concrete Factory: court cases"
+   },
+   {
+    "value": 2,
+    "unit": "count",
+    "label": "Al Sahel Logistics Services: court cases"
+   },
+   {
+    "value": 0,
+    "unit": "count",
+    "label": "Sahel Steel Trading Est.: court cases"
+   },
+   {
+    "value": 0,
+    "unit": "count",
+    "label": "Fahad Nasser Al-Sahili: court cases"
+   }
+  ]
+ },
+ "not_published": [],
+ "gaps": []
+}

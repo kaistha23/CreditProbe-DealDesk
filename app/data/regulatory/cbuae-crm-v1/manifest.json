@@ -1,0 +1,59 @@
+{
+ "release_id": "cbuae-crm-v1",
+ "domain_label": "Regulatory",
+ "origin": "SYNTHETIC_DEMO",
+ "not_client_data": true,
+ "builder": "ops/build_crm_breaches.py (backend.regulatory.crm_checks)",
+ "document": "CBUAE Credit Risk Management Standards",
+ "periods": {
+  "corporate": "2026Q2",
+  "retail": "2026-08"
+ },
+ "keyed_to": {
+  "corporate": "facility_id / borrower_id of the corporate book",
+  "retail": "account_id / customer_id of the retail book"
+ },
+ "dictionary": {
+  "breach_id": "The breach's id: check, entity and a sequence number when one entity breaches a check more than once.",
+  "check_id": "The check's id (CRM-<article paragraph>), e.g. CRM-9.23.",
+  "article": "The paragraph of the CBUAE Credit Risk Management Standards the check tests, e.g. CBUAE CRM Art. 9.23.",
+  "title": "The check in a few words.",
+  "rule": "The rule of the Standards the check tests, in one sentence.",
+  "book": "The book checked: corporate (quarterly) or retail (monthly).",
+  "period": "The book's period checked: a quarter (corporate, 2026Q2) or a month (retail, 2026-08).",
+  "entity_type": "What breaches: a facility (corporate), an account (retail) or the book (a book-level rule).",
+  "entity_id": "The facility (CF\u2026), account (RA\u2026) or book id that breaches.",
+  "owner_id": "The borrower (CB\u2026) or customer (RC\u2026) behind the entity; the book id for a book-level rule.",
+  "measured": "The value measured on the books (as text: a stage, a number of days or months, a percentage, an amount).",
+  "required": "The value the Standards require (as text, in the same unit as measured).",
+  "unit": "The unit of measured and required.",
+  "ead_sar_mn": {
+   "description": "Exposure at default of the breaching entity (for a book rule, of the book's Stage 3).",
+   "unit": "SAR million"
+  },
+  "ecl_sar_mn": {
+   "description": "Expected credit loss held on the breaching entity.",
+   "unit": "SAR million"
+  },
+  "shortfall_sar_mn": {
+   "description": "Provision shortfall against the Standards' floor (0 for a non-provision check).",
+   "unit": "SAR million"
+  },
+  "severity": "high, medium or low.",
+  "detail": "What the check found, in one line.",
+  "level": "The level the check works at: facility, account or book.",
+  "tested": "How many entities of the book the check tested (1 for a book-level rule).",
+  "breaches": "How many entities breach the check.",
+  "status": "breach or compliant."
+ },
+ "relations": [
+  {
+   "relation": "crm_breach",
+   "rows": 1521
+  },
+  {
+   "relation": "crm_check",
+   "rows": 17
+  }
+ ]
+}

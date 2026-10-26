@@ -1,0 +1,49 @@
+{
+ "runs": [
+  {
+   "proposal_id": "PRP-A-GMC",
+   "learn_s": 0.99,
+   "accept_s": 0.27,
+   "accepted": 28,
+   "draft_s": 0.73,
+   "draft_to_review_s": 0.21,
+   "upload_to_reviewed_draft_s": 2.62,
+   "version": "onb-28",
+   "review_headline": "Do not approve as proposed: 7 critical, 18 major, 1 minor findings",
+   "review_findings": 26,
+   "policy_findings": 8,
+   "open_committee_questions": 3,
+   "answered_committee_questions": 5
+  },
+  {
+   "proposal_id": "DD-01",
+   "learn_s": 0.82,
+   "accept_s": 0.36,
+   "accepted": 28,
+   "draft_s": 2.16,
+   "draft_to_review_s": 0.08,
+   "upload_to_reviewed_draft_s": 3.43,
+   "version": "onb-56",
+   "review_headline": "Approve as proposed: no findings; every check is supported by the data",
+   "review_findings": 0,
+   "policy_findings": 0,
+   "open_committee_questions": 6,
+   "answered_committee_questions": 2
+  }
+ ],
+ "host": "x86_64",
+ "python": "3.12.3",
+ "documents": [
+  "Fictional_Bank_Credit_Policy.docx",
+  "SHB-M01_Qasr_Lumen_Contracting.docx",
+  "SHB-M02_Marjan_Vale_Trading.docx",
+  "SHB-M03_Tilal_Orbit_Logistics.docx",
+  "SHB-M04_Sadaf_Prism_Foods.docx",
+  "Credit proposal DD-01: Al Rayyan Medical Supply Company",
+  "Credit proposal DD-02: Taif Central Engineering",
+  "Credit proposal DD-03: Al Khobar Modern Cold Storage Company",
+  "... 16 more"
+ ],
+ "summary": "Learned 38 thresholds and 5 conditions from the policy: 20 rules, 16 parameter changes; 6 clauses weaker than the CBUAE CRM Standards; 15 rules a person must check; 12 required sections the memos skip; 8 questions committees keep asking. 28 of 59 accepted, 0 rejected; nothing applies until accepted.",
+ "note": "system time; the checker's reading time is not included"
+}

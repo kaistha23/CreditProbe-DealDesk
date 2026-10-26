@@ -1,0 +1,415 @@
+{
+ "document": "EWS_PACKAGE_MANIFEST",
+ "built_utc": "2026-10-12T00:28:24.761730+00:00",
+ "builder": "backend/ews_domain/build_packages.py",
+ "ruleset": "gw-ews-1.3.0",
+ "ruleset_file_sha256": "c2f9cb2f10d080938e225d552d02422bb74951c251752dfc6a75160f0ef009ac",
+ "units": "SAR million (sar_mn suffix), percent (pct), days, counts - exactly the frozen source units, unconverted",
+ "currency": "SAR",
+ "frozen_source_opened_read_only": "/home/claude/creditprobe-v5/data/cockpit_v4_lake",
+ "packages": {
+  "corporate": {
+   "release_id": "ews-saudi-corporate-20q-v4e2",
+   "domain_id": "corporate",
+   "source_release_id": "v4-saudi-corporate-20q-v4",
+   "files": {
+    "ews_corp_exposure.parquet": {
+     "rows": 384009,
+     "grain": "facility_id x reporting_quarter",
+     "sha256": "d93e7df3559e5014483134d5549e3bc166e2793f723a202930920b27b2410199",
+     "bytes": 24147594,
+     "sql": "SELECT * FROM _exposure ORDER BY reporting_quarter, facility_id"
+    },
+    "ews_corp_owner.parquet": {
+     "rows": 108240,
+     "grain": "borrower_id x reporting_quarter",
+     "sha256": "b624004e9a3759f2326161170afb0df1d6c11bfb0dbd18a22ecb3f28684edf7f",
+     "bytes": 4592650,
+     "sql": "SELECT * FROM ( SELECT b.*, 'ews-saudi-corporate-20q-v4e2' AS ews_release_id, 'v4-saudi-corporate-20q-v4' AS source_release_id, 'corp_borrower_quarter' AS source_table, 'borrower_quarter' AS ews_grain FROM corp_borrower_quarter b ) ORDER BY reporting_quarter, borrower_id"
+    },
+    "ews_series_portfolio.parquet": {
+     "rows": 100,
+     "grain": "reporting_quarter x ews_band",
+     "sha256": "82d9a4f562dc1ece440c9b451002f1ae76e36177671f121e2bdfbad2cf73214a",
+     "bytes": 3749,
+     "sql": "SELECT reporting_quarter, ews_band, COUNT(*) AS n, COUNT(DISTINCT borrower_id) AS owners, SUM(ead_sar_mn) AS ead_sar_mn, SUM(ecl_sar_mn) AS ecl_sar_mn, SUM(CASE WHEN ews_band IN ('high', 'critical') THEN ead_sar_mn ELSE 0 END) AS severe_ead_sar_mn FROM _exposure GROUP BY ALL ORDER BY ALL"
+    },
+    "ews_series_segment.parquet": {
+     "rows": 1291,
+     "grain": "reporting_quarter x sector x ews_band",
+     "sha256": "6d74927d784398a331ba502d27ac79b3f4d17f0083cca036d262ee17b3ee8360",
+     "bytes": 28031,
+     "sql": "SELECT reporting_quarter, sector, ews_band, COUNT(*) AS n, COUNT(DISTINCT borrower_id) AS owners, SUM(ead_sar_mn) AS ead_sar_mn, SUM(ecl_sar_mn) AS ecl_sar_mn, SUM(CASE WHEN ews_band IN ('high', 'critical') THEN ead_sar_mn ELSE 0 END) AS severe_ead_sar_mn FROM _exposure GROUP BY ALL ORDER BY ALL"
+    },
+    "ews_series_subsegment.parquet": {
+     "rows": 5687,
+     "grain": "reporting_quarter x sector x sub_sector x ews_band",
+     "sha256": "46e37bdcdc24fe7aa1f22a52564cb0db625104ae63c78aeecbb505dd6f9ebc9b",
+     "bytes": 106831,
+     "sql": "SELECT reporting_quarter, sector, sub_sector, ews_band, COUNT(*) AS n, COUNT(DISTINCT borrower_id) AS owners, SUM(ead_sar_mn) AS ead_sar_mn, SUM(ecl_sar_mn) AS ecl_sar_mn, SUM(CASE WHEN ews_band IN ('high', 'critical') THEN ead_sar_mn ELSE 0 END) AS severe_ead_sar_mn FROM _exposure GROUP BY ALL ORDER BY ALL"
+    },
+    "ews_reason_period.parquet": {
+     "rows": 226,
+     "grain": "reporting_quarter x reason",
+     "sha256": "36666e8bb86779848af50738223acb3de5a2eb73c06056c7d10dd8b5bf291489",
+     "bytes": 3567,
+     "sql": "SELECT reporting_quarter, trim(reason) AS reason, COUNT(*) AS n, SUM(ead_sar_mn) AS ead_sar_mn FROM (SELECT reporting_quarter, ead_sar_mn, unnest(string_split(ews_reasons, '; ')) AS reason FROM _exposure WHERE ews_reasons <> '') WHERE trim(reason) <> '' GROUP BY 1, 2 ORDER BY 1, 3 DESC"
+    }
+   },
+   "periods": [
+    "2021Q3",
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+   ],
+   "latest_period": "2026Q2",
+   "period_count": 20,
+   "rule_status": {
+    "live": [
+     {
+      "id": "C-WATCH",
+      "label": "On watchlist",
+      "weight": 1,
+      "sql": "watchlist_flag = 1",
+      "requires": [
+       "watchlist_flag"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-DOWNGRADE",
+      "label": "Rating downgraded this quarter",
+      "weight": 1,
+      "sql": "rating_notches_moved < 0",
+      "requires": [
+       "rating_notches_moved"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-COVENANT",
+      "label": "Covenant breach",
+      "weight": 1,
+      "sql": "covenant_breaches > 0",
+      "requires": [
+       "covenant_breaches"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-DPD",
+      "label": "Past due (DPD > 59)",
+      "weight": 2,
+      "sql": "dpd_days > 59",
+      "requires": [
+       "dpd_days"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-SICR",
+      "label": "SICR flag raised",
+      "weight": 1,
+      "sql": "sicr_flag = 1",
+      "requires": [
+       "sicr_flag"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-UTIL",
+      "label": "High utilisation (>= 98%)",
+      "weight": 1,
+      "sql": "utilisation_pct >= 98",
+      "requires": [
+       "utilisation_pct"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-DEFAULT",
+      "label": "Stage 3 or in default",
+      "weight": 2,
+      "sql": "stage = 3 OR default_flag = 1",
+      "requires": [
+       "default_flag",
+       "stage"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-BUR-EXTDPD",
+      "label": "Past due at another lender (external DPD > 59)",
+      "weight": 3,
+      "sql": "external_dpd_days > 59",
+      "requires": [
+       "external_dpd_days"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-BUR-ENQ",
+      "label": "2 or more bureau enquiries this quarter",
+      "weight": 1,
+      "sql": "enquiries_q >= 2",
+      "requires": [
+       "enquiries_q"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-OB-INFLOW",
+      "label": "Operating inflows fell by 30 per cent or more on the year",
+      "weight": 1,
+      "sql": "inflow_trend_pct <= -30",
+      "requires": [
+       "inflow_trend_pct"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-OB-BUFFER",
+      "label": "Operating balance under 1 month of obligations",
+      "weight": 1,
+      "sql": "balance_buffer_months < 1.0",
+      "requires": [
+       "balance_buffer_months"
+      ],
+      "missing": []
+     },
+     {
+      "id": "C-OB-RETURNED",
+      "label": "2 or more returned payments this quarter",
+      "weight": 1,
+      "sql": "returned_payments_q >= 2",
+      "requires": [
+       "returned_payments_q"
+      ],
+      "missing": []
+     }
+    ],
+    "not_live": [],
+    "score_expr": "(CASE WHEN watchlist_flag = 1 THEN 1 ELSE 0 END) + (CASE WHEN rating_notches_moved < 0 THEN 1 ELSE 0 END) + (CASE WHEN covenant_breaches > 0 THEN 1 ELSE 0 END) + (CASE WHEN dpd_days > 59 THEN 2 ELSE 0 END) + (CASE WHEN sicr_flag = 1 THEN 1 ELSE 0 END) + (CASE WHEN utilisation_pct >= 98 THEN 1 ELSE 0 END) + (CASE WHEN stage = 3 OR default_flag = 1 THEN 2 ELSE 0 END) + (CASE WHEN external_dpd_days > 59 THEN 3 ELSE 0 END) + (CASE WHEN enquiries_q >= 2 THEN 1 ELSE 0 END) + (CASE WHEN inflow_trend_pct <= -30 THEN 1 ELSE 0 END) + (CASE WHEN balance_buffer_months < 1.0 THEN 1 ELSE 0 END) + (CASE WHEN returned_payments_q >= 2 THEN 1 ELSE 0 END)",
+    "band_expr": "CASE WHEN (ews_score) >= 10 THEN 'critical' WHEN (ews_score) >= 8 THEN 'high' WHEN (ews_score) >= 4 THEN 'moderate' WHEN (ews_score) >= 1 THEN 'low' ELSE 'none' END",
+    "band_floors": [
+     4,
+     8,
+     10
+    ]
+   }
+  },
+  "retail": {
+   "release_id": "ews-saudi-retail-20m-v5e1",
+   "domain_id": "retail",
+   "source_release_id": "v4-saudi-retail-20m-v5",
+   "files": {
+    "ews_retail_exposure.parquet": {
+     "rows": 584372,
+     "grain": "account_id x reporting_month",
+     "sha256": "34c62ef628eef6f730c64f8ef26e4704865087c4d80618ad11f10494acd38679",
+     "bytes": 50836239,
+     "sql": "SELECT * FROM _exposure ORDER BY reporting_month, account_id"
+    },
+    "ews_retail_owner.parquet": {
+     "rows": 438060,
+     "grain": "customer_id x reporting_month",
+     "sha256": "8883a03080725f44de553da4274eae409090fe3983e584397d5a56e2347712ca",
+     "bytes": 8844653,
+     "sql": "SELECT * FROM ( SELECT cm.*, 'ews-saudi-retail-20m-v5e1' AS ews_release_id, 'v4-saudi-retail-20m-v5' AS source_release_id, 'retail_customer_month' AS source_table, 'customer_month' AS ews_grain FROM retail_customer_month cm ) ORDER BY reporting_month, customer_id"
+    },
+    "ews_series_portfolio.parquet": {
+     "rows": 100,
+     "grain": "reporting_month x ews_band",
+     "sha256": "e6e4503201bd8f7fc0ac42f500a6aef61291e69d367bcbceac9ae79cacd912ab",
+     "bytes": 3780,
+     "sql": "SELECT reporting_month, ews_band, COUNT(*) AS n, COUNT(DISTINCT customer_id) AS owners, SUM(ead_sar_mn) AS ead_sar_mn, SUM(ecl_sar_mn) AS ecl_sar_mn, SUM(CASE WHEN ews_band IN ('high', 'critical') THEN ead_sar_mn ELSE 0 END) AS severe_ead_sar_mn FROM _exposure GROUP BY ALL ORDER BY ALL"
+    },
+    "ews_series_segment.parquet": {
+     "rows": 430,
+     "grain": "reporting_month x product x ews_band",
+     "sha256": "14495a400b99937ddab6b70dcb941e337de7d673373094eceb13717d7a5ea842",
+     "bytes": 11456,
+     "sql": "SELECT reporting_month, product, ews_band, COUNT(*) AS n, COUNT(DISTINCT customer_id) AS owners, SUM(ead_sar_mn) AS ead_sar_mn, SUM(ecl_sar_mn) AS ecl_sar_mn, SUM(CASE WHEN ews_band IN ('high', 'critical') THEN ead_sar_mn ELSE 0 END) AS severe_ead_sar_mn FROM _exposure GROUP BY ALL ORDER BY ALL"
+    },
+    "ews_series_subsegment.parquet": {
+     "rows": 1059,
+     "grain": "reporting_month x product x sub_product x ews_band",
+     "sha256": "dad2621a3d90f2d61616129079890c5d9e001c277ad2cfbe170e03ee6ce488e4",
+     "bytes": 24842,
+     "sql": "SELECT reporting_month, product, sub_product, ews_band, COUNT(*) AS n, COUNT(DISTINCT customer_id) AS owners, SUM(ead_sar_mn) AS ead_sar_mn, SUM(ecl_sar_mn) AS ecl_sar_mn, SUM(CASE WHEN ews_band IN ('high', 'critical') THEN ead_sar_mn ELSE 0 END) AS severe_ead_sar_mn FROM _exposure GROUP BY ALL ORDER BY ALL"
+    },
+    "ews_reason_period.parquet": {
+     "rows": 182,
+     "grain": "reporting_month x reason",
+     "sha256": "6f9a6086f5e33aae6d950946b6b908d4992cb4a4b7b06762aaabffade0b42342",
+     "bytes": 3241,
+     "sql": "SELECT reporting_month, trim(reason) AS reason, COUNT(*) AS n, SUM(ead_sar_mn) AS ead_sar_mn FROM (SELECT reporting_month, ead_sar_mn, unnest(string_split(ews_reasons, '; ')) AS reason FROM _exposure WHERE ews_reasons <> '') WHERE trim(reason) <> '' GROUP BY 1, 2 ORDER BY 1, 3 DESC"
+    }
+   },
+   "periods": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ],
+   "latest_period": "2026-08",
+   "period_count": 20,
+   "rule_status": {
+    "live": [
+     {
+      "id": "R-DPD",
+      "label": "Payment arrears (DPD > 0)",
+      "weight": 3,
+      "sql": "dpd_days > 0",
+      "requires": [
+       "dpd_days"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-SCORE-LOW",
+      "label": "Weak behaviour score band (E)",
+      "weight": 1,
+      "sql": "score_band = 'E'",
+      "requires": [
+       "score_band"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-SCORE-DOWN",
+      "label": "Behaviour score fell 2 or more bands",
+      "weight": 2,
+      "sql": "(customer_score_band_previous = 'A' AND customer_score_band IN ('C', 'D', 'E')) OR (customer_score_band_previous = 'B' AND customer_score_band IN ('D', 'E')) OR (customer_score_band_previous = 'C' AND customer_score_band = 'E')",
+      "requires": [
+       "customer_score_band",
+       "customer_score_band_previous"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-UTIL",
+      "label": "High utilisation (>= 85%)",
+      "weight": 2,
+      "sql": "utilisation_pct >= 85",
+      "requires": [
+       "utilisation_pct"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-MINPAY",
+      "label": "Payment ratio below 30% and down 10 points or more in 3 months",
+      "weight": 1,
+      "sql": "payment_ratio_pct < 30 AND payment_ratio_change_3m <= -10",
+      "requires": [
+       "payment_ratio_change_3m",
+       "payment_ratio_pct"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-BUR-SCORE",
+      "label": "Bureau score below 580",
+      "weight": 1,
+      "sql": "bureau_score < 580",
+      "requires": [
+       "bureau_score"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-BUR-EXTDPD",
+      "label": "Past due at another lender (external DPD > 59)",
+      "weight": 1,
+      "sql": "external_dpd_days > 59",
+      "requires": [
+       "external_dpd_days"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-BUR-ENQ",
+      "label": "5 or more bureau enquiries in 3 months",
+      "weight": 2,
+      "sql": "enquiries_3m >= 5",
+      "requires": [
+       "enquiries_3m"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-OB-SALARY",
+      "label": "Salary credit missing this month (salaried customer)",
+      "weight": 2,
+      "sql": "salary_interruption_flag = 1",
+      "requires": [
+       "salary_interruption_flag"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-OB-BUFFER",
+      "label": "Balance buffer under 1 month of obligations",
+      "weight": 1,
+      "sql": "balance_buffer_months < 1.0",
+      "requires": [
+       "balance_buffer_months"
+      ],
+      "missing": []
+     },
+     {
+      "id": "R-OB-INFLOW",
+      "label": "Account inflows fell by 40 per cent or more in 3 months",
+      "weight": 1,
+      "sql": "inflow_trend_pct <= -40",
+      "requires": [
+       "inflow_trend_pct"
+      ],
+      "missing": []
+     }
+    ],
+    "not_live": [],
+    "score_expr": "(CASE WHEN dpd_days > 0 THEN 3 ELSE 0 END) + (CASE WHEN score_band = 'E' THEN 1 ELSE 0 END) + (CASE WHEN (customer_score_band_previous = 'A' AND customer_score_band IN ('C', 'D', 'E')) OR (customer_score_band_previous = 'B' AND customer_score_band IN ('D', 'E')) OR (customer_score_band_previous = 'C' AND customer_score_band = 'E') THEN 2 ELSE 0 END) + (CASE WHEN utilisation_pct >= 85 THEN 2 ELSE 0 END) + (CASE WHEN payment_ratio_pct < 30 AND payment_ratio_change_3m <= -10 THEN 1 ELSE 0 END) + (CASE WHEN bureau_score < 580 THEN 1 ELSE 0 END) + (CASE WHEN external_dpd_days > 59 THEN 1 ELSE 0 END) + (CASE WHEN enquiries_3m >= 5 THEN 2 ELSE 0 END) + (CASE WHEN salary_interruption_flag = 1 THEN 2 ELSE 0 END) + (CASE WHEN balance_buffer_months < 1.0 THEN 1 ELSE 0 END) + (CASE WHEN inflow_trend_pct <= -40 THEN 1 ELSE 0 END)",
+    "band_expr": "CASE WHEN (ews_score) >= 7 THEN 'critical' WHEN (ews_score) >= 5 THEN 'high' WHEN (ews_score) >= 3 THEN 'moderate' WHEN (ews_score) >= 1 THEN 'low' ELSE 'none' END",
+    "band_floors": [
+     3,
+     5,
+     7
+    ]
+   }
+  }
+ }
+}

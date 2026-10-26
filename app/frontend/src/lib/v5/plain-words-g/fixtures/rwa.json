@@ -1,0 +1,231 @@
+{
+ "engine": "intel.portfolio.rwa",
+ "version": "r13-id-1",
+ "title": "RWA finder",
+ "as_of": "2026Q2",
+ "ecl_run": "2026Q3",
+ "headline": "The book carries SAR 11.6bn of RWA it could save (19.3% of corporate CRWA), SAR 1.6bn of capital at 13.5%; SAR 2.8bn is recognisable now.",
+ "summary": [
+  "The book carries SAR 11.6bn of RWA it could save (19.3% of corporate CRWA), SAR 1.6bn of capital at 13.5%; SAR 2.8bn is recognisable now.",
+  "Largest sources: SME corporate class: 100% to 85% SAR 5.0bn on 12179 facilities; Unused undrawn limit cut SAR 3.4bn on 2673 facilities; Defaulted, provisioned: 150% to 100% SAR 2.0bn on 1474 facilities.",
+  "Biggest single item: Qassim Continental Retail CF043701, Hijaz Arabian Trading guarantees SAR 6.1m of the unsecured part at 20% instead of 150%, saving SAR 8.0m RWA.",
+  "SAR 3.4bn needs an action first (perfect guarantees, cut unused limits); SAR 5.4bn needs a classification check.",
+  "Watch the other way: SAR 7.5bn of RWA relief rests on collateral not yet registered (1572 facilities)."
+ ],
+ "kpis": [
+  {
+   "key": "rwa_saving",
+   "label": "RWA saving found",
+   "value": 11591.959004,
+   "unit": "SAR m",
+   "text": "19.3% of corporate CRWA"
+  },
+  {
+   "key": "capital_saving",
+   "label": "Capital effect",
+   "value": 1564.914466,
+   "unit": "SAR m",
+   "text": "at 13.5%"
+  },
+  {
+   "key": "recognisable",
+   "label": "Recognisable now",
+   "value": 2797.706957,
+   "unit": "SAR m RWA",
+   "text": null
+  },
+  {
+   "key": "after_action",
+   "label": "After an action",
+   "value": 3439.510734,
+   "unit": "SAR m RWA",
+   "text": null
+  },
+  {
+   "key": "at_risk",
+   "label": "RWA at risk (unregistered collateral)",
+   "value": 7463.51189,
+   "unit": "SAR m",
+   "text": "1572 facilities"
+  }
+ ],
+ "rows": [
+  {
+   "facility_id": "CF043701",
+   "borrower_id": "CB04370",
+   "borrower_name": "Qassim Continental Retail",
+   "sector": "Retail Trade",
+   "rating": "B",
+   "stage": 1,
+   "category": "guarantee_recognisable",
+   "category_label": "Perfected guarantee not recognised",
+   "status": "recognisable",
+   "ead_sar_mn": 12.9318,
+   "rwa_now_sar_mn": 10.2028,
+   "rw_now": 1.5,
+   "rwa_saving_sar_mn": 7.96887,
+   "capital_saving_sar_mn": 1.075797,
+   "detail": "Hijaz Arabian Trading guarantees SAR 6.1m of the unsecured part at 20% instead of 150%"
+  },
+  {
+   "facility_id": "CF054074",
+   "borrower_id": "CB05407",
+   "borrower_name": "Sakaka Continental Trading",
+   "sector": "Wholesale Trade",
+   "rating": "B",
+   "stage": 1,
+   "category": "guarantee_recognisable",
+   "category_label": "Perfected guarantee not recognised",
+   "status": "recognisable",
+   "ead_sar_mn": 15.8105,
+   "rwa_now_sar_mn": 12.5123,
+   "rw_now": 1.5,
+   "rwa_saving_sar_mn": 7.469,
+   "capital_saving_sar_mn": 1.008315,
+   "detail": "Unayzah Arabian Manufacturing guarantees SAR 7.5m of the unsecured part at 50% instead of 150%"
+  },
+  {
+   "facility_id": "CF013524",
+   "borrower_id": "CB01352",
+   "borrower_name": "Wadi Hanifah Medical",
+   "sector": "Healthcare",
+   "rating": "B-",
+   "stage": 1,
+   "category": "guarantee_recognisable",
+   "category_label": "Perfected guarantee not recognised",
+   "status": "recognisable",
+   "ead_sar_mn": 14.8846,
+   "rwa_now_sar_mn": 10.3013,
+   "rw_now": 1.5,
+   "rwa_saving_sar_mn": 6.8675,
+   "capital_saving_sar_mn": 0.927113,
+   "detail": "Tuwaiq Eastern Trading guarantees SAR 6.9m of the unsecured part at 50% instead of 150%"
+  },
+  {
+   "facility_id": "CF029045",
+   "borrower_id": "CB02904",
+   "borrower_name": "Al Ahsa Minerals",
+   "sector": "Metals and Mining",
+   "rating": "CCC",
+   "stage": 2,
+   "category": "unused_undrawn",
+   "category_label": "Unused undrawn limit cut",
+   "status": "after_action",
+   "ead_sar_mn": 12.5768,
+   "rwa_now_sar_mn": 11.3248,
+   "rw_now": 1.5,
+   "rwa_saving_sar_mn": 5.951243,
+   "capital_saving_sar_mn": 0.803418,
+   "detail": "utilisation at most 60% for 4 quarters; cut the limit by SAR 8.3m to SAR 9.3m (CCF 0.48)"
+  },
+  {
+   "facility_id": "CF048392",
+   "borrower_id": "CB04839",
+   "borrower_name": "Sakaka Advanced Logistics",
+   "sector": "Transport and Logistics",
+   "rating": "CCC",
+   "stage": 2,
+   "category": "guarantee_recognisable",
+   "category_label": "Perfected guarantee not recognised",
+   "status": "recognisable",
+   "ead_sar_mn": 12.0476,
+   "rwa_now_sar_mn": 8.6455,
+   "rw_now": 1.5,
+   "rwa_saving_sar_mn": 5.7637,
+   "capital_saving_sar_mn": 0.7781,
+   "detail": "Rabigh Continental Industries guarantees SAR 5.8m of the unsecured part at 50% instead of 150%"
+  },
+  {
+   "facility_id": "CF004843",
+   "borrower_id": "CB00484",
+   "borrower_name": "Arar Modern Chemicals",
+   "sector": "Chemicals",
+   "rating": "B",
+   "stage": 1,
+   "category": "unused_undrawn",
+   "category_label": "Unused undrawn limit cut",
+   "status": "after_action",
+   "ead_sar_mn": 11.7753,
+   "rwa_now_sar_mn": 6.9642,
+   "rw_now": 1.5,
+   "rwa_saving_sar_mn": 5.595917,
+   "capital_saving_sar_mn": 0.755449,
+   "detail": "utilisation at most 60% for 4 quarters; cut the limit by SAR 8.3m to SAR 8.8m (CCF 0.45)"
+  }
+ ],
+ "data_limits": [
+  "Risk weights follow the collateral domain's col_crwa (internal-rating based standardised-style weights); external ratings are not in Data Domains, so class changes keyed on ratings are labelled to confirm.",
+  "SME status uses obligor revenue from the corporate book; group turnover (which SAMA may require) is not applied.",
+  "Guarantee substitution assumes the guarantee is direct, irrevocable and unconditional; the register does not hold its terms.",
+  "Undrawn cuts assume the client accepts a lower limit; unconditionally cancellable conversion (CCF 10%) is an alternative not counted.",
+  "Capital effect is at the capital ratio target; the CET1 ratio uplift needs the bank-wide RWA, which is not in Data Domains."
+ ],
+ "method": [
+  "Per facility: class change, then undrawn cut, then guarantee substitution, each on the result of the step before.",
+  "RWA saving x capital_ratio_target = capital effect.",
+  "Capital at risk: CRM x share of the facility's collateral not registered x current RW (not netted from savings)."
+ ],
+ "writer": "deterministic",
+ "by_category": [
+  {
+   "category": "sme_corporate",
+   "label": "SME corporate class: 100% to 85%",
+   "status": "to_confirm",
+   "facilities": 12179,
+   "rwa_saving_sar_mn": 5019.830775,
+   "capital_saving_sar_mn": 677.677155
+  },
+  {
+   "category": "unused_undrawn",
+   "label": "Unused undrawn limit cut",
+   "status": "after_action",
+   "facilities": 2673,
+   "rwa_saving_sar_mn": 3356.790148,
+   "capital_saving_sar_mn": 453.16667
+  },
+  {
+   "category": "defaulted_provisioned",
+   "label": "Defaulted, provisioned: 150% to 100%",
+   "status": "recognisable",
+   "facilities": 1474,
+   "rwa_saving_sar_mn": 2042.7524,
+   "capital_saving_sar_mn": 275.771574
+  },
+  {
+   "category": "guarantee_recognisable",
+   "label": "Perfected guarantee not recognised",
+   "status": "recognisable",
+   "facilities": 529,
+   "rwa_saving_sar_mn": 754.954557,
+   "capital_saving_sar_mn": 101.918865
+  },
+  {
+   "category": "guarantee_intra_group",
+   "label": "Intra-group guarantee (to confirm)",
+   "status": "to_confirm",
+   "facilities": 259,
+   "rwa_saving_sar_mn": 334.910539,
+   "capital_saving_sar_mn": 45.212923
+  },
+  {
+   "category": "guarantee_after_perfection",
+   "label": "Guarantee to perfect",
+   "status": "after_action",
+   "facilities": 57,
+   "rwa_saving_sar_mn": 82.720586,
+   "capital_saving_sar_mn": 11.167279
+  }
+ ],
+ "by_status": {
+  "recognisable": 2797.706957,
+  "after_action": 3439.510734,
+  "to_confirm": 5354.741314
+ },
+ "rwa_total_sar_mn": 59985.3673,
+ "at_risk": {
+  "rwa_sar_mn": 7463.51189,
+  "capital_sar_mn": 1007.574105,
+  "facilities": 1572
+ },
+ "digest": "1b9dfa65e1fadb37"
+}

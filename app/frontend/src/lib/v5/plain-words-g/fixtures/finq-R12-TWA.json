@@ -1,0 +1,222 @@
+{
+ "subject": {
+  "kind": "deal",
+  "id": "R12-TWA",
+  "proposal_id": "R12-TWA",
+  "facility_id": null,
+  "obligor_id": "XE-TWA-01",
+  "name": "Al Sahel Building Materials Trading LLC",
+  "group": "Al Sahel Building Materials Group",
+  "sector": "Wholesale Trade",
+  "currency": "SAR",
+  "periods": [
+   "FY2023",
+   "FY2024",
+   "FY2025"
+  ],
+  "entity": "Al Sahel Building Materials Trading LLC",
+  "scope": "standalone"
+ },
+ "as_of": "2026-10-18",
+ "period": "2026Q2",
+ "mode": "detail",
+ "grade": {
+  "grade": "D",
+  "meaning": "the reported figures cannot be relied on without independent verification",
+  "points": 32,
+  "flagged": 12,
+  "assessable": 24,
+  "signals": 26,
+  "coverage": 0.9231,
+  "limited": false,
+  "by_severity": {
+   "critical": 1,
+   "high": 7,
+   "medium": 3,
+   "low": 1
+  },
+  "rule": "points: critical 4, high 3, medium 2, low 1; D: 2+ critical, or critical with 8+ points, or 14+ points; C: 1 critical or 7+ points; B: 3+ points; A otherwise"
+ },
+ "signals": [
+  {
+   "code": "RP-01",
+   "family": "related_party",
+   "family_label": "Related-party balances",
+   "label": "Related-party balances / current assets",
+   "value": 0.164062,
+   "display": "16.4%",
+   "unit": "share",
+   "threshold": 0.2,
+   "op": ">",
+   "threshold_display": "> 20%",
+   "flag": false,
+   "severity": "none",
+   "period": "FY2025",
+   "text": "Due from related parties of SAR 84.0m is 16.4% of current assets of SAR 512.0m at FY2025 (PY 13.6%), against a threshold of 20%.",
+   "basis": "due from related parties / current assets",
+   "policy_ref": "Credit Policy 5.4.4 Related-party balances above 20% of current assets",
+   "note": ""
+  },
+  {
+   "code": "RP-02",
+   "family": "related_party",
+   "family_label": "Related-party balances",
+   "label": "Related-party balances / net worth",
+   "value": 0.449198,
+   "display": "44.9%",
+   "unit": "share",
+   "threshold": 0.2,
+   "op": ">",
+   "threshold_display": "> 20%",
+   "flag": true,
+   "severity": "high",
+   "period": "FY2025",
+   "text": "Due from related parties of SAR 84.0m is 44.9% of reported net worth of SAR 187.0m at FY2025 (PY 35.6%), against a threshold of 20%; the balance moved FY2023 SAR 46.0m, FY2024 SAR 64.0m, FY2025 SAR 84.0m.",
+   "basis": "due from related parties / reported net worth",
+   "policy_ref": "Credit Policy 5.4.4 Related-party balances above 20% of net worth",
+   "note": ""
+  },
+  {
+   "code": "RP-03",
+   "family": "related_party",
+   "family_label": "Related-party balances",
+   "label": "Net worth and leverage after netting related parties",
+   "value": 3.883495,
+   "display": "3.88x",
+   "unit": "x",
+   "threshold": 3.0,
+   "op": ">",
+   "threshold_display": "> 3.00x",
+   "flag": true,
+   "severity": "high",
+   "period": "FY2025",
+   "text": "After netting due from related parties of SAR 84.0m, adjusted net worth is SAR 103.0m and leverage (total liabilities / net worth) 3.88x at FY2025 (reported SAR 187.0m and 2.14x), against 3.00x.",
+   "basis": "total liabilities / (net worth - due from related parties)",
+   "policy_ref": "Credit Policy 5.3.2 Adjusted leverage (total liabilities / adjusted net worth) above 3.0x",
+   "note": ""
+  },
+  {
+   "code": "RC-01",
+   "family": "receivables",
+   "family_label": "Receivables quality",
+   "label": "Days sales outstanding trend",
+   "value": -0.042866,
+   "display": "0 days",
+   "unit": "days",
+   "threshold": 15,
+   "op": "rise >",
+   "threshold_display": "rise > 15 days",
+   "flag": false,
+   "severity": "none",
+   "period": "FY2025",
+   "text": "Days sales outstanding FY2023 141, FY2024 140, FY2025 140 days; FY2025 140 days (PY 140), a change of +0 days against a threshold of +15 days.",
+   "basis": "receivables / revenue x 365 (interim annualised), year on year",
+   "policy_ref": "Credit Policy 5.4.1 Days sales outstanding up more than 15 days on the prior year",
+   "note": ""
+  },
+  {
+   "code": "RC-02",
+   "family": "receivables",
+   "family_label": "Receivables quality",
+   "label": "Receivables over 180 days",
+   "value": 0.211111,
+   "display": "21.1%",
+   "unit": "share",
+   "threshold": 0.25,
+   "op": ">",
+   "threshold_display": "> 25%",
+   "flag": false,
+   "severity": "none",
+   "period": "FY2025",
+   "text": "Receivables over 180 days of SAR 57.0m are 21.1% of receivables of SAR 270.0m at FY2025 (PY 18.3%); over 365 days SAR 19.0m (7.0%).",
+   "basis": "(181-365 + over 365 days) / receivables",
+   "policy_ref": "Credit Policy 5.4.2 Receivables over 180 days above 25% of receivables",
+   "note": ""
+  },
+  {
+   "code": "RC-03",
+   "family": "receivables",
+   "family_label": "Receivables quality",
+   "label": "Balances not due on completed projects",
+   "value": null,
+   "display": "not assessable",
+   "unit": "mn",
+   "threshold": 0.0,
+   "op": ">",
+   "threshold_display": "> 0.0m",
+   "flag": null,
+   "severity": "not_assessable",
+   "period": null,
+   "text": "Balances not due on completed projects: not assessable as at 18 Oct 2026; no project schedule in dd_project (not a contractor, or not provided).",
+   "basis": "retention and certified amounts of completed projects past the defects-liability period",
+   "policy_ref": "Credit Policy 8.1.5 Retention and receivables on completed projects past the defects-liability period",
+   "note": ""
+  }
+ ],
+ "flagged": [
+  "AU-02",
+  "RP-02",
+  "RP-03",
+  "EQ-02",
+  "AU-03",
+  "AU-04"
+ ],
+ "families": [
+  {
+   "family": "related_party",
+   "label": "Related-party balances",
+   "signals": 3,
+   "flagged": 2,
+   "assessable": 3,
+   "worst": "high"
+  },
+  {
+   "family": "receivables",
+   "label": "Receivables quality",
+   "signals": 5,
+   "flagged": 0,
+   "assessable": 3,
+   "worst": null
+  },
+  {
+   "family": "earnings",
+   "label": "Earnings quality",
+   "signals": 4,
+   "flagged": 1,
+   "assessable": 4,
+   "worst": "high"
+  },
+  {
+   "family": "balance_sheet",
+   "label": "Balance-sheet signals",
+   "signals": 5,
+   "flagged": 2,
+   "assessable": 5,
+   "worst": "medium"
+  },
+  {
+   "family": "audit",
+   "label": "Audit signals",
+   "signals": 4,
+   "flagged": 4,
+   "assessable": 4,
+   "worst": "critical"
+  },
+  {
+   "family": "statistical",
+   "label": "Statistical screens",
+   "signals": 2,
+   "flagged": 0,
+   "assessable": 2,
+   "worst": null
+  }
+ ],
+ "headline": "Financial quality grade D as at 18 Oct 2026: 12 of 26 signals flagged (1 critical, 7 high, 3 medium, 1 low), 24 assessable from Data Domains.",
+ "lines": [
+  "The FY2025 audit opinion is qualified; basis of qualification as per the auditor: Recoverability of SAR 84.0m due from Al Sahel Logistics Services (a sister company classified doubtful by another bank and under litigation) could not be confirmed; no provision was made.",
+  "Due from related parties of SAR 84.0m is 44.9% of reported net worth of SAR 187.0m at FY2025 (PY 35.6%), against a threshold of 20%; the balance moved FY2023 SAR 46.0m, FY2024 SAR 64.0m, FY2025 SAR 84.0m.",
+  "After netting due from related parties of SAR 84.0m, adjusted net worth is SAR 103.0m and leverage (total liabilities / net worth) 3.88x at FY2025 (reported SAR 187.0m and 2.14x), against 3.00x.",
+  "Operating cash flow of SAR -6.0m against EBITDA of SAR 48.0m in FY2025: cash conversion -12.5% (PY 18.1%), against 50%; operating cash flow negative in 1 of 3 audited years.",
+  "The auditor changed from Qarar Audit (listed, clean opinion in FY2024) to Mizan & Partners Chartered Accountants (unlisted, qualified opinion in FY2025); the change coincides with a move off the approved panel or a qualified opinion."
+ ]
+}

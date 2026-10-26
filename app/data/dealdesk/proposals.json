@@ -1,0 +1,2940 @@
+{
+ "as_of": "2026Q2",
+ "proposals": [
+  {
+   "proposal_id": "DD-01",
+   "status": "new",
+   "rm": "Khalid Al-Otaibi",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-04",
+   "purpose": "Working capital to deliver a five-year medical supply contract with the Ministry of Health",
+   "obligor": {
+    "existing": false,
+    "external_rating": "A-",
+    "obligor_id": "DN001",
+    "name": "Al Rayyan Medical Supply Company",
+    "cr_number": "1010487213",
+    "sector": "Healthcare",
+    "sub_sector": "Medical Devices",
+    "segment": "Healthcare",
+    "region": "Riyadh",
+    "internal_rating": "A-",
+    "gre": false,
+    "sme": false,
+    "simah_flag": "clear",
+    "gov_linked": true,
+    "group_id": "DG001",
+    "group_name": "Al Rayyan Holding",
+    "connected_parties": [],
+    "sector_code": "Q86",
+    "pd_master_scale": 0.001262,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 743.76,
+      "ebitda": 126.44,
+      "total_debt": 226.8,
+      "debt_service": 65.72,
+      "net_worth": 475.2,
+      "current_ratio": 1.8,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 780.95,
+      "ebitda": 132.76,
+      "total_debt": 218.4,
+      "debt_service": 63.86,
+      "net_worth": 507.6,
+      "current_ratio": 1.8,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 820.0,
+      "ebitda": 139.4,
+      "total_debt": 210.0,
+      "debt_service": 62.0,
+      "net_worth": 540.0,
+      "current_ratio": 1.8,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 861.0,
+      "ebitda": 146.37,
+      "total_debt": 201.6,
+      "debt_service": 60.14,
+      "net_worth": 572.4,
+      "current_ratio": 1.8,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 904.05,
+      "ebitda": 153.69,
+      "total_debt": 193.2,
+      "debt_service": 58.28,
+      "net_worth": 604.8,
+      "current_ratio": 1.8,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 949.25,
+      "ebitda": 161.37,
+      "total_debt": 184.8,
+      "debt_service": 56.42,
+      "net_worth": 637.2,
+      "current_ratio": 1.8,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "murabaha",
+    "currency": "SAR",
+    "amount": 60,
+    "tenor_years": 3,
+    "grace_years": 0,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 220,
+    "upfront_fee_bps": 75,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "receivables",
+      "value": 95.0,
+      "currency": "SAR",
+      "valuation_date": "2026-06-30",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.6,
+     "payroll": 0.3,
+     "fx": 0.1,
+     "trade": 0.4
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-01.docx",
+   "case": "clears_easily",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-02",
+   "status": "in_review",
+   "rm": "Sara Al-Dosari",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-05",
+   "purpose": "Equipment and mobilisation for a road maintenance contract in Qassim",
+   "obligor": {
+    "obligor_id": "CB01338",
+    "existing": true,
+    "name": "Taif Central Engineering",
+    "cr_number": "1072545941",
+    "group_id": "CG6292-102",
+    "group_name": "Taif Central Engineering Group",
+    "legacy_group_id": "CG6292",
+    "connected_parties": [
+     "CB00732",
+     "CB00773",
+     "CB00797",
+     "CB00938",
+     "CB01025",
+     "CB01333",
+     "CB01338"
+    ],
+    "sector": "Construction",
+    "sub_sector": "Roads and Bridges",
+    "sector_code": "F42",
+    "segment": "Construction",
+    "region": "Qassim",
+    "sme": false,
+    "gre": false,
+    "internal_rating": "BB",
+    "external_rating": null,
+    "pd_master_scale": 0.008966,
+    "simah_flag": "clear",
+    "existing_exposure_sar_mn": 28.932,
+    "existing_facilities": [
+     {
+      "facility_id": "CF013381",
+      "product": "working_capital",
+      "limit": 13.605,
+      "drawn": 11.2602,
+      "ead": 12.2886,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF013382",
+      "product": "trade_finance",
+      "limit": 11.5616,
+      "drawn": 7.2535,
+      "ead": 9.3174,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF013383",
+      "product": "working_capital",
+      "limit": 8.5604,
+      "drawn": 6.2529,
+      "ead": 7.326,
+      "stage": 1
+     }
+    ],
+    "existing_collateral": [
+     {
+      "collateral_id": "CC013381",
+      "facility_id": "CF013381",
+      "type": "receivables",
+      "value": 15.6642
+     },
+     {
+      "collateral_id": "CC013382",
+      "facility_id": "CF013382",
+      "type": "cash",
+      "value": 11.3706
+     },
+     {
+      "collateral_id": "CC013383",
+      "facility_id": "CF013383",
+      "type": "corporate_guarantee",
+      "value": 3.9401
+     }
+    ],
+    "prefilled_from": "v4-saudi-corporate-20q-v4 2026Q2",
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 54.624,
+      "ebitda": 14.761,
+      "total_debt": 39.995,
+      "debt_service": 6.511,
+      "net_worth": 19.997,
+      "current_ratio": 1.666,
+      "source": "corp_borrower_quarter 2023Q4"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 56.186,
+      "ebitda": 15.135,
+      "total_debt": 40.064,
+      "debt_service": 6.715,
+      "net_worth": 20.032,
+      "current_ratio": 1.658,
+      "source": "corp_borrower_quarter 2024Q4"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 57.809,
+      "ebitda": 15.546,
+      "total_debt": 40.1,
+      "debt_service": 6.915,
+      "net_worth": 20.05,
+      "current_ratio": 1.653,
+      "source": "corp_borrower_quarter 2025Q4"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 60.121,
+      "ebitda": 16.168,
+      "total_debt": 38.496,
+      "debt_service": 6.708,
+      "net_worth": 21.053,
+      "current_ratio": 1.653,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 62.526,
+      "ebitda": 16.815,
+      "total_debt": 36.892,
+      "debt_service": 6.5,
+      "net_worth": 22.055,
+      "current_ratio": 1.653,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 65.027,
+      "ebitda": 17.487,
+      "total_debt": 35.288,
+      "debt_service": 6.293,
+      "net_worth": 23.057,
+      "current_ratio": 1.653,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "tawarruq",
+    "currency": "SAR",
+    "amount": 16,
+    "tenor_years": 6,
+    "grace_years": 1,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 240,
+    "upfront_fee_bps": 75,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "plant_equipment",
+      "value": 12.0,
+      "currency": "SAR",
+      "valuation_date": "2026-08-15",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [
+     {
+      "guarantee_id": "G1",
+      "type": "personal",
+      "guarantor": "Principal shareholder",
+      "guarantor_rating": "BB",
+      "coverage_pct": 100,
+      "offered_in_ask": false
+     }
+    ],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.05,
+     "payroll": 0.04,
+     "fx": 0.0,
+     "trade": 0.02
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-02.docx",
+   "case": "existing_contractor",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-03",
+   "status": "new",
+   "rm": "Khalid Al-Otaibi",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-06",
+   "purpose": "Construction of a cold storage hub in Dammam for the group's logistics network",
+   "obligor": {
+    "existing": false,
+    "external_rating": null,
+    "obligor_id": "DN003",
+    "name": "Al Khobar Modern Cold Storage Company",
+    "cr_number": "2050931144",
+    "sector": "Transport and Logistics",
+    "sub_sector": "Cold Chain",
+    "segment": "Transport and Logistics",
+    "region": "Eastern Province",
+    "internal_rating": "BBB",
+    "gre": false,
+    "sme": false,
+    "simah_flag": "clear",
+    "group_id": "CG9317-006",
+    "group_name": "Al Khobar Modern Logistics Group",
+    "connected_parties": [
+     "CB04673",
+     "CB04714",
+     "CB04716",
+     "CB04799",
+     "CB04876",
+     "CB04907",
+     "CB04932",
+     "CB04936",
+     "CB04976"
+    ],
+    "sector_code": "H52",
+    "pd_master_scale": 0.002765,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "group_existing_exposure_sar_mn": 374.2165,
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 580.5,
+      "ebitda": 127.71,
+      "total_debt": 280.8,
+      "debt_service": 74.2,
+      "net_worth": 360.8,
+      "current_ratio": 1.5,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 609.52,
+      "ebitda": 134.1,
+      "total_debt": 270.4,
+      "debt_service": 72.1,
+      "net_worth": 385.4,
+      "current_ratio": 1.5,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 640.0,
+      "ebitda": 140.8,
+      "total_debt": 260.0,
+      "debt_service": 70.0,
+      "net_worth": 410.0,
+      "current_ratio": 1.5,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 672.0,
+      "ebitda": 147.84,
+      "total_debt": 249.6,
+      "debt_service": 67.9,
+      "net_worth": 434.6,
+      "current_ratio": 1.5,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 705.6,
+      "ebitda": 155.23,
+      "total_debt": 239.2,
+      "debt_service": 65.8,
+      "net_worth": 459.2,
+      "current_ratio": 1.5,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 740.88,
+      "ebitda": 162.99,
+      "total_debt": 228.8,
+      "debt_service": 63.7,
+      "net_worth": 483.8,
+      "current_ratio": 1.5,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "murabaha",
+    "currency": "SAR",
+    "amount": 180,
+    "tenor_years": 7,
+    "grace_years": 1,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 210,
+    "upfront_fee_bps": 60,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "real_estate",
+      "value": 150.0,
+      "currency": "SAR",
+      "valuation_date": "2026-07-20",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [
+     {
+      "guarantee_id": "G1",
+      "type": "corporate",
+      "guarantor": "Al Khobar Modern Logistics Group (parent)",
+      "guarantor_rating": "BBB",
+      "coverage_pct": 50,
+      "offered_in_ask": false
+     }
+    ],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.5,
+     "payroll": 0.2,
+     "fx": 0.1,
+     "trade": 0.3
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-03.docx",
+   "case": "large_exposure",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-04",
+   "status": "new",
+   "rm": "Abdullah Al-Zahrani",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-06",
+   "purpose": "Ijara financing of a completed Grade A office tower in north Riyadh",
+   "obligor": {
+    "existing": false,
+    "external_rating": null,
+    "obligor_id": "DN004",
+    "name": "Al Nakheel Commercial Properties Company",
+    "cr_number": "1010662590",
+    "sector": "Real Estate",
+    "sub_sector": "Commercial Property",
+    "segment": "Real Estate",
+    "region": "Riyadh",
+    "internal_rating": "BB+",
+    "gre": false,
+    "sme": false,
+    "simah_flag": "clear",
+    "group_id": "DG004",
+    "group_name": "Al Nakheel Holding",
+    "connected_parties": [],
+    "real_estate_finance": true,
+    "sector_code": "L68",
+    "pd_master_scale": 0.006058,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "gov_linked": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 131.96,
+      "ebitda": 81.82,
+      "total_debt": 162.0,
+      "debt_service": 31.8,
+      "net_worth": 457.6,
+      "current_ratio": 1.3,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 135.92,
+      "ebitda": 84.27,
+      "total_debt": 156.0,
+      "debt_service": 30.9,
+      "net_worth": 488.8,
+      "current_ratio": 1.3,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 140.0,
+      "ebitda": 86.8,
+      "total_debt": 150.0,
+      "debt_service": 30.0,
+      "net_worth": 520.0,
+      "current_ratio": 1.3,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 144.2,
+      "ebitda": 89.4,
+      "total_debt": 144.0,
+      "debt_service": 29.1,
+      "net_worth": 551.2,
+      "current_ratio": 1.3,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 148.53,
+      "ebitda": 92.09,
+      "total_debt": 138.0,
+      "debt_service": 28.2,
+      "net_worth": 582.4,
+      "current_ratio": 1.3,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 152.98,
+      "ebitda": 94.85,
+      "total_debt": 132.0,
+      "debt_service": 27.3,
+      "net_worth": 613.6,
+      "current_ratio": 1.3,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "ijara",
+    "currency": "SAR",
+    "amount": 150,
+    "tenor_years": 7,
+    "grace_years": 0,
+    "amortisation": "balloon",
+    "balloon_pct": 40,
+    "margin_bps": 260,
+    "upfront_fee_bps": 80,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "real_estate",
+      "value": 240.0,
+      "currency": "SAR",
+      "valuation_date": "2026-05-31",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.2,
+     "payroll": 0.0,
+     "fx": 0.0,
+     "trade": 0.0
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-04.docx",
+   "case": "concentrated_sector",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-05",
+   "status": "new",
+   "rm": "Sara Al-Dosari",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-07",
+   "purpose": "Working capital for a subcontract on a municipal infrastructure package",
+   "obligor": {
+    "existing": false,
+    "external_rating": null,
+    "obligor_id": "DN005",
+    "name": "Najd Al Bunyan Contracting Company",
+    "cr_number": "1010775031",
+    "sector": "Construction",
+    "sub_sector": "Civil Infrastructure",
+    "segment": "Construction",
+    "region": "Riyadh",
+    "internal_rating": "B-",
+    "gre": false,
+    "sme": false,
+    "simah_flag": "watch",
+    "group_id": "DG005",
+    "group_name": "Najd Al Bunyan Contracting",
+    "connected_parties": [],
+    "sector_code": "F42",
+    "pd_master_scale": 0.043038,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 297.96,
+      "ebitda": 35.76,
+      "total_debt": 102.6,
+      "debt_service": 28.62,
+      "net_worth": 105.6,
+      "current_ratio": 1.1,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 303.92,
+      "ebitda": 36.47,
+      "total_debt": 98.8,
+      "debt_service": 27.81,
+      "net_worth": 112.8,
+      "current_ratio": 1.1,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 310.0,
+      "ebitda": 37.2,
+      "total_debt": 95.0,
+      "debt_service": 27.0,
+      "net_worth": 120.0,
+      "current_ratio": 1.1,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 316.2,
+      "ebitda": 37.94,
+      "total_debt": 91.2,
+      "debt_service": 26.19,
+      "net_worth": 127.2,
+      "current_ratio": 1.1,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 322.52,
+      "ebitda": 38.7,
+      "total_debt": 87.4,
+      "debt_service": 25.38,
+      "net_worth": 134.4,
+      "current_ratio": 1.1,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 328.97,
+      "ebitda": 39.48,
+      "total_debt": 83.6,
+      "debt_service": 24.57,
+      "net_worth": 141.6,
+      "current_ratio": 1.1,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "tawarruq",
+    "currency": "SAR",
+    "amount": 45,
+    "tenor_years": 5,
+    "grace_years": 1,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 330,
+    "upfront_fee_bps": 60,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [],
+    "guarantees": [],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.05,
+     "payroll": 0.05,
+     "fx": 0.0,
+     "trade": 0.0
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-05.docx",
+   "case": "infeasible",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-06",
+   "status": "counter_offered",
+   "rm": "Khalid Al-Otaibi",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-03",
+   "purpose": "Revolving working capital for steel fabrication orders",
+   "obligor": {
+    "obligor_id": "CB02729",
+    "existing": true,
+    "name": "Dhahran Continental Industries",
+    "cr_number": "1042511581",
+    "group_id": "CG1965",
+    "group_name": "Dhahran Continental Industries Holding",
+    "legacy_group_id": "CG1965",
+    "connected_parties": [
+     "CB02729"
+    ],
+    "sector": "Manufacturing",
+    "sub_sector": "Metal Fabrication",
+    "sector_code": "C25",
+    "segment": "Manufacturing",
+    "region": "Asir",
+    "sme": false,
+    "gre": false,
+    "internal_rating": "BB+",
+    "external_rating": null,
+    "pd_master_scale": 0.006058,
+    "simah_flag": "clear",
+    "existing_exposure_sar_mn": 18.3667,
+    "existing_facilities": [
+     {
+      "facility_id": "CF027291",
+      "product": "asset_finance",
+      "limit": 12.0295,
+      "drawn": 5.1145,
+      "ead": 7.8332,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF027292",
+      "product": "working_capital",
+      "limit": 14.5174,
+      "drawn": 7.0701,
+      "ead": 10.5335,
+      "stage": 1
+     }
+    ],
+    "existing_collateral": [
+     {
+      "collateral_id": "CC027291",
+      "facility_id": "CF027291",
+      "type": "cash",
+      "value": 4.2907
+     },
+     {
+      "collateral_id": "CC027292",
+      "facility_id": "CF027292",
+      "type": "corporate_guarantee",
+      "value": 6.6747
+     }
+    ],
+    "prefilled_from": "v4-saudi-corporate-20q-v4 2026Q2",
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 79.41,
+      "ebitda": 21.587,
+      "total_debt": 54.239,
+      "debt_service": 9.543,
+      "net_worth": 27.119,
+      "current_ratio": 1.659,
+      "source": "corp_borrower_quarter 2023Q4"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 81.55,
+      "ebitda": 22.051,
+      "total_debt": 54.396,
+      "debt_service": 9.862,
+      "net_worth": 27.198,
+      "current_ratio": 1.644,
+      "source": "corp_borrower_quarter 2024Q4"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 83.755,
+      "ebitda": 22.55,
+      "total_debt": 54.523,
+      "debt_service": 10.176,
+      "net_worth": 27.262,
+      "current_ratio": 1.632,
+      "source": "corp_borrower_quarter 2025Q4"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 87.105,
+      "ebitda": 23.452,
+      "total_debt": 52.342,
+      "debt_service": 9.871,
+      "net_worth": 28.625,
+      "current_ratio": 1.632,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 90.589,
+      "ebitda": 24.39,
+      "total_debt": 50.161,
+      "debt_service": 9.565,
+      "net_worth": 29.988,
+      "current_ratio": 1.632,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 94.213,
+      "ebitda": 25.366,
+      "total_debt": 47.98,
+      "debt_service": 9.26,
+      "net_worth": 31.351,
+      "current_ratio": 1.632,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "revolver",
+    "structure": "murabaha",
+    "currency": "SAR",
+    "amount": 25,
+    "tenor_years": 3,
+    "grace_years": 0,
+    "amortisation": "bullet",
+    "balloon_pct": 0,
+    "margin_bps": 190,
+    "upfront_fee_bps": 40,
+    "commitment_fee_bps": 25,
+    "commission_bps": 0,
+    "utilisation_pct": 60,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard",
+    "deposit_type": "relationship",
+    "deposit_pct": 20,
+    "deposit_amount": 0,
+    "deposit_tenor_months": 0,
+    "deposit_facility": ""
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "receivables",
+      "value": 20.0,
+      "currency": "SAR",
+      "valuation_date": "2026-06-30",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.08,
+     "payroll": 0.05,
+     "fx": 0.02,
+     "trade": 0.06
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-06.docx",
+   "case": "existing_manufacturer",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-07",
+   "status": "approved",
+   "rm": "Sara Al-Dosari",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-02",
+   "purpose": "Import letters of credit for building supplies from China and Turkey",
+   "obligor": {
+    "obligor_id": "CB05080",
+    "existing": true,
+    "name": "Unayzah Trading",
+    "cr_number": "1062431511",
+    "group_id": "CG6234",
+    "group_name": "Unayzah Trading Holding",
+    "legacy_group_id": "CG6234",
+    "connected_parties": [
+     "CB05080"
+    ],
+    "sector": "Wholesale Trade",
+    "sub_sector": "General Trading",
+    "sector_code": "G46",
+    "segment": "Wholesale Trade",
+    "region": "Riyadh",
+    "sme": false,
+    "gre": false,
+    "internal_rating": "BBB-",
+    "external_rating": null,
+    "pd_master_scale": 0.004092,
+    "simah_flag": "clear",
+    "existing_exposure_sar_mn": 43.8545,
+    "existing_facilities": [
+     {
+      "facility_id": "CF050801",
+      "product": "revolving_credit",
+      "limit": 3.4703,
+      "drawn": 2.7249,
+      "ead": 3.003,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF050802",
+      "product": "term_loan",
+      "limit": 11.4253,
+      "drawn": 7.9243,
+      "ead": 8.6555,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF050803",
+      "product": "term_loan",
+      "limit": 16.6676,
+      "drawn": 11.8131,
+      "ead": 13.0381,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF050804",
+      "product": "trade_finance",
+      "limit": 13.4822,
+      "drawn": 11.1022,
+      "ead": 11.9637,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF050805",
+      "product": "working_capital",
+      "limit": 6.5403,
+      "drawn": 4.4453,
+      "ead": 4.8755,
+      "stage": 1
+     },
+     {
+      "facility_id": "CFN02889",
+      "product": "supply_chain_finance",
+      "limit": 3.4126,
+      "drawn": 1.8378,
+      "ead": 2.3187,
+      "stage": 1
+     }
+    ],
+    "existing_collateral": [
+     {
+      "collateral_id": "CC050801",
+      "facility_id": "CF050801",
+      "type": "corporate_guarantee",
+      "value": 3.329
+     },
+     {
+      "collateral_id": "CC050802",
+      "facility_id": "CF050802",
+      "type": "real_estate",
+      "value": 6.2699
+     },
+     {
+      "collateral_id": "CC050803",
+      "facility_id": "CF050803",
+      "type": "plant_equipment",
+      "value": 13.5358
+     },
+     {
+      "collateral_id": "CC050804",
+      "facility_id": "CF050804",
+      "type": "receivables",
+      "value": 14.178
+     },
+     {
+      "collateral_id": "CC050805",
+      "facility_id": "CF050805",
+      "type": "cash",
+      "value": 4.9847
+     },
+     {
+      "collateral_id": "CCN02889",
+      "facility_id": "CFN02889",
+      "type": "receivables",
+      "value": 0.7524
+     }
+    ],
+    "prefilled_from": "v4-saudi-corporate-20q-v4 2026Q2",
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 77.68,
+      "ebitda": 21.842,
+      "total_debt": 45.578,
+      "debt_service": 9.542,
+      "net_worth": 22.789,
+      "current_ratio": 1.662,
+      "source": "corp_borrower_quarter 2023Q4"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 79.827,
+      "ebitda": 22.35,
+      "total_debt": 45.687,
+      "debt_service": 9.854,
+      "net_worth": 22.843,
+      "current_ratio": 1.65,
+      "source": "corp_borrower_quarter 2024Q4"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 82.047,
+      "ebitda": 22.9,
+      "total_debt": 45.767,
+      "debt_service": 10.16,
+      "net_worth": 22.883,
+      "current_ratio": 1.641,
+      "source": "corp_borrower_quarter 2025Q4"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 85.329,
+      "ebitda": 23.816,
+      "total_debt": 43.936,
+      "debt_service": 9.855,
+      "net_worth": 24.027,
+      "current_ratio": 1.641,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 88.742,
+      "ebitda": 24.769,
+      "total_debt": 42.106,
+      "debt_service": 9.55,
+      "net_worth": 25.171,
+      "current_ratio": 1.641,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 92.292,
+      "ebitda": 25.759,
+      "total_debt": 40.275,
+      "debt_service": 9.246,
+      "net_worth": 26.315,
+      "current_ratio": 1.641,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "trade_lc",
+    "structure": "murabaha",
+    "currency": "USD",
+    "amount": 8,
+    "tenor_years": 1,
+    "grace_years": 0,
+    "amortisation": "bullet",
+    "balloon_pct": 0,
+    "margin_bps": 0,
+    "upfront_fee_bps": 25,
+    "commitment_fee_bps": 0,
+    "commission_bps": 80,
+    "utilisation_pct": 75,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 10,
+    "collateral_ids": [],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "none"
+   },
+   "security": {
+    "collateral": [],
+    "guarantees": [],
+    "covenant_package": "none",
+    "covenants": []
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.04,
+     "payroll": 0.02,
+     "fx": 0.08,
+     "trade": 0.1
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-07.docx",
+   "case": "existing_trader_lc",
+   "deal_currency": "USD"
+  },
+  {
+   "proposal_id": "DD-08",
+   "status": "new",
+   "rm": "Abdullah Al-Zahrani",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-07",
+   "purpose": "Ijara of diagnostic imaging equipment for a new hospital wing in Jeddah",
+   "obligor": {
+    "existing": false,
+    "external_rating": null,
+    "obligor_id": "DN008",
+    "name": "Jeddah Al Shifa Hospital Company",
+    "cr_number": "4030558761",
+    "sector": "Healthcare",
+    "sub_sector": "Hospitals",
+    "segment": "Healthcare",
+    "region": "Makkah",
+    "internal_rating": "BBB-",
+    "gre": false,
+    "sme": false,
+    "simah_flag": "clear",
+    "group_id": "DG008",
+    "group_name": "Al Shifa Healthcare Group",
+    "connected_parties": [],
+    "sector_code": "Q86",
+    "pd_master_scale": 0.004092,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 507.94,
+      "ebitda": 106.67,
+      "total_debt": 205.2,
+      "debt_service": 55.12,
+      "net_worth": 334.4,
+      "current_ratio": 1.4,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 533.33,
+      "ebitda": 112.0,
+      "total_debt": 197.6,
+      "debt_service": 53.56,
+      "net_worth": 357.2,
+      "current_ratio": 1.4,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 560.0,
+      "ebitda": 117.6,
+      "total_debt": 190.0,
+      "debt_service": 52.0,
+      "net_worth": 380.0,
+      "current_ratio": 1.4,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 588.0,
+      "ebitda": 123.48,
+      "total_debt": 182.4,
+      "debt_service": 50.44,
+      "net_worth": 402.8,
+      "current_ratio": 1.4,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 617.4,
+      "ebitda": 129.65,
+      "total_debt": 174.8,
+      "debt_service": 48.88,
+      "net_worth": 425.6,
+      "current_ratio": 1.4,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 648.27,
+      "ebitda": 136.14,
+      "total_debt": 167.2,
+      "debt_service": 47.32,
+      "net_worth": 448.4,
+      "current_ratio": 1.4,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "ijara",
+    "currency": "SAR",
+    "amount": 70,
+    "tenor_years": 6,
+    "grace_years": 0,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 215,
+    "upfront_fee_bps": 60,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "plant_equipment",
+      "value": 82.0,
+      "currency": "SAR",
+      "valuation_date": "2026-09-01",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.3,
+     "payroll": 0.4,
+     "fx": 0.05,
+     "trade": 0.1
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-08.docx",
+   "case": "healthcare_ijara",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-09",
+   "status": "new",
+   "rm": "Khalid Al-Otaibi",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-08",
+   "purpose": "Performance guarantee for an electrical works contract with a government entity",
+   "obligor": {
+    "existing": false,
+    "external_rating": null,
+    "obligor_id": "DN009",
+    "name": "Tabuk Electromechanical Services Company",
+    "cr_number": "3550210478",
+    "sector": "Construction",
+    "sub_sector": "Electromechanical",
+    "segment": "Construction",
+    "region": "Tabuk",
+    "internal_rating": "BBB",
+    "gre": false,
+    "sme": false,
+    "simah_flag": "clear",
+    "gov_linked": true,
+    "group_id": "DG009",
+    "group_name": "Tabuk Electromechanical Services",
+    "connected_parties": [],
+    "sector_code": "F42",
+    "pd_master_scale": 0.002765,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 344.67,
+      "ebitda": 51.7,
+      "total_debt": 75.6,
+      "debt_service": 21.2,
+      "net_worth": 184.8,
+      "current_ratio": 1.6,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 361.9,
+      "ebitda": 54.29,
+      "total_debt": 72.8,
+      "debt_service": 20.6,
+      "net_worth": 197.4,
+      "current_ratio": 1.6,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 380.0,
+      "ebitda": 57.0,
+      "total_debt": 70.0,
+      "debt_service": 20.0,
+      "net_worth": 210.0,
+      "current_ratio": 1.6,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 399.0,
+      "ebitda": 59.85,
+      "total_debt": 67.2,
+      "debt_service": 19.4,
+      "net_worth": 222.6,
+      "current_ratio": 1.6,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 418.95,
+      "ebitda": 62.84,
+      "total_debt": 64.4,
+      "debt_service": 18.8,
+      "net_worth": 235.2,
+      "current_ratio": 1.6,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 439.9,
+      "ebitda": 65.98,
+      "total_debt": 61.6,
+      "debt_service": 18.2,
+      "net_worth": 247.8,
+      "current_ratio": 1.6,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "performance_lg",
+    "structure": "conventional",
+    "currency": "SAR",
+    "amount": 40,
+    "tenor_years": 3,
+    "grace_years": 0,
+    "amortisation": "bullet",
+    "balloon_pct": 0,
+    "margin_bps": 0,
+    "upfront_fee_bps": 20,
+    "commitment_fee_bps": 0,
+    "commission_bps": 90,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 10,
+    "collateral_ids": [],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "none"
+   },
+   "security": {
+    "collateral": [],
+    "guarantees": [],
+    "covenant_package": "none",
+    "covenants": []
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.1,
+     "payroll": 0.15,
+     "fx": 0.0,
+     "trade": 0.05
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-09.docx",
+   "case": "gov_supplier_lg",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-10",
+   "status": "new",
+   "rm": "Sara Al-Dosari",
+   "business_unit": "SME Banking",
+   "received": "2026-10-08",
+   "purpose": "Purchase of packaging machinery for a food-grade plastics workshop",
+   "obligor": {
+    "existing": false,
+    "external_rating": null,
+    "obligor_id": "DN010",
+    "name": "Al Qassim Precision Plastics Establishment",
+    "cr_number": "1131049982",
+    "sector": "Manufacturing",
+    "sub_sector": "Industrial Products",
+    "segment": "Manufacturing",
+    "region": "Qassim",
+    "internal_rating": "BB-",
+    "gre": false,
+    "sme": true,
+    "simah_flag": "clear",
+    "group_id": "DG010",
+    "group_name": "Al Qassim Precision Plastics",
+    "connected_parties": [],
+    "sector_code": "C25",
+    "pd_master_scale": 0.013271,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 34.47,
+      "ebitda": 6.2,
+      "total_debt": 6.48,
+      "debt_service": 2.01,
+      "net_worth": 12.32,
+      "current_ratio": 1.3,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 36.19,
+      "ebitda": 6.51,
+      "total_debt": 6.24,
+      "debt_service": 1.96,
+      "net_worth": 13.16,
+      "current_ratio": 1.3,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 38.0,
+      "ebitda": 6.84,
+      "total_debt": 6.0,
+      "debt_service": 1.9,
+      "net_worth": 14.0,
+      "current_ratio": 1.3,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 39.9,
+      "ebitda": 7.18,
+      "total_debt": 5.76,
+      "debt_service": 1.84,
+      "net_worth": 14.84,
+      "current_ratio": 1.3,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 41.9,
+      "ebitda": 7.54,
+      "total_debt": 5.52,
+      "debt_service": 1.79,
+      "net_worth": 15.68,
+      "current_ratio": 1.3,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 43.99,
+      "ebitda": 7.92,
+      "total_debt": 5.28,
+      "debt_service": 1.73,
+      "net_worth": 16.52,
+      "current_ratio": 1.3,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "murabaha",
+    "currency": "SAR",
+    "amount": 8,
+    "tenor_years": 5,
+    "grace_years": 1,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 300,
+    "upfront_fee_bps": 100,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": "G1",
+    "guarantee_coverage_pct": 80,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "plant_equipment",
+      "value": 6.5,
+      "currency": "SAR",
+      "valuation_date": "2026-09-10",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [
+     {
+      "guarantee_id": "G1",
+      "type": "kafalah",
+      "guarantor": "Kafalah programme",
+      "guarantor_rating": "AA-",
+      "coverage_pct": 80,
+      "offered_in_ask": true
+     }
+    ],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.01,
+     "payroll": 0.01,
+     "fx": 0.0,
+     "trade": 0.0
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-10.docx",
+   "case": "sme_kafalah",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-11",
+   "status": "declined",
+   "rm": "Abdullah Al-Zahrani",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-01",
+   "purpose": "Working capital line with a performance-guarantee sub-limit for marine works",
+   "obligor": {
+    "obligor_id": "CB00808",
+    "existing": true,
+    "name": "Al Kharj United Contracting",
+    "cr_number": "1013611231",
+    "group_id": "CG6292-083",
+    "group_name": "Arar Eastern Contracting Group",
+    "legacy_group_id": "CG6292",
+    "connected_parties": [
+     "CB00800",
+     "CB00808",
+     "CB01080",
+     "CB01127",
+     "CB01159",
+     "CB01284"
+    ],
+    "sector": "Construction",
+    "sub_sector": "Marine Works",
+    "sector_code": "F42",
+    "segment": "Construction",
+    "region": "Riyadh",
+    "sme": false,
+    "gre": false,
+    "internal_rating": "B",
+    "external_rating": null,
+    "pd_master_scale": 0.029077,
+    "simah_flag": "adverse",
+    "existing_exposure_sar_mn": 44.1208,
+    "existing_facilities": [
+     {
+      "facility_id": "CF008081",
+      "product": "project_finance",
+      "limit": 7.5657,
+      "drawn": 6.3138,
+      "ead": 6.8708,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF008082",
+      "product": "project_finance",
+      "limit": 5.6697,
+      "drawn": 4.6178,
+      "ead": 5.0254,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF008083",
+      "product": "term_loan",
+      "limit": 17.7778,
+      "drawn": 13.3779,
+      "ead": 14.9823,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF008084",
+      "product": "term_loan",
+      "limit": 14.3516,
+      "drawn": 8.2383,
+      "ead": 11.0453,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF008085",
+      "product": "working_capital",
+      "limit": 6.571,
+      "drawn": 6.077,
+      "ead": 6.197,
+      "stage": 1
+     }
+    ],
+    "existing_collateral": [
+     {
+      "collateral_id": "CC008081",
+      "facility_id": "CF008081",
+      "type": "receivables",
+      "value": 7.1165
+     },
+     {
+      "collateral_id": "CC008082",
+      "facility_id": "CF008082",
+      "type": "cash",
+      "value": 5.994
+     },
+     {
+      "collateral_id": "CC008083",
+      "facility_id": "CF008083",
+      "type": "corporate_guarantee",
+      "value": 15.9055
+     },
+     {
+      "collateral_id": "CC008084",
+      "facility_id": "CF008084",
+      "type": "real_estate",
+      "value": 11.1715
+     },
+     {
+      "collateral_id": "CC008085",
+      "facility_id": "CF008085",
+      "type": "plant_equipment",
+      "value": 5.5564
+     }
+    ],
+    "prefilled_from": "v4-saudi-corporate-20q-v4 2026Q2",
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 79.508,
+      "ebitda": 21.587,
+      "total_debt": 39.885,
+      "debt_service": 9.772,
+      "net_worth": 19.942,
+      "current_ratio": 1.613,
+      "source": "corp_borrower_quarter 2023Q4"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 80.887,
+      "ebitda": 21.564,
+      "total_debt": 40.274,
+      "debt_service": 10.205,
+      "net_worth": 20.137,
+      "current_ratio": 1.564,
+      "source": "corp_borrower_quarter 2024Q4"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 82.182,
+      "ebitda": 21.475,
+      "total_debt": 40.692,
+      "debt_service": 10.679,
+      "net_worth": 20.346,
+      "current_ratio": 1.512,
+      "source": "corp_borrower_quarter 2025Q4"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 85.469,
+      "ebitda": 22.334,
+      "total_debt": 39.064,
+      "debt_service": 10.359,
+      "net_worth": 21.363,
+      "current_ratio": 1.512,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 88.888,
+      "ebitda": 23.227,
+      "total_debt": 37.437,
+      "debt_service": 10.038,
+      "net_worth": 22.381,
+      "current_ratio": 1.512,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 92.444,
+      "ebitda": 24.156,
+      "total_debt": 35.809,
+      "debt_service": 9.718,
+      "net_worth": 23.398,
+      "current_ratio": 1.512,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "revolver",
+    "structure": "tawarruq",
+    "currency": "SAR",
+    "amount": 24,
+    "tenor_years": 3,
+    "grace_years": 0,
+    "amortisation": "bullet",
+    "balloon_pct": 0,
+    "margin_bps": 380,
+    "upfront_fee_bps": 80,
+    "commitment_fee_bps": 30,
+    "commission_bps": 120,
+    "utilisation_pct": 70,
+    "funded_share_pct": 50,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 5,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "real_estate",
+      "value": 14.0,
+      "currency": "SAR",
+      "valuation_date": "2026-04-30",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.04,
+     "payroll": 0.06,
+     "fx": 0.0,
+     "trade": 0.03
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-11.docx",
+   "case": "existing_contractor_lg",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-12",
+   "status": "new",
+   "rm": "Khalid Al-Otaibi",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-09",
+   "purpose": "Diminishing Musharaka for a bonded warehouse at King Abdulaziz Port",
+   "obligor": {
+    "obligor_id": "CB04811",
+    "existing": true,
+    "name": "Yanbu Modern Logistics",
+    "cr_number": "1064747739",
+    "group_id": "CG9317-011",
+    "group_name": "Al Khobar Central Logistics Group",
+    "legacy_group_id": "CG9317",
+    "connected_parties": [
+     "CB04735",
+     "CB04811",
+     "CB04895"
+    ],
+    "sector": "Transport and Logistics",
+    "sub_sector": "Cold Chain",
+    "sector_code": "H52",
+    "segment": "Transport and Logistics",
+    "region": "Riyadh",
+    "sme": false,
+    "gre": false,
+    "internal_rating": "BBB+",
+    "external_rating": null,
+    "pd_master_scale": 0.001868,
+    "simah_flag": "clear",
+    "existing_exposure_sar_mn": 33.7815,
+    "existing_facilities": [
+     {
+      "facility_id": "CF048111",
+      "product": "project_finance",
+      "limit": 15.3611,
+      "drawn": 13.2184,
+      "ead": 14.1522,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF048112",
+      "product": "term_loan",
+      "limit": 2.607,
+      "drawn": 1.8507,
+      "ead": 2.1369,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF048113",
+      "product": "revolving_credit",
+      "limit": 6.4728,
+      "drawn": 5.585,
+      "ead": 5.9172,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF048114",
+      "product": "project_finance",
+      "limit": 13.6762,
+      "drawn": 9.7914,
+      "ead": 10.5723,
+      "stage": 1
+     },
+     {
+      "facility_id": "CFN02452",
+      "product": "supply_chain_finance",
+      "limit": 1.4552,
+      "drawn": 0.7601,
+      "ead": 1.0029,
+      "stage": 1
+     }
+    ],
+    "existing_collateral": [
+     {
+      "collateral_id": "CC048111",
+      "facility_id": "CF048111",
+      "type": "real_estate",
+      "value": 14.5672
+     },
+     {
+      "collateral_id": "CC048112",
+      "facility_id": "CF048112",
+      "type": "plant_equipment",
+      "value": 2.7518
+     },
+     {
+      "collateral_id": "CC048113",
+      "facility_id": "CF048113",
+      "type": "receivables",
+      "value": 3.2328
+     },
+     {
+      "collateral_id": "CC048114",
+      "facility_id": "CF048114",
+      "type": "cash",
+      "value": 13.7999
+     },
+     {
+      "collateral_id": "CCN02452",
+      "facility_id": "CFN02452",
+      "type": "receivables",
+      "value": 0.4785
+     }
+    ],
+    "prefilled_from": "v4-saudi-corporate-20q-v4 2026Q2",
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 76.763,
+      "ebitda": 19.871,
+      "total_debt": 39.014,
+      "debt_service": 8.696,
+      "net_worth": 19.507,
+      "current_ratio": 1.656,
+      "source": "corp_borrower_quarter 2023Q4"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 78.792,
+      "ebitda": 20.267,
+      "total_debt": 39.142,
+      "debt_service": 8.988,
+      "net_worth": 19.571,
+      "current_ratio": 1.64,
+      "source": "corp_borrower_quarter 2024Q4"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 80.876,
+      "ebitda": 20.691,
+      "total_debt": 39.251,
+      "debt_service": 9.278,
+      "net_worth": 19.625,
+      "current_ratio": 1.626,
+      "source": "corp_borrower_quarter 2025Q4"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 84.111,
+      "ebitda": 21.519,
+      "total_debt": 37.681,
+      "debt_service": 9.0,
+      "net_worth": 20.606,
+      "current_ratio": 1.626,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 87.475,
+      "ebitda": 22.379,
+      "total_debt": 36.111,
+      "debt_service": 8.721,
+      "net_worth": 21.588,
+      "current_ratio": 1.626,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 90.975,
+      "ebitda": 23.275,
+      "total_debt": 34.541,
+      "debt_service": 8.443,
+      "net_worth": 22.569,
+      "current_ratio": 1.626,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "musharaka",
+    "currency": "USD",
+    "amount": 7,
+    "tenor_years": 7,
+    "grace_years": 1,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 230,
+    "upfront_fee_bps": 60,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [
+     "C1"
+    ],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "real_estate",
+      "value": 32.0,
+      "currency": "SAR",
+      "valuation_date": "2026-08-01",
+      "pledged_in_ask": true
+     }
+    ],
+    "guarantees": [
+     {
+      "guarantee_id": "G1",
+      "type": "personal",
+      "guarantor": "Managing partner",
+      "guarantor_rating": "BBB",
+      "coverage_pct": 100,
+      "offered_in_ask": false
+     }
+    ],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.05,
+     "payroll": 0.03,
+     "fx": 0.06,
+     "trade": 0.05
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-12.docx",
+   "case": "existing_logistics_musharaka",
+   "deal_currency": "USD"
+  },
+  {
+   "proposal_id": "DD-13",
+   "status": "in_review",
+   "rm": "Sara Al-Dosari",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-09",
+   "purpose": "Fit-out of three outpatient clinics in Makkah and Taif",
+   "obligor": {
+    "obligor_id": "CB01399",
+    "existing": true,
+    "name": "Al Jouf Arabian Medical",
+    "cr_number": "1056006833",
+    "group_id": "CG5960",
+    "group_name": "Al Jouf Arabian Medical Holding",
+    "legacy_group_id": "CG5960",
+    "connected_parties": [
+     "CB01399"
+    ],
+    "sector": "Healthcare",
+    "sub_sector": "Medical Devices",
+    "sector_code": "Q86",
+    "segment": "Healthcare",
+    "region": "Makkah",
+    "sme": false,
+    "gre": false,
+    "internal_rating": "BBB",
+    "external_rating": null,
+    "pd_master_scale": 0.002765,
+    "simah_flag": "clear",
+    "existing_exposure_sar_mn": 21.099,
+    "existing_facilities": [
+     {
+      "facility_id": "CF013991",
+      "product": "project_finance",
+      "limit": 10.0107,
+      "drawn": 4.0845,
+      "ead": 6.1621,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF013992",
+      "product": "revolving_credit",
+      "limit": 1.7462,
+      "drawn": 1.0573,
+      "ead": 1.3912,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF013993",
+      "product": "working_capital",
+      "limit": 3.2247,
+      "drawn": 1.3418,
+      "ead": 2.1282,
+      "stage": 1
+     },
+     {
+      "facility_id": "CF013994",
+      "product": "project_finance",
+      "limit": 14.1245,
+      "drawn": 7.1504,
+      "ead": 9.3106,
+      "stage": 1
+     },
+     {
+      "facility_id": "CFN00108",
+      "product": "supply_chain_finance",
+      "limit": 2.246,
+      "drawn": 1.9781,
+      "ead": 2.1069,
+      "stage": 1
+     }
+    ],
+    "existing_collateral": [
+     {
+      "collateral_id": "CC013991",
+      "facility_id": "CF013991",
+      "type": "cash",
+      "value": 4.0895
+     },
+     {
+      "collateral_id": "CC013992",
+      "facility_id": "CF013992",
+      "type": "corporate_guarantee",
+      "value": 1.8064
+     },
+     {
+      "collateral_id": "CC013993",
+      "facility_id": "CF013993",
+      "type": "real_estate",
+      "value": 1.1384
+     },
+     {
+      "collateral_id": "CC013994",
+      "facility_id": "CF013994",
+      "type": "plant_equipment",
+      "value": 12.0737
+     },
+     {
+      "collateral_id": "CCN00108",
+      "facility_id": "CFN00108",
+      "type": "receivables",
+      "value": 0.6201
+     }
+    ],
+    "prefilled_from": "v4-saudi-corporate-20q-v4 2026Q2",
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 77.279,
+      "ebitda": 21.458,
+      "total_debt": 50.821,
+      "debt_service": 9.334,
+      "net_worth": 25.411,
+      "current_ratio": 1.674,
+      "source": "corp_borrower_quarter 2023Q4"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 79.611,
+      "ebitda": 22.084,
+      "total_debt": 50.848,
+      "debt_service": 9.614,
+      "net_worth": 25.424,
+      "current_ratio": 1.671,
+      "source": "corp_borrower_quarter 2024Q4"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 82.054,
+      "ebitda": 22.781,
+      "total_debt": 50.824,
+      "debt_service": 9.883,
+      "net_worth": 25.412,
+      "current_ratio": 1.674,
+      "source": "corp_borrower_quarter 2025Q4"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 85.336,
+      "ebitda": 23.692,
+      "total_debt": 48.791,
+      "debt_service": 9.587,
+      "net_worth": 26.683,
+      "current_ratio": 1.674,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 88.75,
+      "ebitda": 24.64,
+      "total_debt": 46.758,
+      "debt_service": 9.29,
+      "net_worth": 27.953,
+      "current_ratio": 1.674,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 92.3,
+      "ebitda": 25.626,
+      "total_debt": 44.725,
+      "debt_service": 8.994,
+      "net_worth": 29.224,
+      "current_ratio": 1.674,
+      "source": "RM projection: 4% growth on the 2025 actuals"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "tawarruq",
+    "currency": "SAR",
+    "amount": 22,
+    "tenor_years": 5,
+    "grace_years": 1,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 200,
+    "upfront_fee_bps": 50,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [],
+    "guarantee_id": "G1",
+    "guarantee_coverage_pct": 60,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "cash",
+      "value": 3.0,
+      "currency": "SAR",
+      "valuation_date": "2026-06-30",
+      "pledged_in_ask": false
+     }
+    ],
+    "guarantees": [
+     {
+      "guarantee_id": "G1",
+      "type": "corporate",
+      "guarantor": "Al Jouf Arabian Medical Holding (parent)",
+      "guarantor_rating": "BBB+",
+      "coverage_pct": 60,
+      "offered_in_ask": true
+     }
+    ],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.05,
+     "payroll": 0.08,
+     "fx": 0.0,
+     "trade": 0.02
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-13.docx",
+   "case": "existing_clinic_guaranteed",
+   "deal_currency": "SAR"
+  },
+  {
+   "proposal_id": "DD-14",
+   "status": "new",
+   "rm": "Abdullah Al-Zahrani",
+   "business_unit": "Corporate Banking",
+   "received": "2026-10-10",
+   "purpose": "Debottlenecking capex at a downstream polymers plant in Jubail",
+   "obligor": {
+    "existing": false,
+    "external_rating": "A",
+    "obligor_id": "DN014",
+    "name": "Jubail Advanced Polymers Company",
+    "cr_number": "2055117390",
+    "sector": "Chemicals",
+    "sub_sector": "Petrochemicals",
+    "segment": "Chemicals",
+    "region": "Eastern Province",
+    "internal_rating": "AA-",
+    "gre": false,
+    "sme": false,
+    "simah_flag": "clear",
+    "group_id": "DG014",
+    "group_name": "Jubail Advanced Polymers",
+    "connected_parties": [],
+    "sector_code": "C20",
+    "pd_master_scale": 0.000389,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 2176.87,
+      "ebitda": 522.45,
+      "total_debt": 972.0,
+      "debt_service": 222.6,
+      "net_worth": 2728.0,
+      "current_ratio": 2.1,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 2285.71,
+      "ebitda": 548.57,
+      "total_debt": 936.0,
+      "debt_service": 216.3,
+      "net_worth": 2914.0,
+      "current_ratio": 2.1,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 2400.0,
+      "ebitda": 576.0,
+      "total_debt": 900.0,
+      "debt_service": 210.0,
+      "net_worth": 3100.0,
+      "current_ratio": 2.1,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 2520.0,
+      "ebitda": 604.8,
+      "total_debt": 864.0,
+      "debt_service": 203.7,
+      "net_worth": 3286.0,
+      "current_ratio": 2.1,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 2646.0,
+      "ebitda": 635.04,
+      "total_debt": 828.0,
+      "debt_service": 197.4,
+      "net_worth": 3472.0,
+      "current_ratio": 2.1,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 2778.3,
+      "ebitda": 666.79,
+      "total_debt": 792.0,
+      "debt_service": 191.1,
+      "net_worth": 3658.0,
+      "current_ratio": 2.1,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "conventional",
+    "currency": "USD",
+    "amount": 50,
+    "tenor_years": 7,
+    "grace_years": 2,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 70,
+    "upfront_fee_bps": 30,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [
+     {
+      "collateral_id": "C1",
+      "type": "plant_equipment",
+      "value": 300.0,
+      "currency": "USD",
+      "valuation_date": "2026-03-31",
+      "pledged_in_ask": false
+     }
+    ],
+    "guarantees": [],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.4,
+     "payroll": 0.3,
+     "fx": 0.5,
+     "trade": 0.3
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-14.docx",
+   "case": "below_market_margin",
+   "deal_currency": "USD"
+  },
+  {
+   "proposal_id": "DD-15",
+   "status": "new",
+   "rm": "Khalid Al-Otaibi",
+   "business_unit": "Government and GRE",
+   "received": "2026-10-10",
+   "purpose": "Grid reinforcement programme for the Eastern Province transmission network",
+   "obligor": {
+    "existing": false,
+    "external_rating": "AA-",
+    "obligor_id": "DN015",
+    "name": "Eastern Grid Services Company",
+    "cr_number": "2050871256",
+    "sector": "Power and Utilities",
+    "sub_sector": "Transmission",
+    "segment": "Power and Utilities",
+    "region": "Eastern Province",
+    "internal_rating": "AAA",
+    "gre": true,
+    "sme": false,
+    "simah_flag": "clear",
+    "group_id": "DG015",
+    "group_name": "Eastern Grid Services",
+    "connected_parties": [],
+    "sector_code": "D35",
+    "pd_master_scale": 0.0001,
+    "existing_exposure_sar_mn": 0.0,
+    "existing_facilities": [],
+    "gov_linked": false,
+    "real_estate_finance": false
+   },
+   "financials": {
+    "currency": "SAR",
+    "unit": "SAR m",
+    "years": [
+     {
+      "year": 2023,
+      "kind": "actual",
+      "revenue": 4807.69,
+      "ebitda": 1971.15,
+      "total_debt": 6588.0,
+      "debt_service": 1038.8,
+      "net_worth": 12320.0,
+      "current_ratio": 1.2,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2024,
+      "kind": "actual",
+      "revenue": 5000.0,
+      "ebitda": 2050.0,
+      "total_debt": 6344.0,
+      "debt_service": 1009.4,
+      "net_worth": 13160.0,
+      "current_ratio": 1.2,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2025,
+      "kind": "actual",
+      "revenue": 5200.0,
+      "ebitda": 2132.0,
+      "total_debt": 6100.0,
+      "debt_service": 980.0,
+      "net_worth": 14000.0,
+      "current_ratio": 1.2,
+      "source": "Audited financial statements"
+     },
+     {
+      "year": 2026,
+      "kind": "projection",
+      "revenue": 5408.0,
+      "ebitda": 2217.28,
+      "total_debt": 5856.0,
+      "debt_service": 950.6,
+      "net_worth": 14840.0,
+      "current_ratio": 1.2,
+      "source": "Management projections"
+     },
+     {
+      "year": 2027,
+      "kind": "projection",
+      "revenue": 5624.32,
+      "ebitda": 2305.97,
+      "total_debt": 5612.0,
+      "debt_service": 921.2,
+      "net_worth": 15680.0,
+      "current_ratio": 1.2,
+      "source": "Management projections"
+     },
+     {
+      "year": 2028,
+      "kind": "projection",
+      "revenue": 5849.29,
+      "ebitda": 2398.21,
+      "total_debt": 5368.0,
+      "debt_service": 891.8,
+      "net_worth": 16520.0,
+      "current_ratio": 1.2,
+      "source": "Management projections"
+     }
+    ]
+   },
+   "ask": {
+    "facility_type": "term_loan",
+    "structure": "murabaha",
+    "currency": "SAR",
+    "amount": 240,
+    "tenor_years": 10,
+    "grace_years": 2,
+    "amortisation": "equal",
+    "balloon_pct": 0,
+    "margin_bps": 85,
+    "upfront_fee_bps": 25,
+    "commitment_fee_bps": 0,
+    "commission_bps": 0,
+    "utilisation_pct": 100,
+    "funded_share_pct": 100,
+    "unfunded_type": "performance_lg",
+    "cash_margin_pct": 0,
+    "collateral_ids": [],
+    "guarantee_id": null,
+    "guarantee_coverage_pct": 0,
+    "covenant_package": "standard"
+   },
+   "security": {
+    "collateral": [],
+    "guarantees": [
+     {
+      "guarantee_id": "G1",
+      "type": "government",
+      "guarantor": "Ministry of Energy letter of support",
+      "guarantor_rating": "A+",
+      "coverage_pct": 100,
+      "offered_in_ask": false
+     }
+    ],
+    "covenant_package": "standard",
+    "covenants": [
+     {
+      "type": "DSCR",
+      "threshold": 1.2
+     },
+     {
+      "type": "Net debt / EBITDA",
+      "threshold": 4.0
+     },
+     {
+      "type": "Interest cover",
+      "threshold": 2.5
+     }
+    ]
+   },
+   "business_case": {
+    "ancillary_income_sar_mn_pa": {
+     "cash_management": 0.8,
+     "payroll": 0.5,
+     "fx": 0.1,
+     "trade": 0.2
+    },
+    "currency": "SAR"
+   },
+   "memo": "DD-15.docx",
+   "case": "out_of_range",
+   "deal_currency": "SAR"
+  }
+ ]
+}

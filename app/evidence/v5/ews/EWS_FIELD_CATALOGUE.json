@@ -1,0 +1,202 @@
+{
+ "document": "EWS_FIELD_CATALOGUE",
+ "written_utc": "2026-10-10T07:34:42.641966+00:00",
+ "ruleset_version": "gw-ews-1.0.0",
+ "bands": [
+  {
+   "score_at_least": 6,
+   "band": "critical"
+  },
+  {
+   "score_at_least": 4,
+   "band": "high"
+  },
+  {
+   "score_at_least": 2,
+   "band": "moderate"
+  },
+  {
+   "score_at_least": 1,
+   "band": "low"
+  }
+ ],
+ "bands_else": "none",
+ "domains": {
+  "corporate": {
+   "ews_release_id": "ews-saudi-corporate-20q-v4e2",
+   "ews_columns": [
+    "ews_score",
+    "ews_reasons",
+    "ews_band",
+    "ews_ruleset_version"
+   ],
+   "rules": [
+    {
+     "id": "C-WATCH",
+     "label": "On watchlist",
+     "sql": "watchlist_flag = 1",
+     "weight": 3,
+     "requires": [
+      "watchlist_flag"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "C-DOWNGRADE",
+     "label": "Rating downgraded this quarter",
+     "sql": "rating_notches_moved > 0",
+     "weight": 2,
+     "requires": [
+      "rating_notches_moved"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "C-COVENANT",
+     "label": "Covenant breach",
+     "sql": "covenant_breaches > 0",
+     "weight": 2,
+     "requires": [
+      "covenant_breaches"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "C-DPD",
+     "label": "Past due (DPD > 0)",
+     "sql": "dpd_days > 0",
+     "weight": 3,
+     "requires": [
+      "dpd_days"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "C-SICR",
+     "label": "SICR flag raised",
+     "sql": "sicr_flag = 1",
+     "weight": 2,
+     "requires": [
+      "sicr_flag"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "C-UTIL",
+     "label": "High utilisation (>= 90%)",
+     "sql": "utilisation_pct >= 90",
+     "weight": 1,
+     "requires": [
+      "utilisation_pct"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    }
+   ],
+   "live_count": 6,
+   "declared_not_live": []
+  },
+  "retail": {
+   "ews_release_id": "ews-saudi-retail-20m-v5e1",
+   "ews_columns": [
+    "ews_score",
+    "ews_reasons",
+    "ews_band",
+    "ews_ruleset_version"
+   ],
+   "rules": [
+    {
+     "id": "R-DPD",
+     "label": "Payment arrears (DPD > 0)",
+     "sql": "dpd_days > 0",
+     "weight": 3,
+     "requires": [
+      "dpd_days"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "R-SCORE-LOW",
+     "label": "Weak behaviour score band (D/E)",
+     "sql": "score_band IN ('D', 'E')",
+     "weight": 1,
+     "requires": [
+      "score_band"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "R-SCORE-DOWN",
+     "label": "Behaviour score deteriorated",
+     "sql": "score_migration = 'Deteriorated'",
+     "weight": 2,
+     "requires": [
+      "score_migration"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "R-UTIL",
+     "label": "High utilisation (>= 85%)",
+     "sql": "utilisation_pct >= 85",
+     "weight": 2,
+     "requires": [
+      "utilisation_pct"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "R-MINPAY",
+     "label": "Persistent minimum payment (payment ratio < 35%)",
+     "sql": "payment_ratio_pct < 35",
+     "weight": 1,
+     "requires": [
+      "payment_ratio_pct"
+     ],
+     "missing_on_this_release": [],
+     "status": "LIVE",
+     "limitation": ""
+    },
+    {
+     "id": "R-SALARY",
+     "label": "Salary-interruption proxy (salaried, cyclical employer, payment ratio < 35%)",
+     "sql": "employment_type IN ('Salaried-Private', 'Salaried-Government') AND employer_sector_group = 'Cyclical' AND payment_ratio_pct < 35",
+     "weight": 2,
+     "requires": [
+      "employer_sector_group",
+      "employment_type",
+      "payment_ratio_pct"
+     ],
+     "missing_on_this_release": [
+      "employer_sector_group"
+     ],
+     "status": "DECLARED_NOT_LIVE",
+     "limitation": "The candidate book publishes no salary-credit feed. This proxy combines employment type, employer sector cyclicality and a low payment ratio; it is a governed stand-in, not an observed salary interruption."
+    }
+   ],
+   "live_count": 5,
+   "declared_not_live": [
+    "R-SALARY"
+   ]
+  }
+ }
+}

@@ -1,0 +1,404 @@
+{
+ "ruleset": "gw-ews-1.0.0",
+ "applied": false,
+ "targets": {
+  "warned_pct": [
+   10.0,
+   20.0
+  ],
+  "high_or_critical_pct_below": 7.0,
+  "constraint": "every already-bad customer stays warned"
+ },
+ "books": {
+  "corporate": {
+   "as_of": "2026Q2",
+   "frontier": {
+    "lowest_warned_pct_keeping_every_bad_customer_warned": 36.2,
+    "combinations_meeting_targets": 124,
+    "combinations_meeting_targets_and_keeping_bad_warned": 0,
+    "best_if_targets_are_forced": {
+     "rules": {
+      "C-WATCH": [
+       null,
+       1
+      ],
+      "C-DOWNGRADE": [
+       0,
+       2
+      ],
+      "C-COVENANT": [
+       0,
+       1
+      ],
+      "C-DPD": [
+       59,
+       3
+      ],
+      "C-SICR": [
+       null,
+       1
+      ],
+      "C-UTIL": [
+       90,
+       1
+      ]
+     },
+     "bands": [
+      4,
+      7,
+      9
+     ],
+     "warned_pct": 15.2,
+     "high_or_critical_pct": 3.6,
+     "already_bad_still_warned_pct": 82.7
+    }
+   },
+   "meets_targets": false,
+   "before": {
+    "rules": {
+     "C-WATCH": [
+      null,
+      3
+     ],
+     "C-DOWNGRADE": [
+      0,
+      2
+     ],
+     "C-COVENANT": [
+      0,
+      2
+     ],
+     "C-DPD": [
+      0,
+      3
+     ],
+     "C-SICR": [
+      null,
+      2
+     ],
+     "C-UTIL": [
+      90,
+      1
+     ]
+    },
+    "bands": {
+     "critical": 1405,
+     "high": 712,
+     "moderate": 162,
+     "low": 454,
+     "none": 2679
+    },
+    "customers": 5412,
+    "warned": 2279,
+    "warned_pct": 42.11012564671101,
+    "high_or_critical": 2117,
+    "high_or_critical_pct": 39.11677753141168,
+    "bad": 751,
+    "bad_warned_pct": 100.0,
+    "bad_high_or_critical_pct": 100.0,
+    "forward_risk": 1528,
+    "rule_customers": {
+     "C-WATCH": 1828,
+     "C-DOWNGRADE": 177,
+     "C-COVENANT": 945,
+     "C-DPD": 1085,
+     "C-SICR": 2105,
+     "C-UTIL": 1472
+    }
+   },
+   "after": {
+    "rules": {
+     "C-WATCH": [
+      null,
+      2
+     ],
+     "C-DOWNGRADE": [
+      0,
+      1
+     ],
+     "C-COVENANT": [
+      0,
+      1
+     ],
+     "C-DPD": [
+      59,
+      2
+     ],
+     "C-SICR": [
+      null,
+      2
+     ],
+     "C-UTIL": [
+      90,
+      0
+     ]
+    },
+    "bands": {
+     "critical": 0,
+     "high": 323,
+     "moderate": 1638,
+     "low": 318,
+     "none": 3133
+    },
+    "customers": 5412,
+    "warned": 1961,
+    "warned_pct": 36.23429416112343,
+    "high_or_critical": 323,
+    "high_or_critical_pct": 5.9682187730968215,
+    "bad": 751,
+    "bad_warned_pct": 100.0,
+    "bad_high_or_critical_pct": 43.00932090545938,
+    "forward_risk": 1210,
+    "rule_customers": {
+     "C-WATCH": 1828,
+     "C-DOWNGRADE": 177,
+     "C-COVENANT": 945,
+     "C-DPD": 601,
+     "C-SICR": 2105,
+     "C-UTIL": 1472
+    },
+    "changes": 6,
+    "meets": false
+   },
+   "stability_after": [
+    {
+     "period": "2025Q3",
+     "warned_pct": 27.2,
+     "high_or_critical_pct": 1.0
+    },
+    {
+     "period": "2025Q4",
+     "warned_pct": 29.5,
+     "high_or_critical_pct": 1.3
+    },
+    {
+     "period": "2026Q1",
+     "warned_pct": 31.4,
+     "high_or_critical_pct": 2.7
+    },
+    {
+     "period": "2026Q2",
+     "warned_pct": 36.2,
+     "high_or_critical_pct": 6.0
+    }
+   ],
+   "stability_before": [
+    {
+     "period": "2025Q3",
+     "warned_pct": 33.4,
+     "high_or_critical_pct": 27.5
+    },
+    {
+     "period": "2025Q4",
+     "warned_pct": 34.3,
+     "high_or_critical_pct": 30.0
+    },
+    {
+     "period": "2026Q1",
+     "warned_pct": 38.7,
+     "high_or_critical_pct": 34.5
+    },
+    {
+     "period": "2026Q2",
+     "warned_pct": 42.1,
+     "high_or_critical_pct": 39.1
+    }
+   ]
+  },
+  "retail": {
+   "as_of": "2026-08",
+   "frontier": {
+    "lowest_warned_pct_keeping_every_bad_customer_warned": 8.2,
+    "combinations_meeting_targets": 1906,
+    "combinations_meeting_targets_and_keeping_bad_warned": 1647,
+    "best_if_targets_are_forced": {
+     "rules": {
+      "R-SCORE-DOWN": [
+       "Deteriorated",
+       2
+      ],
+      "R-SALARY": [
+       null,
+       2
+      ],
+      "R-DPD": [
+       0,
+       3
+      ],
+      "R-SCORE-LOW": [
+       "DE",
+       1
+      ],
+      "R-UTIL": [
+       85,
+       1
+      ],
+      "R-MINPAY": [
+       35,
+       0
+      ]
+     },
+     "bands": [
+      2,
+      4,
+      6
+     ],
+     "warned_pct": 17.6,
+     "high_or_critical_pct": 5.8,
+     "already_bad_still_warned_pct": 100.0
+    }
+   },
+   "meets_targets": true,
+   "before": {
+    "rules": {
+     "R-DPD": [
+      0,
+      3
+     ],
+     "R-SCORE-LOW": [
+      "DE",
+      1
+     ],
+     "R-SCORE-DOWN": [
+      "Deteriorated",
+      2
+     ],
+     "R-UTIL": [
+      85,
+      2
+     ],
+     "R-MINPAY": [
+      35,
+      1
+     ],
+     "R-SALARY": [
+      null,
+      2
+     ]
+    },
+    "bands": {
+     "critical": 423,
+     "high": 3464,
+     "moderate": 8315,
+     "low": 8884,
+     "none": 4346
+    },
+    "customers": 25432,
+    "warned": 12202,
+    "warned_pct": 47.97892418999685,
+    "high_or_critical": 3887,
+    "high_or_critical_pct": 15.283894306385656,
+    "bad": 1114,
+    "bad_warned_pct": 100.0,
+    "bad_high_or_critical_pct": 90.66427289048474,
+    "forward_risk": 11088,
+    "rule_customers": {
+     "R-DPD": 2893,
+     "R-SCORE-LOW": 9758,
+     "R-SCORE-DOWN": 0,
+     "R-UTIL": 4846,
+     "R-MINPAY": 18531,
+     "R-SALARY": 0
+    }
+   },
+   "after": {
+    "rules": {
+     "R-SCORE-DOWN": [
+      "Deteriorated",
+      2
+     ],
+     "R-SALARY": [
+      null,
+      2
+     ],
+     "R-DPD": [
+      0,
+      4
+     ],
+     "R-SCORE-LOW": [
+      "E",
+      1
+     ],
+     "R-UTIL": [
+      85,
+      2
+     ],
+     "R-MINPAY": [
+      30,
+      1
+     ]
+    },
+    "bands": {
+     "critical": 280,
+     "high": 1405,
+     "moderate": 2754,
+     "low": 8580,
+     "none": 12413
+    },
+    "customers": 25432,
+    "warned": 4439,
+    "warned_pct": 17.45438817238125,
+    "high_or_critical": 1685,
+    "high_or_critical_pct": 6.625511167033658,
+    "bad": 1114,
+    "bad_warned_pct": 100.0,
+    "bad_high_or_critical_pct": 61.57989228007181,
+    "forward_risk": 3325,
+    "rule_customers": {
+     "R-SCORE-DOWN": 0,
+     "R-SALARY": 0,
+     "R-DPD": 2893,
+     "R-SCORE-LOW": 3865,
+     "R-UTIL": 4846,
+     "R-MINPAY": 7710
+    },
+    "changes": 4,
+    "meets": true
+   },
+   "stability_after": [
+    {
+     "period": "2026-05",
+     "warned_pct": 11.2,
+     "high_or_critical_pct": 2.8
+    },
+    {
+     "period": "2026-06",
+     "warned_pct": 12.4,
+     "high_or_critical_pct": 3.3
+    },
+    {
+     "period": "2026-07",
+     "warned_pct": 14.4,
+     "high_or_critical_pct": 4.4
+    },
+    {
+     "period": "2026-08",
+     "warned_pct": 17.5,
+     "high_or_critical_pct": 6.6
+    }
+   ],
+   "stability_before": [
+    {
+     "period": "2026-05",
+     "warned_pct": 33.3,
+     "high_or_critical_pct": 6.5
+    },
+    {
+     "period": "2026-06",
+     "warned_pct": 37.4,
+     "high_or_critical_pct": 9.4
+    },
+    {
+     "period": "2026-07",
+     "warned_pct": 42.3,
+     "high_or_critical_pct": 12.8
+    },
+    {
+     "period": "2026-08",
+     "warned_pct": 48.0,
+     "high_or_critical_pct": 15.3
+    }
+   ]
+  }
+ }
+}

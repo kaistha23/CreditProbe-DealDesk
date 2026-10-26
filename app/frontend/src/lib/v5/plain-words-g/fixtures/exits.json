@@ -1,0 +1,265 @@
+{
+ "engine": "intel.portfolio.exits",
+ "version": "r13-id-1",
+ "title": "Exit and sell-down list",
+ "as_of": "2026Q2",
+ "ecl_run": "2026Q3",
+ "headline": "1642 performing names have a reason to shrink and a material action; the top 25 free SAR 38.0m of capital and release SAR 43.9m of ECL for SAR 6.26m of annual relationship value.",
+ "summary": [
+  "1642 performing names have a reason to shrink and a material action; the top 25 free SAR 38.0m of capital and release SAR 43.9m of ECL for SAR 6.26m of annual relationship value.",
+  "Start with Al Kharj Premier Retail (CCC, Retail Trade): cancel SAR 19.2m undrawn; frees SAR 1.24m net for SAR 0.05m a year (RAROC -5.8% below 15% hurdle; rating bucket CCC-C beyond appetite).",
+  "Mix of the top list: 24 not renew, 1 reduce.",
+  "8 of them are Strategic relationships; the RM should confirm the cross-sell before the exit is agreed."
+ ],
+ "kpis": [
+  {
+   "key": "candidates",
+   "label": "Names with a reason to shrink",
+   "value": 1642,
+   "unit": "count",
+   "text": null
+  },
+  {
+   "key": "capital_freed",
+   "label": "Capital freed, top 25",
+   "value": 38.029908,
+   "unit": "SAR m",
+   "text": null
+  },
+  {
+   "key": "ecl_freed",
+   "label": "ECL released, top 25",
+   "value": 43.872828,
+   "unit": "SAR m",
+   "text": null
+  },
+  {
+   "key": "value_lost",
+   "label": "Relationship value lost a year",
+   "value": 6.259735,
+   "unit": "SAR m",
+   "text": null
+  },
+  {
+   "key": "ratio",
+   "label": "Freed per 1 of value lost",
+   "value": 13.084059,
+   "unit": "x",
+   "text": null
+  }
+ ],
+ "rows": [
+  {
+   "borrower_id": "CB04354",
+   "borrower_name": "Al Kharj Premier Retail",
+   "sector": "Retail Trade",
+   "bucket": "CCC-C",
+   "rating": "CCC",
+   "group_id": "CG7646",
+   "group_name": "Al Kharj Premier Retail Holding",
+   "relationship_tier": "Strategic",
+   "ead_sar_mn": 35.668,
+   "facilities": 3,
+   "raroc_now": -0.058143,
+   "hurdle": 0.15,
+   "ews_band": "low",
+   "action": "reduce",
+   "how": "cancel SAR 19.2m undrawn",
+   "ead_reduced_sar_mn": 7.66716,
+   "capital_freed_sar_mn": 0.474703,
+   "ecl_freed_sar_mn": 0.765745,
+   "sale_loss_sar_mn": 0.0,
+   "net_freed_sar_mn": 1.240449,
+   "relationship_value_lost_sar_mn": 0.04792,
+   "relationship_value_sar_mn": 0.626234,
+   "score": 25.885959,
+   "reasons": [
+    "RAROC -5.8% below 15% hurdle",
+    "rating bucket CCC-C beyond appetite"
+   ]
+  },
+  {
+   "borrower_id": "CB04022",
+   "borrower_name": "Qassim Modern Estates",
+   "sector": "Real Estate",
+   "bucket": "CCC-C",
+   "rating": "CCC",
+   "group_id": "CG3425-035",
+   "group_name": "Tuwaiq Integrated Properties Group",
+   "relationship_tier": "Core",
+   "ead_sar_mn": 18.9602,
+   "facilities": 4,
+   "raroc_now": -0.141471,
+   "hurdle": 0.16,
+   "ews_band": "moderate",
+   "action": "not_renew",
+   "how": "let 2 facilities run off at renewal (next in 6 months)",
+   "ead_reduced_sar_mn": 7.7415,
+   "capital_freed_sar_mn": 0.714947,
+   "ecl_freed_sar_mn": 1.820715,
+   "sale_loss_sar_mn": 0.0,
+   "net_freed_sar_mn": 2.535662,
+   "relationship_value_lost_sar_mn": 0.114878,
+   "relationship_value_sar_mn": 0.303118,
+   "score": 22.072572,
+   "reasons": [
+    "RAROC -14.1% below 16% hurdle",
+    "rating bucket CCC-C beyond appetite",
+    "Real Estate beyond sector appetite"
+   ]
+  },
+  {
+   "borrower_id": "CB01104",
+   "borrower_name": "Arar Western Contracting",
+   "sector": "Construction",
+   "bucket": "CCC-C",
+   "rating": "CCC",
+   "group_id": "CG6292-071",
+   "group_name": "Arar Western Contracting Group",
+   "relationship_tier": "Transactional",
+   "ead_sar_mn": 56.6973,
+   "facilities": 5,
+   "raroc_now": -0.077507,
+   "hurdle": 0.16,
+   "ews_band": "moderate",
+   "action": "not_renew",
+   "how": "let 2 facilities run off at renewal (next in 6 months)",
+   "ead_reduced_sar_mn": 20.0081,
+   "capital_freed_sar_mn": 2.373719,
+   "ecl_freed_sar_mn": 3.774066,
+   "sale_loss_sar_mn": 0.0,
+   "net_freed_sar_mn": 6.147785,
+   "relationship_value_lost_sar_mn": 0.331337,
+   "relationship_value_sar_mn": 1.082822,
+   "score": 18.554462,
+   "reasons": [
+    "RAROC -7.8% below 16% hurdle",
+    "rating bucket CCC-C beyond appetite",
+    "Construction beyond sector appetite"
+   ]
+  },
+  {
+   "borrower_id": "CB03765",
+   "borrower_name": "Sudair Peninsula Properties",
+   "sector": "Real Estate",
+   "bucket": "CCC-C",
+   "rating": "CCC",
+   "group_id": "CG3425-043",
+   "group_name": "Khamis Mushait Prime Properties Group",
+   "relationship_tier": "Transactional",
+   "ead_sar_mn": 9.2751,
+   "facilities": 3,
+   "raroc_now": -0.073171,
+   "hurdle": 0.16,
+   "ews_band": "moderate",
+   "action": "not_renew",
+   "how": "let 2 facilities run off at renewal (next in 3 months)",
+   "ead_reduced_sar_mn": 5.0285,
+   "capital_freed_sar_mn": 0.743661,
+   "ecl_freed_sar_mn": 0.863301,
+   "sale_loss_sar_mn": 0.0,
+   "net_freed_sar_mn": 1.606962,
+   "relationship_value_lost_sar_mn": 0.113983,
+   "relationship_value_sar_mn": 0.203259,
+   "score": 14.098238,
+   "reasons": [
+    "RAROC -7.3% below 16% hurdle",
+    "rating bucket CCC-C beyond appetite",
+    "Real Estate beyond sector appetite"
+   ]
+  },
+  {
+   "borrower_id": "CB00934",
+   "borrower_name": "Khamis Mushait Gulf Contracting",
+   "sector": "Construction",
+   "bucket": "CCC-C",
+   "rating": "CCC",
+   "group_id": "CG6292-126",
+   "group_name": "Unayzah Modern Contracting Group",
+   "relationship_tier": "Strategic",
+   "ead_sar_mn": 20.4005,
+   "facilities": 3,
+   "raroc_now": -0.059681,
+   "hurdle": 0.16,
+   "ews_band": "high",
+   "action": "not_renew",
+   "how": "let 2 facilities run off at renewal (next in 3 months)",
+   "ead_reduced_sar_mn": 9.8333,
+   "capital_freed_sar_mn": 0.839862,
+   "ecl_freed_sar_mn": 1.453784,
+   "sale_loss_sar_mn": 0.0,
+   "net_freed_sar_mn": 2.293646,
+   "relationship_value_lost_sar_mn": 0.163223,
+   "relationship_value_sar_mn": 0.386648,
+   "score": 14.052263,
+   "reasons": [
+    "RAROC -6.0% below 16% hurdle",
+    "Early Warning high",
+    "rating bucket CCC-C beyond appetite",
+    "Construction beyond sector appetite"
+   ]
+  },
+  {
+   "borrower_id": "CB01126",
+   "borrower_name": "Khamis Mushait Engineering",
+   "sector": "Construction",
+   "bucket": "CCC-C",
+   "rating": "CCC",
+   "group_id": "CG6292-074",
+   "group_name": "Turaif Premier Contracting Group",
+   "relationship_tier": "Strategic",
+   "ead_sar_mn": 27.8382,
+   "facilities": 4,
+   "raroc_now": -0.056703,
+   "hurdle": 0.16,
+   "ews_band": "low",
+   "action": "not_renew",
+   "how": "let 3 facilities run off at renewal (next in 3 months)",
+   "ead_reduced_sar_mn": 20.6024,
+   "capital_freed_sar_mn": 2.202714,
+   "ecl_freed_sar_mn": 2.280257,
+   "sale_loss_sar_mn": 0.0,
+   "net_freed_sar_mn": 4.482971,
+   "relationship_value_lost_sar_mn": 0.332305,
+   "relationship_value_sar_mn": 0.482774,
+   "score": 13.490518,
+   "reasons": [
+    "RAROC -5.7% below 16% hurdle",
+    "rating bucket CCC-C beyond appetite",
+    "Construction beyond sector appetite"
+   ]
+  }
+ ],
+ "data_limits": [
+  "Relationship value is the lending margin, fees and realised cross-sell (Book drift engine) plus deposits at an assumed 1.0% spread; FX, trade and payroll income not routed through cross-sell promises are not in Data Domains.",
+  "Sale discounts by rating bucket are expert assumptions: the bank has no loan-sale history (backend/intel/portfolio/assumptions.json).",
+  "ECL freed is the provision released if the exposure leaves at the current run's coverage; a sale below carrying value books the discount as a loss.",
+  "Stage 3 names are excluded: their options are compared by the workout optimiser."
+ ],
+ "method": [
+  "Materiality: only actions freeing at least SAR 1.0m net (capital + ECL - sale loss) are listed.",
+  "Universe: performing obligors with at least one reason to shrink (below hurdle, EWS high/critical, group over cap, bucket or sector beyond appetite).",
+  "Action rule: not renew (renewal in window and below hurdle) > sell down (EAD at least the desk minimum) > reduce (undrawn and group excess).",
+  "Score = (capital freed + ECL released - sale loss) / annual relationship value lost; ties by obligor id."
+ ],
+ "writer": "deterministic",
+ "totals_by_action": {
+  "not_renew": {
+   "names": 24,
+   "capital": 37.555205,
+   "ecl": 43.107083
+  },
+  "sell_down": {
+   "names": 0,
+   "capital": 0,
+   "ecl": 0
+  },
+  "reduce": {
+   "names": 1,
+   "capital": 0.474703,
+   "ecl": 0.765745
+  }
+ },
+ "universe": 1642,
+ "digest": "8463dd9bb497c05b"
+}

@@ -1,0 +1,17 @@
+{
+ "module": "r4",
+ "commit": "8402d6e",
+ "utc": "20261012T004617Z",
+ "items_run": [
+  "6p"
+ ],
+ "passed": false,
+ "items": [
+  {
+   "item": "6. UAT sweep (in parts)",
+   "pass": false,
+   "detail": "11/14 sweep steps passed (185 checks), in parts",
+   "seconds": 278.8
+  }
+ ]
+}

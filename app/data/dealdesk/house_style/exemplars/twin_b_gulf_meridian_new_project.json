@@ -1,0 +1,10 @@
+{
+ "bank": "house-uae",
+ "kind": "new",
+ "segment": "contractor",
+ "voice": "business",
+ "weight": 5,
+ "primary": true,
+ "anatomy": "docs/v5/house_style/PROPOSAL_ANATOMY.md",
+ "fictional": true
+}

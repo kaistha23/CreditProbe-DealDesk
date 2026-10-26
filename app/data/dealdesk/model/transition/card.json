@@ -1,0 +1,852 @@
+{
+ "version": "dd-transition-1.0.0",
+ "trained": "2026-10-17",
+ "method": "xgboost gradient-boosted trees, binary:logistic, 350 trees of depth 4, monotone constraints; isotonic calibration; numpy evaluator at runtime",
+ "split": "out-of-time: train on origin quarters before the last 4; in-time = random 20% of facilities in the training quarters",
+ "targets": {
+  "stage2": {
+   "target": "P(Stage 2 or worse at q+1 | Stage 1 at q)",
+   "rows": 299196,
+   "events": 10743,
+   "train_quarters": "2021Q3-2025Q1 (origin quarter q)",
+   "oot_quarters": "2025Q2-2026Q1",
+   "calibration_quarters": [
+    "2025Q2",
+    "2025Q3"
+   ],
+   "calibration_test_quarters": [
+    "2025Q4",
+    "2026Q1"
+   ],
+   "in_time": {
+    "n": 48544,
+    "events": 1699,
+    "event_rate": 0.034999176005273566,
+    "mean_predicted": 0.029229924524212365,
+    "auc": 0.734496951896575,
+    "gini": 0.4689939037931501,
+    "ks": 0.3384627562463991
+   },
+   "out_of_time": {
+    "n": 55565,
+    "events": 2506,
+    "event_rate": 0.04510033294339962,
+    "mean_predicted": 0.04434981261053961,
+    "auc": 0.8170652745177721,
+    "gini": 0.6341305490355442,
+    "ks": 0.46799958882676745
+   },
+   "out_of_time_raw": {
+    "n": 55565,
+    "events": 2506,
+    "event_rate": 0.04510033294339962,
+    "mean_predicted": 0.05384652463483272,
+    "auc": 0.8167610497955362,
+    "gini": 0.6335220995910724,
+    "ks": 0.46799958882676745
+   },
+   "calibration_test": {
+    "n": 27712,
+    "events": 1269,
+    "event_rate": 0.04579243648960739,
+    "mean_predicted": 0.04396476590779102,
+    "auc": 0.8460248603483228,
+    "gini": 0.6920497206966456,
+    "ks": 0.5169712619441904
+   },
+   "calibration_note": "Validation map fitted on 2025Q2, 2025Q3 and tested on 2025Q4, 2026Q1; the served map is refitted on all four out-of-time quarters.",
+   "calibration_deciles_oot": [
+    {
+     "decile": 1,
+     "n": 5557,
+     "predicted": 0.00044153418727326806,
+     "actual": 0.0007198128486593485
+    },
+    {
+     "decile": 2,
+     "n": 5557,
+     "predicted": 0.000508854060655404,
+     "actual": 0.00035990642432967427
+    },
+    {
+     "decile": 3,
+     "n": 5557,
+     "predicted": 0.002697725225636632,
+     "actual": 0.0032391578189670685
+    },
+    {
+     "decile": 4,
+     "n": 5557,
+     "predicted": 0.015437979885887356,
+     "actual": 0.015296023034011157
+    },
+    {
+     "decile": 5,
+     "n": 5557,
+     "predicted": 0.02268465747626817,
+     "actual": 0.024653590066582687
+    },
+    {
+     "decile": 6,
+     "n": 5556,
+     "predicted": 0.033190638302650545,
+     "actual": 0.03329733621310295
+    },
+    {
+     "decile": 7,
+     "n": 5556,
+     "predicted": 0.037588999259581375,
+     "actual": 0.03725701943844492
+    },
+    {
+     "decile": 8,
+     "n": 5556,
+     "predicted": 0.054637701185990345,
+     "actual": 0.056155507559395246
+    },
+    {
+     "decile": 9,
+     "n": 5556,
+     "predicted": 0.09600378373139115,
+     "actual": 0.09557235421166306
+    },
+    {
+     "decile": 10,
+     "n": 5556,
+     "predicted": 0.18033864629478055,
+     "actual": 0.18448524118070556
+    }
+   ],
+   "calibration_deciles_test": [
+    {
+     "decile": 1,
+     "n": 2772,
+     "predicted": 0.0006158243803310991,
+     "actual": 0.0
+    },
+    {
+     "decile": 2,
+     "n": 2772,
+     "predicted": 0.0011789672247111533,
+     "actual": 0.0
+    },
+    {
+     "decile": 3,
+     "n": 2771,
+     "predicted": 0.0013722454522424729,
+     "actual": 0.00036088054853843375
+    },
+    {
+     "decile": 4,
+     "n": 2771,
+     "predicted": 0.014997251453859144,
+     "actual": 0.00866113316492241
+    },
+    {
+     "decile": 5,
+     "n": 2771,
+     "predicted": 0.026153137397862385,
+     "actual": 0.020931071815229157
+    },
+    {
+     "decile": 6,
+     "n": 2771,
+     "predicted": 0.030952554479059282,
+     "actual": 0.03572717430530494
+    },
+    {
+     "decile": 7,
+     "n": 2771,
+     "predicted": 0.03792731361335732,
+     "actual": 0.03428365211115121
+    },
+    {
+     "decile": 8,
+     "n": 2771,
+     "predicted": 0.06762159045332483,
+     "actual": 0.04330566582461205
+    },
+    {
+     "decile": 9,
+     "n": 2771,
+     "predicted": 0.09128975730588731,
+     "actual": 0.09635510645976182
+    },
+    {
+     "decile": 10,
+     "n": 2771,
+     "predicted": 0.16757010166957062,
+     "actual": 0.21833273186575244
+    }
+   ],
+   "psi_train_vs_oot": 0.4431261565750261,
+   "psi_train_vs_last_quarter": 0.5649734926207274,
+   "importance": [
+    {
+     "feature": "dscr_x",
+     "label": "Debt service cover",
+     "share": 0.39119998141662526
+    },
+    {
+     "feature": "sec_s2_share",
+     "label": "Sector Stage 2 share of the book",
+     "share": 0.12766433795952475
+    },
+    {
+     "feature": "grade_rank",
+     "label": "Internal rating (notches from AAA)",
+     "share": 0.12437827094642886
+    },
+    {
+     "feature": "sec_s2_flow",
+     "label": "Sector Stage 1 to 2 flow last quarter",
+     "share": 0.08735492392933222
+    },
+    {
+     "feature": "sector_code",
+     "label": "Sector",
+     "share": 0.05928240858564388
+    },
+    {
+     "feature": "log_limit",
+     "label": "Facility size",
+     "share": 0.050737367252647284
+    },
+    {
+     "feature": "region_code",
+     "label": "Region",
+     "share": 0.03824654697887181
+    },
+    {
+     "feature": "balance_buffer_months",
+     "label": "Operating balance buffer (months)",
+     "share": 0.020952325349974904
+    },
+    {
+     "feature": "log_pd_ttc",
+     "label": "TTC PD of the rating",
+     "share": 0.017964065829599425
+    },
+    {
+     "feature": "product_code",
+     "label": "Product",
+     "share": 0.016585555875613472
+    },
+    {
+     "feature": "utilisation_pct",
+     "label": "Utilisation",
+     "share": 0.013466394902901881
+    },
+    {
+     "feature": "collateral_cover_pct",
+     "label": "Collateral cover after haircut",
+     "share": 0.013389673345867058
+    },
+    {
+     "feature": "sec_dpd30_share",
+     "label": "Sector 30+ DPD share of the book",
+     "share": 0.012082839621557413
+    },
+    {
+     "feature": "inflow_trend_pct",
+     "label": "Operating inflows, change on the year",
+     "share": 0.008552656887808667
+    },
+    {
+     "feature": "ebitda_margin_pct",
+     "label": "EBITDA margin",
+     "share": 0.006458475631132568
+    },
+    {
+     "feature": "sec_dpd30_flow",
+     "label": "Sector flow into 30+ DPD last quarter",
+     "share": 0.004750091876889763
+    },
+    {
+     "feature": "enquiries_q",
+     "label": "Bureau enquiries this quarter",
+     "share": 0.0035761022878226605
+    },
+    {
+     "feature": "funded",
+     "label": "Funded facility",
+     "share": 0.0015634932013388724
+    },
+    {
+     "feature": "external_dpd_days",
+     "label": "Past due at other lenders (bureau)",
+     "share": 0.001341234818616862
+    },
+    {
+     "feature": "leverage_x",
+     "label": "Leverage (debt / EBITDA)",
+     "share": 0.0004532533018023452
+    }
+   ],
+   "monotone": [
+    {
+     "feature": "grade_rank",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "log_pd_ttc",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "utilisation_pct",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "collateral_cover_pct",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "obl_dpd_max_4q",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "obl_stage_max",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "leverage_x",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "dscr_x",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "ebitda_margin_pct",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "watchlist_flag",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "rating_notches_moved",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "external_dpd_days",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "enquiries_q",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "inflow_trend_pct",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "balance_buffer_months",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "returned_payments_q",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "sec_s2_share",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "sec_dpd30_share",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "sec_s2_flow",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "sec_dpd30_flow",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    }
+   ],
+   "evaluator_equivalence": {
+    "rows": 5000,
+    "max_abs_margin_diff": 5.637233035038491e-06,
+    "max_abs_contribution_sum_diff": 1.865174681370263e-14,
+    "max_abs_contribution_diff_vs_xgboost_saabas": 0.09496997481897518
+   },
+   "trees": 350,
+   "params": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "tree_method": "hist",
+    "max_depth": 4,
+    "eta": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 50,
+    "lambda": 2.0,
+    "seed": 20261017,
+    "monotone_constraints": "(1,1,0,0,0,0,0,1,-1,1,1,1,-1,-1,1,-1,1,1,-1,-1,1,1,1,1,1)"
+   }
+  },
+  "dpd30": {
+   "target": "P(30+ DPD at q+1 | under 30 DPD at q)",
+   "rows": 356072,
+   "events": 2043,
+   "train_quarters": "2021Q3-2025Q1 (origin quarter q)",
+   "oot_quarters": "2025Q2-2026Q1",
+   "calibration_quarters": [
+    "2025Q2",
+    "2025Q3"
+   ],
+   "calibration_test_quarters": [
+    "2025Q4",
+    "2026Q1"
+   ],
+   "in_time": {
+    "n": 55895,
+    "events": 165,
+    "event_rate": 0.00295196350299669,
+    "mean_predicted": 0.005864575577482557,
+    "auc": 0.9996184526042771,
+    "gini": 0.9992369052085541,
+    "ks": 0.9971110712363179
+   },
+   "out_of_time": {
+    "n": 75939,
+    "events": 1269,
+    "event_rate": 0.01671078102160945,
+    "mean_predicted": 0.0167338357576402,
+    "auc": 0.8835776444461751,
+    "gini": 0.7671552888923503,
+    "ks": 0.590448723002171
+   },
+   "out_of_time_raw": {
+    "n": 75939,
+    "events": 1269,
+    "event_rate": 0.01671078102160945,
+    "mean_predicted": 0.015762726596432214,
+    "auc": 0.8828519718439621,
+    "gini": 0.7657039436879243,
+    "ks": 0.5883262556984379
+   },
+   "calibration_test": {
+    "n": 38501,
+    "events": 1090,
+    "event_rate": 0.02831095296226072,
+    "mean_predicted": 0.006327646418764223,
+    "auc": 0.790976234973818,
+    "gini": 0.5819524699476359,
+    "ks": 0.5260264912517757
+   },
+   "calibration_note": "Validation map fitted on 2025Q2, 2025Q3 and tested on 2025Q4, 2026Q1; the served map is refitted on all four out-of-time quarters.",
+   "calibration_deciles_oot": [
+    {
+     "decile": 1,
+     "n": 7594,
+     "predicted": 0.0009581563295364265,
+     "actual": 0.00118514616802739
+    },
+    {
+     "decile": 2,
+     "n": 7594,
+     "predicted": 0.0015899124860779723,
+     "actual": 0.001316829075585989
+    },
+    {
+     "decile": 3,
+     "n": 7594,
+     "predicted": 0.0021745777248257836,
+     "actual": 0.002238609428496181
+    },
+    {
+     "decile": 4,
+     "n": 7594,
+     "predicted": 0.002772149536251253,
+     "actual": 0.0031603897814063736
+    },
+    {
+     "decile": 5,
+     "n": 7594,
+     "predicted": 0.003045835430152026,
+     "actual": 0.003687121411640769
+    },
+    {
+     "decile": 6,
+     "n": 7594,
+     "predicted": 0.004484038391477015,
+     "actual": 0.004608901764550961
+    },
+    {
+     "decile": 7,
+     "n": 7594,
+     "predicted": 0.008170750048491725,
+     "actual": 0.004213853041875165
+    },
+    {
+     "decile": 8,
+     "n": 7594,
+     "predicted": 0.014474240420651898,
+     "actual": 0.009744535159336319
+    },
+    {
+     "decile": 9,
+     "n": 7594,
+     "predicted": 0.01821079090088946,
+     "actual": 0.026468264419278378
+    },
+    {
+     "decile": 10,
+     "n": 7593,
+     "predicted": 0.11147038149184275,
+     "actual": 0.11049650994336889
+    }
+   ],
+   "calibration_deciles_test": [
+    {
+     "decile": 1,
+     "n": 3851,
+     "predicted": 1e-05,
+     "actual": 0.0
+    },
+    {
+     "decile": 2,
+     "n": 3850,
+     "predicted": 1.0000000000000003e-05,
+     "actual": 0.001038961038961039
+    },
+    {
+     "decile": 3,
+     "n": 3850,
+     "predicted": 1.0000000000000003e-05,
+     "actual": 0.0
+    },
+    {
+     "decile": 4,
+     "n": 3850,
+     "predicted": 1.0000000000000003e-05,
+     "actual": 0.0
+    },
+    {
+     "decile": 5,
+     "n": 3850,
+     "predicted": 1.0000000000000003e-05,
+     "actual": 0.0
+    },
+    {
+     "decile": 6,
+     "n": 3850,
+     "predicted": 1.0000000000000003e-05,
+     "actual": 0.0
+    },
+    {
+     "decile": 7,
+     "n": 3850,
+     "predicted": 1.0000000000000003e-05,
+     "actual": 0.0
+    },
+    {
+     "decile": 8,
+     "n": 3850,
+     "predicted": 1.0000000000000003e-05,
+     "actual": 0.0
+    },
+    {
+     "decile": 9,
+     "n": 3850,
+     "predicted": 0.0006424611731259666,
+     "actual": 0.10805194805194805
+    },
+    {
+     "decile": 10,
+     "n": 3850,
+     "predicted": 0.06255564396163803,
+     "actual": 0.17402597402597403
+    }
+   ],
+   "psi_train_vs_oot": 0.2982679964234343,
+   "psi_train_vs_last_quarter": 3.509163650715358,
+   "importance": [
+    {
+     "feature": "dscr_x",
+     "label": "Debt service cover",
+     "share": 0.725011136558156
+    },
+    {
+     "feature": "watchlist_flag",
+     "label": "On watchlist",
+     "share": 0.11080541750597324
+    },
+    {
+     "feature": "leverage_x",
+     "label": "Leverage (debt / EBITDA)",
+     "share": 0.08608340619079007
+    },
+    {
+     "feature": "sec_dpd30_flow",
+     "label": "Sector flow into 30+ DPD last quarter",
+     "share": 0.03306156854122253
+    },
+    {
+     "feature": "inflow_trend_pct",
+     "label": "Operating inflows, change on the year",
+     "share": 0.016664480500206722
+    },
+    {
+     "feature": "ebitda_margin_pct",
+     "label": "EBITDA margin",
+     "share": 0.012223004252943344
+    },
+    {
+     "feature": "sec_s2_flow",
+     "label": "Sector Stage 1 to 2 flow last quarter",
+     "share": 0.005153473161462446
+    },
+    {
+     "feature": "region_code",
+     "label": "Region",
+     "share": 0.003527165707456731
+    },
+    {
+     "feature": "rating_notches_moved",
+     "label": "Rating move this quarter (negative = downgrade)",
+     "share": 0.003095297142305621
+    },
+    {
+     "feature": "sector_code",
+     "label": "Sector",
+     "share": 0.0011366695674869909
+    },
+    {
+     "feature": "obl_stage_max",
+     "label": "Obligor's worst stage on other facilities",
+     "share": 0.0007524130859467161
+    },
+    {
+     "feature": "utilisation_pct",
+     "label": "Utilisation",
+     "share": 0.0007509875153757856
+    },
+    {
+     "feature": "balance_buffer_months",
+     "label": "Operating balance buffer (months)",
+     "share": 0.0007129003406106642
+    },
+    {
+     "feature": "log_limit",
+     "label": "Facility size",
+     "share": 0.0004705875311864302
+    },
+    {
+     "feature": "product_code",
+     "label": "Product",
+     "share": 0.0003811523013058145
+    },
+    {
+     "feature": "sec_s2_share",
+     "label": "Sector Stage 2 share of the book",
+     "share": 0.00010470143159881756
+    },
+    {
+     "feature": "grade_rank",
+     "label": "Internal rating (notches from AAA)",
+     "share": 5.7827627728955825e-05
+    },
+    {
+     "feature": "collateral_cover_pct",
+     "label": "Collateral cover after haircut",
+     "share": 7.811038243138069e-06
+    }
+   ],
+   "monotone": [
+    {
+     "feature": "grade_rank",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "log_pd_ttc",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "utilisation_pct",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "collateral_cover_pct",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "obl_dpd_max_4q",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "obl_stage_max",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "leverage_x",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "dscr_x",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "ebitda_margin_pct",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "watchlist_flag",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "rating_notches_moved",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "external_dpd_days",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "enquiries_q",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "inflow_trend_pct",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "balance_buffer_months",
+     "sign": -1,
+     "min_change": -0.0,
+     "violations": 0
+    },
+    {
+     "feature": "returned_payments_q",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "sec_s2_share",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "sec_dpd30_share",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "sec_s2_flow",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    },
+    {
+     "feature": "sec_dpd30_flow",
+     "sign": 1,
+     "min_change": 0.0,
+     "violations": 0
+    }
+   ],
+   "evaluator_equivalence": {
+    "rows": 5000,
+    "max_abs_margin_diff": 9.486474910502807e-06,
+    "max_abs_contribution_sum_diff": 2.6645352591003757e-14,
+    "max_abs_contribution_diff_vs_xgboost_saabas": 0.09408899757434597
+   },
+   "trees": 350,
+   "params": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "tree_method": "hist",
+    "max_depth": 4,
+    "eta": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 50,
+    "lambda": 2.0,
+    "seed": 20261017,
+    "monotone_constraints": "(1,1,0,0,0,0,0,1,-1,1,1,1,-1,-1,1,-1,1,1,-1,-1,1,1,1,1,1)"
+   }
+  }
+ },
+ "limitations": [
+  "The book publishes no maturity date: tenor and remaining tenor are not features; tenor reaches forward risk through the engine's PD term structure and ECL only.",
+  "The book carries no 1-29 DPD values, so 30+ DPD is the first arrears bucket the model can see.",
+  "30+ DPD events are rare and bunched in 2025Q4-2026Q1: the OOT rate rises several-fold, so the validation map (fitted on the first two OOT quarters) under-predicts the last two; the served map is refitted on all four.",
+  "The book makes early-period 30+ DPD almost a deterministic function of DSCR and interest cover (in-time AUC near 1.0); the out-of-time AUC is the figure to rely on.",
+  "Guarantees and covenant packages are not book features: they reach forward risk through the engine's PD and ECL, not through the transition models.",
+  "A new-to-bank obligor has no open-banking signals or bureau enquiry count in the book: those features take the book's Stage 1 median (neutral); bureau past-due comes from the SIMAH flag.",
+  "Quarters on book, current ratio and interest cover are left out: the book's first-quarter cohort and its narrow current-ratio band do not transfer to a new deal's audited figures.",
+  "Sector cycle features are as of the book's last quarter (2026Q2) for every deal."
+ ]
+}

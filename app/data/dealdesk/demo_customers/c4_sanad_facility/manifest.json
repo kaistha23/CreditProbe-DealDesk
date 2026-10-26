@@ -1,0 +1,1721 @@
+{
+ "customer_key": "c4",
+ "proposal_id": "R16-C4",
+ "cif": null,
+ "customer_name": "Sanad Smart Facility Services Co.",
+ "cr_number": "1010712290",
+ "as_of": "2026-10-21",
+ "documents": [
+  {
+   "doc_id": "C4-01",
+   "doc_type": "national_id",
+   "subject": "abdulaziz_saleh_al_mutlaq",
+   "title": "NATIONAL IDENTITY CARD",
+   "issuer": "Civil Status Registry (specimen)",
+   "issue_date": "2024-02-05",
+   "expiry_date": "2034-02-04",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/01_national_id__abdulaziz_saleh_al_mutlaq.docx",
+    "pdf": "pdf/01_national_id__abdulaziz_saleh_al_mutlaq.pdf",
+    "images": [
+     "images/01_national_id__abdulaziz_saleh_al_mutlaq_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Abdulaziz Saleh Al-Mutlaq",
+    "id_number": "1068823410",
+    "nationality": "Saudi",
+    "date_of_birth": "1984-06-11",
+    "issue_date": "2024-02-05",
+    "expiry_date": "2034-02-04"
+   }
+  },
+  {
+   "doc_id": "C4-02",
+   "doc_type": "national_id",
+   "subject": "fahad_saleh_al_mutlaq",
+   "title": "NATIONAL IDENTITY CARD",
+   "issuer": "Civil Status Registry (specimen)",
+   "issue_date": "2016-08-16",
+   "expiry_date": "2026-08-15",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "expired",
+   "files": {
+    "docx": "word/02_national_id__fahad_saleh_al_mutlaq.docx",
+    "pdf": "pdf/02_national_id__fahad_saleh_al_mutlaq.pdf",
+    "images": [
+     "images/02_national_id__fahad_saleh_al_mutlaq_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Fahad Saleh Al-Mutlaq",
+    "id_number": "1074419035",
+    "nationality": "Saudi",
+    "date_of_birth": "1990-09-27",
+    "issue_date": "2016-08-16",
+    "expiry_date": "2026-08-15"
+   }
+  },
+  {
+   "doc_id": "C4-03",
+   "doc_type": "articles_of_association",
+   "subject": null,
+   "title": "ARTICLES OF ASSOCIATION",
+   "issuer": "Sanad Smart Facility Services Co.",
+   "issue_date": "2022-01-16",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/03_articles_of_association.docx",
+    "pdf": "pdf/03_articles_of_association.pdf",
+    "images": [
+     "images/03_articles_of_association_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "legal_form": "Limited Liability Company",
+    "date_of_incorporation": "2019-03-10",
+    "share_capital": 1000000,
+    "amendment_date": "2022-01-16",
+    "shareholders": [
+     {
+      "name": "Abdulaziz Saleh Al-Mutlaq",
+      "id_number": "1068823410",
+      "nationality": "Saudi",
+      "shares": 900,
+      "pct": 90.0
+     },
+     {
+      "name": "Fahad Saleh Al-Mutlaq",
+      "id_number": "1074419035",
+      "nationality": "Saudi",
+      "shares": 100,
+      "pct": 10.0
+     }
+    ],
+    "managers": [
+     {
+      "name": "Abdulaziz Saleh Al-Mutlaq",
+      "role": "General Manager",
+      "powers": "Sole signatory"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C4-04",
+   "doc_type": "commercial_registration",
+   "subject": null,
+   "title": "COMMERCIAL REGISTRATION CERTIFICATE",
+   "issuer": "Commercial Register (specimen)",
+   "issue_date": "2019-03-10",
+   "expiry_date": "2027-03-09",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/04_commercial_registration.docx",
+    "pdf": "pdf/04_commercial_registration.pdf",
+    "images": [
+     "images/04_commercial_registration_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "legal_form": "Limited Liability Company",
+    "city": "Riyadh",
+    "activity": "Facility management services",
+    "issue_date": "2019-03-10",
+    "expiry_date": "2027-03-09",
+    "share_capital": 1000000,
+    "owners": [
+     {
+      "name": "Abdulaziz Saleh Al-Mutlaq",
+      "pct": 90.0
+     },
+     {
+      "name": "Fahad Saleh Al-Mutlaq",
+      "pct": 10.0
+     }
+    ],
+    "managers": [
+     {
+      "name": "Abdulaziz Saleh Al-Mutlaq",
+      "role": "General Manager"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C4-05",
+   "doc_type": "vat_certificate",
+   "subject": null,
+   "title": "VAT REGISTRATION CERTIFICATE",
+   "issuer": "Tax Authority (specimen)",
+   "issue_date": "2019-07-08",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/05_vat_certificate.docx",
+    "pdf": "pdf/05_vat_certificate.pdf",
+    "images": [
+     "images/05_vat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "vat_number": "301010712200003",
+    "effective_date": "2019-07-01",
+    "filing_frequency": "Quarterly",
+    "issue_date": "2019-07-08"
+   }
+  },
+  {
+   "doc_id": "C4-06",
+   "doc_type": "zakat_certificate",
+   "subject": null,
+   "title": "ZAKAT CERTIFICATE",
+   "issuer": "Zakat Authority (specimen)",
+   "issue_date": "2025-04-28",
+   "expiry_date": "2026-04-30",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "expired",
+   "files": {
+    "docx": "word/06_zakat_certificate.docx",
+    "pdf": "pdf/06_zakat_certificate.pdf",
+    "images": [
+     "images/06_zakat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "certificate_number": "ZC-2025-0731402",
+    "fiscal_year": "2024-12-31",
+    "issue_date": "2025-04-28",
+    "expiry_date": "2026-04-30"
+   }
+  },
+  {
+   "doc_id": "C4-07",
+   "doc_type": "nitaqat_certificate",
+   "subject": null,
+   "title": "NITAQAT CERTIFICATE",
+   "issuer": "Labour Registry (specimen)",
+   "issue_date": "2026-10-01",
+   "expiry_date": "2026-12-31",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/07_nitaqat_certificate.docx",
+    "pdf": "pdf/07_nitaqat_certificate.pdf",
+    "images": [
+     "images/07_nitaqat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "establishment_number": "1-6630418",
+    "nitaqat_band": "Low Green",
+    "saudisation_pct": 23.1,
+    "band_threshold_pct": 22.9,
+    "total_staff": 182,
+    "saudi_staff": 42,
+    "issue_date": "2026-10-01",
+    "expiry_date": "2026-12-31"
+   }
+  },
+  {
+   "doc_id": "C4-08",
+   "doc_type": "vat_returns",
+   "subject": "oct2025_sep2026",
+   "title": "VAT RETURN FILINGS — LAST 12 MONTHS",
+   "issuer": "Tax Authority portal (specimen)",
+   "issue_date": "2026-10-19",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/08_vat_returns__oct2025_sep2026.docx",
+    "pdf": "pdf/08_vat_returns__oct2025_sep2026.pdf",
+    "images": [
+     "images/08_vat_returns__oct2025_sep2026_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "vat_number": "301010712200003",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "filing_frequency": "Quarterly",
+    "total_taxable_sales": 39323000,
+    "total_output_vat": 5899000,
+    "returns": [
+     {
+      "period": "Q4 2025",
+      "taxable_sales": 9979000,
+      "zero_rated_sales": 0,
+      "output_vat": 1497000,
+      "input_vat": 509000,
+      "net_vat_due": 988000,
+      "filed_on": "2026-01-19"
+     },
+     {
+      "period": "Q1 2026",
+      "taxable_sales": 9313000,
+      "zero_rated_sales": 0,
+      "output_vat": 1397000,
+      "input_vat": 396000,
+      "net_vat_due": 1001000,
+      "filed_on": "2026-04-19"
+     },
+     {
+      "period": "Q2 2026",
+      "taxable_sales": 9837000,
+      "zero_rated_sales": 0,
+      "output_vat": 1476000,
+      "input_vat": 492000,
+      "net_vat_due": 984000,
+      "filed_on": "2026-07-19"
+     },
+     {
+      "period": "Q3 2026",
+      "taxable_sales": 10194000,
+      "zero_rated_sales": 0,
+      "output_vat": 1529000,
+      "input_vat": 495000,
+      "net_vat_due": 1034000,
+      "filed_on": "2026-10-19"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C4-09",
+   "doc_type": "simah_company",
+   "subject": null,
+   "title": "SIMAH COMMERCIAL CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-13",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/09_simah_company.docx",
+    "pdf": "pdf/09_simah_company.pdf",
+    "images": [
+     "images/09_simah_company_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "report_date": "2026-10-13",
+    "report_number": "SB-26-3302255",
+    "score": 671,
+    "total_limits": 7000000,
+    "total_outstanding": 4200000,
+    "total_overdue": 0,
+    "lenders_count": 1,
+    "defaults_count": 0,
+    "enquiries_6m": 1,
+    "facilities": [
+     {
+      "lender": "Tihama Investment Bank",
+      "product": "SME term loan",
+      "limit": 4000000,
+      "outstanding": 1400000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2023-05-01",
+      "remark": ""
+     },
+     {
+      "lender": "Tihama Investment Bank",
+      "product": "Short-term Murabaha",
+      "limit": 3000000,
+      "outstanding": 2800000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2024-09-15",
+      "remark": ""
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C4-10",
+   "doc_type": "simah_consumer",
+   "subject": "abdulaziz_saleh_al_mutlaq",
+   "title": "SIMAH CONSUMER CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-13",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/10_simah_consumer__abdulaziz_saleh_al_mutlaq.docx",
+    "pdf": "pdf/10_simah_consumer__abdulaziz_saleh_al_mutlaq.pdf",
+    "images": [
+     "images/10_simah_consumer__abdulaziz_saleh_al_mutlaq_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Abdulaziz Saleh Al-Mutlaq",
+    "id_number": "1068823410",
+    "report_date": "2026-10-13",
+    "report_number": "SC-26-8823061",
+    "score": 541,
+    "total_outstanding": 152400,
+    "total_overdue": 38400,
+    "worst_status_24m": "90+ days past due (credit card, since 08/2026)",
+    "facilities": [
+     {
+      "lender": "Al Rimal Commercial Bank",
+      "product": "Credit card",
+      "limit": 60000,
+      "outstanding": 58400,
+      "overdue": 38400,
+      "status": "90+ days past due",
+      "remark": "First missed payment 06/2026; 90+ days past due since 08/2026"
+     },
+     {
+      "lender": "Tihama Investment Bank",
+      "product": "Auto lease",
+      "limit": 210000,
+      "outstanding": 94000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Sanad Smart Facility Services Co.",
+      "lender": "Tihama Investment Bank",
+      "amount": 4000000,
+      "status": "Current"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C4-11",
+   "doc_type": "audited_fs",
+   "subject": "fy2025",
+   "title": "SANAD SMART FACILITY SERVICES CO. — FINANCIAL STATEMENTS FY2025",
+   "issuer": "Al Wafa Chartered Accountants",
+   "issue_date": "2026-05-24",
+   "expiry_date": null,
+   "period_from": "2025-01-01",
+   "period_to": "2025-12-31",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/11_audited_fs__fy2025.docx",
+    "pdf": "pdf/11_audited_fs__fy2025.pdf",
+    "images": [
+     "images/11_audited_fs__fy2025_p1.jpg",
+     "images/11_audited_fs__fy2025_p2.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "fiscal_year": "2025-12-31",
+    "auditor": "Al Wafa Chartered Accountants",
+    "opinion": "Unqualified",
+    "qawaem_reference": "QW-2026-1010712290",
+    "revenue": 34600000,
+    "cost_of_sales": 27300000,
+    "gross_profit": 7300000,
+    "operating_expenses": 3000000,
+    "operating_profit": 4300000,
+    "finance_cost": 500000,
+    "zakat": 200000,
+    "net_profit": 3600000,
+    "depreciation": 800000,
+    "cash": 1900000,
+    "trade_receivables": 9800000,
+    "retention_receivables": 0,
+    "contract_assets": 0,
+    "inventory": 600000,
+    "due_from_related": 1200000,
+    "other_current_assets": 1100000,
+    "current_assets": 14600000,
+    "ppe": 2400000,
+    "other_noncurrent_assets": 200000,
+    "total_assets": 17200000,
+    "short_term_borrowings": 2000000,
+    "trade_payables": 3100000,
+    "due_to_related": 0,
+    "other_current_liabilities": 1100000,
+    "current_portion_ltd": 800000,
+    "current_liabilities": 7000000,
+    "long_term_borrowings": 1200000,
+    "end_of_service": 1600000,
+    "total_liabilities": 9800000,
+    "share_capital": 1000000,
+    "statutory_reserve": 500000,
+    "retained_earnings": 5900000,
+    "total_equity": 7400000,
+    "operating_cash_flow": 1900000,
+    "related_party_sales": 0
+   }
+  },
+  {
+   "doc_id": "C4-12",
+   "doc_type": "inhouse_fs",
+   "subject": "9m2026",
+   "title": "MANAGEMENT ACCOUNTS (UNAUDITED) — 9 MONTHS 2026",
+   "issuer": "Sanad Smart Facility Services Co.",
+   "issue_date": "2026-10-09",
+   "expiry_date": null,
+   "period_from": "2026-01-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/12_inhouse_fs__9m2026.docx",
+    "pdf": "pdf/12_inhouse_fs__9m2026.pdf",
+    "images": [
+     "images/12_inhouse_fs__9m2026_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "period_from": "2026-01-01",
+    "period_to": "2026-09-30",
+    "prepared_by": "Ahmed Fathi Saber",
+    "revenue": 29100000,
+    "cost_of_sales": 23200000,
+    "gross_profit": 5900000,
+    "operating_expenses": 2500000,
+    "operating_profit": 3400000,
+    "finance_cost": 500000,
+    "net_profit": 2900000,
+    "cash": 1400000,
+    "trade_receivables": 12900000,
+    "inventory": 700000,
+    "current_assets": 18400000,
+    "total_assets": 21200000,
+    "short_term_borrowings": 2800000,
+    "current_liabilities": 8400000,
+    "long_term_borrowings": 600000,
+    "total_liabilities": 10900000,
+    "total_equity": 10300000
+   }
+  },
+  {
+   "doc_id": "C4-13",
+   "doc_type": "bank_statement",
+   "subject": "tihama_current_account",
+   "title": "ACCOUNT STATEMENT",
+   "issuer": "Tihama Investment Bank",
+   "issue_date": "2026-10-07",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/13_bank_statement__tihama_current_account.docx",
+    "pdf": "pdf/13_bank_statement__tihama_current_account.pdf",
+    "images": [
+     "images/13_bank_statement__tihama_current_account_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "bank_name": "Tihama Investment Bank",
+    "account_number": "077-6630418-1",
+    "iban": "SA5885000000776630418100",
+    "account_type": "Current account (main operating)",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "opening_balance": 1300000,
+    "total_credits": 42508163,
+    "total_debits": 42558163,
+    "closing_balance": 1250000,
+    "returned_cheques": 0,
+    "monthly": [
+     {
+      "month": "2025-10",
+      "credits": 3049193,
+      "debits": 3053360,
+      "closing_balance": 1295833,
+      "avg_balance": 2245743,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-11",
+      "credits": 3065469,
+      "debits": 3069636,
+      "closing_balance": 1291666,
+      "avg_balance": 2225744,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-12",
+      "credits": 3243834,
+      "debits": 3248001,
+      "closing_balance": 1287499,
+      "avg_balance": 2291869,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-01",
+      "credits": 3131443,
+      "debits": 3135610,
+      "closing_balance": 1283332,
+      "avg_balance": 2223501,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-02",
+      "credits": 3258483,
+      "debits": 3262650,
+      "closing_balance": 1279165,
+      "avg_balance": 2341638,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-03",
+      "credits": 3622745,
+      "debits": 3626912,
+      "closing_balance": 1274998,
+      "avg_balance": 2334777,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-04",
+      "credits": 3692291,
+      "debits": 3696458,
+      "closing_balance": 1270831,
+      "avg_balance": 2406477,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-05",
+      "credits": 3617314,
+      "debits": 3621481,
+      "closing_balance": 1266664,
+      "avg_balance": 2331307,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-06",
+      "credits": 3932379,
+      "debits": 3936546,
+      "closing_balance": 1262497,
+      "avg_balance": 2511414,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-07",
+      "credits": 3922288,
+      "debits": 3926455,
+      "closing_balance": 1258330,
+      "avg_balance": 2361207,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-08",
+      "credits": 3991011,
+      "debits": 3995178,
+      "closing_balance": 1254163,
+      "avg_balance": 2408729,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-09",
+      "credits": 3981713,
+      "debits": 3985876,
+      "closing_balance": 1250000,
+      "avg_balance": 2460199,
+      "returned_cheques": 0
+     }
+    ],
+    "transactions": [
+     {
+      "date": "2025-10-01",
+      "description": "SME loan instalment and profit",
+      "debit": 91162,
+      "credit": null,
+      "balance": 1208838
+     },
+     {
+      "date": "2025-10-03",
+      "description": "Office rent and vehicles",
+      "debit": 187311,
+      "credit": null,
+      "balance": 1021527
+     },
+     {
+      "date": "2025-10-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 1988564,
+      "balance": 3010091
+     },
+     {
+      "date": "2025-10-12",
+      "description": "Subcontractors and materials",
+      "debit": 503154,
+      "credit": null,
+      "balance": 2506937
+     },
+     {
+      "date": "2025-10-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 360332,
+      "balance": 2867269
+     },
+     {
+      "date": "2025-10-15",
+      "description": "GOSI contribution",
+      "debit": 150407,
+      "credit": null,
+      "balance": 2716862
+     },
+     {
+      "date": "2025-10-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 179447,
+      "credit": null,
+      "balance": 2537415
+     },
+     {
+      "date": "2025-10-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 700297,
+      "balance": 3237712
+     },
+     {
+      "date": "2025-10-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1797819,
+      "credit": null,
+      "balance": 1439893
+     },
+     {
+      "date": "2025-10-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 144060,
+      "credit": null,
+      "balance": 1295833
+     },
+     {
+      "date": "2025-11-01",
+      "description": "SME loan instalment and profit",
+      "debit": 100241,
+      "credit": null,
+      "balance": 1195592
+     },
+     {
+      "date": "2025-11-03",
+      "description": "Office rent and vehicles",
+      "debit": 181923,
+      "credit": null,
+      "balance": 1013669
+     },
+     {
+      "date": "2025-11-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 1936500,
+      "balance": 2950169
+     },
+     {
+      "date": "2025-11-12",
+      "description": "Subcontractors and materials",
+      "debit": 528783,
+      "credit": null,
+      "balance": 2421386
+     },
+     {
+      "date": "2025-11-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 336036,
+      "balance": 2757422
+     },
+     {
+      "date": "2025-11-15",
+      "description": "GOSI contribution",
+      "debit": 167509,
+      "credit": null,
+      "balance": 2589913
+     },
+     {
+      "date": "2025-11-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 176579,
+      "credit": null,
+      "balance": 2413334
+     },
+     {
+      "date": "2025-11-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 792933,
+      "balance": 3206267
+     },
+     {
+      "date": "2025-11-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1769855,
+      "credit": null,
+      "balance": 1436412
+     },
+     {
+      "date": "2025-11-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 144746,
+      "credit": null,
+      "balance": 1291666
+     },
+     {
+      "date": "2025-12-01",
+      "description": "SME loan instalment and profit",
+      "debit": 90798,
+      "credit": null,
+      "balance": 1200868
+     },
+     {
+      "date": "2025-12-03",
+      "description": "Office rent and vehicles",
+      "debit": 183916,
+      "credit": null,
+      "balance": 1016952
+     },
+     {
+      "date": "2025-12-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 2091804,
+      "balance": 3108756
+     },
+     {
+      "date": "2025-12-12",
+      "description": "Subcontractors and materials",
+      "debit": 568416,
+      "credit": null,
+      "balance": 2540340
+     },
+     {
+      "date": "2025-12-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 397703,
+      "balance": 2938043
+     },
+     {
+      "date": "2025-12-15",
+      "description": "GOSI contribution",
+      "debit": 156589,
+      "credit": null,
+      "balance": 2781454
+     },
+     {
+      "date": "2025-12-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 197008,
+      "credit": null,
+      "balance": 2584446
+     },
+     {
+      "date": "2025-12-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 754327,
+      "balance": 3338773
+     },
+     {
+      "date": "2025-12-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1905425,
+      "credit": null,
+      "balance": 1433348
+     },
+     {
+      "date": "2025-12-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 145849,
+      "credit": null,
+      "balance": 1287499
+     },
+     {
+      "date": "2026-01-01",
+      "description": "SME loan instalment and profit",
+      "debit": 90479,
+      "credit": null,
+      "balance": 1197020
+     },
+     {
+      "date": "2026-01-03",
+      "description": "Office rent and vehicles",
+      "debit": 190062,
+      "credit": null,
+      "balance": 1006958
+     },
+     {
+      "date": "2026-01-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 1960369,
+      "balance": 2967327
+     },
+     {
+      "date": "2026-01-12",
+      "description": "Subcontractors and materials",
+      "debit": 507469,
+      "credit": null,
+      "balance": 2459858
+     },
+     {
+      "date": "2026-01-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 350038,
+      "balance": 2809896
+     },
+     {
+      "date": "2026-01-15",
+      "description": "GOSI contribution",
+      "debit": 167714,
+      "credit": null,
+      "balance": 2642182
+     },
+     {
+      "date": "2026-01-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 186923,
+      "credit": null,
+      "balance": 2455259
+     },
+     {
+      "date": "2026-01-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 821036,
+      "balance": 3276295
+     },
+     {
+      "date": "2026-01-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1832770,
+      "credit": null,
+      "balance": 1443525
+     },
+     {
+      "date": "2026-01-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 160193,
+      "credit": null,
+      "balance": 1283332
+     },
+     {
+      "date": "2026-02-01",
+      "description": "SME loan instalment and profit",
+      "debit": 88326,
+      "credit": null,
+      "balance": 1195006
+     },
+     {
+      "date": "2026-02-03",
+      "description": "Office rent and vehicles",
+      "debit": 194439,
+      "credit": null,
+      "balance": 1000567
+     },
+     {
+      "date": "2026-02-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 1970689,
+      "balance": 2971256
+     },
+     {
+      "date": "2026-02-12",
+      "description": "Subcontractors and materials",
+      "debit": 563651,
+      "credit": null,
+      "balance": 2407605
+     },
+     {
+      "date": "2026-02-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 422828,
+      "balance": 2830433
+     },
+     {
+      "date": "2026-02-15",
+      "description": "GOSI contribution",
+      "debit": 156107,
+      "credit": null,
+      "balance": 2674326
+     },
+     {
+      "date": "2026-02-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 192426,
+      "credit": null,
+      "balance": 2481900
+     },
+     {
+      "date": "2026-02-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 864966,
+      "balance": 3346866
+     },
+     {
+      "date": "2026-02-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 1918395,
+      "credit": null,
+      "balance": 1428471
+     },
+     {
+      "date": "2026-02-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 149306,
+      "credit": null,
+      "balance": 1279165
+     },
+     {
+      "date": "2026-03-01",
+      "description": "SME loan instalment and profit",
+      "debit": 110362,
+      "credit": null,
+      "balance": 1168803
+     },
+     {
+      "date": "2026-03-03",
+      "description": "Office rent and vehicles",
+      "debit": 205767,
+      "credit": null,
+      "balance": 963036
+     },
+     {
+      "date": "2026-03-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 2164895,
+      "balance": 3127931
+     },
+     {
+      "date": "2026-03-12",
+      "description": "Subcontractors and materials",
+      "debit": 584134,
+      "credit": null,
+      "balance": 2543797
+     },
+     {
+      "date": "2026-03-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 449533,
+      "balance": 2993330
+     },
+     {
+      "date": "2026-03-15",
+      "description": "GOSI contribution",
+      "debit": 190127,
+      "credit": null,
+      "balance": 2803203
+     },
+     {
+      "date": "2026-03-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 230419,
+      "credit": null,
+      "balance": 2572784
+     },
+     {
+      "date": "2026-03-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 1008317,
+      "balance": 3581101
+     },
+     {
+      "date": "2026-03-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2123857,
+      "credit": null,
+      "balance": 1457244
+     },
+     {
+      "date": "2026-03-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 182246,
+      "credit": null,
+      "balance": 1274998
+     },
+     {
+      "date": "2026-04-01",
+      "description": "SME loan instalment and profit",
+      "debit": 116379,
+      "credit": null,
+      "balance": 1158619
+     },
+     {
+      "date": "2026-04-03",
+      "description": "Office rent and vehicles",
+      "debit": 212890,
+      "credit": null,
+      "balance": 945729
+     },
+     {
+      "date": "2026-04-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 2274085,
+      "balance": 3219814
+     },
+     {
+      "date": "2026-04-12",
+      "description": "Subcontractors and materials",
+      "debit": 611956,
+      "credit": null,
+      "balance": 2607858
+     },
+     {
+      "date": "2026-04-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 442251,
+      "balance": 3050109
+     },
+     {
+      "date": "2026-04-15",
+      "description": "GOSI contribution",
+      "debit": 180494,
+      "credit": null,
+      "balance": 2869615
+     },
+     {
+      "date": "2026-04-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 223547,
+      "credit": null,
+      "balance": 2646068
+     },
+     {
+      "date": "2026-04-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 975955,
+      "balance": 3622023
+     },
+     {
+      "date": "2026-04-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2157462,
+      "credit": null,
+      "balance": 1464561
+     },
+     {
+      "date": "2026-04-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 193730,
+      "credit": null,
+      "balance": 1270831
+     },
+     {
+      "date": "2026-05-01",
+      "description": "SME loan instalment and profit",
+      "debit": 114622,
+      "credit": null,
+      "balance": 1156209
+     },
+     {
+      "date": "2026-05-03",
+      "description": "Office rent and vehicles",
+      "debit": 211544,
+      "credit": null,
+      "balance": 944665
+     },
+     {
+      "date": "2026-05-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 2270402,
+      "balance": 3215067
+     },
+     {
+      "date": "2026-05-12",
+      "description": "Subcontractors and materials",
+      "debit": 648714,
+      "credit": null,
+      "balance": 2566353
+     },
+     {
+      "date": "2026-05-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 405657,
+      "balance": 2972010
+     },
+     {
+      "date": "2026-05-15",
+      "description": "GOSI contribution",
+      "debit": 175104,
+      "credit": null,
+      "balance": 2796906
+     },
+     {
+      "date": "2026-05-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 210926,
+      "credit": null,
+      "balance": 2585980
+     },
+     {
+      "date": "2026-05-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 941255,
+      "balance": 3527235
+     },
+     {
+      "date": "2026-05-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2058009,
+      "credit": null,
+      "balance": 1469226
+     },
+     {
+      "date": "2026-05-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 202562,
+      "credit": null,
+      "balance": 1266664
+     },
+     {
+      "date": "2026-06-01",
+      "description": "SME loan instalment and profit",
+      "debit": 122323,
+      "credit": null,
+      "balance": 1144341
+     },
+     {
+      "date": "2026-06-03",
+      "description": "Office rent and vehicles",
+      "debit": 239758,
+      "credit": null,
+      "balance": 904583
+     },
+     {
+      "date": "2026-06-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 2540083,
+      "balance": 3444666
+     },
+     {
+      "date": "2026-06-12",
+      "description": "Subcontractors and materials",
+      "debit": 650453,
+      "credit": null,
+      "balance": 2794213
+     },
+     {
+      "date": "2026-06-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 439764,
+      "balance": 3233977
+     },
+     {
+      "date": "2026-06-15",
+      "description": "GOSI contribution",
+      "debit": 190868,
+      "credit": null,
+      "balance": 3043109
+     },
+     {
+      "date": "2026-06-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 223572,
+      "credit": null,
+      "balance": 2819537
+     },
+     {
+      "date": "2026-06-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 952532,
+      "balance": 3772069
+     },
+     {
+      "date": "2026-06-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2297305,
+      "credit": null,
+      "balance": 1474764
+     },
+     {
+      "date": "2026-06-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 212267,
+      "credit": null,
+      "balance": 1262497
+     },
+     {
+      "date": "2026-07-01",
+      "description": "SME loan instalment and profit",
+      "debit": 130542,
+      "credit": null,
+      "balance": 1131955
+     },
+     {
+      "date": "2026-07-03",
+      "description": "Office rent and vehicles",
+      "debit": 257349,
+      "credit": null,
+      "balance": 874606
+     },
+     {
+      "date": "2026-07-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 2361408,
+      "balance": 3236014
+     },
+     {
+      "date": "2026-07-12",
+      "description": "Subcontractors and materials",
+      "debit": 670493,
+      "credit": null,
+      "balance": 2565521
+     },
+     {
+      "date": "2026-07-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 485640,
+      "balance": 3051161
+     },
+     {
+      "date": "2026-07-15",
+      "description": "GOSI contribution",
+      "debit": 211497,
+      "credit": null,
+      "balance": 2839664
+     },
+     {
+      "date": "2026-07-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 227914,
+      "credit": null,
+      "balance": 2611750
+     },
+     {
+      "date": "2026-07-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 1075240,
+      "balance": 3686990
+     },
+     {
+      "date": "2026-07-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2218106,
+      "credit": null,
+      "balance": 1468884
+     },
+     {
+      "date": "2026-07-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 210554,
+      "credit": null,
+      "balance": 1258330
+     },
+     {
+      "date": "2026-08-01",
+      "description": "SME loan instalment and profit",
+      "debit": 129394,
+      "credit": null,
+      "balance": 1128936
+     },
+     {
+      "date": "2026-08-03",
+      "description": "Office rent and vehicles",
+      "debit": 248717,
+      "credit": null,
+      "balance": 880219
+     },
+     {
+      "date": "2026-08-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 2450007,
+      "balance": 3330226
+     },
+     {
+      "date": "2026-08-12",
+      "description": "Subcontractors and materials",
+      "debit": 665818,
+      "credit": null,
+      "balance": 2664408
+     },
+     {
+      "date": "2026-08-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 474221,
+      "balance": 3138629
+     },
+     {
+      "date": "2026-08-15",
+      "description": "GOSI contribution",
+      "debit": 205774,
+      "credit": null,
+      "balance": 2932855
+     },
+     {
+      "date": "2026-08-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 264383,
+      "credit": null,
+      "balance": 2668472
+     },
+     {
+      "date": "2026-08-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 1066783,
+      "balance": 3735255
+     },
+     {
+      "date": "2026-08-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2272903,
+      "credit": null,
+      "balance": 1462352
+     },
+     {
+      "date": "2026-08-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 208189,
+      "credit": null,
+      "balance": 1254163
+     },
+     {
+      "date": "2026-09-01",
+      "description": "SME loan instalment and profit",
+      "debit": 116957,
+      "credit": null,
+      "balance": 1137206
+     },
+     {
+      "date": "2026-09-03",
+      "description": "Office rent and vehicles",
+      "debit": 231292,
+      "credit": null,
+      "balance": 905914
+     },
+     {
+      "date": "2026-09-08",
+      "description": "Rawdat Business Park Management Co. — monthly invoice",
+      "debit": null,
+      "credit": 2358674,
+      "balance": 3264588
+     },
+     {
+      "date": "2026-09-12",
+      "description": "Subcontractors and materials",
+      "debit": 614053,
+      "credit": null,
+      "balance": 2650535
+     },
+     {
+      "date": "2026-09-14",
+      "description": "Al Ghadir Business Centre Owners Association",
+      "debit": null,
+      "credit": 475753,
+      "balance": 3126288
+     },
+     {
+      "date": "2026-09-15",
+      "description": "GOSI contribution",
+      "debit": 196696,
+      "credit": null,
+      "balance": 2929592
+     },
+     {
+      "date": "2026-09-20",
+      "description": "Transfer to shareholder (personal account)",
+      "debit": 246638,
+      "credit": null,
+      "balance": 2682954
+     },
+     {
+      "date": "2026-09-21",
+      "description": "Other commercial clients — collections",
+      "debit": null,
+      "credit": 1147286,
+      "balance": 3830240
+     },
+     {
+      "date": "2026-09-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 2376327,
+      "credit": null,
+      "balance": 1453913
+     },
+     {
+      "date": "2026-09-28",
+      "description": "VAT payment (quarterly)",
+      "debit": 203913,
+      "credit": null,
+      "balance": 1250000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C4-14",
+   "doc_type": "facility_request_letter",
+   "subject": null,
+   "title": "REQUEST FOR CREDIT FACILITIES",
+   "issuer": "Sanad Smart Facility Services Co.",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/14_facility_request_letter.docx",
+    "pdf": "pdf/14_facility_request_letter.pdf",
+    "images": [
+     "images/14_facility_request_letter_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "letter_date": "2026-10-11",
+    "addressed_to": "Sandstone Harbour Bank, Corporate Banking",
+    "requested_total": 8000000,
+    "facilities": [
+     {
+      "facility": "Overdraft",
+      "amount": 3000000,
+      "purpose": "Payroll and working capital"
+     },
+     {
+      "facility": "Letters of guarantee (bid and performance)",
+      "amount": 5000000,
+      "purpose": "Tenders and contract performance bonds"
+     }
+    ],
+    "signatory": "Abdulaziz Saleh Al-Mutlaq",
+    "signatory_role": "General Manager"
+   }
+  },
+  {
+   "doc_id": "C4-15",
+   "doc_type": "top_customers_suppliers",
+   "subject": null,
+   "title": "TOP CUSTOMERS AND SUPPLIERS",
+   "issuer": "Sanad Smart Facility Services Co.",
+   "issue_date": "2026-10-10",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/15_top_customers_suppliers.docx",
+    "pdf": "pdf/15_top_customers_suppliers.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "year": 2025,
+    "customers": [
+     {
+      "name": "Rawdat Business Park Management Co.",
+      "relationship": "Third party",
+      "sales": 21452000,
+      "share_pct": 62.0,
+      "terms": "30 days; contract to 30/06/2027"
+     },
+     {
+      "name": "Al Ghadir Business Centre Owners Association",
+      "relationship": "Third party",
+      "sales": 4152000,
+      "share_pct": 12.0,
+      "terms": "30 days"
+     },
+     {
+      "name": "Other commercial clients (11)",
+      "relationship": "Third parties",
+      "sales": 8996000,
+      "share_pct": 26.0,
+      "terms": "30-60 days"
+     }
+    ],
+    "suppliers": [
+     {
+      "name": "Manpower subcontractors (3)",
+      "country": "KSA",
+      "purchases": 3900000,
+      "share_pct": 41.0,
+      "terms": "30 days"
+     },
+     {
+      "name": "Cleaning materials and tools",
+      "country": "KSA",
+      "purchases": 2100000,
+      "share_pct": 22.0,
+      "terms": "cash / 30 days"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C4-16",
+   "doc_type": "aml_kyc_questionnaire",
+   "subject": null,
+   "title": "AML / KYC QUESTIONNAIRE",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/16_aml_kyc_questionnaire.docx",
+    "pdf": "pdf/16_aml_kyc_questionnaire.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "completed_on": "2026-10-11",
+    "ubos": [
+     {
+      "name": "Abdulaziz Saleh Al-Mutlaq",
+      "pct": 90.0,
+      "pep": "No"
+     },
+     {
+      "name": "Fahad Saleh Al-Mutlaq",
+      "pct": 10.0,
+      "pep": "No"
+     }
+    ],
+    "pep_flag": "No",
+    "countries": "KSA only",
+    "cash_intensive": "No",
+    "risk_rating": "Low"
+   }
+  },
+  {
+   "doc_id": "C4-17",
+   "doc_type": "simah_consent",
+   "subject": null,
+   "title": "CONSENT TO OBTAIN AND SHARE CREDIT INFORMATION (SIMAH)",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/17_simah_consent.docx",
+    "pdf": "pdf/17_simah_consent.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sanad Smart Facility Services Co.",
+    "cr_number": "1010712290",
+    "signatory": "Abdulaziz Saleh Al-Mutlaq",
+    "signed_on": "2026-10-11"
+   }
+  }
+ ],
+ "missing": [
+  {
+   "doc_type": "audited_fs",
+   "subject": "fy2024",
+   "why": "FY2024 accounts compiled, not audited"
+  },
+  {
+   "doc_type": "simah_consumer",
+   "subject": "fahad_saleh_al_mutlaq",
+   "why": "Partner's report not obtained (consent not signed)"
+  },
+  {
+   "doc_type": "personal_net_worth",
+   "subject": "abdulaziz_saleh_al_mutlaq",
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "board_resolution",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "authorised_signatories",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "receivables_ageing",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "payables_ageing",
+   "subject": null,
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "other_bank_offer_letter",
+   "subject": "tihama_investment_bank",
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "other_bank_statement",
+   "subject": "tihama_investment_bank",
+   "why": "Not provided"
+  },
+  {
+   "doc_type": "site_visit_report",
+   "subject": null,
+   "why": "Visit not yet done"
+  }
+ ],
+ "business_request": null,
+ "reference": {
+  "docx": "reference/reference_proposal.docx",
+  "pdf": "reference/reference_proposal.pdf"
+ }
+}

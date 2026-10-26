@@ -1,0 +1,4772 @@
+{
+ "before": {
+  "set": "R12-L1",
+  "deals": [
+   {
+    "proposal_id": "DD-01",
+    "set": "R12",
+    "obligor": "Al Rayyan Medical Supply Company",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Revenue −20% (moderate) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20"
+     ],
+     "severe": [
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-02",
+    "set": "R12",
+    "obligor": "Taif Central Engineering",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-03",
+    "set": "R12",
+    "obligor": "Al Khobar Modern Cold Storage Company",
+    "sector": "Transport and Logistics",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Benchmark rates",
+     "EBITDA margin",
+     "Largest-customer concentration"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "rates_100",
+      "sector_mild",
+      "rev_10",
+      "margin_150",
+      "cust_33"
+     ],
+     "moderate": [
+      "oil_30",
+      "rates_200",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-04",
+    "set": "R12",
+    "obligor": "Al Nakheel Commercial Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Project delay 3 months (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "mild": [
+      "delay_3",
+      "coll_20"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-05",
+    "set": "R12",
+    "obligor": "Najd Al Bunyan Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Covenants, Stage, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Debt service cover",
+     "Revenue",
+     "EBITDA margin",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "margin_150",
+      "cust_33",
+      "paydelay_30",
+      "delay_3",
+      "notch_1"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-06",
+    "set": "R12",
+    "obligor": "Dhahran Continental Industries",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ],
+     "moderate": [
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-07",
+    "set": "R12",
+    "obligor": "Unayzah Trading",
+    "sector": "Wholesale Trade",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Combined severe (severe) breaks DSCR, Debt/EBITDA, Stage, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-08",
+    "set": "R12",
+    "obligor": "Jeddah Al Shifa Hospital Company",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20"
+     ],
+     "severe": [
+      "rev_30",
+      "cust_100",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-09",
+    "set": "R12",
+    "obligor": "Tabuk Electromechanical Services Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "sector_severe",
+      "delay_12",
+      "combined_severe"
+     ],
+     "moderate": [
+      "delay_6"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-10",
+    "set": "R12",
+    "obligor": "Al Qassim Precision Plastics Establishment",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Combined moderate (moderate) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-11",
+    "set": "R12",
+    "obligor": "Al Kharj United Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Own-sector downturn (moderate) breaks DSCR, Debt/EBITDA, Covenants, Rating / PD, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "delay_6",
+      "notch_2"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-12",
+    "set": "R12",
+    "obligor": "Yanbu Modern Logistics",
+    "sector": "Transport and Logistics",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-13",
+    "set": "R12",
+    "obligor": "Al Jouf Arabian Medical",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "rates_300",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ],
+     "moderate": [
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-14",
+    "set": "R12",
+    "obligor": "Jubail Advanced Polymers Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-15",
+    "set": "R12",
+    "obligor": "Eastern Grid Services Company",
+    "sector": "Power and Utilities",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20",
+      "cust_67",
+      "delay_6"
+     ],
+     "severe": [
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-01",
+    "set": "R12",
+    "obligor": "Al Masar Infrastructure Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Project delay 3 months (mild) breaks DSCR, Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "delay_6",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-02",
+    "set": "R12",
+    "obligor": "Wadi Hanifa Building Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Project delay 3 months (mild) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue",
+     "EBITDA margin",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "margin_150",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-03",
+    "set": "R12",
+    "obligor": "Red Sea Marine Works Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Project delay 6 months (moderate) breaks Debt/EBITDA, RAROC, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "delay_6",
+      "notch_2"
+     ],
+     "severe": [
+      "sector_severe",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-04",
+    "set": "R12",
+    "obligor": "Tihama Roads Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Project delay 3 months (mild) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue",
+     "EBITDA margin",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "margin_150",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-05",
+    "set": "R12",
+    "obligor": "Al Olaya Residential Developments Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Largest customer cuts a third (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "paydelay_30",
+      "delay_3",
+      "coll_20",
+      "re_10"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-06",
+    "set": "R12",
+    "obligor": "Jeddah Corniche Hospitality Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Collateral −20% (mild) breaks RAROC",
+    "drivers": [
+     "Collateral value",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "moderate": [
+      "rev_20",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "mild": [
+      "coll_20",
+      "notch_1"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-07",
+    "set": "R12",
+    "obligor": "Dammam Logistics Parks Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Collateral value"
+    ],
+    "breaking": {
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "combined_severe"
+     ],
+     "moderate": [
+      "rev_20",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "mild": [
+      "coll_20"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-08",
+    "set": "R12",
+    "obligor": "Al Kharj National Engineering Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (mild) breaks DSCR, Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-09",
+    "set": "R12",
+    "obligor": "Al Kharj National Engineering Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Project delay 3 months (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10",
+      "delay_3",
+      "coll_20",
+      "re_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-10",
+    "set": "R12",
+    "obligor": "Al Madinah Specialist Hospital Company",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "PL-11",
+    "set": "R12",
+    "obligor": "Yanbu Glass Industries Company",
+    "sector": "Manufacturing",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Revenue −30% (severe) breaks DSCR, Debt/EBITDA, Covenants, Stage, RAROC, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-12",
+    "set": "R12",
+    "obligor": "Ras Al Khair Specialty Chemicals Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "PL-13",
+    "set": "R12",
+    "obligor": "Northern Water Desalination Company",
+    "sector": "Power and Utilities",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Largest customer cuts two thirds (moderate) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "combined_severe"
+     ],
+     "moderate": [
+      "cust_67",
+      "delay_6"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-14",
+    "set": "R12",
+    "obligor": "Hail Fibre Networks Company",
+    "sector": "Telecommunications",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Revenue −30% (severe) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-15",
+    "set": "R12",
+    "obligor": "Riyadh Cloud Data Centres Company",
+    "sector": "Information Technology",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Rating −3 notches (severe) breaks Limits",
+    "drivers": [
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "notch_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-16",
+    "set": "R12",
+    "obligor": "Jeddah Building Supplies Trading Company",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Own-sector downturn (moderate) breaks Debt/EBITDA, Limits",
+    "drivers": [
+     "Revenue",
+     "Payment delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "paydelay_60"
+     ],
+     "severe": [
+      "sector_severe",
+      "margin_450",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-17",
+    "set": "R12",
+    "obligor": "Taif Mountain Resorts Company",
+    "sector": "Hospitality",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Covenants before any stress",
+    "drivers": [
+     "Debt service cover",
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "rev_20",
+      "cust_67",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-18",
+    "set": "R12",
+    "obligor": "Al Jouf Date Processing Company",
+    "sector": "Agriculture and Agri-processing",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Revenue −20% (moderate) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20"
+     ],
+     "severe": [
+      "rev_30",
+      "margin_450",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-19",
+    "set": "R12",
+    "obligor": "Northern Borders Phosphate Services Company",
+    "sector": "Metals and Mining",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Revenue −20% (moderate) breaks DSCR, Covenants, Rating / PD, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "moderate": [
+      "rev_20",
+      "notch_2",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-20",
+    "set": "R12",
+    "obligor": "Al Nahda Hypermarkets Company",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "paydelay_90",
+      "combined_severe"
+     ],
+     "moderate": [
+      "paydelay_60"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-21",
+    "set": "R12",
+    "obligor": "Eastern Haulage Company",
+    "sector": "Transport and Logistics",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Combined severe (severe) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-22",
+    "set": "R12",
+    "obligor": "Al Faisaliah Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "delay_6"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-23",
+    "set": "R12",
+    "obligor": "Al Kharj Properties",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "delay_3",
+      "re_10"
+     ],
+     "moderate": [
+      "oil_30",
+      "rates_200",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-24",
+    "set": "R12",
+    "obligor": "Najran National Hospitality",
+    "sector": "Hospitality",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Revenue −10% (mild) breaks DSCR, Debt/EBITDA, Covenants, RAROC, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10",
+      "notch_1"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-25",
+    "set": "R12",
+    "obligor": "Qassim National Trading",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-26",
+    "set": "R12",
+    "obligor": "Najd Retail",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Revenue −10% (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10",
+      "notch_1"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-27",
+    "set": "R12",
+    "obligor": "Qurayyat Earthmoving Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Debt/EBITDA, Covenants, Rating / PD, Stage before any stress",
+    "drivers": [
+     "Debt service cover",
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3",
+      "notch_1"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "delay_6",
+      "notch_2",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-ESC",
+    "set": "R12",
+    "obligor": "Marina Vista Developments",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Largest customer cuts a third (mild) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "delay_3",
+      "re_10"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "delay_6",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME1",
+    "set": "R12",
+    "obligor": "Qamar Precision Workshop",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ],
+     "moderate": [
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME2",
+    "set": "R12",
+    "obligor": "Dunes Fresh Bakery Supplies",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME3",
+    "set": "R12",
+    "obligor": "Bayt Al Zaitoun Trading",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Debt/EBITDA, Covenants, Stage, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Debt service cover",
+     "Revenue",
+     "EBITDA margin",
+     "Rating"
+    ],
+    "breaking": {
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "margin_150",
+      "notch_1"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SYN",
+    "set": "R12",
+    "obligor": "Najd Petrochemical Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails Covenants, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "EBITDA margin",
+     "Largest-customer concentration",
+     "Payment delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "rev_10",
+      "margin_150",
+      "cust_33",
+      "paydelay_30"
+     ],
+     "moderate": [
+      "oil_30",
+      "gdp_3",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "gdp_4_5",
+      "rates_300",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-TWA",
+    "set": "R12",
+    "obligor": "Al Sahel Building Materials Trading LLC",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "EBITDA margin",
+     "Largest-customer concentration",
+     "Payment delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "margin_150",
+      "cust_33",
+      "paydelay_30"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-TWB",
+    "set": "R12",
+    "obligor": "Gulf Meridian Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "EBITDA margin",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "margin_150",
+      "cust_33",
+      "paydelay_30",
+      "delay_3"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ]
+    }
+   }
+  ],
+  "counts": {
+   "High": 44,
+   "Medium": 5
+  },
+  "worst": {
+   "moderate": 8,
+   "mild": 36,
+   "severe": 5
+  },
+  "first_driver": {
+   "Revenue": 20,
+   "Pricing (RAROC below the hurdle before stress)": 23,
+   "Project delays": 1,
+   "Collateral value": 1,
+   "Largest-customer concentration": 1,
+   "Rating": 1,
+   "Debt service cover": 2
+  }
+ },
+ "after": {
+  "set": "R13-S1",
+  "deals": [
+   {
+    "proposal_id": "DD-01",
+    "set": "R13",
+    "obligor": "Al Rayyan Medical Supply Company",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Revenue −20% (moderate) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20"
+     ],
+     "severe": [
+      "rev_30",
+      "cust_100",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-02",
+    "set": "R13",
+    "obligor": "Taif Central Engineering",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-03",
+    "set": "R13",
+    "obligor": "Al Khobar Modern Cold Storage Company",
+    "sector": "Transport and Logistics",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "cust_33"
+     ],
+     "moderate": [
+      "oil_30",
+      "rates_200",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-04",
+    "set": "R13",
+    "obligor": "Al Nakheel Commercial Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Project delay 3 months (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "delay_3",
+      "coll_20"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-05",
+    "set": "R13",
+    "obligor": "Najd Al Bunyan Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Covenants, Stage, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Debt service cover",
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "paydelay_30",
+      "delay_3",
+      "notch_1"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-06",
+    "set": "R13",
+    "obligor": "Dhahran Continental Industries",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-07",
+    "set": "R13",
+    "obligor": "Unayzah Trading",
+    "sector": "Wholesale Trade",
+    "tier": "Standard",
+    "verdict": "Approve",
+    "worst": "none",
+    "why": "no applicable scenario breaks a test",
+    "drivers": [],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "DD-08",
+    "set": "R13",
+    "obligor": "Jeddah Al Shifa Hospital Company",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20"
+     ],
+     "severe": [
+      "rev_30",
+      "cust_100",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-09",
+    "set": "R13",
+    "obligor": "Tabuk Electromechanical Services Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "sector_severe",
+      "delay_12"
+     ],
+     "moderate": [
+      "delay_6"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-10",
+    "set": "R13",
+    "obligor": "Al Qassim Precision Plastics Establishment",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Combined moderate (moderate) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "cust_100",
+      "combined_severe"
+     ],
+     "moderate": [
+      "rev_20",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-11",
+    "set": "R13",
+    "obligor": "Al Kharj United Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Own-sector downturn (×1.00) (moderate) breaks DSCR, Debt/EBITDA, Covenants, Rating / PD, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "delay_6",
+      "notch_2"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-12",
+    "set": "R13",
+    "obligor": "Yanbu Modern Logistics",
+    "sector": "Transport and Logistics",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-13",
+    "set": "R13",
+    "obligor": "Al Jouf Arabian Medical",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "rates_300",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ],
+     "moderate": [
+      "rev_20",
+      "cust_67",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-14",
+    "set": "R13",
+    "obligor": "Jubail Advanced Polymers Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-15",
+    "set": "R13",
+    "obligor": "Eastern Grid Services Company",
+    "sector": "Power and Utilities",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20",
+      "cust_67",
+      "delay_6"
+     ],
+     "severe": [
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-01",
+    "set": "R13",
+    "obligor": "Al Masar Infrastructure Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-02",
+    "set": "R13",
+    "obligor": "Wadi Hanifa Building Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-03",
+    "set": "R13",
+    "obligor": "Red Sea Marine Works Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Project delay 6 months (moderate) breaks Debt/EBITDA, RAROC, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "delay_6",
+      "notch_2"
+     ],
+     "severe": [
+      "sector_severe",
+      "delay_12",
+      "notch_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-04",
+    "set": "R13",
+    "obligor": "Tihama Roads Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-05",
+    "set": "R13",
+    "obligor": "Al Olaya Residential Developments Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Largest customer cuts a third (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "paydelay_30",
+      "delay_3",
+      "coll_20",
+      "re_10"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-06",
+    "set": "R13",
+    "obligor": "Jeddah Corniche Hospitality Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Collateral −20% (mild) breaks RAROC",
+    "drivers": [
+     "Collateral value",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "moderate": [
+      "rev_20",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "mild": [
+      "coll_20",
+      "notch_1"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-07",
+    "set": "R13",
+    "obligor": "Dammam Logistics Parks Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Collateral value"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "combined_severe"
+     ],
+     "moderate": [
+      "rev_20",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "mild": [
+      "coll_20"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-08",
+    "set": "R13",
+    "obligor": "Al Kharj National Engineering Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-09",
+    "set": "R13",
+    "obligor": "Al Kharj National Engineering Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "delay_3",
+      "coll_20",
+      "re_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-10",
+    "set": "R13",
+    "obligor": "Al Madinah Specialist Hospital Company",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "PL-11",
+    "set": "R13",
+    "obligor": "Yanbu Glass Industries Company",
+    "sector": "Manufacturing",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Combined severe (severe) breaks DSCR, Debt/EBITDA, Covenants, Stage, RAROC, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-12",
+    "set": "R13",
+    "obligor": "Ras Al Khair Specialty Chemicals Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "PL-13",
+    "set": "R13",
+    "obligor": "Northern Water Desalination Company",
+    "sector": "Power and Utilities",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Largest customer cuts two thirds (moderate) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "cust_100",
+      "delay_12",
+      "combined_severe"
+     ],
+     "moderate": [
+      "cust_67",
+      "delay_6"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-14",
+    "set": "R13",
+    "obligor": "Hail Fibre Networks Company",
+    "sector": "Telecommunications",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Revenue −30% (severe) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-15",
+    "set": "R13",
+    "obligor": "Riyadh Cloud Data Centres Company",
+    "sector": "Information Technology",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Rating −3 notches (severe) breaks Limits",
+    "drivers": [
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "notch_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-16",
+    "set": "R13",
+    "obligor": "Jeddah Building Supplies Trading Company",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Own-sector downturn (×1.00) (moderate) breaks Debt/EBITDA, Limits",
+    "drivers": [
+     "Revenue",
+     "Payment delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "paydelay_60"
+     ],
+     "severe": [
+      "sector_severe",
+      "paydelay_90"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-17",
+    "set": "R13",
+    "obligor": "Taif Mountain Resorts Company",
+    "sector": "Hospitality",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Covenants before any stress",
+    "drivers": [
+     "Debt service cover",
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "rev_20",
+      "cust_67",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-18",
+    "set": "R13",
+    "obligor": "Al Jouf Date Processing Company",
+    "sector": "Agriculture and Agri-processing",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Revenue −20% (moderate) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "rev_20"
+     ],
+     "severe": [
+      "rev_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-19",
+    "set": "R13",
+    "obligor": "Northern Borders Phosphate Services Company",
+    "sector": "Metals and Mining",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Combined moderate (moderate) breaks DSCR, Debt/EBITDA, Covenants, Rating / PD, Stage, RAROC, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "moderate": [
+      "rev_20",
+      "notch_2",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-20",
+    "set": "R13",
+    "obligor": "Al Nahda Hypermarkets Company",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "paydelay_90"
+     ],
+     "moderate": [
+      "paydelay_60"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-21",
+    "set": "R13",
+    "obligor": "Eastern Haulage Company",
+    "sector": "Transport and Logistics",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Revenue −30% (severe) breaks DSCR, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "rev_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-22",
+    "set": "R13",
+    "obligor": "Al Faisaliah Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-23",
+    "set": "R13",
+    "obligor": "Al Kharj Properties",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "delay_3",
+      "re_10"
+     ],
+     "moderate": [
+      "oil_30",
+      "rates_200",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-24",
+    "set": "R13",
+    "obligor": "Najran National Hospitality",
+    "sector": "Hospitality",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Revenue −10% (mild) breaks DSCR, Debt/EBITDA, Covenants, RAROC, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10",
+      "notch_1"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-25",
+    "set": "R13",
+    "obligor": "Qassim National Trading",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-26",
+    "set": "R13",
+    "obligor": "Najd Retail",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "notch_1"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-27",
+    "set": "R13",
+    "obligor": "Qurayyat Earthmoving Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Debt/EBITDA, Covenants, Rating / PD, Stage before any stress",
+    "drivers": [
+     "Debt service cover",
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3",
+      "notch_1"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "delay_6",
+      "notch_2",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-ESC",
+    "set": "R13",
+    "obligor": "Marina Vista Developments",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Largest customer cuts a third (mild) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "cust_67",
+      "delay_6",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "delay_3",
+      "re_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME1",
+    "set": "R13",
+    "obligor": "Qamar Precision Workshop",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "rev_20",
+      "cust_67",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rev_30",
+      "cust_100",
+      "combined_severe"
+     ],
+     "mild": [
+      "rev_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME2",
+    "set": "R13",
+    "obligor": "Dunes Fresh Bakery Supplies",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME3",
+    "set": "R13",
+    "obligor": "Bayt Al Zaitoun Trading",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Debt/EBITDA, Covenants, Stage, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Debt service cover",
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "notch_1"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "rev_20",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SYN",
+    "set": "R13",
+    "obligor": "Najd Petrochemical Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails Covenants, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "rev_10",
+      "cust_33",
+      "paydelay_30"
+     ],
+     "moderate": [
+      "oil_30",
+      "gdp_3",
+      "rev_20",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "gdp_4_5",
+      "rates_300",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-TWA",
+    "set": "R13",
+    "obligor": "Al Sahel Building Materials Trading LLC",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "EBITDA margin",
+     "Largest-customer concentration",
+     "Payment delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "rev_10",
+      "margin_150",
+      "cust_33",
+      "paydelay_30"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "gdp_4_5",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-TWB",
+    "set": "R13",
+    "obligor": "Gulf Meridian Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "rev_10",
+      "cust_33",
+      "paydelay_30",
+      "delay_3"
+     ]
+    }
+   }
+  ],
+  "counts": {
+   "High": 44,
+   "Standard": 1,
+   "Medium": 4
+  },
+  "worst": {
+   "moderate": 8,
+   "mild": 36,
+   "none": 1,
+   "severe": 4
+  },
+  "first_driver": {
+   "Revenue": 19,
+   "Pricing (RAROC below the hurdle before stress)": 23,
+   "Project delays": 1,
+   "none": 1,
+   "Collateral value": 1,
+   "Largest-customer concentration": 1,
+   "Rating": 1,
+   "Debt service cover": 2
+  }
+ },
+ "revenue_relative": {
+  "set": "R13-S1 with revenue rows at the bank's relative-shortfall percentiles",
+  "deals": [
+   {
+    "proposal_id": "DD-01",
+    "set": "R13rel",
+    "obligor": "Al Rayyan Medical Supply Company",
+    "sector": "Healthcare",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Combined severe (severe) breaks DSCR, Covenants, Stage, Limits",
+    "drivers": [
+     "Largest-customer concentration",
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "cust_100",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-02",
+    "set": "R13rel",
+    "obligor": "Taif Central Engineering",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-03",
+    "set": "R13rel",
+    "obligor": "Al Khobar Modern Cold Storage Company",
+    "sector": "Transport and Logistics",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "cust_33"
+     ],
+     "moderate": [
+      "oil_30",
+      "rates_200",
+      "sector_moderate",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-04",
+    "set": "R13rel",
+    "obligor": "Al Nakheel Commercial Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Project delay 3 months (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "delay_3",
+      "coll_20"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-05",
+    "set": "R13rel",
+    "obligor": "Najd Al Bunyan Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Covenants, Stage, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Debt service cover",
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "cust_33",
+      "paydelay_30",
+      "delay_3",
+      "notch_1"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-06",
+    "set": "R13rel",
+    "obligor": "Dhahran Continental Industries",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-07",
+    "set": "R13rel",
+    "obligor": "Unayzah Trading",
+    "sector": "Wholesale Trade",
+    "tier": "Standard",
+    "verdict": "Approve",
+    "worst": "none",
+    "why": "no applicable scenario breaks a test",
+    "drivers": [],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "DD-08",
+    "set": "R13rel",
+    "obligor": "Jeddah Al Shifa Hospital Company",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "cust_100",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-09",
+    "set": "R13rel",
+    "obligor": "Tabuk Electromechanical Services Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "sector_severe",
+      "delay_12"
+     ],
+     "moderate": [
+      "delay_6"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-10",
+    "set": "R13rel",
+    "obligor": "Al Qassim Precision Plastics Establishment",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Combined moderate (moderate) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "cust_100",
+      "combined_severe"
+     ],
+     "moderate": [
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-11",
+    "set": "R13rel",
+    "obligor": "Al Kharj United Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Own-sector downturn (×1.00) (moderate) breaks DSCR, Debt/EBITDA, Covenants, Rating / PD, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "delay_6",
+      "notch_2"
+     ],
+     "severe": [
+      "sector_severe",
+      "cust_100",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-12",
+    "set": "R13rel",
+    "obligor": "Yanbu Modern Logistics",
+    "sector": "Transport and Logistics",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-13",
+    "set": "R13rel",
+    "obligor": "Al Jouf Arabian Medical",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "rates_300",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ],
+     "moderate": [
+      "cust_67",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-14",
+    "set": "R13rel",
+    "obligor": "Jubail Advanced Polymers Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "DD-15",
+    "set": "R13rel",
+    "obligor": "Eastern Grid Services Company",
+    "sector": "Power and Utilities",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "cust_67",
+      "delay_6"
+     ],
+     "severe": [
+      "cust_100",
+      "delay_12",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-01",
+    "set": "R13rel",
+    "obligor": "Al Masar Infrastructure Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-02",
+    "set": "R13rel",
+    "obligor": "Wadi Hanifa Building Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-03",
+    "set": "R13rel",
+    "obligor": "Red Sea Marine Works Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Project delay 6 months (moderate) breaks Debt/EBITDA, RAROC, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "delay_6",
+      "notch_2"
+     ],
+     "severe": [
+      "sector_severe",
+      "delay_12",
+      "notch_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-04",
+    "set": "R13rel",
+    "obligor": "Tihama Roads Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Stage, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "cust_33",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-05",
+    "set": "R13rel",
+    "obligor": "Al Olaya Residential Developments Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Largest customer cuts a third (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "cust_33",
+      "paydelay_30",
+      "delay_3",
+      "coll_20",
+      "re_10"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "rev_30",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-06",
+    "set": "R13rel",
+    "obligor": "Jeddah Corniche Hospitality Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Collateral −20% (mild) breaks RAROC",
+    "drivers": [
+     "Collateral value",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "moderate": [
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "mild": [
+      "coll_20",
+      "notch_1"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-07",
+    "set": "R13rel",
+    "obligor": "Dammam Logistics Parks Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Collateral value"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "combined_severe"
+     ],
+     "moderate": [
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "combined_moderate"
+     ],
+     "mild": [
+      "coll_20"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-08",
+    "set": "R13rel",
+    "obligor": "Al Kharj National Engineering Contracting Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-09",
+    "set": "R13rel",
+    "obligor": "Al Kharj National Engineering Properties Company",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Project delays",
+     "Collateral value"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "delay_6",
+      "coll_30",
+      "re_20",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3",
+      "coll_20",
+      "re_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-10",
+    "set": "R13rel",
+    "obligor": "Al Madinah Specialist Hospital Company",
+    "sector": "Healthcare",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "PL-11",
+    "set": "R13rel",
+    "obligor": "Yanbu Glass Industries Company",
+    "sector": "Manufacturing",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Combined severe (severe) breaks DSCR, Debt/EBITDA, Covenants, Stage, RAROC, Limits",
+    "drivers": [
+     "Rating",
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-12",
+    "set": "R13rel",
+    "obligor": "Ras Al Khair Specialty Chemicals Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "PL-13",
+    "set": "R13rel",
+    "obligor": "Northern Water Desalination Company",
+    "sector": "Power and Utilities",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Largest customer cuts two thirds (moderate) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "cust_67",
+      "delay_6"
+     ],
+     "severe": [
+      "cust_100",
+      "delay_12",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-14",
+    "set": "R13rel",
+    "obligor": "Hail Fibre Networks Company",
+    "sector": "Telecommunications",
+    "tier": "Standard",
+    "verdict": "Approve",
+    "worst": "none",
+    "why": "no applicable scenario breaks a test",
+    "drivers": [],
+    "breaking": {}
+   },
+   {
+    "proposal_id": "PL-15",
+    "set": "R13rel",
+    "obligor": "Riyadh Cloud Data Centres Company",
+    "sector": "Information Technology",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Rating −3 notches (severe) breaks Limits",
+    "drivers": [
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "notch_3"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-16",
+    "set": "R13rel",
+    "obligor": "Jeddah Building Supplies Trading Company",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Own-sector downturn (×1.00) (moderate) breaks Debt/EBITDA, Limits",
+    "drivers": [
+     "Revenue",
+     "Payment delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate",
+      "paydelay_60"
+     ],
+     "severe": [
+      "sector_severe",
+      "paydelay_90"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-17",
+    "set": "R13rel",
+    "obligor": "Taif Mountain Resorts Company",
+    "sector": "Hospitality",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Covenants before any stress",
+    "drivers": [
+     "Debt service cover"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "cust_67",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "cust_100",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-18",
+    "set": "R13rel",
+    "obligor": "Al Jouf Date Processing Company",
+    "sector": "Agriculture and Agri-processing",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Combined severe (severe) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-19",
+    "set": "R13rel",
+    "obligor": "Northern Borders Phosphate Services Company",
+    "sector": "Metals and Mining",
+    "tier": "High",
+    "verdict": "Approve with enhanced monitoring",
+    "worst": "moderate",
+    "why": "Combined moderate (moderate) breaks DSCR, Debt/EBITDA, Covenants, Rating / PD, Stage, RAROC, Limits",
+    "drivers": [
+     "Rating",
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "moderate": [
+      "notch_2",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-20",
+    "set": "R13rel",
+    "obligor": "Al Nahda Hypermarkets Company",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "severe": [
+      "sector_severe",
+      "paydelay_90"
+     ],
+     "moderate": [
+      "paydelay_60"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-21",
+    "set": "R13rel",
+    "obligor": "Eastern Haulage Company",
+    "sector": "Transport and Logistics",
+    "tier": "Medium",
+    "verdict": "Approve, standard monitoring",
+    "worst": "severe",
+    "why": "Combined severe (severe) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue"
+    ],
+    "breaking": {
+     "severe": [
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-22",
+    "set": "R13rel",
+    "obligor": "Al Faisaliah Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Project delays"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-23",
+    "set": "R13rel",
+    "obligor": "Al Kharj Properties",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "cust_33",
+      "delay_3",
+      "re_10"
+     ],
+     "moderate": [
+      "oil_30",
+      "rates_200",
+      "sector_moderate",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "rates_300",
+      "sector_severe",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-24",
+    "set": "R13rel",
+    "obligor": "Najran National Hospitality",
+    "sector": "Hospitality",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Rating −1 notch (mild) breaks RAROC",
+    "drivers": [
+     "Rating"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "cust_67",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "cust_100",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "notch_1"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-25",
+    "set": "R13rel",
+    "obligor": "Qassim National Trading",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-26",
+    "set": "R13rel",
+    "obligor": "Najd Retail",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Own-sector slowdown (×0.64) (mild) breaks Debt/EBITDA, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "notch_1"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "PL-27",
+    "set": "R13rel",
+    "obligor": "Qurayyat Earthmoving Company",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Debt/EBITDA, Covenants, Rating / PD, Stage before any stress",
+    "drivers": [
+     "Debt service cover",
+     "Revenue",
+     "Project delays",
+     "Rating"
+    ],
+    "breaking": {
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "notch_3",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "delay_3",
+      "notch_1"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "cust_67",
+      "delay_6",
+      "notch_2",
+      "combined_moderate"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-ESC",
+    "set": "R13rel",
+    "obligor": "Marina Vista Developments",
+    "sector": "Real Estate",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "Largest customer cuts a third (mild) breaks DSCR, Covenants, Limits",
+    "drivers": [
+     "Revenue",
+     "Largest-customer concentration",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "cust_67",
+      "delay_6",
+      "re_20",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "coll_40",
+      "re_30",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "cust_33",
+      "delay_3",
+      "re_10"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME1",
+    "set": "R13rel",
+    "obligor": "Qamar Precision Workshop",
+    "sector": "Manufacturing",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "cust_67",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "cust_100",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME2",
+    "set": "R13rel",
+    "obligor": "Dunes Fresh Bakery Supplies",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)"
+    ],
+    "breaking": {
+     "moderate": [
+      "sector_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SME3",
+    "set": "R13rel",
+    "obligor": "Bayt Al Zaitoun Trading",
+    "sector": "Retail Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails DSCR, Debt/EBITDA, Covenants, Stage, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Debt service cover",
+     "Revenue",
+     "Rating"
+    ],
+    "breaking": {
+     "mild": [
+      "sector_mild",
+      "notch_1"
+     ],
+     "moderate": [
+      "sector_moderate",
+      "paydelay_60",
+      "notch_2",
+      "combined_moderate"
+     ],
+     "severe": [
+      "sector_severe",
+      "margin_450",
+      "paydelay_90",
+      "notch_3",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-SYN",
+    "set": "R13rel",
+    "obligor": "Najd Petrochemical Company",
+    "sector": "Chemicals",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails Covenants, RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "cust_33",
+      "paydelay_30"
+     ],
+     "moderate": [
+      "oil_30",
+      "gdp_3",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "gdp_4_5",
+      "rates_300",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-TWA",
+    "set": "R13rel",
+    "obligor": "Al Sahel Building Materials Trading LLC",
+    "sector": "Wholesale Trade",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "EBITDA margin",
+     "Largest-customer concentration",
+     "Payment delays"
+    ],
+    "breaking": {
+     "mild": [
+      "oil_15",
+      "sector_mild",
+      "margin_150",
+      "cust_33",
+      "paydelay_30"
+     ],
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "rev_20",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "gdp_4_5",
+      "sector_severe",
+      "rev_30",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "combined_severe"
+     ]
+    }
+   },
+   {
+    "proposal_id": "R12-TWB",
+    "set": "R13rel",
+    "obligor": "Gulf Meridian Contracting",
+    "sector": "Construction",
+    "tier": "High",
+    "verdict": "Restructure",
+    "worst": "mild",
+    "why": "the structure already fails RAROC before any stress",
+    "drivers": [
+     "Pricing (RAROC below the hurdle before stress)",
+     "Revenue",
+     "Largest-customer concentration",
+     "Payment delays",
+     "Project delays"
+    ],
+    "breaking": {
+     "moderate": [
+      "oil_30",
+      "sector_moderate",
+      "margin_300",
+      "cust_67",
+      "paydelay_60",
+      "delay_6",
+      "combined_moderate"
+     ],
+     "severe": [
+      "oil_45",
+      "sector_severe",
+      "margin_450",
+      "cust_100",
+      "paydelay_90",
+      "delay_12",
+      "re_30",
+      "combined_severe"
+     ],
+     "mild": [
+      "sector_mild",
+      "cust_33",
+      "paydelay_30",
+      "delay_3"
+     ]
+    }
+   }
+  ],
+  "counts": {
+   "Medium": 5,
+   "High": 42,
+   "Standard": 2
+  },
+  "worst": {
+   "severe": 5,
+   "mild": 36,
+   "none": 2,
+   "moderate": 6
+  },
+  "first_driver": {
+   "Largest-customer concentration": 2,
+   "Pricing (RAROC below the hurdle before stress)": 23,
+   "Project delays": 1,
+   "none": 2,
+   "Revenue": 14,
+   "Collateral value": 1,
+   "Rating": 4,
+   "Debt service cover": 2
+  }
+ },
+ "changes": [
+  {
+   "proposal_id": "DD-07",
+   "before": "Medium",
+   "after": "Standard",
+   "why_after": "no applicable scenario breaks a test"
+  }
+ ],
+ "n_deals": 49
+}

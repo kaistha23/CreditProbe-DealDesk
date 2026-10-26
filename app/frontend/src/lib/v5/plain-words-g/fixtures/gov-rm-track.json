@@ -1,0 +1,389 @@
+{
+ "trace_id": "DT-f3311a721391",
+ "available": true,
+ "kind": "rm_track_record",
+ "group": "rm",
+ "as_of": "2026Q2",
+ "lines": [
+  "91 RMs have at least 15 approved decisions; 0 more are too thin to rank.",
+  "Strongest: Saud Al-Otaibi (score 84): quality 84, 81% of conditions met, defaults 0.00\u00d7 expected over 81 approvals.",
+  "Weakest: Dana Al-Bishi (score 11): quality 63, 59% of conditions met, defaults 2.08\u00d7 expected over 72 approvals.",
+  "Risk-adjusted: defaults are set against the PD each borrower carried at approval, scaled to the bank's own default experience over the history."
+ ],
+ "rows": [
+  {
+   "id": "RM0074",
+   "name": "Saud Al-Otaibi",
+   "branch": "Riyadh Olaya",
+   "decisions": 82,
+   "approved": 81,
+   "declined": 1,
+   "limit_sar_mn": 2573.0,
+   "quality": {
+    "value": 84.4061,
+    "unit": "0-100",
+    "basis": {
+     "relations": [
+      "gov_decision"
+     ],
+     "rows": 82,
+     "filter": {
+      "rm_id": "RM0074"
+     },
+     "method": "mean proposal quality score",
+     "period": "2026Q2"
+    }
+   },
+   "queries_per_file": 1.07,
+   "conditions": {
+    "pct": 80.54,
+    "k": 120,
+    "n": 149,
+    "ci_low_pct": 73.45,
+    "ci_high_pct": 86.09
+   },
+   "promises": {
+    "pct": 90.74,
+    "k": 49,
+    "n": 54,
+    "ci_low_pct": 80.09,
+    "ci_high_pct": 95.98
+   },
+   "defaults": 0,
+   "expected_defaults": 2.34,
+   "oe": 0.0,
+   "oe_ci": [
+    0.0,
+    1.56
+   ],
+   "migrated": 10,
+   "score": 84.1,
+   "thin": false,
+   "flag": ""
+  },
+  {
+   "id": "RM0087",
+   "name": "Sara Al-Dosari",
+   "branch": "Riyadh Olaya",
+   "decisions": 70,
+   "approved": 69,
+   "declined": 1,
+   "limit_sar_mn": 2296.2,
+   "quality": {
+    "value": 83.6214,
+    "unit": "0-100",
+    "basis": {
+     "relations": [
+      "gov_decision"
+     ],
+     "rows": 70,
+     "filter": {
+      "rm_id": "RM0087"
+     },
+     "method": "mean proposal quality score",
+     "period": "2026Q2"
+    }
+   },
+   "queries_per_file": 2.51,
+   "conditions": {
+    "pct": 87.72,
+    "k": 100,
+    "n": 114,
+    "ci_low_pct": 80.44,
+    "ci_high_pct": 92.54
+   },
+   "promises": {
+    "pct": 75.0,
+    "k": 30,
+    "n": 40,
+    "ci_low_pct": 59.81,
+    "ci_high_pct": 85.81
+   },
+   "defaults": 0,
+   "expected_defaults": 1.43,
+   "oe": 0.0,
+   "oe_ci": [
+    0.0,
+    2.57
+   ],
+   "migrated": 3,
+   "score": 77.9,
+   "thin": false,
+   "flag": ""
+  },
+  {
+   "id": "RM0051",
+   "name": "Hamad Al-Dosari",
+   "branch": "Jeddah Al Balad",
+   "decisions": 93,
+   "approved": 85,
+   "declined": 8,
+   "limit_sar_mn": 2478.3,
+   "quality": {
+    "value": 87.5333,
+    "unit": "0-100",
+    "basis": {
+     "relations": [
+      "gov_decision"
+     ],
+     "rows": 93,
+     "filter": {
+      "rm_id": "RM0051"
+     },
+     "method": "mean proposal quality score",
+     "period": "2026Q2"
+    }
+   },
+   "queries_per_file": 3.19,
+   "conditions": {
+    "pct": 81.6,
+    "k": 133,
+    "n": 163,
+    "ci_low_pct": 74.94,
+    "ci_high_pct": 86.79
+   },
+   "promises": {
+    "pct": 81.82,
+    "k": 45,
+    "n": 55,
+    "ci_low_pct": 69.67,
+    "ci_high_pct": 89.81
+   },
+   "defaults": 1,
+   "expected_defaults": 3.0,
+   "oe": 0.33,
+   "oe_ci": [
+    0.0,
+    1.86
+   ],
+   "migrated": 11,
+   "score": 76.0,
+   "thin": false,
+   "flag": ""
+  },
+  {
+   "id": "RM0078",
+   "name": "Haya Al-Tamimi",
+   "branch": "Riyadh Olaya",
+   "decisions": 49,
+   "approved": 46,
+   "declined": 3,
+   "limit_sar_mn": 1311.0,
+   "quality": {
+    "value": 87.6878,
+    "unit": "0-100",
+    "basis": {
+     "relations": [
+      "gov_decision"
+     ],
+     "rows": 49,
+     "filter": {
+      "rm_id": "RM0078"
+     },
+     "method": "mean proposal quality score",
+     "period": "2026Q2"
+    }
+   },
+   "queries_per_file": 2.39,
+   "conditions": {
+    "pct": 77.22,
+    "k": 61,
+    "n": 79,
+    "ci_low_pct": 66.83,
+    "ci_high_pct": 85.07
+   },
+   "promises": {
+    "pct": 95.0,
+    "k": 19,
+    "n": 20,
+    "ci_low_pct": 76.39,
+    "ci_high_pct": 99.11
+   },
+   "defaults": 1,
+   "expected_defaults": 1.77,
+   "oe": 0.57,
+   "oe_ci": [
+    0.01,
+    3.15
+   ],
+   "migrated": 4,
+   "score": 74.1,
+   "thin": false,
+   "flag": ""
+  },
+  {
+   "id": "RM0090",
+   "name": "Shahad Al-Juhani",
+   "branch": "Riyadh Olaya",
+   "decisions": 73,
+   "approved": 72,
+   "declined": 1,
+   "limit_sar_mn": 2055.2,
+   "quality": {
+    "value": 84.3452,
+    "unit": "0-100",
+    "basis": {
+     "relations": [
+      "gov_decision"
+     ],
+     "rows": 73,
+     "filter": {
+      "rm_id": "RM0090"
+     },
+     "method": "mean proposal quality score",
+     "period": "2026Q2"
+    }
+   },
+   "queries_per_file": 2.12,
+   "conditions": {
+    "pct": 99.06,
+    "k": 105,
+    "n": 106,
+    "ci_low_pct": 94.85,
+    "ci_high_pct": 99.83
+   },
+   "promises": {
+    "pct": 76.92,
+    "k": 30,
+    "n": 39,
+    "ci_low_pct": 61.66,
+    "ci_high_pct": 87.35
+   },
+   "defaults": 2,
+   "expected_defaults": 2.09,
+   "oe": 0.96,
+   "oe_ci": [
+    0.11,
+    3.45
+   ],
+   "migrated": 6,
+   "score": 71.8,
+   "thin": false,
+   "flag": ""
+  },
+  {
+   "id": "RM0017",
+   "name": "Omar Al-Asmari",
+   "branch": "Riyadh King Fahd Road",
+   "decisions": 60,
+   "approved": 56,
+   "declined": 4,
+   "limit_sar_mn": 1663.5,
+   "quality": {
+    "value": 63.4083,
+    "unit": "0-100",
+    "basis": {
+     "relations": [
+      "gov_decision"
+     ],
+     "rows": 60,
+     "filter": {
+      "rm_id": "RM0017"
+     },
+     "method": "mean proposal quality score",
+     "period": "2026Q2"
+    }
+   },
+   "queries_per_file": 0.75,
+   "conditions": {
+    "pct": 99.02,
+    "k": 101,
+    "n": 102,
+    "ci_low_pct": 94.65,
+    "ci_high_pct": 99.83
+   },
+   "promises": {
+    "pct": 57.14,
+    "k": 16,
+    "n": 28,
+    "ci_low_pct": 39.07,
+    "ci_high_pct": 73.49
+   },
+   "defaults": 0,
+   "expected_defaults": 2.09,
+   "oe": 0.0,
+   "oe_ci": [
+    0.0,
+    1.76
+   ],
+   "migrated": 2,
+   "score": 70.8,
+   "thin": false,
+   "flag": ""
+  }
+ ],
+ "total": 91,
+ "min_n": 15,
+ "weights": {
+  "quality": 0.25,
+  "conditions": 0.2,
+  "promises": 0.15,
+  "queries": 0.1,
+  "oe": 0.3
+ },
+ "pd_calibration": 3.08,
+ "live": [
+  {
+   "rm": "Khalid Al-Otaibi",
+   "files": 15,
+   "conditions": 36,
+   "conditions_met": 24,
+   "conditions_not_complied": 0,
+   "promises": 0,
+   "promises_met": 0,
+   "findings_high": 19
+  },
+  {
+   "rm": "Sara Al-Dosari",
+   "files": 14,
+   "conditions": 42,
+   "conditions_met": 24,
+   "conditions_not_complied": 0,
+   "promises": 0,
+   "promises_met": 0,
+   "findings_high": 19
+  },
+  {
+   "rm": "Abdullah Al-Zahrani",
+   "files": 13,
+   "conditions": 37,
+   "conditions_met": 22,
+   "conditions_not_complied": 0,
+   "promises": 0,
+   "promises_met": 0,
+   "findings_high": 15
+  },
+  {
+   "rm": "Noura Al-Bishi",
+   "files": 3,
+   "conditions": 7,
+   "conditions_met": 4,
+   "conditions_not_complied": 0,
+   "promises": 0,
+   "promises_met": 0,
+   "findings_high": 12
+  },
+  {
+   "rm": "Hisham Al-Bazzaz",
+   "files": 1,
+   "conditions": 5,
+   "conditions_met": 4,
+   "conditions_not_complied": 1,
+   "promises": 1,
+   "promises_met": 1,
+   "findings_high": 26
+  },
+  {
+   "rm": "Lama Fikri",
+   "files": 1,
+   "conditions": 2,
+   "conditions_met": 2,
+   "conditions_not_complied": 0,
+   "promises": 0,
+   "promises_met": 0,
+   "findings_high": 4
+  }
+ ],
+ "method": "By RM (or branch): proposal quality, review queries, conditions met, promises delivered, and how their approved decisions performed afterwards, risk-adjusted. Risk adjustment: observed defaults in the four quarters after each approval against expected defaults (sum of the 12-month PD at the decision, scaled so the whole history's O/E is 1), O/E with a Poisson interval, so an RM who books weaker borrowers is judged against the risk taken. Composite score 0-100: the percentile rank of each measure across RMs with enough history (quality 25%, conditions met 20%, promises delivered 15%, fewer queries 10%, O/E 30%). Fewer than MIN_N approved decisions is flagged thin and left out of the ranking.",
+ "data_note": "Decision history is a fictional seed published to Data Domains (domain governance, gov_* relations, ops/r13_seed_governance.py); outcomes (stage, DPD, default, rating drift) are the corporate book's own."
+}

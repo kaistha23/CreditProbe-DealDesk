@@ -1,0 +1,3826 @@
+{
+ "customer_key": "c2",
+ "proposal_id": "R16-C2",
+ "cif": "CB09002",
+ "customer_name": "Sawaed Al Bina Contracting Co.",
+ "cr_number": "2050117342",
+ "as_of": "2026-10-21",
+ "documents": [
+  {
+   "doc_id": "C2-01",
+   "doc_type": "national_id",
+   "subject": "turki_hamad_al_sawaed",
+   "title": "NATIONAL IDENTITY CARD",
+   "issuer": "Civil Status Registry (specimen)",
+   "issue_date": "2021-06-01",
+   "expiry_date": "2031-05-31",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/01_national_id__turki_hamad_al_sawaed.docx",
+    "pdf": "pdf/01_national_id__turki_hamad_al_sawaed.pdf",
+    "images": [
+     "images/01_national_id__turki_hamad_al_sawaed_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Turki Hamad Al-Sawaed",
+    "id_number": "1034578210",
+    "nationality": "Saudi",
+    "date_of_birth": "1968-03-14",
+    "issue_date": "2021-06-01",
+    "expiry_date": "2031-05-31"
+   }
+  },
+  {
+   "doc_id": "C2-02",
+   "doc_type": "national_id",
+   "subject": "nasser_hamad_al_sawaed",
+   "title": "NATIONAL IDENTITY CARD",
+   "issuer": "Civil Status Registry (specimen)",
+   "issue_date": "2019-02-10",
+   "expiry_date": "2029-02-09",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/02_national_id__nasser_hamad_al_sawaed.docx",
+    "pdf": "pdf/02_national_id__nasser_hamad_al_sawaed.pdf",
+    "images": [
+     "images/02_national_id__nasser_hamad_al_sawaed_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Nasser Hamad Al-Sawaed",
+    "id_number": "1046723985",
+    "nationality": "Saudi",
+    "date_of_birth": "1973-11-02",
+    "issue_date": "2019-02-10",
+    "expiry_date": "2029-02-09"
+   }
+  },
+  {
+   "doc_id": "C2-03",
+   "doc_type": "articles_of_association",
+   "subject": null,
+   "title": "ARTICLES OF ASSOCIATION",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2023-06-20",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/03_articles_of_association.docx",
+    "pdf": "pdf/03_articles_of_association.pdf",
+    "images": [
+     "images/03_articles_of_association_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "legal_form": "Limited Liability Company",
+    "date_of_incorporation": "2008-05-12",
+    "share_capital": 50000000,
+    "amendment_date": "2023-06-20",
+    "shareholders": [
+     {
+      "name": "Turki Hamad Al-Sawaed",
+      "id_number": "1034578210",
+      "nationality": "Saudi",
+      "shares": 32500,
+      "pct": 65.0
+     },
+     {
+      "name": "Nasser Hamad Al-Sawaed",
+      "id_number": "1046723985",
+      "nationality": "Saudi",
+      "shares": 17500,
+      "pct": 35.0
+     }
+    ],
+    "managers": [
+     {
+      "name": "Turki Hamad Al-Sawaed",
+      "role": "Chairman and General Manager",
+      "powers": "Sole signatory up to SAR 10m; jointly above"
+     },
+     {
+      "name": "Nasser Hamad Al-Sawaed",
+      "role": "Partner, Deputy General Manager",
+      "powers": "Jointly with the General Manager"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-04",
+   "doc_type": "commercial_registration",
+   "subject": null,
+   "title": "COMMERCIAL REGISTRATION CERTIFICATE",
+   "issuer": "Commercial Register (specimen)",
+   "issue_date": "2008-05-12",
+   "expiry_date": "2027-02-18",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/04_commercial_registration.docx",
+    "pdf": "pdf/04_commercial_registration.pdf",
+    "images": [
+     "images/04_commercial_registration_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "legal_form": "Limited Liability Company",
+    "city": "Dammam",
+    "activity": "General contracting (buildings, roads, logistics facilities)",
+    "issue_date": "2008-05-12",
+    "expiry_date": "2027-02-18",
+    "share_capital": 50000000,
+    "owners": [
+     {
+      "name": "Turki Hamad Al-Sawaed",
+      "pct": 65.0
+     },
+     {
+      "name": "Nasser Hamad Al-Sawaed",
+      "pct": 35.0
+     }
+    ],
+    "managers": [
+     {
+      "name": "Turki Hamad Al-Sawaed",
+      "role": "Chairman and General Manager"
+     },
+     {
+      "name": "Nasser Hamad Al-Sawaed",
+      "role": "Partner, Deputy General Manager"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-05",
+   "doc_type": "vat_certificate",
+   "subject": null,
+   "title": "VAT REGISTRATION CERTIFICATE",
+   "issuer": "Tax Authority (specimen)",
+   "issue_date": "2018-01-14",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/05_vat_certificate.docx",
+    "pdf": "pdf/05_vat_certificate.pdf",
+    "images": [
+     "images/05_vat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "vat_number": "302050117300003",
+    "effective_date": "2018-01-01",
+    "filing_frequency": "Monthly",
+    "issue_date": "2018-01-14"
+   }
+  },
+  {
+   "doc_id": "C2-06",
+   "doc_type": "zakat_certificate",
+   "subject": null,
+   "title": "ZAKAT CERTIFICATE",
+   "issuer": "Zakat Authority (specimen)",
+   "issue_date": "2026-04-29",
+   "expiry_date": "2027-04-30",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/06_zakat_certificate.docx",
+    "pdf": "pdf/06_zakat_certificate.pdf",
+    "images": [
+     "images/06_zakat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "certificate_number": "ZC-2026-0451183",
+    "fiscal_year": "2025-12-31",
+    "issue_date": "2026-04-29",
+    "expiry_date": "2027-04-30"
+   }
+  },
+  {
+   "doc_id": "C2-07",
+   "doc_type": "nitaqat_certificate",
+   "subject": null,
+   "title": "NITAQAT CERTIFICATE",
+   "issuer": "Labour Registry (specimen)",
+   "issue_date": "2026-10-01",
+   "expiry_date": "2026-12-31",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/07_nitaqat_certificate.docx",
+    "pdf": "pdf/07_nitaqat_certificate.pdf",
+    "images": [
+     "images/07_nitaqat_certificate_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "establishment_number": "7-1182346",
+    "nitaqat_band": "Medium Green",
+    "saudisation_pct": 16.9,
+    "band_threshold_pct": 15.2,
+    "total_staff": 1846,
+    "saudi_staff": 312,
+    "issue_date": "2026-10-01",
+    "expiry_date": "2026-12-31"
+   }
+  },
+  {
+   "doc_id": "C2-08",
+   "doc_type": "vat_returns",
+   "subject": "oct2025_sep2026",
+   "title": "VAT RETURN FILINGS — LAST 12 MONTHS",
+   "issuer": "Tax Authority portal (specimen)",
+   "issue_date": "2026-10-19",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/08_vat_returns__oct2025_sep2026.docx",
+    "pdf": "pdf/08_vat_returns__oct2025_sep2026.pdf",
+    "images": [
+     "images/08_vat_returns__oct2025_sep2026_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "vat_number": "302050117300003",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "filing_frequency": "Monthly",
+    "total_taxable_sales": 473206000,
+    "total_output_vat": 70982000,
+    "returns": [
+     {
+      "period": "2025-10",
+      "taxable_sales": 40100000,
+      "zero_rated_sales": 0,
+      "output_vat": 6015000,
+      "input_vat": 4336000,
+      "net_vat_due": 1679000,
+      "filed_on": "2025-11-19"
+     },
+     {
+      "period": "2025-11",
+      "taxable_sales": 41907000,
+      "zero_rated_sales": 0,
+      "output_vat": 6286000,
+      "input_vat": 3999000,
+      "net_vat_due": 2287000,
+      "filed_on": "2025-12-19"
+     },
+     {
+      "period": "2025-12",
+      "taxable_sales": 39899000,
+      "zero_rated_sales": 0,
+      "output_vat": 5985000,
+      "input_vat": 4008000,
+      "net_vat_due": 1977000,
+      "filed_on": "2026-01-19"
+     },
+     {
+      "period": "2026-01",
+      "taxable_sales": 39749000,
+      "zero_rated_sales": 0,
+      "output_vat": 5962000,
+      "input_vat": 4079000,
+      "net_vat_due": 1883000,
+      "filed_on": "2026-02-19"
+     },
+     {
+      "period": "2026-02",
+      "taxable_sales": 36132000,
+      "zero_rated_sales": 0,
+      "output_vat": 5420000,
+      "input_vat": 3751000,
+      "net_vat_due": 1669000,
+      "filed_on": "2026-03-19"
+     },
+     {
+      "period": "2026-03",
+      "taxable_sales": 39122000,
+      "zero_rated_sales": 0,
+      "output_vat": 5868000,
+      "input_vat": 4128000,
+      "net_vat_due": 1740000,
+      "filed_on": "2026-04-19"
+     },
+     {
+      "period": "2026-04",
+      "taxable_sales": 37798000,
+      "zero_rated_sales": 0,
+      "output_vat": 5670000,
+      "input_vat": 3808000,
+      "net_vat_due": 1862000,
+      "filed_on": "2026-05-19"
+     },
+     {
+      "period": "2026-05",
+      "taxable_sales": 37530000,
+      "zero_rated_sales": 0,
+      "output_vat": 5630000,
+      "input_vat": 4047000,
+      "net_vat_due": 1583000,
+      "filed_on": "2026-06-19"
+     },
+     {
+      "period": "2026-06",
+      "taxable_sales": 40025000,
+      "zero_rated_sales": 0,
+      "output_vat": 6004000,
+      "input_vat": 4188000,
+      "net_vat_due": 1816000,
+      "filed_on": "2026-07-19"
+     },
+     {
+      "period": "2026-07",
+      "taxable_sales": 40241000,
+      "zero_rated_sales": 0,
+      "output_vat": 6036000,
+      "input_vat": 4195000,
+      "net_vat_due": 1841000,
+      "filed_on": "2026-08-19"
+     },
+     {
+      "period": "2026-08",
+      "taxable_sales": 38766000,
+      "zero_rated_sales": 0,
+      "output_vat": 5815000,
+      "input_vat": 3618000,
+      "net_vat_due": 2197000,
+      "filed_on": "2026-09-19"
+     },
+     {
+      "period": "2026-09",
+      "taxable_sales": 41937000,
+      "zero_rated_sales": 0,
+      "output_vat": 6291000,
+      "input_vat": 4476000,
+      "net_vat_due": 1815000,
+      "filed_on": "2026-10-19"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-09",
+   "doc_type": "simah_company",
+   "subject": null,
+   "title": "SIMAH COMMERCIAL CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/09_simah_company.docx",
+    "pdf": "pdf/09_simah_company.pdf",
+    "images": [
+     "images/09_simah_company_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "report_date": "2026-10-11",
+    "report_number": "SB-26-3301872",
+    "score": 655,
+    "total_limits": 300250000,
+    "total_outstanding": 254550000,
+    "total_overdue": 0,
+    "lenders_count": 2,
+    "defaults_count": 0,
+    "enquiries_6m": 3,
+    "facilities": [
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Advance payment guarantees",
+      "limit": 25000000,
+      "outstanding": 19400000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2016-03-20",
+      "remark": ""
+     },
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Performance bonds",
+      "limit": 45000000,
+      "outstanding": 41200000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2016-03-20",
+      "remark": ""
+     },
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Letters of credit",
+      "limit": 20000000,
+      "outstanding": 6300000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2016-03-20",
+      "remark": ""
+     },
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Murabaha against payment certificates",
+      "limit": 50000000,
+      "outstanding": 47800000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2016-03-20",
+      "remark": ""
+     },
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Overdraft",
+      "limit": 20000000,
+      "outstanding": 14900000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2016-03-20",
+      "remark": ""
+     },
+     {
+      "lender": "Arabian Crescent Bank",
+      "product": "Short-term Murabaha (working capital)",
+      "limit": 50000000,
+      "outstanding": 46300000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2019-09-01",
+      "remark": ""
+     },
+     {
+      "lender": "Arabian Crescent Bank",
+      "product": "Letters of guarantee",
+      "limit": 70000000,
+      "outstanding": 58400000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2019-09-01",
+      "remark": ""
+     },
+     {
+      "lender": "Arabian Crescent Bank",
+      "product": "Term loan (equipment)",
+      "limit": 20250000,
+      "outstanding": 20250000,
+      "overdue": 0,
+      "status": "Current",
+      "opened": "2019-09-01",
+      "remark": ""
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-10",
+   "doc_type": "simah_consumer",
+   "subject": "turki_hamad_al_sawaed",
+   "title": "SIMAH CONSUMER CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/10_simah_consumer__turki_hamad_al_sawaed.docx",
+    "pdf": "pdf/10_simah_consumer__turki_hamad_al_sawaed.pdf",
+    "images": [
+     "images/10_simah_consumer__turki_hamad_al_sawaed_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Turki Hamad Al-Sawaed",
+    "id_number": "1034578210",
+    "report_date": "2026-10-11",
+    "report_number": "SC-26-8812450",
+    "score": 706,
+    "total_outstanding": 2124000,
+    "total_overdue": 0,
+    "worst_status_24m": "Current (no delinquency)",
+    "facilities": [
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Personal finance",
+      "limit": 3000000,
+      "outstanding": 2100000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     },
+     {
+      "lender": "Arabian Crescent Bank",
+      "product": "Credit card",
+      "limit": 100000,
+      "outstanding": 24000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Sawaed Al Bina Contracting Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 160000000,
+      "status": "Current"
+     },
+     {
+      "beneficiary": "Sawaed Al Bina Contracting Co.",
+      "lender": "Arabian Crescent Bank",
+      "amount": 140300000,
+      "status": "Current"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-11",
+   "doc_type": "simah_consumer",
+   "subject": "nasser_hamad_al_sawaed",
+   "title": "SIMAH CONSUMER CREDIT REPORT",
+   "issuer": "SIMAH credit bureau (specimen extract)",
+   "issue_date": "2026-10-11",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/11_simah_consumer__nasser_hamad_al_sawaed.docx",
+    "pdf": "pdf/11_simah_consumer__nasser_hamad_al_sawaed.pdf",
+    "images": [
+     "images/11_simah_consumer__nasser_hamad_al_sawaed_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Nasser Hamad Al-Sawaed",
+    "id_number": "1046723985",
+    "report_date": "2026-10-11",
+    "report_number": "SC-26-8812451",
+    "score": 588,
+    "total_outstanding": 188000,
+    "total_overdue": 0,
+    "worst_status_24m": "60-89 days past due (07/2026, as guarantor)",
+    "facilities": [
+     {
+      "lender": "Arabian Crescent Bank",
+      "product": "Auto lease",
+      "limit": 420000,
+      "outstanding": 188000,
+      "overdue": 0,
+      "status": "Current",
+      "remark": ""
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Sawaed Al Bina Contracting Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 160000000,
+      "status": "Current"
+     },
+     {
+      "beneficiary": "Sawaed Heavy Equipment Rental Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 18000000,
+      "status": "Past due 60-89 days in 07/2026; 30 days at 09/2026"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-12",
+   "doc_type": "audited_fs",
+   "subject": "fy2024",
+   "title": "SAWAED AL BINA CONTRACTING CO. — FINANCIAL STATEMENTS FY2024",
+   "issuer": "Qimam Al Sharq Certified Accountants",
+   "issue_date": "2025-04-24",
+   "expiry_date": null,
+   "period_from": "2024-01-01",
+   "period_to": "2024-12-31",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/12_audited_fs__fy2024.docx",
+    "pdf": "pdf/12_audited_fs__fy2024.pdf",
+    "images": [
+     "images/12_audited_fs__fy2024_p2.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "fiscal_year": "2024-12-31",
+    "auditor": "Qimam Al Sharq Certified Accountants",
+    "opinion": "Unqualified",
+    "qawaem_reference": "QW-2025-2050117342",
+    "revenue": 402600000,
+    "cost_of_sales": 352300000,
+    "gross_profit": 50300000,
+    "operating_expenses": 21400000,
+    "operating_profit": 28900000,
+    "finance_cost": 9800000,
+    "zakat": 1600000,
+    "net_profit": 17500000,
+    "depreciation": 11200000,
+    "cash": 19800000,
+    "trade_receivables": 88100000,
+    "retention_receivables": 27900000,
+    "contract_assets": 61200000,
+    "inventory": 10900000,
+    "due_from_related": 9600000,
+    "other_current_assets": 12000000,
+    "current_assets": 229500000,
+    "ppe": 70300000,
+    "other_noncurrent_assets": 3000000,
+    "total_assets": 302800000,
+    "short_term_borrowings": 71400000,
+    "trade_payables": 51000000,
+    "due_to_related": 1800000,
+    "other_current_liabilities": 38000000,
+    "current_portion_ltd": 9000000,
+    "current_liabilities": 171200000,
+    "long_term_borrowings": 18000000,
+    "end_of_service": 11000000,
+    "total_liabilities": 200200000,
+    "share_capital": 50000000,
+    "statutory_reserve": 13300000,
+    "retained_earnings": 39300000,
+    "total_equity": 102600000,
+    "operating_cash_flow": 25300000,
+    "related_party_sales": 0
+   }
+  },
+  {
+   "doc_id": "C2-13",
+   "doc_type": "audited_fs",
+   "subject": "fy2025",
+   "title": "SAWAED AL BINA CONTRACTING CO. — FINANCIAL STATEMENTS FY2025",
+   "issuer": "Qimam Al Sharq Certified Accountants",
+   "issue_date": "2026-04-27",
+   "expiry_date": null,
+   "period_from": "2025-01-01",
+   "period_to": "2025-12-31",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/13_audited_fs__fy2025.docx",
+    "pdf": "pdf/13_audited_fs__fy2025.pdf",
+    "images": [
+     "images/13_audited_fs__fy2025_p1.jpg",
+     "images/13_audited_fs__fy2025_p2.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "fiscal_year": "2025-12-31",
+    "auditor": "Qimam Al Sharq Certified Accountants",
+    "opinion": "Unqualified, with emphasis of matter",
+    "qawaem_reference": "QW-2026-2050117342",
+    "revenue": 468200000,
+    "cost_of_sales": 413000000,
+    "gross_profit": 55200000,
+    "operating_expenses": 23900000,
+    "operating_profit": 31300000,
+    "finance_cost": 12600000,
+    "zakat": 1800000,
+    "net_profit": 16900000,
+    "depreciation": 12400000,
+    "cash": 14600000,
+    "trade_receivables": 96400000,
+    "retention_receivables": 41800000,
+    "contract_assets": 88700000,
+    "inventory": 12300000,
+    "due_from_related": 18900000,
+    "other_current_assets": 14100000,
+    "current_assets": 286800000,
+    "ppe": 74500000,
+    "other_noncurrent_assets": 3200000,
+    "total_assets": 364500000,
+    "short_term_borrowings": 98600000,
+    "trade_payables": 71200000,
+    "due_to_related": 2100000,
+    "other_current_liabilities": 38400000,
+    "current_portion_ltd": 9000000,
+    "current_liabilities": 219300000,
+    "long_term_borrowings": 18000000,
+    "end_of_service": 12700000,
+    "total_liabilities": 250000000,
+    "share_capital": 50000000,
+    "statutory_reserve": 15000000,
+    "retained_earnings": 49500000,
+    "total_equity": 114500000,
+    "operating_cash_flow": -10600000,
+    "related_party_sales": 0
+   }
+  },
+  {
+   "doc_id": "C2-14",
+   "doc_type": "inhouse_fs",
+   "subject": "9m2026",
+   "title": "MANAGEMENT ACCOUNTS (UNAUDITED) — 9 MONTHS 2026",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2026-10-12",
+   "expiry_date": null,
+   "period_from": "2026-01-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/14_inhouse_fs__9m2026.docx",
+    "pdf": "pdf/14_inhouse_fs__9m2026.pdf",
+    "images": [
+     "images/14_inhouse_fs__9m2026_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "period_from": "2026-01-01",
+    "period_to": "2026-09-30",
+    "prepared_by": "Omar Khalil Haddad",
+    "revenue": 352400000,
+    "cost_of_sales": 314000000,
+    "gross_profit": 38400000,
+    "operating_expenses": 18600000,
+    "operating_profit": 19800000,
+    "finance_cost": 11100000,
+    "net_profit": 8700000,
+    "cash": 9800000,
+    "trade_receivables": 104600000,
+    "inventory": 13000000,
+    "current_assets": 319936000,
+    "total_assets": 399236000,
+    "short_term_borrowings": 109000000,
+    "current_liabilities": 251186000,
+    "long_term_borrowings": 11250000,
+    "total_liabilities": 276036000,
+    "total_equity": 123200000
+   }
+  },
+  {
+   "doc_id": "C2-15",
+   "doc_type": "bank_statement",
+   "subject": "sandstone_current_account",
+   "title": "ACCOUNT STATEMENT",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-04",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/15_bank_statement__sandstone_current_account.docx",
+    "pdf": "pdf/15_bank_statement__sandstone_current_account.pdf",
+    "images": [
+     "images/15_bank_statement__sandstone_current_account_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "bank_name": "Sandstone Harbour Bank",
+    "account_number": "0112-345678-001",
+    "iban": "SA4377000001123456789001",
+    "account_type": "Current account (main operating)",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "opening_balance": 8900000,
+    "total_credits": 323501280,
+    "total_debits": 326201280,
+    "closing_balance": 6200000,
+    "returned_cheques": 0,
+    "monthly": [
+     {
+      "month": "2025-10",
+      "credits": 24275091,
+      "debits": 24500091,
+      "closing_balance": 8675000,
+      "avg_balance": 6035287,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-11",
+      "credits": 20959093,
+      "debits": 21184093,
+      "closing_balance": 8450000,
+      "avg_balance": 9259266,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-12",
+      "credits": 29728388,
+      "debits": 29953388,
+      "closing_balance": 8225000,
+      "avg_balance": 6659029,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-01",
+      "credits": 29972114,
+      "debits": 30197114,
+      "closing_balance": 8000000,
+      "avg_balance": 5765928,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-02",
+      "credits": 18723079,
+      "debits": 18948079,
+      "closing_balance": 7775000,
+      "avg_balance": 8859932,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-03",
+      "credits": 29568548,
+      "debits": 29793548,
+      "closing_balance": 7550000,
+      "avg_balance": 6993686,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-04",
+      "credits": 21520107,
+      "debits": 21745107,
+      "closing_balance": 7325000,
+      "avg_balance": 8071120,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-05",
+      "credits": 20174926,
+      "debits": 20399926,
+      "closing_balance": 7100000,
+      "avg_balance": 6877261,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-06",
+      "credits": 31184473,
+      "debits": 31409473,
+      "closing_balance": 6875000,
+      "avg_balance": 8190980,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-07",
+      "credits": 32444482,
+      "debits": 32669482,
+      "closing_balance": 6650000,
+      "avg_balance": 7088382,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-08",
+      "credits": 34349208,
+      "debits": 34574208,
+      "closing_balance": 6425000,
+      "avg_balance": 7297888,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-09",
+      "credits": 30601771,
+      "debits": 30826771,
+      "closing_balance": 6200000,
+      "avg_balance": 6297547,
+      "returned_cheques": 0
+     }
+    ],
+    "transactions": [
+     {
+      "date": "2025-10-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 695164,
+      "credit": null,
+      "balance": 8204836
+     },
+     {
+      "date": "2025-10-03",
+      "description": "Rent and utilities",
+      "debit": 2086661,
+      "credit": null,
+      "balance": 6118175
+     },
+     {
+      "date": "2025-10-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 1053320,
+      "credit": null,
+      "balance": 5064855
+     },
+     {
+      "date": "2025-10-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 4112377,
+      "balance": 9177232
+     },
+     {
+      "date": "2025-10-12",
+      "description": "Subcontractor payments",
+      "debit": 7478100,
+      "credit": null,
+      "balance": 1699132
+     },
+     {
+      "date": "2025-10-15",
+      "description": "GOSI contribution",
+      "debit": 477130,
+      "credit": null,
+      "balance": 1222002
+     },
+     {
+      "date": "2025-10-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 7199340,
+      "balance": 8421342
+     },
+     {
+      "date": "2025-10-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 7177415,
+      "credit": null,
+      "balance": 1243927
+     },
+     {
+      "date": "2025-10-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 5665374,
+      "balance": 6909301
+     },
+     {
+      "date": "2025-10-27",
+      "description": "SLDC payment IPC-04 incl. VAT (assigned proceeds)",
+      "debit": null,
+      "credit": 7298000,
+      "balance": 14207301
+     },
+     {
+      "date": "2025-10-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 3958924,
+      "credit": null,
+      "balance": 10248377
+     },
+     {
+      "date": "2025-10-28",
+      "description": "VAT payment",
+      "debit": 1573377,
+      "credit": null,
+      "balance": 8675000
+     },
+     {
+      "date": "2025-11-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 609307,
+      "credit": null,
+      "balance": 8065693
+     },
+     {
+      "date": "2025-11-03",
+      "description": "Rent and utilities",
+      "debit": 1750583,
+      "credit": null,
+      "balance": 6315110
+     },
+     {
+      "date": "2025-11-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 821407,
+      "credit": null,
+      "balance": 5493703
+     },
+     {
+      "date": "2025-11-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 8554620,
+      "balance": 14048323
+     },
+     {
+      "date": "2025-11-12",
+      "description": "Subcontractor payments",
+      "debit": 6286066,
+      "credit": null,
+      "balance": 7762257
+     },
+     {
+      "date": "2025-11-15",
+      "description": "GOSI contribution",
+      "debit": 400354,
+      "credit": null,
+      "balance": 7361903
+     },
+     {
+      "date": "2025-11-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 5915644,
+      "balance": 13277547
+     },
+     {
+      "date": "2025-11-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 6629325,
+      "credit": null,
+      "balance": 6648222
+     },
+     {
+      "date": "2025-11-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 6488829,
+      "balance": 13137051
+     },
+     {
+      "date": "2025-11-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 3353373,
+      "credit": null,
+      "balance": 9783678
+     },
+     {
+      "date": "2025-11-28",
+      "description": "VAT payment",
+      "debit": 1333678,
+      "credit": null,
+      "balance": 8450000
+     },
+     {
+      "date": "2025-12-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 846908,
+      "credit": null,
+      "balance": 7603092
+     },
+     {
+      "date": "2025-12-03",
+      "description": "Rent and utilities",
+      "debit": 2459487,
+      "credit": null,
+      "balance": 5143605
+     },
+     {
+      "date": "2025-12-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 1286336,
+      "credit": null,
+      "balance": 3857269
+     },
+     {
+      "date": "2025-12-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 6255736,
+      "balance": 10113005
+     },
+     {
+      "date": "2025-12-12",
+      "description": "Subcontractor payments",
+      "debit": 9464178,
+      "credit": null,
+      "balance": 648827
+     },
+     {
+      "date": "2025-12-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 9741313,
+      "balance": 10390140
+     },
+     {
+      "date": "2025-12-16",
+      "description": "GOSI contribution",
+      "debit": 572144,
+      "credit": null,
+      "balance": 9817996
+     },
+     {
+      "date": "2025-12-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 8491368,
+      "credit": null,
+      "balance": 1326628
+     },
+     {
+      "date": "2025-12-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 5712339,
+      "balance": 7038967
+     },
+     {
+      "date": "2025-12-24",
+      "description": "SLDC payment IPC-05 incl. VAT (assigned proceeds)",
+      "debit": null,
+      "credit": 8019000,
+      "balance": 15057967
+     },
+     {
+      "date": "2025-12-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 5137258,
+      "credit": null,
+      "balance": 9920709
+     },
+     {
+      "date": "2025-12-28",
+      "description": "VAT payment",
+      "debit": 1695709,
+      "credit": null,
+      "balance": 8225000
+     },
+     {
+      "date": "2026-01-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 879954,
+      "credit": null,
+      "balance": 7345046
+     },
+     {
+      "date": "2026-01-03",
+      "description": "Rent and utilities",
+      "debit": 2238039,
+      "credit": null,
+      "balance": 5107007
+     },
+     {
+      "date": "2026-01-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 1228630,
+      "credit": null,
+      "balance": 3878377
+     },
+     {
+      "date": "2026-01-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 5621589,
+      "balance": 9499966
+     },
+     {
+      "date": "2026-01-12",
+      "description": "Subcontractor payments",
+      "debit": 8574960,
+      "credit": null,
+      "balance": 925006
+     },
+     {
+      "date": "2026-01-15",
+      "description": "GOSI contribution",
+      "debit": 596814,
+      "credit": null,
+      "balance": 328192
+     },
+     {
+      "date": "2026-01-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 8217022,
+      "balance": 8545214
+     },
+     {
+      "date": "2026-01-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 7316503,
+      "balance": 15861717
+     },
+     {
+      "date": "2026-01-24",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 9485690,
+      "credit": null,
+      "balance": 6376027
+     },
+     {
+      "date": "2026-01-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 5298281,
+      "credit": null,
+      "balance": 1077746
+     },
+     {
+      "date": "2026-01-30",
+      "description": "SLDC payment IPC-06 incl. VAT (assigned proceeds)",
+      "debit": null,
+      "credit": 8817000,
+      "balance": 9894746
+     },
+     {
+      "date": "2026-01-30",
+      "description": "VAT payment",
+      "debit": 1894746,
+      "credit": null,
+      "balance": 8000000
+     },
+     {
+      "date": "2026-02-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 578964,
+      "credit": null,
+      "balance": 7421036
+     },
+     {
+      "date": "2026-02-03",
+      "description": "Rent and utilities",
+      "debit": 1549380,
+      "credit": null,
+      "balance": 5871656
+     },
+     {
+      "date": "2026-02-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 738158,
+      "credit": null,
+      "balance": 5133498
+     },
+     {
+      "date": "2026-02-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 6370460,
+      "balance": 11503958
+     },
+     {
+      "date": "2026-02-12",
+      "description": "Subcontractor payments",
+      "debit": 5652624,
+      "credit": null,
+      "balance": 5851334
+     },
+     {
+      "date": "2026-02-15",
+      "description": "GOSI contribution",
+      "debit": 417106,
+      "credit": null,
+      "balance": 5434228
+     },
+     {
+      "date": "2026-02-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 8509635,
+      "balance": 13943863
+     },
+     {
+      "date": "2026-02-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 5454125,
+      "credit": null,
+      "balance": 8489738
+     },
+     {
+      "date": "2026-02-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 3842984,
+      "balance": 12332722
+     },
+     {
+      "date": "2026-02-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 3381685,
+      "credit": null,
+      "balance": 8951037
+     },
+     {
+      "date": "2026-02-28",
+      "description": "VAT payment",
+      "debit": 1176037,
+      "credit": null,
+      "balance": 7775000
+     },
+     {
+      "date": "2026-03-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 873002,
+      "credit": null,
+      "balance": 6901998
+     },
+     {
+      "date": "2026-03-03",
+      "description": "Rent and utilities",
+      "debit": 2603902,
+      "credit": null,
+      "balance": 4298096
+     },
+     {
+      "date": "2026-03-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 1192186,
+      "credit": null,
+      "balance": 3105910
+     },
+     {
+      "date": "2026-03-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 7761720,
+      "balance": 10867630
+     },
+     {
+      "date": "2026-03-12",
+      "description": "Subcontractor payments",
+      "debit": 9370162,
+      "credit": null,
+      "balance": 1497468
+     },
+     {
+      "date": "2026-03-15",
+      "description": "GOSI contribution",
+      "debit": 655194,
+      "credit": null,
+      "balance": 842274
+     },
+     {
+      "date": "2026-03-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 5699693,
+      "balance": 6541967
+     },
+     {
+      "date": "2026-03-19",
+      "description": "SLDC payment IPC-07 incl. VAT (assigned proceeds)",
+      "debit": null,
+      "credit": 8749000,
+      "balance": 15290967
+     },
+     {
+      "date": "2026-03-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 8502152,
+      "credit": null,
+      "balance": 6788815
+     },
+     {
+      "date": "2026-03-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 7358135,
+      "balance": 14146950
+     },
+     {
+      "date": "2026-03-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 4817069,
+      "credit": null,
+      "balance": 9329881
+     },
+     {
+      "date": "2026-03-28",
+      "description": "VAT payment",
+      "debit": 1779881,
+      "credit": null,
+      "balance": 7550000
+     },
+     {
+      "date": "2026-04-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 612509,
+      "credit": null,
+      "balance": 6937491
+     },
+     {
+      "date": "2026-04-03",
+      "description": "Rent and utilities",
+      "debit": 1644382,
+      "credit": null,
+      "balance": 5293109
+     },
+     {
+      "date": "2026-04-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 904542,
+      "credit": null,
+      "balance": 4388567
+     },
+     {
+      "date": "2026-04-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 6455458,
+      "balance": 10844025
+     },
+     {
+      "date": "2026-04-12",
+      "description": "Subcontractor payments",
+      "debit": 6520316,
+      "credit": null,
+      "balance": 4323709
+     },
+     {
+      "date": "2026-04-15",
+      "description": "GOSI contribution",
+      "debit": 412992,
+      "credit": null,
+      "balance": 3910717
+     },
+     {
+      "date": "2026-04-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 9985462,
+      "balance": 13896179
+     },
+     {
+      "date": "2026-04-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 6851845,
+      "credit": null,
+      "balance": 7044334
+     },
+     {
+      "date": "2026-04-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 5079187,
+      "balance": 12123521
+     },
+     {
+      "date": "2026-04-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 3526938,
+      "credit": null,
+      "balance": 8596583
+     },
+     {
+      "date": "2026-04-28",
+      "description": "VAT payment",
+      "debit": 1271583,
+      "credit": null,
+      "balance": 7325000
+     },
+     {
+      "date": "2026-05-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 597147,
+      "credit": null,
+      "balance": 6727853
+     },
+     {
+      "date": "2026-05-03",
+      "description": "Rent and utilities",
+      "debit": 1700810,
+      "credit": null,
+      "balance": 5027043
+     },
+     {
+      "date": "2026-05-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 824673,
+      "credit": null,
+      "balance": 4202370
+     },
+     {
+      "date": "2026-05-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 5114794,
+      "balance": 9317164
+     },
+     {
+      "date": "2026-05-12",
+      "description": "Subcontractor payments",
+      "debit": 5815706,
+      "credit": null,
+      "balance": 3501458
+     },
+     {
+      "date": "2026-05-15",
+      "description": "GOSI contribution",
+      "debit": 370304,
+      "credit": null,
+      "balance": 3131154
+     },
+     {
+      "date": "2026-05-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 7414181,
+      "balance": 10545335
+     },
+     {
+      "date": "2026-05-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 6337857,
+      "credit": null,
+      "balance": 4207478
+     },
+     {
+      "date": "2026-05-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 7645951,
+      "balance": 11853429
+     },
+     {
+      "date": "2026-05-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 3536159,
+      "credit": null,
+      "balance": 8317270
+     },
+     {
+      "date": "2026-05-28",
+      "description": "VAT payment",
+      "debit": 1217270,
+      "credit": null,
+      "balance": 7100000
+     },
+     {
+      "date": "2026-06-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 1009712,
+      "credit": null,
+      "balance": 6090288
+     },
+     {
+      "date": "2026-06-03",
+      "description": "Rent and utilities",
+      "debit": 2460856,
+      "credit": null,
+      "balance": 3629432
+     },
+     {
+      "date": "2026-06-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 1356052,
+      "credit": null,
+      "balance": 2273380
+     },
+     {
+      "date": "2026-06-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 8660885,
+      "balance": 10934265
+     },
+     {
+      "date": "2026-06-12",
+      "description": "Subcontractor payments",
+      "debit": 9864260,
+      "credit": null,
+      "balance": 1070005
+     },
+     {
+      "date": "2026-06-13",
+      "description": "SLDC payment IPC-08 incl. VAT (assigned proceeds)",
+      "debit": null,
+      "credit": 9159000,
+      "balance": 10229005
+     },
+     {
+      "date": "2026-06-15",
+      "description": "GOSI contribution",
+      "debit": 587847,
+      "credit": null,
+      "balance": 9641158
+     },
+     {
+      "date": "2026-06-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 4990254,
+      "balance": 14631412
+     },
+     {
+      "date": "2026-06-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 8887009,
+      "credit": null,
+      "balance": 5744403
+     },
+     {
+      "date": "2026-06-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 8374334,
+      "balance": 14118737
+     },
+     {
+      "date": "2026-06-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 5378729,
+      "credit": null,
+      "balance": 8740008
+     },
+     {
+      "date": "2026-06-28",
+      "description": "VAT payment",
+      "debit": 1865008,
+      "credit": null,
+      "balance": 6875000
+     },
+     {
+      "date": "2026-07-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 952842,
+      "credit": null,
+      "balance": 5922158
+     },
+     {
+      "date": "2026-07-03",
+      "description": "Rent and utilities",
+      "debit": 2574200,
+      "credit": null,
+      "balance": 3347958
+     },
+     {
+      "date": "2026-07-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 1373954,
+      "credit": null,
+      "balance": 1974004
+     },
+     {
+      "date": "2026-07-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 5311664,
+      "balance": 7285668
+     },
+     {
+      "date": "2026-07-15",
+      "description": "GOSI contribution",
+      "debit": 678921,
+      "credit": null,
+      "balance": 6606747
+     },
+     {
+      "date": "2026-07-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 8759539,
+      "balance": 15366286
+     },
+     {
+      "date": "2026-07-16",
+      "description": "Subcontractor payments",
+      "debit": 9523050,
+      "credit": null,
+      "balance": 5843236
+     },
+     {
+      "date": "2026-07-18",
+      "description": "SLDC payment IPC-09 incl. VAT (assigned proceeds)",
+      "debit": null,
+      "credit": 9997000,
+      "balance": 15840236
+     },
+     {
+      "date": "2026-07-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 10223177,
+      "credit": null,
+      "balance": 5617059
+     },
+     {
+      "date": "2026-07-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 8376279,
+      "balance": 13993338
+     },
+     {
+      "date": "2026-07-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 5425681,
+      "credit": null,
+      "balance": 8567657
+     },
+     {
+      "date": "2026-07-28",
+      "description": "VAT payment",
+      "debit": 1917657,
+      "credit": null,
+      "balance": 6650000
+     },
+     {
+      "date": "2026-08-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 1134326,
+      "credit": null,
+      "balance": 5515674
+     },
+     {
+      "date": "2026-08-03",
+      "description": "Rent and utilities",
+      "debit": 2657986,
+      "credit": null,
+      "balance": 2857688
+     },
+     {
+      "date": "2026-08-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 1520095,
+      "credit": null,
+      "balance": 1337593
+     },
+     {
+      "date": "2026-08-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 12536187,
+      "balance": 13873780
+     },
+     {
+      "date": "2026-08-12",
+      "description": "Subcontractor payments",
+      "debit": 10828305,
+      "credit": null,
+      "balance": 3045475
+     },
+     {
+      "date": "2026-08-15",
+      "description": "GOSI contribution",
+      "debit": 696895,
+      "credit": null,
+      "balance": 2348580
+     },
+     {
+      "date": "2026-08-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 6889860,
+      "balance": 9238440
+     },
+     {
+      "date": "2026-08-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 4694161,
+      "balance": 13932601
+     },
+     {
+      "date": "2026-08-24",
+      "description": "SLDC payment IPC-10 incl. VAT (assigned proceeds)",
+      "debit": null,
+      "credit": 10229000,
+      "balance": 24161601
+     },
+     {
+      "date": "2026-08-24",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 9898064,
+      "credit": null,
+      "balance": 14263537
+     },
+     {
+      "date": "2026-08-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 5630596,
+      "credit": null,
+      "balance": 8632941
+     },
+     {
+      "date": "2026-08-28",
+      "description": "VAT payment",
+      "debit": 2207941,
+      "credit": null,
+      "balance": 6425000
+     },
+     {
+      "date": "2026-09-01",
+      "description": "Murabaha profit and LG commission",
+      "debit": 900352,
+      "credit": null,
+      "balance": 5524648
+     },
+     {
+      "date": "2026-09-03",
+      "description": "Rent and utilities",
+      "debit": 2406424,
+      "credit": null,
+      "balance": 3118224
+     },
+     {
+      "date": "2026-09-05",
+      "description": "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      "debit": 1142085,
+      "credit": null,
+      "balance": 1976139
+     },
+     {
+      "date": "2026-09-09",
+      "description": "Eastern Industrial Estates Co. — certificate payment",
+      "debit": null,
+      "credit": 4539943,
+      "balance": 6516082
+     },
+     {
+      "date": "2026-09-15",
+      "description": "GOSI contribution",
+      "debit": 563145,
+      "credit": null,
+      "balance": 5952937
+     },
+     {
+      "date": "2026-09-16",
+      "description": "Sahil Education Projects Co. — certificate payment",
+      "debit": null,
+      "credit": 6521071,
+      "balance": 12474008
+     },
+     {
+      "date": "2026-09-16",
+      "description": "Subcontractor payments",
+      "debit": 9442755,
+      "credit": null,
+      "balance": 3031253
+     },
+     {
+      "date": "2026-09-18",
+      "description": "SLDC payment IPC-11 incl. VAT (assigned proceeds)",
+      "debit": null,
+      "credit": 10850000,
+      "balance": 13881253
+     },
+     {
+      "date": "2026-09-20",
+      "description": "Supplier payments (rebar, concrete)",
+      "debit": 9274962,
+      "credit": null,
+      "balance": 4606291
+     },
+     {
+      "date": "2026-09-24",
+      "description": "Receipts from other customers (maintenance contracts)",
+      "debit": null,
+      "credit": 8690757,
+      "balance": 13297048
+     },
+     {
+      "date": "2026-09-27",
+      "description": "Payroll transfer (WPS)",
+      "debit": 5351679,
+      "credit": null,
+      "balance": 7945369
+     },
+     {
+      "date": "2026-09-28",
+      "description": "VAT payment",
+      "debit": 1745369,
+      "credit": null,
+      "balance": 6200000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-16",
+   "doc_type": "bank_statement",
+   "subject": "arabian_current_account",
+   "title": "ACCOUNT STATEMENT",
+   "issuer": "Arabian Crescent Bank",
+   "issue_date": "2026-10-06",
+   "expiry_date": null,
+   "period_from": "2025-10-01",
+   "period_to": "2026-09-30",
+   "status_expected": "received",
+   "files": {
+    "docx": "word/16_bank_statement__arabian_current_account.docx",
+    "pdf": "pdf/16_bank_statement__arabian_current_account.pdf",
+    "images": [
+     "images/16_bank_statement__arabian_current_account_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "bank_name": "Arabian Crescent Bank",
+    "account_number": "6081-220193-07",
+    "iban": "SA0961000000608122019307",
+    "account_type": "Current account",
+    "period_from": "2025-10-01",
+    "period_to": "2026-09-30",
+    "opening_balance": 4100000,
+    "total_credits": 153460720,
+    "total_debits": 154160720,
+    "closing_balance": 3400000,
+    "returned_cheques": 0,
+    "monthly": [
+     {
+      "month": "2025-10",
+      "credits": 10856061,
+      "debits": 10914061,
+      "closing_balance": 4042000,
+      "avg_balance": 3670472,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-11",
+      "credits": 13609211,
+      "debits": 13667211,
+      "closing_balance": 3984000,
+      "avg_balance": 3861048,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2025-12",
+      "credits": 12151188,
+      "debits": 12209188,
+      "closing_balance": 3926000,
+      "avg_balance": 3517285,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-01",
+      "credits": 11010789,
+      "debits": 11068789,
+      "closing_balance": 3868000,
+      "avg_balance": 3506773,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-02",
+      "credits": 13725888,
+      "debits": 13783888,
+      "closing_balance": 3810000,
+      "avg_balance": 2445269,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-03",
+      "credits": 11249580,
+      "debits": 11307580,
+      "closing_balance": 3752000,
+      "avg_balance": 3476487,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-04",
+      "credits": 11937868,
+      "debits": 11995868,
+      "closing_balance": 3694000,
+      "avg_balance": 4148133,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-05",
+      "credits": 12271273,
+      "debits": 12329273,
+      "closing_balance": 3636000,
+      "avg_balance": 3315577,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-06",
+      "credits": 14532088,
+      "debits": 14590088,
+      "closing_balance": 3578000,
+      "avg_balance": 2217062,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-07",
+      "credits": 13863583,
+      "debits": 13921583,
+      "closing_balance": 3520000,
+      "avg_balance": 3757574,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-08",
+      "credits": 14826414,
+      "debits": 14884414,
+      "closing_balance": 3462000,
+      "avg_balance": 2467679,
+      "returned_cheques": 0
+     },
+     {
+      "month": "2026-09",
+      "credits": 13426777,
+      "debits": 13488777,
+      "closing_balance": 3400000,
+      "avg_balance": 2248047,
+      "returned_cheques": 0
+     }
+    ],
+    "transactions": [
+     {
+      "date": "2025-10-01",
+      "description": "Term loan instalment and profit",
+      "debit": 840390,
+      "credit": null,
+      "balance": 3259610
+     },
+     {
+      "date": "2025-10-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 4989682,
+      "balance": 8249292
+     },
+     {
+      "date": "2025-10-10",
+      "description": "Supplier payments",
+      "debit": 5348485,
+      "credit": null,
+      "balance": 2900807
+     },
+     {
+      "date": "2025-10-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 3611030,
+      "balance": 6511837
+     },
+     {
+      "date": "2025-10-21",
+      "description": "Subcontractor payments",
+      "debit": 3104302,
+      "credit": null,
+      "balance": 3407535
+     },
+     {
+      "date": "2025-10-22",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 699522,
+      "credit": null,
+      "balance": 2708013
+     },
+     {
+      "date": "2025-10-25",
+      "description": "Site expenses",
+      "debit": 921362,
+      "credit": null,
+      "balance": 1786651
+     },
+     {
+      "date": "2025-10-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 2255349,
+      "balance": 4042000
+     },
+     {
+      "date": "2025-11-01",
+      "description": "Term loan instalment and profit",
+      "debit": 1106162,
+      "credit": null,
+      "balance": 2935838
+     },
+     {
+      "date": "2025-11-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 3334313,
+      "balance": 6270151
+     },
+     {
+      "date": "2025-11-18",
+      "description": "Subcontractor payments",
+      "debit": 4143989,
+      "credit": null,
+      "balance": 2126162
+     },
+     {
+      "date": "2025-11-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 5668728,
+      "balance": 7794890
+     },
+     {
+      "date": "2025-11-21",
+      "description": "Supplier payments",
+      "debit": 6605946,
+      "credit": null,
+      "balance": 1188944
+     },
+     {
+      "date": "2025-11-22",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 749617,
+      "credit": null,
+      "balance": 439327
+     },
+     {
+      "date": "2025-11-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 4606170,
+      "balance": 5045497
+     },
+     {
+      "date": "2025-11-26",
+      "description": "Site expenses",
+      "debit": 1061497,
+      "credit": null,
+      "balance": 3984000
+     },
+     {
+      "date": "2025-12-01",
+      "description": "Term loan instalment and profit",
+      "debit": 1039451,
+      "credit": null,
+      "balance": 2944549
+     },
+     {
+      "date": "2025-12-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 2314252,
+      "balance": 5258801
+     },
+     {
+      "date": "2025-12-18",
+      "description": "Subcontractor payments",
+      "debit": 3475615,
+      "credit": null,
+      "balance": 1783186
+     },
+     {
+      "date": "2025-12-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 5154964,
+      "balance": 6938150
+     },
+     {
+      "date": "2025-12-21",
+      "description": "Supplier payments",
+      "debit": 6014917,
+      "credit": null,
+      "balance": 923233
+     },
+     {
+      "date": "2025-12-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 4681972,
+      "balance": 5605205
+     },
+     {
+      "date": "2025-12-26",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 750488,
+      "credit": null,
+      "balance": 4854717
+     },
+     {
+      "date": "2025-12-26",
+      "description": "Site expenses",
+      "debit": 928717,
+      "credit": null,
+      "balance": 3926000
+     },
+     {
+      "date": "2026-01-01",
+      "description": "Term loan instalment and profit",
+      "debit": 893090,
+      "credit": null,
+      "balance": 3032910
+     },
+     {
+      "date": "2026-01-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 2188783,
+      "balance": 5221693
+     },
+     {
+      "date": "2026-01-18",
+      "description": "Subcontractor payments",
+      "debit": 3148171,
+      "credit": null,
+      "balance": 2073522
+     },
+     {
+      "date": "2026-01-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 4144737,
+      "balance": 6218259
+     },
+     {
+      "date": "2026-01-21",
+      "description": "Supplier payments",
+      "debit": 5489195,
+      "credit": null,
+      "balance": 729064
+     },
+     {
+      "date": "2026-01-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 4677269,
+      "balance": 5406333
+     },
+     {
+      "date": "2026-01-26",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 701430,
+      "credit": null,
+      "balance": 4704903
+     },
+     {
+      "date": "2026-01-26",
+      "description": "Site expenses",
+      "debit": 836903,
+      "credit": null,
+      "balance": 3868000
+     },
+     {
+      "date": "2026-02-01",
+      "description": "Term loan instalment and profit",
+      "debit": 1131809,
+      "credit": null,
+      "balance": 2736191
+     },
+     {
+      "date": "2026-02-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 4639742,
+      "balance": 7375933
+     },
+     {
+      "date": "2026-02-10",
+      "description": "Supplier payments",
+      "debit": 6404466,
+      "credit": null,
+      "balance": 971467
+     },
+     {
+      "date": "2026-02-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 5696368,
+      "balance": 6667835
+     },
+     {
+      "date": "2026-02-21",
+      "description": "Subcontractor payments",
+      "debit": 4149617,
+      "credit": null,
+      "balance": 2518218
+     },
+     {
+      "date": "2026-02-22",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 895550,
+      "credit": null,
+      "balance": 1622668
+     },
+     {
+      "date": "2026-02-25",
+      "description": "Site expenses",
+      "debit": 1202446,
+      "credit": null,
+      "balance": 420222
+     },
+     {
+      "date": "2026-02-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 3389778,
+      "balance": 3810000
+     },
+     {
+      "date": "2026-03-01",
+      "description": "Term loan instalment and profit",
+      "debit": 910502,
+      "credit": null,
+      "balance": 2899498
+     },
+     {
+      "date": "2026-03-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 2549467,
+      "balance": 5448965
+     },
+     {
+      "date": "2026-03-18",
+      "description": "Subcontractor payments",
+      "debit": 3237490,
+      "credit": null,
+      "balance": 2211475
+     },
+     {
+      "date": "2026-03-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 3698297,
+      "balance": 5909772
+     },
+     {
+      "date": "2026-03-21",
+      "description": "Supplier payments",
+      "debit": 5651957,
+      "credit": null,
+      "balance": 257815
+     },
+     {
+      "date": "2026-03-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 5001816,
+      "balance": 5259631
+     },
+     {
+      "date": "2026-03-26",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 617155,
+      "credit": null,
+      "balance": 4642476
+     },
+     {
+      "date": "2026-03-26",
+      "description": "Site expenses",
+      "debit": 890476,
+      "credit": null,
+      "balance": 3752000
+     },
+     {
+      "date": "2026-04-01",
+      "description": "Term loan instalment and profit",
+      "debit": 914653,
+      "credit": null,
+      "balance": 2837347
+     },
+     {
+      "date": "2026-04-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 2975613,
+      "balance": 5812960
+     },
+     {
+      "date": "2026-04-18",
+      "description": "Subcontractor payments",
+      "debit": 3827840,
+      "credit": null,
+      "balance": 1985120
+     },
+     {
+      "date": "2026-04-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 2604449,
+      "balance": 4589569
+     },
+     {
+      "date": "2026-04-22",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 736111,
+      "credit": null,
+      "balance": 3853458
+     },
+     {
+      "date": "2026-04-25",
+      "description": "Site expenses",
+      "debit": 951421,
+      "credit": null,
+      "balance": 2902037
+     },
+     {
+      "date": "2026-04-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 6357806,
+      "balance": 9259843
+     },
+     {
+      "date": "2026-04-26",
+      "description": "Supplier payments",
+      "debit": 5565843,
+      "credit": null,
+      "balance": 3694000
+     },
+     {
+      "date": "2026-05-01",
+      "description": "Term loan instalment and profit",
+      "debit": 1014713,
+      "credit": null,
+      "balance": 2679287
+     },
+     {
+      "date": "2026-05-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 2411247,
+      "balance": 5090534
+     },
+     {
+      "date": "2026-05-18",
+      "description": "Subcontractor payments",
+      "debit": 3634540,
+      "credit": null,
+      "balance": 1455994
+     },
+     {
+      "date": "2026-05-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 6106017,
+      "balance": 7562011
+     },
+     {
+      "date": "2026-05-21",
+      "description": "Supplier payments",
+      "debit": 6115352,
+      "credit": null,
+      "balance": 1446659
+     },
+     {
+      "date": "2026-05-22",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 676494,
+      "credit": null,
+      "balance": 770165
+     },
+     {
+      "date": "2026-05-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 3754009,
+      "balance": 4524174
+     },
+     {
+      "date": "2026-05-26",
+      "description": "Site expenses",
+      "debit": 888174,
+      "credit": null,
+      "balance": 3636000
+     },
+     {
+      "date": "2026-06-01",
+      "description": "Term loan instalment and profit",
+      "debit": 1125337,
+      "credit": null,
+      "balance": 2510663
+     },
+     {
+      "date": "2026-06-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 4976381,
+      "balance": 7487044
+     },
+     {
+      "date": "2026-06-10",
+      "description": "Supplier payments",
+      "debit": 6949926,
+      "credit": null,
+      "balance": 537118
+     },
+     {
+      "date": "2026-06-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 5654112,
+      "balance": 6191230
+     },
+     {
+      "date": "2026-06-21",
+      "description": "Subcontractor payments",
+      "debit": 4509326,
+      "credit": null,
+      "balance": 1681904
+     },
+     {
+      "date": "2026-06-22",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 805270,
+      "credit": null,
+      "balance": 876634
+     },
+     {
+      "date": "2026-06-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 3901595,
+      "balance": 4778229
+     },
+     {
+      "date": "2026-06-26",
+      "description": "Site expenses",
+      "debit": 1200229,
+      "credit": null,
+      "balance": 3578000
+     },
+     {
+      "date": "2026-07-01",
+      "description": "Term loan instalment and profit",
+      "debit": 1060191,
+      "credit": null,
+      "balance": 2517809
+     },
+     {
+      "date": "2026-07-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 3915864,
+      "balance": 6433673
+     },
+     {
+      "date": "2026-07-18",
+      "description": "Subcontractor payments",
+      "debit": 4064726,
+      "credit": null,
+      "balance": 2368947
+     },
+     {
+      "date": "2026-07-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 4998231,
+      "balance": 7367178
+     },
+     {
+      "date": "2026-07-21",
+      "description": "Supplier payments",
+      "debit": 6891037,
+      "credit": null,
+      "balance": 476141
+     },
+     {
+      "date": "2026-07-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 4949488,
+      "balance": 5425629
+     },
+     {
+      "date": "2026-07-26",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 820739,
+      "credit": null,
+      "balance": 4604890
+     },
+     {
+      "date": "2026-07-26",
+      "description": "Site expenses",
+      "debit": 1084890,
+      "credit": null,
+      "balance": 3520000
+     },
+     {
+      "date": "2026-08-01",
+      "description": "Term loan instalment and profit",
+      "debit": 1200854,
+      "credit": null,
+      "balance": 2319146
+     },
+     {
+      "date": "2026-08-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 6095757,
+      "balance": 8414903
+     },
+     {
+      "date": "2026-08-10",
+      "description": "Supplier payments",
+      "debit": 7087210,
+      "credit": null,
+      "balance": 1327693
+     },
+     {
+      "date": "2026-08-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 3436124,
+      "balance": 4763817
+     },
+     {
+      "date": "2026-08-21",
+      "description": "Subcontractor payments",
+      "debit": 4371446,
+      "credit": null,
+      "balance": 392371
+     },
+     {
+      "date": "2026-08-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 5294533,
+      "balance": 5686904
+     },
+     {
+      "date": "2026-08-26",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 918958,
+      "credit": null,
+      "balance": 4767946
+     },
+     {
+      "date": "2026-08-26",
+      "description": "Site expenses",
+      "debit": 1305946,
+      "credit": null,
+      "balance": 3462000
+     },
+     {
+      "date": "2026-09-01",
+      "description": "Term loan instalment and profit",
+      "debit": 1089136,
+      "credit": null,
+      "balance": 2372864
+     },
+     {
+      "date": "2026-09-07",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 5148115,
+      "balance": 7520979
+     },
+     {
+      "date": "2026-09-10",
+      "description": "Supplier payments",
+      "debit": 6520186,
+      "credit": null,
+      "balance": 1000793
+     },
+     {
+      "date": "2026-09-21",
+      "description": "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      "debit": null,
+      "credit": 4173220,
+      "balance": 5174013
+     },
+     {
+      "date": "2026-09-21",
+      "description": "Subcontractor payments",
+      "debit": 4043633,
+      "credit": null,
+      "balance": 1130380
+     },
+     {
+      "date": "2026-09-22",
+      "description": "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      "debit": 754836,
+      "credit": null,
+      "balance": 375544
+     },
+     {
+      "date": "2026-09-26",
+      "description": "Receipts, closed projects and claims",
+      "debit": null,
+      "credit": 4105442,
+      "balance": 4480986
+     },
+     {
+      "date": "2026-09-26",
+      "description": "Site expenses",
+      "debit": 1080986,
+      "credit": null,
+      "balance": 3400000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-17",
+   "doc_type": "facility_request_letter",
+   "subject": null,
+   "title": "REQUEST FOR CREDIT FACILITIES",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2026-10-05",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/17_facility_request_letter.docx",
+    "pdf": "pdf/17_facility_request_letter.pdf",
+    "images": [
+     "images/17_facility_request_letter_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "letter_date": "2026-10-05",
+    "addressed_to": "Sandstone Harbour Bank, Corporate Banking",
+    "requested_total": 120000000,
+    "facilities": [
+     {
+      "facility": "Advance payment guarantee (10%)",
+      "amount": 31200000,
+      "purpose": "Advance payment of Package C"
+     },
+     {
+      "facility": "Performance bond (10%)",
+      "amount": 31200000,
+      "purpose": "Performance security of Package C"
+     },
+     {
+      "facility": "Murabaha against payment certificates",
+      "amount": 45000000,
+      "purpose": "Working capital of Package C"
+     },
+     {
+      "facility": "Letters of credit (sight / usance)",
+      "amount": 12600000,
+      "purpose": "Imported MEP equipment for Package C"
+     }
+    ],
+    "signatory": "Turki Hamad Al-Sawaed",
+    "signatory_role": "Chairman and General Manager"
+   }
+  },
+  {
+   "doc_id": "C2-18",
+   "doc_type": "board_resolution",
+   "subject": null,
+   "title": "PARTNERS' RESOLUTION",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2026-10-04",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/18_board_resolution.docx",
+    "pdf": "pdf/18_board_resolution.pdf",
+    "images": [
+     "images/18_board_resolution_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "resolution_date": "2026-10-04",
+    "resolution_number": "PR-2026-07",
+    "authorised_amount": 300000000,
+    "authorised_persons": "Turki Hamad Al-Sawaed (Chairman and General Manager)"
+   }
+  },
+  {
+   "doc_id": "C2-19",
+   "doc_type": "authorised_signatories",
+   "subject": null,
+   "title": "AUTHORISED SIGNATORIES",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2026-10-04",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/19_authorised_signatories.docx",
+    "pdf": "pdf/19_authorised_signatories.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "as_of": "2026-10-04",
+    "signatories": [
+     {
+      "name": "Turki Hamad Al-Sawaed",
+      "id_number": "1034578210",
+      "role": "Chairman and General Manager",
+      "limit": "Up to SAR 10m alone",
+      "mode": "Single / joint above"
+     },
+     {
+      "name": "Nasser Hamad Al-Sawaed",
+      "id_number": "1046723985",
+      "role": "Deputy General Manager",
+      "limit": "Jointly with GM",
+      "mode": "Joint"
+     },
+     {
+      "name": "Omar Khalil Haddad",
+      "id_number": "2398145672",
+      "role": "Finance Manager",
+      "limit": "Up to SAR 1m (payments)",
+      "mode": "Joint with GM"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-20",
+   "doc_type": "personal_net_worth",
+   "subject": "turki_hamad_al_sawaed",
+   "title": "PERSONAL NET WORTH STATEMENT",
+   "issuer": "Turki Hamad Al-Sawaed",
+   "issue_date": "2026-06-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/20_personal_net_worth__turki_hamad_al_sawaed.docx",
+    "pdf": "pdf/20_personal_net_worth__turki_hamad_al_sawaed.pdf",
+    "images": [
+     "images/20_personal_net_worth__turki_hamad_al_sawaed_p1.jpg"
+    ]
+   },
+   "fields": {
+    "full_name": "Turki Hamad Al-Sawaed",
+    "id_number": "1034578210",
+    "statement_date": "2026-06-30",
+    "total_assets": 162400000,
+    "total_liabilities": 2124000,
+    "net_worth": 160276000,
+    "assets": [
+     {
+      "asset": "Shares",
+      "description": "65% of Sawaed Al Bina Contracting Co. (owner's valuation)",
+      "value": 118000000
+     },
+     {
+      "asset": "Real estate",
+      "description": "Villa, Al Shati district, Dammam (own valuation)",
+      "value": 9500000
+     },
+     {
+      "asset": "Real estate",
+      "description": "Land plot, Al Khobar (1,850 sq m)",
+      "value": 14200000
+     },
+     {
+      "asset": "Shares",
+      "description": "Sawaed Real Estate Co. (100%)",
+      "value": 8000000
+     },
+     {
+      "asset": "Listed shares",
+      "description": "Portfolio at market value",
+      "value": 5400000
+     },
+     {
+      "asset": "Cash and deposits",
+      "description": "Current and deposit accounts",
+      "value": 6800000
+     },
+     {
+      "asset": "Vehicles",
+      "description": "Two vehicles",
+      "value": 500000
+     }
+    ],
+    "liabilities": [
+     {
+      "liability": "Personal finance",
+      "description": "Sandstone Harbour Bank",
+      "value": 2100000
+     },
+     {
+      "liability": "Credit card",
+      "description": "Arabian Crescent Bank",
+      "value": 24000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-21",
+   "doc_type": "other_bank_offer_letter",
+   "subject": "arabian_crescent_bank",
+   "title": "FACILITY OFFER LETTER",
+   "issuer": "Arabian Crescent Bank",
+   "issue_date": "2026-03-15",
+   "expiry_date": "2027-02-28",
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/21_other_bank_offer_letter__arabian_crescent_bank.docx",
+    "pdf": "pdf/21_other_bank_offer_letter__arabian_crescent_bank.pdf",
+    "images": [
+     "images/21_other_bank_offer_letter__arabian_crescent_bank_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "bank_name": "Arabian Crescent Bank",
+    "letter_date": "2026-03-15",
+    "letter_reference": "ACB/CB/EP/26/0412",
+    "total_limits": 140250000,
+    "expiry_date": "2027-02-28",
+    "facilities": [
+     {
+      "facility": "Short-term Murabaha (working capital)",
+      "limit": 50000000,
+      "pricing": "3M SAIBOR + 2.25%",
+      "tenor": "up to 180 days"
+     },
+     {
+      "facility": "Letters of guarantee (bid, performance, advance)",
+      "limit": 70000000,
+      "pricing": "0.75% p.a.",
+      "tenor": "per LG"
+     },
+     {
+      "facility": "Term loan (equipment), amortising",
+      "limit": 20250000,
+      "pricing": "3M SAIBOR + 2.00%",
+      "tenor": "to 2028, quarterly"
+     }
+    ],
+    "security": "Personal guarantee of Turki Hamad Al-Sawaed; promissory note; assignment of proceeds of the Al Khobar Waterfront project."
+   }
+  },
+  {
+   "doc_id": "C2-22",
+   "doc_type": "other_bank_statement",
+   "subject": "arabian_crescent_bank",
+   "title": "STATEMENT OF FACILITIES",
+   "issuer": "Arabian Crescent Bank",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/22_other_bank_statement__arabian_crescent_bank.docx",
+    "pdf": "pdf/22_other_bank_statement__arabian_crescent_bank.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "bank_name": "Arabian Crescent Bank",
+    "statement_date": "2026-09-30",
+    "total_limits": 140250000,
+    "total_outstanding": 124950000,
+    "facilities": [
+     {
+      "facility": "Short-term Murabaha (working capital)",
+      "limit": 50000000,
+      "outstanding": 46300000,
+      "overdue": 0,
+      "maturity": "rolling"
+     },
+     {
+      "facility": "Letters of guarantee",
+      "limit": 70000000,
+      "outstanding": 58400000,
+      "overdue": 0,
+      "maturity": "per LG"
+     },
+     {
+      "facility": "Term loan (equipment)",
+      "limit": 20250000,
+      "outstanding": 20250000,
+      "overdue": 0,
+      "maturity": "2028-06-30"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-23",
+   "doc_type": "receivables_ageing",
+   "subject": null,
+   "title": "RECEIVABLES AGEING",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/23_receivables_ageing.docx",
+    "pdf": "pdf/23_receivables_ageing.pdf",
+    "images": [
+     "images/23_receivables_ageing_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "as_of": "2026-09-30",
+    "total": 104600000,
+    "bucket_0_90": 72068000,
+    "bucket_91_180": 12032000,
+    "bucket_181_365": 6300000,
+    "bucket_over_365": 14200000,
+    "by_customer": [
+     {
+      "customer": "Sharqiya Logistics Development Co. (SLDC)",
+      "b0_90": 59580000,
+      "b91_180": 10232000,
+      "b181_365": 0,
+      "over_365": 0,
+      "total": 69812000
+     },
+     {
+      "customer": "Qamar Al Khaleej Real Estate Development Co.",
+      "b0_90": 5200000,
+      "b91_180": 1800000,
+      "b181_365": 0,
+      "over_365": 0,
+      "total": 7000000
+     },
+     {
+      "customer": "Eastern Industrial Estates Co.",
+      "b0_90": 2200000,
+      "b91_180": 0,
+      "b181_365": 0,
+      "over_365": 0,
+      "total": 2200000
+     },
+     {
+      "customer": "Sahil Education Projects Co.",
+      "b0_90": 4100000,
+      "b91_180": 0,
+      "b181_365": 0,
+      "over_365": 0,
+      "total": 4100000
+     },
+     {
+      "customer": "Closed projects and variation claims (various)",
+      "b0_90": 988000,
+      "b91_180": 0,
+      "b181_365": 6300000,
+      "over_365": 14200000,
+      "total": 21488000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-24",
+   "doc_type": "payables_ageing",
+   "subject": null,
+   "title": "PAYABLES AGEING",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/24_payables_ageing.docx",
+    "pdf": "pdf/24_payables_ageing.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "as_of": "2026-09-30",
+    "total": 74100000,
+    "bucket_0_90": 57100000,
+    "bucket_91_180": 14300000,
+    "bucket_over_180": 2700000,
+    "by_supplier": [
+     {
+      "supplier": "Gulf Rebar Trading Co.",
+      "b0_90": 14200000,
+      "b91_180": 3100000,
+      "over_180": 0,
+      "total": 17300000
+     },
+     {
+      "supplier": "Eastern Ready Mix Concrete Co.",
+      "b0_90": 11600000,
+      "b91_180": 2400000,
+      "over_180": 0,
+      "total": 14000000
+     },
+     {
+      "supplier": "Sawaed Heavy Equipment Rental Co. (related)",
+      "b0_90": 0,
+      "b91_180": 0,
+      "over_180": 0,
+      "total": 0
+     },
+     {
+      "supplier": "Al Bayan MEP Subcontracting",
+      "b0_90": 9800000,
+      "b91_180": 4200000,
+      "over_180": 1100000,
+      "total": 15100000
+     },
+     {
+      "supplier": "Other suppliers and subcontractors",
+      "b0_90": 21500000,
+      "b91_180": 4600000,
+      "over_180": 1600000,
+      "total": 27700000
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-25",
+   "doc_type": "top_customers_suppliers",
+   "subject": null,
+   "title": "TOP CUSTOMERS AND SUPPLIERS",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2026-10-05",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/25_top_customers_suppliers.docx",
+    "pdf": "pdf/25_top_customers_suppliers.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "year": 2025,
+    "customers": [
+     {
+      "name": "Sharqiya Logistics Development Co. (SLDC)",
+      "relationship": "Third party (government-linked)",
+      "sales": 128400000,
+      "share_pct": 27.4,
+      "terms": "56 days from certification"
+     },
+     {
+      "name": "Qamar Al Khaleej Real Estate Development Co.",
+      "relationship": "Third party",
+      "sales": 112600000,
+      "share_pct": 24.0,
+      "terms": "45 days from certification"
+     },
+     {
+      "name": "Eastern Industrial Estates Co.",
+      "relationship": "Third party",
+      "sales": 96100000,
+      "share_pct": 20.5,
+      "terms": "60 days from certification"
+     },
+     {
+      "name": "Sahil Education Projects Co.",
+      "relationship": "Third party",
+      "sales": 21600000,
+      "share_pct": 4.6,
+      "terms": "60 days from certification"
+     },
+     {
+      "name": "Other (closed projects, maintenance)",
+      "relationship": "Third parties",
+      "sales": 109500000,
+      "share_pct": 23.4,
+      "terms": "various"
+     }
+    ],
+    "suppliers": [
+     {
+      "name": "Gulf Rebar Trading Co.",
+      "country": "KSA",
+      "purchases": 61800000,
+      "share_pct": 15.0,
+      "terms": "60 days, LC / open account"
+     },
+     {
+      "name": "Eastern Ready Mix Concrete Co.",
+      "country": "KSA",
+      "purchases": 49400000,
+      "share_pct": 12.0,
+      "terms": "45 days"
+     },
+     {
+      "name": "Sawaed Heavy Equipment Rental Co.",
+      "country": "KSA",
+      "purchases": 17800000,
+      "share_pct": 4.3,
+      "terms": "advance"
+     },
+     {
+      "name": "Al Bayan MEP Subcontracting",
+      "country": "KSA",
+      "purchases": 44600000,
+      "share_pct": 10.8,
+      "terms": "back-to-back with certificates"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-26",
+   "doc_type": "project_list",
+   "subject": null,
+   "title": "PROJECT LIST — WORK IN HAND",
+   "issuer": "Sawaed Al Bina Contracting Co.",
+   "issue_date": "2026-09-30",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/26_project_list.docx",
+    "pdf": "pdf/26_project_list.pdf",
+    "images": [
+     "images/26_project_list_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "as_of": "2026-09-30",
+    "projects": [
+     {
+      "project_id": "P1",
+      "project": "Eastern Corridor Logistics Hub — Package B",
+      "employer": "Sharqiya Logistics Development Co. (SLDC)",
+      "contract_value": 486000000,
+      "start": "2025-03-01",
+      "planned_completion": "2028-01-31",
+      "work_done_pct": 41.0,
+      "billed": 187160000,
+      "received": 79918000,
+      "retention_held": 18715000,
+      "status": "In progress (revised completion per EOT request)"
+     },
+     {
+      "project_id": "P2",
+      "project": "Al Khobar Waterfront Residential Towers (2 towers)",
+      "employer": "Qamar Al Khaleej Real Estate Development Co.",
+      "contract_value": 212000000,
+      "start": "2024-01-15",
+      "planned_completion": "2026-12-31",
+      "work_done_pct": 88.0,
+      "billed": 186560000,
+      "received": 160900000,
+      "retention_held": 18656000,
+      "status": "In progress"
+     },
+     {
+      "project_id": "P3",
+      "project": "Second Industrial Estate — Roads Package 4",
+      "employer": "Eastern Industrial Estates Co.",
+      "contract_value": 164000000,
+      "start": "2024-06-01",
+      "planned_completion": "2026-09-15",
+      "work_done_pct": 97.0,
+      "billed": 159080000,
+      "received": 141000000,
+      "retention_held": 15908000,
+      "status": "Substantially complete; defects liability period"
+     },
+     {
+      "project_id": "P4",
+      "project": "Jubail School Complex (3 schools)",
+      "employer": "Sahil Education Projects Co.",
+      "contract_value": 98000000,
+      "start": "2025-09-01",
+      "planned_completion": "2027-03-31",
+      "work_done_pct": 22.0,
+      "billed": 21560000,
+      "received": 15300000,
+      "retention_held": 2156000,
+      "status": "In progress"
+     }
+    ]
+   }
+  },
+  {
+   "doc_id": "C2-27",
+   "doc_type": "project_contract",
+   "subject": "p1",
+   "title": "CONTRACT AGREEMENT (EXTRACT)",
+   "issuer": "Sharqiya Logistics Development Co. (SLDC)",
+   "issue_date": "2025-02-10",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/27_project_contract__p1.docx",
+    "pdf": "pdf/27_project_contract__p1.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "project_id": "P1 Eastern Corridor Logistics Hub — Package B",
+    "employer": "Sharqiya Logistics Development Co. (SLDC)",
+    "consultant": "Dar Al Mimar Engineering Consultants",
+    "contract_date": "2025-02-10",
+    "contract_value": 486000000,
+    "advance_pct": 10.0,
+    "retention_pct": 10.0,
+    "payment_terms_days": 56,
+    "start_date": "2025-03-01",
+    "completion_date": "2027-08-31",
+    "performance_bond_pct": 10.0
+   }
+  },
+  {
+   "doc_id": "C2-28",
+   "doc_type": "payment_certificate",
+   "subject": "ipc_11",
+   "title": "INTERIM PAYMENT CERTIFICATE",
+   "issuer": "Dar Al Mimar Engineering Consultants",
+   "issue_date": "2026-03-21",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/28_payment_certificate__ipc_11.docx",
+    "pdf": "pdf/28_payment_certificate__ipc_11.pdf",
+    "images": [
+     "images/28_payment_certificate__ipc_11_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "project_id": "P1 Eastern Corridor Logistics Hub — Package B",
+    "certificate_number": "IPC-11",
+    "period_to": "2026-02-28",
+    "certified_on": "2026-03-21",
+    "gross_work_done": 99896000,
+    "this_certificate_gross": 11793000,
+    "retention_this": 1179000,
+    "advance_recovery": 1179000,
+    "net_payable": 9435000,
+    "cumulative_retention": 9989000,
+    "due_date": "2026-05-16"
+   }
+  },
+  {
+   "doc_id": "C2-29",
+   "doc_type": "payment_certificate",
+   "subject": "ipc_12",
+   "title": "INTERIM PAYMENT CERTIFICATE",
+   "issuer": "Dar Al Mimar Engineering Consultants",
+   "issue_date": "2026-04-19",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/29_payment_certificate__ipc_12.docx",
+    "pdf": "pdf/29_payment_certificate__ipc_12.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "project_id": "P1 Eastern Corridor Logistics Hub — Package B",
+    "certificate_number": "IPC-12",
+    "period_to": "2026-03-31",
+    "certified_on": "2026-04-19",
+    "gross_work_done": 112686000,
+    "this_certificate_gross": 12790000,
+    "retention_this": 1279000,
+    "advance_recovery": 1279000,
+    "net_payable": 10232000,
+    "cumulative_retention": 11268000,
+    "due_date": "2026-06-14"
+   }
+  },
+  {
+   "doc_id": "C2-30",
+   "doc_type": "payment_certificate",
+   "subject": "ipc_13",
+   "title": "INTERIM PAYMENT CERTIFICATE",
+   "issuer": "Dar Al Mimar Engineering Consultants",
+   "issue_date": "2026-05-20",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/30_payment_certificate__ipc_13.docx",
+    "pdf": "pdf/30_payment_certificate__ipc_13.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "project_id": "P1 Eastern Corridor Logistics Hub — Package B",
+    "certificate_number": "IPC-13",
+    "period_to": "2026-04-30",
+    "certified_on": "2026-05-20",
+    "gross_work_done": 126810000,
+    "this_certificate_gross": 14124000,
+    "retention_this": 1412000,
+    "advance_recovery": 1412000,
+    "net_payable": 11300000,
+    "cumulative_retention": 12680000,
+    "due_date": "2026-07-15"
+   }
+  },
+  {
+   "doc_id": "C2-31",
+   "doc_type": "payment_certificate",
+   "subject": "ipc_14",
+   "title": "INTERIM PAYMENT CERTIFICATE",
+   "issuer": "Dar Al Mimar Engineering Consultants",
+   "issue_date": "2026-06-21",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/31_payment_certificate__ipc_14.docx",
+    "pdf": "pdf/31_payment_certificate__ipc_14.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "project_id": "P1 Eastern Corridor Logistics Hub — Package B",
+    "certificate_number": "IPC-14",
+    "period_to": "2026-05-31",
+    "certified_on": "2026-06-21",
+    "gross_work_done": 141682000,
+    "this_certificate_gross": 14872000,
+    "retention_this": 1487000,
+    "advance_recovery": 1487000,
+    "net_payable": 11898000,
+    "cumulative_retention": 14167000,
+    "due_date": "2026-08-16"
+   }
+  },
+  {
+   "doc_id": "C2-32",
+   "doc_type": "payment_certificate",
+   "subject": "ipc_15",
+   "title": "INTERIM PAYMENT CERTIFICATE",
+   "issuer": "Dar Al Mimar Engineering Consultants",
+   "issue_date": "2026-07-19",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/32_payment_certificate__ipc_15.docx",
+    "pdf": "pdf/32_payment_certificate__ipc_15.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "project_id": "P1 Eastern Corridor Logistics Hub — Package B",
+    "certificate_number": "IPC-15",
+    "period_to": "2026-06-30",
+    "certified_on": "2026-07-19",
+    "gross_work_done": 155949000,
+    "this_certificate_gross": 14267000,
+    "retention_this": 1427000,
+    "advance_recovery": 1427000,
+    "net_payable": 11413000,
+    "cumulative_retention": 15594000,
+    "due_date": "2026-09-13"
+   }
+  },
+  {
+   "doc_id": "C2-33",
+   "doc_type": "payment_certificate",
+   "subject": "ipc_16",
+   "title": "INTERIM PAYMENT CERTIFICATE",
+   "issuer": "Dar Al Mimar Engineering Consultants",
+   "issue_date": "2026-08-20",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/33_payment_certificate__ipc_16.docx",
+    "pdf": "pdf/33_payment_certificate__ipc_16.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "project_id": "P1 Eastern Corridor Logistics Hub — Package B",
+    "certificate_number": "IPC-16",
+    "period_to": "2026-07-31",
+    "certified_on": "2026-08-20",
+    "gross_work_done": 170571000,
+    "this_certificate_gross": 14622000,
+    "retention_this": 1462000,
+    "advance_recovery": 1462000,
+    "net_payable": 11698000,
+    "cumulative_retention": 17056000,
+    "due_date": "2026-10-15"
+   }
+  },
+  {
+   "doc_id": "C2-34",
+   "doc_type": "payment_certificate",
+   "subject": "ipc_17",
+   "title": "INTERIM PAYMENT CERTIFICATE",
+   "issuer": "Dar Al Mimar Engineering Consultants",
+   "issue_date": "2026-09-21",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/34_payment_certificate__ipc_17.docx",
+    "pdf": "pdf/34_payment_certificate__ipc_17.pdf",
+    "images": [
+     "images/34_payment_certificate__ipc_17_p1.jpg"
+    ]
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "project_id": "P1 Eastern Corridor Logistics Hub — Package B",
+    "certificate_number": "IPC-17",
+    "period_to": "2026-08-31",
+    "certified_on": "2026-09-21",
+    "gross_work_done": 187160000,
+    "this_certificate_gross": 16589000,
+    "retention_this": 1659000,
+    "advance_recovery": 1659000,
+    "net_payable": 13271000,
+    "cumulative_retention": 18715000,
+    "due_date": "2026-11-16"
+   }
+  },
+  {
+   "doc_id": "C2-35",
+   "doc_type": "site_visit_report",
+   "subject": null,
+   "title": "SITE VISIT REPORT",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-09-24",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/35_site_visit_report.docx",
+    "pdf": "pdf/35_site_visit_report.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "visit_date": "2026-09-24",
+    "visited_by": "Hisham Al-Qahtani",
+    "met_with": "Turki Hamad Al-Sawaed; Eng. Ahmed Fawzi (Project Manager, Package B)",
+    "premises": "Head office (Dammam, rented) and Package B site (Eastern Corridor Logistics Hub)",
+    "staff_seen": 420,
+    "observations": "Package B site active; warehouse blocks W1-W3 structure complete, W4-W6 foundations; progress behind the original programme."
+   }
+  },
+  {
+   "doc_id": "C2-36",
+   "doc_type": "aml_kyc_questionnaire",
+   "subject": null,
+   "title": "AML / KYC QUESTIONNAIRE",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-04",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/36_aml_kyc_questionnaire.docx",
+    "pdf": "pdf/36_aml_kyc_questionnaire.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "completed_on": "2026-10-04",
+    "ubos": [
+     {
+      "name": "Turki Hamad Al-Sawaed",
+      "pct": 65.0,
+      "pep": "No"
+     },
+     {
+      "name": "Nasser Hamad Al-Sawaed",
+      "pct": 35.0,
+      "pep": "No"
+     }
+    ],
+    "pep_flag": "No",
+    "countries": "KSA only (imports of MEP equipment from UAE, Italy, China)",
+    "cash_intensive": "No",
+    "risk_rating": "Medium"
+   }
+  },
+  {
+   "doc_id": "C2-37",
+   "doc_type": "simah_consent",
+   "subject": null,
+   "title": "CONSENT TO OBTAIN AND SHARE CREDIT INFORMATION (SIMAH)",
+   "issuer": "Sandstone Harbour Bank",
+   "issue_date": "2026-10-04",
+   "expiry_date": null,
+   "period_from": null,
+   "period_to": null,
+   "status_expected": "received",
+   "files": {
+    "docx": "word/37_simah_consent.docx",
+    "pdf": "pdf/37_simah_consent.pdf",
+    "images": []
+   },
+   "fields": {
+    "customer_name": "Sawaed Al Bina Contracting Co.",
+    "cr_number": "2050117342",
+    "signatory": "Turki Hamad Al-Sawaed",
+    "signed_on": "2026-10-04"
+   }
+  }
+ ],
+ "missing": [
+  {
+   "doc_type": "personal_net_worth",
+   "subject": "nasser_al_sawaed",
+   "why": "Net-worth statement of the second guarantor not provided"
+  },
+  {
+   "doc_type": "project_contract",
+   "subject": "p5_package_c",
+   "why": "Package C contract not yet signed (letter of award only)"
+  }
+ ],
+ "business_request": {
+  "docx": "business_request/business_request.docx",
+  "pdf": "business_request/business_request.pdf",
+  "images": [
+   "business_request/business_request_p1.jpg",
+   "business_request/business_request_p2.jpg",
+   "business_request/business_request_p3.jpg",
+   "business_request/business_request_p4.jpg"
+  ],
+  "fields": {
+   "customer_name": "Sawaed Al Bina Contracting Co.",
+   "cr_number": "2050117342",
+   "cif": "CB09002",
+   "request_date": "2026-10-06",
+   "rm": "Hisham Al-Qahtani",
+   "action_requested": "Renew the general limit of SAR 160.0m approved under CC/2024/207 dated 12/11/2024 for a further 12 months with the same structure, and approve a new project limit of SAR 120.0m dedicated to the Eastern Corridor Logistics Hub — Package C awarded by Sharqiya Logistics Development Co. (SLDC) (letter of award 22/09/2026, contract value SAR 312.0m, 24 months from 01/12/2026), taking total facilities from SAR 160.0m to SAR 280.0m and the Sawaed Group exposure cap from SAR 185.0m to SAR 300.0m.",
+   "total_existing": 160000000,
+   "total_proposed": 280000000,
+   "facilities": [
+    {
+     "limit": "Advance payment guarantees",
+     "existing": 25000000,
+     "outstanding": 19400000,
+     "proposed": 25000000,
+     "cash_margin_pct": 10.0,
+     "pricing": "0.75%",
+     "tenor": "Per LG, max 30 months"
+    },
+    {
+     "limit": "Performance bonds",
+     "existing": 45000000,
+     "outstanding": 41200000,
+     "proposed": 45000000,
+     "cash_margin_pct": 10.0,
+     "pricing": "0.60%",
+     "tenor": "Per LG, max 36 months"
+    },
+    {
+     "limit": "Letters of credit (sight / usance)",
+     "existing": 20000000,
+     "outstanding": 6300000,
+     "proposed": 20000000,
+     "cash_margin_pct": 15.0,
+     "pricing": "0.25%",
+     "tenor": "Usance up to 120 days"
+    },
+    {
+     "limit": "Murabaha against payment certificates (DMCCM)",
+     "existing": 50000000,
+     "outstanding": 47800000,
+     "proposed": 50000000,
+     "cash_margin_pct": 0.0,
+     "pricing": "3M SAIBOR + 2.50%",
+     "tenor": "Up to 180 days per draw"
+    },
+    {
+     "limit": "Overdraft",
+     "existing": 20000000,
+     "outstanding": 14900000,
+     "proposed": 20000000,
+     "cash_margin_pct": 0.0,
+     "pricing": "3M SAIBOR + 2.75%",
+     "tenor": "12 months"
+    },
+    {
+     "limit": "Advance payment guarantee (10%)",
+     "existing": 0,
+     "outstanding": 0,
+     "proposed": 31200000,
+     "cash_margin_pct": 10.0,
+     "pricing": "0.75%",
+     "tenor": "Until full recovery of the advance"
+    },
+    {
+     "limit": "Performance bond (10%)",
+     "existing": 0,
+     "outstanding": 0,
+     "proposed": 31200000,
+     "cash_margin_pct": 10.0,
+     "pricing": "0.60%",
+     "tenor": "Until end of DLP (36 months)"
+    },
+    {
+     "limit": "Murabaha against Package C certificates (DMCCM)",
+     "existing": 0,
+     "outstanding": 0,
+     "proposed": 45000000,
+     "cash_margin_pct": 0.0,
+     "pricing": "3M SAIBOR + 2.50%",
+     "tenor": "Up to 180 days per draw"
+    },
+    {
+     "limit": "Letters of credit (MEP imports)",
+     "existing": 0,
+     "outstanding": 0,
+     "proposed": 12600000,
+     "cash_margin_pct": 15.0,
+     "pricing": "0.25%",
+     "tenor": "Usance up to 120 days, settled by DMCCM"
+    }
+   ],
+   "security": [
+    {
+     "item": "Personal guarantee of Turki Hamad Al-Sawaed (65% shareholder), net worth SAR 160.3m as per statement dated 30/06/2026 (existing; extended to the project limit)."
+    },
+    {
+     "item": "Personal guarantee of Nasser Hamad Al-Sawaed (35%), net-worth statement to follow (existing)."
+    },
+    {
+     "item": "Assignment of Package B proceeds (existing, acknowledged by SLDC on 02/05/2025)."
+    },
+    {
+     "item": "Promissory note for SAR 280.0m covering both limits (new, replacing SAR 160.0m)."
+    },
+    {
+     "item": "Cash margin 10% on letters of guarantee, 15% on letters of credit (existing deposit SAR 6.06m)."
+    },
+    {
+     "item": "Assignment of Package C contract proceeds to the Bank, to be acknowledged by SLDC within 60 days of contract signature (new)."
+    },
+    {
+     "item": "Personal guarantee of Turki Hamad Al-Sawaed (above), extended to the project limit (new)."
+    },
+    {
+     "item": "Cash margin 10% on the APG and PB (SAR 6.24m), 15% on LCs (new)."
+    }
+   ],
+   "conditions": [
+    {
+     "item": "DMCCM only against Engineer-certified payment certificates, up to 80% of the net certified amount, repaid from the certificate proceeds."
+    },
+    {
+     "item": "Proceeds of assigned projects credited to the Bank first settle the related DMCCM outstanding."
+    },
+    {
+     "item": "Package C limit used only for Package C; LGs in the employer's standard format, open-ended wording not accepted."
+    },
+    {
+     "item": "DMCCM against Package C certificates certified by the Engineer, up to 80% of the net certified amount; the last 10% of contract value not financed."
+    },
+    {
+     "item": "Funded outstanding under the project limit covered at least 1.5x by remaining Package C contract proceeds."
+    },
+    {
+     "item": "Route not less than 60% of turnover through the Bank (existing; complied)."
+    },
+    {
+     "item": "Audited financial statements within 120 days and in-house statements within 60 days of each half year."
+    },
+    {
+     "item": "Status of existing conditions (CC/2024/207): assignment of Package B proceeds — complied; routing — complied; audited FS — complied; related-party balances capped at SAR 10m — not complied (SAR 24.6m at 30/09/2026)."
+    }
+   ]
+  }
+ },
+ "reference": {
+  "docx": "reference/reference_proposal.docx",
+  "pdf": "reference/reference_proposal.pdf"
+ }
+}

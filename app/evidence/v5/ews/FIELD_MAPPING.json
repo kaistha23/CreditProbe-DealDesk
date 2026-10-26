@@ -1,0 +1,951 @@
+{
+ "document": "FIELD_MAPPING",
+ "written_utc": "2026-10-10T07:34:42.641966+00:00",
+ "domains": {
+  "corporate": {
+   "ews_release_id": "ews-saudi-corporate-20q-v4e2",
+   "source_release_id": "v4-saudi-corporate-20q-v4",
+   "tables": {
+    "ews_corp_exposure.parquet": {
+     "domain_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "reporting_currency": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "facility_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "borrower_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "borrower_name": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter"
+     },
+     "reporting_quarter": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "product_type": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "facility_class": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "sector": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "sub_sector": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter"
+     },
+     "region": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter"
+     },
+     "relationship_tier": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter"
+     },
+     "limit_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "drawn_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "undrawn_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "utilisation_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "ead_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "stage": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "sicr_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "default_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "dpd_days": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "pd_pit_12m": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "pd_lifetime": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "lgd_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "ecl_12m_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "ecl_lifetime_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "ecl_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "ecl_coverage_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "write_off_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "recovery_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "cure_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "past_due_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "quarters_in_stage": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "origination_quarter": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter"
+     },
+     "tenant_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "ews_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_dataset_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_table": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "ews_grain": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "watchlist_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "rating_notches_moved": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "covenant_breaches": {
+      "type": "DOUBLE",
+      "kind": "derived",
+      "source": "SUM(breach_flag) over corp_covenant_quarter per facility_id x reporting_quarter - the same aggregate grid.py joins as alias cov"
+     },
+     "collateral_value_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "derived",
+      "source": "SUM of the frozen collateral allocated/collateral value per exposure x period - the same aggregate grid.py joins"
+     },
+     "collateral_ltv_pct": {
+      "type": "DOUBLE",
+      "kind": "derived",
+      "source": "AVG(ltv_pct) of the frozen collateral rows per exposure x period - the same aggregate grid.py joins"
+     },
+     "ews_score": {
+      "type": "INTEGER",
+      "kind": "derived",
+      "source": "sum of the live gw-ews-1.0.0 rule weights, unchanged"
+     },
+     "ews_reasons": {
+      "type": "VARCHAR",
+      "kind": "derived",
+      "source": "concat_ws('; ') of the labels of the live rules that are true, unchanged"
+     },
+     "ews_ruleset_version": {
+      "type": "VARCHAR",
+      "kind": "derived",
+      "source": "literal gw-ews-1.0.0"
+     },
+     "ews_band": {
+      "type": "VARCHAR",
+      "kind": "derived",
+      "source": "ews.BANDS applied to ews_score, unchanged"
+     }
+    },
+    "ews_corp_owner.parquet": {
+     "tenant_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "dataset_release_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "domain_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "reporting_currency": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "borrower_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "borrower_name": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter"
+     },
+     "group_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "group_name": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "reporting_quarter": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "sector": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter | corp_collateral_quarter | corp_covenant_quarter"
+     },
+     "sub_sector": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter"
+     },
+     "region": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter"
+     },
+     "relationship_tier": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_facility_quarter | corp_borrower_quarter"
+     },
+     "rating_current": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "rating_previous": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "rating_at_origination": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "rating_notches_moved": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "rating_notches_from_origination": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "rating_migration": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "rating_outlook": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "rating_driver": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "pd_ttc_12m": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "revenue_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "ebitda_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "ebit_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "operating_cash_flow_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "total_debt_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "cash_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "net_debt_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "leverage_x": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "dscr_x": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "interest_cover_x": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "current_ratio_x": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "quick_ratio_x": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "ebitda_margin_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "return_on_assets_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "cash_conversion_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "qualitative_score": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "watchlist_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "watchlist_reason": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "restructured_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "quarters_on_watchlist": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "corp_borrower_quarter"
+     },
+     "ews_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_table": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "ews_grain": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     }
+    }
+   }
+  },
+  "retail": {
+   "ews_release_id": "ews-saudi-retail-20m-v5e1",
+   "source_release_id": "v4-saudi-retail-20m-v5",
+   "tables": {
+    "ews_retail_exposure.parquet": {
+     "domain_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "reporting_currency": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "account_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "customer_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "reporting_month": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "product": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "sub_product": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_behaviour_month"
+     },
+     "secured_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "origination_month": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "origination_channel": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "vintage_year": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "months_on_book": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "customer_segment": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "employment_type": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "region": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "limit_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "balance_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "ead_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "utilisation_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_behaviour_month"
+     },
+     "stage": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "sicr_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "default_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "dpd_days": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "delinquency_bucket": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "delinquency_bucket_fine": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "pd_pit_12m": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "pd_lifetime": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "lgd_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "ecl_12m_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "ecl_lifetime_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "ecl_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "write_off_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "recovery_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "cure_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month"
+     },
+     "behaviour_score": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "score_band": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "tenant_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "ews_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_dataset_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_table": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "ews_grain": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "payment_ratio_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "utilisation_change_pp": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "missed_payments_12m": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "delinquency_streak_months": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "balance_growth_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "cash_advance_ratio_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "overlimit_flag": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "inflow_change_pct": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "bureau_inquiries_6m": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "repayment_behaviour_score": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_behaviour_month"
+     },
+     "score_migration": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "customer_score_band": {
+      "type": "VARCHAR",
+      "kind": "copied_renamed",
+      "source": "retail_customer_month.score_band (owner grain; the account's own score_band is kept unrenamed)"
+     },
+     "behaviour_score_change": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "customer_worst_dpd_days": {
+      "type": "BIGINT",
+      "kind": "copied_renamed",
+      "source": "retail_customer_month.worst_dpd_days"
+     },
+     "customer_worst_stage": {
+      "type": "BIGINT",
+      "kind": "copied_renamed",
+      "source": "retail_customer_month.worst_stage"
+     },
+     "tenure_months": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "accounts_held": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "collateral_value_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "derived",
+      "source": "SUM of the frozen collateral allocated/collateral value per exposure x period - the same aggregate grid.py joins"
+     },
+     "collateral_ltv_pct": {
+      "type": "DOUBLE",
+      "kind": "derived",
+      "source": "AVG(ltv_pct) of the frozen collateral rows per exposure x period - the same aggregate grid.py joins"
+     },
+     "ews_score": {
+      "type": "INTEGER",
+      "kind": "derived",
+      "source": "sum of the live gw-ews-1.0.0 rule weights, unchanged"
+     },
+     "ews_reasons": {
+      "type": "VARCHAR",
+      "kind": "derived",
+      "source": "concat_ws('; ') of the labels of the live rules that are true, unchanged"
+     },
+     "ews_ruleset_version": {
+      "type": "VARCHAR",
+      "kind": "derived",
+      "source": "literal gw-ews-1.0.0"
+     },
+     "ews_band": {
+      "type": "VARCHAR",
+      "kind": "derived",
+      "source": "ews.BANDS applied to ews_score, unchanged"
+     }
+    },
+    "ews_retail_owner.parquet": {
+     "tenant_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "dataset_release_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "domain_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "reporting_currency": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "customer_id": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "reporting_month": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month | retail_behaviour_month | retail_collateral_month"
+     },
+     "customer_segment": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "employment_type": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "region": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "tenure_months": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "accounts_held": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "behaviour_score": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "behaviour_score_previous": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "behaviour_score_change": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "score_band": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_account_month | retail_customer_month"
+     },
+     "score_band_previous": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "score_migration": {
+      "type": "VARCHAR",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "total_ead_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "total_ecl_sar_mn": {
+      "type": "DOUBLE",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "worst_stage": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "worst_dpd_days": {
+      "type": "BIGINT",
+      "kind": "copied_unchanged",
+      "source": "retail_customer_month"
+     },
+     "ews_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_release_id": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "source_table": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     },
+     "ews_grain": {
+      "type": "VARCHAR",
+      "kind": "provenance",
+      "source": "added by this package"
+     }
+    }
+   }
+  }
+ }
+}

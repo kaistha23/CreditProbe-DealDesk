@@ -1,0 +1,52 @@
+{
+ "module": "r5",
+ "utc": "20261012T030801Z",
+ "steps": 5,
+ "checks": 30,
+ "failed_steps": 1,
+ "passed": false,
+ "healing": [
+  {
+   "before": "ai_work",
+   "did": [
+    "ops/v5.sh start"
+   ]
+  }
+ ],
+ "failed": [
+  {
+   "n": 5,
+   "book": "retail",
+   "uat_step": "R4-A3-1",
+   "title": "Project thread: '5 high-alert Early Warning clients in Stage 1' returns a table through the forked Cockpit agent; Back returns to the project",
+   "checks": [
+    {
+     "check": "step completed",
+     "pass": false,
+     "expected": "no exception",
+     "seen": "Error: Locator.count: Target crashed "
+    },
+    {
+     "check": "label rule: no 'Synthetic' / 'Demo' on the screen",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    },
+    {
+     "check": "label rule: none in the data the screen received",
+     "pass": true,
+     "expected": "none",
+     "seen": "[]"
+    }
+   ],
+   "errors": [],
+   "seconds": 21.3,
+   "pass": false,
+   "screenshot": "(none: Page.screenshot: Target crashed \nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n)",
+   "part": "ai_work"
+  }
+ ],
+ "parts": [
+  "ai_work"
+ ]
+}

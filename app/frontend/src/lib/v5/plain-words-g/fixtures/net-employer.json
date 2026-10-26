@@ -1,0 +1,177 @@
+{
+ "period": "2026Q2",
+ "employer": {
+  "name": "Turaif First Properties",
+  "borrower_id": "CB03632",
+  "entity_id": null,
+  "sector": "Real Estate",
+  "rating": "A",
+  "ews_band": "moderate",
+  "credit_status": null,
+  "bureau": null
+ },
+ "totals": {
+  "contractors": 4,
+  "book_contractors": 4,
+  "exposure": 167.2303,
+  "non_funded": 41.698,
+  "attributable": 34.43588674,
+  "deal_desk_outstanding": 0.0,
+  "deal_desk_proposed": 0.0,
+  "own_exposure": 51.946799999999996,
+  "lg_outstanding": 0.0,
+  "due": 0.0,
+  "retention": 0.0,
+  "in_early_warning": 2,
+  "ews_exposure": 94.9476,
+  "high_dependence": 1
+ },
+ "appetite": {
+  "label": "Single obligor",
+  "basis": "CP-1.1: SAR 250m per obligor, funded and unfunded EAD",
+  "metric": "own exposure + attributable through contractors",
+  "value": 86.38268674,
+  "appetite": 200.0,
+  "trigger": 225.0,
+  "limit": 250.0,
+  "utilisation_pct": 34.553074695999996,
+  "status": "within appetite",
+  "employer_backlog_guide": {
+   "name": "employer_backlog",
+   "label": "Top-2 employers' share of a contractor's backlog",
+   "limit": 0.6,
+   "unit": "share",
+   "kind": "guide",
+   "basis": "Deal Desk products policy project.employer_concentration_max (contracting)"
+  },
+  "deal_desk_dependence": []
+ },
+ "contractors": [
+  {
+   "borrower_id": "CB01123",
+   "name": "Najran Engineering",
+   "sector": "Construction",
+   "is_contractor": true,
+   "ead": 42.3334,
+   "funded": 37.547799999999995,
+   "non_funded": 4.7856000000000005,
+   "project_finance": 37.547799999999995,
+   "ecl": 17.981563000000005,
+   "stage": 3,
+   "revenue_share_pct": 54.1,
+   "annual_paid_sar_mn": 9.3075,
+   "attributable": 22.902369399999998,
+   "rating": "BB+",
+   "ews_band": "high",
+   "dependence": "high",
+   "href": "/borrower-360?domain=corporate&customer_id=CB01123"
+  },
+  {
+   "borrower_id": "CB01248",
+   "name": "Arar Modern Engineering",
+   "sector": "Construction",
+   "is_contractor": true,
+   "ead": 52.6142,
+   "funded": 39.6819,
+   "non_funded": 12.9323,
+   "project_finance": 12.0207,
+   "ecl": 26.892780000000002,
+   "stage": 3,
+   "revenue_share_pct": 15.8,
+   "annual_paid_sar_mn": 1.4494,
+   "attributable": 8.3130436,
+   "rating": "CC",
+   "ews_band": "critical",
+   "dependence": "material",
+   "href": "/borrower-360?domain=corporate&customer_id=CB01248"
+  },
+  {
+   "borrower_id": "CB00807",
+   "name": "Sudair United Contracting",
+   "sector": "Construction",
+   "is_contractor": true,
+   "ead": 33.7159,
+   "funded": 17.407400000000003,
+   "non_funded": 16.308500000000002,
+   "project_finance": 4.9844,
+   "ecl": 0.230516,
+   "stage": 2,
+   "revenue_share_pct": 9.14,
+   "annual_paid_sar_mn": 3.3319,
+   "attributable": 3.08163326,
+   "rating": "BBB-",
+   "ews_band": "low",
+   "dependence": "low",
+   "href": "/borrower-360?domain=corporate&customer_id=CB00807"
+  },
+  {
+   "borrower_id": "CB02699",
+   "name": "Sakaka Integrated Industries",
+   "sector": "Manufacturing",
+   "is_contractor": false,
+   "ead": 38.5668,
+   "funded": 30.8952,
+   "non_funded": 7.6716,
+   "project_finance": 0.0,
+   "ecl": 0.15545667294471632,
+   "stage": 1,
+   "revenue_share_pct": 0.36,
+   "annual_paid_sar_mn": 0.1883,
+   "attributable": 0.13884048,
+   "rating": "BB",
+   "ews_band": "none",
+   "dependence": "low",
+   "href": "/borrower-360?domain=corporate&customer_id=CB02699"
+  }
+ ],
+ "projects": [],
+ "by_sector": [
+  {
+   "sector": "Construction",
+   "names": 3,
+   "ead": 128.6635,
+   "attributable": 34.297046259999995
+  },
+  {
+   "sector": "Manufacturing",
+   "names": 1,
+   "ead": 38.5668,
+   "attributable": 0.13884048
+  }
+ ],
+ "limits": [
+  "Contractors and suppliers are those whose payments from the employer the bank sees (SUPPLIES edges, rel-saudi-v1; 99.5% of borrowers carry one); a contractor paid through another bank is missing.",
+  "Attributable exposure assumes a contractor's risk to the employer is proportional to the share of its revenue the employer pays; project-level splits exist only for Deal Desk projects.",
+  "Book exposure is per contractor, not per project: the corporate book release has no project or payment-certificate fields; payment certificates and LGs by project come from Deal Desk (dd_project, dd_facility_limit).",
+  "No Deal Desk project names this employer."
+ ],
+ "coverage": {
+  "borrowers": 5412,
+  "with_supply_link": 5384,
+  "with_any_link": 5404,
+  "supply_link_pct": 99.48263118994826,
+  "any_link_pct": 99.85218033998522
+ },
+ "money_unit": "SAR million",
+ "text": {
+  "headline": "Turaif First Properties: bank exposure SAR 167m through 4 contractors and suppliers it pays, of which SAR 34.4m attributable to its payments (within appetite).",
+  "lines": [
+   "Direct exposure to Turaif First Properties itself: SAR 51.9m; total with contractors SAR 219m.",
+   "1 contractor takes 30% or more of revenue from it; largest exposure Najran Engineering (SAR 42.3m).",
+   "2 of its contractors are already in Early Warning (SAR 94.9m).",
+   "Against appetite: own plus attributable exposure (SAR 86.4m) is 35% of the SAR 250m single obligor limit (within appetite)."
+  ]
+ },
+ "view": {
+  "view": "intel_network_employer",
+  "key": "Turaif_First_Properties",
+  "inputs_sha256": "73128c9bdead09ad",
+  "path": "var/intel/network/employer/73128c9bdead09ad.json",
+  "content_sha256": "15335e19ba9ba6ef74d68a7bc93c671be2fb65cd3ba4f6333544db888b388cb6",
+  "published": true
+ },
+ "data_domains": {
+  "published_at": "2026-10-19T18:04:44Z",
+  "note": "Registered in Data Domains as Network intelligence \u00b7 net_employer_view"
+ }
+}

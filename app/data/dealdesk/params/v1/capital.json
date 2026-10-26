@@ -1,0 +1,26 @@
+{
+ "name": "capital",
+ "owner": "CFO",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Capital basis, target ratio, Tier 1, economic-capital settings, operational risk.",
+ "rows": {
+  "basis": "max",
+  "capital_ratio_target": 0.135,
+  "tier1_sar_mn": 28000.0,
+  "usd_sar": 3.75,
+  "economic": {
+   "confidence": 0.999,
+   "maturity_floor": 1.0,
+   "maturity_cap": 5.0,
+   "correlation_min": 0.12,
+   "correlation_max": 0.24,
+   "correlation_k": 50.0,
+   "pd_floor": 0.0003
+  },
+  "operational": {
+   "alpha": 0.15
+  }
+ }
+}

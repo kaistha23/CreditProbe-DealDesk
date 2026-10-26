@@ -1,0 +1,292 @@
+{
+ "book": "retail",
+ "as_of": "2026-08",
+ "delta": {
+  "zero_shock": {
+   "reported": 224.556578,
+   "start": 224.556578,
+   "scenario": 224.556578,
+   "start_minus_reported": 0.0,
+   "scenario_minus_start": 0.0
+  },
+  "pd_monotonic": {
+   "steps": [
+    {
+     "pd_change_pct": 10,
+     "ecl_change_pct": 5.789667794553769
+    },
+    {
+     "pd_change_pct": 25,
+     "ecl_change_pct": 14.35551842269074
+    },
+    {
+     "pd_change_pct": 50,
+     "ecl_change_pct": 28.328655781965207
+    },
+    {
+     "pd_change_pct": 100,
+     "ecl_change_pct": 143.9841231532292
+    }
+   ],
+   "pass": true
+  },
+  "rating_monotonic": {
+   "steps": [
+    {
+     "notches": 1,
+     "ecl_change_pct": 52.596777838652365
+    },
+    {
+     "notches": 2,
+     "ecl_change_pct": 135.23539479327835
+    },
+    {
+     "notches": 3,
+     "ecl_change_pct": 164.92947786181105
+    }
+   ],
+   "pass": true
+  },
+  "shapley_additivity": {
+   "difference": -2.2737367544323206e-13,
+   "pass": true
+  },
+  "determinism": {
+   "pass": true
+  }
+ },
+ "sensitivity_delta": [
+  {
+   "mev": "gdp_real",
+   "name": "Real GDP growth",
+   "adverse_1sd_shock": -3.6071,
+   "unit": "pp",
+   "ecl_change": 14.413048081087254,
+   "ecl_change_pct": 6.418448397039277
+  },
+  {
+   "mev": "gdp_nonoil",
+   "name": "Non-oil real GDP growth",
+   "adverse_1sd_shock": -2.8518,
+   "unit": "pp",
+   "ecl_change": 19.416590586557504,
+   "ecl_change_pct": 8.646636299631135
+  },
+  {
+   "mev": "brent",
+   "name": "Oil price (Brent)",
+   "adverse_1sd_shock": -41.0753,
+   "unit": "pct",
+   "ecl_change": 16.370670441493417,
+   "ecl_change_pct": 7.290220837571463
+  },
+  {
+   "mev": "cpi",
+   "name": "CPI inflation",
+   "adverse_1sd_shock": 2.1049,
+   "unit": "pp",
+   "ecl_change": 1.6133692779069975,
+   "ecl_change_pct": 0.7184689454552506
+  },
+  {
+   "mev": "unemployment",
+   "name": "Unemployment rate",
+   "adverse_1sd_shock": 0.8987,
+   "unit": "pp",
+   "ecl_change": 20.513608528804667,
+   "ecl_change_pct": 9.135162599781275
+  },
+  {
+   "mev": "repo",
+   "name": "SAMA repo (policy) rate",
+   "adverse_1sd_shock": 174.5402,
+   "unit": "bps",
+   "ecl_change": 15.089725255459769,
+   "ecl_change_pct": 6.719787676609397
+  },
+  {
+   "mev": "saibor_3m",
+   "name": "3-month SAIBOR",
+   "adverse_1sd_shock": 184.4968,
+   "unit": "bps",
+   "ecl_change": 14.755664673037302,
+   "ecl_change_pct": 6.571023126758416
+  },
+  {
+   "mev": "gov_spend",
+   "name": "Government expenditure",
+   "adverse_1sd_shock": -3.56,
+   "unit": "pp",
+   "ecl_change": 11.75270080178953,
+   "ecl_change_pct": 5.233737041445978
+  },
+  {
+   "mev": "re_price",
+   "name": "Real estate price index",
+   "adverse_1sd_shock": -6.903,
+   "unit": "pct",
+   "ecl_change": 17.827724291196034,
+   "ecl_change_pct": 7.939079073068184
+  },
+  {
+   "mev": "current_account",
+   "name": "Current account balance",
+   "adverse_1sd_shock": -12.5702,
+   "unit": "pp",
+   "ecl_change": 6.678099384383472,
+   "ecl_change_pct": 2.9739050371454594
+  },
+  {
+   "mev": "credit_growth",
+   "name": "Bank credit to the private sector",
+   "adverse_1sd_shock": -8.7456,
+   "unit": "pp",
+   "ecl_change": 9.009590603085144,
+   "ecl_change_pct": 4.012169531317468
+  }
+ ],
+ "xgboost": {
+  "zero_shock": {
+   "reported": 224.556578,
+   "start": 223.2851069250068,
+   "scenario": 223.2851069250068,
+   "start_minus_reported": -1.271471074993201,
+   "scenario_minus_start": 0.0
+  },
+  "pd_monotonic": {
+   "steps": [
+    {
+     "pd_change_pct": 10,
+     "ecl_change_pct": 5.8191940895121474
+    },
+    {
+     "pd_change_pct": 25,
+     "ecl_change_pct": 14.428687247274235
+    },
+    {
+     "pd_change_pct": 50,
+     "ecl_change_pct": 28.472724416998602
+    },
+    {
+     "pd_change_pct": 100,
+     "ecl_change_pct": 144.77055581303634
+    }
+   ],
+   "pass": true
+  },
+  "rating_monotonic": {
+   "steps": [
+    {
+     "notches": 1,
+     "ecl_change_pct": 55.76085005306211
+    },
+    {
+     "notches": 2,
+     "ecl_change_pct": 148.31644473169098
+    },
+    {
+     "notches": 3,
+     "ecl_change_pct": 185.47793250424445
+    }
+   ],
+   "pass": true
+  },
+  "shapley_additivity": {
+   "difference": 0.0,
+   "pass": true
+  },
+  "determinism": {
+   "pass": true
+  }
+ },
+ "sensitivity_xgboost": [
+  {
+   "mev": "gdp_real",
+   "name": "Real GDP growth",
+   "adverse_1sd_shock": -3.6071,
+   "unit": "pp",
+   "ecl_change": 5.625008489670876,
+   "ecl_change_pct": 2.519204512623454
+  },
+  {
+   "mev": "gdp_nonoil",
+   "name": "Non-oil real GDP growth",
+   "adverse_1sd_shock": -2.8518,
+   "unit": "pp",
+   "ecl_change": 5.704303875252833,
+   "ecl_change_pct": 2.5547175778135074
+  },
+  {
+   "mev": "brent",
+   "name": "Oil price (Brent)",
+   "adverse_1sd_shock": -41.0753,
+   "unit": "pct",
+   "ecl_change": 9.195049692954996,
+   "ecl_change_pct": 4.1180756834101215
+  },
+  {
+   "mev": "cpi",
+   "name": "CPI inflation",
+   "adverse_1sd_shock": 2.1049,
+   "unit": "pp",
+   "ecl_change": 0.5059843200056093,
+   "ecl_change_pct": 0.22660907705570832
+  },
+  {
+   "mev": "unemployment",
+   "name": "Unemployment rate",
+   "adverse_1sd_shock": 0.8987,
+   "unit": "pp",
+   "ecl_change": 6.603355818194046,
+   "ecl_change_pct": 2.9573650966393696
+  },
+  {
+   "mev": "repo",
+   "name": "SAMA repo (policy) rate",
+   "adverse_1sd_shock": 174.5402,
+   "unit": "bps",
+   "ecl_change": 5.648365002689815,
+   "ecl_change_pct": 2.5296649115907637
+  },
+  {
+   "mev": "saibor_3m",
+   "name": "3-month SAIBOR",
+   "adverse_1sd_shock": 184.4968,
+   "unit": "bps",
+   "ecl_change": 5.660999247409961,
+   "ecl_change_pct": 2.535323257950778
+  },
+  {
+   "mev": "gov_spend",
+   "name": "Government expenditure",
+   "adverse_1sd_shock": -3.56,
+   "unit": "pp",
+   "ecl_change": 5.355058661345424,
+   "ecl_change_pct": 2.3983053483025136
+  },
+  {
+   "mev": "re_price",
+   "name": "Real estate price index",
+   "adverse_1sd_shock": -6.903,
+   "unit": "pct",
+   "ecl_change": 5.541121973638667,
+   "ecl_change_pct": 2.4816352733725875
+  },
+  {
+   "mev": "current_account",
+   "name": "Current account balance",
+   "adverse_1sd_shock": -12.5702,
+   "unit": "pp",
+   "ecl_change": 1.3272192538709078,
+   "ecl_change_pct": 0.5944056332949567
+  },
+  {
+   "mev": "credit_growth",
+   "name": "Bank credit to the private sector",
+   "adverse_1sd_shock": -8.7456,
+   "unit": "pp",
+   "ecl_change": 4.714974671007866,
+   "ecl_change_pct": 2.111638673953947
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "name": "sa_risk_weights",
+ "owner": "Finance",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "SAMA Basel III Standardised Approach risk weights.",
+ "rows": {
+  "corporate_by_external": {
+   "AAA": 0.2,
+   "AA+": 0.2,
+   "AA": 0.2,
+   "AA-": 0.2,
+   "A+": 0.5,
+   "A": 0.5,
+   "A-": 0.5,
+   "BBB+": 0.75,
+   "BBB": 0.75,
+   "BBB-": 0.75,
+   "BB+": 1.0,
+   "BB": 1.0,
+   "BB-": 1.0,
+   "B+": 1.5,
+   "B": 1.5,
+   "B-": 1.5,
+   "CCC": 1.5,
+   "CC": 1.5,
+   "C": 1.5
+  },
+  "corporate_unrated": 1.0,
+  "sme_corporate": 0.85,
+  "sovereign": 0.0,
+  "gre": 0.2,
+  "ipre_ltv": [
+   {
+    "max_ltv": 0.6,
+    "rw": 0.7
+   },
+   {
+    "max_ltv": 0.8,
+    "rw": 0.9
+   },
+   {
+    "max_ltv": 9.99,
+    "rw": 1.1
+   }
+  ],
+  "adc": 1.5,
+  "guarantor": {
+   "government": 0.0,
+   "kafalah": 0.0,
+   "bank": 0.5,
+   "corporate": null,
+   "personal": null
+  },
+  "cash_collateral_rw": 0.0,
+  "fx_mismatch_haircut": 0.08
+ }
+}

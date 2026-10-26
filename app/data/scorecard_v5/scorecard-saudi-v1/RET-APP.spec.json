@@ -1,0 +1,696 @@
+{
+ "scorecard_id": "RET-APP",
+ "name": "Retail Application Scorecard",
+ "version": "2.1",
+ "type": "application",
+ "segment": "Retail",
+ "book": "retail",
+ "owner_key": "customer_id",
+ "unit_key": "account_id",
+ "period_col": "reporting_month",
+ "frequency": "monthly",
+ "development": [
+  "2025-01",
+  "2025-04"
+ ],
+ "monitoring": [
+  "2025-05",
+  "2025-08"
+ ],
+ "segment_col": "product",
+ "has_overrides": true,
+ "sample_pct": 100,
+ "description": "Scores new retail accounts at the point of decision: bureau, Open Banking and application data.",
+ "points": {
+  "base_score": 600.0,
+  "base_odds": 50.0,
+  "pdo": 40.0,
+  "factor": 57.70780163555854,
+  "offset": 374.245752409011
+ },
+ "intercept": 3.7392459893459082,
+ "variables": [
+  {
+   "name": "bureau_score",
+   "label": "Bureau score",
+   "type": "numeric",
+   "iv": 0.5581751232199166,
+   "coef": 0.827135110401141,
+   "direction": -1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 639.0,
+     "n": 3946,
+     "good": 3677,
+     "bad": 269,
+     "share": 0.0998027214325459,
+     "bad_rate": 0.06817029903699949,
+     "woe": -1.1153925819343578,
+     "label": "< 639",
+     "points": 45.09815159444911
+    },
+    {
+     "lo": 639.0,
+     "hi": 665.0,
+     "n": 3818,
+     "good": 3665,
+     "bad": 153,
+     "share": 0.09656532955637614,
+     "bad_rate": 0.04007333682556312,
+     "woe": -0.555793180424509,
+     "label": "639 to < 665",
+     "points": 71.80903353870488
+    },
+    {
+     "lo": 665.0,
+     "hi": 685.0,
+     "n": 3984,
+     "good": 3856,
+     "bad": 128,
+     "share": 0.1007638221457838,
+     "bad_rate": 0.0321285140562249,
+     "woe": -0.3272262330221193,
+     "label": "665 to < 685",
+     "points": 82.71902510043944
+    },
+    {
+     "lo": 685.0,
+     "hi": 702.0,
+     "n": 3962,
+     "good": 3869,
+     "bad": 93,
+     "share": 0.10020739541706712,
+     "bad_rate": 0.023472993437657748,
+     "woe": -0.0058935016450261295,
+     "label": "685 to < 702",
+     "points": 98.05692687353083
+    },
+    {
+     "lo": 702.0,
+     "hi": 718.0,
+     "n": 3973,
+     "good": 3900,
+     "bad": 73,
+     "share": 0.10048560878142547,
+     "bad_rate": 0.018374024666498866,
+     "woe": 0.24276197874867808,
+     "label": "702 to < 718",
+     "points": 109.925787282724
+    },
+    {
+     "lo": 718.0,
+     "hi": 733.0,
+     "n": 3834,
+     "good": 3778,
+     "bad": 56,
+     "share": 0.09697000354089737,
+     "bad_rate": 0.014606155451225874,
+     "woe": 0.47402910224748074,
+     "label": "718 to < 733",
+     "points": 120.9646640518862
+    },
+    {
+     "lo": 733.0,
+     "hi": 750.0,
+     "n": 3995,
+     "good": 3938,
+     "bad": 57,
+     "share": 0.10104203551014214,
+     "bad_rate": 0.014267834793491864,
+     "woe": 0.4979576272791756,
+     "label": "733 to < 750",
+     "points": 122.10682397110213
+    },
+    {
+     "lo": 750.0,
+     "hi": 769.0,
+     "n": 3978,
+     "good": 3928,
+     "bad": 50,
+     "share": 0.10061206940158834,
+     "bad_rate": 0.01256913021618904,
+     "woe": 0.6252269722736635,
+     "label": "750 to < 769",
+     "points": 128.1816632938363
+    },
+    {
+     "lo": 769.0,
+     "hi": 796.0,
+     "n": 4057,
+     "good": 4028,
+     "bad": 29,
+     "share": 0.10261014720016187,
+     "bad_rate": 0.007148139018979541,
+     "woe": 1.187946469810578,
+     "label": "769 to < 796",
+     "points": 155.04147412616598
+    },
+    {
+     "lo": 796.0,
+     "hi": Infinity,
+     "n": 3991,
+     "good": 3972,
+     "bad": 19,
+     "share": 0.10094086701401184,
+     "bad_rate": 0.00476071160110248,
+     "woe": 1.587923788780271,
+     "label": "\u2265 796",
+     "points": 174.13325106258463
+    }
+   ]
+  },
+  {
+   "name": "enquiries_3m",
+   "label": "Bureau enquiries, last 3 months",
+   "type": "numeric",
+   "iv": 0.18052055256237914,
+   "coef": 0.2871834941650264,
+   "direction": 1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 1.0,
+     "n": 15309,
+     "good": 15082,
+     "bad": 227,
+     "share": 0.3871971268147099,
+     "bad_rate": 0.01482787902540989,
+     "woe": 0.465327527863013,
+     "label": "< 1",
+     "points": 106.04998297482175
+    },
+    {
+     "lo": 1.0,
+     "hi": 2.0,
+     "n": 13339,
+     "good": 13055,
+     "bad": 284,
+     "share": 0.3373716424705347,
+     "bad_rate": 0.021290951345678086,
+     "woe": 0.0974188822746443,
+     "label": "1 to < 2",
+     "points": 99.952733020592
+    },
+    {
+     "lo": 2.0,
+     "hi": 3.0,
+     "n": 6608,
+     "good": 6402,
+     "bad": 206,
+     "share": 0.1671303556072639,
+     "bad_rate": 0.031174334140435835,
+     "woe": -0.29466923838830583,
+     "label": "2 to < 3",
+     "points": 93.45476320000516
+    },
+    {
+     "lo": 3.0,
+     "hi": Infinity,
+     "n": 4282,
+     "good": 4072,
+     "bad": 210,
+     "share": 0.10830087510749152,
+     "bad_rate": 0.04904250350303596,
+     "woe": -0.7662859567071346,
+     "label": "\u2265 3",
+     "points": 85.63878755315733
+    }
+   ]
+  },
+  {
+   "name": "balance_buffer_months",
+   "label": "Balance buffer (months)",
+   "type": "numeric",
+   "iv": 0.1718827715734501,
+   "coef": 0.24054713405900655,
+   "direction": -1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 1.2599999904632568,
+     "n": 3941,
+     "good": 3769,
+     "bad": 172,
+     "share": 0.09967626081238302,
+     "bad_rate": 0.04364374524232428,
+     "woe": -0.6445122348805564,
+     "label": "< 1.26",
+     "points": 89.39147439566771
+    },
+    {
+     "lo": 1.2599999904632568,
+     "hi": 1.659999966621399,
+     "n": 3909,
+     "good": 3786,
+     "bad": 123,
+     "share": 0.09886691284334058,
+     "bad_rate": 0.031465848042977744,
+     "woe": -0.30585641157505333,
+     "label": "1.26 to < 1.66",
+     "points": 94.0925070198053
+    },
+    {
+     "lo": 1.659999966621399,
+     "hi": 2.0199999809265137,
+     "n": 3988,
+     "good": 3874,
+     "bad": 114,
+     "share": 0.1008649906419141,
+     "bad_rate": 0.028585757271815445,
+     "woe": -0.20721556585118817,
+     "label": "1.66 to < 2.02",
+     "points": 95.4617846223407
+    },
+    {
+     "lo": 2.0199999809265137,
+     "hi": 2.380000114440918,
+     "n": 3898,
+     "good": 3792,
+     "bad": 106,
+     "share": 0.09858869947898224,
+     "bad_rate": 0.02719343252950231,
+     "woe": -0.15617691798769112,
+     "label": "2.02 to < 2.38",
+     "points": 96.17027487169254
+    },
+    {
+     "lo": 2.380000114440918,
+     "hi": 2.7899999618530273,
+     "n": 4017,
+     "good": 3914,
+     "bad": 103,
+     "share": 0.10159846223885882,
+     "bad_rate": 0.02564102564102564,
+     "woe": -0.09594137041835361,
+     "label": "2.38 to < 2.79",
+     "points": 97.00643139040326
+    },
+    {
+     "lo": 2.7899999618530273,
+     "hi": 3.8399999141693115,
+     "n": 7880,
+     "good": 7726,
+     "bad": 154,
+     "share": 0.1993019373767009,
+     "bad_rate": 0.01954314720812183,
+     "woe": 0.18340451727505078,
+     "label": "2.79 to < 3.84",
+     "points": 100.88415632850572
+    },
+    {
+     "lo": 3.8399999141693115,
+     "hi": 6.090000152587891,
+     "n": 7936,
+     "good": 7819,
+     "bad": 117,
+     "share": 0.20071829632252516,
+     "bad_rate": 0.014742943548387098,
+     "woe": 0.4691249152311581,
+     "label": "3.84 to < 6.09",
+     "points": 104.85036868848496
+    },
+    {
+     "lo": 6.090000152587891,
+     "hi": Infinity,
+     "n": 3969,
+     "good": 3931,
+     "bad": 38,
+     "share": 0.10038444028529515,
+     "bad_rate": 0.009574200050390527,
+     "woe": 0.8973054260769335,
+     "label": "\u2265 6.09",
+     "points": 110.79413345490401
+    }
+   ]
+  },
+  {
+   "name": "returned_payments_3m",
+   "label": "Returned payments, last 3 months",
+   "type": "numeric",
+   "iv": 0.10448466063397979,
+   "coef": 0.5785050499073343,
+   "direction": 1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 1.0,
+     "n": 28832,
+     "good": 28294,
+     "bad": 538,
+     "share": 0.7292225201072386,
+     "bad_rate": 0.01865982241953385,
+     "woe": 0.23282257779654708,
+     "label": "< 1",
+     "points": 106.11084460043031
+    },
+    {
+     "lo": 1.0,
+     "hi": Infinity,
+     "n": 10706,
+     "good": 10317,
+     "bad": 389,
+     "share": 0.2707774798927614,
+     "bad_rate": 0.0363347655520269,
+     "woe": -0.45207974774496473,
+     "label": "\u2265 1",
+     "points": 83.24589094375015
+    }
+   ]
+  },
+  {
+   "name": "external_facilities",
+   "label": "External facilities",
+   "type": "numeric",
+   "iv": 0.02891102462671446,
+   "coef": 0.26983211311291055,
+   "direction": 1,
+   "bins": [
+    {
+     "lo": -Infinity,
+     "hi": 1.0,
+     "n": 8398,
+     "good": 8249,
+     "bad": 149,
+     "share": 0.2124032576255754,
+     "bad_rate": 0.01774231959990474,
+     "woe": 0.2817988345398592,
+     "label": "< 1",
+     "points": 102.72624383245372
+    },
+    {
+     "lo": 1.0,
+     "hi": 2.0,
+     "n": 12649,
+     "good": 12369,
+     "bad": 280,
+     "share": 0.31992007688805707,
+     "bad_rate": 0.02213613724405091,
+     "woe": 0.057602675174091046,
+     "label": "1 to < 2",
+     "points": 99.23519170787642
+    },
+    {
+     "lo": 2.0,
+     "hi": 3.0,
+     "n": 10096,
+     "good": 9842,
+     "bad": 254,
+     "share": 0.2553492842328899,
+     "bad_rate": 0.025158478605388272,
+     "woe": -0.0736484572335834,
+     "label": "2 to < 3",
+     "points": 97.19142545451504
+    },
+    {
+     "lo": 3.0,
+     "hi": Infinity,
+     "n": 8395,
+     "good": 8151,
+     "bad": 244,
+     "share": 0.21232738125347767,
+     "bad_rate": 0.029064919594997022,
+     "woe": -0.22207071459611644,
+     "label": "\u2265 3",
+     "points": 94.88028043594812
+    }
+   ]
+  },
+  {
+   "name": "employment_type",
+   "label": "Employment type",
+   "type": "categorical",
+   "iv": 0.021751445253020703,
+   "coef": 0.9851930289532888,
+   "direction": 0,
+   "bins": [
+    {
+     "cats": [
+      "Salaried-Private"
+     ],
+     "n": 17045,
+     "good": 16664,
+     "bad": 381,
+     "share": 0.43110425413526227,
+     "bad_rate": 0.022352596069228514,
+     "woe": 0.048112492506030655,
+     "label": "Salaried-Private",
+     "points": 101.0735914909408
+    },
+    {
+     "cats": [
+      "Salaried-Government"
+     ],
+     "n": 11963,
+     "good": 11719,
+     "bad": 244,
+     "share": 0.30256967980170973,
+     "bad_rate": 0.020396221683524198,
+     "woe": 0.1409814471290832,
+     "label": "Salaried-Government",
+     "points": 106.35350024722538
+    },
+    {
+     "cats": [
+      "Self-employed"
+     ],
+     "n": 6189,
+     "good": 6024,
+     "bad": 165,
+     "share": 0.15653295563761443,
+     "bad_rate": 0.02666020358700921,
+     "woe": -0.13419407151468515,
+     "label": "Self-employed",
+     "points": 90.70885735984076
+    },
+    {
+     "cats": [
+      "Non-salaried"
+     ],
+     "n": 4341,
+     "good": 4204,
+     "bad": 137,
+     "share": 0.10979311042541352,
+     "bad_rate": 0.03155954849113107,
+     "woe": -0.3085259018945721,
+     "label": "Non-salaried",
+     "points": 80.79751334333989
+    }
+   ]
+  }
+ ],
+ "excluded": [
+  {
+   "name": "external_leverage_x",
+   "label": "External leverage (x)",
+   "iv": 0.448385775518228,
+   "type": "numeric"
+  },
+  {
+   "name": "product",
+   "label": "Product",
+   "iv": 0.018035339190643568,
+   "type": "categorical"
+  },
+  {
+   "name": "origination_channel",
+   "label": "Origination channel",
+   "iv": 0.0017578959931900692,
+   "type": "categorical"
+  },
+  {
+   "name": "region",
+   "label": "Region",
+   "iv": 0.0019120439846313883,
+   "type": "categorical"
+  },
+  {
+   "name": "customer_segment",
+   "label": "Customer segment",
+   "iv": 0.0015012645429644026,
+   "type": "categorical"
+  },
+  {
+   "name": "tenure_months",
+   "label": "Customer tenure (months)",
+   "iv": 0.014845183556580089,
+   "type": "numeric"
+  },
+  {
+   "name": "limit_sar_k",
+   "label": "Credit limit (SAR thousand)",
+   "iv": 0.01912270653446232,
+   "type": "numeric"
+  },
+  {
+   "name": "salaried_flag",
+   "label": "Salary credited (Open Banking)",
+   "iv": 0.017968249603714036,
+   "type": "numeric"
+  }
+ ],
+ "grades": [
+  {
+   "low": 679.0447301406774,
+   "high": null,
+   "pd_dev": 0.004827875734676742,
+   "n_dev": 2381,
+   "pd": 0.004827875734676742,
+   "grade": "G1"
+  },
+  {
+   "low": 657.7470156118542,
+   "high": 679.0447301406774,
+   "pd_dev": 0.0063326766113143826,
+   "n_dev": 3552,
+   "pd": 0.0063326766113143826,
+   "grade": "G2"
+  },
+  {
+   "low": 635.1369086252905,
+   "high": 657.7470156118542,
+   "pd_dev": 0.007482993197278911,
+   "n_dev": 5144,
+   "pd": 0.007482993197278911,
+   "grade": "G3"
+  },
+  {
+   "low": 620.1816548569677,
+   "high": 635.1369086252905,
+   "pd_dev": 0.014522821576763486,
+   "n_dev": 5542,
+   "pd": 0.014522821576763486,
+   "grade": "G4"
+  },
+  {
+   "low": 601.352700959299,
+   "high": 620.1816548569677,
+   "pd_dev": 0.01495253164556962,
+   "n_dev": 6319,
+   "pd": 0.01495253164556962,
+   "grade": "G5"
+  },
+  {
+   "low": 576.5269991737321,
+   "high": 601.352700959299,
+   "pd_dev": 0.02508560369212446,
+   "n_dev": 6716,
+   "pd": 0.02508560369212446,
+   "grade": "G6"
+  },
+  {
+   "low": 542.6641488441705,
+   "high": 576.5269991737321,
+   "pd_dev": 0.039019046013821,
+   "n_dev": 5932,
+   "pd": 0.039019046013821,
+   "grade": "G7"
+  },
+  {
+   "low": null,
+   "high": 542.6641488441705,
+   "pd_dev": 0.07171768277257778,
+   "n_dev": 3952,
+   "pd": 0.07171768277257778,
+   "grade": "G8"
+  }
+ ],
+ "candidates": [
+  {
+   "name": "bureau_score",
+   "label": "Bureau score",
+   "type": "numeric"
+  },
+  {
+   "name": "enquiries_3m",
+   "label": "Bureau enquiries, last 3 months",
+   "type": "numeric"
+  },
+  {
+   "name": "external_facilities",
+   "label": "External facilities",
+   "type": "numeric"
+  },
+  {
+   "name": "external_leverage_x",
+   "label": "External leverage (x)",
+   "type": "numeric"
+  },
+  {
+   "name": "employment_type",
+   "label": "Employment type",
+   "type": "categorical"
+  },
+  {
+   "name": "product",
+   "label": "Product",
+   "type": "categorical"
+  },
+  {
+   "name": "origination_channel",
+   "label": "Origination channel",
+   "type": "categorical"
+  },
+  {
+   "name": "region",
+   "label": "Region",
+   "type": "categorical"
+  },
+  {
+   "name": "customer_segment",
+   "label": "Customer segment",
+   "type": "categorical"
+  },
+  {
+   "name": "tenure_months",
+   "label": "Customer tenure (months)",
+   "type": "numeric"
+  },
+  {
+   "name": "limit_sar_k",
+   "label": "Credit limit (SAR thousand)",
+   "type": "numeric"
+  },
+  {
+   "name": "salaried_flag",
+   "label": "Salary credited (Open Banking)",
+   "type": "numeric"
+  },
+  {
+   "name": "balance_buffer_months",
+   "label": "Balance buffer (months)",
+   "type": "numeric"
+  },
+  {
+   "name": "returned_payments_3m",
+   "label": "Returned payments, last 3 months",
+   "type": "numeric"
+  }
+ ],
+ "periods": [
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "rows": 236920,
+ "development_rows": 39538,
+ "development_defaults": 953,
+ "last_matured": "2025-08"
+}

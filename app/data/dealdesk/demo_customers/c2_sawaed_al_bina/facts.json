@@ -1,0 +1,2673 @@
+{
+ "key": "c2",
+ "br_alone": true,
+ "people": [
+  {
+   "key": "turki",
+   "name": "Turki Hamad Al-Sawaed",
+   "id_number": "1034578210",
+   "nationality": "Saudi",
+   "dob": "1968-03-14",
+   "id_issue": "2021-06-01",
+   "id_expiry": "2031-05-31",
+   "role": "Chairman and General Manager (65%)",
+   "guarantor": true,
+   "simah": {
+    "date": "2026-10-11",
+    "number": "SC-26-8812450",
+    "score": 706,
+    "worst": "Current (no delinquency)",
+    "facilities": [
+     {
+      "lender": "Sandstone Harbour Bank",
+      "product": "Personal finance",
+      "limit": 3.0,
+      "outstanding": 2.1,
+      "overdue": 0.0,
+      "status": "Current"
+     },
+     {
+      "lender": "Arabian Crescent Bank",
+      "product": "Credit card",
+      "limit": 0.1,
+      "outstanding": 0.024,
+      "overdue": 0.0,
+      "status": "Current"
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Sawaed Al Bina Contracting Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 160.0,
+      "status": "Current"
+     },
+     {
+      "beneficiary": "Sawaed Al Bina Contracting Co.",
+      "lender": "Arabian Crescent Bank",
+      "amount": 140.3,
+      "status": "Current"
+     }
+    ],
+    "history": "24 of 24 months current on own facilities and on guaranteed facilities."
+   },
+   "pnw": {
+    "date": "2026-06-30",
+    "assets": [
+     {
+      "asset": "Shares",
+      "description": "65% of Sawaed Al Bina Contracting Co. (owner's valuation)",
+      "value": 118.0
+     },
+     {
+      "asset": "Real estate",
+      "description": "Villa, Al Shati district, Dammam (own valuation)",
+      "value": 9.5
+     },
+     {
+      "asset": "Real estate",
+      "description": "Land plot, Al Khobar (1,850 sq m)",
+      "value": 14.2
+     },
+     {
+      "asset": "Shares",
+      "description": "Sawaed Real Estate Co. (100%)",
+      "value": 8.0
+     },
+     {
+      "asset": "Listed shares",
+      "description": "Portfolio at market value",
+      "value": 5.4
+     },
+     {
+      "asset": "Cash and deposits",
+      "description": "Current and deposit accounts",
+      "value": 6.8
+     },
+     {
+      "asset": "Vehicles",
+      "description": "Two vehicles",
+      "value": 0.5
+     }
+    ],
+    "liabilities": [
+     {
+      "liability": "Personal finance",
+      "description": "Sandstone Harbour Bank",
+      "value": 2.1
+     },
+     {
+      "liability": "Credit card",
+      "description": "Arabian Crescent Bank",
+      "value": 0.024
+     }
+    ]
+   }
+  },
+  {
+   "key": "nasser",
+   "name": "Nasser Hamad Al-Sawaed",
+   "id_number": "1046723985",
+   "nationality": "Saudi",
+   "dob": "1973-11-02",
+   "id_issue": "2019-02-10",
+   "id_expiry": "2029-02-09",
+   "role": "Partner (35%); owner of Sawaed Heavy Equipment Rental Co.",
+   "guarantor": true,
+   "simah": {
+    "date": "2026-10-11",
+    "number": "SC-26-8812451",
+    "score": 588,
+    "worst": "60-89 days past due (07/2026, as guarantor)",
+    "facilities": [
+     {
+      "lender": "Arabian Crescent Bank",
+      "product": "Auto lease",
+      "limit": 0.42,
+      "outstanding": 0.188,
+      "overdue": 0.0,
+      "status": "Current"
+     }
+    ],
+    "guarantees": [
+     {
+      "beneficiary": "Sawaed Al Bina Contracting Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 160.0,
+      "status": "Current"
+     },
+     {
+      "beneficiary": "Sawaed Heavy Equipment Rental Co.",
+      "lender": "Sandstone Harbour Bank",
+      "amount": 18.0,
+      "status": "Past due 60-89 days in 07/2026; 30 days at 09/2026"
+     }
+    ],
+    "history": "Own facilities current. Guaranteed facility of Sawaed Heavy Equipment Rental Co. past due 31-59 days in 05-06/2026, 60-89 days in 07/2026, 30 days at 30/09/2026."
+   }
+  }
+ ],
+ "fs": {
+  "FY2023": {
+   "revenue": 351.8,
+   "cost_of_sales": 306.4,
+   "operating_expenses": 19.2,
+   "finance_cost": 7.9,
+   "zakat": 1.4,
+   "depreciation": 10.1,
+   "cash": 17.2,
+   "trade_receivables": 79.5,
+   "retention_receivables": 21.4,
+   "contract_assets": 48.8,
+   "inventory": 9.7,
+   "due_from_related": 4.1,
+   "other_current_assets": 10.6,
+   "ppe": 66.2,
+   "other_noncurrent_assets": 2.8,
+   "short_term_borrowings": 58.0,
+   "trade_payables": 47.2,
+   "due_to_related": 1.5,
+   "current_portion_ltd": 9.0,
+   "long_term_borrowings": 36.0,
+   "end_of_service": 9.6,
+   "share_capital": 30.0,
+   "statutory_reserve": 11.6,
+   "retained_earnings": 46.1,
+   "other_current_liabilities": 11.3,
+   "gross_profit": 45.4,
+   "operating_profit": 26.2,
+   "net_profit": 16.9,
+   "current_assets": 191.3,
+   "total_assets": 260.3,
+   "total_equity": 87.7,
+   "current_liabilities": 127.0,
+   "total_liabilities": 172.6,
+   "ebitda": 36.3,
+   "operating_cash_flow": 21.3
+  },
+  "FY2024": {
+   "revenue": 402.6,
+   "cost_of_sales": 352.3,
+   "operating_expenses": 21.4,
+   "finance_cost": 9.8,
+   "zakat": 1.6,
+   "depreciation": 11.2,
+   "cash": 19.8,
+   "trade_receivables": 88.1,
+   "retention_receivables": 27.9,
+   "contract_assets": 61.2,
+   "inventory": 10.9,
+   "due_from_related": 9.6,
+   "other_current_assets": 12.0,
+   "ppe": 70.3,
+   "other_noncurrent_assets": 3.0,
+   "short_term_borrowings": 71.4,
+   "trade_payables": 51.0,
+   "due_to_related": 1.8,
+   "current_portion_ltd": 9.0,
+   "long_term_borrowings": 18.0,
+   "end_of_service": 11.0,
+   "share_capital": 50.0,
+   "statutory_reserve": 13.3,
+   "retained_earnings": 39.3,
+   "other_current_liabilities": 38.0,
+   "gross_profit": 50.3,
+   "operating_profit": 28.9,
+   "net_profit": 17.5,
+   "current_assets": 229.5,
+   "total_assets": 302.8,
+   "total_equity": 102.6,
+   "current_liabilities": 171.2,
+   "total_liabilities": 200.2,
+   "ebitda": 40.1,
+   "operating_cash_flow": 25.3
+  },
+  "FY2025": {
+   "revenue": 468.2,
+   "cost_of_sales": 413.0,
+   "operating_expenses": 23.9,
+   "finance_cost": 12.6,
+   "zakat": 1.8,
+   "depreciation": 12.4,
+   "cash": 14.6,
+   "trade_receivables": 96.4,
+   "retention_receivables": 41.8,
+   "contract_assets": 88.7,
+   "inventory": 12.3,
+   "due_from_related": 18.9,
+   "other_current_assets": 14.1,
+   "ppe": 74.5,
+   "other_noncurrent_assets": 3.2,
+   "short_term_borrowings": 98.6,
+   "trade_payables": 71.2,
+   "due_to_related": 2.1,
+   "current_portion_ltd": 9.0,
+   "long_term_borrowings": 18.0,
+   "end_of_service": 12.7,
+   "share_capital": 50.0,
+   "statutory_reserve": 15.0,
+   "retained_earnings": 49.5,
+   "other_current_liabilities": 38.4,
+   "gross_profit": 55.2,
+   "operating_profit": 31.3,
+   "net_profit": 16.9,
+   "current_assets": 286.8,
+   "total_assets": 364.5,
+   "total_equity": 114.5,
+   "current_liabilities": 219.3,
+   "total_liabilities": 250.0,
+   "ebitda": 43.7,
+   "operating_cash_flow": -10.6
+  },
+  "9M2026": {
+   "revenue": 352.4,
+   "cost_of_sales": 314.0,
+   "operating_expenses": 18.6,
+   "finance_cost": 11.1,
+   "zakat": 0.0,
+   "depreciation": 9.6,
+   "cash": 9.8,
+   "trade_receivables": 104.6,
+   "retention_receivables": 55.436,
+   "contract_assets": 97.3,
+   "inventory": 13.0,
+   "due_from_related": 24.6,
+   "other_current_assets": 15.2,
+   "ppe": 76.0,
+   "other_noncurrent_assets": 3.3,
+   "short_term_borrowings": 109.0,
+   "trade_payables": 74.1,
+   "due_to_related": 2.3,
+   "current_portion_ltd": 9.0,
+   "long_term_borrowings": 11.25,
+   "end_of_service": 13.6,
+   "share_capital": 50.0,
+   "statutory_reserve": 15.0,
+   "retained_earnings": 58.2,
+   "other_current_liabilities": 56.786,
+   "gross_profit": 38.4,
+   "operating_profit": 19.8,
+   "net_profit": 8.7,
+   "current_assets": 319.936,
+   "total_assets": 399.236,
+   "total_equity": 123.2,
+   "current_liabilities": 251.186,
+   "total_liabilities": 276.036,
+   "ebitda": 29.4,
+   "months": 9,
+   "operating_cash_flow": 2.75
+  }
+ },
+ "audit": {
+  "FY2024": {
+   "auditor": "Qimam Al Sharq Certified Accountants",
+   "opinion": "Unqualified",
+   "qawaem": "QW-2025-2050117342",
+   "city": "Dammam",
+   "partner": "Saleh Al-Dossary",
+   "licence": "512",
+   "signed": "2025-04-24"
+  },
+  "FY2025": {
+   "auditor": "Qimam Al Sharq Certified Accountants",
+   "opinion": "Unqualified, with emphasis of matter",
+   "qawaem": "QW-2026-2050117342",
+   "city": "Dammam",
+   "partner": "Saleh Al-Dossary",
+   "licence": "512",
+   "signed": "2026-04-27",
+   "opinion_text": "In our opinion, the financial statements present fairly, in all material respects, the financial position of Sawaed Al Bina Contracting Co. as at 31/12/2025 and its financial performance and cash flows for the year then ended in accordance with IFRS as endorsed in the Kingdom. Emphasis of matter: we draw attention to Note 9, which describes that certified amounts of SAR 23,239,000 due from a government-linked employer were unpaid at the reporting date, of which SAR 7,667,000 beyond the contractual payment terms, and that the Company's claim for an extension of time on the related project is pending the employer's approval. Our opinion is not modified in respect of this matter."
+  }
+ },
+ "notes": {
+  "FY2024": [
+   [
+    "Note 9 — Trade receivables and retention",
+    "Trade receivables SAR 88,100,000 (2023: 79,500,000), net of an allowance of SAR 2,300,000. Retention receivables SAR 27,900,000 are recoverable on completion and expiry of the defects liability periods."
+   ],
+   [
+    "Note 14 — Related parties",
+    "Due from Sawaed Heavy Equipment Rental Co. (an entity owned by a partner) SAR 9,600,000 (2023: 4,100,000), being advances for equipment hire. Equipment hire charged by the related party: SAR 14,200,000."
+   ],
+   [
+    "Note 18 — Contingent liabilities",
+    "Letters of guarantee outstanding SAR 96,300,000 (2023: 81,000,000) and letters of credit SAR 4,100,000."
+   ]
+  ],
+  "FY2025": [
+   [
+    "Note 9 — Trade receivables and retention",
+    "Trade receivables SAR 96,400,000 (2024: 88,100,000) include SAR 23,239,000 certified by the Engineer on the Eastern Corridor Logistics Hub — Package B for Sharqiya Logistics Development Co. (SLDC) and unpaid at 31/12/2025, of which SAR 7,667,000 beyond the 56-day payment term. The Company submitted a claim for an extension of time of five months; the employer has not yet approved it. Retention receivables SAR 41,800,000 (2024: 27,900,000)."
+   ],
+   [
+    "Note 11 — Contract assets",
+    "Work performed not yet certified SAR 88,700,000 (2024: 61,200,000), including variation claims of SAR 12,400,000 not yet acknowledged by the employers."
+   ],
+   [
+    "Note 14 — Related parties",
+    "Due from Sawaed Heavy Equipment Rental Co. SAR 18,900,000 (2024: 9,600,000): equipment-hire advances, unsecured, no fixed repayment date. Equipment hire charged: SAR 17,800,000."
+   ],
+   [
+    "Note 18 — Contingent liabilities",
+    "Letters of guarantee SAR 119,600,000 (2024: 96,300,000): Sandstone Harbour Bank SAR 60,600,000, Arabian Crescent Bank SAR 59,000,000. Letters of credit SAR 6,300,000."
+   ],
+   [
+    "Note 22 — Borrowings",
+    "Short-term Murabaha and overdraft Sandstone Harbour Bank SAR 57,200,000, Arabian Crescent Bank SAR 41,400,000; equipment term loan (Arabian Crescent Bank) SAR 27,000,000 repayable quarterly to 2028, of which SAR 9,000,000 current."
+   ]
+  ]
+ },
+ "inhouse_by": "Omar Khalil Haddad",
+ "inhouse_date": "2026-10-12",
+ "inhouse_notes": [
+  "Retention receivables and contract assets per the project schedule. Package B certificates IPC-12 to IPC-17 (SAR 69,812,000 net) were outstanding at 30/09/2026."
+ ],
+ "vat": [
+  {
+   "period": "2025-10",
+   "from": "2025-10-01",
+   "to": "2025-10-31",
+   "taxable_sales": 40.1,
+   "zero_rated": 0.0,
+   "output_vat": 6.015,
+   "input_vat": 4.336,
+   "filed_on": "2025-11-19"
+  },
+  {
+   "period": "2025-11",
+   "from": "2025-11-01",
+   "to": "2025-11-30",
+   "taxable_sales": 41.907,
+   "zero_rated": 0.0,
+   "output_vat": 6.286,
+   "input_vat": 3.999,
+   "filed_on": "2025-12-19"
+  },
+  {
+   "period": "2025-12",
+   "from": "2025-12-01",
+   "to": "2025-12-31",
+   "taxable_sales": 39.899,
+   "zero_rated": 0.0,
+   "output_vat": 5.985,
+   "input_vat": 4.008,
+   "filed_on": "2026-01-19"
+  },
+  {
+   "period": "2026-01",
+   "from": "2026-01-01",
+   "to": "2026-01-31",
+   "taxable_sales": 39.749,
+   "zero_rated": 0.0,
+   "output_vat": 5.962,
+   "input_vat": 4.079,
+   "filed_on": "2026-02-19"
+  },
+  {
+   "period": "2026-02",
+   "from": "2026-02-01",
+   "to": "2026-02-28",
+   "taxable_sales": 36.132,
+   "zero_rated": 0.0,
+   "output_vat": 5.42,
+   "input_vat": 3.751,
+   "filed_on": "2026-03-19"
+  },
+  {
+   "period": "2026-03",
+   "from": "2026-03-01",
+   "to": "2026-03-31",
+   "taxable_sales": 39.122,
+   "zero_rated": 0.0,
+   "output_vat": 5.868,
+   "input_vat": 4.128,
+   "filed_on": "2026-04-19"
+  },
+  {
+   "period": "2026-04",
+   "from": "2026-04-01",
+   "to": "2026-04-30",
+   "taxable_sales": 37.798,
+   "zero_rated": 0.0,
+   "output_vat": 5.67,
+   "input_vat": 3.808,
+   "filed_on": "2026-05-19"
+  },
+  {
+   "period": "2026-05",
+   "from": "2026-05-01",
+   "to": "2026-05-31",
+   "taxable_sales": 37.53,
+   "zero_rated": 0.0,
+   "output_vat": 5.63,
+   "input_vat": 4.047,
+   "filed_on": "2026-06-19"
+  },
+  {
+   "period": "2026-06",
+   "from": "2026-06-01",
+   "to": "2026-06-30",
+   "taxable_sales": 40.025,
+   "zero_rated": 0.0,
+   "output_vat": 6.004,
+   "input_vat": 4.188,
+   "filed_on": "2026-07-19"
+  },
+  {
+   "period": "2026-07",
+   "from": "2026-07-01",
+   "to": "2026-07-31",
+   "taxable_sales": 40.241,
+   "zero_rated": 0.0,
+   "output_vat": 6.036,
+   "input_vat": 4.195,
+   "filed_on": "2026-08-19"
+  },
+  {
+   "period": "2026-08",
+   "from": "2026-08-01",
+   "to": "2026-08-31",
+   "taxable_sales": 38.766,
+   "zero_rated": 0.0,
+   "output_vat": 5.815,
+   "input_vat": 3.618,
+   "filed_on": "2026-09-19"
+  },
+  {
+   "period": "2026-09",
+   "from": "2026-09-01",
+   "to": "2026-09-30",
+   "taxable_sales": 41.937,
+   "zero_rated": 0.0,
+   "output_vat": 6.291,
+   "input_vat": 4.476,
+   "filed_on": "2026-10-19"
+  }
+ ],
+ "accounts": [
+  {
+   "bank": "Sandstone Harbour Bank",
+   "number": "0112-345678-001",
+   "iban": "SA4377000001123456789001",
+   "type": "Current account (main operating)",
+   "opening": 8.9,
+   "issued": "2026-10-04",
+   "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "credit_items": [
+    [
+     [
+      "SLDC payment IPC-04 incl. VAT (assigned proceeds)",
+      7.298,
+      27
+     ],
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      4.112377,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      7.19934,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      5.665374,
+      24
+     ]
+    ],
+    [
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      8.55462,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      5.915644,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      6.488829,
+      24
+     ]
+    ],
+    [
+     [
+      "SLDC payment IPC-05 incl. VAT (assigned proceeds)",
+      8.019,
+      24
+     ],
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      6.255736,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      9.741313,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      5.712339,
+      24
+     ]
+    ],
+    [
+     [
+      "SLDC payment IPC-06 incl. VAT (assigned proceeds)",
+      8.817,
+      30
+     ],
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      5.621589,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      8.217022,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      7.316503,
+      24
+     ]
+    ],
+    [
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      6.37046,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      8.509635,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      3.842984,
+      24
+     ]
+    ],
+    [
+     [
+      "SLDC payment IPC-07 incl. VAT (assigned proceeds)",
+      8.749,
+      19
+     ],
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      7.76172,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      5.699693,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      7.358135,
+      24
+     ]
+    ],
+    [
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      6.455458,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      9.985462,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      5.079187,
+      24
+     ]
+    ],
+    [
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      5.114794,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      7.414181,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      7.645951,
+      24
+     ]
+    ],
+    [
+     [
+      "SLDC payment IPC-08 incl. VAT (assigned proceeds)",
+      9.159,
+      13
+     ],
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      8.660885,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      4.990254,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      8.374334,
+      24
+     ]
+    ],
+    [
+     [
+      "SLDC payment IPC-09 incl. VAT (assigned proceeds)",
+      9.997,
+      18
+     ],
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      5.311664,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      8.759539,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      8.376279,
+      24
+     ]
+    ],
+    [
+     [
+      "SLDC payment IPC-10 incl. VAT (assigned proceeds)",
+      10.229,
+      24
+     ],
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      12.536187,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      6.88986,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      4.694161,
+      24
+     ]
+    ],
+    [
+     [
+      "SLDC payment IPC-11 incl. VAT (assigned proceeds)",
+      10.85,
+      18
+     ],
+     [
+      "Eastern Industrial Estates Co. — certificate payment",
+      4.539943,
+      9
+     ],
+     [
+      "Sahil Education Projects Co. — certificate payment",
+      6.521071,
+      16
+     ],
+     [
+      "Receipts from other customers (maintenance contracts)",
+      8.690757,
+      24
+     ]
+    ]
+   ],
+   "debit_items": [
+    [
+     [
+      "Payroll transfer (WPS)",
+      3.958924,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.47713,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      7.4781,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      7.177415,
+      20
+     ],
+     [
+      "VAT payment",
+      1.573377,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.695164,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      1.05332,
+      5
+     ],
+     [
+      "Rent and utilities",
+      2.086661,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      3.353373,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.400354,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      6.286066,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      6.629325,
+      20
+     ],
+     [
+      "VAT payment",
+      1.333678,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.609307,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      0.821407,
+      5
+     ],
+     [
+      "Rent and utilities",
+      1.750583,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      5.137258,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.572144,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      9.464178,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      8.491368,
+      20
+     ],
+     [
+      "VAT payment",
+      1.695709,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.846908,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      1.286336,
+      5
+     ],
+     [
+      "Rent and utilities",
+      2.459487,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      5.298281,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.596814,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      8.57496,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      9.48569,
+      20
+     ],
+     [
+      "VAT payment",
+      1.894746,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.879954,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      1.22863,
+      5
+     ],
+     [
+      "Rent and utilities",
+      2.238039,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      3.381685,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.417106,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      5.652624,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      5.454125,
+      20
+     ],
+     [
+      "VAT payment",
+      1.176037,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.578964,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      0.738158,
+      5
+     ],
+     [
+      "Rent and utilities",
+      1.54938,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      4.817069,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.655194,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      9.370162,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      8.502152,
+      20
+     ],
+     [
+      "VAT payment",
+      1.779881,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.873002,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      1.192186,
+      5
+     ],
+     [
+      "Rent and utilities",
+      2.603902,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      3.526938,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.412992,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      6.520316,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      6.851845,
+      20
+     ],
+     [
+      "VAT payment",
+      1.271583,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.612509,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      0.904542,
+      5
+     ],
+     [
+      "Rent and utilities",
+      1.644382,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      3.536159,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.370304,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      5.815706,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      6.337857,
+      20
+     ],
+     [
+      "VAT payment",
+      1.21727,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.597147,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      0.824673,
+      5
+     ],
+     [
+      "Rent and utilities",
+      1.70081,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      5.378729,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.587847,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      9.86426,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      8.887009,
+      20
+     ],
+     [
+      "VAT payment",
+      1.865008,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      1.009712,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      1.356052,
+      5
+     ],
+     [
+      "Rent and utilities",
+      2.460856,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      5.425681,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.678921,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      9.52305,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      10.223177,
+      20
+     ],
+     [
+      "VAT payment",
+      1.917657,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.952842,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      1.373954,
+      5
+     ],
+     [
+      "Rent and utilities",
+      2.5742,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      5.630596,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.696895,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      10.828305,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      9.898064,
+      20
+     ],
+     [
+      "VAT payment",
+      2.207941,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      1.134326,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      1.520095,
+      5
+     ],
+     [
+      "Rent and utilities",
+      2.657986,
+      3
+     ]
+    ],
+    [
+     [
+      "Payroll transfer (WPS)",
+      5.351679,
+      27
+     ],
+     [
+      "GOSI contribution",
+      0.563145,
+      15
+     ],
+     [
+      "Subcontractor payments",
+      9.442755,
+      12
+     ],
+     [
+      "Supplier payments (rebar, concrete)",
+      9.274962,
+      20
+     ],
+     [
+      "VAT payment",
+      1.745369,
+      28
+     ],
+     [
+      "Murabaha profit and LG commission",
+      0.900352,
+      1
+     ],
+     [
+      "Equipment hire — Sawaed Heavy Equipment Rental Co.",
+      1.142085,
+      5
+     ],
+     [
+      "Rent and utilities",
+      2.406424,
+      3
+     ]
+    ]
+   ],
+   "returned": {}
+  },
+  {
+   "bank": "Arabian Crescent Bank",
+   "number": "6081-220193-07",
+   "iban": "SA0961000000608122019307",
+   "type": "Current account",
+   "opening": 4.1,
+   "issued": "2026-10-06",
+   "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09"
+   ],
+   "credit_items": [
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      4.989682,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      3.61103,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      2.255349,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      3.334313,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      5.668728,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      4.60617,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      2.314252,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      5.154964,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      4.681972,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      2.188783,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      4.144737,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      4.677269,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      4.639742,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      5.696368,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      3.389778,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      2.549467,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      3.698297,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      5.001816,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      2.975613,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      2.604449,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      6.357806,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      2.411247,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      6.106017,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      3.754009,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      4.976381,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      5.654112,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      3.901595,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      3.915864,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      4.998231,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      4.949488,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      6.095757,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      3.436124,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      5.294533,
+      26
+     ]
+    ],
+    [
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      5.148115,
+      7
+     ],
+     [
+      "Qamar Al Khaleej Real Estate Dev. — certificate payment",
+      4.17322,
+      21
+     ],
+     [
+      "Receipts, closed projects and claims",
+      4.105442,
+      26
+     ]
+    ]
+   ],
+   "debit_items": [
+    [
+     [
+      "Supplier payments",
+      5.348485,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      3.104302,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      0.84039,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.699522,
+      22
+     ],
+     [
+      "Site expenses",
+      0.921362,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      6.605946,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      4.143989,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      1.106162,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.749617,
+      22
+     ],
+     [
+      "Site expenses",
+      1.061497,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      6.014917,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      3.475615,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      1.039451,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.750488,
+      22
+     ],
+     [
+      "Site expenses",
+      0.928717,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      5.489195,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      3.148171,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      0.89309,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.70143,
+      22
+     ],
+     [
+      "Site expenses",
+      0.836903,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      6.404466,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      4.149617,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      1.131809,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.89555,
+      22
+     ],
+     [
+      "Site expenses",
+      1.202446,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      5.651957,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      3.23749,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      0.910502,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.617155,
+      22
+     ],
+     [
+      "Site expenses",
+      0.890476,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      5.565843,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      3.82784,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      0.914653,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.736111,
+      22
+     ],
+     [
+      "Site expenses",
+      0.951421,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      6.115352,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      3.63454,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      1.014713,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.676494,
+      22
+     ],
+     [
+      "Site expenses",
+      0.888174,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      6.949926,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      4.509326,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      1.125337,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.80527,
+      22
+     ],
+     [
+      "Site expenses",
+      1.200229,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      6.891037,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      4.064726,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      1.060191,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.820739,
+      22
+     ],
+     [
+      "Site expenses",
+      1.08489,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      7.08721,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      4.371446,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      1.200854,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.918958,
+      22
+     ],
+     [
+      "Site expenses",
+      1.305946,
+      25
+     ]
+    ],
+    [
+     [
+      "Supplier payments",
+      6.520186,
+      10
+     ],
+     [
+      "Subcontractor payments",
+      4.043633,
+      18
+     ],
+     [
+      "Term loan instalment and profit",
+      1.089136,
+      1
+     ],
+     [
+      "Transfers to related party — Sawaed Heavy Equipment Rental Co.",
+      0.754836,
+      22
+     ],
+     [
+      "Site expenses",
+      1.080986,
+      25
+     ]
+    ]
+   ],
+   "returned": {}
+  }
+ ],
+ "simah_company": {
+  "date": "2026-10-11",
+  "number": "SB-26-3301872",
+  "score": 655,
+  "enquiries": 3,
+  "facilities": [
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Advance payment guarantees",
+    "limit": 25.0,
+    "outstanding": 19.4,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2016-03-20"
+   },
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Performance bonds",
+    "limit": 45.0,
+    "outstanding": 41.2,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2016-03-20"
+   },
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Letters of credit",
+    "limit": 20.0,
+    "outstanding": 6.3,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2016-03-20"
+   },
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Murabaha against payment certificates",
+    "limit": 50.0,
+    "outstanding": 47.8,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2016-03-20"
+   },
+   {
+    "lender": "Sandstone Harbour Bank",
+    "product": "Overdraft",
+    "limit": 20.0,
+    "outstanding": 14.9,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2016-03-20"
+   },
+   {
+    "lender": "Arabian Crescent Bank",
+    "product": "Short-term Murabaha (working capital)",
+    "limit": 50.0,
+    "outstanding": 46.3,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2019-09-01"
+   },
+   {
+    "lender": "Arabian Crescent Bank",
+    "product": "Letters of guarantee",
+    "limit": 70.0,
+    "outstanding": 58.4,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2019-09-01"
+   },
+   {
+    "lender": "Arabian Crescent Bank",
+    "product": "Term loan (equipment)",
+    "limit": 20.25,
+    "outstanding": 20.25,
+    "overdue": 0.0,
+    "status": "Current",
+    "opened": "2019-09-01"
+   }
+  ],
+  "history": "No delinquency on the company's own facilities in the last 24 months. Related entity reporting is not part of this report.",
+  "enquiry_text": "3 enquiries in the last 6 months: Sandstone Harbour Bank (10/2026), Arabian Crescent Bank (08/2026), Coastal Gulf Bank (06/2026)."
+ },
+ "consent": {
+  "by": "Turki Hamad Al-Sawaed",
+  "role": "Chairman and General Manager",
+  "on": "2026-10-04"
+ },
+ "request": {
+  "date": "2026-10-05",
+  "ref": "SAB/FIN/2026/118",
+  "by": "Turki Hamad Al-Sawaed",
+  "role": "Chairman and General Manager",
+  "body": "We refer to our long relationship with Sandstone Harbour Bank since 2016. We have been awarded Package C of the Eastern Corridor Logistics Hub by Sharqiya Logistics Development Co. (SLDC) (letter of award dated 22/09/2026, contract value SAR 312,000,000, 24 months from 01/12/2026). We request a dedicated project limit as follows, in addition to our existing general limit of SAR 160,000,000:",
+  "facilities": [
+   {
+    "facility": "Advance payment guarantee (10%)",
+    "amount": 31.2,
+    "purpose": "Advance payment of Package C"
+   },
+   {
+    "facility": "Performance bond (10%)",
+    "amount": 31.2,
+    "purpose": "Performance security of Package C"
+   },
+   {
+    "facility": "Murabaha against payment certificates",
+    "amount": 45.0,
+    "purpose": "Working capital of Package C"
+   },
+   {
+    "facility": "Letters of credit (sight / usance)",
+    "amount": 12.6,
+    "purpose": "Imported MEP equipment for Package C"
+   }
+  ],
+  "more": [
+   "Package B is progressing well and the employer has agreed in principle to our extension of time request. Our receivables are current and the employer is a government-linked entity with assured funding.",
+   "We offer the assignment of Package C contract proceeds to the Bank and the personal guarantee of the undersigned."
+  ]
+ },
+ "resolution": {
+  "date": "2026-10-04",
+  "number": "PR-2026-07",
+  "amount": 300.0,
+  "persons": "Turki Hamad Al-Sawaed (Chairman and General Manager)",
+  "text": "The partners resolved to obtain credit facilities from banks up to a total of SAR 300,000,000 (including the existing facilities), to assign contract proceeds of Package C to Sandstone Harbour Bank, and to authorise the Chairman and General Manager to sign all documents."
+ },
+ "signatories": {
+  "as_of": "2026-10-04",
+  "rows": [
+   {
+    "name": "Turki Hamad Al-Sawaed",
+    "id_number": "1034578210",
+    "role": "Chairman and General Manager",
+    "limit": "Up to SAR 10m alone",
+    "mode": "Single / joint above"
+   },
+   {
+    "name": "Nasser Hamad Al-Sawaed",
+    "id_number": "1046723985",
+    "role": "Deputy General Manager",
+    "limit": "Jointly with GM",
+    "mode": "Joint"
+   },
+   {
+    "name": "Omar Khalil Haddad",
+    "id_number": "2398145672",
+    "role": "Finance Manager",
+    "limit": "Up to SAR 1m (payments)",
+    "mode": "Joint with GM"
+   }
+  ]
+ },
+ "other_banks": [
+  {
+   "bank": "Arabian Crescent Bank",
+   "offer_date": "2026-03-15",
+   "offer_ref": "ACB/CB/EP/26/0412",
+   "offer_expiry": "2027-02-28",
+   "offer_signed": "Majid Al-Rasheed",
+   "facilities": [
+    {
+     "facility": "Short-term Murabaha (working capital)",
+     "limit": 50.0,
+     "pricing": "3M SAIBOR + 2.25%",
+     "tenor": "up to 180 days"
+    },
+    {
+     "facility": "Letters of guarantee (bid, performance, advance)",
+     "limit": 70.0,
+     "pricing": "0.75% p.a.",
+     "tenor": "per LG"
+    },
+    {
+     "facility": "Term loan (equipment), amortising",
+     "limit": 20.25,
+     "pricing": "3M SAIBOR + 2.00%",
+     "tenor": "to 2028, quarterly"
+    }
+   ],
+   "security": "Personal guarantee of Turki Hamad Al-Sawaed; promissory note; assignment of proceeds of the Al Khobar Waterfront project.",
+   "offer_terms": [
+    "Business routing: not less than 30% of turnover.",
+    "Financial covenant: leverage (total liabilities / net worth) not above 2.5x."
+   ],
+   "statement_date": "2026-09-30",
+   "statement": [
+    {
+     "facility": "Short-term Murabaha (working capital)",
+     "limit": 50.0,
+     "outstanding": 46.3,
+     "overdue": 0.0,
+     "maturity": "rolling"
+    },
+    {
+     "facility": "Letters of guarantee",
+     "limit": 70.0,
+     "outstanding": 58.4,
+     "overdue": 0.0,
+     "maturity": "per LG"
+    },
+    {
+     "facility": "Term loan (equipment)",
+     "limit": 20.25,
+     "outstanding": 20.25,
+     "overdue": 0.0,
+     "maturity": "2028-06-30"
+    }
+   ]
+  }
+ ],
+ "rec_ageing": {
+  "as_of": "2026-09-30",
+  "rows": [
+   {
+    "customer": "Sharqiya Logistics Development Co. (SLDC)",
+    "b0_90": 59.58,
+    "b91_180": 10.232,
+    "b181_365": 0.0,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Qamar Al Khaleej Real Estate Development Co.",
+    "b0_90": 5.2,
+    "b91_180": 1.8,
+    "b181_365": 0.0,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Eastern Industrial Estates Co.",
+    "b0_90": 2.2,
+    "b91_180": 0.0,
+    "b181_365": 0.0,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Sahil Education Projects Co.",
+    "b0_90": 4.1,
+    "b91_180": 0.0,
+    "b181_365": 0.0,
+    "over_365": 0.0
+   },
+   {
+    "customer": "Closed projects and variation claims (various)",
+    "b0_90": 0.988,
+    "b91_180": 0.0,
+    "b181_365": 6.3,
+    "over_365": 14.2
+   }
+  ],
+  "notes": [
+   "Retention receivables (SAR 55,436,000) are shown separately in the project list and are not included above."
+  ]
+ },
+ "pay_ageing": {
+  "as_of": "2026-09-30",
+  "rows": [
+   {
+    "supplier": "Gulf Rebar Trading Co.",
+    "b0_90": 14.2,
+    "b91_180": 3.1,
+    "over_180": 0.0
+   },
+   {
+    "supplier": "Eastern Ready Mix Concrete Co.",
+    "b0_90": 11.6,
+    "b91_180": 2.4,
+    "over_180": 0.0
+   },
+   {
+    "supplier": "Sawaed Heavy Equipment Rental Co. (related)",
+    "b0_90": 0.0,
+    "b91_180": 0.0,
+    "over_180": 0.0
+   },
+   {
+    "supplier": "Al Bayan MEP Subcontracting",
+    "b0_90": 9.8,
+    "b91_180": 4.2,
+    "over_180": 1.1
+   },
+   {
+    "supplier": "Other suppliers and subcontractors",
+    "b0_90": 21.5,
+    "b91_180": 4.6,
+    "over_180": 1.6
+   }
+  ]
+ },
+ "top": {
+  "year": 2025,
+  "date": "2026-10-05",
+  "customers": [
+   {
+    "name": "Sharqiya Logistics Development Co. (SLDC)",
+    "relationship": "Third party (government-linked)",
+    "sales": 128.4,
+    "share": 27.4,
+    "terms": "56 days from certification"
+   },
+   {
+    "name": "Qamar Al Khaleej Real Estate Development Co.",
+    "relationship": "Third party",
+    "sales": 112.6,
+    "share": 24.0,
+    "terms": "45 days from certification"
+   },
+   {
+    "name": "Eastern Industrial Estates Co.",
+    "relationship": "Third party",
+    "sales": 96.1,
+    "share": 20.5,
+    "terms": "60 days from certification"
+   },
+   {
+    "name": "Sahil Education Projects Co.",
+    "relationship": "Third party",
+    "sales": 21.6,
+    "share": 4.6,
+    "terms": "60 days from certification"
+   },
+   {
+    "name": "Other (closed projects, maintenance)",
+    "relationship": "Third parties",
+    "sales": 109.5,
+    "share": 23.4,
+    "terms": "various"
+   }
+  ],
+  "suppliers": [
+   {
+    "name": "Gulf Rebar Trading Co.",
+    "country": "KSA",
+    "purchases": 61.8,
+    "share": 15.0,
+    "terms": "60 days, LC / open account"
+   },
+   {
+    "name": "Eastern Ready Mix Concrete Co.",
+    "country": "KSA",
+    "purchases": 49.4,
+    "share": 12.0,
+    "terms": "45 days"
+   },
+   {
+    "name": "Sawaed Heavy Equipment Rental Co.",
+    "country": "KSA",
+    "purchases": 17.8,
+    "share": 4.3,
+    "terms": "advance"
+   },
+   {
+    "name": "Al Bayan MEP Subcontracting",
+    "country": "KSA",
+    "purchases": 44.6,
+    "share": 10.8,
+    "terms": "back-to-back with certificates"
+   }
+  ],
+  "notes": [
+   "Sales shares are of FY2025 revenue (SAR 468,200,000)."
+  ]
+ },
+ "projects": {
+  "as_of": "2026-09-30",
+  "rows": [
+   {
+    "id": "P1",
+    "name": "Eastern Corridor Logistics Hub — Package B",
+    "employer": "Sharqiya Logistics Development Co. (SLDC)",
+    "consultant": "Dar Al Mimar Engineering Consultants",
+    "engineer": "Eng. Waleed Mansour",
+    "value": 486.0,
+    "start": "2025-03-01",
+    "completion_contract": "2027-08-31",
+    "completion_shown": "2028-01-31",
+    "done_pct": 41.0,
+    "billed": 187.16,
+    "received": 79.918,
+    "retention": 18.715,
+    "status": "In progress (revised completion per EOT request)",
+    "contract": {
+     "number": "SLDC/ECLH/B/2025-014",
+     "date": "2025-02-10",
+     "advance_pct": 10.0,
+     "retention_pct": 10.0,
+     "pay_days": 56,
+     "pb_pct": 10.0,
+     "employer_sig": "Eng. Fahd Al-Otaishan, Projects Director",
+     "contractor_sig": "Turki Hamad Al-Sawaed",
+     "clauses": [
+      "The Employer, Sharqiya Logistics Development Co. (SLDC), a company owned by the Eastern Province Development Fund, engages the Contractor to construct Package B (warehouse blocks W1-W6, internal roads and utilities) of the Eastern Corridor Logistics Hub.",
+      "Contract price SAR 486,000,000 (lump sum, excluding VAT). Time for completion: 30 months from 01/03/2025, i.e. 31/08/2027.",
+      "Advance payment 10% against an advance payment guarantee, recovered at 10% of each interim certificate.",
+      "Retention 10% of each interim certificate; half released at taking-over, half at the end of the 12-month defects liability period.",
+      "Interim certificates are paid within 56 days of certification by the Engineer. Late payment does not entitle the Contractor to suspend work before 90 days of delay (clause 16.1).",
+      "Extensions of time are valid only when approved in writing by the Employer (clause 8.4). Delay damages 0.1% of the contract price per day, capped at 10%.",
+      "Performance security 10% of the contract price, valid until the end of the defects liability period."
+     ]
+    }
+   },
+   {
+    "id": "P2",
+    "name": "Al Khobar Waterfront Residential Towers (2 towers)",
+    "employer": "Qamar Al Khaleej Real Estate Development Co.",
+    "value": 212.0,
+    "start": "2024-01-15",
+    "completion_shown": "2026-12-31",
+    "done_pct": 88.0,
+    "billed": 186.56,
+    "received": 160.9,
+    "retention": 18.656,
+    "status": "In progress"
+   },
+   {
+    "id": "P3",
+    "name": "Second Industrial Estate — Roads Package 4",
+    "employer": "Eastern Industrial Estates Co.",
+    "value": 164.0,
+    "start": "2024-06-01",
+    "completion_shown": "2026-09-15",
+    "done_pct": 97.0,
+    "billed": 159.08,
+    "received": 141.0,
+    "retention": 15.908,
+    "status": "Substantially complete; defects liability period"
+   },
+   {
+    "id": "P4",
+    "name": "Jubail School Complex (3 schools)",
+    "employer": "Sahil Education Projects Co.",
+    "value": 98.0,
+    "start": "2025-09-01",
+    "completion_shown": "2027-03-31",
+    "done_pct": 22.0,
+    "billed": 21.56,
+    "received": 15.3,
+    "retention": 2.156,
+    "status": "In progress"
+   }
+  ],
+  "notes": [
+   "Package B: revised completion 31/01/2028 reflects the extension of time requested on 14/04/2026 (five months).",
+   "New award (subject of the facility request): Eastern Corridor Logistics Hub — Package C, SAR 312,000,000, letter of award dated 22/09/2026, commencement expected 01/12/2026, 24 months."
+  ]
+ },
+ "ipcs": [
+  {
+   "k": 1,
+   "no": "IPC-01",
+   "period_to": "2025-04-30",
+   "certified": "2025-05-20",
+   "due": "2025-07-15",
+   "gross": 6.401,
+   "cum_gross": 6.401,
+   "retention": 0.64,
+   "advance": 0.64,
+   "net": 5.121,
+   "cum_retention": 0.64,
+   "paid": "2025-07-19",
+   "receipt": 5.889
+  },
+  {
+   "k": 2,
+   "no": "IPC-02",
+   "period_to": "2025-05-31",
+   "certified": "2025-06-21",
+   "due": "2025-08-16",
+   "gross": 6.34,
+   "cum_gross": 12.741,
+   "retention": 0.634,
+   "advance": 0.634,
+   "net": 5.072,
+   "cum_retention": 1.274,
+   "paid": "2025-08-22",
+   "receipt": 5.833
+  },
+  {
+   "k": 3,
+   "no": "IPC-03",
+   "period_to": "2025-06-30",
+   "certified": "2025-07-19",
+   "due": "2025-09-13",
+   "gross": 7.68,
+   "cum_gross": 20.421,
+   "retention": 0.768,
+   "advance": 0.768,
+   "net": 6.144,
+   "cum_retention": 2.042,
+   "paid": "2025-09-22",
+   "receipt": 7.066
+  },
+  {
+   "k": 4,
+   "no": "IPC-04",
+   "period_to": "2025-07-31",
+   "certified": "2025-08-20",
+   "due": "2025-10-15",
+   "gross": 7.932,
+   "cum_gross": 28.353,
+   "retention": 0.793,
+   "advance": 0.793,
+   "net": 6.346,
+   "cum_retention": 2.835,
+   "paid": "2025-10-27",
+   "receipt": 7.298
+  },
+  {
+   "k": 5,
+   "no": "IPC-05",
+   "period_to": "2025-08-31",
+   "certified": "2025-09-21",
+   "due": "2025-11-16",
+   "gross": 8.717,
+   "cum_gross": 37.07,
+   "retention": 0.872,
+   "advance": 0.872,
+   "net": 6.973,
+   "cum_retention": 3.707,
+   "paid": "2025-12-24",
+   "receipt": 8.019
+  },
+  {
+   "k": 6,
+   "no": "IPC-06",
+   "period_to": "2025-09-30",
+   "certified": "2025-10-19",
+   "due": "2025-12-14",
+   "gross": 9.583,
+   "cum_gross": 46.653,
+   "retention": 0.958,
+   "advance": 0.958,
+   "net": 7.667,
+   "cum_retention": 4.665,
+   "paid": "2026-01-30",
+   "receipt": 8.817
+  },
+  {
+   "k": 7,
+   "no": "IPC-07",
+   "period_to": "2025-10-31",
+   "certified": "2025-11-20",
+   "due": "2026-01-15",
+   "gross": 9.51,
+   "cum_gross": 56.163,
+   "retention": 0.951,
+   "advance": 0.951,
+   "net": 7.608,
+   "cum_retention": 5.616,
+   "paid": "2026-03-19",
+   "receipt": 8.749
+  },
+  {
+   "k": 8,
+   "no": "IPC-08",
+   "period_to": "2025-11-30",
+   "certified": "2025-12-21",
+   "due": "2026-02-15",
+   "gross": 9.954,
+   "cum_gross": 66.117,
+   "retention": 0.995,
+   "advance": 0.995,
+   "net": 7.964,
+   "cum_retention": 6.611,
+   "paid": "2026-06-13",
+   "receipt": 9.159
+  },
+  {
+   "k": 9,
+   "no": "IPC-09",
+   "period_to": "2025-12-31",
+   "certified": "2026-01-19",
+   "due": "2026-03-16",
+   "gross": 10.867,
+   "cum_gross": 76.984,
+   "retention": 1.087,
+   "advance": 1.087,
+   "net": 8.693,
+   "cum_retention": 7.698,
+   "paid": "2026-07-18",
+   "receipt": 9.997
+  },
+  {
+   "k": 10,
+   "no": "IPC-10",
+   "period_to": "2026-01-31",
+   "certified": "2026-02-20",
+   "due": "2026-04-17",
+   "gross": 11.119,
+   "cum_gross": 88.103,
+   "retention": 1.112,
+   "advance": 1.112,
+   "net": 8.895,
+   "cum_retention": 8.81,
+   "paid": "2026-08-24",
+   "receipt": 10.229
+  },
+  {
+   "k": 11,
+   "no": "IPC-11",
+   "period_to": "2026-02-28",
+   "certified": "2026-03-21",
+   "due": "2026-05-16",
+   "gross": 11.793,
+   "cum_gross": 99.896,
+   "retention": 1.179,
+   "advance": 1.179,
+   "net": 9.435,
+   "cum_retention": 9.989,
+   "paid": "2026-09-18",
+   "receipt": 10.85
+  },
+  {
+   "k": 12,
+   "no": "IPC-12",
+   "period_to": "2026-03-31",
+   "certified": "2026-04-19",
+   "due": "2026-06-14",
+   "gross": 12.79,
+   "cum_gross": 112.686,
+   "retention": 1.279,
+   "advance": 1.279,
+   "net": 10.232,
+   "cum_retention": 11.268,
+   "paid": null,
+   "receipt": 11.767
+  },
+  {
+   "k": 13,
+   "no": "IPC-13",
+   "period_to": "2026-04-30",
+   "certified": "2026-05-20",
+   "due": "2026-07-15",
+   "gross": 14.124,
+   "cum_gross": 126.81,
+   "retention": 1.412,
+   "advance": 1.412,
+   "net": 11.3,
+   "cum_retention": 12.68,
+   "paid": null,
+   "receipt": 12.995
+  },
+  {
+   "k": 14,
+   "no": "IPC-14",
+   "period_to": "2026-05-31",
+   "certified": "2026-06-21",
+   "due": "2026-08-16",
+   "gross": 14.872,
+   "cum_gross": 141.682,
+   "retention": 1.487,
+   "advance": 1.487,
+   "net": 11.898,
+   "cum_retention": 14.167,
+   "paid": null,
+   "receipt": 13.683
+  },
+  {
+   "k": 15,
+   "no": "IPC-15",
+   "period_to": "2026-06-30",
+   "certified": "2026-07-19",
+   "due": "2026-09-13",
+   "gross": 14.267,
+   "cum_gross": 155.949,
+   "retention": 1.427,
+   "advance": 1.427,
+   "net": 11.413,
+   "cum_retention": 15.594,
+   "paid": null,
+   "receipt": 13.125
+  },
+  {
+   "k": 16,
+   "no": "IPC-16",
+   "period_to": "2026-07-31",
+   "certified": "2026-08-20",
+   "due": "2026-10-15",
+   "gross": 14.622,
+   "cum_gross": 170.571,
+   "retention": 1.462,
+   "advance": 1.462,
+   "net": 11.698,
+   "cum_retention": 17.056,
+   "paid": null,
+   "receipt": 13.453
+  },
+  {
+   "k": 17,
+   "no": "IPC-17",
+   "period_to": "2026-08-31",
+   "certified": "2026-09-21",
+   "due": "2026-11-16",
+   "gross": 16.589,
+   "cum_gross": 187.16,
+   "retention": 1.659,
+   "advance": 1.659,
+   "net": 13.271,
+   "cum_retention": 18.715,
+   "paid": null,
+   "receipt": 15.262
+  }
+ ],
+ "ipc_docs": [
+  "IPC-11",
+  "IPC-12",
+  "IPC-13",
+  "IPC-14",
+  "IPC-15",
+  "IPC-16",
+  "IPC-17"
+ ],
+ "site_visit": {
+  "date": "2026-09-24",
+  "by": "Hisham Al-Qahtani",
+  "met": "Turki Hamad Al-Sawaed; Eng. Ahmed Fawzi (Project Manager, Package B)",
+  "premises": "Head office (Dammam, rented) and Package B site (Eastern Corridor Logistics Hub)",
+  "staff": 420,
+  "summary": "Package B site active; warehouse blocks W1-W3 structure complete, W4-W6 foundations; progress behind the original programme.",
+  "points": [
+   "About 420 workers and 38 items of heavy equipment on site, most of it hired from Sawaed Heavy Equipment Rental Co.",
+   "Structure of W1-W3 complete; W4-W6 at foundation stage. Management attributes the delay to design changes by the employer.",
+   "Extension of time of five months submitted on 14/04/2026; management says the employer's response is awaited.",
+   "Management confirms certificates are being paid 'with some delay' by the employer; it expects payment of the outstanding certificates before the year end.",
+   "Package C site (adjacent plot) not yet mobilised; mobilisation planned for December 2026."
+  ]
+ },
+ "aml": {
+  "date": "2026-10-04",
+  "by": "Turki Hamad Al-Sawaed",
+  "pep": "No",
+  "countries": "KSA only (imports of MEP equipment from UAE, Italy, China)",
+  "cash": "No",
+  "rating": "Medium",
+  "ubos": [
+   {
+    "name": "Turki Hamad Al-Sawaed",
+    "pct": 65.0,
+    "pep": "No"
+   },
+   {
+    "name": "Nasser Hamad Al-Sawaed",
+    "pct": 35.0,
+    "pep": "No"
+   }
+  ],
+  "notes": [
+   "Related entities: Sawaed Heavy Equipment Rental Co. (100% Nasser Hamad Al-Sawaed), Sawaed Real Estate Co. (100% Turki Hamad Al-Sawaed)."
+  ]
+ },
+ "collateral": [],
+ "missing": [
+  {
+   "doc_type": "personal_net_worth",
+   "subject": "nasser_al_sawaed",
+   "why": "Net-worth statement of the second guarantor not provided"
+  },
+  {
+   "doc_type": "project_contract",
+   "subject": "p5_package_c",
+   "why": "Package C contract not yet signed (letter of award only)"
+  }
+ ],
+ "facts": {
+  "sldc_unpaid_net": 69.812,
+  "collections_ratio": 0.875,
+  "rev12": 474.0
+ },
+ "ask": {
+  "one_line": "Renew SAR 160m general limit and add a SAR 120m project limit for Package C (SLDC, SAR 312m); total SAR 280m; group cap to SAR 300m.",
+  "requested_total_sar": 280000000,
+  "new_money_sar": 120000000,
+  "credit_recommends_total_sar": 265000000
+ },
+ "co": {
+  "key": "c2",
+  "folder": "c2_sawaed_al_bina",
+  "proposal_id": "R16-C2",
+  "cif": "CB09002",
+  "group_id": "CG9002",
+  "name": "Sawaed Al Bina Contracting Co.",
+  "short": "Sawaed Al Bina",
+  "cr_number": "2050117342",
+  "vat_number": "302050117300003",
+  "city": "Dammam",
+  "sector": "Construction",
+  "sub_sector": "Building and Infrastructure Contracting",
+  "case": "existing",
+  "case_label": "Existing customer, new project limit",
+  "part": "B",
+  "group_name": "Sawaed Group",
+  "legal_form": "Limited Liability Company",
+  "incorporated": "2008-05-12",
+  "capital_mn": 50.0,
+  "shares_total": 50000,
+  "share_value": 1000,
+  "address": "King Saud Street, Al Faisaliyah, Dammam 32272",
+  "phone": "+966 13 800 4412",
+  "email": "finance@sawaed-bina.example",
+  "activity": "General contracting for buildings, roads, infrastructure and logistics facilities; civil, structural and MEP works; maintenance of the same.",
+  "activity_short": "General contracting (buildings, roads, logistics facilities)",
+  "cr_issue": "2008-05-12",
+  "cr_expiry": "2027-02-18",
+  "cr_print": "2026-09-28",
+  "aoa_amended": "2023-06-20",
+  "vat_effective": "2018-01-01",
+  "vat_frequency": "Monthly",
+  "vat_cert_issue": "2018-01-14",
+  "zakat": {
+   "number": "ZC-2026-0451183",
+   "fy_end": "2025-12-31",
+   "issue": "2026-04-29",
+   "expiry": "2027-04-30"
+  },
+  "nitaqat": {
+   "establishment": "7-1182346",
+   "band": "Medium Green",
+   "rate": 16.9,
+   "threshold": 15.2,
+   "total": 1846,
+   "saudi": 312,
+   "issue": "2026-10-01",
+   "expiry": "2026-12-31"
+  },
+  "shareholders": [
+   {
+    "name": "Turki Hamad Al-Sawaed",
+    "id_number": "1034578210",
+    "nationality": "Saudi",
+    "shares": 32500,
+    "pct": 65.0
+   },
+   {
+    "name": "Nasser Hamad Al-Sawaed",
+    "id_number": "1046723985",
+    "nationality": "Saudi",
+    "shares": 17500,
+    "pct": 35.0
+   }
+  ],
+  "managers": [
+   {
+    "name": "Turki Hamad Al-Sawaed",
+    "role": "Chairman and General Manager",
+    "powers": "Sole signatory up to SAR 10m; jointly above"
+   },
+   {
+    "name": "Nasser Hamad Al-Sawaed",
+    "role": "Partner, Deputy General Manager",
+    "powers": "Jointly with the General Manager"
+   }
+  ],
+  "aoa_amendment_text": "Amended on 20/06/2023 to raise the capital from SAR 30m to SAR 50m by capitalising retained earnings."
+ }
+}

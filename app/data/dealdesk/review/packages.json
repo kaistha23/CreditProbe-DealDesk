@@ -1,0 +1,12 @@
+{
+ "description": "R11 R3: counter-proposal packages. Each package combines the levers of the failed rules (rules.json 'lever'); it is offered when at least one of its levers (other than 'cp', conditions only) is present, and priced by the Deal Desk optimiser with the package's terms held fixed.",
+ "version": "r11-1",
+ "packages": [
+  {"id": "CP-1", "title": "Approve the guarantees now; tranche the funded lines", "levers": ["tranche_funded", "advance_payment", "cp"], "scope": ["case"]},
+  {"id": "CP-2", "title": "Cap the group exposure", "levers": ["cap", "cp"], "scope": ["case"]},
+  {"id": "CP-3", "title": "Decline the vehicle limit as structured; keep routing at 2x", "levers": ["drop_line", "routing", "cp"], "scope": ["case"]},
+  {"id": "CP-4", "title": "No new funded limits until an approved audit; cash margin on the new lines", "levers": ["no_new_funded", "cash_margin", "cp"], "scope": ["case"]},
+  {"id": "CP-D1", "title": "Price and structure to clear the hurdle", "levers": ["optimise", "cp"], "scope": ["dd"]},
+  {"id": "CP-D2", "title": "Enhanced covenants and cash margin", "levers": ["cash_margin", "covenants", "cp"], "scope": ["dd"]}
+ ]
+}

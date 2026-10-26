@@ -1,0 +1,205 @@
+{
+ "engine": "intel.portfolio.workout",
+ "version": "r13-id-1",
+ "title": "Workout optimiser",
+ "as_of": "2026Q2",
+ "ecl_run": "2026Q3",
+ "headline": "For Khamis Mushait National Estates (B-, Stage 3, EAD SAR 58.7m), the best route is: Partial exit (40% repaid now). Recovery NPV SAR 51.9m (88.4% of EAD), SAR 11.2m more than holding, net of capital cost.",
+ "summary": [
+  "For Khamis Mushait National Estates (B-, Stage 3, EAD SAR 58.7m), the best route is: Partial exit (40% repaid now). Recovery NPV SAR 51.9m (88.4% of EAD), SAR 11.2m more than holding, net of capital cost.",
+  "It has been restructured 2 times in 24 months in financial difficulty, so a reschedule would be the third and force Stage 3 (CBUAE CRM 9.29).",
+  "Reschedule: Stage 3, ECL SAR 30.9m (unchanged), recovery NPV SAR 43.1m.",
+  "Sale frees SAR 4.0m of capital and releases the ECL for SAR 32.3m cash today; legal action recovers SAR 31.9m in present value."
+ ],
+ "kpis": [
+  {
+   "key": "best",
+   "label": "Best option",
+   "value": "Partial exit (40% repaid now)",
+   "unit": "text",
+   "text": null
+  },
+  {
+   "key": "npv",
+   "label": "Recovery NPV (best)",
+   "value": 51.888293,
+   "unit": "SAR m",
+   "text": "88.4% of EAD"
+  },
+  {
+   "key": "uplift",
+   "label": "vs hold, net of capital cost",
+   "value": 11.189579,
+   "unit": "SAR m",
+   "text": null
+  },
+  {
+   "key": "restructurings",
+   "label": "Distressed restructurings in 24 months",
+   "value": 2,
+   "unit": "count",
+   "text": "next one is the third: Stage 3"
+  },
+  {
+   "key": "ecl_now",
+   "label": "ECL now",
+   "value": 30.87282,
+   "unit": "SAR m",
+   "text": null
+  }
+ ],
+ "rows": [
+  {
+   "key": "partial_exit",
+   "label": "Partial exit (40% repaid now)",
+   "recovery_npv_sar_mn": 51.888293,
+   "recovery_rate": 0.884367,
+   "ecl_after_sar_mn": 6.315125,
+   "ecl_change_sar_mn": -24.557695,
+   "rwa_after_sar_mn": 0.0,
+   "capital_after_sar_mn": 0.0,
+   "capital_change_sar_mn": -3.990857,
+   "stage_after": 3,
+   "restructuring_number": null,
+   "net_value_sar_mn": 51.888293,
+   "notes": [
+    "SAR 23.5m repaid at a 2% concession; the remaining SAR 35.2m keeps all the collateral",
+    "needs a repayment source (asset sale, sponsor or refinancing); whether the obligor has one is not in Data Domains"
+   ]
+  },
+  {
+   "key": "extra_collateral",
+   "label": "Ask for extra collateral (25% of EAD, real estate)",
+   "recovery_npv_sar_mn": 44.235927,
+   "recovery_rate": 0.753943,
+   "ecl_after_sar_mn": 12.54488,
+   "ecl_change_sar_mn": -18.32794,
+   "rwa_after_sar_mn": 14.16042,
+   "capital_after_sar_mn": 1.911657,
+   "capital_change_sar_mn": -2.0792,
+   "stage_after": 3,
+   "restructuring_number": null,
+   "net_value_sar_mn": 43.930062,
+   "notes": [
+    "no concession, so not a restructuring; stage unchanged",
+    "LGD 52.6% to 21.4%"
+   ]
+  },
+  {
+   "key": "reschedule",
+   "label": "Reschedule (restructuring #3 in 24 months)",
+   "recovery_npv_sar_mn": 43.066937,
+   "recovery_rate": 0.734019,
+   "ecl_after_sar_mn": 30.872818,
+   "ecl_change_sar_mn": -2e-06,
+   "rwa_after_sar_mn": 19.7081,
+   "capital_after_sar_mn": 2.660594,
+   "capital_change_sar_mn": -1.330263,
+   "stage_after": 3,
+   "restructuring_number": 3,
+   "net_value_sar_mn": 42.641242,
+   "notes": [
+    "restructuring #3 in 24 months: Stage 3 is mandatory (CBUAE CRM 9.29)",
+    "rescues 15% of the cases that would fail on the current schedule (restructuring #3); NPV concession 3%"
+   ]
+  },
+  {
+   "key": "hold",
+   "label": "Hold and monitor (baseline)",
+   "recovery_npv_sar_mn": 41.33725,
+   "recovery_rate": 0.704539,
+   "ecl_after_sar_mn": 30.87282,
+   "ecl_change_sar_mn": 0.0,
+   "rwa_after_sar_mn": 29.5619,
+   "capital_after_sar_mn": 3.990857,
+   "capital_change_sar_mn": 0.0,
+   "stage_after": 3,
+   "restructuring_number": null,
+   "net_value_sar_mn": 40.698713,
+   "notes": [
+    "P(performs or cures in a year) 40.5% (observed Stage 3 cure rate, 6,842 moves)"
+   ]
+  },
+  {
+   "key": "sale",
+   "label": "Sell the exposure",
+   "recovery_npv_sar_mn": 32.27004,
+   "recovery_rate": 0.55,
+   "ecl_after_sar_mn": 0.0,
+   "ecl_change_sar_mn": -30.87282,
+   "rwa_after_sar_mn": 0.0,
+   "capital_after_sar_mn": 0.0,
+   "capital_change_sar_mn": -3.990857,
+   "stage_after": null,
+   "restructuring_number": null,
+   "net_value_sar_mn": 32.27004,
+   "notes": [
+    "price 55% of par (expert discount)",
+    "loss over 30%: an unlikeliness-to-pay indicator for the obligor's other exposures (CBUAE CRM 6.8(c))"
+   ]
+  },
+  {
+   "key": "legal",
+   "label": "Legal action and enforcement",
+   "recovery_npv_sar_mn": 31.87653,
+   "recovery_rate": 0.543293,
+   "ecl_after_sar_mn": 30.872818,
+   "ecl_change_sar_mn": -2e-06,
+   "rwa_after_sar_mn": 19.7081,
+   "capital_after_sar_mn": 2.660594,
+   "capital_change_sar_mn": -1.330263,
+   "stage_after": 3,
+   "restructuring_number": null,
+   "net_value_sar_mn": 31.450835,
+   "notes": [
+    "3 years to realise collateral, 5% cost, 15% forced-sale haircut",
+    "filing is an unlikeliness-to-pay indicator: Stage 3 (CBUAE CRM 6.8(d))"
+   ]
+  }
+ ],
+ "data_limits": [
+  "Cure probabilities, sale discounts, legal timelines and costs are expert assumptions (assumptions.json): the book holds only 12 cured restructurings and no loan-sale or court-recovery history.",
+  "Extra collateral is assumed to be real estate at the Deal Desk haircut and recognised as CRM the way col_crwa recognises it.",
+  "Recovery NPV values the obligor's exposure on the bank's books; the relationship's other income is not included.",
+  "The comparison is one year; a reschedule's longer path (probation, later re-default) is folded into its cure probability."
+ ],
+ "method": [
+  "Each option: recovery NPV at the LGD discount rate, ECL by the stage CBUAE assigns, capital at the target ratio.",
+  "Ranking: recovery NPV less one year of the option's capital at the sector hurdle.",
+  "CBUAE CRM clauses applied: 6.8(c), 6.8(d), 9.28, 9.29, 9.30."
+ ],
+ "writer": "deterministic",
+ "profile": {
+  "borrower_id": "CB03940",
+  "borrower_name": "Khamis Mushait National Estates",
+  "sector": "Real Estate",
+  "rating": "B-",
+  "stage": 3,
+  "ead_sar_mn": 58.6728,
+  "pd_12m": 1.0,
+  "pd_lifetime": 1.0,
+  "lgd": 0.526186,
+  "ecl_now_sar_mn": 30.87282,
+  "rwa_now_sar_mn": 29.5619,
+  "capital_now_sar_mn": 3.990857,
+  "collateral_net_sar_mn": 41.377125,
+  "collateral_registered_net_sar_mn": 34.910465,
+  "guarantees_perfected_sar_mn": 6.4109,
+  "restructurings_24m": 2,
+  "deferrals_24m": 4,
+  "utp": true,
+  "dpd_days": 210.0,
+  "facilities": 6,
+  "hurdle": 0.16,
+  "third_restructuring_next": true
+ },
+ "recommended": "partial_exit",
+ "clauses": {
+  "9.29": "Any Credit Facility restructured 3 times or more in a context of financial difficulty must be migrated to Stage 3.",
+  "9.28": "Distressed restructured facilities meeting UTP or over 90 days past due at the conclusion are Stage 3.",
+  "9.30": "Other distressed restructured facilities are allocated to Stage 2 or Stage 3.",
+  "6.8(c)": "Selling part of a facility at an economic loss over 30% is an unlikeliness-to-pay indicator.",
+  "6.8(d)": "Filing for the obligor's bankruptcy or a similar order is an unlikeliness-to-pay indicator."
+ },
+ "digest": "79d618418c15173e"
+}

@@ -1,0 +1,12 @@
+# What-If x CreditProbe Mail (MAIL_API.md v1) against origin/v5/r2-core 5141dd6, Core service on 8515 (test store, CP_TEST_PASSWORD), 2026-10-11
+login 200
+users 200 9 ['anne', 'faisal.alqahtani', 'noura.alharbi']
+share 200 {'thread_id': 't_47d809a8f6', 'message_id': 'm_1ca4657d62', 'recipients': ['khalid.alotaibi'], 'audit_id': 2, 'replayed': True}
+replay 200 True
+khalid shared-with-me (200, {'objects': [{'type': 'whatif-thread', 'id': 'wt-test123', 'label': 'Construction PD +30% (Delta method)', 'href': '/what-if/thread/wt-test123', 'shared_by': 'sara.aldosari', 'shared_at': '2026-10-10T21:14:52Z', 'thread_id': 't_7bd741e3a2'}]})
+khalid counts (200, {'inbox': 6, 'unread': 4, 'drafts': 0, 'starred': 1, 'archive': 0, 'sent': 2, 'notifications': 4})
+identity client: khalid.alotaibi
+can khalid see sara's thread wt-test123 (shared)? True
+can omar's view? False
+upload {'file_id': 'f_73af994230', 'name': 'report.docx', 'size': 140794, 'content_type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'}
+send (201, {'thread_id': 't_ea039d1f0d', 'message_id': 'm_49fae74ad1', 'recipients': ['khalid.alotaibi']})

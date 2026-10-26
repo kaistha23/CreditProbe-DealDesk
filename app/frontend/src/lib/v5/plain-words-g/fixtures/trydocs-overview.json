@@ -1,0 +1,42 @@
+{
+ "notice": "Confidential demo session. Your documents are read on this laptop only (CreditProbe runs locally, not in the cloud) and nothing is sent anywhere in no-model mode. The session keeps its files in one folder and the demo deal in the local store; both are wiped when you leave (Exit and wipe), and any session left open is wiped after 4 hours. The learned policy is a demo-only version: it changes nothing in the bank's parameters unless a checker approves it.",
+ "model_notice": "Model mode: the draft wording is polished by the language model through the Anthropic API, so the draft text leaves this laptop. Use no-model mode for sensitive documents.",
+ "model_available": false,
+ "modes": [
+  "deterministic",
+  "model"
+ ],
+ "default_mode": "deterministic",
+ "ocr": {
+  "available": true,
+  "pdf_pages": true,
+  "languages": [
+   "eng",
+   "osd"
+  ],
+  "arabic": false
+ },
+ "accepted": [
+  ".docx",
+  ".pdf",
+  ".png",
+  ".jpg",
+  ".jpeg",
+  ".tif"
+ ],
+ "fallback": {
+  "proposal": "Gulf_Meridian_Contracting_credit_proposal.docx",
+  "policy": "Fictional_Bank_Credit_Policy.docx",
+  "proposals": [
+   "Al_Sahel_Building_Materials_credit_proposal.docx",
+   "Gulf_Meridian_Contracting_credit_proposal.docx"
+  ],
+  "note": "Fictional twins and Session O's fictional policy (Sandstone Harbour Bank PJSC)."
+ },
+ "ttl_hours": 4,
+ "integrations": {
+  "review": "Session B review (backend.dealdesk.review2.workspace.review)",
+  "paper": "Session F committee paper (backend.dealdesk.committee_paper.build)",
+  "publisher": "Session E publisher (backend.dealdesk.data.publish)"
+ }
+}

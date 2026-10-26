@@ -1,0 +1,656 @@
+[
+ {
+  "path": "/workspace",
+  "status": 200,
+  "s": 5.5,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=Xsk9VVY3wQvHYMzX",
+   "http://127.0.0.1:5500/borrower-360?_rsc=Xsk9VVY3wQvHYMzX",
+   "http://127.0.0.1:5500/what-if?_rsc=Xsk9VVY3wQvHYMzX",
+   "http://127.0.0.1:5500/brf?_rsc=Xsk9VVY3wQvHYMzX",
+   "http://127.0.0.1:5500/policy-docs?_rsc=Xsk9VVY3wQvHYMzX"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 3478
+ },
+ {
+  "path": "/",
+  "status": 200,
+  "s": 2.8,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/lenses?_rsc=5CB68i4pnAekjehf",
+   "http://127.0.0.1:5500/deal-desk?_rsc=5CB68i4pnAekjehf",
+   "http://127.0.0.1:5500/queries?_rsc=5CB68i4pnAekjehf",
+   "http://127.0.0.1:5500/scorecard-validation?_rsc=5CB68i4pnAekjehf",
+   "http://127.0.0.1:5500/early-warning?_rsc=tXyZJ52UQVBCVsD3"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 2764
+ },
+ {
+  "path": "/intelligence",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/lenses?_rsc=3fD0047dUoUPXvG2",
+   "http://127.0.0.1:5500/deal-desk?_rsc=3fD0047dUoUPXvG2",
+   "http://127.0.0.1:5500/queries?_rsc=3fD0047dUoUPXvG2",
+   "http://127.0.0.1:5500/brf?_rsc=3fD0047dUoUPXvG2",
+   "http://127.0.0.1:5500/scorecard-validation?_rsc=3fD0047dUoUPXvG2"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1977
+ },
+ {
+  "path": "/early-warning",
+  "status": 200,
+  "s": 4.3,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=2fG94ykBhfHRIAVZ",
+   "http://127.0.0.1:5500/lenses?_rsc=2fG94ykBhfHRIAVZ",
+   "http://127.0.0.1:5500/what-if?_rsc=2fG94ykBhfHRIAVZ",
+   "http://127.0.0.1:5500/early-warning/model?domain=corporate&_rsc=2fG94ykBhfHRIAVZ",
+   "http://127.0.0.1:5500/queries?_rsc=2fG94ykBhfHRIAVZ"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 22088
+ },
+ {
+  "path": "/accepted-risk",
+  "status": 200,
+  "s": 3.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/what-if?_rsc=LNoNya-f1buzBqT6",
+   "http://127.0.0.1:5500/policy-docs?_rsc=LNoNya-f1buzBqT6",
+   "http://127.0.0.1:5500/scorecard-validation?_rsc=LNoNya-f1buzBqT6",
+   "http://127.0.0.1:5500/lenses?_rsc=VMJUXJimmQnvdnQN",
+   "http://127.0.0.1:5500/deal-desk?_rsc=VMJUXJimmQnvdnQN"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 4253
+ },
+ {
+  "path": "/borrower-360",
+  "status": 200,
+  "s": 2.9,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/what-if?_rsc=SONH7ygw3UqbhVYx",
+   "http://127.0.0.1:5500/lenses?_rsc=SONH7ygw3UqbhVYx",
+   "http://127.0.0.1:5500/deal-desk?_rsc=SONH7ygw3UqbhVYx",
+   "http://127.0.0.1:5500/queries?_rsc=SONH7ygw3UqbhVYx",
+   "http://127.0.0.1:5500/brf?_rsc=SONH7ygw3UqbhVYx"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 13579
+ },
+ {
+  "path": "/what-if",
+  "status": 200,
+  "s": 3.4,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/deal-desk?_rsc=YNzeX7xCkujl_I30",
+   "http://127.0.0.1:5500/queries?_rsc=YNzeX7xCkujl_I30",
+   "http://127.0.0.1:5500/brf?_rsc=YNzeX7xCkujl_I30",
+   "http://127.0.0.1:5500/early-warning?_rsc=XtTaO253c9wNWZvA",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=XtTaO253c9wNWZvA"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 2955
+ },
+ {
+  "path": "/lenses",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=zswC7hp0YCMym9Vc",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=zswC7hp0YCMym9Vc",
+   "http://127.0.0.1:5500/borrower-360?_rsc=zswC7hp0YCMym9Vc",
+   "http://127.0.0.1:5500/what-if?_rsc=zswC7hp0YCMym9Vc",
+   "http://127.0.0.1:5500/deal-desk?_rsc=zswC7hp0YCMym9Vc"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 3963
+ },
+ {
+  "path": "/lenses?tab=library",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=zswC7hp0YCMym9Vc",
+   "http://127.0.0.1:5500/early-warning?_rsc=zswC7hp0YCMym9Vc",
+   "http://127.0.0.1:5500/deal-desk?_rsc=zswC7hp0YCMym9Vc",
+   "http://127.0.0.1:5500/queries?_rsc=zswC7hp0YCMym9Vc",
+   "http://127.0.0.1:5500/brf?_rsc=zswC7hp0YCMym9Vc"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 12596
+ },
+ {
+  "path": "/deal-desk",
+  "status": 200,
+  "s": 2.9,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/lenses?_rsc=Dv8bYo8KoHNjoT-n",
+   "http://127.0.0.1:5500/queries?_rsc=Dv8bYo8KoHNjoT-n",
+   "http://127.0.0.1:5500/what-if?_rsc=Dv8bYo8KoHNjoT-n",
+   "http://127.0.0.1:5500/brf?_rsc=Dv8bYo8KoHNjoT-n",
+   "http://127.0.0.1:5500/policy-docs?_rsc=Dv8bYo8KoHNjoT-n"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 3031
+ },
+ {
+  "path": "/deal-desk/review",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=LyGWOGDE3Al17tbe",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=LyGWOGDE3Al17tbe",
+   "http://127.0.0.1:5500/borrower-360?_rsc=LyGWOGDE3Al17tbe",
+   "http://127.0.0.1:5500/deal-desk?_rsc=LyGWOGDE3Al17tbe",
+   "http://127.0.0.1:5500/queries?_rsc=LyGWOGDE3Al17tbe"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 807
+ },
+ {
+  "path": "/deal-desk/parameters",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=rphI-n1tI9_L-9fA",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=rphI-n1tI9_L-9fA",
+   "http://127.0.0.1:5500/queries?_rsc=rphI-n1tI9_L-9fA",
+   "http://127.0.0.1:5500/deal-desk?_rsc=rphI-n1tI9_L-9fA",
+   "http://127.0.0.1:5500/brf?_rsc=rphI-n1tI9_L-9fA"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 2838
+ },
+ {
+  "path": "/deal-desk/portfolio-raroc",
+  "status": 200,
+  "s": 3.2,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=TJSJNWSqUtG4vpg2",
+   "http://127.0.0.1:5500/borrower-360?_rsc=TJSJNWSqUtG4vpg2",
+   "http://127.0.0.1:5500/what-if?_rsc=TJSJNWSqUtG4vpg2",
+   "http://127.0.0.1:5500/deal-desk?_rsc=TJSJNWSqUtG4vpg2",
+   "http://127.0.0.1:5500/queries?_rsc=TJSJNWSqUtG4vpg2"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 4239
+ },
+ {
+  "path": "/queries",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=Eh3eqnQisychf5UD",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=Eh3eqnQisychf5UD",
+   "http://127.0.0.1:5500/what-if?_rsc=Eh3eqnQisychf5UD",
+   "http://127.0.0.1:5500/lenses?_rsc=Eh3eqnQisychf5UD",
+   "http://127.0.0.1:5500/deal-desk?_rsc=Eh3eqnQisychf5UD"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1024
+ },
+ {
+  "path": "/brf",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=K7pj4vuUbQ9inMyx",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=K7pj4vuUbQ9inMyx",
+   "http://127.0.0.1:5500/borrower-360?_rsc=K7pj4vuUbQ9inMyx",
+   "http://127.0.0.1:5500/what-if?_rsc=K7pj4vuUbQ9inMyx",
+   "http://127.0.0.1:5500/lenses?_rsc=K7pj4vuUbQ9inMyx"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 813
+ },
+ {
+  "path": "/playbook",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:8506/api/v1/playbook/committee",
+   "http://127.0.0.1:8506/api/v1/playbook/reports",
+   "http://127.0.0.1:8506/api/v1/playbook/summary",
+   "http://127.0.0.1:8506/api/v1/playbook/templates",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=BzL42zmG4WuUwG0_"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 2068
+ },
+ {
+  "path": "/policy-docs",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED",
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=kbten5mIuUvsxjk6",
+   "http://127.0.0.1:5500/what-if?_rsc=kbten5mIuUvsxjk6",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=kbten5mIuUvsxjk6",
+   "http://127.0.0.1:5500/borrower-360?_rsc=kbten5mIuUvsxjk6",
+   "http://127.0.0.1:5500/queries?_rsc=kbten5mIuUvsxjk6"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 749
+ },
+ {
+  "path": "/scorecard-validation",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/queries?_rsc=_ogLLQiOcHjJp_5D",
+   "http://127.0.0.1:5500/early-warning?_rsc=RUbyBT5uVxgA-GP0",
+   "http://127.0.0.1:5500/deal-desk?_rsc=RUbyBT5uVxgA-GP0",
+   "http://127.0.0.1:5500/queries?_rsc=RUbyBT5uVxgA-GP0",
+   "http://127.0.0.1:5500/brf?_rsc=RUbyBT5uVxgA-GP0"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1085
+ },
+ {
+  "path": "/messages",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=jdIj7OpSJrBiTWnp",
+   "http://127.0.0.1:5500/scorecard-validation?_rsc=jdIj7OpSJrBiTWnp",
+   "http://127.0.0.1:5500/policy-docs?_rsc=jdIj7OpSJrBiTWnp",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=bT28To5ZNpN6NysY",
+   "http://127.0.0.1:5500/borrower-360?_rsc=bT28To5ZNpN6NysY"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1184
+ },
+ {
+  "path": "/projects",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/what-if?_rsc=rVOxZyJZQf-ncF1B",
+   "http://127.0.0.1:5500/lenses?_rsc=rVOxZyJZQf-ncF1B",
+   "http://127.0.0.1:5500/deal-desk?_rsc=rVOxZyJZQf-ncF1B",
+   "http://127.0.0.1:5500/policy-docs?_rsc=rVOxZyJZQf-ncF1B",
+   "http://127.0.0.1:5500/scorecard-validation?_rsc=rVOxZyJZQf-ncF1B"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1315
+ },
+ {
+  "path": "/investigations",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=D0wSLfMGVl7dLfSf",
+   "http://127.0.0.1:5500/borrower-360?_rsc=D0wSLfMGVl7dLfSf",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=D0wSLfMGVl7dLfSf",
+   "http://127.0.0.1:5500/what-if?_rsc=D0wSLfMGVl7dLfSf",
+   "http://127.0.0.1:5500/investigations/retail-risk-build-up-2026?_rsc=D0wSLfMGVl7dLfSf"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1232
+ },
+ {
+  "path": "/analyses",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=dnDmdiirTliFyG2c",
+   "http://127.0.0.1:5500/lenses?_rsc=dnDmdiirTliFyG2c",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=dnDmdiirTliFyG2c",
+   "http://127.0.0.1:5500/borrower-360?_rsc=dnDmdiirTliFyG2c",
+   "http://127.0.0.1:5500/what-if?_rsc=dnDmdiirTliFyG2c"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1907
+ },
+ {
+  "path": "/playbooks",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=SDt3ui7g1x5_ZuRR",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=SDt3ui7g1x5_ZuRR",
+   "http://127.0.0.1:5500/borrower-360?_rsc=SDt3ui7g1x5_ZuRR",
+   "http://127.0.0.1:5500/what-if?_rsc=SDt3ui7g1x5_ZuRR",
+   "http://127.0.0.1:5500/queries?_rsc=SDt3ui7g1x5_ZuRR"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 596
+ },
+ {
+  "path": "/stress",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/lenses?_rsc=JG7dcF7qA7uhakaq",
+   "http://127.0.0.1:5500/deal-desk?_rsc=JG7dcF7qA7uhakaq",
+   "http://127.0.0.1:5500/queries?_rsc=JG7dcF7qA7uhakaq",
+   "http://127.0.0.1:5500/brf?_rsc=JG7dcF7qA7uhakaq",
+   "http://127.0.0.1:5500/policy-docs?_rsc=JG7dcF7qA7uhakaq"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1454
+ },
+ {
+  "path": "/studio",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=1xkjR6qovEdN5-_9",
+   "http://127.0.0.1:5500/deal-desk?_rsc=1xkjR6qovEdN5-_9",
+   "http://127.0.0.1:5500/brf?_rsc=1xkjR6qovEdN5-_9",
+   "http://127.0.0.1:5500/queries?_rsc=1xkjR6qovEdN5-_9",
+   "http://127.0.0.1:5500/policy-docs?_rsc=1xkjR6qovEdN5-_9"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1129
+ },
+ {
+  "path": "/data-builder",
+  "status": 200,
+  "s": 4.8,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=x80nSbw1RLLGGpsB",
+   "http://127.0.0.1:5500/early-warning?_rsc=x80nSbw1RLLGGpsB",
+   "http://127.0.0.1:5500/borrower-360?_rsc=x80nSbw1RLLGGpsB",
+   "http://127.0.0.1:5500/what-if?_rsc=x80nSbw1RLLGGpsB",
+   "http://127.0.0.1:5500/lenses?_rsc=x80nSbw1RLLGGpsB"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 9630
+ },
+ {
+  "path": "/trace",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=6ePDQ9S_jefvAOGK",
+   "http://127.0.0.1:5500/borrower-360?_rsc=6ePDQ9S_jefvAOGK",
+   "http://127.0.0.1:5500/lenses?_rsc=6ePDQ9S_jefvAOGK",
+   "http://127.0.0.1:5500/what-if?_rsc=6ePDQ9S_jefvAOGK",
+   "http://127.0.0.1:5500/deal-desk?_rsc=6ePDQ9S_jefvAOGK"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 1410
+ },
+ {
+  "path": "/workflow",
+  "status": 200,
+  "s": 3.5,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=xQEr_Tl3IFXH5s7u",
+   "http://127.0.0.1:5500/borrower-360?_rsc=xQEr_Tl3IFXH5s7u",
+   "http://127.0.0.1:5500/what-if?_rsc=xQEr_Tl3IFXH5s7u",
+   "http://127.0.0.1:5500/lenses?_rsc=xQEr_Tl3IFXH5s7u",
+   "http://127.0.0.1:5500/deal-desk?_rsc=xQEr_Tl3IFXH5s7u"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 3554
+ },
+ {
+  "path": "/agent-operations",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=i8XHbmzg-JHI8e4a",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=i8XHbmzg-JHI8e4a",
+   "http://127.0.0.1:5500/borrower-360?_rsc=i8XHbmzg-JHI8e4a",
+   "http://127.0.0.1:5500/what-if?_rsc=i8XHbmzg-JHI8e4a",
+   "http://127.0.0.1:5500/lenses?_rsc=i8XHbmzg-JHI8e4a"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 6556
+ },
+ {
+  "path": "/ai-studio",
+  "status": 200,
+  "s": 2.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/borrower-360?_rsc=tRlkp2pVJi4rBQKJ",
+   "http://127.0.0.1:5500/what-if?_rsc=tRlkp2pVJi4rBQKJ",
+   "http://127.0.0.1:5500/lenses?_rsc=tRlkp2pVJi4rBQKJ",
+   "http://127.0.0.1:5500/deal-desk?_rsc=tRlkp2pVJi4rBQKJ",
+   "http://127.0.0.1:5500/brf?_rsc=tRlkp2pVJi4rBQKJ"
+  ],
+  "words": [
+   "test"
+  ],
+  "notfound": false,
+  "chars": 1346
+ },
+ {
+  "path": "/users",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=39HvKGtREFWpXQW3",
+   "http://127.0.0.1:5500/borrower-360?_rsc=39HvKGtREFWpXQW3",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=39HvKGtREFWpXQW3",
+   "http://127.0.0.1:5500/deal-desk?_rsc=39HvKGtREFWpXQW3",
+   "http://127.0.0.1:5500/early-warning?_rsc=fD3TN4W_0Hhpbwaz"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 2344
+ },
+ {
+  "path": "/settings",
+  "status": 200,
+  "s": 2.8,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=DQxjArDrgutTG17x",
+   "http://127.0.0.1:5500/lenses?_rsc=DQxjArDrgutTG17x",
+   "http://127.0.0.1:5500/queries?_rsc=DQxjArDrgutTG17x",
+   "http://127.0.0.1:5500/scorecard-validation?_rsc=DQxjArDrgutTG17x",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=j-_vjoKOn8bxlRO7"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 7060
+ },
+ {
+  "path": "/audit-log",
+  "status": 200,
+  "s": 2.7,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/lenses?_rsc=7TM3D5q-eZ_gRlto",
+   "http://127.0.0.1:5500/deal-desk?_rsc=7TM3D5q-eZ_gRlto",
+   "http://127.0.0.1:5500/queries?_rsc=7TM3D5q-eZ_gRlto",
+   "http://127.0.0.1:5500/brf?_rsc=7TM3D5q-eZ_gRlto",
+   "http://127.0.0.1:5500/brf?_rsc=wGrX3oajs4_xaMuH"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 7285
+ },
+ {
+  "path": "/borrower-360?domain=corporate&customer_id=CB00009&tab=relationships",
+  "status": 200,
+  "s": 3.6,
+  "errors": [
+   "Failed to load resource: net::ERR_CONNECTION_REFUSED"
+  ],
+  "failed": [
+   "http://127.0.0.1:8000/api/v1/health",
+   "http://127.0.0.1:5500/early-warning?_rsc=SONH7ygw3UqbhVYx",
+   "http://127.0.0.1:5500/accepted-risk?_rsc=SONH7ygw3UqbhVYx",
+   "http://127.0.0.1:5500/what-if?_rsc=SONH7ygw3UqbhVYx",
+   "http://127.0.0.1:5500/lenses?_rsc=SONH7ygw3UqbhVYx",
+   "http://127.0.0.1:5500/deal-desk?_rsc=SONH7ygw3UqbhVYx"
+  ],
+  "words": [],
+  "notfound": false,
+  "chars": 11409
+ }
+]

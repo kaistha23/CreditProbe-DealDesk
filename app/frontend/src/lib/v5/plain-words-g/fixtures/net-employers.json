@@ -1,0 +1,114 @@
+{
+ "period": "2026Q2",
+ "rows": [
+  {
+   "employer_id": "CB03632",
+   "name": "Turaif First Properties",
+   "sector": "Real Estate",
+   "contractors": 3,
+   "contractor_ead": 128.6635,
+   "attributable": 34.297046259999995,
+   "max_share": 54.1,
+   "own_ead": 51.946799999999996,
+   "combined": 86.24384626,
+   "status": "within appetite",
+   "utilisation_pct": 34.497538504
+  },
+  {
+   "employer_id": "CB03891",
+   "name": "Yanbu Western Properties",
+   "sector": "Real Estate",
+   "contractors": 2,
+   "contractor_ead": 91.2296,
+   "attributable": 32.8780072,
+   "max_share": 55.25,
+   "own_ead": 34.2307,
+   "combined": 67.1087072,
+   "status": "within appetite",
+   "utilisation_pct": 26.84348288
+  },
+  {
+   "employer_id": "CB03633",
+   "name": "Al Faisaliah Modern Properties",
+   "sector": "Real Estate",
+   "contractors": 2,
+   "contractor_ead": 78.2728,
+   "attributable": 30.059830599999998,
+   "max_share": 55.63,
+   "own_ead": 25.0347,
+   "combined": 55.0945306,
+   "status": "within appetite",
+   "utilisation_pct": 22.03781224
+  },
+  {
+   "employer_id": "CB03843",
+   "name": "Yanbu Continental Properties",
+   "sector": "Real Estate",
+   "contractors": 3,
+   "contractor_ead": 112.5926,
+   "attributable": 28.413871420000003,
+   "max_share": 52.25,
+   "own_ead": 40.810300000000005,
+   "combined": 69.22417142,
+   "status": "within appetite",
+   "utilisation_pct": 27.689668568000002
+  },
+  {
+   "employer_id": "CB03661",
+   "name": "Dhahran Advanced Properties",
+   "sector": "Real Estate",
+   "contractors": 1,
+   "contractor_ead": 52.31869999999999,
+   "attributable": 28.131764989999997,
+   "max_share": 53.77,
+   "own_ead": 12.610599999999998,
+   "combined": 40.74236499,
+   "status": "within appetite",
+   "utilisation_pct": 16.296945995999998
+  },
+  {
+   "employer_id": "CB03777",
+   "name": "Al Faisaliah Integrated Properties",
+   "sector": "Real Estate",
+   "contractors": 1,
+   "contractor_ead": 48.941700000000004,
+   "attributable": 26.48724804,
+   "max_share": 54.12,
+   "own_ead": 13.6679,
+   "combined": 40.15514804,
+   "status": "within appetite",
+   "utilisation_pct": 16.062059215999998
+  }
+ ],
+ "appetite": {
+  "label": "Single obligor",
+  "appetite": 200.0,
+  "trigger": 225.0,
+  "limit": 250.0,
+  "basis": "CP-1.1: SAR 250m per obligor, funded and unfunded EAD"
+ },
+ "deal_desk_employers": [
+  {
+   "entity_id": "XE-TWB-E1",
+   "name": "Saadiyat Crest Developments",
+   "credit_status": "performing"
+  },
+  {
+   "entity_id": "XE-TWB-E2",
+   "name": "Al Wusta Housing Company",
+   "credit_status": "performing"
+  },
+  {
+   "entity_id": "XE-TWB-E3",
+   "name": "Harbourline Real Estate Company",
+   "credit_status": "past_due"
+  },
+  {
+   "entity_id": "XE-TWB-E4",
+   "name": "Northgate Education Projects Company",
+   "credit_status": "performing"
+  }
+ ],
+ "method": "contractors = Construction-sector suppliers paid by the employer (SUPPLIES edges); attributable = contractor EAD x revenue share paid",
+ "money_unit": "SAR million"
+}

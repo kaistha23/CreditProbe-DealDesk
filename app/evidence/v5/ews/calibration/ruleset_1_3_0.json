@@ -1,0 +1,387 @@
+{
+ "ruleset": "gw-ews-1.3.0",
+ "previous": "gw-ews-1.2.0",
+ "targets": {
+  "warned_pct": [
+   10.0,
+   20.0
+  ],
+  "high_or_critical_pct_below": 7.0
+ },
+ "constraints": [
+  "every already-bad owner warned",
+  "no rule switched off",
+  "critical band not empty",
+  "at least 2 improving and 2 deteriorating segments per level"
+ ],
+ "story": {
+  "corporate": {
+   "sector": {
+    "Construction": 1,
+    "Real Estate": 1,
+    "Healthcare": -1,
+    "Power and Utilities": -1,
+    "Telecommunications": -1
+   },
+   "region": {
+    "Makkah": 1
+   },
+   "sub_sector@Construction": {
+    "Building Contracting": 1,
+    "Civil Infrastructure": -1
+   }
+  },
+  "retail": {
+   "product": {
+    "Credit Card": 1,
+    "Buy Now Pay Later": 1,
+    "Mortgage": -1,
+    "Auto Finance": -1
+   },
+   "region": {
+    "Qassim": 1
+   }
+  }
+ },
+ "books": {
+  "corporate": {
+   "domain_id": "corporate",
+   "combinations": 9000,
+   "meeting_targets_and_constraints": 91,
+   "best": {
+    "rules": {
+     "C-WATCH": [
+      null,
+      1
+     ],
+     "C-DOWNGRADE": [
+      0,
+      1
+     ],
+     "C-COVENANT": [
+      0,
+      1
+     ],
+     "C-DPD": [
+      59,
+      2
+     ],
+     "C-SICR": [
+      null,
+      1
+     ],
+     "C-UTIL": [
+      98,
+      1
+     ],
+     "C-DEFAULT": [
+      null,
+      2
+     ],
+     "C-BUR-EXTDPD": [
+      59,
+      3
+     ],
+     "C-BUR-ENQ": [
+      2,
+      1
+     ],
+     "C-OB-INFLOW": [
+      -30,
+      1
+     ],
+     "C-OB-BUFFER": [
+      1.0,
+      1
+     ],
+     "C-OB-RETURNED": [
+      2,
+      1
+     ]
+    },
+    "bands": [
+     4,
+     8,
+     10
+    ],
+    "headline": {
+     "owners": 5412,
+     "warned": 1039,
+     "warned_pct": 19.19807834441981,
+     "high_or_critical": 375,
+     "high_or_critical_pct": 6.929046563192904,
+     "critical": 158,
+     "bad": 580,
+     "bad_warned_pct": 100.0,
+     "forward_risk": 459
+    },
+    "story": {
+     "sector": {
+      "improving": [
+       "Agriculture and Agri-processing",
+       "Chemicals",
+       "Healthcare",
+       "Metals and Mining",
+       "Power and Utilities",
+       "Telecommunications",
+       "Wholesale Trade"
+      ],
+      "deteriorating": [
+       "Construction",
+       "Hospitality",
+       "Real Estate"
+      ],
+      "story_hits": 5,
+      "story_named": 5,
+      "ok": true,
+      "delta_warned": {
+       "Agriculture and Agri-processing": -1,
+       "Chemicals": -5,
+       "Construction": 72,
+       "Healthcare": -7,
+       "Hospitality": 38,
+       "Information Technology": 1,
+       "Manufacturing": 0,
+       "Metals and Mining": -7,
+       "Power and Utilities": -9,
+       "Real Estate": 84,
+       "Retail Trade": -5,
+       "Telecommunications": -6,
+       "Transport and Logistics": 6,
+       "Wholesale Trade": -5
+      },
+      "delta_severe_ead_sar_mn": {
+       "Agriculture and Agri-processing": -98.2,
+       "Chemicals": -0.2,
+       "Construction": 1704.1,
+       "Healthcare": -31.6,
+       "Hospitality": 85.5,
+       "Information Technology": 0.0,
+       "Manufacturing": -5.1,
+       "Metals and Mining": -39.6,
+       "Power and Utilities": -17.3,
+       "Real Estate": 859.9,
+       "Retail Trade": 16.8,
+       "Telecommunications": -41.5,
+       "Transport and Logistics": -18.6,
+       "Wholesale Trade": -51.8
+      }
+     },
+     "region": {
+      "improving": [
+       "Asir",
+       "Hail",
+       "Northern Borders"
+      ],
+      "deteriorating": [
+       "Eastern Province",
+       "Madinah",
+       "Makkah",
+       "Qassim",
+       "Riyadh"
+      ],
+      "story_hits": 1,
+      "story_named": 1,
+      "ok": true,
+      "delta_warned": {
+       "Asir": -4,
+       "Eastern Province": 29,
+       "Hail": -11,
+       "Madinah": 40,
+       "Makkah": 45,
+       "Najran": 0,
+       "Northern Borders": -3,
+       "Qassim": 29,
+       "Riyadh": 30,
+       "Tabuk": 1
+      },
+      "delta_severe_ead_sar_mn": {
+       "Asir": -66.8,
+       "Eastern Province": 759.0,
+       "Hail": -49.0,
+       "Madinah": 338.7,
+       "Makkah": 485.3,
+       "Najran": 0.0,
+       "Northern Borders": -41.4,
+       "Qassim": 598.1,
+       "Riyadh": 372.2,
+       "Tabuk": -33.7
+      }
+     },
+     "sub_sector@Construction": {
+      "improving": [
+       "Civil Infrastructure"
+      ],
+      "deteriorating": [
+       "Building Contracting",
+       "Electromechanical",
+       "Marine Works",
+       "Roads and Bridges",
+       "Site Preparation"
+      ],
+      "story_hits": 2,
+      "story_named": 2,
+      "ok": false,
+      "delta_warned": {
+       "Building Contracting": 23,
+       "Civil Infrastructure": -7,
+       "Electromechanical": 10,
+       "Marine Works": 14,
+       "Roads and Bridges": 20,
+       "Site Preparation": 12
+      },
+      "delta_severe_ead_sar_mn": {
+       "Building Contracting": 1325.7,
+       "Civil Infrastructure": -299.3,
+       "Electromechanical": 144.1,
+       "Marine Works": 60.9,
+       "Roads and Bridges": 261.7,
+       "Site Preparation": 210.9
+      }
+     }
+    }
+   },
+   "periods": [
+    "2026Q1",
+    "2026Q2"
+   ]
+  },
+  "retail": {
+   "domain_id": "retail",
+   "combinations": 9000,
+   "meeting_targets_and_constraints": 2366,
+   "best": {
+    "rules": {
+     "R-DPD": [
+      0,
+      3
+     ],
+     "R-SCORE-LOW": [
+      "E",
+      1
+     ],
+     "R-SCORE-DOWN": [
+      "2BANDS",
+      2
+     ],
+     "R-UTIL": [
+      85,
+      2
+     ],
+     "R-MINPAY": [
+      -10,
+      1
+     ],
+     "R-BUR-SCORE": [
+      580,
+      1
+     ],
+     "R-BUR-EXTDPD": [
+      59,
+      1
+     ],
+     "R-BUR-ENQ": [
+      5,
+      2
+     ],
+     "R-OB-SALARY": [
+      null,
+      2
+     ],
+     "R-OB-BUFFER": [
+      1.0,
+      1
+     ],
+     "R-OB-INFLOW": [
+      -40,
+      1
+     ]
+    },
+    "bands": [
+     3,
+     5,
+     7
+    ],
+    "headline": {
+     "owners": 25432,
+     "warned": 4695,
+     "warned_pct": 18.46099402327776,
+     "high_or_critical": 1682,
+     "high_or_critical_pct": 6.613715004718465,
+     "critical": 626,
+     "bad": 1114,
+     "bad_warned_pct": 100.0,
+     "forward_risk": 3581
+    },
+    "story": {
+     "product": {
+      "improving": [
+       "Auto Finance",
+       "Mortgage"
+      ],
+      "deteriorating": [
+       "Buy Now Pay Later",
+       "Credit Card"
+      ],
+      "story_hits": 4,
+      "story_named": 4,
+      "ok": true,
+      "delta_warned": {
+       "Auto Finance": -39,
+       "Buy Now Pay Later": 471,
+       "Credit Card": 287,
+       "Mortgage": -14,
+       "Personal Finance": 90
+      },
+      "delta_severe_ead_sar_mn": {
+       "Auto Finance": -4.6,
+       "Buy Now Pay Later": 2.1,
+       "Credit Card": 4.8,
+       "Mortgage": -17.8,
+       "Personal Finance": -4.6
+      }
+     },
+     "region": {
+      "improving": [
+       "Eastern Province",
+       "Riyadh"
+      ],
+      "deteriorating": [
+       "Asir",
+       "Hail",
+       "Qassim",
+       "Tabuk"
+      ],
+      "story_hits": 1,
+      "story_named": 1,
+      "ok": true,
+      "delta_warned": {
+       "Asir": 23,
+       "Eastern Province": -12,
+       "Hail": 55,
+       "Madinah": 92,
+       "Makkah": 43,
+       "Qassim": 121,
+       "Riyadh": -28,
+       "Tabuk": 62
+      },
+      "delta_severe_ead_sar_mn": {
+       "Asir": 6.8,
+       "Eastern Province": -30.1,
+       "Hail": 8.8,
+       "Madinah": -6.8,
+       "Makkah": -1.6,
+       "Qassim": 23.6,
+       "Riyadh": -24.5,
+       "Tabuk": 3.7
+      }
+     }
+    }
+   },
+   "periods": [
+    "2026-07",
+    "2026-08"
+   ]
+  }
+ }
+}

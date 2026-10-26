@@ -1,0 +1,178 @@
+{
+ "release_id": "monitoring-saudi-v1",
+ "build_version": "1.0.0",
+ "origin": "SYNTHETIC_DEMO",
+ "source_release": "scorecard-saudi-v1",
+ "policy": "mmsg-monitoring-policy-1.0",
+ "relations": {
+  "sc_monitor_metric": {
+   "rows": 713,
+   "digest": "befb08acaeb83c4a"
+  },
+  "sc_monitor_characteristic": {
+   "rows": 844,
+   "digest": "1d7b2e89badd4c89"
+  },
+  "sc_model_inventory": {
+   "rows": 3,
+   "digest": "7acf89c6703f8190"
+  },
+  "sc_findings_register": {
+   "rows": 7,
+   "digest": "1aaee69d9830a2e8"
+  },
+  "sc_monitor_schedule": {
+   "rows": 3,
+   "digest": "5380f1faad6142c4"
+  }
+ },
+ "facts": {
+  "RET-APP": {
+   "scorecard_id": "RET-APP",
+   "development": [
+    "2025-01",
+    "2025-04"
+   ],
+   "window": [
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08"
+   ],
+   "last_matured": "2025-08",
+   "as_of": "2026-08",
+   "segment_col": "product",
+   "approved_segments": [
+    "Auto Finance",
+    "Credit Card",
+    "Mortgage",
+    "Personal Finance"
+   ],
+   "dev_gini": 0.445130488947896,
+   "lag": 12,
+   "periods": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ]
+  },
+  "RET-BEH": {
+   "scorecard_id": "RET-BEH",
+   "development": [
+    "2025-01",
+    "2025-04"
+   ],
+   "window": [
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08"
+   ],
+   "last_matured": "2025-08",
+   "as_of": "2026-08",
+   "segment_col": "product",
+   "approved_segments": [
+    "Auto Finance",
+    "Credit Card",
+    "Mortgage",
+    "Personal Finance"
+   ],
+   "dev_gini": 0.4363388623060247,
+   "lag": 12,
+   "periods": [
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06",
+    "2025-07",
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08"
+   ]
+  },
+  "SME-ANN": {
+   "scorecard_id": "SME-ANN",
+   "development": [
+    "2021Q4",
+    "2023Q2"
+   ],
+   "window": [
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2"
+   ],
+   "last_matured": "2025Q2",
+   "as_of": "2026Q2",
+   "segment_col": "sector",
+   "approved_segments": [
+    "Agriculture and Agri-processing",
+    "Chemicals",
+    "Construction",
+    "Healthcare",
+    "Hospitality",
+    "Information Technology",
+    "Manufacturing",
+    "Metals and Mining",
+    "Power and Utilities",
+    "Real Estate",
+    "Retail Trade",
+    "Telecommunications",
+    "Transport and Logistics",
+    "Wholesale Trade"
+   ],
+   "dev_gini": 0.5229467794390783,
+   "lag": 4,
+   "periods": [
+    "2021Q4",
+    "2022Q1",
+    "2022Q2",
+    "2022Q3",
+    "2022Q4",
+    "2023Q1",
+    "2023Q2",
+    "2023Q3",
+    "2023Q4",
+    "2024Q1",
+    "2024Q2",
+    "2024Q3",
+    "2024Q4",
+    "2025Q1",
+    "2025Q2",
+    "2025Q3",
+    "2025Q4",
+    "2026Q1",
+    "2026Q2"
+   ]
+  }
+ }
+}

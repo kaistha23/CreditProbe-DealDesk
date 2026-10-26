@@ -1,0 +1,90 @@
+{
+ "module": "r4",
+ "commit": "0d3454a",
+ "utc": "20261011T180206Z",
+ "passed": false,
+ "declared_cockpit_exceptions": [
+  "tests/cockpit_v4/test_credit_policy.py::test_a_clause_id_is_the_most_precise_way_in",
+  "tests/cockpit_v4/test_credit_policy.py::test_a_policy_question_arrives_with_its_clauses_already_attached",
+  "tests/cockpit_v4/test_live_uat_matrix_revision.py::test_the_policy_settles_the_measure_l16_was_believed_to_leave_open",
+  "tests/cockpit_v4/test_misread_as_product_help.py::test_a_published_answer_carries_the_policy_receipt",
+  "tests/cockpit_v4/test_misread_as_product_help.py::test_a_threshold_presented_as_a_limit_with_no_clause_is_refused",
+  "tests/cockpit_v4/test_misread_as_product_help.py::test_the_policy_question_reaches_cp_1_1_deterministically",
+  "tests/cockpit_v4/test_misread_as_product_help.py::test_the_refusal_says_what_to_do_about_it",
+  "tests/cockpit_v4/test_release_history.py::test_the_content_of_the_current_releases_is_what_was_published[v4-saudi-corporate-20q-v4]"
+ ],
+ "items": [
+  {
+   "item": "1. frozen guard",
+   "pass": true,
+   "detail": "FROZEN GUARD PASS (manifest): 148 frozen files match 831044ce2574 (registered exceptions, each exactly its patch: FX-7 backend/cockpit_v4/credit_policy.py; FX-2 backend/cockpit_v4/finalization.py; FX-A4 backend/cockpit_v4/product_knowledge.py; FX-12 frontend/src/components/cockpit-v4/answer-actions.tsx; FX-14a frontend/src/components/cockpit-v4/attention-drawer.tsx; FX-14d frontend/src/components/cockpit-v4/attention-panel.tsx; FX-14b frontend/src/components/cockpit-v4/cockpit-v4-home.tsx; FX-14e frontend/src/components/cockpit-v4/data-books.tsx; FX-14c frontend/src/components/cockpit-v4/ecl-panel.tsx; FX-1 frontend/src/components/cockpit-v4/visuals.tsx)",
+   "seconds": 0.1
+  },
+  {
+   "item": "2. sync tests",
+   "pass": true,
+   "detail": "80/80",
+   "seconds": 189.7
+  },
+  {
+   "item": "3a. r4 tests",
+   "pass": true,
+   "detail": "702/702",
+   "seconds": 1125.4
+  },
+  {
+   "item": "3b. EWS data suite (restoration)",
+   "pass": true,
+   "detail": "tests=296 passed=296 failed=0",
+   "seconds": 20.5
+  },
+  {
+   "item": "3b. EWS live API suite (restoration)",
+   "pass": true,
+   "detail": "\"passed\": 130,",
+   "seconds": 9.5
+  },
+  {
+   "item": "3b. frontend unit tests",
+   "pass": true,
+   "detail": "# tests 645 | # pass 645 | # fail 0",
+   "seconds": 16.1
+  },
+  {
+   "item": "3b. Deal Desk domain build check",
+   "pass": true,
+   "detail": "",
+   "seconds": 49.1
+  },
+  {
+   "item": "3b. frontend typecheck",
+   "pass": true,
+   "detail": "",
+   "seconds": 43.0
+  },
+  {
+   "item": "4a. Cockpit suite tests/cockpit_v4",
+   "pass": false,
+   "detail": "SKIPPED (--skip-cockpit-suite): gate not complete",
+   "seconds": 0.0
+  },
+  {
+   "item": "4b. Cockpit panels equal the post-rescale baseline",
+   "pass": true,
+   "detail": "PROBLEMS: 0",
+   "seconds": 0.3
+  },
+  {
+   "item": "5. browser smoke",
+   "pass": true,
+   "detail": "32/32 browser checks passed",
+   "seconds": 52.9
+  },
+  {
+   "item": "6. UAT sweep",
+   "pass": false,
+   "detail": "\n[001] corporate UAT 1     Open the Cockpit (home)\n",
+   "seconds": 2.1
+  }
+ ]
+}

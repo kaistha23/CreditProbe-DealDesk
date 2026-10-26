@@ -1,0 +1,56 @@
+{
+ "name": "credit_protection",
+ "owner": "Risk Models",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Guarantee providers the risk manager can ask for, credit insurance and assignment of receivables (CRM).",
+ "source": "CP-4.1 haircuts (receivables 50%); SAMA Basel III CRM: guarantee substitution for sovereign, bank and ECA protection, credit insurance from A-rated insurers treated as an eligible guarantee; Risk Models LGD study 2025",
+ "rows": {
+  "guarantee_catalogue": {
+   "REQ-PARENT": {
+    "type": "parent",
+    "label": "Parent company guarantee",
+    "rating_uplift_notches": 2,
+    "lgd": 0.45,
+    "sa_rw": null,
+    "requires_group": true
+   },
+   "REQ-BANK": {
+    "type": "bank",
+    "label": "Bank guarantee (A-rated local bank)",
+    "rating": "A",
+    "lgd": 0.4,
+    "sa_rw": 0.5
+   },
+   "REQ-SOVEREIGN": {
+    "type": "sovereign",
+    "label": "Sovereign guarantee (Ministry of Finance)",
+    "rating": "A+",
+    "lgd": 0.1,
+    "sa_rw": 0.0,
+    "requires_gre_or_contract": false
+   },
+   "REQ-ECA": {
+    "type": "eca",
+    "label": "Export credit agency cover",
+    "rating": "AA",
+    "lgd": 0.1,
+    "sa_rw": 0.0
+   }
+  },
+  "credit_insurance": {
+   "insurer_rating": "A",
+   "lgd": 0.45,
+   "sa_rw": 0.5,
+   "premium_bps": 45,
+   "max_cover_pct": 90
+  },
+  "receivables_assignment": {
+   "haircut": 0.5,
+   "recovery_years": 1.0,
+   "max_pct": 100,
+   "sa_eligible": false
+  }
+ }
+}

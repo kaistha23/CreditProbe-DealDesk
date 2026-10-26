@@ -1,0 +1,10 @@
+{
+  "description": "Credit policy setting (demo, labelled): borrowing-base advance rates for working-capital, revolving and trade lines; ask above capacity is always a critical finding. Owner: Credit Policy (Risk). R14 E.",
+  "version": "r14-e-1",
+  "borrowing_base": {
+    "advance_0_90": 0.8,
+    "advance_91_180": 0.5,
+    "advance_inventory": 0.5,
+    "single_debtor_cap": 0.25
+  }
+}

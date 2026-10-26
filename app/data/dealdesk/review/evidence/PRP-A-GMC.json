@@ -1,0 +1,27 @@
+{
+ "case_id": "PRP-A-GMC",
+ "description": "Evidence held by the bank for Case A (fictional): bureau and CBRBR extract, account conduct, audited financials, project monitoring, legal and security registers. Every figure the PLAN_R9 case states is used as stated; the dates and the split of retentions by completion year are the illustrative detail behind those figures (STATUS_R11_REVIEW.md).",
+ "sources": {
+  "bureau": "AECB and CBRBR extract, 10 Oct 2026",
+  "conduct": "Account conduct, 12 months to Sep 2026",
+  "audited": "FY2025 audited consolidated accounts (Meridian Holding)",
+  "projects": "Project monitoring report (quantity surveyor), Sep 2026",
+  "legal": "Legal department opinion register",
+  "security": "Security and documentation register",
+  "los": "Loan origination system: facility table and group exposure"
+ },
+ "projects": [
+  {"name": "Project 1", "planned_completion": "2024-11-13", "completion_pct": 96.0, "last_payment": "2026-08-31", "certified_pending_count": 0, "certified_pending_aed_mn": 0.0, "eot_status": "approved"},
+  {"name": "Project 2", "planned_completion": "2026-12-31", "completion_pct": 58.0, "last_payment": "2026-04-30", "certified_pending_count": 4, "certified_pending_aed_mn": 23.0, "eot_status": "not formalised"},
+  {"name": "Project 3", "planned_completion": "2026-06-30", "completion_pct": 71.7, "last_payment": "2026-09-15", "certified_pending_count": 0, "certified_pending_aed_mn": 0.0, "eot_status": "requested"}
+ ],
+ "retentions": {"memo_status": "not due", "defects_liability_months": 12,
+  "by_completion_year": [{"year": 2020, "amount": 9.5}, {"year": 2021, "amount": 14.2}, {"year": 2022, "amount": 18.6}, {"year": 2023, "amount": 17.9}, {"year": 2024, "amount": 18.8}]},
+ "governance": {"ownership_changed": "2026-05-20", "auditor": "Crescent Gate Auditors", "auditor_change_consent": false, "standalone_financials": false},
+ "bureau": {"client_reported_other_bank_limits": 2140.0, "cbrbr_other_bank_limits": 3710.0, "affiliate_returned_cheques": 50, "affiliate_returned_period": "Jan-Jul 2026", "group_entities_loss": []},
+ "security": {"cash_margin_pct": 0.0, "guarantee_format": "beneficiary", "guarantee_expiry": "open-ended", "corporate_guarantee_perfection": "deferred",
+  "legal_opinion_date": "2024-06-30", "performance_bond_due": "2026-01-31", "performance_bond_submitted": "2026-06-30", "asset_registered_to_borrower": true},
+ "connected": {"classified_elsewhere": [], "nominee_holdings": [], "staff_interest": []},
+ "routing": null,
+ "advance_payment": {"amount": 66.2, "credited_to_project_account": false}
+}

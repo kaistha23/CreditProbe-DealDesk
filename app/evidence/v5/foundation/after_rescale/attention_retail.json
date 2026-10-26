@@ -1,0 +1,1685 @@
+{
+ "amount_scale": "million",
+ "attention_label": "Retail portfolio requiring attention",
+ "cached": false,
+ "comparison_basis": "previous month",
+ "comparison_month": "2026-07",
+ "comparison_period": "2026-07",
+ "comparison_quarter": "",
+ "computed_ms": 117,
+ "domain_id": "retail",
+ "domain_label": "Retail Credit",
+ "ecl_highlights": [
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "display": "SAR 225 million",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [],
+    "borrower_count": 0,
+    "counterparty_column": "customer_id",
+    "entity_count": 0,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn",
+     "ead_sar_mn"
+    ],
+    "note": "This is a book-level figure, so there is no segment below it to open.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Which segments drove ECL in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "product"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What is the book's ECL coverage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "How does Retail ECL split by stage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "stage"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Which customers carry the most of Retail ECL in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id",
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Retail ECL moved over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "product",
+    "measure": "ecl_sar_mn",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "ecl-total",
+   "headline": "Retail recognised ECL is SAR 225 million",
+   "item_id": "att-14709d6a876e8eb2",
+   "key_numbers": [
+    {
+     "display": "SAR 225 million",
+     "label": "Recognised ECL, 2026-08"
+    },
+    {
+     "display": "SAR 205 million",
+     "label": "Recognised ECL, 2026-07"
+    },
+    {
+     "display": "SAR 19,739 million",
+     "label": "Exposure at default, 2026-08"
+    },
+    {
+     "display": "1.14%",
+     "label": "Coverage, 2026-08"
+    }
+   ],
+   "metric": "ecl_total",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": null,
+    "from_display": "SAR 205 million",
+    "to": null,
+    "to_display": "SAR 225 million",
+    "unit": "amount"
+   },
+   "one_line": "Across the book in 2026-08, on exposure of SAR 19,739 million.",
+   "period_noun": "month",
+   "possible_drivers": [],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "portfolio",
+   "score": 0.0,
+   "section": "ecl_highlight",
+   "segment": "Retail",
+   "segment_dimension": "portfolio",
+   "segment_dimension_label": "Whole book",
+   "segment_label": "Retail",
+   "severity": "medium",
+   "what_changed": "Across the book in 2026-08, on exposure of SAR 19,739 million.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "Recognised ECL is one of the four figures this book reports on its own ECL position for 2026-08."
+  },
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "display": "SAR 108 million",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [],
+    "borrower_count": 0,
+    "counterparty_column": "customer_id",
+    "entity_count": 0,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn",
+     "ead_sar_mn"
+    ],
+    "note": "This is a book-level figure, so there is no segment below it to open.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "What drove Personal Finance ECL in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "product"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Personal Finance",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What is Personal Finance ECL coverage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Personal Finance",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "How does Personal Finance ECL split by stage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "stage"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Personal Finance",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Which customers carry the most of Personal Finance ECL in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id",
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Personal Finance",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Personal Finance ECL moved over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "Personal Finance",
+      "segment_dimension": "product"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "product",
+    "measure": "ecl_sar_mn",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "ecl-largest",
+   "headline": "Personal Finance carries the most ECL",
+   "item_id": "att-4e2bc46288b3fae9",
+   "key_numbers": [
+    {
+     "display": "SAR 108 million",
+     "label": "Recognised ECL, 2026-08"
+    },
+    {
+     "display": "SAR 104 million",
+     "label": "Recognised ECL, 2026-07"
+    }
+   ],
+   "metric": "ecl_largest",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": null,
+    "from_display": "SAR 104 million",
+    "to": null,
+    "to_display": "SAR 108 million",
+    "unit": "amount"
+   },
+   "one_line": "SAR 108 million of the SAR 225 million recognised.",
+   "period_noun": "month",
+   "possible_drivers": [],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "segment",
+   "score": 0.0,
+   "section": "ecl_highlight",
+   "segment": "Personal Finance",
+   "segment_dimension": "product",
+   "segment_dimension_label": "Product",
+   "segment_label": "Personal Finance",
+   "severity": "medium",
+   "what_changed": "SAR 108 million of the SAR 225 million recognised.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "Recognised ECL is one of the four figures this book reports on its own ECL position for 2026-08."
+  },
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "display": "SAR 7 million",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [],
+    "borrower_count": 0,
+    "counterparty_column": "customer_id",
+    "entity_count": 0,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn",
+     "ead_sar_mn"
+    ],
+    "note": "This is a book-level figure, so there is no segment below it to open.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "What drove Mortgage ECL in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "product"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What is Mortgage ECL coverage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "How does Mortgage ECL split by stage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "stage"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Which customers carry the most of Mortgage ECL in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id",
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Mortgage ECL moved over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "product",
+    "measure": "ecl_sar_mn",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "ecl-increase",
+   "headline": "Mortgage added the most ECL",
+   "item_id": "att-b5cf8ebd5aa2bcff",
+   "key_numbers": [
+    {
+     "display": "SAR 7 million",
+     "label": "ECL added this month, 2026-08"
+    },
+    {
+     "display": "SAR 38 million",
+     "label": "ECL added this month, 2026-07"
+    }
+   ],
+   "metric": "ecl_increase",
+   "metric_label": "ECL added this month",
+   "movement": {
+    "from": null,
+    "from_display": "SAR 38 million",
+    "to": null,
+    "to_display": "SAR 7 million",
+    "unit": "amount"
+   },
+   "one_line": "Up SAR 7 million against 2026-07.",
+   "period_noun": "month",
+   "possible_drivers": [],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "segment",
+   "score": 0.0,
+   "section": "ecl_highlight",
+   "segment": "Mortgage",
+   "segment_dimension": "product",
+   "segment_dimension_label": "Product",
+   "segment_label": "Mortgage",
+   "severity": "medium",
+   "what_changed": "Up SAR 7 million against 2026-07.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "ECL added this month is one of the four figures this book reports on its own ECL position for 2026-08."
+  },
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "display": "5.74%",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [],
+    "borrower_count": 0,
+    "counterparty_column": "customer_id",
+    "entity_count": 0,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn",
+     "ead_sar_mn"
+    ],
+    "note": "This is a book-level figure, so there is no segment below it to open.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Which segments drove ECL in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "product"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What is the book's ECL coverage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "How does Retail ECL split by stage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn",
+       "stage"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Which customers carry the most of Retail ECL in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id",
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Retail ECL moved over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "",
+      "segment_dimension": "portfolio"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "product",
+    "measure": "ecl_sar_mn",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "ecl-stage2",
+   "headline": "Retail Stage 2 and 3 exposure",
+   "item_id": "att-87fcb5dbb3fac69d",
+   "key_numbers": [
+    {
+     "display": "5.74%",
+     "label": "Stage 2 and 3 share of exposure, 2026-08"
+    },
+    {
+     "display": "SAR 1,132 million",
+     "label": "Stage 2 and 3 exposure, 2026-08"
+    },
+    {
+     "display": "SAR 19,739 million",
+     "label": "Exposure at default, 2026-08"
+    }
+   ],
+   "metric": "ecl_stage2",
+   "metric_label": "Stage 2 and 3 share of exposure",
+   "movement": {
+    "from": null,
+    "from_display": "",
+    "to": null,
+    "to_display": "5.74%",
+    "unit": "amount"
+   },
+   "one_line": "SAR 1,132 million of SAR 19,739 million sits in Stage 2 or 3.",
+   "period_noun": "month",
+   "possible_drivers": [],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "portfolio",
+   "score": 0.0,
+   "section": "ecl_highlight",
+   "segment": "Retail",
+   "segment_dimension": "portfolio",
+   "segment_dimension_label": "Whole book",
+   "segment_label": "Retail",
+   "severity": "medium",
+   "what_changed": "SAR 1,132 million of SAR 19,739 million sits in Stage 2 or 3.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "Stage 2 and 3 share of exposure is one of the four figures this book reports on its own ECL position for 2026-08."
+  }
+ ],
+ "highlights_label": "Latest-month retail ECL highlights",
+ "method_summary": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "model_calls": 0,
+ "ownership": {
+  "basis": "recorded_book",
+  "functionality": "cockpit",
+  "note": "Movements in the recorded Retail Credit book between two reporting months. Not Early Warning: no live signal and no prediction is used here."
+ },
+ "period_noun": "month",
+ "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+ "release_id": "v4-saudi-retail-20m-v5",
+ "reporting_currency": "SAR",
+ "reporting_month": "2026-08",
+ "reporting_period": "2026-08",
+ "reporting_quarter": "",
+ "segments_requiring_attention": [
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [
+     "customers"
+    ],
+    "borrower_count": 12502,
+    "counterparty_column": "customer_id",
+    "entity_count": 12502,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn"
+    ],
+    "note": "There is no subsegment level below product in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Show the customers behind Mortgage in 2026-08.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What drove the change in Recognised ECL for Mortgage in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split Mortgage by region.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "region"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split Mortgage by customer segment.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_segment"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Recognised ECL moved for Mortgage over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "Mortgage",
+      "segment_dimension": "product"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "product",
+    "measure": "ecl",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "product_ecl",
+   "headline": "Mortgage: ECL rose to SAR 45 million",
+   "item_id": "att-6291a6ad588c7344",
+   "key_numbers": [
+    {
+     "display": "SAR 45 million",
+     "label": "Recognised ECL, 2026-08"
+    },
+    {
+     "display": "SAR 38 million",
+     "label": "Recognised ECL, 2026-07"
+    },
+    {
+     "display": "SAR 16,649 million",
+     "label": "Exposure at default, 2026-08"
+    },
+    {
+     "display": "84.35%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "ecl",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": 37.954476000000064,
+    "from_display": "SAR 38 million",
+    "to": 45.1441569999999,
+    "to_display": "SAR 45 million",
+    "unit": "SAR million"
+   },
+   "period_noun": "month",
+   "possible_drivers": [
+    {
+     "delta": 0.010859,
+     "metric": "stage2_share",
+     "relationship": "recorded alongside",
+     "statement": "Stage 2 share of EAD on the same segment also rose over this month.",
+     "strength": 0.1086
+    }
+   ],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "segment",
+   "score": 0.038421,
+   "section": "attention",
+   "segment": "Mortgage",
+   "segment_dimension": "product",
+   "segment_dimension_label": "Product",
+   "segment_label": "Mortgage",
+   "severity": "high",
+   "what_changed": "Recognised ECL was SAR 38 million in 2026-07 and is SAR 45 million in 2026-08.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "It moved 18.94% higher than 2026-07 on a segment holding 84.35% of the book's exposure at default."
+  },
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [
+     "customers"
+    ],
+    "borrower_count": 6347,
+    "counterparty_column": "customer_id",
+    "entity_count": 6347,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "ecl_sar_mn"
+    ],
+    "note": "There is no subsegment level below customer segment in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Show the customers behind Affluent in 2026-08.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Affluent",
+      "segment_dimension": "customer_segment"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What drove the change in Recognised ECL for Affluent in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Affluent",
+      "segment_dimension": "customer_segment"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split Affluent by product.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "product"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Affluent",
+      "segment_dimension": "customer_segment"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split Affluent by region.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "region"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Affluent",
+      "segment_dimension": "customer_segment"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Recognised ECL moved for Affluent over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "ecl_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "Affluent",
+      "segment_dimension": "customer_segment"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "customer_segment",
+    "measure": "ecl",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "segment_ecl",
+   "headline": "Affluent: ECL rose to SAR 56 million",
+   "item_id": "att-9168c2cb0e6a1162",
+   "key_numbers": [
+    {
+     "display": "SAR 56 million",
+     "label": "Recognised ECL, 2026-08"
+    },
+    {
+     "display": "SAR 50 million",
+     "label": "Recognised ECL, 2026-07"
+    },
+    {
+     "display": "SAR 4,913 million",
+     "label": "Exposure at default, 2026-08"
+    },
+    {
+     "display": "24.89%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "ecl",
+   "metric_label": "Recognised ECL",
+   "movement": {
+    "from": 49.63318600000008,
+    "from_display": "SAR 50 million",
+    "to": 55.98218900000012,
+    "to_display": "SAR 56 million",
+    "unit": "SAR million"
+   },
+   "period_noun": "month",
+   "possible_drivers": [],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "segment",
+   "score": 0.02686,
+   "section": "attention",
+   "segment": "Affluent",
+   "segment_dimension": "customer_segment",
+   "segment_dimension_label": "Customer segment",
+   "segment_label": "Affluent",
+   "severity": "high",
+   "what_changed": "Recognised ECL was SAR 50 million in 2026-07 and is SAR 56 million in 2026-08.",
+   "what_to_review_next": [
+    "Whether the increase is new exposure, migration or higher loss rates.",
+    "Which exposures contributed most of the movement.",
+    "Whether coverage moved with it or the book simply grew."
+   ],
+   "why_it_appeared": "It moved 12.79% higher than 2026-07 on a segment holding 24.89% of the book's exposure at default."
+  },
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [
+     "customers"
+    ],
+    "borrower_count": 10879,
+    "counterparty_column": "customer_id",
+    "entity_count": 10879,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "stage",
+     "ead_sar_mn"
+    ],
+    "note": "There is no subsegment level below origination vintage in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Show the customers behind 2026 in 2026-08.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "2026",
+      "segment_dimension": "vintage_year"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What drove the change in Stage 2 share of EAD for 2026 in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "stage",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "2026",
+      "segment_dimension": "vintage_year"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split 2026 by product.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "product"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "2026",
+      "segment_dimension": "vintage_year"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split 2026 by region.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "region"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "2026",
+      "segment_dimension": "vintage_year"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Stage 2 share of EAD moved for 2026 over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "stage",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "2026",
+      "segment_dimension": "vintage_year"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "vintage_year",
+    "measure": "stage2_share",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "vintage_stage2",
+   "headline": "2026: Stage 2 exposure rose to 4.25%",
+   "item_id": "att-7c12358bbb9163c3",
+   "key_numbers": [
+    {
+     "display": "4.25%",
+     "label": "Stage 2 share of EAD, 2026-08"
+    },
+    {
+     "display": "2.68%",
+     "label": "Stage 2 share of EAD, 2026-07"
+    },
+    {
+     "display": "SAR 6,424 million",
+     "label": "Exposure at default, 2026-08"
+    },
+    {
+     "display": "32.54%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "stage2_share",
+   "metric_label": "Stage 2 share of EAD",
+   "movement": {
+    "from": 0.02684304880946201,
+    "from_display": "2.68%",
+    "to": 0.04247410994238343,
+    "to_display": "4.25%",
+    "unit": "percent"
+   },
+   "period_noun": "month",
+   "possible_drivers": [],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "segment",
+   "score": 0.005087,
+   "section": "attention",
+   "segment": "2026",
+   "segment_dimension": "vintage_year",
+   "segment_dimension_label": "Origination vintage",
+   "segment_label": "2026",
+   "severity": "medium",
+   "what_changed": "Stage 2 share of EAD was 2.68% in 2026-07 and is 4.25% in 2026-08.",
+   "what_to_review_next": [
+    "Which exposures crossed into Stage 2, and on which trigger.",
+    "Whether the migration is concentrated in a few names or broad.",
+    "What the same segment's coverage did over the same month."
+   ],
+   "why_it_appeared": "It moved 1.56 pp higher than 2026-07 on a segment holding 32.54% of the book's exposure at default."
+  },
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [
+     "customers"
+    ],
+    "borrower_count": 3865,
+    "counterparty_column": "customer_id",
+    "entity_count": 3865,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "stage",
+     "ead_sar_mn"
+    ],
+    "note": "There is no subsegment level below behaviour score band in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Show the customers behind E in 2026-08.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "E",
+      "segment_dimension": "score_band"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What drove the change in Stage 2 share of EAD for E in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "stage",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "E",
+      "segment_dimension": "score_band"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split E by product.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "product"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "E",
+      "segment_dimension": "score_band"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split E by region.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "region"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "E",
+      "segment_dimension": "score_band"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Stage 2 share of EAD moved for E over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "stage",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "E",
+      "segment_dimension": "score_band"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "score_band",
+    "measure": "stage2_share",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "band_stage2",
+   "headline": "E: Stage 2 exposure rose to 47.90%",
+   "item_id": "att-3e9ed91fecf70ee0",
+   "key_numbers": [
+    {
+     "display": "47.90%",
+     "label": "Stage 2 share of EAD, 2026-08"
+    },
+    {
+     "display": "45.32%",
+     "label": "Stage 2 share of EAD, 2026-07"
+    },
+    {
+     "display": "SAR 1,723 million",
+     "label": "Exposure at default, 2026-08"
+    },
+    {
+     "display": "8.73%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "stage2_share",
+   "metric_label": "Stage 2 share of EAD",
+   "movement": {
+    "from": 0.45323628002003835,
+    "from_display": "45.32%",
+    "to": 0.4789885147247356,
+    "to_display": "47.90%",
+    "unit": "percent"
+   },
+   "period_noun": "month",
+   "possible_drivers": [],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "segment",
+   "score": 0.002473,
+   "section": "attention",
+   "segment": "E",
+   "segment_dimension": "score_band",
+   "segment_dimension_label": "Behaviour score band",
+   "segment_label": "E",
+   "severity": "low",
+   "what_changed": "Stage 2 share of EAD was 45.32% in 2026-07 and is 47.90% in 2026-08.",
+   "what_to_review_next": [
+    "Which exposures crossed into Stage 2, and on which trigger.",
+    "Whether the migration is concentrated in a few names or broad.",
+    "What the same segment's coverage did over the same month."
+   ],
+   "why_it_appeared": "It moved 2.58 pp higher than 2026-07 on a segment holding 8.73% of the book's exposure at default."
+  },
+  {
+   "comparison_basis": "previous month",
+   "comparison_month": "2026-07",
+   "comparison_period": "2026-07",
+   "comparison_quarter": "",
+   "domain_id": "retail",
+   "drilldown": {
+    "available": [
+     "customers"
+    ],
+    "borrower_count": 3168,
+    "counterparty_column": "customer_id",
+    "entity_count": 3168,
+    "entity_label": "customers",
+    "finer_dimension": "",
+    "measure_fields": [
+     "dpd_days",
+     "ead_sar_mn"
+    ],
+    "note": "There is no subsegment level below region in this book, so a finer cut is not available and none is implied.",
+    "period_column": "reporting_month",
+    "relation": "retail_account_month",
+    "suggested_questions": [
+     {
+      "kind": "drilldown",
+      "period_column": "reporting_month",
+      "question": "Show the customers behind Madinah in 2026-08.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_id"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Madinah",
+      "segment_dimension": "region"
+     },
+     {
+      "kind": "diagnostic",
+      "period_column": "reporting_month",
+      "question": "What drove the change in Share of EAD past due for Madinah in 2026-08?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "dpd_days",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Madinah",
+      "segment_dimension": "region"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split Madinah by product.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "product"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Madinah",
+      "segment_dimension": "region"
+     },
+     {
+      "kind": "crosscut",
+      "period_column": "reporting_month",
+      "question": "Split Madinah by customer segment.",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "customer_segment"
+      ],
+      "required_periods": [
+       "2026-08"
+      ],
+      "required_quarters": [
+       "2026-08"
+      ],
+      "segment": "Madinah",
+      "segment_dimension": "region"
+     },
+     {
+      "kind": "trend",
+      "period_column": "reporting_month",
+      "question": "How has Share of EAD past due moved for Madinah over the last 12 months?",
+      "relation": "retail_account_month",
+      "required_fields": [
+       "dpd_days",
+       "ead_sar_mn"
+      ],
+      "required_periods": [
+       "2025-09",
+       "2025-10",
+       "2025-11",
+       "2025-12",
+       "2026-01",
+       "2026-02",
+       "2026-03",
+       "2026-04",
+       "2026-05",
+       "2026-06",
+       "2026-07",
+       "2026-08"
+      ],
+      "required_quarters": [],
+      "segment": "Madinah",
+      "segment_dimension": "region"
+     }
+    ],
+    "unavailable": [
+     "subsegment"
+    ]
+   },
+   "evidence": {
+    "dimension": "region",
+    "measure": "dpd_share",
+    "relation": "retail_account_month"
+   },
+   "evidence_url": "",
+   "family": "region_delinquency",
+   "headline": "Madinah: Delinquency rose to 2.97%",
+   "item_id": "att-d247dac993008ec1",
+   "key_numbers": [
+    {
+     "display": "2.97%",
+     "label": "Share of EAD past due, 2026-08"
+    },
+    {
+     "display": "2.43%",
+     "label": "Share of EAD past due, 2026-07"
+    },
+    {
+     "display": "SAR 2,469 million",
+     "label": "Exposure at default, 2026-08"
+    },
+    {
+     "display": "12.51%",
+     "label": "Share of book"
+    }
+   ],
+   "metric": "dpd_share",
+   "metric_label": "Share of EAD past due",
+   "movement": {
+    "from": 0.024287041798612317,
+    "from_display": "2.43%",
+    "to": 0.02973106779879384,
+    "to_display": "2.97%",
+    "unit": "percent"
+   },
+   "period_noun": "month",
+   "possible_drivers": [],
+   "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+   "release_id": "v4-saudi-retail-20m-v5",
+   "reporting_month": "2026-08",
+   "reporting_period": "2026-08",
+   "reporting_quarter": "",
+   "scope": "segment",
+   "score": 0.000681,
+   "section": "attention",
+   "segment": "Madinah",
+   "segment_dimension": "region",
+   "segment_dimension_label": "Region",
+   "segment_label": "Madinah",
+   "severity": "low",
+   "what_changed": "Share of EAD past due was 2.43% in 2026-07 and is 2.97% in 2026-08.",
+   "what_to_review_next": [
+    "Which delinquency buckets the movement sits in.",
+    "Whether entry or cure rates changed.",
+    "Whether the affected accounts share a vintage or a score band."
+   ],
+   "why_it_appeared": "It moved 0.54 pp higher than 2026-07 on a segment holding 12.51% of the book's exposure at default."
+  }
+ ]
+}

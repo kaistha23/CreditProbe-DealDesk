@@ -1,0 +1,209 @@
+/* ==========================================================================
+   Global "Ask AI" launcher + slide-in chat drawer
+
+   One chat for the whole tool. The panel markup is unchanged (.signals-panel
+   .ai-chat-panel) — it is just mounted in a fixed drawer instead of being
+   embedded in the Cockpit Overview and Borrower 360 page bodies.
+   ========================================================================== */
+
+/* ------------------------------------------------------------- floating button */
+
+.ai-fab {
+  position: fixed; right: 22px; bottom: 22px; z-index: 1000;
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 12px 20px 12px 16px; border: none; border-radius: 999px;
+  background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+  color: #04302b; font-family: inherit; font-size: 13.5px; font-weight: 700;
+  letter-spacing: 0.01em; cursor: pointer;
+  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.38), 0 2px 6px rgba(15, 35, 55, 0.14);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease;
+}
+.ai-fab:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(13, 148, 136, 0.46); }
+.ai-fab:active { transform: translateY(0); }
+.ai-fab.is-hidden { opacity: 0; pointer-events: none; transform: scale(0.9); }
+.ai-fab-icon { font-size: 15px; line-height: 1; }
+.ai-fab-label { line-height: 1; }
+
+/* --------------------------------------------------------------------- drawer */
+
+.ai-drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 1001;
+  width: 420px; max-width: 92vw;
+  padding: 14px 14px 14px 0;
+  transform: translateX(105%);
+  transition: transform 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.ai-drawer.is-open { transform: translateX(0); pointer-events: auto; }
+
+/* The panel fills the drawer; it keeps its own gradient and radius.
+   Selectors here are deliberately one level more specific than the
+   `.signals-panel.ai-chat-panel` rules in style.css: Dash serves assets in
+   alphabetical order, so style.css loads AFTER this file and would otherwise win
+   the tie on source order and reinstate `position: sticky; top: 78px`. */
+.ai-drawer .ai-drawer-panel.signals-panel {
+  height: 100%; max-height: none; position: static; top: auto;
+  box-shadow: -8px 0 30px rgba(11, 36, 54, 0.22);
+}
+
+/* The chat log takes whatever height is left instead of the 420px cap the
+   embedded panel used — a full-height drawer should show more history. The
+   dcc.Loading wrapper sits between the panel and the log, so it has to grow too,
+   or the log collapses and drags the input up under the header. */
+.ai-drawer .ai-drawer-panel > div:has(.chat-messages) {
+  flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column;
+}
+.ai-drawer .ai-drawer-panel > div:has(.chat-messages) > div { flex: 1 1 auto; min-height: 0; }
+.ai-drawer .ai-drawer-panel .chat-messages {
+  max-height: none;
+  min-height: 40vh;   /* fallback for browsers without :has() */
+  height: 100%;
+}
+
+.ai-drawer-scrim {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(11, 36, 54, 0.30); backdrop-filter: blur(1.5px);
+  opacity: 0; pointer-events: none; transition: opacity 0.26s ease;
+}
+.ai-drawer-scrim.is-open { opacity: 1; pointer-events: auto; }
+
+.ai-drawer-close {
+  background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #cdd9e6; font-size: 17px; line-height: 1; cursor: pointer;
+  width: 28px; height: 28px; border-radius: 8px; flex: 0 0 auto;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s, color 0.15s;
+}
+.ai-drawer-close:hover { background: rgba(255, 255, 255, 0.16); color: #fff; }
+
+/* ------------------------------------------------------------- context brief */
+/* Shown above the conversation: the portfolio snapshot that is true everywhere,
+   then what is on the screen the user is standing on. Computed from the dataset,
+   so it is exact and costs no model call. */
+
+.chat-brief {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: var(--radius-md);
+  padding: 11px 13px 12px;
+  margin: 0 4px 10px;
+  flex: 0 0 auto;
+}
+.brief-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.brief-head-screen { margin-top: 12px; }
+.brief-section-label {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.1em; color: var(--teal);
+}
+.brief-asof { font-size: 9.5px; color: #7f93a8; }
+.brief-screen-name {
+  font-size: 10px; color: #cdd9e6; font-weight: 600; text-align: right;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 62%;
+}
+
+.brief-chip-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px; }
+.brief-chip {
+  background: rgba(255, 255, 255, 0.05); border-radius: 7px; padding: 6px 8px; min-width: 0;
+}
+.brief-chip-label {
+  font-size: 9px; letter-spacing: 0.05em; text-transform: uppercase; color: #8aa2b8;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.brief-chip-value {
+  font-size: 12.5px; font-weight: 700; margin-top: 1px; color: #fff;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.brief-chip-value.tone-ok   { color: #4ade80; }
+.brief-chip-value.tone-warn { color: #fbbf24; }
+.brief-chip-value.tone-bad  { color: #fb7185; }
+
+.brief-lines { margin-top: 7px; display: flex; flex-direction: column; gap: 5px; }
+.brief-line, .brief-line p {
+  font-size: 11.5px; line-height: 1.5; color: #cdd9e6; margin: 0;
+}
+.brief-line strong { color: #fff; font-weight: 700; }
+
+/* --------------------------------------------------------- markdown answers */
+/* The assistant is asked for headlines, tables and bolded figures; this is what
+   makes that structure legible inside a 420px dark drawer. */
+
+.chat-md, .chat-md p { margin: 0; font-size: 13px; line-height: 1.55; }
+.chat-md p + p { margin-top: 8px; }
+.chat-md strong { color: #fff; font-weight: 700; }
+.chat-md em { color: #cdd9e6; }
+.chat-md h1, .chat-md h2, .chat-md h3, .chat-md h4 {
+  font-size: 12px; font-weight: 700; letter-spacing: 0.03em; color: #fff;
+  margin: 10px 0 5px; text-transform: uppercase;
+}
+.chat-md h1:first-child, .chat-md h2:first-child,
+.chat-md h3:first-child, .chat-md h4:first-child { margin-top: 0; }
+.chat-md ul, .chat-md ol { margin: 7px 0 0; padding-left: 17px; }
+.chat-md li { margin: 3px 0; }
+.chat-md li::marker { color: var(--teal); }
+.chat-md code {
+  background: rgba(255, 255, 255, 0.10); border-radius: 4px; padding: 1px 5px;
+  font-size: 11.5px; font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+.chat-md pre {
+  background: rgba(0, 0, 0, 0.28); border-radius: 8px; padding: 9px 11px;
+  overflow-x: auto; margin: 8px 0 0;
+}
+.chat-md pre code { background: none; padding: 0; }
+.chat-md blockquote {
+  border-left: 2px solid var(--teal); margin: 8px 0 0; padding: 2px 0 2px 10px;
+  color: #cdd9e6;
+}
+.chat-md hr { border: none; border-top: 1px solid rgba(255,255,255,0.12); margin: 10px 0; }
+.chat-md a { color: var(--teal); }
+
+/* Tables are the main reason for rendering Markdown at all — they must stay
+   readable at drawer width, so they scroll rather than squeeze. */
+.chat-md table {
+  width: 100%; border-collapse: collapse; margin: 8px 0 0; font-size: 11.5px;
+  font-variant-numeric: tabular-nums; display: block; overflow-x: auto;
+}
+.chat-md thead th {
+  text-align: left; font-size: 9.5px; letter-spacing: 0.05em; text-transform: uppercase;
+  color: #8aa2b8; font-weight: 700; padding: 4px 6px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18); white-space: nowrap;
+}
+/* Cells wrap rather than run off the edge: at drawer width a 4-column table
+   cannot hold long labels on one line, and a clipped final column reads as a
+   broken answer even though the container scrolls. */
+.chat-md tbody td {
+  padding: 5px 6px; border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  color: #e3eaf1; white-space: normal; word-break: break-word;
+}
+.chat-md tbody tr:last-child td { border-bottom: none; }
+
+/* An answer is the drawer's main content, so it gets the full width — the 88%
+   cap that keeps user bubbles looking like chat would clip a table. */
+.ai-drawer-panel .chat-bubble.assistant { max-width: 100%; }
+
+/* The assistant closes on a "**So what:**" line — give it a little separation. */
+.chat-md p:last-child strong:first-child { color: var(--teal); }
+
+/* The suggestions popup is invisible until the input is focused, but it stayed
+   hit-testable and swallowed clicks on anything it happened to sit over (the
+   close button, most visibly). pointer-events is re-enabled on focus-within, so
+   the chips are still clickable exactly when they are actually on screen — which
+   is what the original "don't set pointer-events: none" note was protecting. */
+.chat-suggestions-popup { pointer-events: none; }
+.chat-input-wrap:focus-within .chat-suggestions-popup { pointer-events: auto; }
+
+/* ------------------------------------------------------- header overlap fix */
+/* The title used to wrap onto two lines and collide with the model select,
+   because both were flex items with no shrink/wrap rules. */
+
+.signals-header { gap: 10px; flex-wrap: nowrap; }
+.signals-header-left { min-width: 0; flex: 0 1 auto; }
+.signals-header-left .signals-title { white-space: nowrap; }
+.signals-header select.model-select-native {
+  flex: 0 1 auto; min-width: 0; max-width: 150px;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 560px) {
+  .ai-drawer { width: 100vw; padding: 0; }
+  .ai-drawer-panel.signals-panel { border-radius: 0; }
+  .ai-fab { right: 14px; bottom: 14px; }
+}

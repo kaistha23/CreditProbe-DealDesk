@@ -1,0 +1,224 @@
+{
+ "domain_id": "retail",
+ "item": {
+  "comparison_basis": "previous month",
+  "comparison_month": "2026-07",
+  "comparison_period": "2026-07",
+  "comparison_quarter": "",
+  "display": "5.74%",
+  "domain_id": "retail",
+  "drilldown": {
+   "available": [],
+   "borrower_count": 0,
+   "counterparty_column": "customer_id",
+   "entity_count": 0,
+   "entity_label": "customers",
+   "finer_dimension": "",
+   "measure_fields": [
+    "ecl_sar_mn",
+    "ead_sar_mn"
+   ],
+   "note": "This is a book-level figure, so there is no segment below it to open.",
+   "period_column": "reporting_month",
+   "relation": "retail_account_month",
+   "suggested_questions": [
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_month",
+     "question": "Which segments drove ECL in 2026-08?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "ecl_sar_mn",
+      "product"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "",
+     "segment_dimension": "portfolio"
+    },
+    {
+     "kind": "diagnostic",
+     "period_column": "reporting_month",
+     "question": "What is the book's ECL coverage in 2026-08?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "ecl_sar_mn",
+      "ead_sar_mn"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "",
+     "segment_dimension": "portfolio"
+    },
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_month",
+     "question": "How does Retail ECL split by stage in 2026-08?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "ecl_sar_mn",
+      "stage"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "",
+     "segment_dimension": "portfolio"
+    },
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_month",
+     "question": "Which customers carry the most of Retail ECL in 2026-08?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "customer_id",
+      "ecl_sar_mn"
+     ],
+     "required_periods": [
+      "2026-08"
+     ],
+     "required_quarters": [
+      "2026-08"
+     ],
+     "segment": "",
+     "segment_dimension": "portfolio"
+    },
+    {
+     "kind": "trend",
+     "period_column": "reporting_month",
+     "question": "How has Retail ECL moved over the last 12 months?",
+     "relation": "retail_account_month",
+     "required_fields": [
+      "ecl_sar_mn"
+     ],
+     "required_periods": [
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
+     ],
+     "required_quarters": [],
+     "segment": "",
+     "segment_dimension": "portfolio"
+    }
+   ],
+   "unavailable": [
+    "subsegment"
+   ]
+  },
+  "evidence": {
+   "dimension": "product",
+   "measure": "ecl_sar_mn",
+   "relation": "retail_account_month"
+  },
+  "evidence_url": "",
+  "family": "ecl-stage2",
+  "headline": "Retail Stage 2 and 3 exposure",
+  "item_id": "att-87fcb5dbb3fac69d",
+  "key_numbers": [
+   {
+    "display": "5.74%",
+    "label": "Stage 2 and 3 share of exposure, 2026-08"
+   },
+   {
+    "display": "SAR 1,132 million",
+    "label": "Stage 2 and 3 exposure, 2026-08"
+   },
+   {
+    "display": "SAR 19,739 million",
+    "label": "Exposure at default, 2026-08"
+   }
+  ],
+  "metric": "ecl_stage2",
+  "metric_label": "Stage 2 and 3 share of exposure",
+  "movement": {
+   "from": null,
+   "from_display": "",
+   "to": null,
+   "to_display": "5.74%",
+   "unit": "amount"
+  },
+  "one_line": "SAR 1,132 million of SAR 19,739 million sits in Stage 2 or 3.",
+  "period_noun": "month",
+  "possible_drivers": [],
+  "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+  "release_id": "v4-saudi-retail-20m-v5",
+  "reporting_month": "2026-08",
+  "reporting_period": "2026-08",
+  "reporting_quarter": "",
+  "scope": "portfolio",
+  "score": 0.0,
+  "section": "ecl_highlight",
+  "segment": "Retail",
+  "segment_dimension": "portfolio",
+  "segment_dimension_label": "Whole book",
+  "segment_label": "Retail",
+  "severity": "medium",
+  "what_changed": "SAR 1,132 million of SAR 19,739 million sits in Stage 2 or 3.",
+  "what_to_review_next": [
+   "Whether the increase is new exposure, migration or higher loss rates.",
+   "Which exposures contributed most of the movement.",
+   "Whether coverage moved with it or the book simply grew."
+  ],
+  "why_it_appeared": "Stage 2 and 3 share of exposure is one of the four figures this book reports on its own ECL position for 2026-08."
+ },
+ "method": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "method_summary": {
+  "candidates_considered": 20,
+  "families": [
+   "product_stage2",
+   "product_ecl",
+   "product_delinquency",
+   "band_stage2",
+   "vintage_stage2",
+   "segment_ecl",
+   "product_utilisation",
+   "segment_score_decline",
+   "region_delinquency"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "release_fingerprint": "c23a15d78ba88d39aeae6983e68fff2230b644f5c8f91bec5c89085399f04e5b",
+ "release_id": "v4-saudi-retail-20m-v5",
+ "reporting_month": "2026-08",
+ "reporting_quarter": "2026-08"
+}

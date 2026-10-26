@@ -1,0 +1,193 @@
+{
+ "domain_id": "corporate",
+ "item": {
+  "comparison_basis": "previous quarter",
+  "comparison_month": "",
+  "comparison_period": "2026Q1",
+  "comparison_quarter": "2026Q1",
+  "domain_id": "corporate",
+  "drilldown": {
+   "available": [
+    "facilities"
+   ],
+   "borrower_count": 6764,
+   "counterparty_column": "facility_id",
+   "entity_count": 6764,
+   "entity_label": "facilities",
+   "finer_dimension": "",
+   "measure_fields": [
+    "ltv_pct"
+   ],
+   "note": "There is no subsegment level below collateral type in this book, so a finer cut is not available and none is implied.",
+   "period_column": "reporting_quarter",
+   "relation": "corp_collateral_quarter",
+   "suggested_questions": [
+    {
+     "kind": "drilldown",
+     "period_column": "reporting_quarter",
+     "question": "Show the facilities behind Receivables in 2026Q2.",
+     "relation": "corp_collateral_quarter",
+     "required_fields": [
+      "facility_id"
+     ],
+     "required_periods": [
+      "2026Q2"
+     ],
+     "required_quarters": [
+      "2026Q2"
+     ],
+     "segment": "Receivables",
+     "segment_dimension": "collateral_type"
+    },
+    {
+     "kind": "diagnostic",
+     "period_column": "reporting_quarter",
+     "question": "What drove the change in Exposure as a share of pledged collateral value for Receivables in 2026Q2?",
+     "relation": "corp_collateral_quarter",
+     "required_fields": [
+      "ltv_pct"
+     ],
+     "required_periods": [
+      "2026Q2"
+     ],
+     "required_quarters": [
+      "2026Q2"
+     ],
+     "segment": "Receivables",
+     "segment_dimension": "collateral_type"
+    },
+    {
+     "kind": "trend",
+     "period_column": "reporting_quarter",
+     "question": "How has Exposure as a share of pledged collateral value moved for Receivables over the last 8 quarters?",
+     "relation": "corp_collateral_quarter",
+     "required_fields": [
+      "ltv_pct"
+     ],
+     "required_periods": [
+      "2024Q3",
+      "2024Q4",
+      "2025Q1",
+      "2025Q2",
+      "2025Q3",
+      "2025Q4",
+      "2026Q1",
+      "2026Q2"
+     ],
+     "required_quarters": [],
+     "segment": "Receivables",
+     "segment_dimension": "collateral_type"
+    }
+   ],
+   "unavailable": [
+    "subsegment"
+   ]
+  },
+  "evidence": {
+   "dimension": "collateral_type",
+   "measure": "ltv",
+   "relation": "corp_collateral_quarter"
+  },
+  "evidence_url": "",
+  "family": "sector_ltv",
+  "headline": "Receivables: Loan to value rose to 172.67%",
+  "item_id": "att-5f0c7cb4fd1160c6",
+  "key_numbers": [
+   {
+    "display": "172.67%",
+    "label": "Exposure as a share of pledged collateral value, 2026Q2"
+   },
+   {
+    "display": "150.18%",
+    "label": "Exposure as a share of pledged collateral value, 2026Q1"
+   },
+   {
+    "display": "SAR 20,752 million",
+    "label": "Exposure at default, 2026Q2"
+   },
+   {
+    "display": "20.75%",
+    "label": "Share of book"
+   }
+  ],
+  "metric": "ltv",
+  "metric_label": "Exposure as a share of pledged collateral value",
+  "movement": {
+   "from": 1.501826764036421,
+   "from_display": "150.18%",
+   "to": 1.7266766898285069,
+   "to_display": "172.67%",
+   "unit": "percent"
+  },
+  "period_noun": "quarter",
+  "possible_drivers": [],
+  "release_fingerprint": "520755315b214dc3711a2242852fadae42220fa996d0da5e10dd095377d5a4ed",
+  "release_id": "v4-saudi-corporate-20q-v4",
+  "reporting_month": "",
+  "reporting_period": "2026Q2",
+  "reporting_quarter": "2026Q2",
+  "scope": "segment",
+  "score": 0.046661,
+  "section": "attention",
+  "segment": "Receivables",
+  "segment_dimension": "collateral_type",
+  "segment_dimension_label": "Collateral type",
+  "segment_label": "Receivables",
+  "severity": "high",
+  "what_changed": "Exposure as a share of pledged collateral value was 150.18% in 2026Q1 and is 172.67% in 2026Q2.",
+  "what_to_review_next": [
+   "Whether the exposure grew or the collateral value fell.",
+   "How old the valuations behind it are.",
+   "What is left uncovered after the haircut."
+  ],
+  "why_it_appeared": "It moved 22.48 pp higher than 2026Q1 on a segment holding 20.75% of the book's exposure at default."
+ },
+ "method": {
+  "candidates_considered": 87,
+  "families": [
+   "sector_stage2",
+   "sector_ecl",
+   "sector_coverage",
+   "sector_pastdue",
+   "product_stage2",
+   "product_ecl",
+   "region_ecl",
+   "sector_downgrades",
+   "sector_watchlist",
+   "sector_breaches",
+   "covenant_breaches",
+   "group_concentration",
+   "sector_ltv"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "method_summary": {
+  "candidates_considered": 87,
+  "families": [
+   "sector_stage2",
+   "sector_ecl",
+   "sector_coverage",
+   "sector_pastdue",
+   "product_stage2",
+   "product_ecl",
+   "region_ecl",
+   "sector_downgrades",
+   "sector_watchlist",
+   "sector_breaches",
+   "covenant_breaches",
+   "group_concentration",
+   "sector_ltv"
+  ],
+  "max_per_dimension": 2,
+  "minimum_movement": 0.005,
+  "minimum_share": 0.01,
+  "ranking": "normalised movement x share of book x family weight; one card per segment, at most 2 per dimension"
+ },
+ "release_fingerprint": "520755315b214dc3711a2242852fadae42220fa996d0da5e10dd095377d5a4ed",
+ "release_id": "v4-saudi-corporate-20q-v4",
+ "reporting_month": "",
+ "reporting_quarter": ""
+}

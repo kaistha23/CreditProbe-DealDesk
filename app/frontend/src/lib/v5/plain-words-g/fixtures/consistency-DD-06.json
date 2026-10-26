@@ -1,0 +1,229 @@
+{
+ "trace_id": "DT-f8a38c5180f7",
+ "proposal_id": "DD-06",
+ "obligor": "Dhahran Continental Industries",
+ "headline": "2 similar decided deals; 2 decided differently from DD-06 (counter-offer, committee).",
+ "decision": {
+  "decision": "counter-offer",
+  "rank": 1,
+  "by": "committee",
+  "authority": "committee",
+  "figure": {
+   "value": 1,
+   "unit": "decision rank",
+   "label": "Final decision"
+  },
+  "pending": false
+ },
+ "deal": {
+  "proposal_id": "DD-06",
+  "obligor": "Dhahran Continental Industries",
+  "sector": "Manufacturing",
+  "rating": "BB+",
+  "rm": "Khalid Al-Otaibi",
+  "facility_type": "revolver",
+  "structure": "murabaha",
+  "amount": {
+   "value": 25.0,
+   "unit": "SAR m",
+   "label": "Amount"
+  },
+  "raroc": {
+   "value": 0.103071,
+   "unit": "share",
+   "label": "Lifetime RAROC"
+  },
+  "hurdle": {
+   "value": 0.15,
+   "unit": "share",
+   "label": "Hurdle"
+  },
+  "decision": {
+   "decision": "counter-offer",
+   "rank": 1,
+   "by": "committee",
+   "authority": "committee",
+   "figure": {
+    "value": 1,
+    "unit": "decision rank",
+    "label": "Final decision"
+   },
+   "pending": false
+  }
+ },
+ "similar": [
+  {
+   "proposal_id": "R12-SME1",
+   "obligor": "Qamar Precision Workshop",
+   "sector": "Manufacturing",
+   "rating": "BB",
+   "rm": "Noura Al-Bishi",
+   "facility_type": "term_loan",
+   "structure": "murabaha",
+   "amount": {
+    "value": 4.5,
+    "unit": "SAR m",
+    "label": "Amount"
+   },
+   "raroc": {
+    "value": 0.131354,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "hurdle": {
+    "value": 0.16,
+    "unit": "share",
+    "label": "Hurdle"
+   },
+   "decision": {
+    "decision": "approve",
+    "rank": 2,
+    "by": "committee",
+    "authority": "SME Credit Manager (up to SAR 5.0m)",
+    "figure": {
+     "value": 2,
+     "unit": "decision rank",
+     "label": "Final decision"
+    },
+    "pending": false
+   },
+   "similarity": 0.6375
+  },
+  {
+   "proposal_id": "DD-10",
+   "obligor": "Al Qassim Precision Plastics Establishment",
+   "sector": "Manufacturing",
+   "rating": "BB-",
+   "rm": "Sara Al-Dosari",
+   "facility_type": "term_loan",
+   "structure": "murabaha",
+   "amount": {
+    "value": 8.0,
+    "unit": "SAR m",
+    "label": "Amount"
+   },
+   "raroc": {
+    "value": 0.617082,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "hurdle": {
+    "value": 0.16,
+    "unit": "share",
+    "label": "Hurdle"
+   },
+   "decision": {
+    "decision": "approve",
+    "rank": 2,
+    "by": "desk",
+    "authority": "Head of Credit",
+    "figure": {
+     "value": 2,
+     "unit": "decision rank",
+     "label": "Desk recommendation"
+    },
+    "pending": false
+   },
+   "similarity": 0.6106
+  }
+ ],
+ "decided_differently": [
+  {
+   "better": "R12-SME1",
+   "worse": "DD-06",
+   "status": "partly explained",
+   "text": "R12-SME1 (Qamar Precision Workshop, BB, SAR 4m) got approve (committee) and DD-06 (Dhahran Continental Industries, BB+, SAR 25m) got counter-offer (committee). Partly explained by RAROC less hurdle -2.9 pp vs -4.7 pp; Debt/EBITDA after the deal 2.14x vs 3.53x, but rating BB vs BB+; DSCR after the deal 1.40x vs 2.01x; LGD 44% vs 25% favour DD-06.",
+   "for_better": [
+    {
+     "factor": "raroc",
+     "favours": "R12-SME1",
+     "text": "RAROC less hurdle -2.9 pp vs -4.7 pp"
+    },
+    {
+     "factor": "leverage",
+     "favours": "R12-SME1",
+     "text": "Debt/EBITDA after the deal 2.14x vs 3.53x"
+    }
+   ],
+   "for_worse": [
+    {
+     "factor": "rating",
+     "favours": "DD-06",
+     "text": "rating BB vs BB+"
+    },
+    {
+     "factor": "dscr",
+     "favours": "DD-06",
+     "text": "DSCR after the deal 1.40x vs 2.01x"
+    },
+    {
+     "factor": "lgd",
+     "favours": "DD-06",
+     "text": "LGD 44% vs 25%"
+    }
+   ],
+   "rms": [
+    "Khalid Al-Otaibi",
+    "Noura Al-Bishi"
+   ],
+   "decided_by": [
+    "committee"
+   ],
+   "similarity": 0.6375
+  },
+  {
+   "better": "DD-10",
+   "worse": "DD-06",
+   "status": "partly explained",
+   "text": "DD-10 (Al Qassim Precision Plastics Establishment, BB-, SAR 8m) got approve (desk) and DD-06 (Dhahran Continental Industries, BB+, SAR 25m) got counter-offer (committee). Partly explained by RAROC less hurdle +45.7 pp vs -4.7 pp; Debt/EBITDA after the deal 2.05x vs 3.53x; open high/critical findings 0 vs 2; stress breaks first at moderate vs mild, but rating BB- vs BB+; DSCR after the deal 1.50x vs 2.01x favour DD-06.",
+   "for_better": [
+    {
+     "factor": "raroc",
+     "favours": "DD-10",
+     "text": "RAROC less hurdle +45.7 pp vs -4.7 pp"
+    },
+    {
+     "factor": "leverage",
+     "favours": "DD-10",
+     "text": "Debt/EBITDA after the deal 2.05x vs 3.53x"
+    },
+    {
+     "factor": "findings",
+     "favours": "DD-10",
+     "text": "open high/critical findings 0 vs 2"
+    },
+    {
+     "factor": "stress",
+     "favours": "DD-10",
+     "text": "stress breaks first at moderate vs mild"
+    }
+   ],
+   "for_worse": [
+    {
+     "factor": "rating",
+     "favours": "DD-06",
+     "text": "rating BB- vs BB+"
+    },
+    {
+     "factor": "dscr",
+     "favours": "DD-06",
+     "text": "DSCR after the deal 1.50x vs 2.01x"
+    }
+   ],
+   "rms": [
+    "Khalid Al-Otaibi",
+    "Sara Al-Dosari"
+   ],
+   "decided_by": [
+    "committee",
+    "desk"
+   ],
+   "similarity": 0.6106
+  }
+ ],
+ "desk_vs_committee": null,
+ "prior_committee": [],
+ "data_note": "Few decided deals are similar to this one (fewer than 3); read the comparison as indicative.",
+ "decided_in_book": 18,
+ "method": "* Decisions (Data Domains): the final decision is dd_deal.status (approved, declined, counter_offered) at the\n    deal's approval authority; the SME lane's decision is dd_sme_application.decision; the desk recommendation is\n    dd_result.decision (view \"recommended\", else \"ask\"). Order: approve 2, counter-offer / refer / escalate 1,\n    decline 0. A deal with neither is pending and shows the decision its engine run implies.\n  * Similarity (0-1): sector 0.35, rating 0.25 x (1 - notches / 4), size 0.20 x (1 - |ln ratio| / ln 4), facility\n    type 0.10, Islamic structure 0.10. Deals scoring at least 0.55 are similar.\n  * Factors (engine.analyse on the ask, plus Data Domains): rating, RAROC less hurdle, hard and soft limit breaches,\n    SIMAH flag, DSCR and Debt/EBITDA after the deal, LGD, open high or critical review findings, and the stress\n    ladder's mildest breaking severity (dd_stress_result). A factor counts when the gap is material (1 notch,\n    1 pp RAROC, one breach, 0.15x DSCR, 0.5x leverage, 5 pp LGD, two findings, one stress severity step).\n  * Explained: every material factor favours the deal with the better decision. Partly explained: factors point\n    both ways. Not ex"
+}

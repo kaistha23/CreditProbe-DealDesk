@@ -1,0 +1,1111 @@
+{
+ "trace_id": "DT-fddd14184b00",
+ "proposal_id": "R12-TWA",
+ "obligor": "Al Sahel Building Materials Trading LLC",
+ "currency": "SAR",
+ "headline": "Cheapest package that clears the hurdle and every limit: cash margin 10% (SAR 17.0m tied up, against SAR 290.0m in the ask, which does not clear).",
+ "combinations": [
+  {
+   "label": "Package 1",
+   "clears": false,
+   "text": "no security",
+   "collateral_ids": [],
+   "guarantee_id": null,
+   "cash_margin_pct": 0,
+   "cost_sar_mn": {
+    "value": 0.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "lifetime_raroc": {
+    "value": 0.129992,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "lgd_y1": {
+    "value": 0.441,
+    "unit": "share",
+    "label": "LGD year 1"
+   },
+   "rwa_y1": {
+    "value": 87.975,
+    "unit": "SAR m",
+    "label": "RWA year 1"
+   },
+   "sva": {
+    "value": -0.21205,
+    "unit": "SAR m",
+    "label": "SVA"
+   },
+   "hard_breaches": []
+  },
+  {
+   "label": "Package 2",
+   "clears": true,
+   "text": "cash margin 10%",
+   "collateral_ids": [],
+   "guarantee_id": null,
+   "cash_margin_pct": 10,
+   "cost_sar_mn": {
+    "value": 17.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "lifetime_raroc": {
+    "value": 0.155434,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "lgd_y1": {
+    "value": 0.358183,
+    "unit": "share",
+    "label": "LGD year 1"
+   },
+   "rwa_y1": {
+    "value": 70.975,
+    "unit": "SAR m",
+    "label": "RWA year 1"
+   },
+   "sva": {
+    "value": 0.046749,
+    "unit": "SAR m",
+    "label": "SVA"
+   },
+   "hard_breaches": []
+  },
+  {
+   "label": "Package 3",
+   "clears": true,
+   "text": "cash margin 20%",
+   "collateral_ids": [],
+   "guarantee_id": null,
+   "cash_margin_pct": 20,
+   "cost_sar_mn": {
+    "value": 34.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "lifetime_raroc": {
+    "value": 0.196246,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "lgd_y1": {
+    "value": 0.275366,
+    "unit": "share",
+    "label": "LGD year 1"
+   },
+   "rwa_y1": {
+    "value": 53.975,
+    "unit": "SAR m",
+    "label": "RWA year 1"
+   },
+   "sva": {
+    "value": 0.305547,
+    "unit": "SAR m",
+    "label": "SVA"
+   },
+   "hard_breaches": []
+  },
+  {
+   "label": "Package 4",
+   "clears": true,
+   "text": "cash margin 30%",
+   "collateral_ids": [],
+   "guarantee_id": null,
+   "cash_margin_pct": 30,
+   "cost_sar_mn": {
+    "value": 51.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "lifetime_raroc": {
+    "value": 0.272382,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "lgd_y1": {
+    "value": 0.192549,
+    "unit": "share",
+    "label": "LGD year 1"
+   },
+   "rwa_y1": {
+    "value": 36.975,
+    "unit": "SAR m",
+    "label": "RWA year 1"
+   },
+   "sva": {
+    "value": 0.564346,
+    "unit": "SAR m",
+    "label": "SVA"
+   },
+   "hard_breaches": []
+  },
+  {
+   "label": "Package 5",
+   "clears": false,
+   "text": "C1 receivables (SAR 120.0m)",
+   "collateral_ids": [
+    "C1"
+   ],
+   "guarantee_id": null,
+   "cash_margin_pct": 0,
+   "cost_sar_mn": {
+    "value": 120.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "lifetime_raroc": {
+    "value": 0.14518,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "lgd_y1": {
+    "value": 0.170357,
+    "unit": "share",
+    "label": "LGD year 1"
+   },
+   "rwa_y1": {
+    "value": 87.975,
+    "unit": "SAR m",
+    "label": "RWA year 1"
+   },
+   "sva": {
+    "value": -0.051086,
+    "unit": "SAR m",
+    "label": "SVA"
+   },
+   "hard_breaches": []
+  },
+  {
+   "label": "Package 6",
+   "clears": true,
+   "text": "C1 receivables (SAR 120.0m), cash margin 10%",
+   "collateral_ids": [
+    "C1"
+   ],
+   "guarantee_id": null,
+   "cash_margin_pct": 10,
+   "cost_sar_mn": {
+    "value": 137.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "lifetime_raroc": {
+    "value": 0.173284,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "lgd_y1": {
+    "value": 0.1,
+    "unit": "share",
+    "label": "LGD year 1"
+   },
+   "rwa_y1": {
+    "value": 70.975,
+    "unit": "SAR m",
+    "label": "RWA year 1"
+   },
+   "sva": {
+    "value": 0.200302,
+    "unit": "SAR m",
+    "label": "SVA"
+   },
+   "hard_breaches": []
+  }
+ ],
+ "add_ons": [
+  {
+   "id": "ADD-PARENT",
+   "kind": "guarantee",
+   "label": "Guarantee from Al Sahel Building Materials Group",
+   "detail": "covering 100%, guarantor rated BBB- (two notches above the obligor)",
+   "hypothetical": true,
+   "cost_sar_mn": {
+    "value": 170.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": 0.0,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": -0.146475,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.012439,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.131828,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "clears_alone": false,
+   "text": "Guarantee from Al Sahel Building Materials Group, covering 100%, guarantor rated BBB- (two notches above the obligor): alone, lifetime RAROC 14.2%, SVA +0.13m a year against no security."
+  },
+  {
+   "id": "ADD-RE",
+   "kind": "collateral",
+   "label": "Mortgage over real estate",
+   "detail": "a property worth SAR 170.0m, equal to the facility amount, at the real-estate haircut and recovery period",
+   "hypothetical": true,
+   "cost_sar_mn": {
+    "value": 170.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": -0.341,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": -0.225342,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.019136,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.202808,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "clears_alone": false,
+   "on_ask": {
+    "lgd_y1": {
+     "value": -0.070357,
+     "unit": "share",
+     "label": "Change in LGD year 1 on top of the ask"
+    },
+    "el_lifetime_pv": {
+     "value": -0.046494,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV) on top of the ask"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1 on top of the ask"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1 on top of the ask"
+    },
+    "lifetime_raroc": {
+     "value": 0.003948,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC on top of the ask"
+    },
+    "sva": {
+     "value": 0.041844,
+     "unit": "SAR m",
+     "label": "Change in SVA on top of the ask"
+    }
+   },
+   "on_ask_raroc": {
+    "value": 0.149128,
+    "unit": "share",
+    "label": "Lifetime RAROC, ask + add-on"
+   },
+   "clears_on_ask": false,
+   "text": "Mortgage over real estate, a property worth SAR 170.0m, equal to the facility amount, at the real-estate haircut and recovery period: on top of the ask, lifetime RAROC 14.9% (does not clear the hurdle 15.0%), LGD -7.0 points, SVA +0.04m a year."
+  },
+  {
+   "id": "ADD-ASSIGN",
+   "kind": "assignment",
+   "label": "Assignment of contract proceeds",
+   "detail": "100% of the contract proceeds paid to an account with us and assigned to the bank",
+   "hypothetical": true,
+   "cost_sar_mn": {
+    "value": 170.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": -0.341,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": -0.225342,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.019136,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.202808,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "clears_alone": false,
+   "on_ask": {
+    "lgd_y1": {
+     "value": -0.070357,
+     "unit": "share",
+     "label": "Change in LGD year 1 on top of the ask"
+    },
+    "el_lifetime_pv": {
+     "value": -0.046494,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV) on top of the ask"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1 on top of the ask"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1 on top of the ask"
+    },
+    "lifetime_raroc": {
+     "value": 0.003948,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC on top of the ask"
+    },
+    "sva": {
+     "value": 0.041844,
+     "unit": "SAR m",
+     "label": "Change in SVA on top of the ask"
+    }
+   },
+   "on_ask_raroc": {
+    "value": 0.149128,
+    "unit": "share",
+    "label": "Lifetime RAROC, ask + add-on"
+   },
+   "clears_on_ask": false,
+   "text": "Assignment of contract proceeds, 100% of the contract proceeds paid to an account with us and assigned to the bank: on top of the ask, lifetime RAROC 14.9% (does not clear the hurdle 15.0%), LGD -7.0 points, SVA +0.04m a year."
+  }
+ ],
+ "tied_up_text": "'Tied up' is the value of the client's own assets pledged to the bank, which the client cannot use elsewhere: the ask ties up SAR 290.0m (C1 receivables (SAR 120.0m), G1 corporate guarantee at 100%); the cheapest package that clears ties up SAR 17.0m (cash margin 10%).",
+ "needs_price": false,
+ "reverse_href": "/deal-desk/R12-TWA?intel=reverse",
+ "items": [
+  {
+   "id": "CASH-30",
+   "kind": "cash",
+   "type": "cash_margin",
+   "label": "Cash margin 30%",
+   "in_ask": false,
+   "value": {
+    "value": 51.0,
+    "unit": "SAR m",
+    "label": "Cash blocked"
+   },
+   "recovery_value": {
+    "value": 51.0,
+    "unit": "SAR m",
+    "label": "Cash recognised"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": -0.248451,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": -0.164183,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": -51.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": -6.885,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.14239,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.776395,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "cost_sar_mn": {
+    "value": 51.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "crm": {
+    "eligible": true,
+    "basis": "Eligible financial collateral: the SA exposure is reduced by the cash (currency-mismatch haircut where it applies)."
+   },
+   "clears_alone": true,
+   "sva_per_sar_tied": {
+    "value": 0.015223,
+    "unit": "SAR m SVA per SAR m tied up",
+    "label": "SVA per SAR tied up"
+   }
+  },
+  {
+   "id": "CASH-20",
+   "kind": "cash",
+   "type": "cash_margin",
+   "label": "Cash margin 20%",
+   "in_ask": false,
+   "value": {
+    "value": 34.0,
+    "unit": "SAR m",
+    "label": "Cash blocked"
+   },
+   "recovery_value": {
+    "value": 34.0,
+    "unit": "SAR m",
+    "label": "Cash recognised"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": -0.165634,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": -0.109455,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": -34.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": -4.59,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.066254,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.517597,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "cost_sar_mn": {
+    "value": 34.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "crm": {
+    "eligible": true,
+    "basis": "Eligible financial collateral: the SA exposure is reduced by the cash (currency-mismatch haircut where it applies)."
+   },
+   "clears_alone": true,
+   "sva_per_sar_tied": {
+    "value": 0.015223,
+    "unit": "SAR m SVA per SAR m tied up",
+    "label": "SVA per SAR tied up"
+   }
+  },
+  {
+   "id": "CASH-10",
+   "kind": "cash",
+   "type": "cash_margin",
+   "label": "Cash margin 10%",
+   "in_ask": false,
+   "value": {
+    "value": 17.0,
+    "unit": "SAR m",
+    "label": "Cash blocked"
+   },
+   "recovery_value": {
+    "value": 17.0,
+    "unit": "SAR m",
+    "label": "Cash recognised"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": -0.082817,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": -0.054728,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": -17.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": -2.295,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.025442,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.258798,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "cost_sar_mn": {
+    "value": 17.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "crm": {
+    "eligible": true,
+    "basis": "Eligible financial collateral: the SA exposure is reduced by the cash (currency-mismatch haircut where it applies)."
+   },
+   "clears_alone": true,
+   "sva_per_sar_tied": {
+    "value": 0.015223,
+    "unit": "SAR m SVA per SAR m tied up",
+    "label": "SVA per SAR tied up"
+   }
+  },
+  {
+   "id": "C1",
+   "kind": "collateral",
+   "type": "receivables",
+   "label": "Receivables",
+   "value_sar_mn": 120.0,
+   "currency": "SAR",
+   "in_ask": true,
+   "haircut": 0.5,
+   "recovery_years": 1.0,
+   "value": {
+    "value": 120.0,
+    "unit": "SAR m",
+    "label": "Market value"
+   },
+   "recovery_value": {
+    "value": 55.555556,
+    "unit": "SAR m",
+    "label": "Recognised recovery value (PV)"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": -0.270643,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": -0.178849,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.015188,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.160964,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "cost_sar_mn": {
+    "value": 120.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "crm": {
+    "eligible": false,
+    "basis": "Receivables is not eligible collateral under the standardised approach: it lowers LGD (EL, economic capital) but not the SA risk weight."
+   },
+   "clears_alone": false,
+   "sva_per_sar_tied": {
+    "value": 0.001341,
+    "unit": "SAR m SVA per SAR m tied up",
+    "label": "SVA per SAR tied up"
+   },
+   "marginal_in_ask": {
+    "lgd_y1": {
+     "value": -0.270643,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": -0.178849,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.015188,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.160964,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   }
+  },
+  {
+   "id": "G1",
+   "kind": "guarantee",
+   "type": "corporate",
+   "label": "Corporate guarantee: Sahel Steel Trading Est. (BB-)",
+   "coverage_pct": 100.0,
+   "in_ask": true,
+   "value": null,
+   "recovery_value": {
+    "value": 49.78875,
+    "unit": "SAR m",
+    "label": "Covered EAD x (1 - guarantor LGD)"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": 0.0,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.0,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "cost_sar_mn": {
+    "value": 170.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "crm": {
+    "eligible": false,
+    "basis": "No substitution relief: guarantor risk weight not recognised is not below the obligor's 100%; the guarantee lowers EL and economic capital only."
+   },
+   "clears_alone": false,
+   "sva_per_sar_tied": {
+    "value": 0.0,
+    "unit": "SAR m SVA per SAR m tied up",
+    "label": "SVA per SAR tied up"
+   },
+   "marginal_in_ask": {
+    "lgd_y1": {
+     "value": 0.0,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.0,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   }
+  },
+  {
+   "id": "G2",
+   "kind": "guarantee",
+   "type": "personal",
+   "label": "Personal guarantee: Fahad Nasser Al-Sahili (BB)",
+   "coverage_pct": 100.0,
+   "in_ask": false,
+   "value": null,
+   "recovery_value": {
+    "value": 27.1575,
+    "unit": "SAR m",
+    "label": "Covered EAD x (1 - guarantor LGD)"
+   },
+   "standalone": {
+    "lgd_y1": {
+     "value": 0.0,
+     "unit": "share",
+     "label": "Change in LGD year 1"
+    },
+    "el_lifetime_pv": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Lifetime EL (PV)"
+    },
+    "rwa_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in RWA year 1"
+    },
+    "capital_y1": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in Capital year 1"
+    },
+    "lifetime_raroc": {
+     "value": 0.0,
+     "unit": "share",
+     "label": "Change in Lifetime RAROC"
+    },
+    "sva": {
+     "value": 0.0,
+     "unit": "SAR m",
+     "label": "Change in SVA"
+    }
+   },
+   "cost_sar_mn": {
+    "value": 170.0,
+    "unit": "SAR m",
+    "label": "Value tied up"
+   },
+   "crm": {
+    "eligible": false,
+    "basis": "No substitution relief: guarantor risk weight not recognised is not below the obligor's 100%; the guarantee lowers EL and economic capital only."
+   },
+   "clears_alone": false,
+   "sva_per_sar_tied": {
+    "value": 0.0,
+    "unit": "SAR m SVA per SAR m tied up",
+    "label": "SVA per SAR tied up"
+   }
+  }
+ ],
+ "unsecured": {
+  "lgd_y1": {
+   "value": 0.441,
+   "unit": "share",
+   "label": "LGD year 1"
+  },
+  "el_lifetime_pv": {
+   "value": 0.291425,
+   "unit": "SAR m",
+   "label": "Lifetime EL (PV)"
+  },
+  "rwa_y1": {
+   "value": 87.975,
+   "unit": "SAR m",
+   "label": "RWA year 1"
+  },
+  "capital_y1": {
+   "value": 12.188044,
+   "unit": "SAR m",
+   "label": "Capital year 1"
+  },
+  "lifetime_raroc": {
+   "value": 0.129992,
+   "unit": "share",
+   "label": "Lifetime RAROC"
+  },
+  "sva": {
+   "value": -0.21205,
+   "unit": "SAR m",
+   "label": "SVA"
+  }
+ },
+ "ask_package": {
+  "label": "As asked",
+  "clears": false,
+  "text": "C1 receivables (SAR 120.0m), G1 corporate guarantee at 100%",
+  "collateral_ids": [
+   "C1"
+  ],
+  "guarantee_id": "G1",
+  "cash_margin_pct": 0,
+  "cost_sar_mn": {
+   "value": 290.0,
+   "unit": "SAR m",
+   "label": "Value tied up"
+  },
+  "lifetime_raroc": {
+   "value": 0.14518,
+   "unit": "share",
+   "label": "Lifetime RAROC"
+  },
+  "lgd_y1": {
+   "value": 0.170357,
+   "unit": "share",
+   "label": "LGD year 1"
+  },
+  "rwa_y1": {
+   "value": 87.975,
+   "unit": "SAR m",
+   "label": "RWA year 1"
+  },
+  "sva": {
+   "value": -0.051086,
+   "unit": "SAR m",
+   "label": "SVA"
+  },
+  "hard_breaches": []
+ },
+ "cheapest_package": {
+  "label": "Cheapest package",
+  "clears": true,
+  "text": "cash margin 10%",
+  "collateral_ids": [],
+  "guarantee_id": null,
+  "cash_margin_pct": 10,
+  "cost_sar_mn": {
+   "value": 17.0,
+   "unit": "SAR m",
+   "label": "Value tied up"
+  },
+  "lifetime_raroc": {
+   "value": 0.155434,
+   "unit": "share",
+   "label": "Lifetime RAROC"
+  },
+  "lgd_y1": {
+   "value": 0.358183,
+   "unit": "share",
+   "label": "LGD year 1"
+  },
+  "rwa_y1": {
+   "value": 70.975,
+   "unit": "SAR m",
+   "label": "RWA year 1"
+  },
+  "sva": {
+   "value": 0.046749,
+   "unit": "SAR m",
+   "label": "SVA"
+  },
+  "hard_breaches": []
+ },
+ "best_package": null,
+ "most_valuable_item": {
+  "id": "CASH-30",
+  "label": "Cash margin 30%",
+  "sva": {
+   "value": 0.776395,
+   "unit": "SAR m",
+   "label": "Change in SVA"
+  }
+ },
+ "register": [
+  {
+   "security_id": "S1",
+   "kind": "personal_guarantee",
+   "provider": "Fahad Nasser Al-Sahili",
+   "perfection_status": "perfected",
+   "valuation_date": null,
+   "net_worth_statement_date": "2025-03-31",
+   "note": "Net-worth statement older than 12 months",
+   "amount": {
+    "value": 180.0,
+    "unit": "SAR m",
+    "label": "Amount"
+   },
+   "value": null,
+   "net_worth": {
+    "value": 240.0,
+    "unit": "SAR m",
+    "label": "Net worth"
+   }
+  },
+  {
+   "security_id": "S2",
+   "kind": "corporate_guarantee",
+   "provider": "Sahel Steel Trading Est.",
+   "perfection_status": "pending",
+   "valuation_date": null,
+   "net_worth_statement_date": "2025-12-31",
+   "note": "Guarantor 20% owned by the spouse of a bank staff member (b360_insider_link IL-TWA-1); legal opinion not yet obtained",
+   "amount": {
+    "value": 180.0,
+    "unit": "SAR m",
+    "label": "Amount"
+   },
+   "value": null,
+   "net_worth": {
+    "value": 58.0,
+    "unit": "SAR m",
+    "label": "Net worth"
+   }
+  },
+  {
+   "security_id": "S3",
+   "kind": "corporate_guarantee",
+   "provider": "Al Sahel Holding Company",
+   "perfection_status": "not_perfected",
+   "valuation_date": null,
+   "net_worth_statement_date": "2025-12-31",
+   "note": "New: proposed by credit",
+   "amount": {
+    "value": 180.0,
+    "unit": "SAR m",
+    "label": "Amount"
+   },
+   "value": null,
+   "net_worth": {
+    "value": 312.0,
+    "unit": "SAR m",
+    "label": "Net worth"
+   }
+  },
+  {
+   "security_id": "S4",
+   "kind": "security_cheque",
+   "provider": "Al Sahel Building Materials Trading LLC",
+   "perfection_status": "perfected",
+   "valuation_date": null,
+   "net_worth_statement_date": null,
+   "note": "Undated security cheque",
+   "amount": {
+    "value": 180.0,
+    "unit": "SAR m",
+    "label": "Amount"
+   },
+   "value": null,
+   "net_worth": null
+  },
+  {
+   "security_id": "S5",
+   "kind": "assignment_receivables",
+   "provider": "Al Sahel Building Materials Trading LLC",
+   "perfection_status": "pending",
+   "valuation_date": null,
+   "net_worth_statement_date": null,
+   "note": "Assignment of receivables of the top 10 debtors; notices not served",
+   "amount": {
+    "value": 120.0,
+    "unit": "SAR m",
+    "label": "Amount"
+   },
+   "value": null,
+   "net_worth": null
+  },
+  {
+   "security_id": "S6",
+   "kind": "assignment_insurance",
+   "provider": "Al Sahel Building Materials Trading LLC",
+   "perfection_status": "perfected",
+   "valuation_date": null,
+   "net_worth_statement_date": null,
+   "note": "Inventory insurance assigned; policy expires 2027-03-31",
+   "amount": {
+    "value": 146.0,
+    "unit": "SAR m",
+    "label": "Amount"
+   },
+   "value": null,
+   "net_worth": null
+  }
+ ],
+ "evaluations": 24,
+ "packages_considered": 24,
+ "cost_measure": "Value the client ties up (SAR m): collateral at market value, guarantees at the covered amount, cash margin at the cash blocked. No security fee schedule exists in the parameter set.",
+ "method": "* Items: the obligor's collateral items and guarantees (dd_deal.proposal_json security block, the same record the\n    engine prices), and the cash margin at the optimiser's steps (10%, 20%, 30%). The register view (dd_security:\n    perfection, valuation and net-worth dates) is attached where the deal has rows.\n  * Standalone value: the ask with no security at all, then the ask with this item alone (engine.analyse, every other\n    term as asked). Recovery value = the item's recognised value (value x (1 - haircut), discounted over the recovery\n    period at the LGD parameter rate); LGD, EL, RWA, capital, RAROC and SVA are the engine's, as deltas.\n  * Marginal value in the ask: the ask without this item (only for items the ask pledges).\n  * CRM eligibility (standardised approach): cash and pledged cash are eligible financial collateral (exposure\n    reduced); a guarantee is eligible by substitution when its risk weight is below the obligor's; real estate counts\n    through the IPRE LTV bands only for real-estate finance; other collateral lowers LGD (economic capital, EL) but not\n    the SA risk weight (lgd.collateral.eligible_sa).\n  * Cost of a package: the value the client ties up, i",
+ "seconds": 1.94
+}

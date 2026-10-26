@@ -1,0 +1,66 @@
+{
+ "name": "ftp",
+ "owner": "Treasury",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Funds transfer pricing: base curves by tenor (SAIBOR, SOFR) and liquidity premium by tenor.",
+ "rows": {
+  "tenors": [
+   0.25,
+   1,
+   2,
+   3,
+   5,
+   7,
+   10
+  ],
+  "base": {
+   "SAR": [
+    0.052,
+    0.0505,
+    0.0475,
+    0.0455,
+    0.044,
+    0.0445,
+    0.0455
+   ],
+   "USD": [
+    0.041,
+    0.0385,
+    0.036,
+    0.035,
+    0.0355,
+    0.0365,
+    0.0385
+   ]
+  },
+  "liquidity_premium_bps": {
+   "SAR": [
+    5,
+    10,
+    20,
+    30,
+    45,
+    60,
+    75
+   ],
+   "USD": [
+    15,
+    20,
+    30,
+    40,
+    55,
+    70,
+    85
+   ]
+  },
+  "contingent_bps": {
+   "undrawn_committed": 15,
+   "performance_lg": 5,
+   "financial_lg": 10,
+   "trade_lc": 5
+  },
+  "reference_tenor": 0.25
+ }
+}

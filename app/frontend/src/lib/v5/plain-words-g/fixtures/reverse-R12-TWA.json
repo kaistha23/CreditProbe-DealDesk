@@ -1,0 +1,483 @@
+{
+ "trace_id": "DT-6d272ce3aeb4",
+ "proposal_id": "R12-TWA",
+ "obligor": "Al Sahel Building Materials Trading LLC",
+ "currency": "SAR",
+ "ask": {
+  "lifetime_raroc": {
+   "value": 0.14518,
+   "unit": "share",
+   "label": "Lifetime RAROC"
+  },
+  "hurdle": {
+   "value": 0.15,
+   "unit": "share",
+   "label": "Hurdle"
+  },
+  "sva": {
+   "value": -0.051086,
+   "unit": "SAR m",
+   "label": "SVA"
+  },
+  "approval": {
+   "level": "Head of Credit",
+   "rank": 2,
+   "reasons": [
+    "Obligor exposure after the deal SAR 90.5m, rating BB"
+   ],
+   "approvable": true,
+   "hard_breaches": [],
+   "soft_breaches": []
+  },
+  "stress": {
+   "verdict": "Restructure",
+   "worst_breaking_severity": "mild",
+   "tier": "High",
+   "why": "the structure already fails RAROC before any stress",
+   "breaking": [
+    {
+     "scenario": "Oil \u221213%",
+     "severity": "mild",
+     "breaks": [
+      "debt_ebitda",
+      "covenants",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Oil \u221234%",
+     "severity": "moderate",
+     "breaks": [
+      "debt_ebitda",
+      "covenants",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Oil \u221247%",
+     "severity": "severe",
+     "breaks": [
+      "debt_ebitda",
+      "covenants",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Non-oil GDP \u22127.5 pp",
+     "severity": "severe",
+     "breaks": [
+      "debt_ebitda",
+      "covenants",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Own-sector slowdown (\u00d70.64)",
+     "severity": "mild",
+     "breaks": [
+      "dscr",
+      "debt_ebitda",
+      "covenants",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Own-sector downturn (\u00d71.00)",
+     "severity": "moderate",
+     "breaks": [
+      "dscr",
+      "debt_ebitda",
+      "covenants",
+      "stage",
+      "limits"
+     ]
+    }
+   ]
+  }
+ },
+ "recorded_stress": {
+  "run_id": "SR-b188ec016d3b688b",
+  "verdict": "Restructure",
+  "worst_breaking_severity": "mild"
+ },
+ "failures": [
+  {
+   "kind": "hurdle",
+   "label": "RAROC below the hurdle",
+   "text": "Lifetime RAROC 14.5% against a hurdle of 15.0% (SVA -0.05m).",
+   "value": {
+    "value": 0.14518,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "limit": {
+    "value": 0.15,
+    "unit": "share",
+    "label": "Hurdle"
+   }
+  },
+  {
+   "kind": "stress",
+   "label": "Stress tier: Restructure",
+   "text": "Stress ladder verdict Restructure: the structure already fails RAROC before any stress.",
+   "value": null
+  }
+ ],
+ "method": "1. The ask is run through the engine (engine.analyse) and the stress ladder (stress2.ladder.run, not published).\n     Failures: SVA < 0 (RAROC below the hurdle), each hard breach, each soft (policy) breach, and a stress verdict\n     of \"Restructure\" (something breaks already at mild severity, R12 tier rule).\n  2. One lever family at a time is freed, every other lever held at the ask, and the Optimise engine\n     (optimizer.Problem.closest) returns the closest-to-ask structure that clears the hurdle and every limit.\n     Families: amount (down to 5% of the ask), tenor and profile, security (collateral, cash margin, guarantee),\n     pricing (margin and fees inside the market bounds), covenants (package). A sixth run frees every lever\n     (\"Optimise, all levers\").\n  3. Candidates are ranked by the optimiser's own distance from the ask (the weighted change it minimises), and\n     the best ones are re-run through the stress ladder; the first one whose verdict is not \"Restructure\" is the\n     counter-offer. If none passes the ladder, the amount is stepped down (90%, 80%, 70% of the candidate) and\n     re-priced, and the result says what the stress still breaks.",
+ "approvable_as_asked": false,
+ "candidates": [
+  {
+   "label": "Higher price",
+   "family": "pricing",
+   "also_reached_by": [
+    "Lower amount and higher price",
+    "Optimise, all levers"
+   ],
+   "distance": 0.0391,
+   "changes": [
+    {
+     "field": "upfront_fee_bps",
+     "ask": 25,
+     "value": 28.90817577924265,
+     "unit": "bps",
+     "text": "Upfront fee 25 bps \u2192 29 bps (+4 bps)"
+    }
+   ],
+   "lifetime_raroc": {
+    "value": 0.15,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "sva": {
+    "value": 0.0,
+    "unit": "SAR m",
+    "label": "SVA"
+   },
+   "rwa_y1": {
+    "value": 87.975,
+    "unit": "SAR m",
+    "label": "RWA year 1"
+   },
+   "el_y1": {
+    "value": 0.129463,
+    "unit": "SAR m",
+    "label": "EL year 1"
+   },
+   "approval": {
+    "level": "Head of Credit",
+    "rank": 2,
+    "reasons": [
+     "Obligor exposure after the deal SAR 90.5m, rating BB"
+    ],
+    "approvable": true,
+    "hard_breaches": [],
+    "soft_breaches": []
+   },
+   "stress": {
+    "verdict": "Restructure",
+    "worst_breaking_severity": "mild",
+    "tier": "High",
+    "why": "Own-sector slowdown (\u00d70.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, RAROC, Limits",
+    "breaking": [
+     {
+      "scenario": "Oil \u221213%",
+      "severity": "mild",
+      "breaks": [
+       "debt_ebitda",
+       "covenants",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Oil \u221234%",
+      "severity": "moderate",
+      "breaks": [
+       "debt_ebitda",
+       "covenants",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Oil \u221247%",
+      "severity": "severe",
+      "breaks": [
+       "debt_ebitda",
+       "covenants",
+       "raroc",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Non-oil GDP \u22127.5 pp",
+      "severity": "severe",
+      "breaks": [
+       "debt_ebitda",
+       "covenants",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Own-sector slowdown (\u00d70.64)",
+      "severity": "mild",
+      "breaks": [
+       "dscr",
+       "debt_ebitda",
+       "covenants",
+       "raroc",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Own-sector downturn (\u00d71.00)",
+      "severity": "moderate",
+      "breaks": [
+       "dscr",
+       "debt_ebitda",
+       "covenants",
+       "stage",
+       "raroc",
+       "limits"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "label": "More security",
+   "family": "security",
+   "also_reached_by": [],
+   "distance": 0.2,
+   "changes": [
+    {
+     "field": "cash_margin_pct",
+     "ask": 0,
+     "value": 10,
+     "unit": "%",
+     "text": "Cash margin 0% \u2192 10%"
+    }
+   ],
+   "lifetime_raroc": {
+    "value": 0.173284,
+    "unit": "share",
+    "label": "Lifetime RAROC"
+   },
+   "sva": {
+    "value": 0.200302,
+    "unit": "SAR m",
+    "label": "SVA"
+   },
+   "rwa_y1": {
+    "value": 70.975,
+    "unit": "SAR m",
+    "label": "RWA year 1"
+   },
+   "el_y1": {
+    "value": 0.075995,
+    "unit": "SAR m",
+    "label": "EL year 1"
+   },
+   "approval": {
+    "level": "Head of Credit",
+    "rank": 2,
+    "reasons": [
+     "Obligor exposure after the deal SAR 90.5m, rating BB"
+    ],
+    "approvable": true,
+    "hard_breaches": [],
+    "soft_breaches": []
+   },
+   "stress": {
+    "verdict": "Restructure",
+    "worst_breaking_severity": "mild",
+    "tier": "High",
+    "why": "Own-sector slowdown (\u00d70.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, Limits",
+    "breaking": [
+     {
+      "scenario": "Oil \u221213%",
+      "severity": "mild",
+      "breaks": [
+       "debt_ebitda",
+       "covenants",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Oil \u221234%",
+      "severity": "moderate",
+      "breaks": [
+       "debt_ebitda",
+       "covenants",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Oil \u221247%",
+      "severity": "severe",
+      "breaks": [
+       "debt_ebitda",
+       "covenants",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Non-oil GDP \u22127.5 pp",
+      "severity": "severe",
+      "breaks": [
+       "debt_ebitda",
+       "covenants",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Own-sector slowdown (\u00d70.64)",
+      "severity": "mild",
+      "breaks": [
+       "dscr",
+       "debt_ebitda",
+       "covenants",
+       "limits"
+      ]
+     },
+     {
+      "scenario": "Own-sector downturn (\u00d71.00)",
+      "severity": "moderate",
+      "breaks": [
+       "dscr",
+       "debt_ebitda",
+       "covenants",
+       "stage",
+       "limits"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "termless_blockers": [],
+ "counter_offer": {
+  "label": "Higher price",
+  "family": "pricing",
+  "also_reached_by": [
+   "Lower amount and higher price",
+   "Optimise, all levers"
+  ],
+  "distance": 0.0391,
+  "changes": [
+   {
+    "field": "upfront_fee_bps",
+    "ask": 25,
+    "value": 28.90817577924265,
+    "unit": "bps",
+    "text": "Upfront fee 25 bps \u2192 29 bps (+4 bps)"
+   }
+  ],
+  "lifetime_raroc": {
+   "value": 0.15,
+   "unit": "share",
+   "label": "Lifetime RAROC"
+  },
+  "sva": {
+   "value": 0.0,
+   "unit": "SAR m",
+   "label": "SVA"
+  },
+  "rwa_y1": {
+   "value": 87.975,
+   "unit": "SAR m",
+   "label": "RWA year 1"
+  },
+  "el_y1": {
+   "value": 0.129463,
+   "unit": "SAR m",
+   "label": "EL year 1"
+  },
+  "approval": {
+   "level": "Head of Credit",
+   "rank": 2,
+   "reasons": [
+    "Obligor exposure after the deal SAR 90.5m, rating BB"
+   ],
+   "approvable": true,
+   "hard_breaches": [],
+   "soft_breaches": []
+  },
+  "stress": {
+   "verdict": "Restructure",
+   "worst_breaking_severity": "mild",
+   "tier": "High",
+   "why": "Own-sector slowdown (\u00d70.64) (mild) breaks DSCR, Debt/EBITDA, Covenants, RAROC, Limits",
+   "breaking": [
+    {
+     "scenario": "Oil \u221213%",
+     "severity": "mild",
+     "breaks": [
+      "debt_ebitda",
+      "covenants",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Oil \u221234%",
+     "severity": "moderate",
+     "breaks": [
+      "debt_ebitda",
+      "covenants",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Oil \u221247%",
+     "severity": "severe",
+     "breaks": [
+      "debt_ebitda",
+      "covenants",
+      "raroc",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Non-oil GDP \u22127.5 pp",
+     "severity": "severe",
+     "breaks": [
+      "debt_ebitda",
+      "covenants",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Own-sector slowdown (\u00d70.64)",
+     "severity": "mild",
+     "breaks": [
+      "dscr",
+      "debt_ebitda",
+      "covenants",
+      "raroc",
+      "limits"
+     ]
+    },
+    {
+     "scenario": "Own-sector downturn (\u00d71.00)",
+     "severity": "moderate",
+     "breaks": [
+      "dscr",
+      "debt_ebitda",
+      "covenants",
+      "stage",
+      "raroc",
+      "limits"
+     ]
+    }
+   ]
+  },
+  "headline": "Smallest change that makes Al Sahel Building Materials Trading LLC approvable: Upfront fee 25 bps \u2192 29 bps (+4 bps) (RAROC 14.5% \u2192 15.0%).",
+  "rm_text": "Counter-offer to Al Sahel Building Materials Trading LLC: Upfront fee 25 bps \u2192 29 bps (+4 bps). Everything else as asked. At these terms the lifetime RAROC is 15.0% against a hurdle of 15.0% (SVA SAR 0.00m), no limit is breached, the approval sits with Head of Credit, and the stress verdict is Restructure.",
+  "note": "No structure found clears the stress tier rule: the closest fix still breaks at mild severity (Oil \u221213%: Debt/EBITDA, covenants, limits; Oil \u221234%: Debt/EBITDA, covenants, limits; Oil \u221247%: Debt/EBITDA, covenants, RAROC, limits), and so does 30% of that amount re-priced (Oil \u221247%; Own-sector slowdown (\u00d70.64); Own-sector downturn (\u00d71.00)). The offer clears the hurdle and every limit; committee would still see the stress verdict Restructure, so the paper must carry the mitigation for the breaking tests above.",
+  "client_asks": [
+   "Upfront fee 25 bps \u2192 29 bps (+4 bps)"
+  ],
+  "why_this_one": "Closest to the ask by the optimiser's weighted distance among the structures that clear the hurdle, every limit and (where checked) the stress tier rule."
+ },
+ "unsolved": null,
+ "seconds": 9.35,
+ "headline": "Smallest change that makes Al Sahel Building Materials Trading LLC approvable: Upfront fee 25 bps \u2192 29 bps (+4 bps) (RAROC 14.5% \u2192 15.0%)."
+}

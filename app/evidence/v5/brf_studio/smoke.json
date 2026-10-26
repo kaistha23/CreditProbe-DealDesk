@@ -1,0 +1,72 @@
+{
+  "ui": "http://127.0.0.1:5500",
+  "steps": [
+    {
+      "step": "01_open",
+      "banned_words": [],
+      "h_overflow": false
+    },
+    {
+      "step": "02_flow_from_template",
+      "banned_words": [],
+      "h_overflow": false,
+      "reply": "Read 16 lines. Mapped 16 of 16 to the Data Domains (corp_borrower_quarter, corp_collateral_quarter, corp_facility_quarter), with 21 intermediate calculations and 3 checks. The flow is drawn below; edit any node, then Lock and Run.",
+      "nodes": 55,
+      "values": 40
+    },
+    {
+      "step": "03_inspector",
+      "banned_words": [],
+      "h_overflow": false
+    },
+    {
+      "step": "canvas_edit",
+      "before": 55,
+      "after_add": 56,
+      "after_delete": 55
+    },
+    {
+      "step": "chat: add a reconciliation to the GL",
+      "reply": "Added a reconciliation to the GL: the return's drawn balance against the ledger control total (Σ drawn on the book at the period)."
+    },
+    {
+      "step": "chat: take collateral from the collateral dataset",
+      "reply": "Took collateral from corp_collateral_quarter (Σ allocated_value_sar_mn); line Collateral allocated value now reads it."
+    },
+    {
+      "step": "chat: remove the check Values agree",
+      "reply": "Removed Values agree (check) and its links. The outputs recompute."
+    },
+    {
+      "step": "chat: add a check that Stage 3 coverage is at least 40%",
+      "reply": "Added a check: Stage 3 coverage at least 40%."
+    },
+    {
+      "step": "04_after_chat_edits",
+      "banned_words": [],
+      "h_overflow": false
+    },
+    {
+      "step": "05_run",
+      "banned_words": [],
+      "h_overflow": false,
+      "result": "BRF Credit Quality Return · 2026Q2\n\n15 of 16 lines filled at 2026Q2; 5 of 5 checks pass.\n\nExcel\nCode\tLine\tValue\nL01\tStage 1 gross exposure\tSAR 101.28bn\nL02\tStage 2 gross exposure\tSAR 41.62bn\nL03\tStage 3 gross exposure\tSAR 10.79bn\nL04\tTotal gross exposure\tSAR 153.70bn\nL05\tStage 1 provisions (ECL)\tSAR"
+    },
+    {
+      "step": "excel",
+      "file": "BRF_Credit_Quality_Return_2026Q2.xlsx"
+    },
+    {
+      "step": "06_published",
+      "banned_words": [],
+      "h_overflow": false
+    },
+    {
+      "step": "07_quick_R4_run",
+      "banned_words": [],
+      "h_overflow": false,
+      "reply": "Run for 2026Q2: 7 of 7 lines filled at 2026Q2; 1 of 1 checks pass."
+    }
+  ],
+  "errors": []
+}

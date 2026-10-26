@@ -1,0 +1,75 @@
+{
+ "engine": "intel.portfolio.workout.candidates",
+ "version": "r13-id-1",
+ "as_of": "2026Q2",
+ "total": 1351,
+ "rows": [
+  {
+   "borrower_id": "CB03940",
+   "borrower_name": "Khamis Mushait National Estates",
+   "sector": "Real Estate",
+   "ead_sar_mn": 58.6728,
+   "stage": 3,
+   "rating": "B-",
+   "ews_band": "critical",
+   "restructurings_24m": 2,
+   "third_restructuring_next": true
+  },
+  {
+   "borrower_id": "CB01224",
+   "borrower_name": "Arar First Engineering",
+   "sector": "Construction",
+   "ead_sar_mn": 55.3668,
+   "stage": 3,
+   "rating": "CC",
+   "ews_band": "critical",
+   "restructurings_24m": 2,
+   "third_restructuring_next": true
+  },
+  {
+   "borrower_id": "CB03992",
+   "borrower_name": "Turaif United Estates",
+   "sector": "Real Estate",
+   "ead_sar_mn": 55.1001,
+   "stage": 3,
+   "rating": "BB-",
+   "ews_band": "critical",
+   "restructurings_24m": 2,
+   "third_restructuring_next": true
+  },
+  {
+   "borrower_id": "CB01219",
+   "borrower_name": "Najran First Engineering",
+   "sector": "Construction",
+   "ead_sar_mn": 51.775,
+   "stage": 3,
+   "rating": "BBB-",
+   "ews_band": "critical",
+   "restructurings_24m": 2,
+   "third_restructuring_next": true
+  },
+  {
+   "borrower_id": "CB03880",
+   "borrower_name": "Unayzah Western Properties",
+   "sector": "Real Estate",
+   "ead_sar_mn": 51.4021,
+   "stage": 3,
+   "rating": "B-",
+   "ews_band": "critical",
+   "restructurings_24m": 2,
+   "third_restructuring_next": true
+  },
+  {
+   "borrower_id": "CB03988",
+   "borrower_name": "Khamis Mushait United Estates",
+   "sector": "Real Estate",
+   "ead_sar_mn": 51.1056,
+   "stage": 3,
+   "rating": "BBB-",
+   "ews_band": "critical",
+   "restructurings_24m": 2,
+   "third_restructuring_next": true
+  }
+ ],
+ "headline": "1351 stressed names (Stage 3, Early Warning high or critical, or restructured in 24 months); 534 would reach a third restructuring with the next one."
+}

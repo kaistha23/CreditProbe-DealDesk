@@ -1,0 +1,37 @@
+{
+ "module": "r4",
+ "commit": "680bbcd",
+ "utc": "20261012T003052Z",
+ "items_run": [
+  "4a",
+  "5",
+  "6p"
+ ],
+ "passed": false,
+ "items": [
+  {
+   "item": "4a. Cockpit suite tests/cockpit_v4",
+   "pass": false,
+   "detail": "3213/3222 pass; 8 declared exceptions; UNEXPECTED failures: ['tests/cockpit_v4/test_display_precision.py tests/cockpit_v4/test_domain_and_numerics.py tests/cockpit_v4/test_domain_calendar_presentation.py tests/cockpit_v4/test_domain_execution.py tests/cockpit_v4/test_domain_routes.py tests/cockpit_v4/test_domains.py tests/cockpit_v4/test_dual_domain_performance.py tests/cockpit_v4/test_ecl_panel.py tests/cockpit_v4/test_entity_count_evidence.py tests/cockpit_v4/test_event_contract_parity.py tests/cockpit_v4/test_export.py tests/cockpit_v4/test_failure_injection.py::<no result: pytest did not finish>']",
+   "seconds": 1133.7
+  },
+  {
+   "item": "4-. Cockpit API and UI started again",
+   "pass": true,
+   "detail": "http://127.0.0.1:5500",
+   "seconds": 21.2
+  },
+  {
+   "item": "5. browser smoke",
+   "pass": true,
+   "detail": "32/32 browser checks passed",
+   "seconds": 39.6
+  },
+  {
+   "item": "6. UAT sweep (in parts)",
+   "pass": false,
+   "detail": "513/518 sweep steps passed (7370 checks), in parts",
+   "seconds": 2621.4
+  }
+ ]
+}

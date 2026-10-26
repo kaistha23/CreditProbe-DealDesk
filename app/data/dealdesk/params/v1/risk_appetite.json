@@ -1,0 +1,374 @@
+{
+ "name": "risk_appetite",
+ "owner": "CFO",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Risk appetite and regulatory limits, each hard or soft.",
+ "rows": [
+  {
+   "name": "single_name",
+   "label": "Single obligor",
+   "kind": "hard",
+   "limit": 250.0,
+   "unit": "SAR m",
+   "basis": "CP-1.1: SAR 250m per obligor, funded and unfunded EAD",
+   "appetite": 200.0,
+   "trigger": 225.0
+  },
+  {
+   "name": "group_connected",
+   "label": "Connected group",
+   "kind": "hard",
+   "limit": 500.0,
+   "unit": "SAR m",
+   "basis": "CP-1.2: SAR 500m per connected group (ownership or control, relationship domain rel-saudi-v1)",
+   "appetite": 400.0,
+   "trigger": 450.0
+  },
+  {
+   "name": "group_large_exposure",
+   "label": "Group large exposure",
+   "kind": "hard",
+   "limit_pct_tier1": 0.25,
+   "unit": "SAR m",
+   "basis": "SAMA large exposures: 25% of Tier 1",
+   "appetite_pct_tier1": 0.15,
+   "trigger_pct_tier1": 0.2
+  },
+  {
+   "name": "sector_policy",
+   "label": "Sector (policy)",
+   "kind": "hard",
+   "limit": 0.18,
+   "unit": "share",
+   "basis": "CP-1.3: 18% of the corporate book",
+   "appetite": 0.15,
+   "trigger": 0.165
+  },
+  {
+   "name": "sector_appetite",
+   "label": "Sector (appetite)",
+   "kind": "soft",
+   "limits": {
+    "Real Estate": 0.1,
+    "Construction": 0.13
+   },
+   "unit": "share",
+   "basis": "Risk appetite statement 2026",
+   "appetites": {
+    "Real Estate": 0.09,
+    "Construction": 0.12
+   },
+   "triggers": {
+    "Real Estate": 0.095,
+    "Construction": 0.125
+   }
+  },
+  {
+   "name": "rating_bucket",
+   "label": "Rating bucket",
+   "kind": "soft",
+   "limits": {
+    "IG": 1.0,
+    "BB": 0.36,
+    "B": 0.2,
+    "CCC-C": 0.08
+   },
+   "unit": "share",
+   "basis": "Risk appetite statement 2026",
+   "appetites": {
+    "IG": 1.0,
+    "BB": 0.33,
+    "B": 0.18,
+    "CCC-C": 0.07
+   },
+   "triggers": {
+    "IG": 1.0,
+    "BB": 0.345,
+    "B": 0.19,
+    "CCC-C": 0.075
+   }
+  },
+  {
+   "name": "collateral_type",
+   "label": "Collateral concentration",
+   "kind": "soft",
+   "limits": {
+    "real_estate": 0.2
+   },
+   "unit": "share",
+   "basis": "Share of book EAD secured by real estate",
+   "appetites": {
+    "real_estate": 0.18
+   },
+   "triggers": {
+    "real_estate": 0.19
+   }
+  },
+  {
+   "name": "min_rating",
+   "label": "Minimum rating",
+   "kind": "hard",
+   "new_to_bank": "B-",
+   "existing": "B-",
+   "existing_soft": "CCC",
+   "unit": "rating",
+   "basis": "Credit policy: no new money below B-; existing clients to CCC by escalation",
+   "appetite": "BB-",
+   "trigger": "B"
+  },
+  {
+   "name": "max_tenor",
+   "label": "Maximum tenor",
+   "kind": "hard",
+   "limits": {
+    "IG": 10,
+    "BB": 7,
+    "B": 5,
+    "CCC-C": 2
+   },
+   "unit": "years",
+   "basis": "Tenor matrix by rating bucket",
+   "appetites": {
+    "IG": 8,
+    "BB": 5,
+    "B": 4,
+    "CCC-C": 1
+   },
+   "triggers": {
+    "IG": 9,
+    "BB": 6,
+    "B": 4,
+    "CCC-C": 1
+   }
+  },
+  {
+   "name": "ltv",
+   "label": "Loan to value",
+   "kind": "hard",
+   "limit": 0.7,
+   "unit": "share",
+   "basis": "Real-estate finance: maximum LTV 70%",
+   "appetite": 0.6,
+   "trigger": 0.65
+  },
+  {
+   "name": "dscr",
+   "label": "DSCR after the deal",
+   "kind": "hard",
+   "limit": 1.2,
+   "unit": "x",
+   "basis": "CP-2.1: DSCR at least 1.20x",
+   "appetite": 1.5,
+   "trigger": 1.35
+  },
+  {
+   "name": "debt_ebitda",
+   "label": "Debt/EBITDA after the deal",
+   "kind": "hard",
+   "limit": 4.0,
+   "unit": "x",
+   "basis": "CP-2.1: leverage at most 4.0x",
+   "appetite": 3.0,
+   "trigger": 3.5
+  },
+  {
+   "name": "balloon",
+   "label": "Balloon share",
+   "kind": "hard",
+   "limit": 0.5,
+   "unit": "share",
+   "basis": "Credit policy: balloon at most 50%",
+   "appetite": 0.3,
+   "trigger": 0.4
+  },
+  {
+   "name": "bu_rwa_budget",
+   "label": "BU RWA budget",
+   "kind": "soft",
+   "headroom_sar_mn": 2500.0,
+   "unit": "SAR m",
+   "basis": "Corporate Banking new-business RWA budget, Q4 2026",
+   "appetite_sar_mn": 2000.0,
+   "trigger_sar_mn": 2250.0
+  },
+  {
+   "name": "bu_el_budget",
+   "label": "BU EL budget",
+   "kind": "soft",
+   "headroom_sar_mn": 60.0,
+   "unit": "SAR m",
+   "basis": "Corporate Banking new-business EL budget, Q4 2026 (year-1 EL)",
+   "appetite_sar_mn": 48.0,
+   "trigger_sar_mn": 54.0
+  },
+  {
+   "name": "top20_obligor_share",
+   "label": "Top-20 obligor concentration",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 0.0125,
+   "trigger": 0.015,
+   "limit": 0.02,
+   "unit": "share",
+   "basis": "Risk Appetite Statement 2026, item 4.1: the 20 largest obligors' EAD at most 2.0% of the corporate book",
+   "r11": true
+  },
+  {
+   "name": "sector_hhi",
+   "label": "Sector concentration (HHI)",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 0.08,
+   "trigger": 0.085,
+   "limit": 0.09,
+   "unit": "index",
+   "basis": "Risk Appetite Statement 2026, item 4.2: Herfindahl index of sector shares of the corporate book at most 0.09",
+   "r11": true
+  },
+  {
+   "name": "sub_ig_share",
+   "label": "Sub-investment-grade share",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 0.58,
+   "trigger": 0.6,
+   "limit": 0.62,
+   "unit": "share",
+   "basis": "Risk Appetite Statement 2026, item 3.1: EAD rated BB+ or worse at most 62% of the corporate book",
+   "r11": true
+  },
+  {
+   "name": "unsecured_share",
+   "label": "Unsecured share",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 0.2,
+   "trigger": 0.21,
+   "limit": 0.22,
+   "unit": "share",
+   "basis": "Risk Appetite Statement 2026, item 3.2: EAD with no tangible collateral, cash margin or eligible guarantee (a corporate guarantee alone counts as unsecured) at most 22%",
+   "r11": true
+  },
+  {
+   "name": "re_construction_share",
+   "label": "Real estate and construction",
+   "kind": "hard",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 0.2275,
+   "trigger": 0.228,
+   "limit": 0.2285,
+   "unit": "share",
+   "sectors": [
+    "Real Estate",
+    "Construction"
+   ],
+   "basis": "Risk Appetite Statement 2026, item 2.3 (Board limit): real estate and construction together at most 22.85% of the corporate book",
+   "r11": true
+  },
+  {
+   "name": "long_tenor_share",
+   "label": "Long tenor (over 7 years)",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "new_business",
+   "appetite": 0.25,
+   "trigger": 0.3,
+   "limit": 0.35,
+   "unit": "share",
+   "tenor_over_years": 7,
+   "basis": "Risk Appetite Statement 2026, item 5.1: new business with tenor over 7 years at most 35% of new-business EAD (the book carries no maturity, so this is measured on new business)",
+   "r11": true
+  },
+  {
+   "name": "stage2_share",
+   "label": "Stage 2 share of book",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 0.27,
+   "trigger": 0.28,
+   "limit": 0.3,
+   "unit": "share",
+   "basis": "Risk Appetite Statement 2026, item 3.3: Stage 2 EAD at most 30% of the corporate book after new business (a deal counts by its Stage 2 probability next quarter when the forward-risk model is available, else by the obligor's current stage)",
+   "r11": true
+  },
+  {
+   "name": "cost_of_risk_bps",
+   "label": "Expected cost of risk",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 50.0,
+   "trigger": 52.0,
+   "limit": 55.0,
+   "unit": "bps",
+   "basis": "Risk Appetite Statement 2026, item 6.1: 12-month expected loss on the performing book at most 55 bps of EAD (budget 2026)",
+   "r11": true
+  },
+  {
+   "name": "raroc_floor",
+   "label": "New-business RAROC floor",
+   "kind": "soft",
+   "direction": "min",
+   "scope": "new_business",
+   "appetite": 0.16,
+   "trigger": 0.14,
+   "limit": 0.12,
+   "unit": "share",
+   "basis": "Risk Appetite Statement 2026, item 6.2: lifetime RAROC of the approved new business (PV risk-adjusted profit / PV capital) at least 12%",
+   "r11": true
+  },
+  {
+   "name": "region_share",
+   "label": "Region concentration",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 0.25,
+   "trigger": 0.27,
+   "limit": 0.3,
+   "unit": "share",
+   "basis": "Risk Appetite Statement 2026, item 4.3: any one region at most 30% of the corporate book",
+   "r11": true
+  },
+  {
+   "name": "connected_lending_share",
+   "label": "Related-party and connected lending",
+   "kind": "soft",
+   "direction": "max",
+   "scope": "book",
+   "appetite": 0.66,
+   "trigger": 0.68,
+   "limit": 0.7,
+   "unit": "share",
+   "basis": "Risk Appetite Statement 2026, item 4.4: EAD to obligors in connected groups of two or more companies (relationship domain rel-saudi-v1) at most 70% of the corporate book",
+   "r11": true
+  },
+  {
+   "name": "islamic_share",
+   "label": "Islamic share of new business",
+   "kind": "soft",
+   "direction": "min",
+   "scope": "new_business",
+   "appetite": 0.6,
+   "trigger": 0.5,
+   "limit": 0.4,
+   "unit": "share",
+   "basis": "Risk Appetite Statement 2026, item 7.1: Shariah-compliant structures at least 40% of new-business EAD (the book carries no structure flag, so this is measured on new business)",
+   "r11": true
+  }
+ ],
+ "optimiser": {
+  "soft_penalty_rate": 0.02,
+  "basis": "Pipeline optimiser: a soft limit taken past its trigger costs 2% of the EAD beyond the trigger (the capital add-on the CFO charges for an appetite excess), as SAR m of SVA; an option is approvable in the pipeline only if it clears the hurdle by at least SAR 5k of SVA (below that it adds no value and only consumes budget)",
+  "min_sva_sar_mn": 0.005
+ },
+ "levels": "R11: each limit carries appetite (green), trigger (amber) and limit (red) levels; status is green up to the trigger (above appetite is flagged), amber from the trigger to the limit, red beyond the limit."
+}

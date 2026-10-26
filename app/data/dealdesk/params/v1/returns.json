@@ -1,0 +1,22 @@
+{
+ "name": "returns",
+ "owner": "CFO",
+ "version": "v1",
+ "effective_from": "2026-10-01",
+ "approved_by": "Faisal Al-Qahtani (Head of Risk)",
+ "description": "Hurdle rate by business line (sector overrides), return on allocated capital, zakat.",
+ "rows": {
+  "hurdle": {
+   "Corporate Banking": 0.15,
+   "SME Banking": 0.16,
+   "Government and GRE": 0.13
+  },
+  "hurdle_sector": {
+   "Real Estate": 0.16,
+   "Construction": 0.16
+  },
+  "capital_benefit_rate": 0.05,
+  "zakat_rate": 0.1,
+  "ancillary_realisation": 0.6
+ }
+}
